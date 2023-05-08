@@ -1,5 +1,5 @@
-# nexus-mental-wellness
-NISS Mental Wellness app
+# NexWell
+Nexus Mental Wellness app
 
 Welcome to our mental health wellness app! Our app is designed to help you improve your mental health and well-being.
 
