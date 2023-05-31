@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author kazybekkhairulla
- *
- */
-module NexWellAPP {
-}
