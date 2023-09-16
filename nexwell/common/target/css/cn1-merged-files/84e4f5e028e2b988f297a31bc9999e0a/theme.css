@@ -1,0 +1,174 @@
+/** Define Theme Constants here */
+#Constants {
+    includeNativeBool: true;
+    defaultSourceDPIInt: "0";
+    scrollVisibleBool: false;
+    labelGap: 2;
+    capButtonUiids: "BlueText, GreenButton, BlueButton";
+}
+
+/** Style for Button class */
+Button {
+    font-family: "native:MainLight";
+    font-size: 3mm;
+}
+
+/** Style for App Title Bar Text */
+Title {
+    color: white;
+    font-family: "native:MainLight";
+    font-size: 7mm;
+}
+
+/** Style for Dialog body */
+DialogBody {
+    font-family: "native:MainLight";
+    font-size: 2.8mm;
+}
+
+/** Style for Dialog title bar text */
+DialogTitle {
+    font-family: "native:MainLight";
+    font-size: 4.5mm;
+}
+
+LoginTitle{
+    background-image: url(img/nexus-logo.png);
+    cn1-source-dpi: 0;
+    cn1-background-type: cn1-image-scaled-fill;
+    margin:0px;
+    padding: 8mm;
+}
+PaddedContainer{
+    padding: 3mm;
+    margin: 0mm;
+    background: transparent;
+}
+BaseButton{
+    text-align: center;
+    font-family: "native:MainRegular";
+    font-size:2.6mm;
+    padding: 1.4mm;
+    margin:2mm;
+    color:white;
+}
+BlueButtonOnBlueBackground{
+    border-radius: 1mm;
+    background: #587EBE;
+    cn1-derive: BaseButton;
+}
+BlueButton{
+    background: #3f92c4;
+    font-family: "native:MainBold";
+    cn1-derive: BaseButton;
+}
+BlueText{
+    cn1-derive: BaseButton;
+    font-family: "native:MainBold";
+    color: #3f92c4;
+    background: transparent;
+}
+GreenButton{
+    cn1-derive: BaseButton;
+    font-family: "native:MainBold";
+    background: #00A400;
+}
+WhiteLinkButton{
+    cn1-derive: BaseButton;
+    font-family: "native:MainLight";
+    margin: 0px;
+}
+TextHint{
+    font-family: "native:MainLight";
+    font-size: 2.6mm;
+    padding: 2mm;
+}
+TextField{
+    margin:2mm;
+}
+GroupElementFirst{
+    padding: 3mm;
+}
+GroupElementLast{
+    padding: 3mm;
+}
+
+/** Style for the side menu */
+SideNavigationPanel {
+    background: white;
+    padding: 2mm 1mm 1mm 1mm;
+}
+
+@media platform-ios {
+    /** iOS Only styles for side menu. */
+    SideNavigationPanel {
+        /** Extra top padding to deal with notch on iPhoneX */
+        padding: 6mm 1mm 1mm 1mm;
+    }
+}
+
+/** Style for commands in side menu. */
+SideCommand {
+    padding: 1mm;
+    border: none;
+    text-decoration: none;
+    color: black;
+    font-family: "native:MainLight";
+    font-size: 4mm;
+    border-bottom: 2px solid #cccccc;
+}
+
+Toolbar {
+    border: none;
+    background-image: url(img/lol.png);
+    cn1-background-type: cn1-image-scaled-fill;
+    cn1-source-dpi: 0;
+    padding: 6mm 3mm 3mm 3mm;
+    margin: 0px;
+}
+Label{
+    padding: 4mm 3mm 4mm 3mm;
+    font-family: "native:MainLight";
+    font-size: 3.5mm;
+    border-bottom: #cccccc 2px solid;
+}
+Task{
+    border-bottom: #cccccc 2px solid;
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+}
+ToggleButton{
+    color: #cfcfcf;
+    background: transparent;
+    border: none;
+}
+ToggleButton.selected, ToggleButton.pressed{
+    color: #6868FD
+}
+TitleCommand{
+    color: #ffffff;
+    background: transparent;
+    font-size: 5mm;
+}
+SplashForm{
+    background-color: #52ADCA;
+    margin: 0px;
+    padding: 0px;
+}
+@font-face{
+    font-family: "mindfulness";
+    src: url(img/mind.ttf);
+}
+IconFont{
+    font-family: "mindfulness";
+    font-size: 13mm;
+    color: white;
+    background-color: transparent;
+}
+Form{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
