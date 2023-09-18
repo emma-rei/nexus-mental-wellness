@@ -12,7 +12,7 @@ import com.codename1.ui.plaf.*;
 import com.codename1.ui.util.Resources;
 import com.nexus.nexwell.games.*;
 
-import com.nexus.nexwell.homepage.HomePageForm;
+import com.nexus.nexwell.forms.HomePageForm;
 import static com.codename1.ui.util.Resources.getGlobalResources;
 import com.nexus.nexwell.homepage.UIController;
 

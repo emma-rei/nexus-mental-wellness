@@ -9,6 +9,7 @@ import com.codename1.ui.animations.MorphTransition;
 import com.codename1.ui.animations.Motion;
 import com.codename1.ui.util.UITimer;
 import com.nexus.nexwell.forms.LoginForm;
+import com.nexus.nexwell.forms.MainForm;
 
 public class UIController {
     public static void showSplashScreen(){
@@ -35,5 +36,8 @@ public class UIController {
     }
     public static void showHomePageForm(){
         new LoginForm().show();
+    }
+    public static void showMainUI(){
+        new MainForm().show();
     }
 }

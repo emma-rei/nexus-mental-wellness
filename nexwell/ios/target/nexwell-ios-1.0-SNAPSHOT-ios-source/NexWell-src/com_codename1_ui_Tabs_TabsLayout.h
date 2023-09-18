@@ -1,0 +1,77 @@
+#ifndef __COM_CODENAME1_UI_TABS_TABSLAYOUT__
+#define __COM_CODENAME1_UI_TABS_TABSLAYOUT__
+
+#include "cn1_globals.h"
+#include "com_codename1_ui_layouts_Layout.h"
+extern struct clazz class__com_codename1_ui_Tabs_TabsLayout;
+extern void __INIT_VTABLE_com_codename1_ui_Tabs_TabsLayout(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_codename1_ui_Tabs_TabsLayout(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_codename1_ui_Tabs_TabsLayout(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_codename1_ui_Tabs_TabsLayout(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_codename1_ui_Tabs_TabsLayout(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_codename1_ui_Tabs_TabsLayout___INIT_____com_codename1_ui_Tabs(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_ui_Tabs_TabsLayout_layoutContainer___com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_ui_Tabs_TabsLayout_getPreferredSize___com_codename1_ui_Container_R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_codename1_ui_Tabs_TabsLayout___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Tabs_TabsLayout_addLayoutComponent___java_lang_Object_com_codename1_ui_Component_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3);
+
+JAVA_VOID com_codename1_ui_Tabs_TabsLayout_removeLayoutComponent___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_ui_Tabs_TabsLayout_getComponentConstraint___com_codename1_ui_Component_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_ui_Tabs_TabsLayout_cloneConstraint___java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_ui_Tabs_TabsLayout_isOverlapSupported___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_codename1_ui_Tabs_TabsLayout_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT com_codename1_ui_Tabs_TabsLayout_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_codename1_ui_Tabs_TabsLayout_isConstraintTracking___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_codename1_ui_Tabs_TabsLayout_obscuresPotential___com_codename1_ui_Container_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_BOOLEAN com_codename1_ui_Tabs_TabsLayout_overridesTabIndices___com_codename1_ui_Container_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_INT com_codename1_ui_Tabs_TabsLayout_updateTabIndices___com_codename1_ui_Container_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_ui_Tabs_TabsLayout_getChildrenInTraversalOrder___com_codename1_ui_Container_R_com_codename1_ui_Component_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_codename1_ui_Tabs_TabsLayout_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Tabs_TabsLayout_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Tabs_TabsLayout_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_codename1_ui_Tabs_TabsLayout_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Tabs_TabsLayout_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_codename1_ui_Tabs_TabsLayout_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_codename1_ui_Tabs_TabsLayout_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_codename1_ui_Tabs_TabsLayout_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+JAVA_OBJECT get_field_com_codename1_ui_Tabs_TabsLayout_this_0(JAVA_OBJECT t);
+void set_field_com_codename1_ui_Tabs_TabsLayout_this_0(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_codename1_ui_Tabs_TabsLayout {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT com_codename1_ui_Tabs_TabsLayout_this_0;
+};
+
+
+
+#endif //__COM_CODENAME1_UI_TABS_TABSLAYOUT__

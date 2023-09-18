@@ -1,4 +1,4 @@
-
+    
 package com.nexus.nexwell.forms;
 
 import com.codename1.ui.Button;
@@ -54,6 +54,7 @@ public class LoginForm extends Form {
             cnt.setScrollableY(true);
             add(CENTER, cnt);
         }
+        login.addActionListener(e-> new MainForm().show());
         
     }
     protected boolean shouldPaintStatusBar(){

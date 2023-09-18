@@ -1,0 +1,86 @@
+#ifndef __COM_NEXUS_NEXWELL_NEXWELLSTUB__
+#define __COM_NEXUS_NEXWELL_NEXWELLSTUB__
+
+#include "cn1_globals.h"
+#include "com_codename1_impl_ios_Lifecycle.h"
+#include "java_lang_Runnable.h"
+extern struct clazz class__com_nexus_nexwell_NexWellStub;
+extern void __INIT_VTABLE_com_nexus_nexwell_NexWellStub(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_nexus_nexwell_NexWellStub(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_nexus_nexwell_NexWellStub(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_nexus_nexwell_NexWellStub(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_nexus_nexwell_NexWellStub(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_nexus_nexwell_NexWellStub(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_nexus_nexwell_NexWellStub_d___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_applicationDidEnterBackground__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_applicationWillEnterForeground__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_applicationDidBecomeActive__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_nexus_nexwell_NexWellStub_shouldApplicationHandleURL___java_lang_String_java_lang_String_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_applicationWillTerminate__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_main___java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_nexus_nexwell_NexWellStub_access$000___com_nexus_nexwell_NexWellStub_R_com_nexus_nexwell_NexWell(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_applicationWillResignActive__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_headphonesConnected__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_headphonesDisconnected__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_BOOLEAN com_nexus_nexwell_NexWellStub_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_nexus_nexwell_NexWellStub_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_nexus_nexwell_NexWellStub_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_nexus_nexwell_NexWellStub_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_nexus_nexwell_NexWellStub_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_nexus_nexwell_NexWellStub_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_OBJECT get_static_com_nexus_nexwell_NexWellStub_PACKAGE_NAME();
+extern JAVA_OBJECT get_static_com_nexus_nexwell_NexWellStub_APPLICATION_VERSION();
+extern JAVA_OBJECT get_static_com_nexus_nexwell_NexWellStub_APPLICATION_NAME();
+JAVA_OBJECT get_field_com_nexus_nexwell_NexWellStub_i(JAVA_OBJECT t);
+void set_field_com_nexus_nexwell_NexWellStub_i(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_com_nexus_nexwell_NexWellStub_initialized(JAVA_OBJECT t);
+void set_field_com_nexus_nexwell_NexWellStub_initialized(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_BOOLEAN get_field_com_nexus_nexwell_NexWellStub_stopped(JAVA_OBJECT t);
+void set_field_com_nexus_nexwell_NexWellStub_stopped(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Val, JAVA_OBJECT __cn1T);
+
+
+struct obj__com_nexus_nexwell_NexWellStub {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+    JAVA_OBJECT com_nexus_nexwell_NexWellStub_i;
+    JAVA_BOOLEAN com_nexus_nexwell_NexWellStub_initialized;
+    JAVA_BOOLEAN com_nexus_nexwell_NexWellStub_stopped;
+};
+
+
+
+#endif //__COM_NEXUS_NEXWELL_NEXWELLSTUB__

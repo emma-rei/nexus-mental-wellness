@@ -1,5 +1,5 @@
 
-/* /Users/kazybekkhairulla/NetBeansProjects/nexwell 2/common/src/main/css/theme.css */
+/* /Users/kazybekkhairulla/NetBeansProjects/nexwell/javase/../common/src/main/css/theme.css */
 /** Define Theme Constants here */
 #Constants {
     includeNativeBool: true;
@@ -35,7 +35,7 @@ DialogTitle {
 }
 
 LoginTitle{
-    background-image: url("cn1-merged-files/84e4f5e028e2b988f297a31bc9999e0a/img/nexus-logo.png");
+    background-image: url("cn1-merged-files/5cd27a44bef857fee4f7cb19c2734126/img/nexus-logo.png");
     cn1-source-dpi: 0;
     cn1-background-type: cn1-image-scaled-fill;
     margin:0px;
@@ -53,6 +53,7 @@ BaseButton{
     padding: 1.4mm;
     margin:2mm;
     color:white;
+    
 }
 BlueButtonOnBlueBackground{
     border-radius: 1mm;
@@ -122,7 +123,7 @@ SideCommand {
 
 Toolbar {
     border: none;
-    background-image: url("cn1-merged-files/84e4f5e028e2b988f297a31bc9999e0a/img/lol.png");
+    background-image: url("cn1-merged-files/5cd27a44bef857fee4f7cb19c2734126/img/lol.png");
     cn1-background-type: cn1-image-scaled-fill;
     cn1-source-dpi: 0;
     padding: 6mm 3mm 3mm 3mm;
@@ -160,7 +161,7 @@ SplashForm{
 }
 @font-face{
     font-family: "mindfulness";
-    src: url("cn1-merged-files/84e4f5e028e2b988f297a31bc9999e0a/img/mind.ttf");
+    src: url("cn1-merged-files/5cd27a44bef857fee4f7cb19c2734126/img/mind.ttf");
 }
 IconFont{
     font-family: "mindfulness";
@@ -173,6 +174,43 @@ Form{
     margin: 0px;
     padding: 0px;
 }
+TitleSearch{
+    color: #617678;
+    font-family: "native:MainThin";
+    font-size: 2.6mm;
+    border: 1px #000000 cn1-pill-border;
+    background-color: #e2e9ea;
+    padding: 0.5mm 4mm 0.5mm 4mm;
+    margin: 0.5mm 1.5mm 0.5mm 1.5mm;
+}
+Tab{
+    font-family: "native:MainLight";
+    font-size:4mm;
+    color: black;
+    text-align: center;
+    padding: 2mm 2mm 1mm 2mm;
+    border: none;
+    background: white;
+    margin: 1px 0px 1px 0px;
+}
+TabsContainer{
+    margin: 0px;
+    padding: 1px 0px 1px 0px;
+    background: gray;
+}
+Tab.selected, Tab.pressed{
+    color: #2D72E4;
+    border: none;
+}
 
-
-/* end /Users/kazybekkhairulla/NetBeansProjects/nexwell 2/common/src/main/css/theme.css*/
+PaddedSeparator{
+    background: #DCDEE3;
+    padding: 0.5mm;
+    margin: 0px;
+}
+HalfPaddedSeparator{
+    cn1-derive: PaddedSeparator;
+    padding: 0.25mm;
+    
+}
+/* end /Users/kazybekkhairulla/NetBeansProjects/nexwell/javase/../common/src/main/css/theme.css*/
