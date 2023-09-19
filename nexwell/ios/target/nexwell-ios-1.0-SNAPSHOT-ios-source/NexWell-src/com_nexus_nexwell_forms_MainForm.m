@@ -494,7 +494,7 @@ JAVA_VOID com_nexus_nexwell_forms_MainForm_lambda$games$6___com_codename1_ui_Dia
 
 JAVA_VOID com_nexus_nexwell_forms_MainForm_lambda$games$5___com_codename1_ui_Dialog_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_MainForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 3, 0, 10243, 10253);
+    DEFINE_METHOD_STACK(3, 3, 0, 10243, 10253);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -502,7 +502,7 @@ JAVA_VOID com_nexus_nexwell_forms_MainForm_lambda$games$5___com_codename1_ui_Dia
     __CN1_DEBUG_INFO(64);
     PUSH_POINTER(__NEW_com_nexus_nexwell_games_GameOfLifeForm(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    com_nexus_nexwell_games_GameOfLifeForm___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    /* CustomInvoke */com_nexus_nexwell_games_GameOfLifeForm___INIT_____int(threadStateData, SP[-1].data.o, 25);     SP -= 1;
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(65);
     virtual_com_nexus_nexwell_games_GameOfLifeForm_show__(threadStateData, locals[2].data.o); 

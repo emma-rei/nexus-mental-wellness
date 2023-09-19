@@ -6,9 +6,10 @@ import com.codename1.ui.Button;
 import com.codename1.ui.Component;
 import com.codename1.ui.Container;
 import com.codename1.ui.Dialog;
-
+import com.nexus.nexwell.models.User;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
+import com.codename1.ui.Label;
 import com.codename1.ui.Tabs;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
@@ -16,6 +17,7 @@ import com.nexus.nexwell.components.RichTextView;
 
 import com.nexus.nexwell.games.*;
 import com.nexus.nexwell.homepage.ContentFeed;
+import com.nexus.nexwell.server.ServerAPI;
 
 public class MainForm extends Form {
     private Tabs mainUI = new Tabs();
@@ -31,8 +33,9 @@ public class MainForm extends Form {
         
         Button searchButton = new Button("Search", "TitleSearch");
         FontImage.setMaterialIcon(searchButton, FontImage.MATERIAL_SEARCH);
-        getToolbar().setTitleComponent(searchButton);
         
+        getToolbar().setTitleComponent(searchButton);
+        //Label l = new Label("Welcome Back" + ServerAPI.me().fullName());
         FloatingActionButton fab = FloatingActionButton.
                 createFAB(FontImage.MATERIAL_CALL);
         fab.bindFabToContainer(this);
@@ -60,10 +63,10 @@ public class MainForm extends Form {
             
         });
         gameOfLifeButton.addActionListener(e -> {
-            
-            GameOfLifeForm form = new GameOfLifeForm();
-            form.show();
             gameOptionsDialog.dispose();
+            new GameOfLifeForm(25).show();
+            
+            
         });
         cancelButton.addActionListener(e -> {
             

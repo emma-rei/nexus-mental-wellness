@@ -15,8 +15,8 @@
 		62A5DD5C7B7A2AE6D927F76034D85EEB /* Pods-NexWell-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NexWell-acknowledgements.plist"; sourceTree = "<group>"; };
 		65AD68D9315C0D9FFA43E2D3CEE19F3A /* Pods-NexWell-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NexWell-dummy.m"; sourceTree = "<group>"; };
 		74E20A2BA0F9F71D685D3F48B368AFEE /* Pods-NexWell-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NexWell-acknowledgements.markdown"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA72B7552B59524E18D0525B97573F0F /* Pods-NexWell */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-NexWell"; path = "libPods-NexWell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AA72B7552B59524E18D0525B97573F0F /* libPods-NexWell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NexWell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF34CCFC6E69EBF97F084598AAC3BDB5 /* Pods-NexWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NexWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +55,7 @@
 		BB877A2CCF2DD9358EB0DD683A1FDFFF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AA72B7552B59524E18D0525B97573F0F /* Pods-NexWell */,
+				AA72B7552B59524E18D0525B97573F0F /* libPods-NexWell.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,7 +104,7 @@
 			);
 			name = "Pods-NexWell";
 			productName = "Pods-NexWell";
-			productReference = AA72B7552B59524E18D0525B97573F0F /* Pods-NexWell */;
+			productReference = AA72B7552B59524E18D0525B97573F0F /* libPods-NexWell.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -201,8 +201,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

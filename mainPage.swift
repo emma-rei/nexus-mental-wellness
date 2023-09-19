@@ -87,3 +87,4 @@ struct mainPage_Previews: PreviewProvider {
         mainPage(username: "Bob", tip: "An apple a day keeps the doctor away! Seriously though Just eat some.")
     }
 }
+

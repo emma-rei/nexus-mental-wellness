@@ -9,9 +9,8 @@ extern void __STATIC_INITIALIZER_com_nexus_nexwell_games_GameOfLifeForm(CODENAME
 extern void __FINALIZER_com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
 extern void __GC_MARK_com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
 extern JAVA_OBJECT __NEW_com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_THREAD_STATE);
-extern JAVA_OBJECT __NEW_INSTANCE_com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_THREAD_STATE);
 
-JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_startSimulation__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
@@ -30,6 +29,8 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$2___com_nexus_nexwel
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$1___com_nexus_nexwell_games_GameOfLifeForm_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$0___com_nexus_nexwell_games_GameOfLifeForm_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2);
+
+JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm___INIT_____com_codename1_ui_layouts_Layout(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
 
@@ -1540,8 +1541,6 @@ JAVA_OBJECT get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalLabel(JAVA_
 void set_field_com_nexus_nexwell_games_GameOfLifeForm_intervalLabel(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
 JAVA_OBJECT get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(JAVA_OBJECT t);
 void set_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
-JAVA_INT get_field_com_nexus_nexwell_games_GameOfLifeForm_boardSize(JAVA_OBJECT t);
-void set_field_com_nexus_nexwell_games_GameOfLifeForm_boardSize(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
 JAVA_OBJECT get_field_com_nexus_nexwell_games_GameOfLifeForm_titleArea(JAVA_OBJECT t);
 void set_field_com_nexus_nexwell_games_GameOfLifeForm_titleArea(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
 JAVA_BOOLEAN get_field_com_nexus_nexwell_games_GameOfLifeForm_focusScrolling(JAVA_OBJECT t);
@@ -1815,7 +1814,6 @@ struct obj__com_nexus_nexwell_games_GameOfLifeForm {
     JAVA_OBJECT com_nexus_nexwell_games_GameOfLifeForm_uiTimer;
     JAVA_OBJECT com_nexus_nexwell_games_GameOfLifeForm_intervalLabel;
     JAVA_OBJECT com_nexus_nexwell_games_GameOfLifeForm_intervalSlider;
-    JAVA_INT com_nexus_nexwell_games_GameOfLifeForm_boardSize;
 };
 
 

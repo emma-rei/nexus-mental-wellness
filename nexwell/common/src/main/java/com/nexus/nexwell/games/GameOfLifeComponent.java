@@ -31,7 +31,7 @@ public class GameOfLifeComponent extends Component {
             updateCellState(x, y);
         }
     }
-
+    
     private void pointerReleased() {
         pointerPressed = false;
         lastCellX = -1;

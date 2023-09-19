@@ -15,9 +15,9 @@ public class GameOfLifeForm extends Form {
     private UITimer uiTimer;
     private Label intervalLabel;
     private Slider intervalSlider;
-    private int boardSize;
+    
 
-    public GameOfLifeForm() {
+    public GameOfLifeForm(int boardSize) {
         game = new GameOfLife(boardSize, boardSize); // Change width and height to fit your desired grid size
         // also instead of constructor taking in the board size I create private int boardsize
         gameComponent = new GameOfLifeComponent(game);

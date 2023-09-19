@@ -1084,7 +1084,7 @@
 		0F63FACC18E9ABBC002F3D1D /* com_codename1_ui_plaf_CSSBorder_ColorStop.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F63FACB18E9ABBC002F3D1D /* com_codename1_ui_plaf_CSSBorder_ColorStop.m */; };
 		0F63FACE18E9ABBC002F3D1D /* com_codename1_ui_util_EventDispatcher_CallbackClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F63FACD18E9ABBC002F3D1D /* com_codename1_ui_util_EventDispatcher_CallbackClass.m */; };
 		0F63FAD018E9ABBC002F3D1D /* java_util_AbstractMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F63FACF18E9ABBC002F3D1D /* java_util_AbstractMap.m */; };
-		677A998A5915A4CE49D10198 /* libPods-NexWell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABBAA871D86F87CBDF83445 /* libPods-NexWell.a */; };
+		4A84DB3339F148A99831F5BE /* libPods-NexWell.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 503539684EB46705E740E137 /* libPods-NexWell.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1098,7 +1098,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0ABBAA871D86F87CBDF83445 /* libPods-NexWell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NexWell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F634E7518E9ABBC002F3D1D /* NexWell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexWell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F634E7818E9ABBC002F3D1D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0F634E7A18E9ABBC002F3D1D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1106,7 +1105,7 @@
 		0F634E7C18EAABBC002F3D1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0F634E7E18E9ABBC002F3D1D /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		0F634E8018E9ABBC002F3D1D /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
-		0F634EA118E9ABBC002F3D1D /* NexWellTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = file; path = NexWellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F634EA118E9ABBC002F3D1D /* NexWellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexWellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F634EA218E9ABBC002F3D1D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = System/Library/Frameworks/XCTest.framework; sourceTree = SDKROOT; };
 		0F63EAAB18E9ABBC002F3D1D /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		0F63EAAD18E9ABBC002F3D1D /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
@@ -3176,8 +3175,9 @@
 		0F63FACD18E9ABBC002F3D1D /* com_codename1_ui_util_EventDispatcher_CallbackClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = com_codename1_ui_util_EventDispatcher_CallbackClass.m; sourceTree = "<group>"; };
 		0F63FACF18E9ABBC002F3D1D /* java_util_AbstractMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = java_util_AbstractMap.m; sourceTree = "<group>"; };
 		0F63FAD118E9ABBC002F3D1D /* com_codename1_impl_CodenameOneImplementation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = com_codename1_impl_CodenameOneImplementation.h; sourceTree = "<group>"; };
-		362D0F13B5C9B3E32F2CE530 /* Pods-NexWell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexWell.debug.xcconfig"; path = "Target Support Files/Pods-NexWell/Pods-NexWell.debug.xcconfig"; sourceTree = "<group>"; };
-		9746844A7314DDBE4E387DBD /* Pods-NexWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexWell.release.xcconfig"; path = "Target Support Files/Pods-NexWell/Pods-NexWell.release.xcconfig"; sourceTree = "<group>"; };
+		503539684EB46705E740E137 /* libPods-NexWell.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NexWell.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84548C6AC76418D8B0160E7F /* Pods-NexWell.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexWell.debug.xcconfig"; path = "Target Support Files/Pods-NexWell/Pods-NexWell.debug.xcconfig"; sourceTree = "<group>"; };
+		92D7296B146A0681E4683815 /* Pods-NexWell.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NexWell.release.xcconfig"; path = "Target Support Files/Pods-NexWell/Pods-NexWell.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -3218,7 +3218,7 @@
 				0F63EADE18E9ABBC002F3D1D /* QuartzCore.framework in Frameworks */,
 				0F63EEDE18E9ABBC002F3D1D /* NexWell-src/NexWell-Prefix.pch in Frameworks */,
 				0F63F7AE18E9ABBC002F3D1D /* NexWell-src/NexWell-Info.plist in Frameworks */,
-				677A998A5915A4CE49D10198 /* libPods-NexWell.a in Frameworks */,
+				4A84DB3339F148A99831F5BE /* libPods-NexWell.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3241,8 +3241,8 @@
 				0F634EA818E9ABBC002F3D1D /* NexWellTests */,
 				0F634E7718E9ABBC002F3D1D /* Frameworks */,
 				0F634E7618E9ABBC002F3D1D /* Products */,
-				EB4FDBB71C4B1CF8041A57B6 /* Pods */,
-				9233A5452AB8D31100758A6D /* Recovered References */,
+				AF6D169E4D5CEFD68ABFC89B /* Pods */,
+				92D83C132AB9237D002298F8 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3292,7 +3292,7 @@
 				0F63EADD18E9ABBC002F3D1D /* QuartzCore.framework */,
 				0F63EEDD18E9ABBC002F3D1D /* NexWell-src/NexWell-Prefix.pch */,
 				0F63F7AD18E9ABBC002F3D1D /* NexWell-src/NexWell-Info.plist */,
-				0ABBAA871D86F87CBDF83445 /* libPods-NexWell.a */,
+				503539684EB46705E740E137 /* libPods-NexWell.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -5313,7 +5313,7 @@
 			path = NexWellTests;
 			sourceTree = "<group>";
 		};
-		9233A5452AB8D31100758A6D /* Recovered References */ = {
+		92D83C132AB9237D002298F8 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				0F63EB9718E9ABBC002F3D1D /* NexWell-src/MANIFEST.MF */,
@@ -5359,11 +5359,11 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		EB4FDBB71C4B1CF8041A57B6 /* Pods */ = {
+		AF6D169E4D5CEFD68ABFC89B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				362D0F13B5C9B3E32F2CE530 /* Pods-NexWell.debug.xcconfig */,
-				9746844A7314DDBE4E387DBD /* Pods-NexWell.release.xcconfig */,
+				84548C6AC76418D8B0160E7F /* Pods-NexWell.debug.xcconfig */,
+				92D7296B146A0681E4683815 /* Pods-NexWell.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -5375,7 +5375,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F634EB218E9ABBC002F3D1D /* Build configuration list for PBXNativeTarget "NexWell" */;
 			buildPhases = (
-				C4B4DFBE4EFC0AD3370A0911 /* [CP] Check Pods Manifest.lock */,
+				E212196A92876CAA3A59AFD2 /* [CP] Check Pods Manifest.lock */,
 				0F634E7118E9ABBC002F3D1D /* Sources */,
 				0F634E7218E9ABBC002F3D1D /* Frameworks */,
 				0F634E7318E9ABBC002F3D1D /* Resources */,
@@ -5421,6 +5421,7 @@
 						DevelopmentTeam = 9HZ6C9KP3F;
 					};
 					0F634EA018E9ABBC002F3D1D = {
+						DevelopmentTeam = 9HZ6C9KP3F;
 						TestTargetID = 0F634E7418E9ABBC002F3D1D;
 					};
 				};
@@ -5504,7 +5505,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C4B4DFBE4EFC0AD3370A0911 /* [CP] Check Pods Manifest.lock */ = {
+		E212196A92876CAA3A59AFD2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -6644,7 +6645,7 @@
 		};
 		0F634EB318E9ABBC002F3D1D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 362D0F13B5C9B3E32F2CE530 /* Pods-NexWell.debug.xcconfig */;
+			baseConfigurationReference = 84548C6AC76418D8B0160E7F /* Pods-NexWell.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -6663,7 +6664,7 @@
 		};
 		0F634EB418E9ABBC002F3D1D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9746844A7314DDBE4E387DBD /* Pods-NexWell.release.xcconfig */;
+			baseConfigurationReference = 92D7296B146A0681E4683815 /* Pods-NexWell.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -6686,6 +6687,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NexWell.app/NexWell-src";
+				DEVELOPMENT_TEAM = 9HZ6C9KP3F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -6698,7 +6700,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "NexWellTests/NexWellTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -6710,6 +6712,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/NexWell.app/NexWell-src";
+				DEVELOPMENT_TEAM = 9HZ6C9KP3F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -6718,7 +6721,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "NexWell-src/NexWell-Prefix.pch";
 				INFOPLIST_FILE = "NexWellTests/NexWellTests-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -6735,7 +6738,7 @@
 				0F634EB118E9ABBC002F3D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0F634EB218E9ABBC002F3D1D /* Build configuration list for PBXNativeTarget "NexWell" */ = {
 			isa = XCConfigurationList;
@@ -6744,7 +6747,7 @@
 				0F634EB418E9ABBC002F3D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		0F634EB518E9ABBC002F3D1D /* Build configuration list for PBXNativeTarget "NexWellTests" */ = {
 			isa = XCConfigurationList;
@@ -6753,7 +6756,7 @@
 				0F634EB718E9ABBC002F3D1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
