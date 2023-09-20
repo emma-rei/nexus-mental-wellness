@@ -21,8 +21,9 @@ public class LangtonsAntForm extends Form {
 
     private int period = 10;
 
-    public LangtonsAntForm() {
+    public LangtonsAntForm(Form home) {
         setTitle("Langton's Ant");
+        this.addLongPressListener(e -> home.showBack());
         size = Display.getInstance().getDisplayWidth() / WIDTH;
         setPreferredSize(new Dimension(WIDTH * size, HEIGHT * size));
 

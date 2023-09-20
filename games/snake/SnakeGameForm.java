@@ -1,5 +1,6 @@
 package org.nexus.games.snake;
 
+import com.codename1.ui.Command;
 import com.codename1.ui.Form;
 import com.codename1.ui.Graphics;
 import com.codename1.ui.events.ActionEvent;
@@ -14,8 +15,14 @@ public class SnakeGameForm extends Form {
     private SnakeGame snakeGame;
     private int initialX, initialY;
 
-    public SnakeGameForm() {
+    public SnakeGameForm(Form home) {
         setLayout(new BorderLayout());
+
+        getToolbar().setBackCommand(new Command("Back") {
+            public void actionPerformed(ActionEvent evt) {
+                home.showBack();
+            }
+        });
 
         snakeGame = new SnakeGame();
 

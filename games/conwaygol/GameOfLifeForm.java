@@ -1,6 +1,7 @@
 package org.nexus.games.conwaygol;
 
 import com.codename1.ui.*;
+import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.FlowLayout;
 import com.codename1.ui.util.UITimer;
@@ -13,8 +14,16 @@ public class GameOfLifeForm extends Form {
     private Label intervalLabel;
     private Slider intervalSlider;
 
-    public GameOfLifeForm(int boardSize) {
-        game = new GameOfLife(boardSize, boardSize); // Change width and height to fit your desired grid size
+    public GameOfLifeForm(Form home, int boardSize) {
+        setTitle("Conway's Game of Life");
+
+        getToolbar().setBackCommand(new Command("Back") {
+            public void actionPerformed(ActionEvent evt) {
+                home.showBack();
+            }
+        });
+
+        game = new GameOfLife(boardSize, boardSize);
         gameComponent = new GameOfLifeComponent(game);
 
         this.setLayout(new BorderLayout());

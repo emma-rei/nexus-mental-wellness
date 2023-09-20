@@ -19,8 +19,9 @@ public class ChaosGame extends Form {
 
     private Random r;
 
-    public ChaosGame() {
+    public ChaosGame(Form home) {
         setTitle("Chaos Game");
+        this.addLongPressListener(e -> home.showBack());
 
         panelSize = getWidth();
         corners = new int[][]{{panelSize / 5, panelSize / 3 + getHeight() / 3}, {panelSize * 4 / 5, panelSize / 3 + getHeight() / 3}, {panelSize / 2, getHeight() / 3 - panelSize / 4}};

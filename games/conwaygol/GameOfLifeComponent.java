@@ -44,7 +44,7 @@ public class GameOfLifeComponent extends Component {
     private void updateCellState(int x, int y) {
         int cellSize = getWidth() / game.getWidth();
         int cellX = x / cellSize;
-        int cellY = y / cellSize;
+        int cellY = (y-getAbsoluteY()) / cellSize;
 
         if (cellX >= 0 && cellX < game.getWidth() && cellY >= 0 && cellY < game.getHeight()) {
             if (cellX != lastCellX || cellY != lastCellY) {
