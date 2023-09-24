@@ -49,17 +49,10 @@ public class HomePageForm extends Form {
         
         getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> {});
         getToolbar().addMaterialCommandToLeftSideMenu("Resources",FontImage.MATERIAL_BOOKMARKS,4, e -> {});
-        getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> new SnakeGameApp().start());
+        getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> new SnakeGameApp());
         
     }
-    private void games(){
-        Container cnt = new Container(BoxLayout.y());
-        cnt.setScrollableY(true);
-        Button sn = new Button("Snake", "SnakeButton");
-        sn.addActionListener(e-> new SnakeGameApp().start());
-        cnt.add(sn);
-        
-    }
+    
     
     /*
     private void addNewItem(){

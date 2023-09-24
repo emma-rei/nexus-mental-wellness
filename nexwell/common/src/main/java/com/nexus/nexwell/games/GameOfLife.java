@@ -1,7 +1,4 @@
-
 package com.nexus.nexwell.games;
-
-
 
 public class GameOfLife {
     private int width;
@@ -81,4 +78,3 @@ public class GameOfLife {
     }
 
 }
-

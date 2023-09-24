@@ -3,29 +3,24 @@ package com.nexus.nexwell.forms;
 
 import com.codename1.components.FloatingActionButton;
 import com.codename1.ui.Button;
+import static com.codename1.ui.CN.getCurrentForm;
 import com.codename1.ui.Component;
 import com.codename1.ui.Container;
 import com.codename1.ui.Dialog;
-import com.codename1.ui.Display;
-import com.nexus.nexwell.models.User;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
-import com.codename1.ui.Label;
 import com.codename1.ui.Tabs;
 import com.codename1.ui.TextArea;
 import com.codename1.ui.TextField;
 import com.codename1.ui.Toolbar;
-import com.codename1.ui.geom.Rectangle2D;
+
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
-import com.codename1.ui.layouts.GridLayout;
-import com.codename1.ui.plaf.Style;
-import com.codename1.ui.plaf.UIManager;
-import com.codename1.ui.table.TableLayout;
-import com.codename1.ui.util.Resources;
+
 import com.nexus.nexwell.components.RichTextView;
 
 import com.nexus.nexwell.games.*;
+import com.nexus.nexwell.satisfyingvisuals.*;
 import com.nexus.nexwell.homepage.ContentFeed;
 
 import com.nexus.nexwell.server.ServerAPI;
@@ -50,9 +45,16 @@ public class MainForm extends Form {
         
         Button searchButton = new Button("Search", "TitleSearch");
         FontImage.setMaterialIcon(searchButton, FontImage.MATERIAL_SEARCH);
-        
+        /*//accepts a string from u user TA, and searches up in the database
+        searchButton.addActionListener(e -> {
+            
+        });
+        */
         getToolbar().setTitleComponent(searchButton);
         String searchString;
+        
+        
+        
         /*
         getToolbar().addSearchCommand(e -> {
             searchString = (String)e.getSource();
@@ -72,28 +74,29 @@ public class MainForm extends Form {
         
         
         
-        //load();
+        
         
         getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm().show());
         getToolbar().addMaterialCommandToLeftSideMenu("Resources",FontImage.MATERIAL_BOOKMARKS,4, e -> {});
         getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
+        getToolbar().addMaterialCommandToLeftSideMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
         
     }
     public void games(){
         Dialog gameOptionsDialog = new Dialog("Choose a game");
-
+        
         Container options = new Container(new BoxLayout(BoxLayout.Y_AXIS));
         Button snakeButton = new Button("Game of Snake");
         Button gameOfLifeButton = new Button("Game of Life");
         Button cancelButton = new Button("Cancel");
         snakeButton.addActionListener(e -> {
             gameOptionsDialog.dispose();
-            new SnakeGameApp().start();
+            new SnakeGameForm().show();
             
         });
         gameOfLifeButton.addActionListener(e -> {
             gameOptionsDialog.dispose();
-            new GameOfLifeForm(25).show();
+            new GameOfLifeForm( 25).show();
             
             
         });
@@ -114,6 +117,42 @@ public class MainForm extends Form {
         Container options = new Container(new BoxLayout(BoxLayout.Y_AXIS));
         
     }
+    public void satisfyingvisuals(){
+        Dialog visualsOptionsDialog = new Dialog("Choose a visual");
         
+        Container options = new Container(new BoxLayout(BoxLayout.Y_AXIS));
+        Button chaosGameButton = new Button("Chaos Game");
+        Button langtonsAntButton = new Button("LangtonsAnt");
+        Button bubbleGameButton = new Button("Bubble Game");
+        Button cancelButton = new Button("Cancel");
+        chaosGameButton.addActionListener(e -> {
+            visualsOptionsDialog.dispose();
+            new ChaosGame().show();
+            
+        });
+        langtonsAntButton.addActionListener(e -> {
+            visualsOptionsDialog.dispose();
+            new LangtonsAntForm().show();
+            
+            
+        });
+        bubbleGameButton.addActionListener(e -> {
+            visualsOptionsDialog.dispose();
+            new BubbleGame().show();
+            
+            
+        });
+        cancelButton.addActionListener(e -> {
+            
+            
+            visualsOptionsDialog.dispose();
+        });
+        options.add(chaosGameButton);
+        options.add(langtonsAntButton);
+        options.add(bubbleGameButton);
+        options.add(cancelButton);
+        visualsOptionsDialog.add(options);
+        visualsOptionsDialog.show();
+    } 
     
 }

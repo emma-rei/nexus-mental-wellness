@@ -16,6 +16,7 @@ public class SnakeGame {
     private boolean gameOver;
     protected int boardWidth;
     protected int boardHeight;
+    public boolean cancel;
 
     public SnakeGame() {
         snake = new ArrayList<>();
@@ -23,7 +24,7 @@ public class SnakeGame {
         gameOver = false;
         boardWidth = 15;
         boardHeight = 15;
-
+        cancel = false;
         // Initialize the Snake's starting position
         snake.add(new Point(4, 4));
 
@@ -85,10 +86,15 @@ public class SnakeGame {
             restartGame();
             gameOverDialog.dispose();
         });
+        Button cancelButton = new Button("Cancel");
+        cancelButton.addActionListener(e -> {
+            setCancel(true);// When the user clicks cancel btn, cancel becomes true in stopform and thus else if condition gets triggered
+            gameOverDialog.dispose();
+        });
 
         content.add("Game Over! Your Score: " + (snake.size() - 1));
         content.add(restartButton);
-
+        content.add(cancelButton);
         gameOverDialog.add(content);
         gameOverDialog.show();
     }
@@ -116,7 +122,13 @@ public class SnakeGame {
     public boolean isGameOver() {
         return gameOver;
     }
+
+    public boolean isCancel() {
+        return cancel;
+    }
+
+    public void setCancel(boolean cancel) {
+        this.cancel = cancel;
+    }
+    
 }
-
-
-

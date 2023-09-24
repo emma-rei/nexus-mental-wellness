@@ -1,9 +1,10 @@
 package com.nexus.nexwell.games;
 
+import com.codename1.ui.Form;
+
 public class SnakeGameApp {
     public void start() {
         SnakeGameForm form = new SnakeGameForm();
-        
         form.show();
     }
 

@@ -1,9 +1,8 @@
-
 package com.nexus.nexwell.games;
 
-
-
 import com.codename1.ui.*;
+import static com.codename1.ui.CN.getCurrentForm;
+import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.FlowLayout;
 import com.codename1.ui.util.UITimer;
@@ -15,17 +14,23 @@ public class GameOfLifeForm extends Form {
     private UITimer uiTimer;
     private Label intervalLabel;
     private Slider intervalSlider;
-    
 
     public GameOfLifeForm(int boardSize) {
-        game = new GameOfLife(boardSize, boardSize); // Change width and height to fit your desired grid size
-        // also instead of constructor taking in the board size I create private int boardsize
+        super("");
+        setTitle("Conway's Game of Life");
+        
+        Toolbar tb = new Toolbar();
+        setToolbar(tb);
+        Form current = getCurrentForm();
+        getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, e -> current.showBack());
+
+        game = new GameOfLife(boardSize, boardSize);
         gameComponent = new GameOfLifeComponent(game);
 
-        this.setLayout(new BorderLayout());
+        setLayout(new BorderLayout());
 
         Container centerContainer = FlowLayout.encloseCenter(gameComponent);
-        this.addComponent(BorderLayout.CENTER, centerContainer);
+        addComponent(BorderLayout.CENTER, centerContainer);
 
         Container buttonContainer = new Container(new FlowLayout(RIGHT));
         Button startButton = new Button("Start");
@@ -44,6 +49,7 @@ public class GameOfLifeForm extends Form {
         buttonContainer.add(clearButton);
 
         intervalSlider = new Slider();
+        
         intervalSlider.setEditable(true);
         intervalSlider.setMinValue(100); // Minimum interval (in milliseconds)
         intervalSlider.setMaxValue(999); // Maximum interval (in milliseconds)
@@ -56,7 +62,7 @@ public class GameOfLifeForm extends Form {
         bottomContainer.addComponent(BorderLayout.WEST, intervalLabel);
         bottomContainer.addComponent(BorderLayout.SOUTH, buttonContainer);
 
-        this.addComponent(BorderLayout.SOUTH, bottomContainer);
+        addComponent(BorderLayout.SOUTH, bottomContainer);
     }
 
     private void startSimulation() {
