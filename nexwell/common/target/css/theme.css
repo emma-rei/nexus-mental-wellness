@@ -1,5 +1,5 @@
 
-/* /Users/kazybekkhairulla/NetBeansProjects/nexwell/javase/../common/src/main/css/theme.css */
+/* /Users/kazybekkhairulla/NetBeansProjects/nexwell/common/src/main/css/theme.css */
 /** Define Theme Constants here */
 #Constants {
     includeNativeBool: true;
@@ -14,7 +14,10 @@ Button {
     font-family: "native:MainLight";
     font-size: 3mm;
 }
-
+circle{
+    font-family: "native:MainLight";
+    font-size: 3mm;
+}
 /** Style for App Title Bar Text */
 Title {
     color: white;
@@ -170,7 +173,8 @@ IconFont{
     background-color: transparent;
 }
 Form{
-    background-color: white;
+    background: linear-gradient(to top, #ccc, #579);
+    
     margin: 0px;
     padding: 0px;
 }
@@ -213,4 +217,4 @@ HalfPaddedSeparator{
     padding: 0.25mm;
     
 }
-/* end /Users/kazybekkhairulla/NetBeansProjects/nexwell/javase/../common/src/main/css/theme.css*/
+/* end /Users/kazybekkhairulla/NetBeansProjects/nexwell/common/src/main/css/theme.css*/

@@ -16,7 +16,8 @@
         <dependency>
             <groupId>com.codenameone</groupId>
             <artifactId>codenameone-core</artifactId>
-            <scope>provided</scope>
+            <version>7.0.112</version>
+            <type>jar</type>
         </dependency>
 
         <!-- INJECT DEPENDENCIES -->

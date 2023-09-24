@@ -55,6 +55,7 @@ public class LoginForm extends Form {
             add(CENTER, cnt);
         }
         login.addActionListener(e-> new MainForm().show());
+        signup.addActionListener(e -> new GamesContainer().show());
         
     }
     protected boolean shouldPaintStatusBar(){

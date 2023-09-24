@@ -12,7 +12,10 @@ Button {
     font-family: "native:MainLight";
     font-size: 3mm;
 }
-
+circle{
+    font-family: "native:MainLight";
+    font-size: 3mm;
+}
 /** Style for App Title Bar Text */
 Title {
     color: white;
@@ -168,7 +171,8 @@ IconFont{
     background-color: transparent;
 }
 Form{
-    background-color: white;
+    background: linear-gradient(to top, #ccc, #579);
+    
     margin: 0px;
     padding: 0px;
 }

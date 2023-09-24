@@ -1,7 +1,10 @@
 package com.nexus.nexwell.games;
 
+import static com.codename1.ui.CN.getCurrentForm;
+import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
 import com.codename1.ui.Graphics;
+import com.codename1.ui.Toolbar;
 import com.codename1.ui.events.ActionEvent;
 import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.geom.Point;
@@ -16,9 +19,10 @@ public class SnakeGameForm extends Form {
 
     public SnakeGameForm() {
         setLayout(new BorderLayout());
-
+        
         snakeGame = new SnakeGame();
-
+        
+        
         addPointerPressedListener(new ActionListener<ActionEvent>() {
             @Override
             public void actionPerformed(ActionEvent evt) {

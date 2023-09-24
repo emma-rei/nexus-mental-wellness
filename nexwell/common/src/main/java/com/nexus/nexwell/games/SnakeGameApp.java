@@ -3,6 +3,7 @@ package com.nexus.nexwell.games;
 public class SnakeGameApp {
     public void start() {
         SnakeGameForm form = new SnakeGameForm();
+        
         form.show();
     }
 
