@@ -36,41 +36,7 @@ public class ContentFeed extends Form{
         
         
         
-        HashMap<String, String> PhoneBook = new HashMap<String, String>();
-        PhoneBook.put("Daniel Tan", "92793403");
-        PhoneBook.put("Lori Ecran", "94894394");
-        PhoneBook.put("Zanthe Ng", "93405831");
-        PhoneBook.put("IMH Mental Health Helpline", "6389-2222");
-        PhoneBook.put("TOUCHline (Counselling)", "1800-377-2252");
-        PhoneBook.put("All addictions (NAMS)", "6732-683");
-        PhoneBook.put("National Care Hotline", "1800-202-6868");
-        PhoneBook.put("Hear4U Care Singapore", "6978-2728");
-        PhoneBook.put("Assisline / Brahm Centre", "6655-0000");
-        PhoneBook.put("Tinkle Friend Helpline", "1800-274-478");
-        PhoneBook.put("Association of Women for Action and Research", "1800-777-5555");
-        PhoneBook.put("Care Corner Counselling (Mandarin)", "1800-353-5800");
-        PhoneBook.put("HELP123 by TOUCH Youth Integrated Team", "1800-6123-123");
-        PhoneBook.put("Singapore Association for Mental Health (SAMH)", "1800-283-7019");
-        PhoneBook.put("PAVE: Individual or Family Protection", "1800-353-5800");
-        MultiButton twoLinesIconEmblemHorizontal = new MultiButton("Icon + Emblem");
-        /*
-        twoLinesIconEmblemHorizontal.setIcon(icon);
-        twoLinesIconEmblemHorizontal.setEmblem(emblem);
-        twoLinesIconEmblemHorizontal.setTextLine2("Line 2 Horizontal");
-        twoLinesIconEmblemHorizontal.setHorizontalLayout(true);
-        */
         
-        for (String i : PhoneBook.keySet()){
-            MultiButton mb = new MultiButton(i);
-            mb.setMaterialIcon(FontImage.MATERIAL_PERSON, TOP); 
-            String call = "Are you sure you want to call " + i+"?";
-            
-            mb.addActionListener(e -> Dialog.show("Confirm Call", call, "Call", "Cancel"));
-            cnt.add(mb);
-            
-        }
-        hi.add(CENTER, cnt);
-        hi.show();
     }
     
 }

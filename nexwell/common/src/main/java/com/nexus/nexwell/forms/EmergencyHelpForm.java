@@ -1,40 +1,43 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package com.nexus.nexwell.forms;
 
-import static com.codename1.io.Log.e;
-import com.codename1.ui.Button;
+import com.codename1.components.MultiButton;
+import static com.codename1.ui.CN.*;
+import static com.codename1.ui.Component.CENTER;
+import static com.codename1.ui.Component.TOP;
 import com.codename1.ui.Container;
 import com.codename1.ui.Dialog;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
+import com.codename1.ui.Toolbar;
+import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
-import java.util.ArrayList;
+import com.codename1.ui.util.SwipeBackSupport;
+import com.nexus.nexwell.forms.MainForm;
 import java.util.HashMap;
-import java.util.List;
 
-
-public class EmergencyHelpForm extends Form {
-    /*
-    private String phoneNumber;
-    private String firstName;
-    private String lastName;
-    private String role;
-    
+/**
+ *
+ * @author kazybekkhairulla
+ */
+public class EmergencyHelpForm extends Form{
     public EmergencyHelpForm(){
-        super("");
-        new BoxLayout(BoxLayout.Y_AXIS);
-        Container cnt = new Container();
-        List listOfContacts = new ArrayList();
-        Button okcall = new Button("call");
-        HashMap<String, String> PhoneBook = addContact();
+        Form hi = new Form("Emergency Help", new BorderLayout());
+        Toolbar tb = new Toolbar();
+        hi.setToolbar(tb);
+        Container cnt = new Container(BoxLayout.y());
+        
+        cnt.setScrollableY(true);
+        Form previous = getCurrentForm();
+        
+        hi.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, e -> previous.showBack());
         
         
         
-        
-    }
-    
-    public HashMap<String, String> addContact(){
-        HashMap<String, String> PhoneBook = new HashMap<>();
+        HashMap<String, String> PhoneBook = new HashMap<String, String>();
         PhoneBook.put("Daniel Tan", "92793403");
         PhoneBook.put("Lori Ecran", "94894394");
         PhoneBook.put("Zanthe Ng", "93405831");
@@ -50,10 +53,26 @@ public class EmergencyHelpForm extends Form {
         PhoneBook.put("HELP123 by TOUCH Youth Integrated Team", "1800-6123-123");
         PhoneBook.put("Singapore Association for Mental Health (SAMH)", "1800-283-7019");
         PhoneBook.put("PAVE: Individual or Family Protection", "1800-353-5800");
-        return PhoneBook;
+        MultiButton twoLinesIconEmblemHorizontal = new MultiButton("Icon + Emblem");
+        /*
+        twoLinesIconEmblemHorizontal.setIcon(icon);
+        twoLinesIconEmblemHorizontal.setEmblem(emblem);
+        twoLinesIconEmblemHorizontal.setTextLine2("Line 2 Horizontal");
+        twoLinesIconEmblemHorizontal.setHorizontalLayout(true);
+        */
         
+        for (String i : PhoneBook.keySet()){
+            MultiButton mb = new MultiButton(i);
+            mb.setMaterialIcon(FontImage.MATERIAL_PERSON, TOP); 
+            String call = "Are you sure you want to call " + i+"?";
+            
+            mb.addActionListener(e -> Dialog.show("Confirm Call", call, "Call", "Cancel"));
+            cnt.add(mb);
+            
+        }
+        hi.add(CENTER, cnt);
+        hi.show();
     }
-    */
     
-    // Need a method for invoking Dialog, transfer everything to dialog
 }
+

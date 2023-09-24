@@ -65,7 +65,7 @@ public class MainForm extends Form {
         FloatingActionButton fab = FloatingActionButton.
                 createFAB(FontImage.MATERIAL_CALL);
         fab.bindFabToContainer(this);
-        fab.addActionListener(e -> new ContentFeed());
+        fab.addActionListener(e -> new EmergencyHelpForm());
         
         
         
