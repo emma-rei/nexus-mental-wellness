@@ -5,6 +5,7 @@ com/nexus/nexwell/forms/ImagePicker.class
 com/nexus/nexwell/games/SnakeGameApp.class
 com/nexus/nexwell/satisfyingvisuals/Direction.class
 com/nexus/nexwell/games/GameOfLifeForm.class
+com/nexus/nexwell/forms/MainForm$1.class
 com/nexus/nexwell/forms/EmergencyHelpForm.class
 com/nexus/nexwell/homepage/UIController.class
 com/nexus/nexwell/games/SnakeGameForm$2.class
@@ -16,8 +17,8 @@ com/nexus/nexwell/server/ServerAPI.class
 com/nexus/nexwell/components/RichTextView$Parser.class
 com/nexus/nexwell/forms/MainForm.class
 com/nexus/nexwell/forms/GamesContainer.class
-com/nexus/nexwell/components/PomodoroTimer.class
 com/nexus/nexwell/satisfyingvisuals/ChaosGame.class
+com/nexus/nexwell/satisfyingvisuals/BubbleGame$1.class
 com/nexus/nexwell/games/SnakeGameForm.class
 com/nexus/nexwell/games/SnakeGameForm$1.class
 com/nexus/nexwell/forms/AccountForm.class
@@ -29,9 +30,11 @@ com/nexus/nexwell/homepage/ContentFeed.class
 com/nexus/nexwell/UIUtils.class
 com/nexus/nexwell/satisfyingvisuals/Ant.class
 com/nexus/nexwell/games/GameOfLifeComponent.class
+com/nexus/nexwell/components/Pomodoro.class
 com/nexus/nexwell/satisfyingvisuals/BubbleGame.class
 com/nexus/nexwell/models/User.class
 com/nexus/nexwell/homepage/Todo.class
 com/nexus/nexwell/components/RichTextView.class
 com/nexus/nexwell/forms/LoginForm.class
+com/nexus/nexwell/forms/PomodoroTimer.class
 com/nexus/nexwell/satisfyingvisuals/LangtonsAntForm.class

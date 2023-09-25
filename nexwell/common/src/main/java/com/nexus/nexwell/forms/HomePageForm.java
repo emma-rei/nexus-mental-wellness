@@ -1,116 +1,52 @@
 
 package com.nexus.nexwell.forms;
 
-import com.codename1.components.FloatingActionButton;
+
 import com.codename1.components.MultiButton;
-import com.codename1.components.ToastBar;
-import static com.codename1.ui.CN.*;
-import com.codename1.system.Lifecycle;
 import com.codename1.ui.*;
-import com.codename1.ui.layouts.*;
-import com.codename1.io.*;
-import static com.codename1.io.Cookie.STORAGE_NAME;
-import com.codename1.properties.PropertyIndex;
-import com.codename1.ui.plaf.*;
-import com.codename1.ui.util.Resources;
-import com.nexus.nexwell.games.*;
+import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.layouts.FlowLayout;
+import java.util.Stack;
 
-import static com.codename1.ui.util.Resources.getGlobalResources;
-import static com.codename1.ui.CN.*;
-import static com.codename1.ui.events.ActionEvent.Type.Theme;
-import com.codename1.util.EasyThread;
-import java.util.ArrayList;
-import java.util.List;
-
-import com.codename1.ui.util.Resources;
-import com.nexus.nexwell.homepage.ContentFeed;
 public class HomePageForm extends Form {
-    private static final String STORAGE_NAME="todo-storage.json";
-    private EasyThread ioThread = EasyThread.start("todo-io");
-    private boolean loaded;
     
-    //
-    //private Tabs mainUI = new Tabs();
-    //
-    public HomePageForm() {
-        super("Nexwell", BoxLayout.y());
-        //mainUI.addTab(NORTH, getGlobalResources().getImage());
-        //String[] arr = getGlobalResources().getImageResourceNames();
+    public HomePageForm(){
+        super("", new BoxLayout(BoxLayout.Y_AXIS));
         
-        
-        
-        
-        FloatingActionButton fab = FloatingActionButton.
-                createFAB(FontImage.MATERIAL_CALL);
-        fab.bindFabToContainer(this);
-        fab.addActionListener(e -> new ContentFeed());
-        
-        //load();
-        
-        getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> {});
-        getToolbar().addMaterialCommandToLeftSideMenu("Resources",FontImage.MATERIAL_BOOKMARKS,4, e -> {});
-        getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> new SnakeGameApp());
-        
-    }
-    
-    
-    /*
-    private void addNewItem(){
-        
-        // keyboard pops out instantlky and lets you type
-        
-        if (loaded){
-            Item td = new Item("", false);
-            add(td);
-            revalidate();
-            td.edit();
-            save();
-        }
-        else{
-            ToastBar.showErrorMessage("Please wait, loading...");
+        Container cnt = new Container(BoxLayout.x());
+        cnt.setScrollableX(true);
+        Stack<SwipeableContainer> frontStack = new Stack();
+        Stack<SwipeableContainer> backStack = new Stack();
+        /*
+        frontStack.push(createWidget("Tip of the day","You must always do what you're supposed to"));
+        frontStack.push(createWidget("Quote of the Day", "Creating values isn't only about you"));
+        frontStack.push(createWidget("Study tip", "Focus is like a cognitive athletics, if you practice it, you will get better"));
+        for (int i = 0; i<frontStack.size(); i++){
+            
+            cnt.addComponent(frontStack.get(i));
         }
         
         
-    }
-    private void clearAll(){
+        addComponent(createWidget("Tip of the day","You must always do what you're supposed to"));
+        addComponent(createWidget("Tip of the day","You must always do what you're supposed to"));
+        addComponent(createWidget("Tip of the day","You must always do what you're supposed to"));
+        addComponent(createWidget("Tip of the day","You must always do what you're supposed to"));
         
-        int cc = getContentPane().getComponentCount();
-        for(int i = cc - 1 ; i >= 0 ; i--) {
-            Item t = (Item)getContentPane().getComponentAt(i);
-            if(t.isChecked()) {
-                t.remove();
-            }
-        }
-        save();
-        getContentPane().animateLayout(300);
+        
+        */
+        // For now just create a multibutton
+        
+        
+        
+        
+        
     }
-    private void load() {
-        getContentPane().removeAll();
-        ioThread.run(() -> {
-            if (existsInStorage(STORAGE_NAME)) {
-                List<Todo> list = new Todo().getPropertyIndex().loadJSONList(STORAGE_NAME);
-                callSerially(() -> {
-                    for (Todo todo : list) {
-                        add(new Item(todo.name.get(), todo.checked.get()));
-                    }
-                    revalidateWithAnimationSafety();
-                    loaded = true;
-                });
-            }
-        });
-    }
-    public void save() {
-        List<Todo> list = new ArrayList<>();
-        for(Component cmp : getContentPane()) {
-            Item item = (Item)cmp;
-            Todo todo = new Todo()
-                    .name.set(item.getText())
-                    .checked.set(item.isChecked());
-            list.add(todo);
-        }
-        ioThread.run(() -> PropertyIndex.storeJSONList(STORAGE_NAME, list));
-    }
-    */
     
+    public SwipeableContainer createWidget(String title, String content){
+        MultiButton button = new MultiButton(title);
+        button.setTextLine2(content);
+        return new SwipeableContainer(BoxLayout.encloseX(button),button);
+        
+    }
     
 }

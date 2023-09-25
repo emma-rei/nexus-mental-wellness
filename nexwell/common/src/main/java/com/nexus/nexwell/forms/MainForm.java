@@ -9,6 +9,7 @@ import com.codename1.ui.Container;
 import com.codename1.ui.Dialog;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
+import com.codename1.ui.Graphics;
 import com.codename1.ui.Tabs;
 import com.codename1.ui.TextArea;
 import com.codename1.ui.TextField;
@@ -30,13 +31,15 @@ public class MainForm extends Form {
     
     public MainForm(){
         super("", new BorderLayout());
+        String str = "Welcome Back! <usr>";
+        setTitle(str);
         Toolbar.setGlobalToolbar(focusScrolling);
         
         
         
         //Resources theme = UIManager.initNamedTheme("/theme", "theme");
         mainUI.setTabPlacement(BOTTOM);
-        mainUI.addTab("", FontImage.MATERIAL_HOME, 5f,  new RichTextView());
+        mainUI.addTab("", FontImage.MATERIAL_HOME, 5f,  new HomePageForm());
         mainUI.addTab("", FontImage.MATERIAL_WEB, 5f, new RichTextView());// replace e-> with new NewsFeedContainer()
         mainUI.addTab("", FontImage.MATERIAL_GAMES, 5f, new GamesContainer());// replace e-> with new GamesContainer()
         mainUI.addTab("", FontImage.MATERIAL_HEADPHONES, 5f, new RichTextView());// replace e-> with new RelaxContainer()
@@ -76,8 +79,11 @@ public class MainForm extends Form {
         
         
         
+        
+        
+        
         getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm().show());
-        getToolbar().addMaterialCommandToLeftSideMenu("Resources",FontImage.MATERIAL_BOOKMARKS,4, e -> {});
+        getToolbar().addMaterialCommandToLeftSideMenu("Resources",FontImage.MATERIAL_BOOKMARKS,4, e -> new PomodoroTimer().show());
         getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
         getToolbar().addMaterialCommandToLeftSideMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
         
@@ -112,9 +118,23 @@ public class MainForm extends Form {
         gameOptionsDialog.show();
     }
     public void Pomodoro(){
-        Dialog gameOptionsDialog = new Dialog("Circle");
+        add(BorderLayout.CENTER, new Component(){
+            @Override
+            public void paint(Graphics g){
+                // red color
+                g.setColor(0xff0000);
+                // paint screen in red
+                g.drawArc(150, 300, 800, 800, 0, 360);
+                g.fillArc(TOP+50, TOP+50, LEFT+50, RIGHT+50, RIGHT, CENTER);
+                
+                
+                
+                
+            }
+            
+        });
 
-        Container options = new Container(new BoxLayout(BoxLayout.Y_AXIS));
+        
         
     }
     public void satisfyingvisuals(){

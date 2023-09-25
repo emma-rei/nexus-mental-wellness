@@ -1,8 +1,13 @@
 package com.nexus.nexwell.satisfyingvisuals;
 
+import static com.codename1.ui.CN.getCurrentForm;
+import com.codename1.ui.FontImage;
 import com.nexus.nexwell.satisfyingvisuals.Bubble;
 import com.codename1.ui.Form;
 import com.codename1.ui.Graphics;
+import com.codename1.ui.Toolbar;
+import com.codename1.ui.events.ActionEvent;
+import com.codename1.ui.events.ActionListener;
 import com.codename1.ui.util.UITimer;
 
 import java.util.ArrayList;
@@ -14,8 +19,21 @@ public class BubbleGame extends Form {
     private Random r;
     private int startingSize = 250;
     private int score;
+    private int initialX, initialY;
 
     public BubbleGame() {
+        super("");
+        Toolbar tb = new Toolbar();
+        setToolbar(tb);
+        tb.setVisible(true);
+        Form current = getCurrentForm();
+        
+        
+        
+        
+        addLongPressListener(l -> current.showBack());
+        
+        
         bubbles = new ArrayList<>();
         r = new Random();
         score = 0;
@@ -38,8 +56,13 @@ public class BubbleGame extends Form {
     }
 
     public void pointerPressed(int x, int y) {
-        for (Bubble b : bubbles) {
-            // TODO if bubble is tapped, delete bubble and add point
+        for (int i = bubbles.size()-1; i>=0; i--) {
+            Bubble b = bubbles.get(i);
+            if (Math.sqrt((b.getX() - x) * (b.getX() - x) + (b.getY() - y) * (b.getY() - y)) <= b.getSize()) {
+                bubbles.remove(i);
+                score++;
+                System.out.println(score);
+            }
         }
     }
 
