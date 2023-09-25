@@ -18,6 +18,7 @@ import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.util.SwipeBackSupport;
 import com.nexus.nexwell.forms.MainForm;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
