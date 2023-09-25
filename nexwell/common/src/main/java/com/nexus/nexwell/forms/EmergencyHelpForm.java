@@ -8,11 +8,8 @@ import com.codename1.components.MultiButton;
 import static com.codename1.ui.CN.*;
 import static com.codename1.ui.Component.CENTER;
 import static com.codename1.ui.Component.TOP;
-import com.codename1.ui.Container;
-import com.codename1.ui.Dialog;
-import com.codename1.ui.FontImage;
-import com.codename1.ui.Form;
-import com.codename1.ui.Toolbar;
+
+import com.codename1.ui.*;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.util.SwipeBackSupport;
