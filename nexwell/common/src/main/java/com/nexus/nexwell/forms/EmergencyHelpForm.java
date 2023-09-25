@@ -24,7 +24,7 @@ import java.util.HashMap;
  * @author kazybekkhairulla
  */
 public class EmergencyHelpForm extends Form{
-    public EmergencyHelpForm(){
+   public EmergencyHelpForm(){
         Form hi = new Form("Emergency Help", new BorderLayout());
         Toolbar tb = new Toolbar();
         hi.setToolbar(tb);
@@ -61,18 +61,27 @@ public class EmergencyHelpForm extends Form{
         twoLinesIconEmblemHorizontal.setHorizontalLayout(true);
         */
         
-        for (String i : PhoneBook.keySet()){
-            MultiButton mb = new MultiButton(i);
-            mb.setMaterialIcon(FontImage.MATERIAL_PERSON, TOP); 
-            String call = "Are you sure you want to call " + i+"?";
-            
-            mb.addActionListener(e -> Dialog.show("Confirm Call", call, "Call", "Cancel"));
+        for (Map.Entry<String, String> set : PhoneBook.entrySet()){
+            MultiButton mb = new MultiButton(set.getKey());
+            mb.setMaterialIcon(FontImage.MATERIAL_PERSON, TOP);
+            if(set.getKey().contains("Counsellor")){
+                FontImage.setMaterialIcon(mb,FontImage.MATERIAL_PERSON);
+            }else {
+                FontImage.setMaterialIcon(mb,FontImage.MATERIAL_CALL);
+            }
+            mb.setTextLine2(set.getValue());
+            mb.addActionListener(e-> Call_Function(set.getKey(),set.getValue()));
             cnt.add(mb);
             
         }
         hi.add(CENTER, cnt);
         hi.show();
     }
-    
+    private void Call_Function(String name,String number){
+        if(Dialog.show("Confirm call","Are you sure you want to call "+number +"? (" + name+")" +"."+" After" +
+                " midnight, interactive voice recording directs callers to 24 hour helpline).", "Call", "Cancel")){
+            Display.getInstance().dial(number);
+        }
+    }
 }
 
