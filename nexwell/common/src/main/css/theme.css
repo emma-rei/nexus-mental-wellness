@@ -37,8 +37,9 @@ DialogTitle {
 
 LoginTitle{
     background-image: url(img/nexus-logo.png);
+    
     cn1-source-dpi: 0;
-    cn1-background-type: cn1-image-scaled-fill;
+    cn1-background-type: cn1-image-scaled-fit;
     margin:0px;
     padding: 8mm;
 }
@@ -56,6 +57,16 @@ BaseButton{
     color:white;
     
 }
+SpanLabel{
+    
+    font-family: "native:MainBold";
+    background: linear-gradient(to left, #3DAECB, #ADF0F2);
+    text-align:center;
+    margin:2mm;
+    padding:2mm;
+    color: white;
+}
+
 BlueButtonOnBlueBackground{
     border-radius: 1mm;
     background: #587EBE;
@@ -214,4 +225,9 @@ HalfPaddedSeparator{
     cn1-derive: PaddedSeparator;
     padding: 0.25mm;
     
+}
+HalfPaddedContainer{
+    padding: 1.5mm;
+    margin: 0mm;
+    background: transparent;
 }

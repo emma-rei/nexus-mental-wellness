@@ -1,14 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.nexus.nexwell.forms;
 
 import com.codename1.components.MultiButton;
 import static com.codename1.ui.CN.*;
 import static com.codename1.ui.Component.CENTER;
 import static com.codename1.ui.Component.TOP;
-
+import com.nexus.nexwell.components.Colors;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
@@ -17,10 +14,6 @@ import com.nexus.nexwell.forms.MainForm;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- *
- * @author kazybekkhairulla
- */
 public class EmergencyHelpForm extends Form{
    public EmergencyHelpForm(){
         Form hi = new Form("Emergency Help", new BorderLayout());
@@ -52,26 +45,52 @@ public class EmergencyHelpForm extends Form{
         PhoneBook.put("Singapore Association for Mental Health (SAMH)", "1800-283-7019");
         PhoneBook.put("PAVE: Individual or Family Protection", "1800-353-5800");
         MultiButton twoLinesIconEmblemHorizontal = new MultiButton("Icon + Emblem");
-        /*
-        twoLinesIconEmblemHorizontal.setIcon(icon);
-        twoLinesIconEmblemHorizontal.setEmblem(emblem);
-        twoLinesIconEmblemHorizontal.setTextLine2("Line 2 Horizontal");
-        twoLinesIconEmblemHorizontal.setHorizontalLayout(true);
-        */
         
+        // Keoni's design of Emergency Help form, follows a specific color pattern
+        // pattern is 12, 23, 31
+        // 1 = pink, 2 = cyan, 3 = blue
+        // Implementating same structure using array of int color values
+        int[] colorArr = {
+            Colors.PINK,
+            Colors.CYAN,
+            Colors.BLUE
+        };
+        int colorIndex = 0;
         for (Map.Entry<String, String> set : PhoneBook.entrySet()){
+            
             MultiButton mb = new MultiButton(set.getKey());
-            mb.setMaterialIcon(FontImage.MATERIAL_PERSON, TOP);
+            mb.setUIID("SpanLabel");
+            
+            if (colorIndex == 2){
+                colorIndex = colorIndex % 2;
+            }
+            
+            mb.getAllStyles().setBackgroundGradientStartColor(colorArr[colorIndex]);
+            colorIndex++;
+            mb.getAllStyles().setBackgroundGradientEndColor(colorArr[colorIndex]);
+            
+            
+            
+            
             if(set.getKey().contains("Counsellor")){
                 FontImage.setMaterialIcon(mb,FontImage.MATERIAL_PERSON);
+                
             }else {
                 FontImage.setMaterialIcon(mb,FontImage.MATERIAL_CALL);
+                
             }
             mb.setTextLine2(set.getValue());
             mb.addActionListener(e-> Call_Function(set.getKey(),set.getValue()));
+            
+            
+            
             cnt.add(mb);
             
         }
+        
+        
+        
+        
         hi.add(CENTER, cnt);
         hi.show();
     }

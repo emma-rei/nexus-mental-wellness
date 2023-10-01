@@ -26,6 +26,7 @@ public class LoginForm extends Form {
         super (new BorderLayout());
         getToolbar().setUIID("Container");
         logo.setName("Logo");
+        
         Container logoContainer = BorderLayout.centerAbsolute(logo);
         logoContainer.setUIID("LoginTitle");
         add(NORTH, logoContainer);

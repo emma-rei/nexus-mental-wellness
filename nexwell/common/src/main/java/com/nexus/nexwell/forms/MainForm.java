@@ -39,6 +39,7 @@ public class MainForm extends Form {
         
         //Resources theme = UIManager.initNamedTheme("/theme", "theme");
         mainUI.setTabPlacement(BOTTOM);
+        
         mainUI.addTab("", FontImage.MATERIAL_HOME, 5f,  new HomePageForm());
         mainUI.addTab("", FontImage.MATERIAL_WEB, 5f, new RichTextView());// replace e-> with new NewsFeedContainer()
         mainUI.addTab("", FontImage.MATERIAL_GAMES, 5f, new GamesContainer());// replace e-> with new GamesContainer()
@@ -75,17 +76,12 @@ public class MainForm extends Form {
         
         
         
+        getToolbar().getAllStyles().setBackgroundGradientRelativeSize(BRB_CONSTANT_ASCENT, focusScrolling);
         
-        
-        
-        
-        
-        
-        
-        getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm().show());
-        getToolbar().addMaterialCommandToLeftSideMenu("Resources",FontImage.MATERIAL_BOOKMARKS,4, e -> new PomodoroTimer().show());
-        getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
-        getToolbar().addMaterialCommandToLeftSideMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
+        getToolbar().addMaterialCommandToOverflowMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm().show());
+        getToolbar().addMaterialCommandToOverflowMenu("Resources",FontImage.MATERIAL_BOOKMARKS,4, e -> new PomodoroTimer().show());
+        getToolbar().addMaterialCommandToOverflowMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
+        getToolbar().addMaterialCommandToOverflowMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
         
     }
     public void games(){
