@@ -57,7 +57,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Calendar_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Calendar_1___INIT_____com_codename1_ui_Calendar_com_codename1_ui_Button(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9877, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9876, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -77,16 +77,16 @@ JAVA_VOID com_codename1_ui_Calendar_1_actionPerformed___com_codename1_ui_events_
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 9877, 3048);
+    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 9876, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(163);
-    if (get_field_com_codename1_ui_Calendar_1_lock(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L508864177;
+    if (get_field_com_codename1_ui_Calendar_1_lock(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1689309690;
     __CN1_DEBUG_INFO(164);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L508864177:
+label_L1689309690:
     __CN1_DEBUG_INFO(166);
     set_field_com_codename1_ui_Calendar_1_lock(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(167);
@@ -103,19 +103,19 @@ label_L508864177:
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_1_val_left(__cn1ThisObject));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L253988431;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L253916873;
     __CN1_DEBUG_INFO(170);
     BC_IINC(2, -1);
     __CN1_DEBUG_INFO(171);
-    if (ilocals_2_>=0) /* IFGE CustomJump */ goto label_L992217213;
+    if (ilocals_2_>=0) /* IFGE CustomJump */ goto label_L315809246;
     __CN1_DEBUG_INFO(172);
     PUSH_INT(11);
     BC_ISTORE(2);
     __CN1_DEBUG_INFO(173);
     BC_IINC(3, -1);
-    goto label_L992217213;
+    goto label_L315809246;
 
-label_L253988431:
+label_L253916873:
     __CN1_DEBUG_INFO(176);
     BC_IINC(2, 1);
     __CN1_DEBUG_INFO(177);
@@ -123,66 +123,66 @@ label_L253988431:
     (*SP).data.i = ilocals_2_; 
     SP++;
     PUSH_INT(11);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L992217213;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L315809246;
     __CN1_DEBUG_INFO(178);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(179);
     BC_IINC(3, 1);
 
-label_L992217213:
+label_L315809246:
     __CN1_DEBUG_INFO(182);
     PUSH_OBJ(com_codename1_ui_plaf_UIManager_getInstance___R_com_codename1_ui_plaf_UIManager(threadStateData));
-    /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9878), 1 /* ICONST_1 */);
+    /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9877), 1 /* ICONST_1 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(4);
     __CN1_DEBUG_INFO(183);
-    if (ilocals_4_==0) /* IFEQ CustomJump */ goto label_L1979586073;
+    if (ilocals_4_==0) /* IFEQ CustomJump */ goto label_L1655993826;
     __CN1_DEBUG_INFO(185);
     PUSH_OBJ(com_codename1_ui_plaf_UIManager_getInstance___R_com_codename1_ui_plaf_UIManager(threadStateData));
-    /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9879), 0 /* ICONST_0 */);
+    /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9878), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1311004473;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L15288143;
     __CN1_DEBUG_INFO(186);
     PUSH_INT(1); /* ICONST_1 */
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_1_val_left(__cn1ThisObject));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1567025476;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L476179877;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1184527733;
+    goto label_L408551386;
 
-label_L1567025476:
+label_L476179877:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1184527733:
+label_L408551386:
     PUSH_INT(300);
     { JAVA_OBJECT tmpResult = com_codename1_ui_animations_CommonTransitions_createSlide___int_boolean_int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, SP[-3].data.i, SP[-2].data.i, SP[-1].data.i);
     SP-=2;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(5);
-    goto label_L1129442657;
+    goto label_L1501790806;
 
-label_L1311004473:
+label_L15288143:
     __CN1_DEBUG_INFO(188);
     PUSH_INT(0); /* ICONST_0 */
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     PUSH_POINTER(get_field_com_codename1_ui_Calendar_1_val_left(__cn1ThisObject));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L790689709;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L320501014;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1172707268;
+    goto label_L372245;
 
-label_L790689709:
+label_L320501014:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1172707268:
+label_L372245:
     PUSH_INT(300);
     { JAVA_OBJECT tmpResult = com_codename1_ui_animations_CommonTransitions_createSlide___int_boolean_int_R_com_codename1_ui_animations_CommonTransitions(threadStateData, SP[-3].data.i, SP[-2].data.i, SP[-1].data.i);
     SP-=2;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(5);
 
-label_L1129442657:
+label_L1501790806:
     __CN1_DEBUG_INFO(190);
     PUSH_POINTER(__NEW_com_codename1_ui_Calendar_MonthView(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -204,9 +204,9 @@ label_L1129442657:
     __CN1_DEBUG_INFO(194);
     virtual_com_codename1_ui_Calendar_MonthView_fireActionEvent__(threadStateData, locals[6].data.o); 
     __CN1_DEBUG_INFO(195);
-    goto label_L1346560976;
+    goto label_L1467299552;
 
-label_L1979586073:
+label_L1655993826:
     __CN1_DEBUG_INFO(196);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$000___com_codename1_ui_Calendar_R_com_codename1_ui_Calendar_MonthView(threadStateData, get_field_com_codename1_ui_Calendar_1_this_0(__cn1ThisObject)));
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -219,7 +219,7 @@ label_L1979586073:
     __CN1_DEBUG_INFO(197);
     virtual_com_codename1_ui_Calendar_componentChanged__(threadStateData, get_field_com_codename1_ui_Calendar_1_this_0(__cn1ThisObject)); 
 
-label_L1346560976:
+label_L1467299552:
     __CN1_DEBUG_INFO(199);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Calendar_access$300___com_codename1_ui_Calendar_R_com_codename1_ui_Label(threadStateData, get_field_com_codename1_ui_Calendar_1_this_0(__cn1ThisObject)));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -229,7 +229,7 @@ label_L1346560976:
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(614));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(613));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_3_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }

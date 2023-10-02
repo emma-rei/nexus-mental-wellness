@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_com_codename1_util_AsyncResource_1(CODENAME_ONE_THREAD_STATE) 
 
 
 JAVA_VOID com_codename1_util_AsyncResource_1___INIT_____com_codename1_util_AsyncResource_boolean_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7229, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7228, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -58,19 +58,19 @@ JAVA_VOID com_codename1_util_AsyncResource_1___INIT_____com_codename1_util_Async
 
 
 JAVA_VOID com_codename1_util_AsyncResource_1_update___java_util_Observable_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 7229, 2516);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 7228, 2515);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    int restoreToL146430441301;
-    int tryBlockOffsetL146430441301;
-    DEFINE_CATCH_BLOCK(catch_L146430441301, label_L792334135, restoreToL146430441301);
-    int restoreToL79233413502;
-    int tryBlockOffsetL79233413502;
-    DEFINE_CATCH_BLOCK(catch_L79233413502, label_L792334135, restoreToL79233413502);
+    int restoreToL73017565001;
+    int tryBlockOffsetL73017565001;
+    DEFINE_CATCH_BLOCK(catch_L73017565001, label_L1865031664, restoreToL73017565001);
+    int restoreToL186503166402;
+    int tryBlockOffsetL186503166402;
+    DEFINE_CATCH_BLOCK(catch_L186503166402, label_L1865031664, restoreToL186503166402);
     __CN1_DEBUG_INFO(140);
-    if (virtual_com_codename1_util_AsyncResource_isDone___R_boolean(threadStateData, get_field_com_codename1_util_AsyncResource_1_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ JUMP_TO(label_L2127092492, 0);
+    if (virtual_com_codename1_util_AsyncResource_isDone___R_boolean(threadStateData, get_field_com_codename1_util_AsyncResource_1_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ JUMP_TO(label_L1685907816, 0);
     __CN1_DEBUG_INFO(141);
     CN1_SET_ARRAY_ELEMENT_BYTE(get_field_com_codename1_util_AsyncResource_1_val_complete(__cn1ThisObject), 0 /* ICONST_0 */, 1 /* ICONST_1 */);
     __CN1_DEBUG_INFO(142);
@@ -79,10 +79,10 @@ JAVA_VOID com_codename1_util_AsyncResource_1_update___java_util_Observable_java_
     BC_ASTORE(3);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1464304413:
- tryBlockOffsetL146430441301 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L146430441301);
-    restoreToL146430441301 = threadStateData->threadObjectStackOffset;
+label_L730175650:
+ tryBlockOffsetL73017565001 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L73017565001);
+    restoreToL73017565001 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(143);
     virtual_java_lang_Object_notify__(threadStateData, get_field_com_codename1_util_AsyncResource_1_val_complete(__cn1ThisObject)); 
@@ -90,23 +90,23 @@ label_L1464304413:
     BC_ALOAD(3);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L2120356489:
-END_TRY(1);    JUMP_TO(label_L2127092492, 0);
+label_L1985612284:
+END_TRY(1);    JUMP_TO(label_L1685907816, 0);
 
-label_L792334135:
- tryBlockOffsetL79233413502 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L79233413502);
-    restoreToL79233413502 = threadStateData->threadObjectStackOffset;
+label_L1865031664:
+ tryBlockOffsetL186503166402 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L186503166402);
+    restoreToL186503166402 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(4);
     BC_ALOAD(3);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L399938065:
+label_L1880580432:
 END_TRY(1);    BC_ALOAD(4);
     throwException(threadStateData, POP_OBJ());
 
-label_L2127092492:
+label_L1685907816:
     __CN1_DEBUG_INFO(146);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

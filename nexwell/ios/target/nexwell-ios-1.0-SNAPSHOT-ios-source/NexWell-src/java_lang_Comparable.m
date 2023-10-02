@@ -97,6 +97,8 @@ void __STATIC_INITIALIZER_java_lang_Comparable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_java_lang_Short][0] = 16;
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_java_nio_charset_Charset] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_java_nio_charset_Charset][0] = 10;
+    classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_nexus_nexwell_satisfyingvisuals_Direction] = malloc(sizeof(int*) * 13);
+    classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_nexus_nexwell_satisfyingvisuals_Direction][0] = 10;
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_codename1_ui_BrowserComponent_JSType] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_codename1_ui_BrowserComponent_JSType][0] = 10;
     classToInterfaceMap_java_lang_Comparable[cn1_class_id_com_codename1_ui_Toolbar_BackCommandPolicy] = malloc(sizeof(int*) * 13);

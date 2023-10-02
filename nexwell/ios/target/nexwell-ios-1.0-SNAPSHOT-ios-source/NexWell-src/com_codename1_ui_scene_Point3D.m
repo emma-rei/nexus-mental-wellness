@@ -50,7 +50,7 @@ JAVA_VOID com_codename1_ui_scene_Point3D___INIT_____double_double_double(CODENAM
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* x */
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* y */
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* z */
-    DEFINE_INSTANCE_METHOD_STACK(3, 7, 0, 10059, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 7, 0, 10058, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     dlocals_5_ = __cn1Arg3;
@@ -69,7 +69,7 @@ JAVA_VOID com_codename1_ui_scene_Point3D___INIT_____double_double_double(CODENAM
 
 
 JAVA_DOUBLE com_codename1_ui_scene_Point3D_getX___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10059, 2403);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10058, 2402);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(50);
 
 {
@@ -81,7 +81,7 @@ JAVA_DOUBLE com_codename1_ui_scene_Point3D_getX___R_double(CODENAME_ONE_THREAD_S
 
 JAVA_VOID com_codename1_ui_scene_Point3D_setX___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* x */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10059, 2424);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10058, 2423);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(58);
     set_field_com_codename1_ui_scene_Point3D_x(threadStateData, dlocals_1_, __cn1ThisObject);
@@ -92,7 +92,7 @@ JAVA_VOID com_codename1_ui_scene_Point3D_setX___double(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_DOUBLE com_codename1_ui_scene_Point3D_getY___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10059, 2406);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10058, 2405);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(66);
 
 {
@@ -104,7 +104,7 @@ JAVA_DOUBLE com_codename1_ui_scene_Point3D_getY___R_double(CODENAME_ONE_THREAD_S
 
 JAVA_VOID com_codename1_ui_scene_Point3D_setY___double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10059, 2425);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10058, 2424);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(74);
     set_field_com_codename1_ui_scene_Point3D_y(threadStateData, dlocals_1_, __cn1ThisObject);
@@ -115,7 +115,7 @@ JAVA_VOID com_codename1_ui_scene_Point3D_setY___double(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_DOUBLE com_codename1_ui_scene_Point3D_getZ___R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10059, 10060);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10058, 10059);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(82);
 
 {

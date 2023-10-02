@@ -36,7 +36,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_TimeSpinner3D_1(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID com_codename1_ui_spinner_TimeSpinner3D_1___INIT_____com_codename1_ui_spinner_TimeSpinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10145, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10144, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(81);
@@ -48,16 +48,16 @@ JAVA_VOID com_codename1_ui_spinner_TimeSpinner3D_1___INIT_____com_codename1_ui_s
 
 
 JAVA_OBJECT com_codename1_ui_spinner_TimeSpinner3D_1_format___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 10145, 904);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 10144, 903);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(85);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1077938655;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2127273495;
     __CN1_DEBUG_INFO(86);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(220));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     PUSH_POINTER(__NEW_java_lang_Double(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -72,7 +72,7 @@ JAVA_OBJECT com_codename1_ui_spinner_TimeSpinner3D_1_format___java_lang_String_R
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1077938655:
+label_L2127273495:
     __CN1_DEBUG_INFO(88);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }

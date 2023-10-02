@@ -193,7 +193,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView(CODE
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeIPhoneView___INIT_____com_codename1_impl_ios_IOSImplementation_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9660, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9659, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -213,16 +213,16 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeIPhoneView___INIT_____c
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_finalize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9660, 902);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9659, 901);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(6866);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L425275537;
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L425275537;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L700348233;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L700348233;
     __CN1_DEBUG_INFO(6867);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_releasePeer___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */)); 
     __CN1_DEBUG_INFO(6868);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L425275537:
+label_L700348233:
     __CN1_DEBUG_INFO(6870);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -230,7 +230,7 @@ label_L425275537:
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_isFocusable___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9660, 2557);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9659, 2556);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(6873);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
@@ -242,12 +242,12 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_setFocus___b
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_calcPreferredSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 9660, 1857);
+    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 9659, 1856);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(6880);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1564078808;
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L1792473683;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1602530280;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L1179689991;
 
-label_L1564078808:
+label_L1602530280:
     __CN1_DEBUG_INFO(6881);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Dimension(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -255,7 +255,7 @@ label_L1564078808:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1792473683:
+label_L1179689991:
     __CN1_DEBUG_INFO(6883);
     /* VarOp.assignFrom */ locals[1].data.o = com_codename1_impl_ios_IOSImplementation_access$5300___R_int_1ARRAY(threadStateData);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(6884);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_calcPreferredSize___long_int_int_int_1ARRAY(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), virtual_com_codename1_impl_ios_IOSImplementation_getDisplayWidth___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_this_0(__cn1ThisObject)), virtual_com_codename1_impl_ios_IOSImplementation_getDisplayHeight___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_this_0(__cn1ThisObject)), locals[1].data.o); 
@@ -269,14 +269,14 @@ label_L1792473683:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_onPositionSizeChange__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 9660, 3811);
+    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 9659, 3810);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(6889);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1441410416;
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1441410416;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L806572546;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L806572546;
     __CN1_DEBUG_INFO(6890);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_updatePeerPositionSize___long_int_int_int_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_getAbsoluteX___R_int(threadStateData, __cn1ThisObject), virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_getAbsoluteY___R_int(threadStateData, __cn1ThisObject), virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_getWidth___R_int(threadStateData, __cn1ThisObject), virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_getHeight___R_int(threadStateData, __cn1ThisObject)); 
 
-label_L1441410416:
+label_L806572546:
     __CN1_DEBUG_INFO(6892);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -284,16 +284,16 @@ label_L1441410416:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_initComponent__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 9660, 1849);
+    DEFINE_INSTANCE_METHOD_STACK(7, 1, 0, 9659, 1848);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(6895);
     com_codename1_ui_PeerComponent_initComponent__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(6896);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L99042020;
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L99042020;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1783463798;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1783463798;
     __CN1_DEBUG_INFO(6897);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_peerInitialized___long_int_int_int_int(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_getAbsoluteX___R_int(threadStateData, __cn1ThisObject), virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_getAbsoluteY___R_int(threadStateData, __cn1ThisObject), virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_getWidth___R_int(threadStateData, __cn1ThisObject), virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_getHeight___R_int(threadStateData, __cn1ThisObject)); 
 
-label_L99042020:
+label_L1783463798:
     __CN1_DEBUG_INFO(6899);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -301,10 +301,10 @@ label_L99042020:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_deinitialize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9660, 1327);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9659, 1326);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(6902);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L391827378;
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L391827378;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L283923004;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L283923004;
     __CN1_DEBUG_INFO(6903);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_generatePeerImage___R_com_codename1_ui_Image(threadStateData, __cn1ThisObject);
@@ -313,7 +313,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_deinitialize
     __CN1_DEBUG_INFO(6904);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_peerDeinitialized___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */)); 
 
-label_L391827378:
+label_L283923004:
     __CN1_DEBUG_INFO(6906);
     com_codename1_ui_PeerComponent_deinitialize__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(6907);
@@ -324,13 +324,13 @@ label_L391827378:
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_setLightweightMode___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* l */
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9660, 2725);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9659, 2724);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(6910);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1241758568;
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1241758568;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1407167674;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1407167674;
     __CN1_DEBUG_INFO(6911);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_lightweightMode(__cn1ThisObject)==ilocals_1_) /* IF_ICMPEQ CustomJump */ goto label_L1241758568;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_lightweightMode(__cn1ThisObject)==ilocals_1_) /* IF_ICMPEQ CustomJump */ goto label_L1407167674;
     __CN1_DEBUG_INFO(6912);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_lightweightMode(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(6913);
@@ -340,22 +340,22 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_setLightweig
     CHECK_ARRAY_ACCESS(2, SP[-1].data.i); /* LALOAD */
     SP--; SP[-1].type = CN1_TYPE_LONG; 
     SP[-1].data.l = LONG_ARRAY_LOOKUP((JAVA_ARRAY)SP[-1].data.o, (*SP).data.i);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_lightweightMode(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1317441269;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_lightweightMode(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L2037806977;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1908999587;
+    goto label_L2017530134;
 
-label_L1317441269:
+label_L2037806977:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1908999587:
+label_L2017530134:
     virtual_com_codename1_impl_ios_IOSNative_peerSetVisible___long_boolean(threadStateData, SP[-3].data.o, SP[-2].data.l, SP[-1].data.i);     SP-= 3;
     __CN1_DEBUG_INFO(6915);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(6916);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1241758568;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1407167674;
     __CN1_DEBUG_INFO(6917);
     virtual_com_codename1_ui_Form_repaint__(threadStateData, locals[2].data.o); 
 
-label_L1241758568:
+label_L1407167674:
     __CN1_DEBUG_INFO(6921);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -364,20 +364,20 @@ label_L1241758568:
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_generatePeerImage___R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_LONG llocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 9660, 3805);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 9659, 3804);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(6924);
     /* VarOp.assignFrom */ locals[1].data.o = com_codename1_impl_ios_IOSImplementation_access$5300___R_int_1ARRAY(threadStateData);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(6925);
     /* VarOp.assignFrom */ llocals_2_ = /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_createPeerImage___long_int_1ARRAY_R_long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_nativePeer(__cn1ThisObject), 0 /* ICONST_0 */), locals[1].data.o);
     __CN1_DEBUG_INFO(6926);
-    if (CN1_CMP_EXPR(llocals_2_, 0 /* LCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L816804727;
+    if (CN1_CMP_EXPR(llocals_2_, 0 /* LCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L181326224;
     __CN1_DEBUG_INFO(6927);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L816804727:
+label_L181326224:
     __CN1_DEBUG_INFO(6929);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_IOSImplementation_NativeImage(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_NativeImage___INIT_____com_codename1_impl_ios_IOSImplementation_java_lang_String(threadStateData, SP[-1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_this_0(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(9661));     SP -= 1;
+    /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_NativeImage___INIT_____com_codename1_impl_ios_IOSImplementation_java_lang_String(threadStateData, SP[-1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_this_0(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(9660));     SP -= 1;
     BC_ASTORE(4);
     __CN1_DEBUG_INFO(6930);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(threadStateData, llocals_2_, locals[4].data.o);
@@ -393,19 +393,19 @@ label_L816804727:
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_shouldRenderPeerImage___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9660, 3807);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9659, 3806);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(6937);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_lightweightMode(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1738561265;
-    if (virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_isInitialized___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L497786326;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_lightweightMode(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L609879567;
+    if (virtual_com_codename1_impl_ios_IOSImplementation_NativeIPhoneView_isInitialized___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1859823482;
 
-label_L1738561265:
+label_L609879567:
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L611739613;
+    goto label_L509858326;
 
-label_L497786326:
+label_L1859823482:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L611739613:
+label_L509858326:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

@@ -40,7 +40,7 @@ com_nexus_nexwell_homepage_UIController___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_homepage_UIController___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10187, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10186, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(14);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -50,7 +50,7 @@ JAVA_VOID com_nexus_nexwell_homepage_UIController___INIT____(CODENAME_ONE_THREAD
 
 JAVA_VOID com_nexus_nexwell_homepage_UIController_showSplashScreen__(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_nexus_nexwell_homepage_UIController(threadStateData);
-    DEFINE_METHOD_STACK(5, 3, 0, 10187, 10188);
+    DEFINE_METHOD_STACK(5, 3, 0, 10186, 10187);
     __CN1_DEBUG_INFO(16);
     PUSH_POINTER(__NEW_com_codename1_ui_Form(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -60,14 +60,14 @@ JAVA_VOID com_nexus_nexwell_homepage_UIController_showSplashScreen__(CODENAME_ON
     com_codename1_ui_Form___INIT_____com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     BC_ASTORE(0);
     __CN1_DEBUG_INFO(17);
-    /* CustomInvoke */virtual_com_codename1_ui_Form_setUIID___java_lang_String(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10189)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Form_setUIID___java_lang_String(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10188)); 
     __CN1_DEBUG_INFO(18);
     PUSH_POINTER(__NEW_com_codename1_ui_Label(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10190), STRING_FROM_CONSTANT_POOL_OFFSET(10191));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10189), STRING_FROM_CONSTANT_POOL_OFFSET(10190));     SP -= 1;
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(19);
-    /* CustomInvoke */virtual_com_codename1_ui_Label_setName___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10192)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Label_setName___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10191)); 
     __CN1_DEBUG_INFO(20);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(java_lang_Integer_valueOf___int_R_java_lang_Integer(threadStateData, 4/* ICONST_4 */));
@@ -79,7 +79,7 @@ JAVA_VOID com_nexus_nexwell_homepage_UIController_showSplashScreen__(CODENAME_ON
     __CN1_DEBUG_INFO(21);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_animations_MorphTransition_create___int_R_com_codename1_ui_animations_MorphTransition(threadStateData, 1200));
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_animations_MorphTransition_morph___java_lang_String_R_com_codename1_ui_animations_MorphTransition(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10192));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_animations_MorphTransition_morph___java_lang_String_R_com_codename1_ui_animations_MorphTransition(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10191));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_com_codename1_ui_Form_setTransitionOutAnimator___com_codename1_ui_animations_Transition(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(22);
@@ -104,7 +104,7 @@ JAVA_VOID com_nexus_nexwell_homepage_UIController_showSplashScreen__(CODENAME_ON
 
 JAVA_VOID com_nexus_nexwell_homepage_UIController_showHomePageForm__(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_nexus_nexwell_homepage_UIController(threadStateData);
-    DEFINE_METHOD_STACK(2, 0, 0, 10187, 10193);
+    DEFINE_METHOD_STACK(2, 0, 0, 10186, 10192);
     __CN1_DEBUG_INFO(38);
     PUSH_POINTER(__NEW_com_nexus_nexwell_forms_LoginForm(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -123,18 +123,18 @@ JAVA_VOID com_nexus_nexwell_homepage_UIController_showMainUI__(CODENAME_ONE_THRE
 
 JAVA_VOID com_nexus_nexwell_homepage_UIController_lambda$showSplashScreen$0___com_codename1_ui_animations_Motion_com_codename1_ui_Label(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_homepage_UIController(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 10187, 10195);
+    DEFINE_METHOD_STACK(3, 2, 0, 10186, 10194);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(25);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1970073944;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L579447973;
     __CN1_DEBUG_INFO(26);
     com_nexus_nexwell_homepage_UIController_showHomePageForm__(threadStateData); 
-    goto label_L1060042118;
+    goto label_L1990421361;
 
-label_L1970073944:
+label_L579447973:
     __CN1_DEBUG_INFO(30);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Label_getSelectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -146,7 +146,7 @@ label_L1970073944:
     __CN1_DEBUG_INFO(31);
     virtual_com_codename1_ui_Label_repaint__(threadStateData, locals[1].data.o); 
 
-label_L1060042118:
+label_L1990421361:
     __CN1_DEBUG_INFO(34);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

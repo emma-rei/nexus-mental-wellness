@@ -79,7 +79,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_CodenameOneImplementation_7_2(CODENAME_ONE_
 
 
 JAVA_VOID com_codename1_impl_CodenameOneImplementation_7_2___INIT_____com_codename1_impl_CodenameOneImplementation_7_java_util_Hashtable_java_lang_Object_com_codename1_ui_util_ImageIO_com_codename1_ui_Button(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4, JAVA_OBJECT __cn1Arg5) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 8950, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 8949, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -103,23 +103,23 @@ JAVA_VOID com_codename1_impl_CodenameOneImplementation_7_2___INIT_____com_codena
 
 
 JAVA_VOID com_codename1_impl_CodenameOneImplementation_7_2_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 8950, 204);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL25999302cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL25999302cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L25999302cn1_class_id_java_io_IOException1, label_L1420012431, restoreToL25999302cn1_class_id_java_io_IOException1);
+    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 8949, 203);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1869366370cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL1869366370cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L1869366370cn1_class_id_java_io_IOException1, label_L972843820, restoreToL1869366370cn1_class_id_java_io_IOException1);
     __CN1_DEBUG_INFO(5719);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_java_util_Hashtable_get___java_lang_Object_R_java_lang_Object(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_7_2_val_thumbs(__cn1ThisObject), get_field_com_codename1_impl_CodenameOneImplementation_7_2_val_node(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(5720);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L426288284, 0);
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1883971879, 0);
     __CN1_DEBUG_INFO(5721);
     PUSH_POINTER(__NEW_java_io_ByteArrayOutputStream(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_io_ByteArrayOutputStream___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(2);
 
-label_L25999302:
- tryBlockOffsetL25999302cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L25999302cn1_class_id_java_io_IOException1);
-    restoreToL25999302cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L1869366370:
+ tryBlockOffsetL1869366370cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1869366370cn1_class_id_java_io_IOException1);
+    restoreToL1869366370cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(5723);
     PUSH_POINTER(get_field_com_codename1_impl_CodenameOneImplementation_7_2_val_imageio(__cn1ThisObject));
@@ -128,7 +128,7 @@ label_L25999302:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ALOAD(2);
     /* LDC: 'jpeg'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(101));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(100));
     PUSH_POINTER(get_field_com_codename1_impl_CodenameOneImplementation_7_2_val_b(__cn1ThisObject));
     __CN1_DEBUG_INFO(5726);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Button_getIcon___R_com_codename1_ui_Image(threadStateData, SP[-1].data.o);
@@ -147,19 +147,19 @@ label_L25999302:
     /* CustomInvoke */virtual_java_util_Hashtable_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_7_2_val_thumbs(__cn1ThisObject), get_field_com_codename1_impl_CodenameOneImplementation_7_2_val_node(__cn1ThisObject), locals[1].data.o); 
     __CN1_DEBUG_INFO(5729);
     PUSH_OBJ(com_codename1_io_Storage_getInstance___R_com_codename1_io_Storage(threadStateData));
-    /* CustomInvoke */virtual_com_codename1_io_Storage_writeObject___java_lang_String_java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8890), get_field_com_codename1_impl_CodenameOneImplementation_7_2_val_thumbs(__cn1ThisObject));     SP -= 1;
+    /* CustomInvoke */virtual_com_codename1_io_Storage_writeObject___java_lang_String_java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8889), get_field_com_codename1_impl_CodenameOneImplementation_7_2_val_thumbs(__cn1ThisObject));     SP -= 1;
 
-label_L1711802157:
+label_L255088815:
 END_TRY(1);    __CN1_DEBUG_INFO(5732);
-    JUMP_TO(label_L426288284, 0);
+    JUMP_TO(label_L1883971879, 0);
 
-label_L1420012431:
+label_L972843820:
     __CN1_DEBUG_INFO(5730);
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(5731);
     /* CustomInvoke */com_codename1_io_Log_e___java_lang_Throwable(threadStateData, locals[3].data.o); 
 
-label_L426288284:
+label_L1883971879:
     __CN1_DEBUG_INFO(5734);
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */com_codename1_ui_Image_createImage___byte_1ARRAY_int_int_R_com_codename1_ui_Image(threadStateData, locals[1].data.o, 0 /* ICONST_0 */, CN1_ARRAY_LENGTH(locals[1].data.o));locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(5735);
     /* CustomInvoke */virtual_com_codename1_ui_Button_setIcon___com_codename1_ui_Image(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_7_2_val_b(__cn1ThisObject), locals[2].data.o); 

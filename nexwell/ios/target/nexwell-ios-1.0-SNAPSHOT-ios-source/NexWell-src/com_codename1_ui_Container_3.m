@@ -81,7 +81,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Container_3(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Container_3___INIT_____com_codename1_ui_Container_com_codename1_ui_Component_java_lang_Object_int_com_codename1_ui_Container_QueuedInsertion(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_OBJECT __cn1Arg5) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 3420, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 3419, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -104,47 +104,47 @@ JAVA_VOID com_codename1_ui_Container_3___INIT_____com_codename1_ui_Container_com
 
 
 JAVA_BOOLEAN com_codename1_ui_Container_3_isInProgress___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3420, 2792);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3419, 2791);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(946);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
 
 
 JAVA_VOID com_codename1_ui_Container_3_updateState__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 3420, 2793);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL94662886701;
-    int tryBlockOffsetL94662886701;
-    DEFINE_CATCH_BLOCK(catch_L94662886701, label_L2119713755, restoreToL94662886701);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 3419, 2792);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL123368011401;
+    int tryBlockOffsetL123368011401;
+    DEFINE_CATCH_BLOCK(catch_L123368011401, label_L2005293363, restoreToL123368011401);
     __CN1_DEBUG_INFO(951);
-    if (get_field_com_codename1_ui_Container_3_alreadyAdded(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L1168076863, 0);
+    if (get_field_com_codename1_ui_Container_3_alreadyAdded(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L1208670252, 0);
 
-label_L946628867:
- tryBlockOffsetL94662886701 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L94662886701);
-    restoreToL94662886701 = threadStateData->threadObjectStackOffset;
+label_L1233680114:
+ tryBlockOffsetL123368011401 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L123368011401);
+    restoreToL123368011401 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(953);
     set_field_com_codename1_ui_Container_3_alreadyAdded(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(954);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setParent___com_codename1_ui_Container(threadStateData, get_field_com_codename1_ui_Container_3_val_cmp(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */); 
     __CN1_DEBUG_INFO(955);
-    if (get_field_com_codename1_ui_Container_3_val_constraint(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L411748515, 1);
+    if (get_field_com_codename1_ui_Container_3_val_constraint(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1293465402, 1);
     __CN1_DEBUG_INFO(956);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Container_access$100___com_codename1_ui_Container_R_com_codename1_ui_layouts_Layout(threadStateData, get_field_com_codename1_ui_Container_3_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_codename1_ui_layouts_Layout_addLayoutComponent___java_lang_Object_com_codename1_ui_Component_com_codename1_ui_Container(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_Container_3_val_constraint(__cn1ThisObject), get_field_com_codename1_ui_Container_3_val_cmp(__cn1ThisObject), get_field_com_codename1_ui_Container_3_this_0(__cn1ThisObject));     SP -= 1;
 
-label_L411748515:
+label_L1293465402:
     __CN1_DEBUG_INFO(958);
     /* CustomInvoke */virtual_com_codename1_ui_Container_insertComponentAtImpl___int_com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_Container_3_this_0(__cn1ThisObject), get_field_com_codename1_ui_Container_3_val_index(__cn1ThisObject), get_field_com_codename1_ui_Container_3_val_cmp(__cn1ThisObject)); 
 
-label_L690360054:
+label_L202153290:
 END_TRY(1);    __CN1_DEBUG_INFO(960);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Container_access$200___com_codename1_ui_Container_R_java_util_ArrayList(threadStateData, get_field_com_codename1_ui_Container_3_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_java_util_ArrayList_remove___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_Container_3_val_insertion(__cn1ThisObject));     SP -= 1;
     __CN1_DEBUG_INFO(961);
-    JUMP_TO(label_L911267068, 0);
+    JUMP_TO(label_L393549265, 0);
 
-label_L2119713755:
+label_L2005293363:
     __CN1_DEBUG_INFO(960);
     BC_ASTORE(1);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Container_access$200___com_codename1_ui_Container_R_java_util_ArrayList(threadStateData, get_field_com_codename1_ui_Container_3_this_0(__cn1ThisObject)));
@@ -153,11 +153,11 @@ label_L2119713755:
     BC_ALOAD(1);
     throwException(threadStateData, POP_OBJ());
 
-label_L911267068:
+label_L393549265:
     __CN1_DEBUG_INFO(962);
     virtual_com_codename1_ui_Container_revalidateLater__(threadStateData, get_field_com_codename1_ui_Container_3_this_0(__cn1ThisObject)); 
 
-label_L1168076863:
+label_L1208670252:
     __CN1_DEBUG_INFO(964);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -165,7 +165,7 @@ label_L1168076863:
 
 
 JAVA_VOID com_codename1_ui_Container_3_flush__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3420, 931);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3419, 930);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(968);
     virtual_com_codename1_ui_Container_3_updateState__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(969);

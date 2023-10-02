@@ -50,7 +50,7 @@ java_util_Observable___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_Observable___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7230, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7229, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_ArrayList(threadStateData)); /* NEW */
@@ -65,12 +65,12 @@ JAVA_VOID java_util_Observable___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT
 
 
 JAVA_VOID java_util_Observable_addObserver___java_util_Observer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7230, 7231);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 7229, 7230);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL100899401301;
-    int tryBlockOffsetL100899401301;
-    DEFINE_CATCH_BLOCK(catch_L100899401301, label_L738677855, restoreToL100899401301);
+    int restoreToL210306535001;
+    int tryBlockOffsetL210306535001;
+    DEFINE_CATCH_BLOCK(catch_L210306535001, label_L738677855, restoreToL210306535001);
     int restoreToL73867785502;
     int tryBlockOffsetL73867785502;
     DEFINE_CATCH_BLOCK(catch_L73867785502, label_L738677855, restoreToL73867785502);
@@ -85,10 +85,10 @@ label_L240630125:
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = __cn1ThisObject;
 locals[2].type=CN1_TYPE_OBJECT;    monitorEnter(threadStateData, POP_OBJ());
 
-label_L1008994013:
- tryBlockOffsetL100899401301 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L100899401301);
-    restoreToL100899401301 = threadStateData->threadObjectStackOffset;
+label_L2103065350:
+ tryBlockOffsetL210306535001 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L210306535001);
+    restoreToL210306535001 = threadStateData->threadObjectStackOffset;
 
     if (/* CustomInvoke */virtual_java_util_List_contains___java_lang_Object_R_boolean(threadStateData, get_field_java_util_Observable_observers(__cn1ThisObject), locals[1].data.o)!=0) /* IFNE CustomJump */ JUMP_TO(label_L851912430, 1);
     /* CustomInvoke */virtual_java_util_List_add___java_lang_Object_R_boolean(threadStateData, get_field_java_util_Observable_observers(__cn1ThisObject), locals[1].data.o); 
@@ -97,7 +97,7 @@ label_L851912430:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L601943912:
+label_L548758850:
 END_TRY(1);    JUMP_TO(label_L586358252, 0);
 
 label_L738677855:
@@ -109,7 +109,7 @@ label_L738677855:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1913113483:
+label_L904685406:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
@@ -120,7 +120,7 @@ label_L586358252:
 
 
 JAVA_VOID java_util_Observable_clearChanged__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7230, 7232);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7229, 7231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     set_field_java_util_Observable_changed(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -133,7 +133,7 @@ JAVA_INT java_util_Observable_countObservers___R_int(CODENAME_ONE_THREAD_STATE, 
 
 
 JAVA_VOID java_util_Observable_deleteObserver___java_util_Observer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7230, 7234);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7229, 7233);
     monitorEnterBlock(threadStateData, __cn1ThisObject);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
@@ -150,14 +150,14 @@ JAVA_VOID java_util_Observable_deleteObservers__(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_BOOLEAN java_util_Observable_hasChanged___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7230, 7236);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7229, 7235);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_util_Observable_changed(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_VOID java_util_Observable_notifyObservers__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7230, 7237);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7229, 7236);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */virtual_java_util_Observable_notifyObservers___java_lang_Object(threadStateData, __cn1ThisObject, JAVA_NULL /* ACONST_NULL */); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -168,12 +168,12 @@ JAVA_VOID java_util_Observable_notifyObservers___java_lang_Object(CODENAME_ONE_T
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 8, 0, 7230, 7237);
+    DEFINE_INSTANCE_METHOD_STACK(3, 8, 0, 7229, 7236);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL65880867701;
-    int tryBlockOffsetL65880867701;
-    DEFINE_CATCH_BLOCK(catch_L65880867701, label_L885002305, restoreToL65880867701);
+    int restoreToL197482874901;
+    int tryBlockOffsetL197482874901;
+    DEFINE_CATCH_BLOCK(catch_L197482874901, label_L885002305, restoreToL197482874901);
     int restoreToL88500230502;
     int tryBlockOffsetL88500230502;
     DEFINE_CATCH_BLOCK(catch_L88500230502, label_L885002305, restoreToL88500230502);
@@ -183,10 +183,10 @@ locals[3].type=CN1_TYPE_OBJECT;    BC_ALOAD(0);
     /* VarOp.assignFrom */ locals[4].type=CN1_TYPE_INVALID;    locals[4].data.o = __cn1ThisObject;
 locals[4].type=CN1_TYPE_OBJECT;    monitorEnter(threadStateData, POP_OBJ());
 
-label_L658808677:
- tryBlockOffsetL65880867701 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L65880867701);
-    restoreToL65880867701 = threadStateData->threadObjectStackOffset;
+label_L1974828749:
+ tryBlockOffsetL197482874901 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L197482874901);
+    restoreToL197482874901 = threadStateData->threadObjectStackOffset;
 
     if (virtual_java_util_Observable_hasChanged___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ JUMP_TO(label_L124734309, 1);
     virtual_java_util_Observable_clearChanged__(threadStateData, __cn1ThisObject); 
@@ -203,7 +203,7 @@ label_L124734309:
     BC_ALOAD(4);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L994736062:
+label_L1495001462:
 END_TRY(1);    JUMP_TO(label_L211090736, 0);
 
 label_L885002305:
@@ -215,7 +215,7 @@ label_L885002305:
     BC_ALOAD(4);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L536171536:
+label_L1376720994:
 END_TRY(1);    BC_ALOAD(5);
     throwException(threadStateData, POP_OBJ());
 
@@ -239,7 +239,7 @@ label_L909282611:
 
 
 JAVA_VOID java_util_Observable_setChanged__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7230, 7238);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7229, 7237);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     set_field_java_util_Observable_changed(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

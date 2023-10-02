@@ -62,7 +62,7 @@ void __GC_MARK_java_util_TimeZone(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMa
 
 
 JAVA_VOID java_util_TimeZone___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6707, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6706, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -70,7 +70,7 @@ JAVA_VOID java_util_TimeZone___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  
 
 
 JAVA_VOID java_util_TimeZone_setID___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6707, 6708);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6706, 6707);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_TimeZone_ID(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -81,7 +81,7 @@ JAVA_VOID java_util_TimeZone_setID___java_lang_String(CODENAME_ONE_THREAD_STATE,
 
 JAVA_OBJECT java_util_TimeZone_getAvailableIDs___R_java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_util_TimeZone(threadStateData);
-    DEFINE_METHOD_STACK(4, 1, 0, 6707, 6709);
+    DEFINE_METHOD_STACK(4, 1, 0, 6706, 6708);
     /* VarOp.assignFrom */ locals[0].data.o = java_util_TimeZone_getTimezoneId___R_java_lang_String(threadStateData);locals[0].type=CN1_TYPE_OBJECT;    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(20))==0) /* IFEQ CustomJump */ goto label_L1878169648;
     PUSH_INT(1); /* ICONST_1 */
     SP--;
@@ -127,7 +127,7 @@ JAVA_LONG java_util_TimeZone_getJuly1___R_long(CODENAME_ONE_THREAD_STATE) {
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     volatile JAVA_LONG llocals_4_ = 0; /* v4 */
     __STATIC_INITIALIZER_java_util_TimeZone(threadStateData);
-    DEFINE_METHOD_STACK(4, 7, 0, 6707, 6714);
+    DEFINE_METHOD_STACK(4, 7, 0, 6706, 6713);
     /* VarOp.assignFrom */     llocals_0_ = 1498867200000LL;
     /* VarOp.assignFrom */ llocals_2_ = java_lang_System_currentTimeMillis___R_long(threadStateData);
     /* VarOp.assignFrom */     llocals_4_ = llocals_0_;
@@ -156,7 +156,7 @@ JAVA_LONG java_util_TimeZone_getDec30___R_long(CODENAME_ONE_THREAD_STATE) {
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     volatile JAVA_LONG llocals_4_ = 0; /* v4 */
     __STATIC_INITIALIZER_java_util_TimeZone(threadStateData);
-    DEFINE_METHOD_STACK(4, 7, 0, 6707, 6715);
+    DEFINE_METHOD_STACK(4, 7, 0, 6706, 6714);
     /* VarOp.assignFrom */     llocals_0_ = 1483056000000LL;
     /* VarOp.assignFrom */ llocals_2_ = java_lang_System_currentTimeMillis___R_long(threadStateData);
     /* VarOp.assignFrom */     llocals_4_ = llocals_0_;
@@ -181,7 +181,7 @@ label_L1418620248:
 
 JAVA_OBJECT java_util_TimeZone_getDefault___R_java_util_TimeZone(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_util_TimeZone(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 6707, 1276);
+    DEFINE_METHOD_STACK(3, 1, 0, 6706, 1275);
     if (get_static_java_util_TimeZone_defaultTimeZone(threadStateData)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L391877669;
     /* VarOp.assignFrom */ locals[0].data.o = java_util_TimeZone_getTimezoneId___R_java_lang_String(threadStateData);locals[0].type=CN1_TYPE_OBJECT;    PUSH_POINTER(__NEW_java_util_TimeZone_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -198,7 +198,7 @@ label_L391877669:
 
 
 JAVA_INT java_util_TimeZone_getDSTSavings___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6707, 6670);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6706, 6669);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (virtual_java_util_TimeZone_useDaylightTime___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L815320891;
     PUSH_INT(3600000); /* LDC */
     goto label_L101775274;
@@ -212,7 +212,7 @@ label_L101775274:
 
 
 JAVA_BOOLEAN java_util_TimeZone_inDaylightTime___java_util_Date_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6707, 6677);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6706, 6676);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_INT(0); /* ICONST_0 */
@@ -221,7 +221,7 @@ JAVA_BOOLEAN java_util_TimeZone_inDaylightTime___java_util_Date_R_boolean(CODENA
 
 
 JAVA_OBJECT java_util_TimeZone_getID___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6707, 6716);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6706, 6715);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_util_TimeZone_ID(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -240,11 +240,11 @@ JAVA_INT java_util_TimeZone_getRawOffset___R_int(CODENAME_ONE_THREAD_STATE, JAVA
 
 JAVA_OBJECT java_util_TimeZone_getTimeZone___java_lang_String_R_java_util_TimeZone(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_util_TimeZone(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 6707, 6648);
+    DEFINE_METHOD_STACK(3, 2, 0, 6706, 6647);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     if (locals[0].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1778629809;
-    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6717))==0) /* IFEQ CustomJump */ goto label_L1778629809;
+    if (/* CustomInvoke */virtual_java_lang_String_equalsIgnoreCase___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6716))==0) /* IFEQ CustomJump */ goto label_L1778629809;
 
 {
     JAVA_OBJECT ___returnValue=get_static_java_util_TimeZone_GMT(threadStateData);
@@ -281,7 +281,7 @@ JAVA_BOOLEAN java_util_TimeZone_useDaylightTime___R_boolean(CODENAME_ONE_THREAD_
 
 JAVA_INT java_util_TimeZone_access$000___java_lang_String_int_int_int_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4, JAVA_INT __cn1Arg5) {
     __STATIC_INITIALIZER_java_util_TimeZone(threadStateData);
-    DEFINE_METHOD_STACK(5, 5, 0, 6707, 218);
+    DEFINE_METHOD_STACK(5, 5, 0, 6706, 217);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_1_ = __cn1Arg2;
@@ -295,7 +295,7 @@ JAVA_INT java_util_TimeZone_access$000___java_lang_String_int_int_int_int_R_int(
 
 JAVA_INT java_util_TimeZone_access$100___java_lang_String_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_util_TimeZone(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 6707, 799);
+    DEFINE_METHOD_STACK(1, 1, 0, 6706, 798);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */PUSH_INT(java_util_TimeZone_getTimezoneRawOffset___java_lang_String_R_int(threadStateData, locals[0].data.o));
@@ -305,7 +305,7 @@ JAVA_INT java_util_TimeZone_access$100___java_lang_String_R_int(CODENAME_ONE_THR
 
 JAVA_BOOLEAN java_util_TimeZone_access$200___java_lang_String_long_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_LONG __cn1Arg2) {
     __STATIC_INITIALIZER_java_util_TimeZone(threadStateData);
-    DEFINE_METHOD_STACK(3, 3, 0, 6707, 800);
+    DEFINE_METHOD_STACK(3, 3, 0, 6706, 799);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     JAVA_LONG llocals_1_ = __cn1Arg2;
@@ -316,7 +316,7 @@ JAVA_BOOLEAN java_util_TimeZone_access$200___java_lang_String_long_R_boolean(COD
 
 JAVA_LONG java_util_TimeZone_access$300___R_long(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_util_TimeZone(threadStateData);
-    DEFINE_METHOD_STACK(2, 0, 0, 6707, 1149);
+    DEFINE_METHOD_STACK(2, 0, 0, 6706, 1148);
     PUSH_LONG(java_util_TimeZone_getDec30___R_long(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_LONG();
@@ -325,7 +325,7 @@ JAVA_LONG java_util_TimeZone_access$300___R_long(CODENAME_ONE_THREAD_STATE) {
 
 JAVA_LONG java_util_TimeZone_access$400___R_long(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_util_TimeZone(threadStateData);
-    DEFINE_METHOD_STACK(2, 0, 0, 6707, 1150);
+    DEFINE_METHOD_STACK(2, 0, 0, 6706, 1149);
     PUSH_LONG(java_util_TimeZone_getJuly1___R_long(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_LONG();
@@ -334,7 +334,7 @@ JAVA_LONG java_util_TimeZone_access$400___R_long(CODENAME_ONE_THREAD_STATE) {
 
 JAVA_OBJECT java_util_TimeZone_access$500___java_util_TimeZone_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_util_TimeZone(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 6707, 1858);
+    DEFINE_METHOD_STACK(1, 1, 0, 6706, 1857);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(get_field_java_util_TimeZone_ID(locals[0].data.o));
@@ -344,7 +344,7 @@ JAVA_OBJECT java_util_TimeZone_access$500___java_util_TimeZone_R_java_lang_Strin
 
 
 JAVA_VOID java_util_TimeZone___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(4, 0, 0, 6707, 860);
+    DEFINE_METHOD_STACK(4, 0, 0, 6706, 859);
     PUSH_POINTER(__NEW_java_util_SimpleTimeZone(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_SimpleTimeZone___INIT_____int_java_lang_String(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */, STRING_FROM_CONSTANT_POOL_OFFSET(20));     SP -= 1;

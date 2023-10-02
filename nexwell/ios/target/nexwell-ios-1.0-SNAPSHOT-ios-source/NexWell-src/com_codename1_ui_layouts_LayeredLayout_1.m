@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_layouts_LayeredLayout_1(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID com_codename1_ui_layouts_LayeredLayout_1___INIT_____com_codename1_ui_layouts_LayeredLayout(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6886, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6885, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(3378);
@@ -46,42 +46,42 @@ JAVA_VOID com_codename1_ui_layouts_LayeredLayout_1___INIT_____com_codename1_ui_l
 
 
 JAVA_INT com_codename1_ui_layouts_LayeredLayout_1_compare___com_codename1_ui_Component_com_codename1_ui_Component_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6886, 1032);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6885, 1031);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(3382);
-    if (virtual_com_codename1_ui_Component_getY___R_int(threadStateData, locals[1].data.o)>=virtual_com_codename1_ui_Component_getY___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPGE CustomJump */ goto label_L511507785;
+    if (virtual_com_codename1_ui_Component_getY___R_int(threadStateData, locals[1].data.o)>=virtual_com_codename1_ui_Component_getY___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPGE CustomJump */ goto label_L879319843;
     __CN1_DEBUG_INFO(3383);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -1 /* ICONST_M1 */;
 
-label_L511507785:
+label_L879319843:
     __CN1_DEBUG_INFO(3384);
-    if (virtual_com_codename1_ui_Component_getY___R_int(threadStateData, locals[1].data.o)<=virtual_com_codename1_ui_Component_getY___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPLE CustomJump */ goto label_L981876983;
+    if (virtual_com_codename1_ui_Component_getY___R_int(threadStateData, locals[1].data.o)<=virtual_com_codename1_ui_Component_getY___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPLE CustomJump */ goto label_L1629105538;
     __CN1_DEBUG_INFO(3385);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L981876983:
+label_L1629105538:
     __CN1_DEBUG_INFO(3387);
-    if (virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[1].data.o)>=virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPGE CustomJump */ goto label_L211877993;
+    if (virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[1].data.o)>=virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPGE CustomJump */ goto label_L1735717476;
     __CN1_DEBUG_INFO(3388);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -1 /* ICONST_M1 */;
 
-label_L211877993:
+label_L1735717476:
     __CN1_DEBUG_INFO(3389);
-    if (virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[1].data.o)<=virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPLE CustomJump */ goto label_L1172738852;
+    if (virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[1].data.o)<=virtual_com_codename1_ui_Component_getX___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPLE CustomJump */ goto label_L580515543;
     __CN1_DEBUG_INFO(3390);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L1172738852:
+label_L580515543:
     __CN1_DEBUG_INFO(3392);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
 
 
 JAVA_INT com_codename1_ui_layouts_LayeredLayout_1_compare___java_lang_Object_java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6886, 1032);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6885, 1031);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

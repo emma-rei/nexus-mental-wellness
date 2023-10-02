@@ -106,6 +106,8 @@ JAVA_BOOLEAN virtual_java_util_HashMap_containsKey___java_lang_Object_R_boolean(
 
 JAVA_BOOLEAN virtual_java_util_HashMap_containsValue___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
 
+JAVA_OBJECT virtual_java_util_HashMap_entrySet___R_java_util_Set(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
 JAVA_OBJECT virtual_java_util_HashMap_get___java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
 
 JAVA_BOOLEAN virtual_java_util_HashMap_isEmpty___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);

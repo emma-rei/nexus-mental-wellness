@@ -54,7 +54,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_AnimationManager_1(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_ui_AnimationManager_1___INIT_____com_codename1_ui_AnimationManager_com_codename1_ui_animations_ComponentAnimation_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 2785, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 2784, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -72,20 +72,20 @@ JAVA_VOID com_codename1_ui_AnimationManager_1___INIT_____com_codename1_ui_Animat
 
 
 JAVA_VOID com_codename1_ui_AnimationManager_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2785, 204);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2784, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT; 
-label_L1676010932:
+label_L316355462:
     __CN1_DEBUG_INFO(131);
-    if (virtual_com_codename1_ui_animations_ComponentAnimation_isInProgress___R_boolean(threadStateData, get_field_com_codename1_ui_AnimationManager_1_val_an(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1797159635;
+    if (virtual_com_codename1_ui_animations_ComponentAnimation_isInProgress___R_boolean(threadStateData, get_field_com_codename1_ui_AnimationManager_1_val_an(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L754707140;
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_AnimationManager_access$000___com_codename1_ui_AnimationManager_R_java_util_ArrayList(threadStateData, get_field_com_codename1_ui_AnimationManager_1_this_0(__cn1ThisObject)));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_ArrayList_contains___java_lang_Object_R_boolean(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_AnimationManager_1_val_an(__cn1ThisObject));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1797159635;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L754707140;
     __CN1_DEBUG_INFO(132);
     /* CustomInvoke */com_codename1_io_Util_wait___java_lang_Object_int(threadStateData, get_field_com_codename1_ui_AnimationManager_1_val_LOCK(__cn1ThisObject), 50); 
-    goto label_L1676010932;
+    goto label_L316355462;
 
-label_L1797159635:
+label_L754707140:
     __CN1_DEBUG_INFO(134);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

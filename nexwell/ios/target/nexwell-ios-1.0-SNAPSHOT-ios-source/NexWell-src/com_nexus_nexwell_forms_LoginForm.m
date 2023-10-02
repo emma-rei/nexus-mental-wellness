@@ -12,8 +12,10 @@
 #include "com_codename1_ui_layouts_BoxLayout.h"
 #include "com_codename1_ui_layouts_FlowLayout.h"
 #include "com_codename1_ui_plaf_UIManager.h"
+#include "com_nexus_nexwell_forms_GamesContainer.h"
 #include "com_nexus_nexwell_forms_LoginForm.h"
 #include "com_nexus_nexwell_forms_LoginForm__Lambda_1.h"
+#include "com_nexus_nexwell_forms_LoginForm__Lambda_2.h"
 #include "com_nexus_nexwell_forms_MainForm.h"
 #include "java_lang_Integer.h"
 #include "java_lang_NullPointerException.h"
@@ -316,7 +318,7 @@ com_nexus_nexwell_forms_LoginForm___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_forms_LoginForm___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 10199, 202);
+    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 10198, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(26);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_layouts_BorderLayout(threadStateData)); /* NEW */
@@ -327,69 +329,69 @@ JAVA_VOID com_nexus_nexwell_forms_LoginForm___INIT____(CODENAME_ONE_THREAD_STATE
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_Label(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10190), STRING_FROM_CONSTANT_POOL_OFFSET(10191));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10189), STRING_FROM_CONSTANT_POOL_OFFSET(10190));     SP -= 1;
     set_field_com_nexus_nexwell_forms_LoginForm_logo(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(18);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_TextField(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_TextField___INIT_____java_lang_String_java_lang_String_int_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(220), STRING_FROM_CONSTANT_POOL_OFFSET(10200), 30, 1 /* ICONST_1 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_TextField___INIT_____java_lang_String_java_lang_String_int_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219), STRING_FROM_CONSTANT_POOL_OFFSET(10199), 30, 1 /* ICONST_1 */);     SP -= 1;
     set_field_com_nexus_nexwell_forms_LoginForm_user(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(19);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_TextField(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_TextField___INIT_____java_lang_String_java_lang_String_int_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(220), STRING_FROM_CONSTANT_POOL_OFFSET(10201), 30, 65536);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_TextField___INIT_____java_lang_String_java_lang_String_int_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219), STRING_FROM_CONSTANT_POOL_OFFSET(10200), 30, 65536);     SP -= 1;
     set_field_com_nexus_nexwell_forms_LoginForm_password(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(21);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10202));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10201));     SP -= 1;
     set_field_com_nexus_nexwell_forms_LoginForm_login(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(22);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10203));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10202));     SP -= 1;
     set_field_com_nexus_nexwell_forms_LoginForm_signup(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(23);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10204));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10203));     SP -= 1;
     set_field_com_nexus_nexwell_forms_LoginForm_needHelp(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(27);
     { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_LoginForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setUIID___java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2346));     SP -= 1;
+    /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setUIID___java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2345));     SP -= 1;
     __CN1_DEBUG_INFO(28);
-    /* CustomInvoke */virtual_com_codename1_ui_Label_setName___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_logo(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10192)); 
-    __CN1_DEBUG_INFO(29);
-    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_codename1_ui_layouts_BorderLayout_centerAbsolute___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_logo(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(30);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10205)); 
-    __CN1_DEBUG_INFO(31);
-    /* CustomInvoke */virtual_com_nexus_nexwell_forms_LoginForm_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(63), locals[1].data.o); 
-    __CN1_DEBUG_INFO(33);
-    if (com_codename1_ui_CN_isTablet___R_boolean(threadStateData)!=0) /* IFNE CustomJump */ goto label_L96039159;
+    /* CustomInvoke */virtual_com_codename1_ui_Label_setName___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_logo(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10191)); 
+    __CN1_DEBUG_INFO(30);
+    /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_codename1_ui_layouts_BorderLayout_centerAbsolute___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_logo(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(31);
+    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10204)); 
+    __CN1_DEBUG_INFO(32);
+    /* CustomInvoke */virtual_com_nexus_nexwell_forms_LoginForm_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(62), locals[1].data.o); 
     __CN1_DEBUG_INFO(34);
-    /* VarOp.assignFrom */ locals[2].data.o = virtual_com_nexus_nexwell_forms_LoginForm_getLayout___R_com_codename1_ui_layouts_Layout(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(35);
-    /* CustomInvoke */virtual_com_codename1_ui_layouts_BorderLayout_defineLandscapeSwap___java_lang_String_java_lang_String(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(63), STRING_FROM_CONSTANT_POOL_OFFSET(66)); 
+    if (com_codename1_ui_CN_isTablet___R_boolean(threadStateData)!=0) /* IFNE CustomJump */ goto label_L1335061928;
+    __CN1_DEBUG_INFO(35);
+    /* VarOp.assignFrom */ locals[2].data.o = virtual_com_nexus_nexwell_forms_LoginForm_getLayout___R_com_codename1_ui_layouts_Layout(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(36);
+    /* CustomInvoke */virtual_com_codename1_ui_layouts_BorderLayout_defineLandscapeSwap___java_lang_String_java_lang_String(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(62), STRING_FROM_CONSTANT_POOL_OFFSET(65)); 
 
-label_L96039159:
-    __CN1_DEBUG_INFO(37);
+label_L1335061928:
+    __CN1_DEBUG_INFO(38);
     { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_LoginForm_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10206), 0 /* ICONST_0 */);
+    /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_boolean_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10205), 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L2144644334;
-    __CN1_DEBUG_INFO(38);
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1108706191;
+    __CN1_DEBUG_INFO(39);
     PUSH_INT(2); /* ICONST_2 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_com_codename1_ui_Component(threadStateData, SP[0].data.i));
@@ -430,9 +432,9 @@ label_L96039159:
     { JAVA_OBJECT tmpResult = com_codename1_ui_layouts_BorderLayout_centerAbsolute___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
-    __CN1_DEBUG_INFO(39);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10207)); 
     __CN1_DEBUG_INFO(40);
+    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10206)); 
+    __CN1_DEBUG_INFO(41);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(java_lang_Integer_valueOf___int_R_java_lang_Integer(threadStateData, 4/* ICONST_4 */));
     BC_ALOAD(2);
@@ -440,18 +442,18 @@ label_L96039159:
     SP-=2;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
-    __CN1_DEBUG_INFO(41);
-    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_login(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10208)); 
     __CN1_DEBUG_INFO(42);
-    /* CustomInvoke */virtual_com_nexus_nexwell_forms_LoginForm_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(10189)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_login(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10207)); 
     __CN1_DEBUG_INFO(43);
-    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_signup(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10209)); 
+    /* CustomInvoke */virtual_com_nexus_nexwell_forms_LoginForm_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(10188)); 
     __CN1_DEBUG_INFO(44);
-    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_needHelp(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10209)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_signup(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10208)); 
     __CN1_DEBUG_INFO(45);
+    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_needHelp(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10208)); 
+    __CN1_DEBUG_INFO(46);
     BC_ALOAD(2);
     /* LDC: 'South'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(64));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(63));
     PUSH_INT(2); /* ICONST_2 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_com_codename1_ui_Component(threadStateData, SP[0].data.i));
@@ -475,22 +477,22 @@ label_L96039159:
     SP-=2;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
-    __CN1_DEBUG_INFO(46);
-    goto label_L375097969;
+    __CN1_DEBUG_INFO(47);
+    goto label_L1160487387;
 
-label_L2144644334:
-    __CN1_DEBUG_INFO(48);
-    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_login(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10210)); 
+label_L1108706191:
     __CN1_DEBUG_INFO(49);
+    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_login(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10209)); 
+    __CN1_DEBUG_INFO(50);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10211), STRING_FROM_CONSTANT_POOL_OFFSET(10212));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10210), STRING_FROM_CONSTANT_POOL_OFFSET(10211));     SP -= 1;
     BC_ASTORE(2);
-    __CN1_DEBUG_INFO(50);
-    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_signup(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10213)); 
     __CN1_DEBUG_INFO(51);
-    /* CustomInvoke */virtual_com_codename1_ui_Button_setText___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_signup(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10214)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_signup(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10212)); 
     __CN1_DEBUG_INFO(52);
+    /* CustomInvoke */virtual_com_codename1_ui_Button_setText___java_lang_String(threadStateData, get_field_com_nexus_nexwell_forms_LoginForm_signup(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(10213)); 
+    __CN1_DEBUG_INFO(53);
     PUSH_INT(5); /* ICONST_5 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_com_codename1_ui_Component(threadStateData, SP[0].data.i));
@@ -532,11 +534,11 @@ label_L2144644334:
     { JAVA_OBJECT tmpResult = com_codename1_ui_layouts_BoxLayout_encloseY___com_codename1_ui_Component_1ARRAY_R_com_codename1_ui_Container(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(3);
-    __CN1_DEBUG_INFO(53);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10207)); 
     __CN1_DEBUG_INFO(54);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_setScrollableY___boolean(threadStateData, locals[3].data.o, 1 /* ICONST_1 */); 
+    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10206)); 
     __CN1_DEBUG_INFO(55);
+    /* CustomInvoke */virtual_com_codename1_ui_Container_setScrollableY___boolean(threadStateData, locals[3].data.o, 1 /* ICONST_1 */); 
+    __CN1_DEBUG_INFO(56);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(java_lang_Integer_valueOf___int_R_java_lang_Integer(threadStateData, 4/* ICONST_4 */));
     BC_ALOAD(3);
@@ -545,20 +547,24 @@ label_L2144644334:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
 
-label_L375097969:
-    __CN1_DEBUG_INFO(57);
+label_L1160487387:
+    __CN1_DEBUG_INFO(58);
     PUSH_POINTER(get_field_com_nexus_nexwell_forms_LoginForm_login(__cn1ThisObject));
     PUSH_OBJ(com_nexus_nexwell_forms_LoginForm__Lambda_1_lambdaFactory$___R_com_codename1_ui_events_ActionListener(threadStateData));
     virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(59);
+    PUSH_POINTER(get_field_com_nexus_nexwell_forms_LoginForm_signup(__cn1ThisObject));
+    PUSH_OBJ(com_nexus_nexwell_forms_LoginForm__Lambda_2_lambdaFactory$___R_com_codename1_ui_events_ActionListener(threadStateData));
+    virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    __CN1_DEBUG_INFO(61);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_BOOLEAN com_nexus_nexwell_forms_LoginForm_shouldPaintStatusBar___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10199, 2831);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(61);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10198, 2830);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(63);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }
 
@@ -568,12 +574,27 @@ JAVA_VOID com_nexus_nexwell_forms_LoginForm_showLoginForm__(CODENAME_ONE_THREAD_
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_LoginForm_lambda$new$0___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+JAVA_VOID com_nexus_nexwell_forms_LoginForm_lambda$new$1___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_LoginForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 10199, 10216);
+    DEFINE_METHOD_STACK(2, 1, 0, 10198, 10215);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(57);
+    __CN1_DEBUG_INFO(59);
+    PUSH_POINTER(__NEW_com_nexus_nexwell_forms_GamesContainer(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    com_nexus_nexwell_forms_GamesContainer___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    virtual_com_nexus_nexwell_forms_GamesContainer_show__(threadStateData, SP[-1].data.o);     SP -= 1;
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_nexus_nexwell_forms_LoginForm_lambda$new$0___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+    __STATIC_INITIALIZER_com_nexus_nexwell_forms_LoginForm(threadStateData);
+    DEFINE_METHOD_STACK(2, 1, 0, 10198, 10216);
+    locals[0].data.o = __cn1Arg1;
+    locals[0].type = CN1_TYPE_OBJECT;
+    __CN1_DEBUG_INFO(58);
     PUSH_POINTER(__NEW_com_nexus_nexwell_forms_MainForm(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_nexus_nexwell_forms_MainForm___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
@@ -4131,7 +4152,7 @@ void __STATIC_INITIALIZER_com_nexus_nexwell_forms_LoginForm(CODENAME_ONE_THREAD_
         return;
     }
 
-    class__com_nexus_nexwell_forms_LoginForm.vtable = malloc(sizeof(void*) *529);
+    class__com_nexus_nexwell_forms_LoginForm.vtable = malloc(sizeof(void*) *530);
     __INIT_VTABLE_com_nexus_nexwell_forms_LoginForm(threadStateData, class__com_nexus_nexwell_forms_LoginForm.vtable);
     class__com_nexus_nexwell_forms_LoginForm.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_nexus_nexwell_forms_LoginForm);

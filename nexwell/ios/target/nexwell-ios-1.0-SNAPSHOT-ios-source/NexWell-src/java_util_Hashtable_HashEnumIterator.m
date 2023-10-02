@@ -112,7 +112,7 @@ JAVA_OBJECT __NEW_java_util_Hashtable_HashEnumIterator(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID java_util_Hashtable_HashEnumIterator___INIT_____java_util_Hashtable_java_util_MapEntry_Type(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 2021, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 2020, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -126,7 +126,7 @@ JAVA_VOID java_util_Hashtable_HashEnumIterator___INIT_____java_util_Hashtable_ja
 
 
 JAVA_VOID java_util_Hashtable_HashEnumIterator___INIT_____java_util_Hashtable_java_util_MapEntry_Type_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_BOOLEAN __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 2021, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 2020, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -143,7 +143,7 @@ JAVA_VOID java_util_Hashtable_HashEnumIterator___INIT_____java_util_Hashtable_ja
 
 
 JAVA_BOOLEAN java_util_Hashtable_HashEnumIterator_hasMoreElements___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 2021, 2000);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 2020, 1999);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_Hashtable_HashEnumIterator_isEnumeration(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L346359559;
     if (get_field_java_util_Hashtable_HashEnumIterator_entry(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1297189682;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
@@ -176,7 +176,7 @@ label_L346359559:
 
 
 JAVA_BOOLEAN java_util_Hashtable_HashEnumIterator_hasNext___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2021, 1250);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2020, 1249);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_Hashtable_HashEnumIterator_isEnumeration(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L238816832;
 
 {
@@ -192,7 +192,7 @@ label_L238816832:
 
 
 JAVA_OBJECT java_util_Hashtable_HashEnumIterator_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2021, 1251);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2020, 1250);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_Hashtable_HashEnumIterator_isEnumeration(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L849198527;
     if (get_field_java_util_Hashtable_HashEnumIterator_expectedModCount(__cn1ThisObject)!=get_field_java_util_Hashtable_modCount(get_field_java_util_Hashtable_HashEnumIterator_this_0(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L1934932165;
     { JAVA_OBJECT tmpResult = virtual_java_util_Hashtable_HashEnumIterator_nextElement___R_java_lang_Object(threadStateData, __cn1ThisObject);
@@ -215,7 +215,7 @@ label_L849198527:
 
 
 JAVA_OBJECT java_util_Hashtable_HashEnumIterator_nextElement___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2021, 2001);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2020, 2000);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_Hashtable_HashEnumIterator_isEnumeration(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L551016187;
     if (virtual_java_util_Hashtable_HashEnumIterator_hasMoreElements___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1324843695;
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_java_util_MapEntry_Type_get___java_util_MapEntry_R_java_lang_Object(threadStateData, get_field_java_util_Hashtable_HashEnumIterator_type(__cn1ThisObject), get_field_java_util_Hashtable_HashEnumIterator_entry(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    set_field_java_util_Hashtable_HashEnumIterator_entry(threadStateData, get_field_java_util_Hashtable_Entry_next(get_field_java_util_Hashtable_HashEnumIterator_entry(__cn1ThisObject)), __cn1ThisObject);
@@ -240,7 +240,7 @@ label_L551016187:
 
 
 JAVA_VOID java_util_Hashtable_HashEnumIterator_remove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2021, 1232);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2020, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_Hashtable_HashEnumIterator_isEnumeration(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L299413131;
     PUSH_POINTER(__NEW_java_lang_UnsupportedOperationException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */

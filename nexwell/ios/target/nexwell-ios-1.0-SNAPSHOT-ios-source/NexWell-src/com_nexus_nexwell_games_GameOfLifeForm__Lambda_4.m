@@ -1,8 +1,9 @@
 #include "com_nexus_nexwell_games_GameOfLifeForm__Lambda_4.h"
+#include "com_codename1_ui_events_ActionEvent.h"
 #include "com_nexus_nexwell_games_GameOfLifeForm.h"
 #include "com_nexus_nexwell_games_GameOfLifeForm__Lambda_4.h"
 #include "java_lang_NullPointerException.h"
-const struct clazz *base_interfaces_for_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4[] = {&class__com_codename1_ui_events_DataChangedListener};
+const struct clazz *base_interfaces_for_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4[] = {&class__com_codename1_ui_events_ActionListener};
 struct clazz class__com_nexus_nexwell_games_GameOfLifeForm__Lambda_4 = {
   DEBUG_GC_INIT &class__java_lang_Class, 999999, 0, 0, 0, 0, &__FINALIZER_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4 ,0 , &__GC_MARK_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4,  0, cn1_class_id_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4, "com.nexus.nexwell.games.GameOfLifeForm..Lambda.4", 0, 0, 0, JAVA_FALSE, &class__java_lang_Object, base_interfaces_for_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4, 1, 0, 0
 , 0, JAVA_TRUE, 0, 0, 0, 0};
@@ -33,7 +34,7 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4(CODENAME_ONE_
 
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_4___INIT_____com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10398, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10575, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -43,19 +44,19 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_4___INIT_____com_nexus_
 }
 
 
-JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_dataChanged___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10398, 4484);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
-    JAVA_INT ilocals_2_ = __cn1Arg2;
-    /* CustomInvoke */com_nexus_nexwell_games_GameOfLifeForm_lambda$new$3___com_nexus_nexwell_games_GameOfLifeForm_int_int(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_arg_1(__cn1ThisObject), ilocals_1_, ilocals_2_); 
+JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10575, 3047);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
+    locals[1].type = CN1_TYPE_OBJECT;
+    /* CustomInvoke */com_nexus_nexwell_games_GameOfLifeForm_lambda$new$3___com_nexus_nexwell_games_GameOfLifeForm_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_arg_1(__cn1ThisObject), locals[1].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_OBJECT com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_com_codename1_ui_events_DataChangedListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+JAVA_OBJECT com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 10398, 10186);
+    DEFINE_METHOD_STACK(3, 1, 0, 10575, 10185);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4(threadStateData)); /* NEW */
@@ -97,7 +98,7 @@ JAVA_OBJECT com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_clone___R_java_lang
 
 void __INIT_VTABLE_com_nexus_nexwell_games_GameOfLifeForm__Lambda_4(CODENAME_ONE_THREAD_STATE, void** vtable) {
         __INIT_VTABLE_java_lang_Object(threadStateData, vtable);
-    vtable[10] = &com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_dataChanged___int_int;
+    vtable[10] = &com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_actionPerformed___com_codename1_ui_events_ActionEvent;
 }
 
 static int __com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_LOADED__=0;

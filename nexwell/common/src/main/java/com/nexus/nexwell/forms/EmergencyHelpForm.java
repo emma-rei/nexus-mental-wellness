@@ -9,6 +9,8 @@ import com.nexus.nexwell.components.Colors;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.plaf.RoundRectBorder;
+import com.codename1.ui.plaf.Style;
 import com.codename1.ui.util.SwipeBackSupport;
 import com.nexus.nexwell.forms.MainForm;
 import java.util.HashMap;
@@ -44,7 +46,7 @@ public class EmergencyHelpForm extends Form{
         PhoneBook.put("HELP123 by TOUCH Youth Integrated Team", "1800-6123-123");
         PhoneBook.put("Singapore Association for Mental Health (SAMH)", "1800-283-7019");
         PhoneBook.put("PAVE: Individual or Family Protection", "1800-353-5800");
-        MultiButton twoLinesIconEmblemHorizontal = new MultiButton("Icon + Emblem");
+        
         
         // Keoni's design of Emergency Help form, follows a specific color pattern
         // pattern is 12, 23, 31
@@ -59,12 +61,19 @@ public class EmergencyHelpForm extends Form{
         for (Map.Entry<String, String> set : PhoneBook.entrySet()){
             
             MultiButton mb = new MultiButton(set.getKey());
-            mb.setUIID("SpanLabel");
+            mb.setTextLine2(set.getValue());
+            mb.addActionListener(e-> Call_Function(set.getKey(),set.getValue()));
             
+            
+            
+            
+            mb.setUIID("SpanLabel");
+            mb.setUIIDLine1("WhiteText");
             if (colorIndex == 2){
                 colorIndex = colorIndex % 2;
             }
-            
+            mb.getAllStyles().setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
+            mb.setGap(1);
             mb.getAllStyles().setBackgroundGradientStartColor(colorArr[colorIndex]);
             colorIndex++;
             mb.getAllStyles().setBackgroundGradientEndColor(colorArr[colorIndex]);
@@ -79,9 +88,6 @@ public class EmergencyHelpForm extends Form{
                 FontImage.setMaterialIcon(mb,FontImage.MATERIAL_CALL);
                 
             }
-            mb.setTextLine2(set.getValue());
-            mb.addActionListener(e-> Call_Function(set.getKey(),set.getValue()));
-            
             
             
             cnt.add(mb);
@@ -98,6 +104,7 @@ public class EmergencyHelpForm extends Form{
         if(Dialog.show("Confirm call","Are you sure you want to call "+number +"? (" + name+")" +"."+" After" +
                 " midnight, interactive voice recording directs callers to 24 hour helpline).", "Call", "Cancel")){
             Display.getInstance().dial(number);
+            
         }
     }
 }

@@ -116,7 +116,7 @@ JAVA_OBJECT __NEW_ARRAY_java_util_HashMap(CODENAME_ONE_THREAD_STATE, JAVA_INT si
 
 
 JAVA_OBJECT java_util_HashMap_newElementArray___int_R_java_util_HashMap_Entry_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 5706, 1243);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 5705, 1242);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_1_; 
@@ -129,7 +129,7 @@ JAVA_OBJECT java_util_HashMap_newElementArray___int_R_java_util_HashMap_Entry_1A
 
 
 JAVA_VOID java_util_HashMap___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5706, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5705, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */java_util_HashMap___INIT_____int(threadStateData, __cn1ThisObject, 16); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -137,7 +137,7 @@ JAVA_VOID java_util_HashMap___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  _
 
 
 JAVA_VOID java_util_HashMap___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 5706, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 5705, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     /* CustomInvoke */java_util_HashMap___INIT_____int_float(threadStateData, __cn1ThisObject, ilocals_1_, 0.75); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -148,7 +148,7 @@ JAVA_VOID java_util_HashMap___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA_OBJEC
 JAVA_INT java_util_HashMap_calculateCapacity___int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_0_ = 0; /* v0 */
     __STATIC_INITIALIZER_java_util_HashMap(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 5706, 5707);
+    DEFINE_METHOD_STACK(3, 1, 0, 5705, 5706);
     ilocals_0_ = __cn1Arg1;
     if (ilocals_0_<1073741824) /* IF_IMPLT CustomJump */ goto label_L1541049864;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1073741824;
@@ -176,7 +176,7 @@ label_L511707818:
 
 JAVA_VOID java_util_HashMap___INIT_____int_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_FLOAT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 5706, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 5705, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     JAVA_FLOAT flocals_2_ = __cn1Arg2;
     java_util_AbstractMap___INIT____(threadStateData, __cn1ThisObject); 
@@ -207,7 +207,7 @@ label_L116405378:
 
 
 JAVA_VOID java_util_HashMap___INIT_____java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5706, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5705, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */java_util_HashMap___INIT_____int(threadStateData, __cn1ThisObject, /* CustomInvoke */java_util_HashMap_calculateCapacity___int_R_int(threadStateData, virtual_java_util_Map_size___R_int(threadStateData, locals[1].data.o))); 
@@ -218,7 +218,7 @@ JAVA_VOID java_util_HashMap___INIT_____java_util_Map(CODENAME_ONE_THREAD_STATE, 
 
 
 JAVA_VOID java_util_HashMap_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5706, 1229);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5705, 1228);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_HashMap_elementCount(__cn1ThisObject)<=0) /* IFLE CustomJump */ goto label_L164974746;
     set_field_java_util_HashMap_elementCount(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     /* CustomInvoke */java_util_Arrays_fill___java_lang_Object_1ARRAY_java_lang_Object(threadStateData, get_field_java_util_HashMap_elementData(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */); 
@@ -231,7 +231,7 @@ label_L164974746:
 
 
 JAVA_VOID java_util_HashMap_computeThreshold__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5706, 5708);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5705, 5707);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     set_field_java_util_HashMap_threshold(threadStateData, ((JAVA_INT)(((JAVA_FLOAT)CN1_ARRAY_LENGTH(get_field_java_util_HashMap_elementData(__cn1ThisObject))) * get_field_java_util_HashMap_loadFactor(__cn1ThisObject))), __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -239,7 +239,7 @@ JAVA_VOID java_util_HashMap_computeThreshold__(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_BOOLEAN java_util_HashMap_containsKey___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 5706, 1983);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 5705, 1982);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */virtual_java_util_HashMap_getEntry___java_lang_Object_R_java_util_HashMap_Entry(threadStateData, __cn1ThisObject, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L396283472;
@@ -256,7 +256,7 @@ label_L989892772:
 
 JAVA_BOOLEAN java_util_HashMap_containsValue___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 5706, 1984);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 5705, 1983);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1020520290;
@@ -309,7 +309,7 @@ label_L1859374258:
 
 
 JAVA_OBJECT java_util_HashMap_entrySet___R_java_util_Set(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5706, 1986);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 5705, 1985);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_util_HashMap_HashMapEntrySet(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_HashMap_HashMapEntrySet___INIT_____java_util_HashMap(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
@@ -319,7 +319,7 @@ JAVA_OBJECT java_util_HashMap_entrySet___R_java_util_Set(CODENAME_ONE_THREAD_STA
 
 
 JAVA_OBJECT java_util_HashMap_get___java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 5706, 611);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 5705, 610);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */virtual_java_util_HashMap_getEntry___java_lang_Object_R_java_util_HashMap_Entry(threadStateData, __cn1ThisObject, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L428566321;
@@ -339,7 +339,7 @@ label_L428566321:
 JAVA_OBJECT java_util_HashMap_getEntry___java_lang_Object_R_java_util_HashMap_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 5706, 1987);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 5705, 1986);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2087258327;
@@ -357,7 +357,7 @@ label_L1016550616:
 
 
 JAVA_OBJECT java_util_HashMap_findNullKeyEntry___R_java_util_HashMap_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5706, 5710);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5705, 5709);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o=CN1_ARRAY_ELEMENT_OBJECT(get_field_java_util_HashMap_elementData(__cn1ThisObject), 0 /* ICONST_0 */);
 locals[1].type=CN1_TYPE_OBJECT;
 label_L2030538903:
@@ -374,7 +374,7 @@ label_L1006094903:
 
 
 JAVA_BOOLEAN java_util_HashMap_isEmpty___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5706, 906);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5705, 905);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_HashMap_elementCount(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1293680848;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L1261153343;
@@ -388,7 +388,7 @@ label_L1261153343:
 
 
 JAVA_OBJECT java_util_HashMap_keySet___R_java_util_Set(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 5706, 1989);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 5705, 1988);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_HashMap_keySet(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1309176095;
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_HashMap_1(threadStateData)); /* NEW */
@@ -405,7 +405,7 @@ label_L1309176095:
 
 
 JAVA_OBJECT java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 5706, 1990);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 5705, 1989);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -420,7 +420,7 @@ JAVA_OBJECT java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lan
 JAVA_OBJECT java_util_HashMap_putImpl___java_lang_Object_java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 6, 0, 5706, 5711);
+    DEFINE_INSTANCE_METHOD_STACK(4, 6, 0, 5705, 5710);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -469,7 +469,7 @@ JAVA_OBJECT java_util_HashMap_createEntry___java_lang_Object_int_java_lang_Objec
 
 
 JAVA_OBJECT java_util_HashMap_createHashedEntry___java_lang_Object_int_int_R_java_util_HashMap_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 5706, 5713);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 5705, 5712);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -487,7 +487,7 @@ JAVA_OBJECT java_util_HashMap_createHashedEntry___java_lang_Object_int_int_R_jav
 
 
 JAVA_VOID java_util_HashMap_putAll___java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5706, 1991);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 5705, 1990);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (virtual_java_util_Map_isEmpty___R_boolean(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L807752428;
@@ -501,7 +501,7 @@ label_L807752428:
 
 JAVA_VOID java_util_HashMap_putAllImpl___java_util_Map(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 5706, 5714);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 5705, 5713);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_INT(get_field_java_util_HashMap_elementCount(__cn1ThisObject));
@@ -542,7 +542,7 @@ JAVA_VOID java_util_HashMap_rehash___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT 
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 8, 0, 5706, 1992);
+    DEFINE_INSTANCE_METHOD_STACK(3, 8, 0, 5705, 1991);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     if (ilocals_1_!=0) /* IFNE CustomJump */ goto label_L914356853;
     PUSH_INT(1); /* ICONST_1 */
@@ -588,7 +588,7 @@ label_L195228908:
 
 
 JAVA_VOID java_util_HashMap_rehash__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5706, 1992);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 5705, 1991);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */virtual_java_util_HashMap_rehash___int(threadStateData, __cn1ThisObject, CN1_ARRAY_LENGTH(get_field_java_util_HashMap_elementData(__cn1ThisObject))); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -596,7 +596,7 @@ JAVA_VOID java_util_HashMap_rehash__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __c
 
 
 JAVA_OBJECT java_util_HashMap_remove___java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 5706, 1232);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 5705, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[2].data.o = /* CustomInvoke */virtual_java_util_HashMap_removeEntry___java_lang_Object_R_java_util_HashMap_Entry(threadStateData, __cn1ThisObject, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L484589713;
@@ -615,7 +615,7 @@ label_L484589713:
 
 JAVA_VOID java_util_HashMap_removeEntry___java_util_HashMap_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 5706, 5715);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 5705, 5714);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ ilocals_2_=(get_field_java_util_HashMap_Entry_origKeyHash(locals[1].data.o) & (CN1_ARRAY_LENGTH(get_field_java_util_HashMap_elementData(__cn1ThisObject)) - 1 /* ICONST_1 */));
@@ -643,7 +643,7 @@ label_L2056031695:
 JAVA_OBJECT java_util_HashMap_removeEntry___java_lang_Object_R_java_util_HashMap_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 6, 0, 5706, 5715);
+    DEFINE_INSTANCE_METHOD_STACK(3, 6, 0, 5705, 5714);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
@@ -698,14 +698,14 @@ label_L690339675:
 
 
 JAVA_INT java_util_HashMap_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5706, 1224);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5705, 1223);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_util_HashMap_elementCount(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_OBJECT java_util_HashMap_values___R_java_util_Collection(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 5706, 1864);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 5705, 1863);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_HashMap_valuesCollection(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1896828359;
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_HashMap_2(threadStateData)); /* NEW */
@@ -723,7 +723,7 @@ label_L1896828359:
 
 JAVA_INT java_util_HashMap_computeHashCode___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_util_HashMap(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 5706, 5716);
+    DEFINE_METHOD_STACK(1, 1, 0, 5705, 5715);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     { JAVA_INT tmpResult = virtual_java_lang_Object_hashCode___R_int(threadStateData, locals[0].data.o);
@@ -800,6 +800,15 @@ JAVA_BOOLEAN virtual_java_util_HashMap_containsValue___java_lang_Object_R_boolea
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
     return (*(functionPtr_java_util_HashMap_containsValue___java_lang_Object_R_boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[12])(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+typedef JAVA_OBJECT (*functionPtr_java_util_HashMap_entrySet___R_java_util_Set)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT virtual_java_util_HashMap_entrySet___R_java_util_Set(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    return (*(functionPtr_java_util_HashMap_entrySet___R_java_util_Set)__cn1ThisObject->__codenameOneParentClsReference->vtable[13])(threadStateData, __cn1ThisObject);
 }
 
 

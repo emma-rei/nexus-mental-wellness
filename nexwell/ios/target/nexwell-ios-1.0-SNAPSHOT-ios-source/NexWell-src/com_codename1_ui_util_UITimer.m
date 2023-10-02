@@ -86,7 +86,7 @@ com_codename1_ui_util_UITimer___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_util_UITimer___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 6842, 202);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 6841, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(48);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(43);
@@ -103,7 +103,7 @@ JAVA_VOID com_codename1_ui_util_UITimer___INIT____(CODENAME_ONE_THREAD_STATE, JA
 
 
 JAVA_VOID com_codename1_ui_util_UITimer___INIT_____java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 6842, 202);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 6841, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(56);
@@ -126,7 +126,7 @@ JAVA_VOID com_codename1_ui_util_UITimer___INIT_____java_lang_Runnable(CODENAME_O
 JAVA_VOID com_codename1_ui_util_UITimer_schedule___int_boolean_com_codename1_ui_Form(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     volatile JAVA_INT ilocals_1_ = 0; /* timeMillis */
     volatile JAVA_INT ilocals_2_ = 0; /* repeat */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 6842, 3144);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 6841, 3143);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     locals[3].data.o = __cn1Arg3;
@@ -153,7 +153,7 @@ JAVA_OBJECT com_codename1_ui_util_UITimer_timer___int_boolean_com_codename1_ui_F
     volatile JAVA_INT ilocals_0_ = 0; /* timeMillis */
     volatile JAVA_INT ilocals_1_ = 0; /* repeat */
     __STATIC_INITIALIZER_com_codename1_ui_util_UITimer(threadStateData);
-    DEFINE_METHOD_STACK(4, 5, 0, 6842, 6843);
+    DEFINE_METHOD_STACK(4, 5, 0, 6841, 6842);
     ilocals_0_ = __cn1Arg1;
     ilocals_1_ = __cn1Arg2;
     locals[2].data.o = __cn1Arg3;
@@ -180,7 +180,7 @@ JAVA_OBJECT com_codename1_ui_util_UITimer_timer___int_boolean_java_lang_Runnable
     volatile JAVA_INT ilocals_0_ = 0; /* timeMillis */
     volatile JAVA_INT ilocals_1_ = 0; /* repeat */
     __STATIC_INITIALIZER_com_codename1_ui_util_UITimer(threadStateData);
-    DEFINE_METHOD_STACK(4, 4, 0, 6842, 6843);
+    DEFINE_METHOD_STACK(4, 4, 0, 6841, 6842);
     ilocals_0_ = __cn1Arg1;
     ilocals_1_ = __cn1Arg2;
     locals[2].data.o = __cn1Arg3;
@@ -212,13 +212,13 @@ JAVA_OBJECT com_codename1_ui_util_UITimer_timer___int_boolean_java_lang_Runnable
 
 
 JAVA_VOID com_codename1_ui_util_UITimer_cancel__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6842, 3141);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6841, 3140);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(108);
-    if (get_field_com_codename1_ui_util_UITimer_bound(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L642087302;
+    if (get_field_com_codename1_ui_util_UITimer_bound(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L40626598;
     __CN1_DEBUG_INFO(109);
     /* CustomInvoke */virtual_com_codename1_ui_Form_deregisterAnimated___com_codename1_ui_animations_Animation(threadStateData, get_field_com_codename1_ui_util_UITimer_bound(__cn1ThisObject), get_field_com_codename1_ui_util_UITimer_i(__cn1ThisObject)); 
 
-label_L642087302:
+label_L40626598:
     __CN1_DEBUG_INFO(111);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -227,26 +227,26 @@ label_L642087302:
 
 JAVA_VOID com_codename1_ui_util_UITimer_testEllapse__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_LONG llocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 6842, 6844);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 6841, 6843);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(115);
     /* VarOp.assignFrom */ llocals_1_ = java_lang_System_currentTimeMillis___R_long(threadStateData);
     __CN1_DEBUG_INFO(116);
-    if (CN1_CMP_EXPR((llocals_1_ - get_field_com_codename1_ui_util_UITimer_lastEllapse(__cn1ThisObject)), ((JAVA_LONG)get_field_com_codename1_ui_util_UITimer_ms(__cn1ThisObject)))<0) /* IFLT CustomJump */ goto label_L771715205;
+    if (CN1_CMP_EXPR((llocals_1_ - get_field_com_codename1_ui_util_UITimer_lastEllapse(__cn1ThisObject)), ((JAVA_LONG)get_field_com_codename1_ui_util_UITimer_ms(__cn1ThisObject)))<0) /* IFLT CustomJump */ goto label_L1297189990;
     __CN1_DEBUG_INFO(117);
-    if (get_field_com_codename1_ui_util_UITimer_repeat(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L799692219;
+    if (get_field_com_codename1_ui_util_UITimer_repeat(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1092591822;
     __CN1_DEBUG_INFO(118);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getCurrent___R_com_codename1_ui_Form(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */virtual_com_codename1_ui_Form_deregisterAnimated___com_codename1_ui_animations_Animation(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_util_UITimer_i(__cn1ThisObject));     SP -= 1;
 
-label_L799692219:
+label_L1092591822:
     __CN1_DEBUG_INFO(120);
     set_field_com_codename1_ui_util_UITimer_lastEllapse(threadStateData, llocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(121);
     virtual_com_codename1_ui_util_UITimer_Internal_run__(threadStateData, get_field_com_codename1_ui_util_UITimer_i(__cn1ThisObject)); 
 
-label_L771715205:
+label_L1297189990:
     __CN1_DEBUG_INFO(123);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -255,7 +255,7 @@ label_L771715205:
 
 JAVA_OBJECT com_codename1_ui_util_UITimer_access$000___com_codename1_ui_util_UITimer_R_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_util_UITimer(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 6842, 218);
+    DEFINE_METHOD_STACK(1, 1, 0, 6841, 217);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(37);

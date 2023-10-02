@@ -2,6 +2,7 @@
 package com.nexus.nexwell.forms;
 
 import com.codename1.components.FloatingActionButton;
+import com.codename1.components.MultiButton;
 import com.codename1.ui.Button;
 import static com.codename1.ui.CN.getCurrentForm;
 import com.codename1.ui.Component;
@@ -10,13 +11,18 @@ import com.codename1.ui.Dialog;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
 import com.codename1.ui.Graphics;
+import com.codename1.ui.Image;
 import com.codename1.ui.Tabs;
 import com.codename1.ui.TextArea;
 import com.codename1.ui.TextField;
 import com.codename1.ui.Toolbar;
+import com.codename1.ui.geom.Dimension;
 
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.plaf.UIManager;
+import static com.codename1.ui.util.Resources.getGlobalResources;
+import com.nexus.nexwell.components.Colors;
 
 import com.nexus.nexwell.components.RichTextView;
 
@@ -32,30 +38,22 @@ public class MainForm extends Form {
     public MainForm(){
         super("", new BorderLayout());
         String str = "Welcome Back! <usr>";
-        setTitle(str);
+        //setTitle(str);
         Toolbar.setGlobalToolbar(focusScrolling);
         
         
         
-        //Resources theme = UIManager.initNamedTheme("/theme", "theme");
-        mainUI.setTabPlacement(BOTTOM);
         
+        mainUI.setTabPlacement(BOTTOM);
         mainUI.addTab("", FontImage.MATERIAL_HOME, 5f,  new HomePageForm());
         mainUI.addTab("", FontImage.MATERIAL_WEB, 5f, new RichTextView());// replace e-> with new NewsFeedContainer()
         mainUI.addTab("", FontImage.MATERIAL_GAMES, 5f, new GamesContainer());// replace e-> with new GamesContainer()
-        mainUI.addTab("", FontImage.MATERIAL_HEADPHONES, 5f, new RichTextView());// replace e-> with new RelaxContainer()
+        mainUI.addTab("", FontImage.MATERIAL_HEADPHONES, 5f, new MusicForm());// replace e-> with new RelaxContainer()
         mainUI.addTab("", FontImage.MATERIAL_LIBRARY_ADD, 5f, new RichTextView());// replace e-> with new ResourcesContainer()
         add(CENTER, mainUI);
-        
+        Image icon = getGlobalResources().getImage("Search.png");
         Button searchButton = new Button("Search", "TitleSearch");
-        FontImage.setMaterialIcon(searchButton, FontImage.MATERIAL_SEARCH);
-        /*//accepts a string from u user TA, and searches up in the database
-        searchButton.addActionListener(e -> {
-            
-        });
-        */
-        getToolbar().setTitleComponent(searchButton);
-        String searchString;
+        
         
         
         
@@ -71,18 +69,14 @@ public class MainForm extends Form {
         FloatingActionButton fab = FloatingActionButton.
                 createFAB(FontImage.MATERIAL_CALL);
         fab.bindFabToContainer(this);
+        fab.setText("Helpline");
         fab.addActionListener(e -> new EmergencyHelpForm());
-        
-        
-        
-        
-        getToolbar().getAllStyles().setBackgroundGradientRelativeSize(BRB_CONSTANT_ASCENT, focusScrolling);
         
         getToolbar().addMaterialCommandToOverflowMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm().show());
         getToolbar().addMaterialCommandToOverflowMenu("Resources",FontImage.MATERIAL_BOOKMARKS,4, e -> new PomodoroTimer().show());
         getToolbar().addMaterialCommandToOverflowMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
         getToolbar().addMaterialCommandToOverflowMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
-        
+        getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_SEARCH, 4, e->search(searchButton));
     }
     public void games(){
         Dialog gameOptionsDialog = new Dialog("Choose a game");
@@ -170,5 +164,38 @@ public class MainForm extends Form {
         visualsOptionsDialog.add(options);
         visualsOptionsDialog.show();
     } 
-    
+    public void search(Button searchButton){
+        mainUI.setSelectedIndex(2);
+        searchButton.addActionListener(e -> searchAction());
+        
+        getToolbar().setTitleComponent(searchButton);
+        getToolbar().addSearchCommand(e->{
+            String text = (String)e.getSource();
+            // clear search
+            if(text == null || text.length() == 0) {
+                for(Component cmp : getContentPane()) {
+                    cmp.setHidden(false);
+                    cmp.setVisible(true);
+                }
+                getContentPane().animateLayout(150);
+            } 
+            else{
+                text = text.toLowerCase();
+                for(Component cmp : getContentPane()) {
+                    MultiButton mb = (MultiButton)cmp;
+                    String line1 = mb.getTextLine1();
+                    String line2 = mb.getTextLine2();
+                    boolean show = line1 != null && line1.toLowerCase().contains(text) || line2 != null && line2.toLowerCase().contains(text);
+                    mb.setHidden(!show);
+                    mb.setVisible(show);
+                }
+            }
+            getContentPane().animateLayout(150);
+        },4);
+    }
+        
+    public void searchAction(){
+        
+        
+    }
 }

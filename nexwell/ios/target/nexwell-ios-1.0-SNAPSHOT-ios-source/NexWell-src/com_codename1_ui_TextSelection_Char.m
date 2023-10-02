@@ -54,7 +54,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_TextSelection_Char(CODENAME_ONE_THREAD_STATE)
 
 JAVA_VOID com_codename1_ui_TextSelection_Char___INIT_____com_codename1_ui_TextSelection_int_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     volatile JAVA_INT ilocals_2_ = 0; /* pos */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 6148, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 6147, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -86,7 +86,7 @@ JAVA_VOID com_codename1_ui_TextSelection_Char___INIT_____com_codename1_ui_TextSe
     volatile JAVA_INT ilocals_4_ = 0; /* y */
     volatile JAVA_INT ilocals_5_ = 0; /* w */
     volatile JAVA_INT ilocals_6_ = 0; /* h */
-    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 6148, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 6147, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -115,7 +115,7 @@ JAVA_VOID com_codename1_ui_TextSelection_Char___INIT_____com_codename1_ui_TextSe
 
 
 JAVA_INT com_codename1_ui_TextSelection_Char_getPosition___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6148, 6149);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6147, 6148);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(366);
 
 {
@@ -126,20 +126,20 @@ JAVA_INT com_codename1_ui_TextSelection_Char_getPosition___R_int(CODENAME_ONE_TH
 
 
 JAVA_OBJECT com_codename1_ui_TextSelection_Char_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6148, 896);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6147, 895);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(370);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6150));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6149));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_TextSelection_Char_pos(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6151));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6150));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_Object_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_TextSelection_Char_bounds(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1288));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1287));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -151,7 +151,7 @@ JAVA_OBJECT com_codename1_ui_TextSelection_Char_toString___R_java_lang_String(CO
 JAVA_OBJECT com_codename1_ui_TextSelection_Char_translate___int_int_R_com_codename1_ui_TextSelection_Char(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* tx */
     volatile JAVA_INT ilocals_2_ = 0; /* ty */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 6148, 1655);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 6147, 1654);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(380);
@@ -188,7 +188,7 @@ JAVA_OBJECT com_codename1_ui_TextSelection_Char_translate___int_int_R_com_codena
 
 JAVA_OBJECT com_codename1_ui_TextSelection_Char_access$000___com_codename1_ui_TextSelection_Char_R_com_codename1_ui_geom_Rectangle(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_TextSelection_Char(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 6148, 218);
+    DEFINE_METHOD_STACK(1, 1, 0, 6147, 217);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(324);
@@ -202,7 +202,7 @@ JAVA_OBJECT com_codename1_ui_TextSelection_Char_access$000___com_codename1_ui_Te
 
 JAVA_INT com_codename1_ui_TextSelection_Char_access$100___com_codename1_ui_TextSelection_Char_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_TextSelection_Char(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 6148, 799);
+    DEFINE_METHOD_STACK(1, 1, 0, 6147, 798);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(324);

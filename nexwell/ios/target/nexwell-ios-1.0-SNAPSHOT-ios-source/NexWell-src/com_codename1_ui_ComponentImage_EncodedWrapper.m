@@ -42,7 +42,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_ComponentImage_EncodedWrapper(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_ui_ComponentImage_EncodedWrapper___INIT_____com_codename1_ui_ComponentImage(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 5867, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 5866, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(305);
@@ -58,7 +58,7 @@ JAVA_VOID com_codename1_ui_ComponentImage_EncodedWrapper___INIT_____com_codename
 JAVA_OBJECT com_codename1_ui_ComponentImage_EncodedWrapper_scaledEncoded___int_int_R_com_codename1_ui_EncodedImage(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* width */
     volatile JAVA_INT ilocals_2_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 5867, 5600);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 5866, 5599);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(314);
@@ -82,7 +82,7 @@ JAVA_OBJECT com_codename1_ui_ComponentImage_EncodedWrapper_scaledEncoded___int_i
 JAVA_OBJECT com_codename1_ui_ComponentImage_EncodedWrapper_scaled___int_int_R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* width */
     volatile JAVA_INT ilocals_2_ = 0; /* height */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 5867, 1584);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 5866, 1583);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(323);
@@ -104,7 +104,7 @@ JAVA_OBJECT com_codename1_ui_ComponentImage_EncodedWrapper_scaled___int_int_R_co
 
 
 JAVA_OBJECT com_codename1_ui_ComponentImage_EncodedWrapper_getInternal___R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5867, 2218);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 5866, 2217);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(333);
 
 {

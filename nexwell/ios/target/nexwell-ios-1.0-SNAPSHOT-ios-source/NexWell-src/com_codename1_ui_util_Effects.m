@@ -32,7 +32,7 @@ com_codename1_ui_util_Effects___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_util_Effects___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9943, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9942, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(40);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -80,7 +80,7 @@ JAVA_OBJECT com_codename1_ui_util_Effects_verticalPerspective___com_codename1_ui
     volatile JAVA_FLOAT flocals_14_ = 0; /* v14 */
     volatile JAVA_FLOAT flocals_17_ = 0; /* v17 */
     __STATIC_INITIALIZER_com_codename1_ui_util_Effects(threadStateData);
-    DEFINE_METHOD_STACK(5, 20, 0, 9943, 9945);
+    DEFINE_METHOD_STACK(5, 20, 0, 9942, 9944);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     flocals_1_ = __cn1Arg2;
@@ -113,7 +113,7 @@ JAVA_OBJECT com_codename1_ui_util_Effects_verticalPerspective___com_codename1_ui
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_INT, sizeof(JAVA_ARRAY_INT), 1));
     BC_ASTORE(9);
     __CN1_DEBUG_INFO(146);
-    if (CN1_CMP_EXPR(flocals_2_, flocals_1_)>=0) /* IFGE CustomJump */ goto label_L994084545;
+    if (CN1_CMP_EXPR(flocals_2_, flocals_1_)>=0) /* IFGE CustomJump */ goto label_L1779787990;
     __CN1_DEBUG_INFO(147);
     /* VarOp.assignFrom */     flocals_11_ = flocals_2_;
     __CN1_DEBUG_INFO(148);
@@ -121,9 +121,9 @@ JAVA_OBJECT com_codename1_ui_util_Effects_verticalPerspective___com_codename1_ui
     __CN1_DEBUG_INFO(149);
     /* VarOp.assignFrom */ flocals_10_=(flocals_11_ - flocals_12_);
     __CN1_DEBUG_INFO(150);
-    goto label_L1487543666;
+    goto label_L298355914;
 
-label_L994084545:
+label_L1779787990:
     __CN1_DEBUG_INFO(151);
     /* VarOp.assignFrom */     flocals_11_ = flocals_2_;
     __CN1_DEBUG_INFO(152);
@@ -131,14 +131,14 @@ label_L994084545:
     __CN1_DEBUG_INFO(153);
     /* VarOp.assignFrom */ flocals_10_=(flocals_11_ - flocals_12_);
 
-label_L1487543666:
+label_L298355914:
     __CN1_DEBUG_INFO(156);
-    if (ilocals_7_<=ilocals_5_) /* IF_ICMPLE CustomJump */ goto label_L869758554;
+    if (ilocals_7_<=ilocals_5_) /* IF_ICMPLE CustomJump */ goto label_L456653804;
     __CN1_DEBUG_INFO(157);
     /* VarOp.assignFrom */     ilocals_11_ = 0 /* ICONST_0 */; 
 
-label_L1442883034:
-    if (ilocals_11_>=ilocals_8_) /* IF_ICMPGE CustomJump */ goto label_L1777163938;
+label_L2047145776:
+    if (ilocals_11_>=ilocals_8_) /* IF_ICMPGE CustomJump */ goto label_L1243705012;
     __CN1_DEBUG_INFO(158);
     /* VarOp.assignFrom */ flocals_12_=(((JAVA_FLOAT)ilocals_11_) / (((JAVA_FLOAT)ilocals_8_) - 1 /* FCONST_1 */));
     __CN1_DEBUG_INFO(159);
@@ -154,30 +154,30 @@ label_L1442883034:
     __CN1_DEBUG_INFO(165);
     /* VarOp.assignFrom */     ilocals_18_ = ilocals_15_;
 
-label_L1592618491:
-    if (ilocals_18_>=ilocals_16_) /* IF_ICMPGE CustomJump */ goto label_L1453632464;
+label_L1590202270:
+    if (ilocals_18_>=ilocals_16_) /* IF_ICMPGE CustomJump */ goto label_L196340990;
     __CN1_DEBUG_INFO(166);
     /* VarOp.assignFrom */ ilocals_19_=((JAVA_INT)(((JAVA_FLOAT)ilocals_5_) * ((((JAVA_FLOAT)ilocals_18_) - ((JAVA_FLOAT)ilocals_15_)) / flocals_17_)));
     __CN1_DEBUG_INFO(167);
     CN1_SET_ARRAY_ELEMENT_INT(locals[9].data.o, (ilocals_18_ + (ilocals_11_ * ilocals_7_)), CN1_ARRAY_ELEMENT_INT(locals[4].data.o, ((ilocals_13_ * ilocals_5_) + ilocals_19_)));
     __CN1_DEBUG_INFO(165);
     BC_IINC(18, 1);
-    goto label_L1592618491;
+    goto label_L1590202270;
 
-label_L1453632464:
+label_L196340990:
     __CN1_DEBUG_INFO(157);
     BC_IINC(11, 1);
-    goto label_L1442883034;
+    goto label_L2047145776;
 
-label_L1777163938:
-    goto label_L1427892726;
+label_L1243705012:
+    goto label_L990994954;
 
-label_L869758554:
+label_L456653804:
     __CN1_DEBUG_INFO(171);
     /* VarOp.assignFrom */     ilocals_11_ = 0 /* ICONST_0 */; 
 
-label_L1087916281:
-    if (ilocals_11_>=ilocals_8_) /* IF_ICMPGE CustomJump */ goto label_L1427892726;
+label_L1755295609:
+    if (ilocals_11_>=ilocals_8_) /* IF_ICMPGE CustomJump */ goto label_L990994954;
     __CN1_DEBUG_INFO(172);
     /* VarOp.assignFrom */ flocals_12_=(((JAVA_FLOAT)ilocals_11_) / ((JAVA_FLOAT)ilocals_8_));
     __CN1_DEBUG_INFO(173);
@@ -193,22 +193,22 @@ label_L1087916281:
     __CN1_DEBUG_INFO(178);
     /* VarOp.assignFrom */     ilocals_18_ = ilocals_15_;
 
-label_L321192242:
-    if (ilocals_18_>=ilocals_16_) /* IF_ICMPGE CustomJump */ goto label_L647111342;
+label_L897541009:
+    if (ilocals_18_>=ilocals_16_) /* IF_ICMPGE CustomJump */ goto label_L802270602;
     __CN1_DEBUG_INFO(179);
     /* VarOp.assignFrom */ ilocals_19_=((JAVA_INT)(((JAVA_FLOAT)ilocals_5_) * ((((JAVA_FLOAT)ilocals_18_) - ((JAVA_FLOAT)ilocals_15_)) / flocals_17_)));
     __CN1_DEBUG_INFO(180);
     CN1_SET_ARRAY_ELEMENT_INT(locals[9].data.o, (ilocals_18_ + (ilocals_11_ * ilocals_7_)), CN1_ARRAY_ELEMENT_INT(locals[4].data.o, ((ilocals_13_ * ilocals_5_) + ilocals_19_)));
     __CN1_DEBUG_INFO(178);
     BC_IINC(18, 1);
-    goto label_L321192242;
+    goto label_L897541009;
 
-label_L647111342:
+label_L802270602:
     __CN1_DEBUG_INFO(171);
     BC_IINC(11, 1);
-    goto label_L1087916281;
+    goto label_L1755295609;
 
-label_L1427892726:
+label_L990994954:
     __CN1_DEBUG_INFO(185);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Image_createImage___int_1ARRAY_int_int_R_com_codename1_ui_Image(threadStateData, locals[9].data.o, ilocals_7_, ilocals_8_));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -219,7 +219,7 @@ label_L1427892726:
 JAVA_OBJECT com_codename1_ui_util_Effects_gaussianBlurImage___com_codename1_ui_Image_float_R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_FLOAT __cn1Arg2) {
     volatile JAVA_FLOAT flocals_1_ = 0; /* radius */
     __STATIC_INITIALIZER_com_codename1_ui_util_Effects(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 9943, 308);
+    DEFINE_METHOD_STACK(3, 2, 0, 9942, 307);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     flocals_1_ = __cn1Arg2;
@@ -234,7 +234,7 @@ JAVA_OBJECT com_codename1_ui_util_Effects_gaussianBlurImage___com_codename1_ui_I
 
 JAVA_BOOLEAN com_codename1_ui_util_Effects_isGaussianBlurSupported___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_ui_util_Effects(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 9943, 307);
+    DEFINE_METHOD_STACK(1, 0, 0, 9942, 306);
     __CN1_DEBUG_INFO(206);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isGaussianBlurSupported___R_boolean(threadStateData, SP[-1].data.o);

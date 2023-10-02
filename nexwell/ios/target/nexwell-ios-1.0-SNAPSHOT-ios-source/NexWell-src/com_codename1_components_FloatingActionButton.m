@@ -293,13 +293,13 @@ JAVA_VOID com_codename1_components_FloatingActionButton_setAutoSizing___boolean(
 JAVA_VOID com_codename1_components_FloatingActionButton___INIT_____char_java_lang_String_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_CHAR __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_FLOAT __cn1Arg3) {
     volatile JAVA_FLOAT flocals_3_ = 0; /* size */
     volatile JAVA_INT ilocals_1_ = 0; /* icon */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 10258, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 10353, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     flocals_3_ = __cn1Arg3;
     __CN1_DEBUG_INFO(137);
-    /* CustomInvoke */com_codename1_components_FloatingActionButton___INIT_____char_java_lang_String_java_lang_String_float(threadStateData, __cn1ThisObject, ilocals_1_, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10263), flocals_3_); 
+    /* CustomInvoke */com_codename1_components_FloatingActionButton___INIT_____char_java_lang_String_java_lang_String_float(threadStateData, __cn1ThisObject, ilocals_1_, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10358), flocals_3_); 
     __CN1_DEBUG_INFO(138);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -309,7 +309,7 @@ JAVA_VOID com_codename1_components_FloatingActionButton___INIT_____char_java_lan
 JAVA_VOID com_codename1_components_FloatingActionButton___INIT_____char_java_lang_String_java_lang_String_float(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_CHAR __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_FLOAT __cn1Arg4) {
     volatile JAVA_FLOAT flocals_4_ = 0; /* size */
     volatile JAVA_INT ilocals_1_ = 0; /* icon */
-    DEFINE_INSTANCE_METHOD_STACK(3, 7, 0, 10258, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 7, 0, 10353, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -319,7 +319,7 @@ JAVA_VOID com_codename1_components_FloatingActionButton___INIT_____char_java_lan
     __CN1_DEBUG_INFO(148);
     com_codename1_ui_Button___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(108);
-    set_field_com_codename1_components_FloatingActionButton_floatingActionTextUIID(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10264), __cn1ThisObject);
+    set_field_com_codename1_components_FloatingActionButton_floatingActionTextUIID(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10359), __cn1ThisObject);
     __CN1_DEBUG_INFO(110);
     BC_ALOAD(0);
     PUSH_INT(100);
@@ -336,7 +336,7 @@ JAVA_VOID com_codename1_components_FloatingActionButton___INIT_____char_java_lan
     __CN1_DEBUG_INFO(153);
     /* CustomInvoke */virtual_com_codename1_components_FloatingActionButton_setIcon___com_codename1_ui_Image(threadStateData, __cn1ThisObject, locals[5].data.o); 
     __CN1_DEBUG_INFO(154);
-    /* CustomInvoke */virtual_com_codename1_components_FloatingActionButton_setText___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(220)); 
+    /* CustomInvoke */virtual_com_codename1_components_FloatingActionButton_setText___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(219)); 
     __CN1_DEBUG_INFO(155);
     set_field_com_codename1_components_FloatingActionButton_text(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(156);
@@ -353,14 +353,14 @@ JAVA_VOID com_codename1_components_FloatingActionButton___INIT_____char_java_lan
 
 
 JAVA_VOID com_codename1_components_FloatingActionButton_setUIID___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 10258, 2455);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 10353, 2454);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(168);
     /* CustomInvoke */com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(169);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_components_FloatingActionButton_getIcon___R_com_codename1_ui_Image(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(170);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1601350381;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1589251269;
     __CN1_DEBUG_INFO(171);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_components_FloatingActionButton_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(172);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setAlignment___int(threadStateData, locals[3].data.o, 4/* ICONST_4 */); 
@@ -382,7 +382,7 @@ JAVA_VOID com_codename1_components_FloatingActionButton_setUIID___java_lang_Stri
     __CN1_DEBUG_INFO(176);
     /* CustomInvoke */virtual_com_codename1_components_FloatingActionButton_setIcon___com_codename1_ui_Image(threadStateData, __cn1ThisObject, locals[4].data.o); 
 
-label_L1601350381:
+label_L1589251269:
     __CN1_DEBUG_INFO(178);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -390,13 +390,13 @@ label_L1601350381:
 
 
 JAVA_VOID com_codename1_components_FloatingActionButton___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10258, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10353, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(183);
     com_codename1_ui_Button___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(108);
-    set_field_com_codename1_components_FloatingActionButton_floatingActionTextUIID(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10264), __cn1ThisObject);
+    set_field_com_codename1_components_FloatingActionButton_floatingActionTextUIID(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10359), __cn1ThisObject);
     __CN1_DEBUG_INFO(110);
     BC_ALOAD(0);
     PUSH_INT(100);
@@ -410,7 +410,7 @@ JAVA_VOID com_codename1_components_FloatingActionButton___INIT_____java_lang_Str
     __CN1_DEBUG_INFO(186);
     set_field_com_codename1_components_FloatingActionButton_shadowOpacity(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(187);
-    /* CustomInvoke */virtual_com_codename1_components_FloatingActionButton_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4396)); 
+    /* CustomInvoke */virtual_com_codename1_components_FloatingActionButton_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4395)); 
     __CN1_DEBUG_INFO(188);
     com_codename1_components_FloatingActionButton_updateBorder__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(189);
@@ -422,7 +422,7 @@ JAVA_VOID com_codename1_components_FloatingActionButton___INIT_____java_lang_Str
 
 
 JAVA_VOID com_codename1_components_FloatingActionButton_updateBorder__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10258, 10265);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10353, 10360);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(193);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_components_FloatingActionButton_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -496,23 +496,23 @@ JAVA_VOID com_codename1_components_FloatingActionButton_updateBorder__(CODENAME_
 
 
 JAVA_VOID com_codename1_components_FloatingActionButton_styleChanged___java_lang_String_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 10258, 2702);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 10353, 2701);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(211);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(105))==0) /* IFEQ CustomJump */ goto label_L496145890;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(104))==0) /* IFEQ CustomJump */ goto label_L100350254;
     __CN1_DEBUG_INFO(212);
     com_codename1_components_FloatingActionButton_updateBorder__(threadStateData, __cn1ThisObject); 
 
-label_L496145890:
+label_L100350254:
     __CN1_DEBUG_INFO(214);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_components_FloatingActionButton_getIcon___R_com_codename1_ui_Image(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_FontImage);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1265667094;
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(106))==0) /* IFEQ CustomJump */ goto label_L1265667094;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L434535618;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(105))==0) /* IFEQ CustomJump */ goto label_L434535618;
     __CN1_DEBUG_INFO(215);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_components_FloatingActionButton_getIcon___R_com_codename1_ui_Image(threadStateData, __cn1ThisObject);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(216);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_FontImage_getText___R_java_lang_String(threadStateData, locals[3].data.o);
@@ -520,7 +520,7 @@ label_L496145890:
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_String_charAt___int_R_char(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     /* LDC: 'FloatingActionButton'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10263));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10358));
     PUSH_FLOAT(get_field_com_codename1_components_FloatingActionButton_sizeMm(__cn1ThisObject));
     { JAVA_OBJECT tmpResult = com_codename1_ui_FontImage_createMaterial___char_java_lang_String_float_R_com_codename1_ui_FontImage(threadStateData, SP[-3].data.i, SP[-2].data.o, SP[-1].data.f);
     SP-=2;
@@ -531,7 +531,7 @@ label_L496145890:
     __CN1_DEBUG_INFO(218);
     /* CustomInvoke */virtual_com_codename1_components_FloatingActionButton_setIcon___com_codename1_ui_Image(threadStateData, __cn1ThisObject, locals[4].data.o); 
 
-label_L1265667094:
+label_L434535618:
     __CN1_DEBUG_INFO(220);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -546,7 +546,7 @@ JAVA_OBJECT com_codename1_components_FloatingActionButton_createBadge___java_lan
 JAVA_OBJECT com_codename1_components_FloatingActionButton_createFAB___char_R_com_codename1_components_FloatingActionButton(CODENAME_ONE_THREAD_STATE, JAVA_CHAR __cn1Arg1) {
     volatile JAVA_INT ilocals_0_ = 0; /* icon */
     __STATIC_INITIALIZER_com_codename1_components_FloatingActionButton(threadStateData);
-    DEFINE_METHOD_STACK(5, 1, 0, 10258, 10267);
+    DEFINE_METHOD_STACK(5, 1, 0, 10353, 10362);
     ilocals_0_ = __cn1Arg1;
     __CN1_DEBUG_INFO(238);
     PUSH_POINTER(__NEW_com_codename1_components_FloatingActionButton(threadStateData)); /* NEW */
@@ -568,10 +568,10 @@ JAVA_OBJECT com_codename1_components_FloatingActionButton_createSubFAB___char_ja
 
 
 JAVA_OBJECT com_codename1_components_FloatingActionButton_calcPreferredSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10258, 1857);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10353, 1856);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(272);
-    if (get_static_com_codename1_components_FloatingActionButton_autoSizing(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1844385433;
-    if (virtual_com_codename1_components_FloatingActionButton_getIcon___R_com_codename1_ui_Image(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1844385433;
+    if (get_static_com_codename1_components_FloatingActionButton_autoSizing(threadStateData)==0) /* IFEQ CustomJump */ goto label_L1820373458;
+    if (virtual_com_codename1_components_FloatingActionButton_getIcon___R_com_codename1_ui_Image(threadStateData, __cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1820373458;
     __CN1_DEBUG_INFO(273);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Dimension(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -595,7 +595,7 @@ JAVA_OBJECT com_codename1_components_FloatingActionButton_calcPreferredSize___R_
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1844385433:
+label_L1820373458:
     __CN1_DEBUG_INFO(275);
     { JAVA_OBJECT tmpResult = com_codename1_ui_Button_calcPreferredSize___R_com_codename1_ui_geom_Dimension(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -605,7 +605,7 @@ label_L1844385433:
 
 
 JAVA_OBJECT com_codename1_components_FloatingActionButton_bindFabToContainer___com_codename1_ui_Component_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10258, 10269);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10353, 10364);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(286);
@@ -619,7 +619,7 @@ JAVA_OBJECT com_codename1_components_FloatingActionButton_bindFabToContainer___c
 JAVA_OBJECT com_codename1_components_FloatingActionButton_bindFabToContainer___com_codename1_ui_Component_int_int_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_2_ = 0; /* orientation */
     volatile JAVA_INT ilocals_3_ = 0; /* valign */
-    DEFINE_INSTANCE_METHOD_STACK(4, 7, 0, 10258, 10269);
+    DEFINE_INSTANCE_METHOD_STACK(4, 7, 0, 10353, 10364);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -633,14 +633,14 @@ JAVA_OBJECT com_codename1_components_FloatingActionButton_bindFabToContainer___c
     /* CustomInvoke */virtual_com_codename1_ui_layouts_FlowLayout_setValign___int(threadStateData, locals[4].data.o, ilocals_3_); 
     __CN1_DEBUG_INFO(303);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_com_codename1_ui_Component_getComponentForm___R_com_codename1_ui_Form(threadStateData, locals[1].data.o);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(304);
-    if (locals[5].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1692119875;
+    if (locals[5].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L820959013;
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Form_getContentPane___R_com_codename1_ui_Container(threadStateData, locals[5].data.o);
     PUSH_OBJ(tmpResult); }
     BC_ALOAD(1);
-    SP-=2; if((*SP).data.o == SP[1].data.o) /* IF_ACMPEQ */ goto label_L721716210;
-    if (locals[5].data.o!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L1692119875;
+    SP-=2; if((*SP).data.o == SP[1].data.o) /* IF_ACMPEQ */ goto label_L440708502;
+    if (locals[5].data.o!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L820959013;
 
-label_L721716210:
+label_L440708502:
     __CN1_DEBUG_INFO(306);
     BC_ALOAD(5);
     { JAVA_OBJECT tmpResult = virtual_java_lang_Object_getClass___R_java_lang_Class(threadStateData, __cn1ThisObject);
@@ -657,7 +657,7 @@ label_L721716210:
     __CN1_DEBUG_INFO(309);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L1692119875:
+label_L820959013:
     __CN1_DEBUG_INFO(312);
     PUSH_POINTER(__NEW_com_codename1_ui_Container(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -696,15 +696,15 @@ JAVA_VOID com_codename1_components_FloatingActionButton_unbind__(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_components_FloatingActionButton_setText___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10258, 3046);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10353, 3045);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(330);
-    if (get_field_com_codename1_components_FloatingActionButton_isBadge(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L507571639;
+    if (get_field_com_codename1_components_FloatingActionButton_isBadge(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L53143696;
     __CN1_DEBUG_INFO(331);
     /* CustomInvoke */com_codename1_ui_Button_setText___java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o); 
 
-label_L507571639:
+label_L53143696:
     __CN1_DEBUG_INFO(333);
     set_field_com_codename1_components_FloatingActionButton_text(threadStateData, locals[1].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(334);
@@ -716,7 +716,7 @@ label_L507571639:
 JAVA_VOID com_codename1_components_FloatingActionButton_fireActionEvent___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 10258, 2483);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 10353, 2482);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(338);
@@ -727,11 +727,11 @@ JAVA_VOID com_codename1_components_FloatingActionButton_fireActionEvent___int_in
     __CN1_DEBUG_INFO(339);
     BC_ALOAD(3);
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Dialog);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L657986711;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1169903663;
     __CN1_DEBUG_INFO(340);
     virtual_com_codename1_ui_Dialog_dispose__(threadStateData, locals[3].data.o); 
 
-label_L657986711:
+label_L1169903663:
     __CN1_DEBUG_INFO(342);
     /* CustomInvoke */com_codename1_ui_Button_fireActionEvent___int_int(threadStateData, __cn1ThisObject, ilocals_1_, ilocals_2_); 
     __CN1_DEBUG_INFO(343);
@@ -744,21 +744,21 @@ JAVA_VOID com_codename1_components_FloatingActionButton_released___int_int(CODEN
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 9, 0, 10258, 3029);
+    DEFINE_INSTANCE_METHOD_STACK(5, 9, 0, 10353, 3028);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(349);
     /* CustomInvoke */com_codename1_ui_Button_released___int_int(threadStateData, __cn1ThisObject, ilocals_1_, ilocals_2_); 
     __CN1_DEBUG_INFO(351);
-    if (get_field_com_codename1_components_FloatingActionButton_current(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L673974417;
+    if (get_field_com_codename1_components_FloatingActionButton_current(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2058120467;
     __CN1_DEBUG_INFO(352);
     virtual_com_codename1_ui_Dialog_dispose__(threadStateData, get_field_com_codename1_components_FloatingActionButton_current(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(353);
     set_field_com_codename1_components_FloatingActionButton_current(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L673974417:
+label_L2058120467:
     __CN1_DEBUG_INFO(356);
-    if (get_field_com_codename1_components_FloatingActionButton_subMenu(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1352056436;
+    if (get_field_com_codename1_components_FloatingActionButton_subMenu(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2117395558;
     __CN1_DEBUG_INFO(357);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */virtual_com_codename1_components_FloatingActionButton_createPopupContent___java_util_List_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, get_field_com_codename1_components_FloatingActionButton_subMenu(__cn1ThisObject));locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(358);
     PUSH_POINTER(__NEW_com_codename1_ui_Dialog(threadStateData)); /* NEW */
@@ -766,11 +766,11 @@ label_L673974417:
     com_codename1_ui_Dialog___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(4);
     __CN1_DEBUG_INFO(359);
-    /* CustomInvoke */virtual_com_codename1_ui_Dialog_setDialogUIID___java_lang_String(threadStateData, locals[4].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2346)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Dialog_setDialogUIID___java_lang_String(threadStateData, locals[4].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2345)); 
     __CN1_DEBUG_INFO(360);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Dialog_getContentPane___R_com_codename1_ui_Container(threadStateData, locals[4].data.o);
     PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2346));     SP -= 1;
+    /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2345));     SP -= 1;
     __CN1_DEBUG_INFO(361);
     BC_ALOAD(4);
     PUSH_POINTER(__NEW_com_codename1_ui_layouts_BorderLayout(threadStateData)); /* NEW */
@@ -778,17 +778,17 @@ label_L673974417:
     com_codename1_ui_layouts_BorderLayout___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     virtual_com_codename1_ui_Dialog_setLayout___com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(362);
-    /* CustomInvoke */virtual_com_codename1_ui_Dialog_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[4].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(138), locals[3].data.o); 
+    /* CustomInvoke */virtual_com_codename1_ui_Dialog_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[4].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(137), locals[3].data.o); 
     __CN1_DEBUG_INFO(363);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_components_FloatingActionButton_subMenu(__cn1ThisObject));locals[5].type=CN1_TYPE_OBJECT;
-label_L786032027:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[5].data.o)==0) /* IFEQ CustomJump */ goto label_L1227021444;
+label_L892070414:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[5].data.o)==0) /* IFEQ CustomJump */ goto label_L714009944;
     /* VarOp.assignFrom */ locals[6].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[5].data.o);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(364);
     set_field_com_codename1_components_FloatingActionButton_current(threadStateData, locals[4].data.o, locals[6].data.o);
     __CN1_DEBUG_INFO(365);
-    goto label_L786032027;
+    goto label_L892070414;
 
-label_L1227021444:
+label_L714009944:
     __CN1_DEBUG_INFO(366);
     BC_ALOAD(4);
     PUSH_OBJ(com_codename1_ui_animations_CommonTransitions_createEmpty___R_com_codename1_ui_animations_CommonTransitions(threadStateData));
@@ -799,14 +799,14 @@ label_L1227021444:
     virtual_com_codename1_ui_Dialog_setTransitionOutAnimator___com_codename1_ui_animations_Transition(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(368);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_com_codename1_ui_Container_iterator___R_java_util_Iterator(threadStateData, locals[3].data.o);locals[5].type=CN1_TYPE_OBJECT;
-label_L58290164:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[5].data.o)==0) /* IFEQ CustomJump */ goto label_L1719208017;
+label_L1966611297:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[5].data.o)==0) /* IFEQ CustomJump */ goto label_L754376013;
     /* VarOp.assignFrom */ locals[6].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[5].data.o);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(369);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setVisible___boolean(threadStateData, locals[6].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(370);
-    goto label_L58290164;
+    goto label_L1966611297;
 
-label_L1719208017:
+label_L754376013:
     __CN1_DEBUG_INFO(371);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_com_codename1_components_FloatingActionButton_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(372);
     /* VarOp.assignFrom */ ilocals_6_ = virtual_com_codename1_ui_Form_getTintColor___R_int(threadStateData, locals[5].data.o);
@@ -826,18 +826,18 @@ label_L1719208017:
     /* CustomInvoke */virtual_com_codename1_ui_Form_setTintColor___int(threadStateData, locals[5].data.o, ilocals_6_); 
     __CN1_DEBUG_INFO(386);
     /* VarOp.assignFrom */ locals[7].data.o = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_components_FloatingActionButton_subMenu(__cn1ThisObject));locals[7].type=CN1_TYPE_OBJECT;
-label_L1039439577:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[7].data.o)==0) /* IFEQ CustomJump */ goto label_L1558201827;
+label_L1108355111:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[7].data.o)==0) /* IFEQ CustomJump */ goto label_L671206579;
     /* VarOp.assignFrom */ locals[8].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[7].data.o);locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(387);
     virtual_com_codename1_components_FloatingActionButton_remove__(threadStateData, locals[8].data.o); 
     __CN1_DEBUG_INFO(388);
-    goto label_L1039439577;
+    goto label_L1108355111;
 
-label_L1558201827:
+label_L671206579:
     __CN1_DEBUG_INFO(389);
     virtual_com_codename1_ui_Container_removeAll__(threadStateData, locals[3].data.o); 
 
-label_L1352056436:
+label_L2117395558:
     __CN1_DEBUG_INFO(391);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -845,7 +845,7 @@ label_L1352056436:
 
 
 JAVA_OBJECT com_codename1_components_FloatingActionButton_createPopupContent___java_util_List_R_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 10258, 10271);
+    DEFINE_INSTANCE_METHOD_STACK(6, 7, 0, 10353, 10366);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(400);
@@ -858,8 +858,8 @@ JAVA_OBJECT com_codename1_components_FloatingActionButton_createPopupContent___j
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(401);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_components_FloatingActionButton_subMenu(__cn1ThisObject));locals[3].type=CN1_TYPE_OBJECT;
-label_L1538253297:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L333523638;
+label_L1832936189:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L1486260637;
     /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(402);
     /* CustomInvoke */virtual_com_codename1_components_FloatingActionButton_setPreferredW___int(threadStateData, locals[4].data.o, virtual_com_codename1_components_FloatingActionButton_getWidth___R_int(threadStateData, __cn1ThisObject)); 
     __CN1_DEBUG_INFO(403);
@@ -880,7 +880,7 @@ label_L1538253297:
     __CN1_DEBUG_INFO(406);
     BC_ALOAD(5);
     /* LDC: 'Center'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(138));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(137));
     PUSH_INT(1); /* ICONST_1 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_com_codename1_ui_Component(threadStateData, SP[0].data.i));
@@ -898,7 +898,7 @@ label_L1538253297:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
     __CN1_DEBUG_INFO(407);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[5].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(66), locals[4].data.o); 
+    /* CustomInvoke */virtual_com_codename1_ui_Container_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[5].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(65), locals[4].data.o); 
     __CN1_DEBUG_INFO(408);
     /* CustomInvoke */virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[2].data.o, locals[5].data.o); 
     __CN1_DEBUG_INFO(409);
@@ -908,9 +908,9 @@ label_L1538253297:
     /* CustomInvoke */com_codename1_components_FloatingActionButton_2___INIT_____com_codename1_components_FloatingActionButton_com_codename1_components_FloatingActionButton(threadStateData, SP[-1].data.o, __cn1ThisObject, locals[4].data.o);     SP -= 1;
     virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(415);
-    goto label_L1538253297;
+    goto label_L1832936189;
 
-label_L333523638:
+label_L1486260637:
     __CN1_DEBUG_INFO(416);
 
 {
@@ -921,7 +921,7 @@ label_L333523638:
 
 
 JAVA_VOID com_codename1_components_FloatingActionButton_showPopupDialog___com_codename1_ui_Dialog(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10258, 3251);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10353, 3250);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(425);
@@ -945,7 +945,7 @@ JAVA_VOID com_codename1_components_FloatingActionButton_setFloatingActionTextUII
 
 
 JAVA_VOID com_codename1_components_FloatingActionButton___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(1, 0, 0, 10258, 860);
+    DEFINE_METHOD_STACK(1, 0, 0, 10353, 859);
     __CN1_DEBUG_INFO(120);
     set_static_com_codename1_components_FloatingActionButton_autoSizing(threadStateData, 1 /* ICONST_1 */);
     __CN1_DEBUG_INFO(125);

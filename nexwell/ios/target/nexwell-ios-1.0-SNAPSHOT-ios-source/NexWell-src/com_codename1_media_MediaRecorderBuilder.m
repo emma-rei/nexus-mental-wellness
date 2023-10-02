@@ -84,7 +84,7 @@ com_codename1_media_MediaRecorderBuilder___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_media_MediaRecorderBuilder___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8679, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8678, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(33);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(34);
@@ -124,7 +124,7 @@ JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_samplingRate___int_R_com_co
 
 
 JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_mimeType___java_lang_String_R_com_codename1_media_MediaRecorderBuilder(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8679, 8683);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8678, 8682);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(81);
@@ -139,7 +139,7 @@ JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_mimeType___java_lang_String
 
 
 JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_path___java_lang_String_R_com_codename1_media_MediaRecorderBuilder(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8679, 8684);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8678, 8683);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(92);
@@ -159,16 +159,16 @@ JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_redirectToAudioBuffer___boo
 
 
 JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_build___R_com_codename1_media_Media(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8679, 1311);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8678, 1310);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(115);
-    if (get_field_com_codename1_media_MediaRecorderBuilder_path(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L751817419;
+    if (get_field_com_codename1_media_MediaRecorderBuilder_path(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1843266510;
     __CN1_DEBUG_INFO(116);
     PUSH_POINTER(__NEW_java_lang_IllegalStateException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_IllegalStateException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8686));     SP -= 1;
+    /* CustomInvoke */java_lang_IllegalStateException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8685));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L751817419:
+label_L1843266510:
     __CN1_DEBUG_INFO(119);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_createMediaRecorder___com_codename1_media_MediaRecorderBuilder_R_com_codename1_media_Media(threadStateData, SP[-1].data.o, __cn1ThisObject);
@@ -179,7 +179,7 @@ label_L751817419:
 
 
 JAVA_INT com_codename1_media_MediaRecorderBuilder_getAudioChannels___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8679, 8687);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8678, 8686);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(127);
 
 {
@@ -190,7 +190,7 @@ JAVA_INT com_codename1_media_MediaRecorderBuilder_getAudioChannels___R_int(CODEN
 
 
 JAVA_INT com_codename1_media_MediaRecorderBuilder_getBitRate___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8679, 8688);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8678, 8687);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(135);
 
 {
@@ -201,7 +201,7 @@ JAVA_INT com_codename1_media_MediaRecorderBuilder_getBitRate___R_int(CODENAME_ON
 
 
 JAVA_INT com_codename1_media_MediaRecorderBuilder_getSamplingRate___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8679, 8689);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8678, 8688);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(144);
 
 {
@@ -212,7 +212,7 @@ JAVA_INT com_codename1_media_MediaRecorderBuilder_getSamplingRate___R_int(CODENA
 
 
 JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_getMimeType___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8679, 7389);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8678, 7388);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(154);
 
 {
@@ -223,7 +223,7 @@ JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_getMimeType___R_java_lang_S
 
 
 JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_getPath___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8679, 7942);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8678, 7941);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(162);
 
 {
@@ -234,7 +234,7 @@ JAVA_OBJECT com_codename1_media_MediaRecorderBuilder_getPath___R_java_lang_Strin
 
 
 JAVA_BOOLEAN com_codename1_media_MediaRecorderBuilder_isRedirectToAudioBuffer___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8679, 8690);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8678, 8689);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(171);
 
 {

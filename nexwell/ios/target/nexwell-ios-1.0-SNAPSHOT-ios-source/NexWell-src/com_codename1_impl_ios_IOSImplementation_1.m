@@ -32,7 +32,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_1(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_1___INIT_____boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9476, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9475, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(237);
     set_field_com_codename1_impl_ios_IOSImplementation_1_val_revalidate(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -43,7 +43,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_1___INIT_____boolean(CODENAME
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9476, 204);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9475, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(239);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_displaySafeAreaChanged___boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_1_val_revalidate(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(240);

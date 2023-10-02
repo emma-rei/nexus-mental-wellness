@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_Spinner3D_4(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_4___INIT_____com_codename1_ui_spinner_Spinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10092, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10091, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(171);
@@ -51,7 +51,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_4_scrollChanged___int_int_int_int(C
     volatile JAVA_INT ilocals_2_ = 0; /* scrollY */
     volatile JAVA_INT ilocals_3_ = 0; /* oldscrollX */
     volatile JAVA_INT ilocals_4_ = 0; /* oldscrollY */
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 10092, 2803);
+    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 10091, 2802);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -67,12 +67,12 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_4_scrollChanged___int_int_int_int(C
     { JAVA_INT tmpResult = java_lang_Math_abs___int_R_int(threadStateData, SP[-1].data.i);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     PUSH_INT(2); /* ICONST_2 */
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1317395634;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L967828895;
     __CN1_DEBUG_INFO(176);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_spinner_Spinner3D_access$100___com_codename1_ui_spinner_Spinner3D_R_com_codename1_ui_spinner_Spinner3D_ScrollingContainer(threadStateData, get_field_com_codename1_ui_spinner_Spinner3D_4_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_codename1_ui_spinner_Spinner3D_ScrollingContainer_setScrollY___int(threadStateData, SP[-1].data.o, ilocals_2_);     SP -= 1;
 
-label_L1317395634:
+label_L967828895:
     __CN1_DEBUG_INFO(178);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

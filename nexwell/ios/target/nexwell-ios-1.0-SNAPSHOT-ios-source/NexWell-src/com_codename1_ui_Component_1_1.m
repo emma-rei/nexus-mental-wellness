@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Component_1_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Component_1_1___INIT_____com_codename1_ui_Component_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8172, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8171, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2612);
@@ -47,14 +47,14 @@ JAVA_VOID com_codename1_ui_Component_1_1___INIT_____com_codename1_ui_Component_1
 
 
 JAVA_VOID com_codename1_ui_Component_1_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 8172, 204);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 8171, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(2614);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_Component_findSurface___R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_ui_Component_1_this_0(get_field_com_codename1_ui_Component_1_1_this_1(__cn1ThisObject)));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(2615);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L704832331;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1273012861;
     __CN1_DEBUG_INFO(2616);
     virtual_com_codename1_ui_Container_repaint__(threadStateData, locals[1].data.o); 
 
-label_L704832331:
+label_L1273012861:
     __CN1_DEBUG_INFO(2618);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

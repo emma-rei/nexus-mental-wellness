@@ -42,7 +42,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_CodenameOneImplementation_1(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_impl_CodenameOneImplementation_1___INIT_____com_codename1_impl_CodenameOneImplementation_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_BOOLEAN __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8876, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8875, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -56,19 +56,19 @@ JAVA_VOID com_codename1_impl_CodenameOneImplementation_1___INIT_____com_codename
 
 
 JAVA_VOID com_codename1_impl_CodenameOneImplementation_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8876, 204);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8875, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(450);
-    if (/* CustomInvoke */com_codename1_impl_CodenameOneImplementation_access$000___com_codename1_impl_CodenameOneImplementation_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L54176060;
+    if (/* CustomInvoke */com_codename1_impl_CodenameOneImplementation_access$000___com_codename1_impl_CodenameOneImplementation_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1371400311;
     __CN1_DEBUG_INFO(451);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_CodenameOneImplementation_access$000___com_codename1_impl_CodenameOneImplementation_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_1_this_0(__cn1ThisObject)));
     virtual_com_codename1_ui_Component_repaint__(threadStateData, SP[-1].data.o);     SP -= 1;
     __CN1_DEBUG_INFO(452);
-    if (get_field_com_codename1_impl_CodenameOneImplementation_1_val_focus(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L54176060;
+    if (get_field_com_codename1_impl_CodenameOneImplementation_1_val_focus(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1371400311;
     __CN1_DEBUG_INFO(453);
     /* CustomInvoke */PUSH_OBJ(com_codename1_impl_CodenameOneImplementation_access$000___com_codename1_impl_CodenameOneImplementation_R_com_codename1_ui_Component(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_1_this_0(__cn1ThisObject)));
     virtual_com_codename1_ui_Component_requestFocus__(threadStateData, SP[-1].data.o);     SP -= 1;
 
-label_L54176060:
+label_L1371400311:
     __CN1_DEBUG_INFO(456);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

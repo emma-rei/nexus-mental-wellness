@@ -62,7 +62,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_animations_ComponentAnimation_UIMutation(CODE
 
 
 JAVA_VOID com_codename1_ui_animations_ComponentAnimation_UIMutation___INIT_____com_codename1_ui_Container_com_codename1_ui_animations_ComponentAnimation(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 8169, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 8168, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -94,35 +94,35 @@ JAVA_VOID com_codename1_ui_animations_ComponentAnimation_UIMutation___INIT_____c
 
 
 JAVA_BOOLEAN com_codename1_ui_animations_ComponentAnimation_UIMutation_add___com_codename1_ui_Container_com_codename1_ui_animations_ComponentAnimation_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 8169, 1227);
+    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 8168, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(318);
-    if (get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_isStarted(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1551783332;
+    if (get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_isStarted(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L111768855;
     __CN1_DEBUG_INFO(319);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L1551783332:
+label_L111768855:
     __CN1_DEBUG_INFO(321);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Set_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_containers(__cn1ThisObject));locals[3].type=CN1_TYPE_OBJECT;
-label_L1829390882:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L128870695;
+label_L776006216:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L676022399;
     /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(322);
-    if (locals[1].data.o==locals[4].data.o) /* IF_ACMPEQ CustomJump */ goto label_L2098066214;
-    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[4].data.o, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L2098066214;
-    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[1].data.o, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L1140323469;
+    if (locals[1].data.o==locals[4].data.o) /* IF_ACMPEQ CustomJump */ goto label_L1694636980;
+    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[4].data.o, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L1694636980;
+    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[1].data.o, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L1661745907;
 
-label_L2098066214:
+label_L1694636980:
     __CN1_DEBUG_INFO(323);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L1140323469:
+label_L1661745907:
     __CN1_DEBUG_INFO(325);
-    goto label_L1829390882;
+    goto label_L776006216;
 
-label_L128870695:
+label_L676022399:
     __CN1_DEBUG_INFO(327);
     PUSH_POINTER(get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_anims(__cn1ThisObject));
     { /* ARRAYLENGTH */
@@ -156,7 +156,7 @@ JAVA_BOOLEAN com_codename1_ui_animations_ComponentAnimation_UIMutation_isLocked_
 
 
 JAVA_VOID com_codename1_ui_animations_ComponentAnimation_UIMutation_updateState__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8169, 2793);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8168, 2792);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(347);
     set_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_isStarted(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(348);
@@ -168,7 +168,7 @@ JAVA_VOID com_codename1_ui_animations_ComponentAnimation_UIMutation_updateState_
 
 
 JAVA_VOID com_codename1_ui_animations_ComponentAnimation_UIMutation_setStep___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8169, 2789);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8168, 2788);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(285);
     /* CustomInvoke */com_codename1_ui_animations_ComponentAnimation_CompoundAnimation_setStep___int(threadStateData, __cn1ThisObject, ilocals_1_); 
@@ -178,7 +178,7 @@ JAVA_VOID com_codename1_ui_animations_ComponentAnimation_UIMutation_setStep___in
 
 
 JAVA_INT com_codename1_ui_animations_ComponentAnimation_UIMutation_getMaxSteps___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8169, 2791);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8168, 2790);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(285);
 
 {
@@ -189,7 +189,7 @@ JAVA_INT com_codename1_ui_animations_ComponentAnimation_UIMutation_getMaxSteps__
 
 
 JAVA_VOID com_codename1_ui_animations_ComponentAnimation_UIMutation_flush__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8169, 931);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8168, 930);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(285);
     com_codename1_ui_animations_ComponentAnimation_CompoundAnimation_flush__(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -198,7 +198,7 @@ JAVA_VOID com_codename1_ui_animations_ComponentAnimation_UIMutation_flush__(CODE
 
 
 JAVA_BOOLEAN com_codename1_ui_animations_ComponentAnimation_UIMutation_isInProgress___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8169, 2792);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8168, 2791);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(285);
 
 {

@@ -72,7 +72,7 @@ JAVA_OBJECT __NEW_java_util_LinkedList_LinkIterator(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_LinkedList_LinkIterator___INIT_____java_util_LinkedList_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7328, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7327, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -113,7 +113,7 @@ label_L1847008471:
 
 
 JAVA_VOID java_util_LinkedList_LinkIterator_add___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 7328, 1227);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 7327, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (get_field_java_util_LinkedList_LinkIterator_expectedModCount(__cn1ThisObject)!=get_field_java_util_LinkedList_modCount(get_field_java_util_LinkedList_LinkIterator_list(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L1509791656;
@@ -155,7 +155,7 @@ label_L257608164:
 
 
 JAVA_BOOLEAN java_util_LinkedList_LinkIterator_hasNext___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7328, 1250);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7327, 1249);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_LinkedList_Link_next(get_field_java_util_LinkedList_LinkIterator_link(__cn1ThisObject))==get_field_java_util_LinkedList_voidLink(get_field_java_util_LinkedList_LinkIterator_list(__cn1ThisObject))) /* IF_ACMPEQ CustomJump */ goto label_L306115458;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L230643635;
@@ -169,7 +169,7 @@ label_L230643635:
 
 
 JAVA_BOOLEAN java_util_LinkedList_LinkIterator_hasPrevious___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7328, 1254);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7327, 1253);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_LinkedList_LinkIterator_link(__cn1ThisObject)==get_field_java_util_LinkedList_voidLink(get_field_java_util_LinkedList_LinkIterator_list(__cn1ThisObject))) /* IF_ACMPEQ CustomJump */ goto label_L944427387;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L1636182655;
@@ -183,7 +183,7 @@ label_L1636182655:
 
 
 JAVA_OBJECT java_util_LinkedList_LinkIterator_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 7328, 1251);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 7327, 1250);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_LinkedList_LinkIterator_expectedModCount(__cn1ThisObject)!=get_field_java_util_LinkedList_modCount(get_field_java_util_LinkedList_LinkIterator_list(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L71399214;
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o = get_field_java_util_LinkedList_Link_next(get_field_java_util_LinkedList_LinkIterator_link(__cn1ThisObject));
 locals[1].type=CN1_TYPE_OBJECT;    if (locals[1].data.o==get_field_java_util_LinkedList_voidLink(get_field_java_util_LinkedList_LinkIterator_list(__cn1ThisObject))) /* IF_ACMPEQ CustomJump */ goto label_L1932831450;
@@ -218,7 +218,7 @@ label_L71399214:
 
 
 JAVA_INT java_util_LinkedList_LinkIterator_nextIndex___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7328, 1255);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7327, 1254);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_util_LinkedList_LinkIterator_pos(__cn1ThisObject));
     PUSH_INT(1); /* ICONST_1 */
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
@@ -227,7 +227,7 @@ JAVA_INT java_util_LinkedList_LinkIterator_nextIndex___R_int(CODENAME_ONE_THREAD
 
 
 JAVA_OBJECT java_util_LinkedList_LinkIterator_previous___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7328, 1256);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 7327, 1255);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_LinkedList_LinkIterator_expectedModCount(__cn1ThisObject)!=get_field_java_util_LinkedList_modCount(get_field_java_util_LinkedList_LinkIterator_list(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L496729294;
     if (get_field_java_util_LinkedList_LinkIterator_link(__cn1ThisObject)==get_field_java_util_LinkedList_voidLink(get_field_java_util_LinkedList_LinkIterator_list(__cn1ThisObject))) /* IF_ACMPEQ CustomJump */ goto label_L1302227152;
     set_field_java_util_LinkedList_LinkIterator_lastLink(threadStateData, get_field_java_util_LinkedList_LinkIterator_link(__cn1ThisObject), __cn1ThisObject);
@@ -255,14 +255,14 @@ label_L496729294:
 
 
 JAVA_INT java_util_LinkedList_LinkIterator_previousIndex___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7328, 1257);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7327, 1256);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_util_LinkedList_LinkIterator_pos(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_VOID java_util_LinkedList_LinkIterator_remove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7328, 1232);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 7327, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_LinkedList_LinkIterator_expectedModCount(__cn1ThisObject)!=get_field_java_util_LinkedList_modCount(get_field_java_util_LinkedList_LinkIterator_list(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L1122606666;
     if (get_field_java_util_LinkedList_LinkIterator_lastLink(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L350068407;
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;locals[1].data.o = get_field_java_util_LinkedList_Link_next(get_field_java_util_LinkedList_LinkIterator_lastLink(__cn1ThisObject));
@@ -307,7 +307,7 @@ label_L1122606666:
 
 
 JAVA_VOID java_util_LinkedList_LinkIterator_set___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7328, 1223);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7327, 1222);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (get_field_java_util_LinkedList_LinkIterator_expectedModCount(__cn1ThisObject)!=get_field_java_util_LinkedList_modCount(get_field_java_util_LinkedList_LinkIterator_list(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L1820383114;

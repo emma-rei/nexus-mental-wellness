@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_games_GameOfLifeForm__Lambda_3(CODENAME_ONE_
 
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_3___INIT_____com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10397, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10574, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -45,7 +45,7 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_3___INIT_____com_nexus_
 
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_3_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10397, 3048);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10574, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */com_nexus_nexwell_games_GameOfLifeForm_lambda$new$2___com_nexus_nexwell_games_GameOfLifeForm_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm__Lambda_3_arg_1(__cn1ThisObject), locals[1].data.o); 
@@ -56,7 +56,7 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_3_actionPerformed___com
 
 JAVA_OBJECT com_nexus_nexwell_games_GameOfLifeForm__Lambda_3_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_GameOfLifeForm__Lambda_3(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 10397, 10186);
+    DEFINE_METHOD_STACK(3, 1, 0, 10574, 10185);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_com_nexus_nexwell_games_GameOfLifeForm__Lambda_3(threadStateData)); /* NEW */

@@ -1,5 +1,5 @@
 
-/* /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/css/theme.css */
+/* /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/javase/../common/src/main/css/theme.css */
 /** Define Theme Constants here */
 #Constants {
     includeNativeBool: true;
@@ -8,7 +8,11 @@
     labelGap: 2;
     capButtonUiids: "BlueText, GreenButton, BlueButton";
 }
-
+Images{
+    background-image:   url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Black/Search.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/User.svg")
+                        
+}
 /** Style for Button class */
 Button {
     font-family: "native:MainLight";
@@ -37,13 +41,12 @@ DialogTitle {
     font-size: 4.5mm;
 }
 
-LoginTitle{
-    background-image: url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/nexus-logo.png");
-    
-    cn1-source-dpi: 0;
-    cn1-background-type: cn1-image-scaled-fit;
+LogTitle{
+    border: none;
+    background-color: #a8a8e5 ;
+    background-image: none;
     margin:0px;
-    padding: 8mm;
+    padding: 2mm 2mm 2mm 2mm;
 }
 PaddedContainer{
     padding: 3mm;
@@ -64,8 +67,8 @@ SpanLabel{
     font-family: "native:MainBold";
     background: linear-gradient(to left, #3DAECB, #ADF0F2);
     text-align:center;
-    margin:2mm;
-    padding:2mm;
+    margin:3mm 3mm 3mm 3mm;
+    padding:3mm 3mm 3mm 3mm;
     color: white;
 }
 
@@ -83,6 +86,11 @@ BlueText{
     cn1-derive: BaseButton;
     font-family: "native:MainBold";
     color: #3f92c4;
+    background: transparent;
+}
+WhiteText{
+    font-family: "native:MainBold";
+    color:#ffffff ;
     background: transparent;
 }
 GreenButton{
@@ -137,10 +145,8 @@ SideCommand {
 
 Toolbar {
     border: none;
-    background-image: url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/lol.png");
-    cn1-background-type: cn1-image-scaled-fill;
-    cn1-source-dpi: 0;
-    padding: 6mm 3mm 3mm 3mm;
+    background: linear-gradient(to bottom, #2c2c2c, #2c2c2c);
+    padding: 3mm 3mm 3mm 3mm;
     margin: 0px;
 }
 Label{
@@ -184,7 +190,7 @@ IconFont{
     background-color: transparent;
 }
 Form{
-    background: linear-gradient(to top, #ccc, #579);
+    background: linear-gradient(to bottom, #ffffff, #6868FD);
     
     margin: 0px;
     padding: 0px;
@@ -194,7 +200,7 @@ TitleSearch{
     font-family: "native:MainThin";
     font-size: 2.6mm;
     border: 1px #000000 cn1-pill-border;
-    background-color: #e2e9ea;
+    background-color: #9c9ca7;
     padding: 0.5mm 4mm 0.5mm 4mm;
     margin: 0.5mm 1.5mm 0.5mm 1.5mm;
 }
@@ -205,7 +211,7 @@ Tab{
     text-align: center;
     padding: 2mm 2mm 1mm 2mm;
     border: none;
-    background: white;
+    background-color: #2c2c2c;
     margin: 1px 0px 1px 0px;
 }
 TabsContainer{
@@ -234,4 +240,4 @@ HalfPaddedContainer{
     background: transparent;
 }
 
-/* end /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/css/theme.css*/
+/* end /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/javase/../common/src/main/css/theme.css*/

@@ -77,7 +77,7 @@ void __GC_MARK_com_codename1_location_LocationManager(CODENAME_ONE_THREAD_STATE,
 
 
 JAVA_VOID com_codename1_location_LocationManager___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8985, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 8984, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(49);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(63);
@@ -89,7 +89,7 @@ JAVA_VOID com_codename1_location_LocationManager___INIT____(CODENAME_ONE_THREAD_
 
 JAVA_OBJECT com_codename1_location_LocationManager_getLocationManager___R_com_codename1_location_LocationManager(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_location_LocationManager(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 8985, 454);
+    DEFINE_METHOD_STACK(1, 0, 0, 8984, 453);
     __CN1_DEBUG_INFO(70);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Display_getLocationManager___R_com_codename1_location_LocationManager(threadStateData, SP[-1].data.o);
@@ -106,7 +106,7 @@ JAVA_INT com_codename1_location_LocationManager_getStatus___R_int(CODENAME_ONE_T
 
 JAVA_VOID com_codename1_location_LocationManager_setStatus___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* status */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8985, 8987);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8984, 8986);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(86);
     set_field_com_codename1_location_LocationManager_status(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -152,50 +152,50 @@ JAVA_VOID com_codename1_location_LocationManager_setLocationListener___com_coden
 
 
 JAVA_VOID com_codename1_location_LocationManager_setBackgroundLocationListener___java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8985, 8993);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 8984, 8992);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL100136324601;
-    int tryBlockOffsetL100136324601;
-    DEFINE_CATCH_BLOCK(catch_L100136324601, label_L2125269841, restoreToL100136324601);
-    int restoreToL34317010802;
-    int tryBlockOffsetL34317010802;
-    DEFINE_CATCH_BLOCK(catch_L34317010802, label_L2125269841, restoreToL34317010802);
-    int restoreToL212526984103;
-    int tryBlockOffsetL212526984103;
-    DEFINE_CATCH_BLOCK(catch_L212526984103, label_L2125269841, restoreToL212526984103);
+    int restoreToL153283211301;
+    int tryBlockOffsetL153283211301;
+    DEFINE_CATCH_BLOCK(catch_L153283211301, label_L2053841228, restoreToL153283211301);
+    int restoreToL171090507902;
+    int tryBlockOffsetL171090507902;
+    DEFINE_CATCH_BLOCK(catch_L171090507902, label_L2053841228, restoreToL171090507902);
+    int restoreToL205384122803;
+    int tryBlockOffsetL205384122803;
+    DEFINE_CATCH_BLOCK(catch_L205384122803, label_L2053841228, restoreToL205384122803);
     __CN1_DEBUG_INFO(235);
     BC_ALOAD(0);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = __cn1ThisObject;
 locals[2].type=CN1_TYPE_OBJECT;    monitorEnter(threadStateData, POP_OBJ());
 
-label_L1001363246:
- tryBlockOffsetL100136324601 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L100136324601);
-    restoreToL100136324601 = threadStateData->threadObjectStackOffset;
+label_L1532832113:
+ tryBlockOffsetL153283211301 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L153283211301);
+    restoreToL153283211301 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(236);
-    if (get_static_com_codename1_location_LocationManager_backgroundlistener(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L796756604, 1);
+    if (get_static_com_codename1_location_LocationManager_backgroundlistener(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L136108302, 1);
     __CN1_DEBUG_INFO(237);
     virtual_com_codename1_location_LocationManager_clearBackgroundListener__(threadStateData, __cn1ThisObject); 
 
-label_L796756604:
+label_L136108302:
     __CN1_DEBUG_INFO(239);
     set_static_com_codename1_location_LocationManager_backgroundlistener(threadStateData, locals[1].data.o);
     __CN1_DEBUG_INFO(240);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L343170108, 0);
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ JUMP_TO(label_L1710905079, 0);
     __CN1_DEBUG_INFO(241);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1930352477:
+label_L2075829197:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
 
-label_L343170108:
- tryBlockOffsetL34317010802 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L34317010802);
-    restoreToL34317010802 = threadStateData->threadObjectStackOffset;
+label_L1710905079:
+ tryBlockOffsetL171090507902 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L171090507902);
+    restoreToL171090507902 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(243);
     virtual_com_codename1_location_LocationManager_bindBackgroundListener__(threadStateData, __cn1ThisObject); 
@@ -203,23 +203,23 @@ label_L343170108:
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L2032367717:
-END_TRY(1);    JUMP_TO(label_L1807430272, 0);
+label_L1430579862:
+END_TRY(1);    JUMP_TO(label_L590078605, 0);
 
-label_L2125269841:
- tryBlockOffsetL212526984103 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L212526984103);
-    restoreToL212526984103 = threadStateData->threadObjectStackOffset;
+label_L2053841228:
+ tryBlockOffsetL205384122803 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L205384122803);
+    restoreToL205384122803 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(3);
     BC_ALOAD(2);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L824502713:
+label_L1116879592:
 END_TRY(1);    BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
 
-label_L1807430272:
+label_L590078605:
     __CN1_DEBUG_INFO(245);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -237,7 +237,7 @@ JAVA_VOID com_codename1_location_LocationManager_removeGeoFencing___java_lang_St
 
 
 JAVA_OBJECT com_codename1_location_LocationManager_getLocationListener___R_com_codename1_location_LocationListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8985, 8996);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8984, 8995);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(280);
 
 {
@@ -248,7 +248,7 @@ JAVA_OBJECT com_codename1_location_LocationManager_getLocationListener___R_com_c
 
 
 JAVA_OBJECT com_codename1_location_LocationManager_getRequest___R_com_codename1_location_LocationRequest(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8985, 8997);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8984, 8996);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(287);
 
 {
@@ -259,7 +259,7 @@ JAVA_OBJECT com_codename1_location_LocationManager_getRequest___R_com_codename1_
 
 
 JAVA_OBJECT com_codename1_location_LocationManager_getBackgroundLocationListener___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8985, 8998);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8984, 8997);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(298);
 
 {
@@ -305,11 +305,11 @@ JAVA_BOOLEAN com_codename1_location_LocationManager_isGeofenceSupported___R_bool
 
 
 JAVA_BOOLEAN com_codename1_location_LocationManager_isGPSEnabled___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8985, 9005);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 8984, 9004);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(360);
     PUSH_POINTER(__NEW_java_lang_RuntimeException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9006));     SP -= 1;
+    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9005));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
     return 0;
 }

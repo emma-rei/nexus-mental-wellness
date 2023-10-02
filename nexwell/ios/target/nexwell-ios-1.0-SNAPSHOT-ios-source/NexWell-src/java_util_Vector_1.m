@@ -42,7 +42,7 @@ JAVA_OBJECT __NEW_java_util_Vector_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_util_Vector_1___INIT_____java_util_Vector(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6113, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6112, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_Vector_1_this_0(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -54,7 +54,7 @@ JAVA_VOID java_util_Vector_1___INIT_____java_util_Vector(CODENAME_ONE_THREAD_STA
 
 
 JAVA_BOOLEAN java_util_Vector_1_hasMoreElements___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6113, 2000);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6112, 1999);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_Vector_1_pos(__cn1ThisObject)>=get_field_java_util_Vector_elementCount(get_field_java_util_Vector_1_this_0(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ goto label_L1850777594;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L681094281;
@@ -68,10 +68,10 @@ label_L681094281:
 
 
 JAVA_OBJECT java_util_Vector_1_nextElement___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6113, 2001);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL119649625801;
-    int tryBlockOffsetL119649625801;
-    DEFINE_CATCH_BLOCK(catch_L119649625801, label_L1748876332, restoreToL119649625801);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6112, 2000);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL4429367501;
+    int tryBlockOffsetL4429367501;
+    DEFINE_CATCH_BLOCK(catch_L4429367501, label_L1748876332, restoreToL4429367501);
     int restoreToL174735299202;
     int tryBlockOffsetL174735299202;
     DEFINE_CATCH_BLOCK(catch_L174735299202, label_L1748876332, restoreToL174735299202);
@@ -83,10 +83,10 @@ JAVA_OBJECT java_util_Vector_1_nextElement___R_java_lang_Object(CODENAME_ONE_THR
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1196496258:
- tryBlockOffsetL119649625801 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L119649625801);
-    restoreToL119649625801 = threadStateData->threadObjectStackOffset;
+label_L44293675:
+ tryBlockOffsetL4429367501 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L4429367501);
+    restoreToL4429367501 = threadStateData->threadObjectStackOffset;
 
     if (get_field_java_util_Vector_1_pos(__cn1ThisObject)>=get_field_java_util_Vector_elementCount(get_field_java_util_Vector_1_this_0(__cn1ThisObject))) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L1747352992, 0);
     PUSH_POINTER(get_field_java_util_Vector_elementData(get_field_java_util_Vector_1_this_0(__cn1ThisObject)));
@@ -103,7 +103,7 @@ label_L1196496258:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1936581558:
+label_L581564963:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -115,7 +115,7 @@ label_L1747352992:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L553514074:
+label_L2019147162:
 END_TRY(1);    JUMP_TO(label_L40075281, 0);
 
 label_L1748876332:
@@ -127,7 +127,7 @@ label_L1748876332:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L1955029650:
+label_L1255163484:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
 

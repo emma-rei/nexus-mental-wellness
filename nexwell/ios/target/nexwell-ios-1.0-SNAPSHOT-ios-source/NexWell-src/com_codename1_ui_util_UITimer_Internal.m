@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_util_UITimer_Internal(CODENAME_ONE_THREAD_STA
 
 
 JAVA_VOID com_codename1_ui_util_UITimer_Internal___INIT_____com_codename1_ui_util_UITimer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6845, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6844, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(126);
@@ -46,7 +46,7 @@ JAVA_VOID com_codename1_ui_util_UITimer_Internal___INIT_____com_codename1_ui_uti
 
 
 JAVA_BOOLEAN com_codename1_ui_util_UITimer_Internal_animate___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6845, 1588);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6844, 1587);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(131);
     virtual_com_codename1_ui_util_UITimer_testEllapse__(threadStateData, get_field_com_codename1_ui_util_UITimer_Internal_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(132);
@@ -60,14 +60,14 @@ JAVA_VOID com_codename1_ui_util_UITimer_Internal_paint___com_codename1_ui_Graphi
 
 
 JAVA_VOID com_codename1_ui_util_UITimer_Internal_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6845, 204);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6844, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(145);
-    if (/* CustomInvoke */com_codename1_ui_util_UITimer_access$000___com_codename1_ui_util_UITimer_R_java_lang_Runnable(threadStateData, get_field_com_codename1_ui_util_UITimer_Internal_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L319880368;
+    if (/* CustomInvoke */com_codename1_ui_util_UITimer_access$000___com_codename1_ui_util_UITimer_R_java_lang_Runnable(threadStateData, get_field_com_codename1_ui_util_UITimer_Internal_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1651831324;
     __CN1_DEBUG_INFO(146);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_util_UITimer_access$000___com_codename1_ui_util_UITimer_R_java_lang_Runnable(threadStateData, get_field_com_codename1_ui_util_UITimer_Internal_this_0(__cn1ThisObject)));
     virtual_java_lang_Runnable_run__(threadStateData, SP[-1].data.o);     SP -= 1;
 
-label_L319880368:
+label_L1651831324:
     __CN1_DEBUG_INFO(148);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

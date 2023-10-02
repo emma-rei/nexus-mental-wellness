@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_BrowserComponent_JSRef(CODENAME_ONE_THREAD_ST
 
 
 JAVA_VOID com_codename1_ui_BrowserComponent_JSRef___INIT_____java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8086, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 8085, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -61,7 +61,7 @@ JAVA_VOID com_codename1_ui_BrowserComponent_JSRef___INIT_____java_lang_String_ja
 
 
 JAVA_OBJECT com_codename1_ui_BrowserComponent_JSRef_getValue___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8086, 2007);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8085, 2006);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1548);
 
 {
@@ -72,7 +72,7 @@ JAVA_OBJECT com_codename1_ui_BrowserComponent_JSRef_getValue___R_java_lang_Strin
 
 
 JAVA_OBJECT com_codename1_ui_BrowserComponent_JSRef_getType___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8086, 1112);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8085, 1111);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1556);
 
 {
@@ -83,7 +83,7 @@ JAVA_OBJECT com_codename1_ui_BrowserComponent_JSRef_getType___R_java_lang_String
 
 
 JAVA_OBJECT com_codename1_ui_BrowserComponent_JSRef_getJSType___R_com_codename1_ui_BrowserComponent_JSType(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8086, 8087);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8085, 8086);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1564);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_BrowserComponent_JSType_get___java_lang_String_R_com_codename1_ui_BrowserComponent_JSType(threadStateData, get_field_com_codename1_ui_BrowserComponent_JSRef_type(__cn1ThisObject)));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -107,7 +107,7 @@ JAVA_BOOLEAN com_codename1_ui_BrowserComponent_JSRef_getBoolean___R_boolean(CODE
 
 
 JAVA_OBJECT com_codename1_ui_BrowserComponent_JSRef_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8086, 896);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8085, 895);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1593);
 
 {
@@ -118,16 +118,16 @@ JAVA_OBJECT com_codename1_ui_BrowserComponent_JSRef_toString___R_java_lang_Strin
 
 
 JAVA_BOOLEAN com_codename1_ui_BrowserComponent_JSRef_isNull___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8086, 8091);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 8085, 8090);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1601);
-    if (get_field_com_codename1_ui_BrowserComponent_JSRef_value(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1658520865;
+    if (get_field_com_codename1_ui_BrowserComponent_JSRef_value(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L669365112;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L457893088;
+    goto label_L1143135560;
 
-label_L1658520865:
+label_L669365112:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L457893088:
+label_L1143135560:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

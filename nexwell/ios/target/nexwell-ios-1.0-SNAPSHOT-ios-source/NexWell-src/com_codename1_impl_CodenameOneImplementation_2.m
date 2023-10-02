@@ -71,7 +71,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_CodenameOneImplementation_2(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_impl_CodenameOneImplementation_2___INIT_____com_codename1_impl_CodenameOneImplementation_com_codename1_util_AsyncResource_java_lang_String_boolean_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_BOOLEAN __cn1Arg4, JAVA_OBJECT __cn1Arg5) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 8877, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 8876, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -94,15 +94,15 @@ JAVA_VOID com_codename1_impl_CodenameOneImplementation_2___INIT_____com_codename
 
 
 JAVA_VOID com_codename1_impl_CodenameOneImplementation_2_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 8877, 204);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1970590475cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL1970590475cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L1970590475cn1_class_id_java_io_IOException1, label_L485475507, restoreToL1970590475cn1_class_id_java_io_IOException1);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 8876, 203);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1123289808cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL1123289808cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L1123289808cn1_class_id_java_io_IOException1, label_L1689458432, restoreToL1123289808cn1_class_id_java_io_IOException1);
 
-label_L1970590475:
- tryBlockOffsetL1970590475cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1970590475cn1_class_id_java_io_IOException1);
-    restoreToL1970590475cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L1123289808:
+ tryBlockOffsetL1123289808cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1123289808cn1_class_id_java_io_IOException1);
+    restoreToL1123289808cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(3846);
     PUSH_POINTER(get_field_com_codename1_impl_CodenameOneImplementation_2_val_out(__cn1ThisObject));
@@ -110,17 +110,17 @@ label_L1970590475:
     PUSH_OBJ(tmpResult); }
     virtual_com_codename1_util_AsyncResource_complete___java_lang_Object(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1730372207:
+label_L1111351265:
 END_TRY(1);    __CN1_DEBUG_INFO(3849);
-    JUMP_TO(label_L724028528, 0);
+    JUMP_TO(label_L996533593, 0);
 
-label_L485475507:
+label_L1689458432:
     __CN1_DEBUG_INFO(3847);
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(3848);
     /* CustomInvoke */virtual_com_codename1_util_AsyncResource_error___java_lang_Throwable(threadStateData, get_field_com_codename1_impl_CodenameOneImplementation_2_val_out(__cn1ThisObject), locals[1].data.o); 
 
-label_L724028528:
+label_L996533593:
     __CN1_DEBUG_INFO(3850);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;

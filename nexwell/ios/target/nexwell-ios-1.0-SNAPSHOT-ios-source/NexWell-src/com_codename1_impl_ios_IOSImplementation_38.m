@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_38(CODENAME_ONE_THREA
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_38___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9606, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9605, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8714);
@@ -47,16 +47,16 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_38___INIT_____java_lang_Strin
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_38_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9606, 204);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9605, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8717);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_addPurchase___java_lang_String(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_38_val_sku(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(8718);
-    if (com_codename1_impl_ios_IOSImplementation_access$6800___R_com_codename1_payment_RestoreCallback(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1774897456;
+    if (com_codename1_impl_ios_IOSImplementation_access$6800___R_com_codename1_payment_RestoreCallback(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L502102804;
     __CN1_DEBUG_INFO(8719);
     PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$6800___R_com_codename1_payment_RestoreCallback(threadStateData));
     /* CustomInvoke */virtual_com_codename1_payment_RestoreCallback_itemRestored___java_lang_String(threadStateData, SP[-1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_38_val_sku(__cn1ThisObject));     SP -= 1;
 
-label_L1774897456:
+label_L502102804:
     __CN1_DEBUG_INFO(8721);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

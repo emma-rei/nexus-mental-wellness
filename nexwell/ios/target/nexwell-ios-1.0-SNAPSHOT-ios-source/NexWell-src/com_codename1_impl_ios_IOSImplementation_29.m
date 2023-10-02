@@ -38,7 +38,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_29(CODENAME_ONE_THREA
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_29___INIT_____com_codename1_impl_ios_IOSImplementation_java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9539, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9538, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -59,7 +59,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_format___int_R_java_lang
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_getLongMonthName___java_util_Date_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9539, 6567);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9538, 6566);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8167);
@@ -71,7 +71,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_getLongMonthName___java_
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_getShortMonthName___java_util_Date_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9539, 6566);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9538, 6565);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8172);
@@ -84,7 +84,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_getShortMonthName___java
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_format___double_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* number */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9539, 904);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9538, 903);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(8176);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_IOSNative_formatDouble___double_R_java_lang_String(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), dlocals_1_);
@@ -96,7 +96,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_format___double_R_java_l
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_formatCurrency___double_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_DOUBLE __cn1Arg1) {
     volatile JAVA_DOUBLE dlocals_1_ = 0; /* currency */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9539, 6572);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9538, 6571);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(8180);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_IOSNative_formatCurrency___double_R_java_lang_String(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), dlocals_1_);
@@ -107,7 +107,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_formatCurrency___double_
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_formatDateLongStyle___java_util_Date_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9539, 6574);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9538, 6573);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8184);
@@ -119,7 +119,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_formatDateLongStyle___ja
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_formatDateShortStyle___java_util_Date_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9539, 6575);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9538, 6574);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8188);
@@ -136,7 +136,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_formatDateTime___java_ut
 
 
 JAVA_DOUBLE com_codename1_impl_ios_IOSImplementation_29_parseDouble___java_lang_String_R_double(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9539, 1024);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9538, 1023);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8196);
@@ -154,7 +154,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_formatDateTimeMedium___j
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_formatDateTimeShort___java_util_Date_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9539, 6578);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9538, 6577);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8204);
@@ -166,7 +166,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_formatDateTimeShort___ja
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_getCurrencySymbol___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9539, 6573);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9538, 6572);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8208);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_impl_ios_IOSNative_getCurrencySymbol___R_java_lang_String(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData));
     PUSH_OBJ(tmpResult); }
@@ -176,7 +176,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_29_getCurrencySymbol___R_ja
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_29_setLocale___java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 9539, 6565);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 9538, 6564);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -197,7 +197,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_29_setLocale___java_lang_Stri
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[2].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1645));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1644));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }

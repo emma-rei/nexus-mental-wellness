@@ -62,7 +62,7 @@ JAVA_OBJECT __NEW_java_util_AbstractList_SimpleListIterator(CODENAME_ONE_THREAD_
 
 
 JAVA_VOID java_util_AbstractList_SimpleListIterator___INIT_____java_util_AbstractList(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1261, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1260, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     set_field_java_util_AbstractList_SimpleListIterator_this_0(threadStateData, locals[1].data.o, __cn1ThisObject);
@@ -79,7 +79,7 @@ JAVA_VOID java_util_AbstractList_SimpleListIterator___INIT_____java_util_Abstrac
 
 
 JAVA_BOOLEAN java_util_AbstractList_SimpleListIterator_hasNext___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1261, 1250);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1260, 1249);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_AbstractList_SimpleListIterator_numLeft(__cn1ThisObject)<=0) /* IFLE CustomJump */ goto label_L652176954;
     PUSH_INT(1); /* ICONST_1 */
     goto label_L1245065720;
@@ -94,7 +94,7 @@ label_L1245065720:
 
 JAVA_OBJECT java_util_AbstractList_SimpleListIterator_next___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1261, 1251);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1260, 1250);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL253011924cn1_class_id_java_lang_IndexOutOfBoundsException1;
     int tryBlockOffsetL253011924cn1_class_id_java_lang_IndexOutOfBoundsException1;
     DEFINE_CATCH_BLOCK(catch_L253011924cn1_class_id_java_lang_IndexOutOfBoundsException1, label_L1800976873, restoreToL253011924cn1_class_id_java_lang_IndexOutOfBoundsException1);
@@ -118,7 +118,7 @@ label_L253011924:
     set_field_java_util_AbstractList_SimpleListIterator_numLeft(threadStateData, (get_field_java_util_AbstractList_SimpleListIterator_numLeft(__cn1ThisObject) - 1 /* ICONST_1 */), __cn1ThisObject);
     BC_ALOAD(2);
 
-label_L153235746:
+label_L73933800:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -133,7 +133,7 @@ label_L1800976873:
 
 
 JAVA_VOID java_util_AbstractList_SimpleListIterator_remove__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 1261, 1232);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 1260, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL127702987cn1_class_id_java_lang_IndexOutOfBoundsException1;
     int tryBlockOffsetL127702987cn1_class_id_java_lang_IndexOutOfBoundsException1;
     DEFINE_CATCH_BLOCK(catch_L127702987cn1_class_id_java_lang_IndexOutOfBoundsException1, label_L1390913202, restoreToL127702987cn1_class_id_java_lang_IndexOutOfBoundsException1);
@@ -166,7 +166,7 @@ label_L127702987:
 label_L765242091:
     /* CustomInvoke */virtual_java_util_AbstractList_remove___int_R_java_lang_Object(threadStateData, get_field_java_util_AbstractList_SimpleListIterator_this_0(__cn1ThisObject), get_field_java_util_AbstractList_SimpleListIterator_lastPosition(__cn1ThisObject)); 
 
-label_L1009480482:
+label_L938056719:
 END_TRY(1);    JUMP_TO(label_L1117871068, 0);
 
 label_L1390913202:
@@ -185,7 +185,7 @@ label_L1117871068:
 
 
 JAVA_VOID java_util_AbstractList_SimpleListIterator___INIT_____java_util_AbstractList_java_util_AbstractList_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1261, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1260, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;

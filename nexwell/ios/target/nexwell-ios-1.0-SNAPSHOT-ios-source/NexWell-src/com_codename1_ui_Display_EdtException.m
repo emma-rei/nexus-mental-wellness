@@ -54,7 +54,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Display_EdtException(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID com_codename1_ui_Display_EdtException___INIT_____com_codename1_ui_Display(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9195, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9194, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(771);
@@ -66,7 +66,7 @@ JAVA_VOID com_codename1_ui_Display_EdtException___INIT_____com_codename1_ui_Disp
 
 
 JAVA_VOID com_codename1_ui_Display_EdtException_setCause___java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9195, 9196);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9194, 9195);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(775);
@@ -83,7 +83,7 @@ JAVA_OBJECT com_codename1_ui_Display_EdtException_getCause___R_java_lang_Throwab
 
 
 JAVA_VOID com_codename1_ui_Display_EdtException_throwRoot___java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9195, 9197);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 9194, 9196);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(783);
@@ -96,35 +96,35 @@ JAVA_VOID com_codename1_ui_Display_EdtException_throwRoot___java_lang_Throwable(
     __CN1_DEBUG_INFO(785);
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;    locals[3].data.o = __cn1ThisObject;
 locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(786);
-    if (locals[3].data.o==locals[1].data.o) /* IF_ACMPEQ CustomJump */ goto label_L1299206418;
+    if (locals[3].data.o==locals[1].data.o) /* IF_ACMPEQ CustomJump */ goto label_L600270822;
     __CN1_DEBUG_INFO(787);
     /* CustomInvoke */virtual_com_codename1_ui_Display_EdtException_setCause___java_lang_Throwable(threadStateData, locals[3].data.o, locals[1].data.o); 
     __CN1_DEBUG_INFO(788);
     /* CustomInvoke */virtual_java_util_HashSet_add___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, locals[3].data.o); 
-    goto label_L1493657028;
+    goto label_L267061647;
 
-label_L1299206418:
+label_L600270822:
     __CN1_DEBUG_INFO(790);
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;    locals[3].data.o = locals[1].data.o;
 locals[3].type=CN1_TYPE_OBJECT;
-label_L1493657028:
+label_L267061647:
     __CN1_DEBUG_INFO(792);
-    if (get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L424188711;
+    if (get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L434249609;
     __CN1_DEBUG_INFO(793);
-    if (/* CustomInvoke */virtual_java_util_HashSet_contains___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o))==0) /* IFEQ CustomJump */ goto label_L1651318806;
+    if (/* CustomInvoke */virtual_java_util_HashSet_contains___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o))==0) /* IFEQ CustomJump */ goto label_L837237183;
     __CN1_DEBUG_INFO(794);
-    goto label_L424188711;
+    goto label_L434249609;
 
-label_L1651318806:
+label_L837237183:
     __CN1_DEBUG_INFO(796);
     /* CustomInvoke */virtual_com_codename1_ui_Display_EdtException_setCause___java_lang_Throwable(threadStateData, get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o), locals[3].data.o); 
     __CN1_DEBUG_INFO(797);
     /* CustomInvoke */virtual_java_util_HashSet_add___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o)); 
     __CN1_DEBUG_INFO(798);
     /* VarOp.assignFrom */ locals[3].type=CN1_TYPE_INVALID;locals[3].data.o = get_field_com_codename1_ui_Display_EdtException_parent(locals[3].data.o);
-locals[3].type=CN1_TYPE_OBJECT;    goto label_L1493657028;
+locals[3].type=CN1_TYPE_OBJECT;    goto label_L267061647;
 
-label_L424188711:
+label_L434249609:
     __CN1_DEBUG_INFO(800);
     BC_ALOAD(3);
     throwException(threadStateData, POP_OBJ());
@@ -133,7 +133,7 @@ label_L424188711:
 
 
 JAVA_VOID com_codename1_ui_Display_EdtException___INIT_____com_codename1_ui_Display_com_codename1_ui_Display_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9195, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9194, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -147,7 +147,7 @@ JAVA_VOID com_codename1_ui_Display_EdtException___INIT_____com_codename1_ui_Disp
 
 JAVA_OBJECT com_codename1_ui_Display_EdtException_access$202___com_codename1_ui_Display_EdtException_com_codename1_ui_Display_EdtException_R_com_codename1_ui_Display_EdtException(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_ui_Display_EdtException(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 9195, 809);
+    DEFINE_METHOD_STACK(3, 2, 0, 9194, 808);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -165,7 +165,7 @@ JAVA_OBJECT com_codename1_ui_Display_EdtException_access$202___com_codename1_ui_
 
 JAVA_VOID com_codename1_ui_Display_EdtException_access$300___com_codename1_ui_Display_EdtException_java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_ui_Display_EdtException(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 9195, 1149);
+    DEFINE_METHOD_STACK(2, 2, 0, 9194, 1148);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

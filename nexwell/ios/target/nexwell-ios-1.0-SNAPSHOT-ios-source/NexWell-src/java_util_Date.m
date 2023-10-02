@@ -41,7 +41,7 @@ java_util_Date___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_Date___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3146, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 3145, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */java_util_Date___INIT_____long(threadStateData, __cn1ThisObject, java_lang_System_currentTimeMillis___R_long(threadStateData)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -49,7 +49,7 @@ JAVA_VOID java_util_Date___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn
 
 
 JAVA_VOID java_util_Date___INIT_____long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3146, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3145, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_LONG llocals_1_ = __cn1Arg1;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     set_field_java_util_Date_date(threadStateData, llocals_1_, __cn1ThisObject);
@@ -59,7 +59,7 @@ JAVA_VOID java_util_Date___INIT_____long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT 
 
 
 JAVA_BOOLEAN java_util_Date_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 3146, 877);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 3145, 876);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     BC_ALOAD(1);
@@ -78,7 +78,7 @@ label_L1340565491:
 
 
 JAVA_LONG java_util_Date_getTime___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3146, 3147);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3145, 3146);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_LONG(get_field_java_util_Date_date(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_LONG();
@@ -86,7 +86,7 @@ JAVA_LONG java_util_Date_getTime___R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT
 
 
 JAVA_INT java_util_Date_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3146, 882);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3145, 881);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_LONG(get_field_java_util_Date_date(__cn1ThisObject));
     SP[-1].data.i = (JAVA_INT)SP[-1].data.l; /* L2I */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -99,7 +99,7 @@ JAVA_VOID java_util_Date_setTime___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  
 
 
 JAVA_OBJECT java_util_Date_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3146, 896);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 3145, 895);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */PUSH_OBJ(java_text_DateFormat_getDateTimeInstance___int_int_R_java_text_DateFormat(threadStateData, 1 /* ICONST_1 */, 1 /* ICONST_1 */));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_text_DateFormat_format___java_util_Date_R_java_lang_String(threadStateData, SP[-1].data.o, __cn1ThisObject);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -109,7 +109,7 @@ JAVA_OBJECT java_util_Date_toString___R_java_lang_String(CODENAME_ONE_THREAD_STA
 
 
 JAVA_INT java_util_Date_compareTo___java_util_Date_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 3146, 871);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 3145, 870);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     { JAVA_LONG tmpResult = virtual_java_util_Date_getTime___R_long(threadStateData, __cn1ThisObject);
@@ -140,7 +140,7 @@ label_L407697359:
 
 
 JAVA_INT java_util_Date_compareTo___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3146, 871);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3145, 870);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_Date_compareTo___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[1].data.o);

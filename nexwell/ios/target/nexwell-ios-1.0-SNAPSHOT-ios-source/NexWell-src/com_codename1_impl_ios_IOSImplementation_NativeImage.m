@@ -86,7 +86,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_NativeImage(CODENAME_
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeImage___INIT_____com_codename1_impl_ios_IOSImplementation_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9583, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9582, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -103,7 +103,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeImage___INIT_____com_co
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeImage_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9583, 896);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9582, 895);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(5447);
 
 {
@@ -114,9 +114,9 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeImage_toString___R_ja
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeImage_getGraphics___R_com_codename1_impl_ios_IOSImplementation_NativeGraphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9583, 1575);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9582, 1574);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(5451);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_child(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L692838068;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_child(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2056566350;
     __CN1_DEBUG_INFO(5452);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_IOSImplementation_NativeGraphics(threadStateData)); /* NEW */
@@ -127,7 +127,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_NativeImage_getGraphics___R
     __CN1_DEBUG_INFO(5453);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeGraphics_associatedImage(threadStateData, __cn1ThisObject, get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_child(__cn1ThisObject));
 
-label_L692838068:
+label_L2056566350:
     __CN1_DEBUG_INFO(5455);
 
 {
@@ -138,15 +138,15 @@ label_L692838068:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeImage_deleteImage__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9583, 9584);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9582, 9583);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(5459);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1392570698;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(__cn1ThisObject), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1047477166;
     __CN1_DEBUG_INFO(5460);
     /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$5000___long(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(5461);
     set_field_com_codename1_impl_ios_IOSImplementation_NativeImage_peer(threadStateData, 0 /* LCONST_0 */, __cn1ThisObject);
 
-label_L1392570698:
+label_L1047477166:
     __CN1_DEBUG_INFO(5463);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -154,7 +154,7 @@ label_L1392570698:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_NativeImage_finalize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9583, 902);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9582, 901);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(5466);
     virtual_com_codename1_impl_ios_IOSImplementation_NativeImage_deleteImage__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(5467);

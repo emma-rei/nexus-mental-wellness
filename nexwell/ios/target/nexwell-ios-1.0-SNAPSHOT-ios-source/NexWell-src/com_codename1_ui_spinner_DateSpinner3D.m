@@ -453,7 +453,7 @@ com_codename1_ui_spinner_DateSpinner3D___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9967, 202);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 9966, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(77);
     com_codename1_ui_Container___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(52);
@@ -481,12 +481,12 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D___INIT____(CODENAME_ONE_THREAD_
     __CN1_DEBUG_INFO(68);
     set_field_com_codename1_ui_spinner_DateSpinner3D_numericMonths(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(70);
-    set_field_com_codename1_ui_spinner_DateSpinner3D_monthRenderingPrototype(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(9897), __cn1ThisObject);
+    set_field_com_codename1_ui_spinner_DateSpinner3D_monthRenderingPrototype(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(9896), __cn1ThisObject);
     __CN1_DEBUG_INFO(71);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_l10n_SimpleDateFormat(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_l10n_SimpleDateFormat___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9968));     SP -= 1;
+    /* CustomInvoke */com_codename1_l10n_SimpleDateFormat___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9967));     SP -= 1;
     set_field_com_codename1_ui_spinner_DateSpinner3D_monthFormat(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(72);
@@ -509,7 +509,7 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D___INIT____(CODENAME_ONE_THREAD_
     /* CustomInvoke */com_codename1_ui_layouts_BorderLayout___INIT_____int(threadStateData, SP[-1].data.o, 2 /* ICONST_2 */);     SP -= 1;
     virtual_com_codename1_ui_spinner_DateSpinner3D_setLayout___com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(79);
-    /* CustomInvoke */virtual_com_codename1_ui_spinner_DateSpinner3D_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(138), get_field_com_codename1_ui_spinner_DateSpinner3D_wrapper(__cn1ThisObject)); 
+    /* CustomInvoke */virtual_com_codename1_ui_spinner_DateSpinner3D_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(137), get_field_com_codename1_ui_spinner_DateSpinner3D_wrapper(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(80);
     /* VarOp.assignFrom */ locals[1].data.o = java_util_Calendar_getInstance___R_java_util_Calendar(threadStateData);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(81);
     BC_ALOAD(0);
@@ -548,14 +548,14 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D___INIT____(CODENAME_ONE_THREAD_
     { JAVA_INT tmpResult = virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L239817939;
+    if(POP_INT() != 0) /* IFNE */ goto label_L2084322663;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1653096330;
+    goto label_L505777467;
 
-label_L239817939:
+label_L2084322663:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1653096330:
+label_L505777467:
     set_field_com_codename1_ui_spinner_DateSpinner3D_monthDayYear(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(90);
     virtual_com_codename1_ui_spinner_DateSpinner3D_initSpinner__(threadStateData, __cn1ThisObject); 
@@ -566,7 +566,7 @@ label_L1653096330:
 
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_initComponent__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9967, 1849);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9966, 1848);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(95);
     com_codename1_ui_Container_initComponent__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(96);
@@ -584,9 +584,9 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_initComponent__(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_initSpinner__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 9967, 9898);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 9966, 9897);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(102);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L912677905;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L728747169;
     __CN1_DEBUG_INFO(103);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_spinner_Spinner3D_create___int_int_int_int_R_com_codename1_ui_spinner_Spinner3D(threadStateData, 1 /* ICONST_1 */, 32, get_field_com_codename1_ui_spinner_DateSpinner3D_currentDay(__cn1ThisObject), 1 /* ICONST_1 */));
@@ -623,7 +623,7 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_initSpinner__(CODENAME_ONE_THRE
     __CN1_DEBUG_INFO(140);
     com_codename1_ui_spinner_DateSpinner3D_addComponents__(threadStateData, __cn1ThisObject); 
 
-label_L912677905:
+label_L728747169:
     __CN1_DEBUG_INFO(145);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -631,16 +631,16 @@ label_L912677905:
 
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_addComponents__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 9967, 9899);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 9966, 9898);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(148);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1850322961;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L972632613;
     __CN1_DEBUG_INFO(149);
     PUSH_POINTER(__NEW_com_codename1_ui_Label(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6629), STRING_FROM_CONSTANT_POOL_OFFSET(9969));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6628), STRING_FROM_CONSTANT_POOL_OFFSET(9968));     SP -= 1;
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(150);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_monthDayYear(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L980458695;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_monthDayYear(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L615774072;
     __CN1_DEBUG_INFO(151);
     /* CustomInvoke */virtual_com_codename1_ui_Container_addComponent___com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_spinner_DateSpinner3D_wrapper(__cn1ThisObject), get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(153);
@@ -680,7 +680,7 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_addComponents__(CODENAME_ONE_TH
     __CN1_DEBUG_INFO(156);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setPaddingLeft___float(threadStateData, locals[2].data.o, 3.0); 
     __CN1_DEBUG_INFO(165);
-    /* CustomInvoke */virtual_com_codename1_ui_Label_setText___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9970)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Label_setText___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9969)); 
     __CN1_DEBUG_INFO(166);
     PUSH_POINTER(get_field_com_codename1_ui_spinner_DateSpinner3D_day(__cn1ThisObject));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Label_getPreferredW___R_int(threadStateData, locals[1].data.o);
@@ -722,7 +722,7 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_addComponents__(CODENAME_ONE_TH
     __CN1_DEBUG_INFO(170);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setPaddingRight___float(threadStateData, locals[3].data.o, 3.0); 
     __CN1_DEBUG_INFO(173);
-    /* CustomInvoke */virtual_com_codename1_ui_Label_setText___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9971)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Label_setText___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9970)); 
     __CN1_DEBUG_INFO(174);
     PUSH_POINTER(get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Label_getPreferredW___R_int(threadStateData, locals[1].data.o);
@@ -764,9 +764,9 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_addComponents__(CODENAME_ONE_TH
     __CN1_DEBUG_INFO(179);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setPaddingRight___float(threadStateData, locals[4].data.o, 3.0); 
     __CN1_DEBUG_INFO(186);
-    goto label_L1850322961;
+    goto label_L972632613;
 
-label_L980458695:
+label_L615774072:
     __CN1_DEBUG_INFO(187);
     PUSH_POINTER(get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Label_getPreferredW___R_int(threadStateData, locals[1].data.o);
@@ -777,7 +777,7 @@ label_L980458695:
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     virtual_com_codename1_ui_spinner_Spinner3D_setPreferredW___int(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
     __CN1_DEBUG_INFO(188);
-    /* CustomInvoke */virtual_com_codename1_ui_Label_setText___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9970)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Label_setText___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9969)); 
     __CN1_DEBUG_INFO(189);
     PUSH_POINTER(get_field_com_codename1_ui_spinner_DateSpinner3D_day(__cn1ThisObject));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Label_getPreferredW___R_int(threadStateData, locals[1].data.o);
@@ -790,7 +790,7 @@ label_L980458695:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     virtual_com_codename1_ui_spinner_Spinner3D_setPreferredW___int(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
     __CN1_DEBUG_INFO(190);
-    /* CustomInvoke */virtual_com_codename1_ui_Label_setText___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9971)); 
+    /* CustomInvoke */virtual_com_codename1_ui_Label_setText___java_lang_String(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9970)); 
     __CN1_DEBUG_INFO(191);
     PUSH_POINTER(get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Label_getPreferredW___R_int(threadStateData, locals[1].data.o);
@@ -890,7 +890,7 @@ label_L980458695:
     __CN1_DEBUG_INFO(212);
     /* CustomInvoke */virtual_com_codename1_ui_Container_addComponent___com_codename1_ui_Component(threadStateData, get_field_com_codename1_ui_spinner_DateSpinner3D_wrapper(__cn1ThisObject), get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject)); 
 
-label_L1850322961:
+label_L972632613:
     __CN1_DEBUG_INFO(220);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -898,7 +898,7 @@ label_L1850322961:
 
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_rebuildMonth__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(8, 1, 0, 9967, 9972);
+    DEFINE_INSTANCE_METHOD_STACK(8, 1, 0, 9966, 9971);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(223);
     PUSH_POINTER(get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_codename1_ui_spinner_SpinnerNumberModel(threadStateData)); /* NEW */
@@ -912,7 +912,7 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_rebuildMonth__(CODENAME_ONE_THR
 
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_rebuildDay__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(8, 1, 0, 9967, 9973);
+    DEFINE_INSTANCE_METHOD_STACK(8, 1, 0, 9966, 9972);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(227);
     PUSH_POINTER(get_field_com_codename1_ui_spinner_DateSpinner3D_day(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_codename1_ui_spinner_SpinnerNumberModel(threadStateData)); /* NEW */
@@ -928,7 +928,7 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_rebuildDay__(CODENAME_ONE_THREA
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setDateRange___java_util_Date_java_util_Date(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 9967, 9974);
+    DEFINE_INSTANCE_METHOD_STACK(3, 5, 0, 9966, 9973);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -946,11 +946,11 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setDateRange___java_util_Date_j
     __CN1_DEBUG_INFO(244);
     set_field_com_codename1_ui_spinner_DateSpinner3D_explicitEndYear(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(245);
-    if (locals[2].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L430411884;
+    if (locals[2].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L374205056;
     PUSH_INT(2100);
-    goto label_L497402269;
+    goto label_L1133655596;
 
-label_L430411884:
+label_L374205056:
     /* CustomInvoke */{ JAVA_INT tmpResult = com_codename1_ui_spinner_DateSpinner3D_getYear___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[2].data.o);
     PUSH_INT(tmpResult); }
     PUSH_INT(1900);
@@ -958,43 +958,43 @@ label_L430411884:
     PUSH_INT(1); /* ICONST_1 */
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
 
-label_L497402269:
+label_L1133655596:
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(246);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitCurrentYear(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1045373696;
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_currentYear(__cn1ThisObject)<=(ilocals_3_ - 1 /* ICONST_1 */)) /* IF_ICMPLE CustomJump */ goto label_L1045373696;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitCurrentYear(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L864701537;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_currentYear(__cn1ThisObject)<=(ilocals_3_ - 1 /* ICONST_1 */)) /* IF_ICMPLE CustomJump */ goto label_L864701537;
     __CN1_DEBUG_INFO(247);
     set_field_com_codename1_ui_spinner_DateSpinner3D_currentYear(threadStateData, (ilocals_3_ - 1 /* ICONST_1 */), __cn1ThisObject);
 
-label_L1045373696:
+label_L864701537:
     __CN1_DEBUG_INFO(249);
     /* CustomInvoke */virtual_com_codename1_ui_spinner_DateSpinner3D_setEndYear___int(threadStateData, __cn1ThisObject, ilocals_3_); 
     __CN1_DEBUG_INFO(251);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L15140522;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L137983327;
     PUSH_INT(1970);
-    goto label_L635879978;
+    goto label_L1910085426;
 
-label_L15140522:
+label_L137983327:
     /* CustomInvoke */{ JAVA_INT tmpResult = com_codename1_ui_spinner_DateSpinner3D_getYear___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[1].data.o);
     PUSH_INT(tmpResult); }
     PUSH_INT(1900);
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
 
-label_L635879978:
+label_L1910085426:
     BC_ISTORE(4);
     __CN1_DEBUG_INFO(252);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitCurrentYear(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L385635874;
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_currentYear(__cn1ThisObject)>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L385635874;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitCurrentYear(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L589884531;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_currentYear(__cn1ThisObject)>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L589884531;
     __CN1_DEBUG_INFO(253);
     set_field_com_codename1_ui_spinner_DateSpinner3D_currentYear(threadStateData, ilocals_4_, __cn1ThisObject);
 
-label_L385635874:
+label_L589884531:
     __CN1_DEBUG_INFO(255);
     /* CustomInvoke */virtual_com_codename1_ui_spinner_DateSpinner3D_setStartYear___int(threadStateData, __cn1ThisObject, ilocals_4_); 
     __CN1_DEBUG_INFO(258);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1366040798;
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1366040798;
-    if (/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getYear___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[1].data.o)!=/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getYear___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[2].data.o)) /* IF_ICMPNE CustomJump */ goto label_L1366040798;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1117803827;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1117803827;
+    if (/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getYear___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[1].data.o)!=/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getYear___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[2].data.o)) /* IF_ICMPNE CustomJump */ goto label_L1117803827;
     __CN1_DEBUG_INFO(259);
     BC_ALOAD(0);
     /* CustomInvoke */{ JAVA_INT tmpResult = com_codename1_ui_spinner_DateSpinner3D_getMonth___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[1].data.o);
@@ -1009,9 +1009,9 @@ label_L385635874:
     PUSH_INT(2); /* ICONST_2 */
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     set_field_com_codename1_ui_spinner_DateSpinner3D_endMonth(threadStateData, POP_INT(), POP_OBJ());
-    goto label_L1762049551;
+    goto label_L24138677;
 
-label_L1366040798:
+label_L1117803827:
     __CN1_DEBUG_INFO(262);
     set_field_com_codename1_ui_spinner_DateSpinner3D_startMonth(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(263);
@@ -1019,14 +1019,14 @@ label_L1366040798:
     PUSH_INT(13);
     set_field_com_codename1_ui_spinner_DateSpinner3D_endMonth(threadStateData, POP_INT(), POP_OBJ());
 
-label_L1762049551:
+label_L24138677:
     __CN1_DEBUG_INFO(265);
     com_codename1_ui_spinner_DateSpinner3D_rebuildMonth__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(267);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2053297815;
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2053297815;
-    if (/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getYear___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[1].data.o)!=/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getYear___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[2].data.o)) /* IF_ICMPNE CustomJump */ goto label_L2053297815;
-    if (/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getMonth___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[1].data.o)!=/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getMonth___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[2].data.o)) /* IF_ICMPNE CustomJump */ goto label_L2053297815;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1017980078;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1017980078;
+    if (/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getYear___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[1].data.o)!=/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getYear___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[2].data.o)) /* IF_ICMPNE CustomJump */ goto label_L1017980078;
+    if (/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getMonth___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[1].data.o)!=/* CustomInvoke */com_codename1_ui_spinner_DateSpinner3D_getMonth___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[2].data.o)) /* IF_ICMPNE CustomJump */ goto label_L1017980078;
     __CN1_DEBUG_INFO(268);
     BC_ALOAD(0);
     /* CustomInvoke */{ JAVA_INT tmpResult = com_codename1_ui_spinner_DateSpinner3D_getDate___java_util_Date_R_int(threadStateData, __cn1ThisObject, locals[1].data.o);
@@ -1039,9 +1039,9 @@ label_L1762049551:
     PUSH_INT(1); /* ICONST_1 */
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     set_field_com_codename1_ui_spinner_DateSpinner3D_endDay(threadStateData, POP_INT(), POP_OBJ());
-    goto label_L249283263;
+    goto label_L1476533308;
 
-label_L2053297815:
+label_L1017980078:
     __CN1_DEBUG_INFO(271);
     set_field_com_codename1_ui_spinner_DateSpinner3D_startDay(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(272);
@@ -1049,7 +1049,7 @@ label_L2053297815:
     PUSH_INT(32);
     set_field_com_codename1_ui_spinner_DateSpinner3D_endDay(threadStateData, POP_INT(), POP_OBJ());
 
-label_L249283263:
+label_L1476533308:
     __CN1_DEBUG_INFO(274);
     com_codename1_ui_spinner_DateSpinner3D_rebuildDay__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(276);
@@ -1059,7 +1059,7 @@ label_L249283263:
 
 
 JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getDate___java_util_Date_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9967, 9755);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9966, 9754);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(286);
@@ -1074,7 +1074,7 @@ JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getDate___java_util_Date_R_int(C
 
 
 JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getMonth___java_util_Date_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9967, 9888);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9966, 9887);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(296);
@@ -1089,7 +1089,7 @@ JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getMonth___java_util_Date_R_int(
 
 
 JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getYear___java_util_Date_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9967, 9893);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9966, 9892);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(307);
@@ -1130,14 +1130,14 @@ JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getStartYear___R_int(CODENAME_ON
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setStartYear___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* startYear */
-    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 9967, 6690);
+    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 9966, 6689);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(360);
     set_field_com_codename1_ui_spinner_DateSpinner3D_startYear(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(361);
     set_field_com_codename1_ui_spinner_DateSpinner3D_explicitStartYear(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(362);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1040284010;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L416007106;
     __CN1_DEBUG_INFO(363);
     PUSH_POINTER(get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_codename1_ui_spinner_SpinnerNumberModel(threadStateData)); /* NEW */
@@ -1145,7 +1145,7 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setStartYear___int(CODENAME_ONE
     /* CustomInvoke */com_codename1_ui_spinner_SpinnerNumberModel___INIT_____int_int_int_int(threadStateData, SP[-1].data.o, ilocals_1_, get_field_com_codename1_ui_spinner_DateSpinner3D_endYear(__cn1ThisObject), get_field_com_codename1_ui_spinner_DateSpinner3D_currentYear(__cn1ThisObject), 1 /* ICONST_1 */);     SP -= 1;
     virtual_com_codename1_ui_spinner_Spinner3D_setModel___com_codename1_ui_list_ListModel(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1040284010:
+label_L416007106:
     __CN1_DEBUG_INFO(365);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1159,14 +1159,14 @@ JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getEndYear___R_int(CODENAME_ONE_
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setEndYear___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* endYear */
-    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 9967, 9902);
+    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 9966, 9901);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(378);
     set_field_com_codename1_ui_spinner_DateSpinner3D_endYear(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(379);
     set_field_com_codename1_ui_spinner_DateSpinner3D_explicitEndYear(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(380);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1655397987;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L455464597;
     __CN1_DEBUG_INFO(381);
     PUSH_POINTER(get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_codename1_ui_spinner_SpinnerNumberModel(threadStateData)); /* NEW */
@@ -1174,7 +1174,7 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setEndYear___int(CODENAME_ONE_T
     /* CustomInvoke */com_codename1_ui_spinner_SpinnerNumberModel___INIT_____int_int_int_int(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_spinner_DateSpinner3D_startYear(__cn1ThisObject), ilocals_1_, get_field_com_codename1_ui_spinner_DateSpinner3D_currentYear(__cn1ThisObject), 1 /* ICONST_1 */);     SP -= 1;
     virtual_com_codename1_ui_spinner_Spinner3D_setModel___com_codename1_ui_list_ListModel(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1655397987:
+label_L455464597:
     __CN1_DEBUG_INFO(383);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1182,9 +1182,9 @@ label_L1655397987:
 
 
 JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getCurrentYear___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9967, 9903);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9966, 9902);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(389);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L244447951;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1324878091;
     __CN1_DEBUG_INFO(390);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_spinner_Spinner3D_getValue___R_java_lang_Object(threadStateData, get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -1192,7 +1192,7 @@ JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getCurrentYear___R_int(CODENAME_
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L244447951:
+label_L1324878091:
     __CN1_DEBUG_INFO(392);
 
 {
@@ -1204,39 +1204,39 @@ label_L244447951:
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setCurrentYear___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* currentYear */
-    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 9967, 9904);
+    DEFINE_INSTANCE_METHOD_STACK(7, 2, 0, 9966, 9903);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(399);
     set_field_com_codename1_ui_spinner_DateSpinner3D_currentYear(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(400);
     set_field_com_codename1_ui_spinner_DateSpinner3D_explicitCurrentYear(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(401);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitStartYear(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1586433944;
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_startYear(__cn1ThisObject)<=ilocals_1_) /* IF_ICMPLE CustomJump */ goto label_L1586433944;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitStartYear(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L114499348;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_startYear(__cn1ThisObject)<=ilocals_1_) /* IF_ICMPLE CustomJump */ goto label_L114499348;
     __CN1_DEBUG_INFO(402);
     set_field_com_codename1_ui_spinner_DateSpinner3D_startYear(threadStateData, ilocals_1_, __cn1ThisObject);
 
-label_L1586433944:
+label_L114499348:
     __CN1_DEBUG_INFO(404);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitEndYear(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1810953994;
-    if ((get_field_com_codename1_ui_spinner_DateSpinner3D_endYear(__cn1ThisObject) - 1 /* ICONST_1 */)>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1810953994;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitEndYear(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1077938655;
+    if ((get_field_com_codename1_ui_spinner_DateSpinner3D_endYear(__cn1ThisObject) - 1 /* ICONST_1 */)>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1077938655;
     __CN1_DEBUG_INFO(405);
     set_field_com_codename1_ui_spinner_DateSpinner3D_endYear(threadStateData, (ilocals_1_ + 1 /* ICONST_1 */), __cn1ThisObject);
 
-label_L1810953994:
+label_L1077938655:
     __CN1_DEBUG_INFO(407);
-    if (ilocals_1_>=get_field_com_codename1_ui_spinner_DateSpinner3D_startYear(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L1393615953;
+    if (ilocals_1_>=get_field_com_codename1_ui_spinner_DateSpinner3D_startYear(__cn1ThisObject)) /* IF_ICMPGE CustomJump */ goto label_L1977941564;
     __CN1_DEBUG_INFO(408);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9979));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9978));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_1_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9980));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9979));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_spinner_DateSpinner3D_startYear(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -1245,20 +1245,20 @@ label_L1810953994:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1393615953:
+label_L1977941564:
     __CN1_DEBUG_INFO(410);
-    if (ilocals_1_<=(get_field_com_codename1_ui_spinner_DateSpinner3D_endYear(__cn1ThisObject) - 1 /* ICONST_1 */)) /* IF_ICMPLE CustomJump */ goto label_L1389771646;
+    if (ilocals_1_<=(get_field_com_codename1_ui_spinner_DateSpinner3D_endYear(__cn1ThisObject) - 1 /* ICONST_1 */)) /* IF_ICMPLE CustomJump */ goto label_L2077884890;
     __CN1_DEBUG_INFO(411);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9979));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9978));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_1_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9981));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9980));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_spinner_DateSpinner3D_endYear(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -1267,9 +1267,9 @@ label_L1393615953:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1389771646:
+label_L2077884890:
     __CN1_DEBUG_INFO(413);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1954745715;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1710201354;
     __CN1_DEBUG_INFO(414);
     PUSH_POINTER(get_field_com_codename1_ui_spinner_DateSpinner3D_year(__cn1ThisObject));
     PUSH_POINTER(__NEW_com_codename1_ui_spinner_SpinnerNumberModel(threadStateData)); /* NEW */
@@ -1277,7 +1277,7 @@ label_L1389771646:
     /* CustomInvoke */com_codename1_ui_spinner_SpinnerNumberModel___INIT_____int_int_int_int(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_spinner_DateSpinner3D_startYear(__cn1ThisObject), get_field_com_codename1_ui_spinner_DateSpinner3D_endYear(__cn1ThisObject), ilocals_1_, 1 /* ICONST_1 */);     SP -= 1;
     virtual_com_codename1_ui_spinner_Spinner3D_setModel___com_codename1_ui_list_ListModel(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L1954745715:
+label_L1710201354:
     __CN1_DEBUG_INFO(416);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1285,7 +1285,7 @@ label_L1954745715:
 
 
 JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getCurrentDay___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 9967, 9881);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 9966, 9880);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(422);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_spinner_Spinner3D_getValue___R_java_lang_Object(threadStateData, get_field_com_codename1_ui_spinner_DateSpinner3D_day(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(423);
 
@@ -1298,37 +1298,37 @@ JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getCurrentDay___R_int(CODENAME_O
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setCurrentDay___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* currentDay */
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9967, 9886);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9966, 9885);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(430);
     set_field_com_codename1_ui_spinner_DateSpinner3D_currentDay(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(431);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitStartDay(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L405273678;
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_startDay(__cn1ThisObject)<=ilocals_1_) /* IF_ICMPLE CustomJump */ goto label_L405273678;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitStartDay(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L622946713;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_startDay(__cn1ThisObject)<=ilocals_1_) /* IF_ICMPLE CustomJump */ goto label_L622946713;
     __CN1_DEBUG_INFO(432);
     set_field_com_codename1_ui_spinner_DateSpinner3D_startDay(threadStateData, ilocals_1_, __cn1ThisObject);
 
-label_L405273678:
+label_L622946713:
     __CN1_DEBUG_INFO(434);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitEndDay(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1279369591;
-    if ((get_field_com_codename1_ui_spinner_DateSpinner3D_endDay(__cn1ThisObject) - 1 /* ICONST_1 */)>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1279369591;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitEndDay(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L2011592223;
+    if ((get_field_com_codename1_ui_spinner_DateSpinner3D_endDay(__cn1ThisObject) - 1 /* ICONST_1 */)>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L2011592223;
     __CN1_DEBUG_INFO(435);
     set_field_com_codename1_ui_spinner_DateSpinner3D_endDay(threadStateData, (ilocals_1_ + 1 /* ICONST_1 */), __cn1ThisObject);
 
-label_L1279369591:
+label_L2011592223:
     __CN1_DEBUG_INFO(437);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_startDay(__cn1ThisObject)<=ilocals_1_) /* IF_ICMPLE CustomJump */ goto label_L800026186;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_startDay(__cn1ThisObject)<=ilocals_1_) /* IF_ICMPLE CustomJump */ goto label_L1553563112;
     __CN1_DEBUG_INFO(438);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9982));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9981));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_spinner_DateSpinner3D_startDay(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9983));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9982));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_1_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -1337,20 +1337,20 @@ label_L1279369591:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L800026186:
+label_L1553563112:
     __CN1_DEBUG_INFO(440);
-    if ((get_field_com_codename1_ui_spinner_DateSpinner3D_endDay(__cn1ThisObject) - 1 /* ICONST_1 */)>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1135281753;
+    if ((get_field_com_codename1_ui_spinner_DateSpinner3D_endDay(__cn1ThisObject) - 1 /* ICONST_1 */)>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1170183099;
     __CN1_DEBUG_INFO(441);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9984));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9983));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_spinner_DateSpinner3D_endDay(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9985));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9984));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_1_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -1359,13 +1359,13 @@ label_L800026186:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1135281753:
+label_L1170183099:
     __CN1_DEBUG_INFO(443);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_day(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1682524142;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_day(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1803306804;
     __CN1_DEBUG_INFO(444);
     com_codename1_ui_spinner_DateSpinner3D_rebuildDay__(threadStateData, __cn1ThisObject); 
 
-label_L1682524142:
+label_L1803306804:
     __CN1_DEBUG_INFO(446);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1373,9 +1373,9 @@ label_L1682524142:
 
 
 JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getCurrentMonth___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9967, 9905);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9966, 9904);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(452);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L625088521;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L795775690;
     __CN1_DEBUG_INFO(453);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_spinner_Spinner3D_getValue___R_java_lang_Object(threadStateData, get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -1397,7 +1397,7 @@ JAVA_INT com_codename1_ui_spinner_DateSpinner3D_getCurrentMonth___R_int(CODENAME
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L625088521:
+label_L795775690:
     __CN1_DEBUG_INFO(456);
 
 {
@@ -1409,37 +1409,37 @@ label_L625088521:
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setCurrentMonth___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* currentMonth */
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9967, 9906);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9966, 9905);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(463);
     set_field_com_codename1_ui_spinner_DateSpinner3D_currentMonth(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(464);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitStartMonth(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1900806101;
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_startMonth(__cn1ThisObject)<=ilocals_1_) /* IF_ICMPLE CustomJump */ goto label_L1900806101;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitStartMonth(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L940563698;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_startMonth(__cn1ThisObject)<=ilocals_1_) /* IF_ICMPLE CustomJump */ goto label_L940563698;
     __CN1_DEBUG_INFO(465);
     set_field_com_codename1_ui_spinner_DateSpinner3D_startMonth(threadStateData, ilocals_1_, __cn1ThisObject);
 
-label_L1900806101:
+label_L940563698:
     __CN1_DEBUG_INFO(467);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitEndMonth(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1791604331;
-    if ((get_field_com_codename1_ui_spinner_DateSpinner3D_endMonth(__cn1ThisObject) - 1 /* ICONST_1 */)>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1791604331;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_explicitEndMonth(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L18133507;
+    if ((get_field_com_codename1_ui_spinner_DateSpinner3D_endMonth(__cn1ThisObject) - 1 /* ICONST_1 */)>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L18133507;
     __CN1_DEBUG_INFO(468);
     set_field_com_codename1_ui_spinner_DateSpinner3D_endMonth(threadStateData, (ilocals_1_ + 1 /* ICONST_1 */), __cn1ThisObject);
 
-label_L1791604331:
+label_L18133507:
     __CN1_DEBUG_INFO(470);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_startMonth(__cn1ThisObject)<=ilocals_1_) /* IF_ICMPLE CustomJump */ goto label_L1150413547;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_startMonth(__cn1ThisObject)<=ilocals_1_) /* IF_ICMPLE CustomJump */ goto label_L148377842;
     __CN1_DEBUG_INFO(471);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9986));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9985));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_spinner_DateSpinner3D_startMonth(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9987));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9986));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_1_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -1448,20 +1448,20 @@ label_L1791604331:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1150413547:
+label_L148377842:
     __CN1_DEBUG_INFO(473);
-    if ((get_field_com_codename1_ui_spinner_DateSpinner3D_endMonth(__cn1ThisObject) - 1 /* ICONST_1 */)>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1898324000;
+    if ((get_field_com_codename1_ui_spinner_DateSpinner3D_endMonth(__cn1ThisObject) - 1 /* ICONST_1 */)>=ilocals_1_) /* IF_ICMPGE CustomJump */ goto label_L1400585185;
     __CN1_DEBUG_INFO(474);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9988));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9987));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_spinner_DateSpinner3D_endMonth(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9989));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9988));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_1_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -1470,13 +1470,13 @@ label_L1150413547:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1898324000:
+label_L1400585185:
     __CN1_DEBUG_INFO(476);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1597889670;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L366314800;
     __CN1_DEBUG_INFO(477);
     com_codename1_ui_spinner_DateSpinner3D_rebuildMonth__(threadStateData, __cn1ThisObject); 
 
-label_L1597889670:
+label_L366314800:
     __CN1_DEBUG_INFO(479);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1490,7 +1490,7 @@ JAVA_BOOLEAN com_codename1_ui_spinner_DateSpinner3D_isMonthDayYear___R_boolean(C
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setMonthDayYear___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* monthDayYear */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9967, 9908);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9966, 9907);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(492);
     set_field_com_codename1_ui_spinner_DateSpinner3D_monthDayYear(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -1511,16 +1511,16 @@ JAVA_BOOLEAN com_codename1_ui_spinner_DateSpinner3D_isNumericMonths___R_boolean(
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setNumericMonths___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* numericMonths */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9967, 9910);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9966, 9909);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(508);
     set_field_com_codename1_ui_spinner_DateSpinner3D_numericMonths(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(509);
-    if (get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2027963364;
+    if (get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L838187299;
     __CN1_DEBUG_INFO(510);
     virtual_com_codename1_ui_spinner_Spinner3D_repaint__(threadStateData, get_field_com_codename1_ui_spinner_DateSpinner3D_month(__cn1ThisObject)); 
 
-label_L2027963364:
+label_L838187299:
     __CN1_DEBUG_INFO(512);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -1538,11 +1538,11 @@ JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_getPropertyTypes___R_java_lan
 
 
 JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_getPropertyValue___java_lang_String_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9967, 2362);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9966, 2361);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(533);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9911))==0) /* IFEQ CustomJump */ goto label_L862791841;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9910))==0) /* IFEQ CustomJump */ goto label_L2044878959;
     __CN1_DEBUG_INFO(534);
     PUSH_POINTER(__NEW_java_lang_Integer(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -1550,9 +1550,9 @@ JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_getPropertyValue___java_lang_
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L862791841:
+label_L2044878959:
     __CN1_DEBUG_INFO(536);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9912))==0) /* IFEQ CustomJump */ goto label_L1938438604;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9911))==0) /* IFEQ CustomJump */ goto label_L1934424193;
     __CN1_DEBUG_INFO(537);
     PUSH_POINTER(__NEW_java_lang_Integer(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -1560,9 +1560,9 @@ label_L862791841:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1938438604:
+label_L1934424193:
     __CN1_DEBUG_INFO(539);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9913))==0) /* IFEQ CustomJump */ goto label_L1122108119;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9912))==0) /* IFEQ CustomJump */ goto label_L1250496477;
     __CN1_DEBUG_INFO(540);
     PUSH_POINTER(__NEW_java_lang_Integer(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -1570,9 +1570,9 @@ label_L1938438604:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1122108119:
+label_L1250496477:
     __CN1_DEBUG_INFO(542);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9914))==0) /* IFEQ CustomJump */ goto label_L954697228;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9913))==0) /* IFEQ CustomJump */ goto label_L1445567246;
     __CN1_DEBUG_INFO(543);
     PUSH_POINTER(__NEW_java_lang_Integer(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -1580,9 +1580,9 @@ label_L1122108119:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L954697228:
+label_L1445567246:
     __CN1_DEBUG_INFO(545);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9915))==0) /* IFEQ CustomJump */ goto label_L1645578641;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9914))==0) /* IFEQ CustomJump */ goto label_L1017280700;
     __CN1_DEBUG_INFO(546);
     PUSH_POINTER(__NEW_java_lang_Integer(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -1590,9 +1590,9 @@ label_L954697228:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1645578641:
+label_L1017280700:
     __CN1_DEBUG_INFO(548);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9916))==0) /* IFEQ CustomJump */ goto label_L1081313350;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9915))==0) /* IFEQ CustomJump */ goto label_L675157849;
     __CN1_DEBUG_INFO(549);
     PUSH_POINTER(__NEW_java_lang_Boolean(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -1600,9 +1600,9 @@ label_L1645578641:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1081313350:
+label_L675157849:
     __CN1_DEBUG_INFO(551);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9917))==0) /* IFEQ CustomJump */ goto label_L307617317;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9916))==0) /* IFEQ CustomJump */ goto label_L717951588;
     __CN1_DEBUG_INFO(552);
     PUSH_POINTER(__NEW_java_lang_Boolean(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -1610,20 +1610,20 @@ label_L1081313350:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L307617317:
+label_L717951588:
     __CN1_DEBUG_INFO(554);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }
 
 
 JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_setPropertyValue___java_lang_String_java_lang_Object_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9967, 2363);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9966, 2362);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(561);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9911))==0) /* IFEQ CustomJump */ goto label_L377941381;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9910))==0) /* IFEQ CustomJump */ goto label_L815799768;
     __CN1_DEBUG_INFO(562);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_lang_Object_toString___R_java_lang_String(threadStateData, locals[2].data.o);
@@ -1634,9 +1634,9 @@ JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_setPropertyValue___java_lang_
     __CN1_DEBUG_INFO(563);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L377941381:
+label_L815799768:
     __CN1_DEBUG_INFO(565);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9912))==0) /* IFEQ CustomJump */ goto label_L1485944773;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9911))==0) /* IFEQ CustomJump */ goto label_L526968040;
     __CN1_DEBUG_INFO(566);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_lang_Object_toString___R_java_lang_String(threadStateData, locals[2].data.o);
@@ -1647,9 +1647,9 @@ label_L377941381:
     __CN1_DEBUG_INFO(567);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L1485944773:
+label_L526968040:
     __CN1_DEBUG_INFO(569);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9913))==0) /* IFEQ CustomJump */ goto label_L83637545;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9912))==0) /* IFEQ CustomJump */ goto label_L1203022979;
     __CN1_DEBUG_INFO(570);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_lang_Object_toString___R_java_lang_String(threadStateData, locals[2].data.o);
@@ -1660,9 +1660,9 @@ label_L1485944773:
     __CN1_DEBUG_INFO(571);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L83637545:
+label_L1203022979:
     __CN1_DEBUG_INFO(573);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9914))==0) /* IFEQ CustomJump */ goto label_L954492773;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9913))==0) /* IFEQ CustomJump */ goto label_L891215395;
     __CN1_DEBUG_INFO(574);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_lang_Object_toString___R_java_lang_String(threadStateData, locals[2].data.o);
@@ -1673,9 +1673,9 @@ label_L83637545:
     __CN1_DEBUG_INFO(575);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L954492773:
+label_L891215395:
     __CN1_DEBUG_INFO(577);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9915))==0) /* IFEQ CustomJump */ goto label_L422534969;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9914))==0) /* IFEQ CustomJump */ goto label_L90196869;
     __CN1_DEBUG_INFO(578);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_lang_Object_toString___R_java_lang_String(threadStateData, locals[2].data.o);
@@ -1686,23 +1686,23 @@ label_L954492773:
     __CN1_DEBUG_INFO(579);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L422534969:
+label_L90196869:
     __CN1_DEBUG_INFO(581);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9916))==0) /* IFEQ CustomJump */ goto label_L1289092166;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9915))==0) /* IFEQ CustomJump */ goto label_L1576509541;
     __CN1_DEBUG_INFO(582);
     /* CustomInvoke */virtual_com_codename1_ui_spinner_DateSpinner3D_setMonthDayYear___boolean(threadStateData, __cn1ThisObject, virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[2].data.o)); 
     __CN1_DEBUG_INFO(583);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L1289092166:
+label_L1576509541:
     __CN1_DEBUG_INFO(585);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9917))==0) /* IFEQ CustomJump */ goto label_L694541704;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9916))==0) /* IFEQ CustomJump */ goto label_L1061543916;
     __CN1_DEBUG_INFO(586);
     /* CustomInvoke */virtual_com_codename1_ui_spinner_DateSpinner3D_setNumericMonths___boolean(threadStateData, __cn1ThisObject, virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[2].data.o)); 
     __CN1_DEBUG_INFO(587);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L694541704:
+label_L1061543916:
     __CN1_DEBUG_INFO(590);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = com_codename1_ui_Container_setPropertyValue___java_lang_String_java_lang_Object_R_java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o);
     PUSH_OBJ(tmpResult); }
@@ -1712,7 +1712,7 @@ label_L694541704:
 
 
 JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_getValue___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9967, 2007);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9966, 2006);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(595);
     /* VarOp.assignFrom */ locals[1].data.o = java_util_Calendar_getInstance___R_java_util_Calendar(threadStateData);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(596);
     BC_ALOAD(1);
@@ -1749,7 +1749,7 @@ JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_getValue___R_java_lang_Object
 
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_setValue___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9967, 2008);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 9966, 2007);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(611);
@@ -1796,7 +1796,7 @@ locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(612);
 
 JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_paint___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 9967, 2356);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 9966, 2355);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(626);
@@ -1824,7 +1824,7 @@ JAVA_VOID com_codename1_ui_spinner_DateSpinner3D_paint___com_codename1_ui_Graphi
 
 JAVA_OBJECT com_codename1_ui_spinner_DateSpinner3D_access$000___com_codename1_ui_spinner_DateSpinner3D_R_com_codename1_l10n_SimpleDateFormat(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_spinner_DateSpinner3D(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 9967, 218);
+    DEFINE_METHOD_STACK(1, 1, 0, 9966, 217);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(46);

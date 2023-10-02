@@ -47,7 +47,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_SideMenuBar_8_2(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_SideMenuBar_8_2___INIT_____com_codename1_ui_SideMenuBar_8_com_codename1_ui_animations_Motion(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7035, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 7034, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -62,11 +62,11 @@ JAVA_VOID com_codename1_ui_SideMenuBar_8_2___INIT_____com_codename1_ui_SideMenuB
 
 
 JAVA_BOOLEAN com_codename1_ui_SideMenuBar_8_2_animate___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7035, 1588);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 7034, 1587);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1246);
     /* CustomInvoke */com_codename1_ui_SideMenuBar_access$102___com_codename1_ui_SideMenuBar_int_R_int(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_this_0(get_field_com_codename1_ui_SideMenuBar_8_2_this_1(__cn1ThisObject)), virtual_com_codename1_ui_animations_Motion_getValue___R_int(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_2_val_motion(__cn1ThisObject))); 
     __CN1_DEBUG_INFO(1247);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_2_val_motion(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1910034407;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_2_val_motion(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1886301021;
     __CN1_DEBUG_INFO(1248);
     /* CustomInvoke */com_codename1_ui_SideMenuBar_access$202___com_codename1_ui_SideMenuBar_boolean_R_boolean(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_this_0(get_field_com_codename1_ui_SideMenuBar_8_2_this_1(__cn1ThisObject)), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1249);
@@ -77,14 +77,14 @@ JAVA_BOOLEAN com_codename1_ui_SideMenuBar_8_2_animate___R_boolean(CODENAME_ONE_T
     __CN1_DEBUG_INFO(1250);
     /* CustomInvoke */virtual_com_codename1_ui_SideMenuBar_8_deregisterAnimated___com_codename1_ui_animations_Animation(threadStateData, get_field_com_codename1_ui_SideMenuBar_8_2_this_1(__cn1ThisObject), __cn1ThisObject); 
 
-label_L1910034407:
+label_L1886301021:
     __CN1_DEBUG_INFO(1252);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 }
 
 
 JAVA_VOID com_codename1_ui_SideMenuBar_8_2_paint___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7035, 2356);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 7034, 2355);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1256);

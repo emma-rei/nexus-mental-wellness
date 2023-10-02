@@ -326,7 +326,7 @@ JAVA_OBJECT com_codename1_ui_events_ActionEvent_Type_values___R_com_codename1_ui
 
 JAVA_OBJECT com_codename1_ui_events_ActionEvent_Type_valueOf___java_lang_String_R_com_codename1_ui_events_ActionEvent_Type(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_ui_events_ActionEvent_Type(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 3196, 899);
+    DEFINE_METHOD_STACK(2, 1, 0, 3195, 898);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(43);
@@ -337,7 +337,7 @@ JAVA_OBJECT com_codename1_ui_events_ActionEvent_Type_valueOf___java_lang_String_
 
 
 JAVA_VOID com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3196, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3195, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -349,155 +349,155 @@ JAVA_VOID com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_i
 
 
 JAVA_VOID com_codename1_ui_events_ActionEvent_Type___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(4, 0, 0, 3196, 860);
+    DEFINE_METHOD_STACK(4, 0, 0, 3195, 859);
     __CN1_DEBUG_INFO(47);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3197), 0 /* ICONST_0 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3196), 0 /* ICONST_0 */);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Other(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(52);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3198), 1 /* ICONST_1 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3197), 1 /* ICONST_1 */);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Command(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(57);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3199), 2 /* ICONST_2 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3198), 2 /* ICONST_2 */);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Pointer(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(62);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3200), 3 /* ICONST_3 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3199), 3 /* ICONST_3 */);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_PointerPressed(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(67);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3201), 4/* ICONST_4 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3200), 4/* ICONST_4 */);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_PointerReleased(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(73);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3202), 5 /* ICONST_5 */);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3201), 5 /* ICONST_5 */);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_PointerDrag(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(79);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3203), 6);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3202), 6);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Swipe(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(84);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3204), 7);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3203), 7);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_KeyPress(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(90);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3205), 8);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3204), 8);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_KeyRelease(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(95);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2116), 9);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2115), 9);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Exception(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(100);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3206), 10);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3205), 10);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Response(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(105);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3207), 11);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3206), 11);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Progress(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(110);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3208), 12);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3207), 12);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Data(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(115);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3209), 13);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3208), 13);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Calendar(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(120);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3210), 14);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3209), 14);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Edit(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(125);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1852), 15);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1851), 15);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Done(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(130);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3211), 16);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3210), 16);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_JavaScript(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(135);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1925), 17);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1924), 17);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Log(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(140);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3212), 18);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3211), 18);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Theme(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(145);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3213), 19);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3212), 19);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Show(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(151);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3214), 20);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3213), 20);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_SizeChange(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(156);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3215), 21);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3214), 21);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_OrientationChange(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(162);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3216), 22);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3215), 22);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_DragFinished(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(164);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3217), 23);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3216), 23);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_Change(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(166);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent_Type(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3218), 24);     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_events_ActionEvent_Type___INIT_____java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3217), 24);     SP -= 1;
     set_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData, PEEK_OBJ(1));
     SP--;
     __CN1_DEBUG_INFO(43);

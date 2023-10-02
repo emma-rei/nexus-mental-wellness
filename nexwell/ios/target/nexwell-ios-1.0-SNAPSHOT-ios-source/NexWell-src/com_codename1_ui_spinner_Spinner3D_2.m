@@ -196,7 +196,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_Spinner3D_2(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_2___INIT_____com_codename1_ui_spinner_Spinner3D(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10089, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10088, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(105);
@@ -208,7 +208,7 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_2___INIT_____com_codename1_ui_spinn
 
 
 JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_2_calcPreferredSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10089, 1857);
+    DEFINE_INSTANCE_METHOD_STACK(5, 1, 0, 10088, 1856);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(111);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Dimension(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -224,7 +224,7 @@ JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_2_calcPreferredSize___R_com_coden
 
 
 JAVA_OBJECT com_codename1_ui_spinner_Spinner3D_2_calcScrollSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10089, 2441);
+    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10088, 2440);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(116);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Dimension(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -259,7 +259,7 @@ JAVA_INT com_codename1_ui_spinner_Spinner3D_2_getGridPosY___R_int(CODENAME_ONE_T
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 10089, 2680);
+    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 10088, 2679);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(126);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_spinner_Spinner3D_access$000___com_codename1_ui_spinner_Spinner3D_R_com_codename1_ui_spinner_SpinnerNode(threadStateData, get_field_com_codename1_ui_spinner_Spinner3D_2_this_0(__cn1ThisObject)));
     { JAVA_DOUBLE tmpResult = virtual_com_codename1_ui_spinner_SpinnerNode_calcRowHeight___R_double(threadStateData, SP[-1].data.o);
@@ -271,16 +271,16 @@ JAVA_INT com_codename1_ui_spinner_Spinner3D_2_getGridPosY___R_int(CODENAME_ONE_T
     __CN1_DEBUG_INFO(128);
     /* VarOp.assignFrom */     ilocals_3_ = ilocals_2_;
     __CN1_DEBUG_INFO(129);
-    if ((ilocals_2_ % ilocals_1_)>=(ilocals_1_ - (ilocals_2_ % ilocals_1_))) /* IF_ICMPGE CustomJump */ goto label_L632583498;
+    if ((ilocals_2_ % ilocals_1_)>=(ilocals_1_ - (ilocals_2_ % ilocals_1_))) /* IF_ICMPGE CustomJump */ goto label_L1783905801;
     __CN1_DEBUG_INFO(130);
     /* VarOp.assignFrom */ ilocals_3_=(ilocals_2_ - (ilocals_2_ % ilocals_1_));
-    goto label_L1858315458;
+    goto label_L755979402;
 
-label_L632583498:
+label_L1783905801:
     __CN1_DEBUG_INFO(132);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_2_ + ilocals_1_) - (ilocals_2_ % ilocals_1_));
 
-label_L1858315458:
+label_L755979402:
     __CN1_DEBUG_INFO(134);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
@@ -295,17 +295,17 @@ label_L1858315458:
     SP[-1].data.d = SP[-1].data.i; /* I2D */;
     SP--; SP[-1].data.d = (SP[-1].data.d - (*SP).data.d); /* DSUB */
     BC_DCMPL();
-    if(POP_INT() <= 0) /* IFLE */ goto label_L196414950;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L532930371;
     __CN1_DEBUG_INFO(135);
     /* VarOp.assignFrom */ ilocals_3_=(ilocals_3_ - ilocals_1_);
 
-label_L196414950:
+label_L532930371:
     __CN1_DEBUG_INFO(137);
-    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L728451196;
+    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L353566722;
     __CN1_DEBUG_INFO(138);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L728451196:
+label_L353566722:
     __CN1_DEBUG_INFO(142);
 
 {
@@ -318,7 +318,7 @@ label_L728451196:
 JAVA_VOID com_codename1_ui_spinner_Spinner3D_2_pointerPressed___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10089, 278);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10088, 277);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(147);
@@ -329,9 +329,9 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_2_pointerPressed___int_int(CODENAME
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_scene_Node_contains___int_int_R_boolean(threadStateData, SP[-1].data.o, ilocals_1_, ilocals_2_);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L762541694;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1585238239;
 
-label_L762541694:
+label_L1585238239:
     __CN1_DEBUG_INFO(151);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

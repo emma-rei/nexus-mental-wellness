@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_io_URL(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_io_URL___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 7940, 202);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 7939, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(46);
@@ -53,7 +53,7 @@ JAVA_VOID com_codename1_io_URL___INIT_____java_lang_String(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID com_codename1_io_URL___INIT_____java_net_URI(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7940, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7939, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(50);
@@ -72,7 +72,7 @@ JAVA_OBJECT com_codename1_io_URL_getQuery___R_java_lang_String(CODENAME_ONE_THRE
 
 
 JAVA_OBJECT com_codename1_io_URL_getPath___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7940, 7942);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7939, 7941);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(58);
     { JAVA_OBJECT tmpResult = virtual_java_net_URI_getPath___R_java_lang_String(threadStateData, get_field_com_codename1_io_URL_u(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -92,7 +92,7 @@ JAVA_OBJECT com_codename1_io_URL_getAuthority___R_java_lang_String(CODENAME_ONE_
 
 
 JAVA_INT com_codename1_io_URL_getPort___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7940, 7945);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7939, 7944);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(67);
 
 {
@@ -113,7 +113,7 @@ JAVA_OBJECT com_codename1_io_URL_getProtocol___R_java_lang_String(CODENAME_ONE_T
 
 
 JAVA_OBJECT com_codename1_io_URL_getHost___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7940, 7948);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7939, 7947);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(86);
     { JAVA_OBJECT tmpResult = virtual_java_net_URI_getHost___R_java_lang_String(threadStateData, get_field_com_codename1_io_URL_u(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -123,7 +123,7 @@ JAVA_OBJECT com_codename1_io_URL_getHost___R_java_lang_String(CODENAME_ONE_THREA
 
 
 JAVA_OBJECT com_codename1_io_URL_getFile___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7940, 6732);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7939, 6731);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(89);
     { JAVA_OBJECT tmpResult = virtual_java_net_URI_toASCIIString___R_java_lang_String(threadStateData, get_field_com_codename1_io_URL_u(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -133,27 +133,27 @@ JAVA_OBJECT com_codename1_io_URL_getFile___R_java_lang_String(CODENAME_ONE_THREA
 
 
 JAVA_BOOLEAN com_codename1_io_URL_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7940, 877);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7939, 876);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(92);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_io_URL);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1288731134;
-    if (/* CustomInvoke */virtual_java_net_URI_equals___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_io_URL_u(locals[1].data.o), locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1288731134;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L422278820;
+    if (/* CustomInvoke */virtual_java_net_URI_equals___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_io_URL_u(locals[1].data.o), locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L422278820;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L931280002;
+    goto label_L1838590101;
 
-label_L1288731134:
+label_L422278820:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L931280002:
+label_L1838590101:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_INT com_codename1_io_URL_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7940, 882);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7939, 881);
     monitorEnterBlock(threadStateData, __cn1ThisObject);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(95);
 
@@ -171,7 +171,7 @@ JAVA_BOOLEAN com_codename1_io_URL_sameFile___com_codename1_io_URL_R_boolean(CODE
 
 
 JAVA_OBJECT com_codename1_io_URL_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7940, 896);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 7939, 895);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(101);
     { JAVA_OBJECT tmpResult = virtual_java_net_URI_toASCIIString___R_java_lang_String(threadStateData, get_field_com_codename1_io_URL_u(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }

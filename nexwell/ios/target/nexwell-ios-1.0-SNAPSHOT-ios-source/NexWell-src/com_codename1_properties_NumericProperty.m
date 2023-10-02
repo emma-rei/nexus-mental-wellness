@@ -37,7 +37,7 @@ void __GC_MARK_com_codename1_properties_NumericProperty(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID com_codename1_properties_NumericProperty___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8464, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8463, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(40);
@@ -51,7 +51,7 @@ JAVA_VOID com_codename1_properties_NumericProperty___INIT_____java_lang_String(C
 
 
 JAVA_VOID com_codename1_properties_NumericProperty___INIT_____java_lang_String_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8464, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8463, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -67,7 +67,7 @@ JAVA_VOID com_codename1_properties_NumericProperty___INIT_____java_lang_String_j
 
 
 JAVA_VOID com_codename1_properties_NumericProperty___INIT_____java_lang_String_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8464, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 8463, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -76,14 +76,14 @@ JAVA_VOID com_codename1_properties_NumericProperty___INIT_____java_lang_String_j
     /* CustomInvoke */com_codename1_properties_Property___INIT_____java_lang_String_java_lang_Object(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(57);
     BC_ALOAD(0);
-    if (locals[2].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1696054379;
+    if (locals[2].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1026064252;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1406391812;
+    goto label_L1168769758;
 
-label_L1696054379:
+label_L1026064252:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1406391812:
+label_L1168769758:
     set_field_com_codename1_properties_NumericProperty_nullable(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(58);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -92,7 +92,7 @@ label_L1406391812:
 
 
 JAVA_VOID com_codename1_properties_NumericProperty___INIT_____java_lang_String_java_lang_Class_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 8464, 202);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 8463, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -103,14 +103,14 @@ JAVA_VOID com_codename1_properties_NumericProperty___INIT_____java_lang_String_j
     /* CustomInvoke */com_codename1_properties_Property___INIT_____java_lang_String_java_lang_Class_java_lang_Object(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o, locals[3].data.o); 
     __CN1_DEBUG_INFO(65);
     BC_ALOAD(0);
-    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1156424283;
+    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L425298744;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1580881786;
+    goto label_L1561770759;
 
-label_L1156424283:
+label_L425298744:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1580881786:
+label_L1561770759:
     set_field_com_codename1_properties_NumericProperty_nullable(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(66);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -129,12 +129,12 @@ JAVA_VOID com_codename1_properties_NumericProperty_setNullable___boolean(CODENAM
 
 
 JAVA_OBJECT com_codename1_properties_NumericProperty_set___java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 8464, 1223);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 8463, 1222);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(86);
-    if (get_field_com_codename1_properties_NumericProperty_nullable(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L110517298;
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L110517298;
+    if (get_field_com_codename1_properties_NumericProperty_nullable(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L591133766;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L591133766;
     __CN1_DEBUG_INFO(87);
     PUSH_POINTER(__NEW_java_lang_NullPointerException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -146,14 +146,14 @@ JAVA_OBJECT com_codename1_properties_NumericProperty_set___java_lang_Object_R_ja
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8467));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(8466));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     java_lang_NullPointerException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L110517298:
+label_L591133766:
     __CN1_DEBUG_INFO(89);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = com_codename1_properties_Property_set___java_lang_Object_R_java_lang_Object(threadStateData, __cn1ThisObject, locals[1].data.o);
     PUSH_OBJ(tmpResult); }

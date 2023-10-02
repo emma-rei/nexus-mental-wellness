@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_com_codename1_components_FloatingActionButton_2(CODENAME_ONE_T
 
 
 JAVA_VOID com_codename1_components_FloatingActionButton_2___INIT_____com_codename1_components_FloatingActionButton_com_codename1_components_FloatingActionButton(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10275, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10370, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -58,7 +58,7 @@ JAVA_VOID com_codename1_components_FloatingActionButton_2___INIT_____com_codenam
 
 
 JAVA_VOID com_codename1_components_FloatingActionButton_2_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 10275, 3048);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 10370, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(411);

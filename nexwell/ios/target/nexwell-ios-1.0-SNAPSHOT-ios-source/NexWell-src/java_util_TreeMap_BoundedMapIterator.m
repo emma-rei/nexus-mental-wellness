@@ -91,7 +91,7 @@ JAVA_OBJECT __NEW_java_util_TreeMap_BoundedMapIterator(CODENAME_ONE_THREAD_STATE
 
 
 JAVA_VOID java_util_TreeMap_BoundedMapIterator___INIT_____java_util_TreeMap_Node_int_java_util_TreeMap_java_util_TreeMap_Node_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4, JAVA_INT __cn1Arg5) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 6270, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 6269, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -152,7 +152,7 @@ label_L591391158:
 
 
 JAVA_VOID java_util_TreeMap_BoundedMapIterator___INIT_____java_util_TreeMap_Node_java_util_TreeMap_java_util_TreeMap_Node_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_INT __cn1Arg4) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 5, 0, 6270, 202);
+    DEFINE_INSTANCE_METHOD_STACK(6, 5, 0, 6269, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -167,7 +167,7 @@ JAVA_VOID java_util_TreeMap_BoundedMapIterator___INIT_____java_util_TreeMap_Node
 
 
 JAVA_VOID java_util_TreeMap_BoundedMapIterator___INIT_____java_util_TreeMap_Node_int_java_util_TreeMap_java_util_TreeMap_Node(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 5, 0, 6270, 202);
+    DEFINE_INSTANCE_METHOD_STACK(6, 5, 0, 6269, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -183,7 +183,7 @@ JAVA_VOID java_util_TreeMap_BoundedMapIterator___INIT_____java_util_TreeMap_Node
 
 JAVA_VOID java_util_TreeMap_BoundedMapIterator_makeBoundedNext__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6270, 6271);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6269, 6270);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_TreeMap_BoundedMapIterator_node(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1625082366;
     if (get_field_java_util_TreeMap_BoundedMapIterator_lastNode(__cn1ThisObject)!=get_field_java_util_TreeMap_BoundedMapIterator_finalNode(__cn1ThisObject)) /* IF_ACMPNE CustomJump */ goto label_L572593338;
     if (get_field_java_util_TreeMap_BoundedMapIterator_lastOffset(__cn1ThisObject)!=get_field_java_util_TreeMap_BoundedMapIterator_finalOffset(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L572593338;
@@ -209,7 +209,7 @@ label_L1625082366:
 
 
 JAVA_BOOLEAN java_util_TreeMap_BoundedMapIterator_hasNext___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6270, 1250);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6269, 1249);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_TreeMap_BoundedMapIterator_finalNode(__cn1ThisObject)!=get_field_java_util_TreeMap_BoundedMapIterator_node(__cn1ThisObject)) /* IF_ACMPNE CustomJump */ goto label_L990355670;
     if (get_field_java_util_TreeMap_BoundedMapIterator_finalOffset(__cn1ThisObject)!=get_field_java_util_TreeMap_BoundedMapIterator_offset(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L990355670;
     set_field_java_util_TreeMap_BoundedMapIterator_node(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);

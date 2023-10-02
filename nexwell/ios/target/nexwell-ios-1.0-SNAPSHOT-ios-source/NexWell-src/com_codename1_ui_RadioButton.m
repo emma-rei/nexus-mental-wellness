@@ -243,7 +243,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_ui_RadioButton(CODENAME_ONE_THREAD_STATE, 
 
 
 JAVA_VOID com_codename1_ui_RadioButton___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 4360, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 4359, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(68);
@@ -275,9 +275,9 @@ JAVA_OBJECT com_codename1_ui_RadioButton_createToggle___com_codename1_ui_Command
 
 
 JAVA_VOID com_codename1_ui_RadioButton___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 4360, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 4359, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(130);
-    /* CustomInvoke */com_codename1_ui_RadioButton___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(220)); 
+    /* CustomInvoke */com_codename1_ui_RadioButton___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(219)); 
     __CN1_DEBUG_INFO(131);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -285,11 +285,11 @@ JAVA_VOID com_codename1_ui_RadioButton___INIT____(CODENAME_ONE_THREAD_STATE, JAV
 
 
 JAVA_VOID com_codename1_ui_RadioButton___INIT_____com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 4360, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 4359, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(139);
-    /* CustomInvoke */com_codename1_ui_RadioButton___INIT_____java_lang_String_com_codename1_ui_Image(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(220), locals[1].data.o); 
+    /* CustomInvoke */com_codename1_ui_RadioButton___INIT_____java_lang_String_com_codename1_ui_Image(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(219), locals[1].data.o); 
     __CN1_DEBUG_INFO(140);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -297,7 +297,7 @@ JAVA_VOID com_codename1_ui_RadioButton___INIT_____com_codename1_ui_Image(CODENAM
 
 
 JAVA_VOID com_codename1_ui_RadioButton___INIT_____java_lang_String_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4360, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4359, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -305,7 +305,7 @@ JAVA_VOID com_codename1_ui_RadioButton___INIT_____java_lang_String_com_codename1
     __CN1_DEBUG_INFO(149);
     /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_com_codename1_ui_Image(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(150);
-    /* CustomInvoke */virtual_com_codename1_ui_RadioButton_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(3035)); 
+    /* CustomInvoke */virtual_com_codename1_ui_RadioButton_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(3034)); 
     __CN1_DEBUG_INFO(151);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -313,7 +313,7 @@ JAVA_VOID com_codename1_ui_RadioButton___INIT_____java_lang_String_com_codename1
 
 
 JAVA_VOID com_codename1_ui_RadioButton_initLaf___com_codename1_ui_plaf_UIManager(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 4360, 2388);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 4359, 2387);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(157);
@@ -321,18 +321,18 @@ JAVA_VOID com_codename1_ui_RadioButton_initLaf___com_codename1_ui_plaf_UIManager
     __CN1_DEBUG_INFO(158);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_RadioButton_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_R_java_lang_Boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4362));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_R_java_lang_Boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4361));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(159);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2098041249;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2129138446;
     __CN1_DEBUG_INFO(160);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[2].data.o);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_ui_RadioButton_oppositeSide(threadStateData, POP_INT(), POP_OBJ());
 
-label_L2098041249:
+label_L2129138446:
     __CN1_DEBUG_INFO(163);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -342,24 +342,24 @@ label_L2098041249:
 JAVA_VOID com_codename1_ui_RadioButton_fireActionEvent___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 4360, 2483);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 4359, 2482);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(170);
     /* CustomInvoke */com_codename1_ui_Button_fireActionEvent___int_int(threadStateData, __cn1ThisObject, ilocals_1_, ilocals_2_); 
     __CN1_DEBUG_INFO(171);
-    if (get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2142536057;
+    if (get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1654015823;
     __CN1_DEBUG_INFO(172);
-    if (virtual_com_codename1_ui_RadioButton_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L538721498;
+    if (virtual_com_codename1_ui_RadioButton_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1116264846;
     __CN1_DEBUG_INFO(173);
-    /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireBindTargetChange___com_codename1_ui_Component_java_lang_String_java_lang_Object_java_lang_Object(threadStateData, get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject), __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4349), get_static_java_lang_Boolean_TRUE(threadStateData), get_static_java_lang_Boolean_FALSE(threadStateData)); 
-    goto label_L2142536057;
+    /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireBindTargetChange___com_codename1_ui_Component_java_lang_String_java_lang_Object_java_lang_Object(threadStateData, get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject), __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4348), get_static_java_lang_Boolean_TRUE(threadStateData), get_static_java_lang_Boolean_FALSE(threadStateData)); 
+    goto label_L1654015823;
 
-label_L538721498:
+label_L1116264846:
     __CN1_DEBUG_INFO(175);
-    /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireBindTargetChange___com_codename1_ui_Component_java_lang_String_java_lang_Object_java_lang_Object(threadStateData, get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject), __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4349), get_static_java_lang_Boolean_FALSE(threadStateData), get_static_java_lang_Boolean_TRUE(threadStateData)); 
+    /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireBindTargetChange___com_codename1_ui_Component_java_lang_String_java_lang_Object_java_lang_Object(threadStateData, get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject), __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4348), get_static_java_lang_Boolean_FALSE(threadStateData), get_static_java_lang_Boolean_TRUE(threadStateData)); 
 
-label_L2142536057:
+label_L1654015823:
     __CN1_DEBUG_INFO(178);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -367,12 +367,12 @@ label_L2142536057:
 
 
 JAVA_OBJECT com_codename1_ui_RadioButton_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 4360, 896);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 4359, 895);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(185);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4363));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4362));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_RadioButton_getText___R_java_lang_String(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -388,9 +388,9 @@ JAVA_OBJECT com_codename1_ui_RadioButton_toString___R_java_lang_String(CODENAME_
 
 JAVA_INT com_codename1_ui_RadioButton_getAvaliableSpaceForText___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 4360, 4222);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 4359, 4221);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(189);
-    if (virtual_com_codename1_ui_RadioButton_isToggle___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1283906060;
+    if (virtual_com_codename1_ui_RadioButton_isToggle___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L378693799;
     __CN1_DEBUG_INFO(190);
 
 {
@@ -398,7 +398,7 @@ JAVA_INT com_codename1_ui_RadioButton_getAvaliableSpaceForText___R_int(CODENAME_
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1283906060:
+label_L378693799:
     __CN1_DEBUG_INFO(192);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_RadioButton_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -408,19 +408,19 @@ label_L1283906060:
     __CN1_DEBUG_INFO(193);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_plaf_DefaultLookAndFeel);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1570228900;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L677144856;
     __CN1_DEBUG_INFO(194);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_plaf_DefaultLookAndFeel_getRadioButtonImages___R_com_codename1_ui_Image_1ARRAY(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(195);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1570228900;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L677144856;
     __CN1_DEBUG_INFO(196);
-    if (virtual_com_codename1_ui_RadioButton_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L108209958;
+    if (virtual_com_codename1_ui_RadioButton_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L2023817059;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1195909598;
+    goto label_L2086673744;
 
-label_L108209958:
+label_L2023817059:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1195909598:
+label_L2086673744:
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(197);
     { JAVA_INT tmpResult = com_codename1_ui_Button_getAvaliableSpaceForText___R_int(threadStateData, __cn1ThisObject);
@@ -430,7 +430,7 @@ label_L1195909598:
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L1570228900:
+label_L677144856:
     __CN1_DEBUG_INFO(200);
     { JAVA_INT tmpResult = com_codename1_ui_Button_getAvaliableSpaceForText___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
@@ -445,7 +445,7 @@ label_L1570228900:
 
 
 JAVA_BOOLEAN com_codename1_ui_RadioButton_isSelected___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 4360, 3030);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 4359, 3029);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(209);
 
 {
@@ -458,26 +458,26 @@ JAVA_BOOLEAN com_codename1_ui_RadioButton_isSelected___R_boolean(CODENAME_ONE_TH
 JAVA_VOID com_codename1_ui_RadioButton_setSelectedImpl___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_1_ = 0; /* selected */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 4360, 4364);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 4359, 4363);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(213);
-    if (ilocals_1_==get_field_com_codename1_ui_RadioButton_selected(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L1030014337;
+    if (ilocals_1_==get_field_com_codename1_ui_RadioButton_selected(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L2041742635;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1590028899;
+    goto label_L846014380;
 
-label_L1030014337:
+label_L2041742635:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1590028899:
+label_L846014380:
     BC_ISTORE(2);
     __CN1_DEBUG_INFO(214);
     set_field_com_codename1_ui_RadioButton_selected(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(215);
-    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L1100004490;
+    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L1296670053;
     __CN1_DEBUG_INFO(216);
     com_codename1_ui_RadioButton_fireChangeEvent__(threadStateData, __cn1ThisObject); 
 
-label_L1100004490:
+label_L1296670053:
     __CN1_DEBUG_INFO(218);
     virtual_com_codename1_ui_RadioButton_repaint__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(219);
@@ -488,17 +488,17 @@ label_L1100004490:
 
 JAVA_VOID com_codename1_ui_RadioButton_setSelected___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* selected */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 4360, 4284);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 4359, 4283);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(227);
     /* CustomInvoke */virtual_com_codename1_ui_RadioButton_setSelectedImpl___boolean(threadStateData, __cn1ThisObject, ilocals_1_); 
     __CN1_DEBUG_INFO(228);
-    if (get_field_com_codename1_ui_RadioButton_group(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1204822967;
-    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L1204822967;
+    if (get_field_com_codename1_ui_RadioButton_group(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L826245889;
+    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L826245889;
     __CN1_DEBUG_INFO(229);
     /* CustomInvoke */virtual_com_codename1_ui_ButtonGroup_setSelected___com_codename1_ui_RadioButton(threadStateData, get_field_com_codename1_ui_RadioButton_group(__cn1ThisObject), __cn1ThisObject); 
 
-label_L1204822967:
+label_L826245889:
     __CN1_DEBUG_INFO(231);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -518,27 +518,27 @@ JAVA_VOID com_codename1_ui_RadioButton_setUnselectAllowed___boolean(CODENAME_ONE
 JAVA_VOID com_codename1_ui_RadioButton_released___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4360, 3029);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4359, 3028);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(256);
-    if (virtual_com_codename1_ui_RadioButton_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1552133633;
-    if (get_field_com_codename1_ui_RadioButton_unselectAllowed(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L761577728;
+    if (virtual_com_codename1_ui_RadioButton_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1556730832;
+    if (get_field_com_codename1_ui_RadioButton_unselectAllowed(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L130211746;
 
-label_L1552133633:
+label_L1556730832:
     __CN1_DEBUG_INFO(257);
     BC_ALOAD(0);
-    if (virtual_com_codename1_ui_RadioButton_isSelected___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1775525066;
+    if (virtual_com_codename1_ui_RadioButton_isSelected___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L107075722;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L803149788;
+    goto label_L1259037900;
 
-label_L1775525066:
+label_L107075722:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L803149788:
+label_L1259037900:
     virtual_com_codename1_ui_RadioButton_setSelected___boolean(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
 
-label_L761577728:
+label_L130211746:
     __CN1_DEBUG_INFO(259);
     /* CustomInvoke */com_codename1_ui_Button_released___int_int(threadStateData, __cn1ThisObject, ilocals_1_, ilocals_2_); 
     __CN1_DEBUG_INFO(260);
@@ -548,20 +548,20 @@ label_L761577728:
 
 
 JAVA_VOID com_codename1_ui_RadioButton_paint___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 4360, 2356);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 4359, 2355);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(266);
-    if (virtual_com_codename1_ui_RadioButton_isToggle___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1852655488;
+    if (virtual_com_codename1_ui_RadioButton_isToggle___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1506703662;
     __CN1_DEBUG_INFO(267);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_RadioButton_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_getLookAndFeel___R_com_codename1_ui_plaf_LookAndFeel(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */virtual_com_codename1_ui_plaf_LookAndFeel_drawButton___com_codename1_ui_Graphics_com_codename1_ui_Button(threadStateData, SP[-1].data.o, locals[1].data.o, __cn1ThisObject);     SP -= 1;
-    goto label_L1695213452;
+    goto label_L1214284410;
 
-label_L1852655488:
+label_L1506703662:
     __CN1_DEBUG_INFO(269);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_RadioButton_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -569,7 +569,7 @@ label_L1852655488:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */virtual_com_codename1_ui_plaf_LookAndFeel_drawRadioButton___com_codename1_ui_Graphics_com_codename1_ui_Button(threadStateData, SP[-1].data.o, locals[1].data.o, __cn1ThisObject);     SP -= 1;
 
-label_L1695213452:
+label_L1214284410:
     __CN1_DEBUG_INFO(271);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -577,7 +577,7 @@ label_L1695213452:
 
 
 JAVA_OBJECT com_codename1_ui_RadioButton_calcPreferredSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 4360, 1857);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 4359, 1856);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(277);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_RadioButton_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -591,7 +591,7 @@ JAVA_OBJECT com_codename1_ui_RadioButton_calcPreferredSize___R_com_codename1_ui_
 
 
 JAVA_VOID com_codename1_ui_RadioButton_setButtonGroup___com_codename1_ui_ButtonGroup(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 4360, 4367);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 4359, 4366);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(286);
@@ -608,13 +608,13 @@ JAVA_OBJECT com_codename1_ui_RadioButton_getButtonGroup___R_com_codename1_ui_But
 
 
 JAVA_VOID com_codename1_ui_RadioButton_fireActionEvent__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 4360, 2483);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 4359, 2482);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(301);
-    if (get_field_com_codename1_ui_RadioButton_group(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L779343339;
+    if (get_field_com_codename1_ui_RadioButton_group(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1078834804;
     __CN1_DEBUG_INFO(302);
     /* CustomInvoke */virtual_com_codename1_ui_ButtonGroup_setSelected___com_codename1_ui_RadioButton(threadStateData, get_field_com_codename1_ui_RadioButton_group(__cn1ThisObject), __cn1ThisObject); 
 
-label_L779343339:
+label_L1078834804:
     __CN1_DEBUG_INFO(304);
     com_codename1_ui_Button_fireActionEvent__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(305);
@@ -624,11 +624,11 @@ label_L779343339:
 
 
 JAVA_VOID com_codename1_ui_RadioButton_setGroup___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 4360, 4351);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 4359, 4350);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(313);
-    /* CustomInvoke */virtual_com_codename1_ui_RadioButton_putClientProperty___java_lang_String_java_lang_Object(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4369), locals[1].data.o); 
+    /* CustomInvoke */virtual_com_codename1_ui_RadioButton_putClientProperty___java_lang_String_java_lang_Object(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4368), locals[1].data.o); 
     __CN1_DEBUG_INFO(314);
     com_codename1_ui_RadioButton_initNamedGroup__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(315);
@@ -638,7 +638,7 @@ JAVA_VOID com_codename1_ui_RadioButton_setGroup___java_lang_String(CODENAME_ONE_
 
 
 JAVA_VOID com_codename1_ui_RadioButton_initComponentImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 4360, 2695);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 4359, 2694);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(318);
     com_codename1_ui_Button_initComponentImpl__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(319);
@@ -650,19 +650,19 @@ JAVA_VOID com_codename1_ui_RadioButton_initComponentImpl__(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID com_codename1_ui_RadioButton_initNamedGroup__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 4360, 4370);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 4359, 4369);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(324);
-    if (virtual_com_codename1_ui_RadioButton_isInitialized___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L2042971662;
+    if (virtual_com_codename1_ui_RadioButton_isInitialized___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1357944757;
     __CN1_DEBUG_INFO(325);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_ui_RadioButton_getGroup___R_java_lang_String(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(326);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2042971662;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1357944757;
     __CN1_DEBUG_INFO(327);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_RadioButton_getComponentForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(328);
     BC_ALOAD(2);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4371));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4370));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -673,7 +673,7 @@ JAVA_VOID com_codename1_ui_RadioButton_initNamedGroup__(CODENAME_ONE_THREAD_STAT
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(329);
-    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2106609649;
+    if (locals[3].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2061337484;
     __CN1_DEBUG_INFO(330);
     PUSH_POINTER(__NEW_com_codename1_ui_ButtonGroup(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -684,7 +684,7 @@ JAVA_VOID com_codename1_ui_RadioButton_initNamedGroup__(CODENAME_ONE_THREAD_STAT
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4371));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4370));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -693,11 +693,11 @@ JAVA_VOID com_codename1_ui_RadioButton_initNamedGroup__(CODENAME_ONE_THREAD_STAT
     BC_ALOAD(3);
     virtual_com_codename1_ui_Form_putClientProperty___java_lang_String_java_lang_Object(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
 
-label_L2106609649:
+label_L2061337484:
     __CN1_DEBUG_INFO(333);
     /* CustomInvoke */virtual_com_codename1_ui_ButtonGroup_add___com_codename1_ui_RadioButton(threadStateData, locals[3].data.o, __cn1ThisObject); 
 
-label_L2042971662:
+label_L1357944757:
     __CN1_DEBUG_INFO(336);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -705,9 +705,9 @@ label_L2042971662:
 
 
 JAVA_OBJECT com_codename1_ui_RadioButton_getGroup___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 4360, 4350);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 4359, 4349);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(344);
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_RadioButton_getClientProperty___java_lang_String_R_java_lang_Object(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4369));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_RadioButton_getClientProperty___java_lang_String_R_java_lang_Object(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4368));
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -715,7 +715,7 @@ JAVA_OBJECT com_codename1_ui_RadioButton_getGroup___R_java_lang_String(CODENAME_
 
 
 JAVA_BOOLEAN com_codename1_ui_RadioButton_isOppositeSide___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 4360, 3037);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 4359, 3036);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(353);
 
 {
@@ -741,15 +741,15 @@ JAVA_OBJECT com_codename1_ui_RadioButton_getBindablePropertyTypes___R_java_lang_
 
 
 JAVA_VOID com_codename1_ui_RadioButton_bindProperty___java_lang_String_com_codename1_cloud_BindTarget(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4360, 2761);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4359, 2760);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(383);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4349))==0) /* IFEQ CustomJump */ goto label_L1335157064;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4348))==0) /* IFEQ CustomJump */ goto label_L912440831;
     __CN1_DEBUG_INFO(384);
-    if (get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L2147002844;
+    if (get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L464606033;
     __CN1_DEBUG_INFO(385);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_util_EventDispatcher(threadStateData)); /* NEW */
@@ -758,14 +758,14 @@ JAVA_VOID com_codename1_ui_RadioButton_bindProperty___java_lang_String_com_coden
     set_field_com_codename1_ui_RadioButton_bindListeners(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L2147002844:
+label_L464606033:
     __CN1_DEBUG_INFO(387);
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_addListener___java_lang_Object(threadStateData, get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject), locals[2].data.o); 
     __CN1_DEBUG_INFO(388);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1335157064:
+label_L912440831:
     __CN1_DEBUG_INFO(390);
     /* CustomInvoke */com_codename1_ui_Button_bindProperty___java_lang_String_com_codename1_cloud_BindTarget(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(391);
@@ -775,33 +775,33 @@ label_L1335157064:
 
 
 JAVA_VOID com_codename1_ui_RadioButton_unbindProperty___java_lang_String_com_codename1_cloud_BindTarget(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4360, 2762);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4359, 2761);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(397);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4349))==0) /* IFEQ CustomJump */ goto label_L752772379;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4348))==0) /* IFEQ CustomJump */ goto label_L1336418989;
     __CN1_DEBUG_INFO(398);
-    if (get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1397643446;
+    if (get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1501497655;
     __CN1_DEBUG_INFO(399);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1397643446:
+label_L1501497655:
     __CN1_DEBUG_INFO(401);
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_removeListener___java_lang_Object(threadStateData, get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject), locals[2].data.o); 
     __CN1_DEBUG_INFO(402);
-    if (virtual_com_codename1_ui_util_EventDispatcher_hasListeners___R_boolean(threadStateData, get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1001946422;
+    if (virtual_com_codename1_ui_util_EventDispatcher_hasListeners___R_boolean(threadStateData, get_field_com_codename1_ui_RadioButton_bindListeners(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L2060569250;
     __CN1_DEBUG_INFO(403);
     set_field_com_codename1_ui_RadioButton_bindListeners(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L1001946422:
+label_L2060569250:
     __CN1_DEBUG_INFO(405);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L752772379:
+label_L1336418989:
     __CN1_DEBUG_INFO(407);
     /* CustomInvoke */com_codename1_ui_Button_unbindProperty___java_lang_String_com_codename1_cloud_BindTarget(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(408);
@@ -811,13 +811,13 @@ label_L752772379:
 
 
 JAVA_OBJECT com_codename1_ui_RadioButton_getBoundPropertyValue___java_lang_String_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 4360, 2763);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 4359, 2762);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(414);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4349))==0) /* IFEQ CustomJump */ goto label_L28612052;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4348))==0) /* IFEQ CustomJump */ goto label_L1802188146;
     __CN1_DEBUG_INFO(415);
-    if (virtual_com_codename1_ui_RadioButton_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1579015748;
+    if (virtual_com_codename1_ui_RadioButton_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1708711928;
     __CN1_DEBUG_INFO(416);
 
 {
@@ -825,7 +825,7 @@ JAVA_OBJECT com_codename1_ui_RadioButton_getBoundPropertyValue___java_lang_Strin
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1579015748:
+label_L1708711928:
     __CN1_DEBUG_INFO(418);
 
 {
@@ -833,7 +833,7 @@ label_L1579015748:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L28612052:
+label_L1802188146:
     __CN1_DEBUG_INFO(420);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = com_codename1_ui_Button_getBoundPropertyValue___java_lang_String_R_java_lang_Object(threadStateData, __cn1ThisObject, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -843,30 +843,30 @@ label_L28612052:
 
 
 JAVA_VOID com_codename1_ui_RadioButton_setBoundPropertyValue___java_lang_String_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4360, 2764);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 4359, 2763);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(427);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4349))==0) /* IFEQ CustomJump */ goto label_L2134357721;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4348))==0) /* IFEQ CustomJump */ goto label_L1146045637;
     __CN1_DEBUG_INFO(428);
     BC_ALOAD(0);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L119420356;
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L119420356;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L809439796;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L809439796;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L580979398;
+    goto label_L38625764;
 
-label_L119420356:
+label_L809439796:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L580979398:
+label_L38625764:
     virtual_com_codename1_ui_RadioButton_setSelected___boolean(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
     __CN1_DEBUG_INFO(429);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L2134357721:
+label_L1146045637:
     __CN1_DEBUG_INFO(431);
     /* CustomInvoke */com_codename1_ui_Button_setBoundPropertyValue___java_lang_String_java_lang_Object(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(432);
@@ -886,9 +886,9 @@ JAVA_VOID com_codename1_ui_RadioButton_removeChangeListeners___com_codename1_ui_
 
 
 JAVA_VOID com_codename1_ui_RadioButton_fireChangeEvent__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 4360, 4375);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 4359, 4374);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(463);
-    if (get_field_com_codename1_ui_RadioButton_changeListeners(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L654003462;
+    if (get_field_com_codename1_ui_RadioButton_changeListeners(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1475889071;
     __CN1_DEBUG_INFO(464);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -897,7 +897,7 @@ JAVA_VOID com_codename1_ui_RadioButton_fireChangeEvent__(CODENAME_ONE_THREAD_STA
     __CN1_DEBUG_INFO(465);
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireActionEvent___com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_codename1_ui_RadioButton_changeListeners(__cn1ThisObject), locals[1].data.o); 
 
-label_L654003462:
+label_L1475889071:
     __CN1_DEBUG_INFO(467);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

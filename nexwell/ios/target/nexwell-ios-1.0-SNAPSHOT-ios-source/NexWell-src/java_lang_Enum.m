@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_java_lang_Enum(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID java_lang_Enum___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1872, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1871, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -56,10 +56,10 @@ JAVA_VOID java_lang_Enum___INIT_____java_lang_String_int(CODENAME_ONE_THREAD_STA
 
 
 JAVA_OBJECT java_lang_Enum_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 1872, 947);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 1871, 946);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_lang_RuntimeException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1873));     SP -= 1;
+    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1872));     SP -= 1;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 }
@@ -76,7 +76,7 @@ JAVA_OBJECT java_lang_Enum_getEnumValues___java_lang_Class_R_java_lang_Object_1A
 
 
 JAVA_BOOLEAN java_lang_Enum_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1872, 877);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1871, 876);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (locals[1].data.o!=__cn1ThisObject) /* IF_ACMPNE CustomJump */ goto label_L1824322115;
@@ -92,14 +92,14 @@ label_L702999333:
 
 
 JAVA_INT java_lang_Enum_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1872, 882);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1871, 881);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_lang_Enum_ordinal(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_OBJECT java_lang_Enum_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1872, 896);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1871, 895);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_lang_Enum_name(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -107,7 +107,7 @@ JAVA_OBJECT java_lang_Enum_toString___R_java_lang_String(CODENAME_ONE_THREAD_STA
 
 
 JAVA_INT java_lang_Enum_compareTo___java_lang_Enum_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1872, 871);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1871, 870);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_INT(get_field_java_lang_Enum_ordinal(__cn1ThisObject));
@@ -123,7 +123,7 @@ JAVA_OBJECT java_lang_Enum_name___R_java_lang_String(CODENAME_ONE_THREAD_STATE, 
 
 
 JAVA_INT java_lang_Enum_ordinal___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1872, 1877);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1871, 1876);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(get_field_java_lang_Enum_ordinal(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -135,7 +135,7 @@ JAVA_OBJECT java_lang_Enum_getDeclaringClass___R_java_lang_Class(CODENAME_ONE_TH
 
 
 JAVA_INT java_lang_Enum_compareTo___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1872, 871);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1871, 870);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_Enum_compareTo___java_lang_Enum_R_int(threadStateData, __cn1ThisObject, locals[1].data.o);

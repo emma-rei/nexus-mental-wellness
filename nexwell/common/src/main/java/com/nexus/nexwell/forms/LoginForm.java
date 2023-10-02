@@ -28,7 +28,7 @@ public class LoginForm extends Form {
         logo.setName("Logo");
         
         Container logoContainer = BorderLayout.centerAbsolute(logo);
-        logoContainer.setUIID("LoginTitle");
+        logoContainer.setUIID("LogTitle");
         add(NORTH, logoContainer);
         
         if (!isTablet()){

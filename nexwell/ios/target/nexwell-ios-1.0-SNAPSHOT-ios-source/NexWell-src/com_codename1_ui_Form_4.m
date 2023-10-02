@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Form_4(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Form_4___INIT_____com_codename1_ui_Form(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8151, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8150, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(3127);
@@ -46,22 +46,22 @@ JAVA_VOID com_codename1_ui_Form_4___INIT_____com_codename1_ui_Form(CODENAME_ONE_
 
 
 JAVA_BOOLEAN com_codename1_ui_Form_4_filter___com_codename1_ui_Component_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8151, 5898);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 8150, 5897);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(3131);
-    if (virtual_com_codename1_ui_Component_getTabIndex___R_int(threadStateData, locals[1].data.o)<0) /* IFLT CustomJump */ goto label_L1272284318;
-    if (virtual_com_codename1_ui_Component_isVisible___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1272284318;
-    if (virtual_com_codename1_ui_Component_isFocusable___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1272284318;
-    if (virtual_com_codename1_ui_Component_isEnabled___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1272284318;
-    if (/* CustomInvoke */virtual_com_codename1_ui_Component_isHidden___boolean_R_boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */)!=0) /* IFNE CustomJump */ goto label_L1272284318;
+    if (virtual_com_codename1_ui_Component_getTabIndex___R_int(threadStateData, locals[1].data.o)<0) /* IFLT CustomJump */ goto label_L50297459;
+    if (virtual_com_codename1_ui_Component_isVisible___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L50297459;
+    if (virtual_com_codename1_ui_Component_isFocusable___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L50297459;
+    if (virtual_com_codename1_ui_Component_isEnabled___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L50297459;
+    if (/* CustomInvoke */virtual_com_codename1_ui_Component_isHidden___boolean_R_boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */)!=0) /* IFNE CustomJump */ goto label_L50297459;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L2094770768;
+    goto label_L59257066;
 
-label_L1272284318:
+label_L50297459:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L2094770768:
+label_L59257066:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

@@ -54,7 +54,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_18(CODENAME_ONE_THREA
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_18___INIT_____com_codename1_impl_ios_IOSImplementation_long_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9503, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 9502, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -69,9 +69,9 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_18___INIT_____com_codename1_i
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_playImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9503, 8637);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9502, 8636);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3307);
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1386440976;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1432403167;
     __CN1_DEBUG_INFO(3308);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_startAudioRecord___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */)); 
     __CN1_DEBUG_INFO(3309);
@@ -79,7 +79,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_playImpl__(CODENAME_ONE_TH
     __CN1_DEBUG_INFO(3310);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_18_fireMediaStateChange___com_codename1_media_AsyncMedia_State_R_com_codename1_media_AsyncMedia_MediaStateChangeEvent(threadStateData, __cn1ThisObject, get_static_com_codename1_media_AsyncMedia_State_Playing(threadStateData)); 
 
-label_L1386440976:
+label_L1432403167:
     __CN1_DEBUG_INFO(3312);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -87,9 +87,9 @@ label_L1386440976:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_pauseImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9503, 8638);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9502, 8637);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3316);
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L973692608;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L190153364;
     __CN1_DEBUG_INFO(3317);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_pauseAudioRecord___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */)); 
     __CN1_DEBUG_INFO(3318);
@@ -97,7 +97,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_pauseImpl__(CODENAME_ONE_T
     __CN1_DEBUG_INFO(3319);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_18_fireMediaStateChange___com_codename1_media_AsyncMedia_State_R_com_codename1_media_AsyncMedia_MediaStateChangeEvent(threadStateData, __cn1ThisObject, get_static_com_codename1_media_AsyncMedia_State_Paused(threadStateData)); 
 
-label_L973692608:
+label_L190153364:
     __CN1_DEBUG_INFO(3321);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -105,13 +105,13 @@ label_L973692608:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_finalize__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9503, 902);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9502, 901);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3324);
-    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1327539680;
+    if (CN1_CMP_EXPR(CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */), 0 /* LCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L766101;
     __CN1_DEBUG_INFO(3325);
     virtual_com_codename1_impl_ios_IOSImplementation_18_cleanup__(threadStateData, __cn1ThisObject); 
 
-label_L1327539680:
+label_L766101:
     __CN1_DEBUG_INFO(3327);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -119,15 +119,15 @@ label_L1327539680:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_18_cleanup__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9503, 1726);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9502, 1725);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3331);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_18_playing(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1423586012;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_18_playing(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L2004628751;
     __CN1_DEBUG_INFO(3332);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_pauseAudioRecord___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */)); 
     __CN1_DEBUG_INFO(3333);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_18_fireMediaStateChange___com_codename1_media_AsyncMedia_State_R_com_codename1_media_AsyncMedia_MediaStateChangeEvent(threadStateData, __cn1ThisObject, get_static_com_codename1_media_AsyncMedia_State_Paused(threadStateData)); 
 
-label_L1423586012:
+label_L2004628751:
     __CN1_DEBUG_INFO(3335);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSNative_cleanupAudioRecord___long(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData), CN1_ARRAY_ELEMENT_LONG(get_field_com_codename1_impl_ios_IOSImplementation_18_val_peer(__cn1ThisObject), 0 /* ICONST_0 */)); 
     __CN1_DEBUG_INFO(3336);
@@ -164,7 +164,7 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_18_getVolume___R_int(CODENAME_
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_18_isPlaying___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9503, 8607);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9502, 8606);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3364);
 
 {

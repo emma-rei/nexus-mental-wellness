@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_spinner_SpinnerNode_1(CODENAME_ONE_THREAD_STA
 
 
 JAVA_VOID com_codename1_ui_spinner_SpinnerNode_1___INIT_____com_codename1_ui_spinner_SpinnerNode(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10085, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10084, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(45);
@@ -48,24 +48,24 @@ JAVA_VOID com_codename1_ui_spinner_SpinnerNode_1___INIT_____com_codename1_ui_spi
 JAVA_VOID com_codename1_ui_spinner_SpinnerNode_1_selectionChanged___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* oldSelected */
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10085, 4538);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10084, 4537);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(49);
-    if (ilocals_2_>=0) /* IFGE CustomJump */ goto label_L1653297210;
-    if (get_field_com_codename1_ui_spinner_SpinnerNode_listModel(get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1653297210;
+    if (ilocals_2_>=0) /* IFGE CustomJump */ goto label_L320605039;
+    if (get_field_com_codename1_ui_spinner_SpinnerNode_listModel(get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L320605039;
     __CN1_DEBUG_INFO(50);
     /* VarOp.assignFrom */ ilocals_2_ = virtual_com_codename1_ui_list_ListModel_getSelectedIndex___R_int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_listModel(get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject)));
 
-label_L1653297210:
+label_L320605039:
     __CN1_DEBUG_INFO(52);
-    if (ilocals_2_<0) /* IFLT CustomJump */ goto label_L626587228;
-    if (ilocals_2_>=virtual_com_codename1_ui_list_ListModel_getSize___R_int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_listModel(get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject)))) /* IF_ICMPGE CustomJump */ goto label_L626587228;
-    if (ilocals_2_==/* CustomInvoke */com_codename1_ui_spinner_SpinnerNode_access$000___com_codename1_ui_spinner_SpinnerNode_R_int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject))) /* IF_ICMPEQ CustomJump */ goto label_L626587228;
+    if (ilocals_2_<0) /* IFLT CustomJump */ goto label_L2130906226;
+    if (ilocals_2_>=virtual_com_codename1_ui_list_ListModel_getSize___R_int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_listModel(get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject)))) /* IF_ICMPGE CustomJump */ goto label_L2130906226;
+    if (ilocals_2_==/* CustomInvoke */com_codename1_ui_spinner_SpinnerNode_access$000___com_codename1_ui_spinner_SpinnerNode_R_int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject))) /* IF_ICMPEQ CustomJump */ goto label_L2130906226;
     __CN1_DEBUG_INFO(53);
     /* CustomInvoke */virtual_com_codename1_ui_spinner_SpinnerNode_setSelectedIndex___int(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_1_this_0(__cn1ThisObject), ilocals_2_); 
 
-label_L626587228:
+label_L2130906226:
     __CN1_DEBUG_INFO(55);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

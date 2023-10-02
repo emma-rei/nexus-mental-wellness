@@ -63,7 +63,7 @@ JAVA_OBJECT __NEW_java_util_AbstractList_SubAbstractList(CODENAME_ONE_THREAD_STA
 
 
 JAVA_VOID java_util_AbstractList_SubAbstractList___INIT_____java_util_AbstractList_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 1265, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 1264, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
@@ -79,7 +79,7 @@ JAVA_VOID java_util_AbstractList_SubAbstractList___INIT_____java_util_AbstractLi
 
 
 JAVA_VOID java_util_AbstractList_SubAbstractList_add___int_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1265, 1227);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1264, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -111,7 +111,7 @@ label_L573958827:
 
 JAVA_BOOLEAN java_util_AbstractList_SubAbstractList_addAll___int_java_util_Collection_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 1265, 1228);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 1264, 1227);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -152,7 +152,7 @@ label_L391135083:
 
 JAVA_BOOLEAN java_util_AbstractList_SubAbstractList_addAll___java_util_Collection_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1265, 1228);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1264, 1227);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (get_field_java_util_AbstractList_SubAbstractList_modCount(__cn1ThisObject)!=get_field_java_util_AbstractList_modCount(get_field_java_util_AbstractList_SubAbstractList_fullList(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L914374969;
@@ -183,7 +183,7 @@ label_L914374969:
 
 
 JAVA_OBJECT java_util_AbstractList_SubAbstractList_get___int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 1265, 611);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 1264, 610);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     if (get_field_java_util_AbstractList_SubAbstractList_modCount(__cn1ThisObject)!=get_field_java_util_AbstractList_modCount(get_field_java_util_AbstractList_SubAbstractList_fullList(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L1930240356;
     if (0 /* ICONST_0 */>ilocals_1_) /* IF_ICMPGT CustomJump */ goto label_L613784740;
@@ -209,7 +209,7 @@ label_L1930240356:
 
 
 JAVA_OBJECT java_util_AbstractList_SubAbstractList_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1265, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1264, 1229);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_AbstractList_SubAbstractList_listIterator___int_R_java_util_ListIterator(threadStateData, __cn1ThisObject, 0 /* ICONST_0 */);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -218,7 +218,7 @@ JAVA_OBJECT java_util_AbstractList_SubAbstractList_iterator___R_java_util_Iterat
 
 
 JAVA_OBJECT java_util_AbstractList_SubAbstractList_listIterator___int_R_java_util_ListIterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 1265, 1231);
+    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 1264, 1230);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     if (get_field_java_util_AbstractList_SubAbstractList_modCount(__cn1ThisObject)!=get_field_java_util_AbstractList_modCount(get_field_java_util_AbstractList_SubAbstractList_fullList(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L271095942;
     if (0 /* ICONST_0 */>ilocals_1_) /* IF_ICMPGT CustomJump */ goto label_L1552341957;
@@ -250,7 +250,7 @@ label_L271095942:
 
 
 JAVA_OBJECT java_util_AbstractList_SubAbstractList_remove___int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1265, 1232);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1264, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     if (get_field_java_util_AbstractList_SubAbstractList_modCount(__cn1ThisObject)!=get_field_java_util_AbstractList_modCount(get_field_java_util_AbstractList_SubAbstractList_fullList(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L1176164144;
     if (0 /* ICONST_0 */>ilocals_1_) /* IF_ICMPGT CustomJump */ goto label_L1323434987;
@@ -279,7 +279,7 @@ label_L1176164144:
 
 
 JAVA_VOID java_util_AbstractList_SubAbstractList_removeRange___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 1265, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 1264, 1232);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     if (ilocals_1_==ilocals_2_) /* IF_ICMPEQ CustomJump */ goto label_L442125849;
@@ -302,7 +302,7 @@ label_L442125849:
 
 
 JAVA_OBJECT java_util_AbstractList_SubAbstractList_set___int_java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1265, 1223);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 1264, 1222);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -330,7 +330,7 @@ label_L1624972302:
 
 
 JAVA_INT java_util_AbstractList_SubAbstractList_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1265, 1224);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1264, 1223);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     if (get_field_java_util_AbstractList_SubAbstractList_modCount(__cn1ThisObject)!=get_field_java_util_AbstractList_modCount(get_field_java_util_AbstractList_SubAbstractList_fullList(__cn1ThisObject))) /* IF_ICMPNE CustomJump */ goto label_L1989811701;
 
 {
@@ -348,7 +348,7 @@ label_L1989811701:
 
 
 JAVA_VOID java_util_AbstractList_SubAbstractList_sizeChanged___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 1265, 1266);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 1264, 1265);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L1106681476;
     set_field_java_util_AbstractList_SubAbstractList_size(threadStateData, (get_field_java_util_AbstractList_SubAbstractList_size(__cn1ThisObject) + 1 /* ICONST_1 */), __cn1ThisObject);

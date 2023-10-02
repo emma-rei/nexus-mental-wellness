@@ -114,7 +114,7 @@ java_lang_System___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_lang_System___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1134, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1133, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -123,12 +123,12 @@ JAVA_VOID java_lang_System___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __
 
 JAVA_VOID java_lang_System_startGCThread__(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(3, 0, 0, 1134, 1136);
+    DEFINE_METHOD_STACK(3, 0, 0, 1133, 1135);
     if (get_static_java_lang_System_startedGc(threadStateData)!=0) /* IFNE CustomJump */ goto label_L1974622245;
     set_static_java_lang_System_startedGc(threadStateData, 1 /* ICONST_1 */);
     PUSH_POINTER(__NEW_java_lang_System_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_System_1___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1137));     SP -= 1;
+    /* CustomInvoke */java_lang_System_1___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1136));     SP -= 1;
     set_static_java_lang_System_gcThreadInstance(threadStateData, PEEK_OBJ(1));
     SP--;
     virtual_java_lang_Thread_start__(threadStateData, get_static_java_lang_System_gcThreadInstance(threadStateData)); 
@@ -141,10 +141,10 @@ label_L1974622245:
 
 JAVA_VOID java_lang_System_stopGC__(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 1134, 1138);
-    int restoreToL46865280401;
-    int tryBlockOffsetL46865280401;
-    DEFINE_CATCH_BLOCK(catch_L46865280401, label_L402808045, restoreToL46865280401);
+    DEFINE_METHOD_STACK(2, 2, 0, 1133, 1137);
+    int restoreToL138901346401;
+    int tryBlockOffsetL138901346401;
+    DEFINE_CATCH_BLOCK(catch_L138901346401, label_L402808045, restoreToL138901346401);
     int restoreToL40280804502;
     int tryBlockOffsetL40280804502;
     DEFINE_CATCH_BLOCK(catch_L40280804502, label_L402808045, restoreToL40280804502);
@@ -154,16 +154,16 @@ JAVA_VOID java_lang_System_stopGC__(CODENAME_ONE_THREAD_STATE) {
     BC_ASTORE(0);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L468652804:
- tryBlockOffsetL46865280401 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L46865280401);
-    restoreToL46865280401 = threadStateData->threadObjectStackOffset;
+label_L1389013464:
+ tryBlockOffsetL138901346401 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L138901346401);
+    restoreToL138901346401 = threadStateData->threadObjectStackOffset;
 
     virtual_java_lang_Object_notify__(threadStateData, get_static_java_lang_System_LOCK(threadStateData)); 
     BC_ALOAD(0);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L137720203:
+label_L1377403353:
 END_TRY(1);    JUMP_TO(label_L332365138, 0);
 
 label_L402808045:
@@ -175,7 +175,7 @@ label_L402808045:
     BC_ALOAD(0);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L778946892:
+label_L1407680727:
 END_TRY(1);    BC_ALOAD(1);
     throwException(threadStateData, POP_OBJ());
 
@@ -187,10 +187,10 @@ label_L332365138:
 
 JAVA_VOID java_lang_System_gc__(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 1134, 1142);
-    int restoreToL181572254401;
-    int tryBlockOffsetL181572254401;
-    DEFINE_CATCH_BLOCK(catch_L181572254401, label_L977160959, restoreToL181572254401);
+    DEFINE_METHOD_STACK(2, 2, 0, 1133, 1141);
+    int restoreToL40429412801;
+    int tryBlockOffsetL40429412801;
+    DEFINE_CATCH_BLOCK(catch_L40429412801, label_L977160959, restoreToL40429412801);
     int restoreToL97716095902;
     int tryBlockOffsetL97716095902;
     DEFINE_CATCH_BLOCK(catch_L97716095902, label_L977160959, restoreToL97716095902);
@@ -208,16 +208,16 @@ label_L1464177809:
     BC_ASTORE(0);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L1815722544:
- tryBlockOffsetL181572254401 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L181572254401);
-    restoreToL181572254401 = threadStateData->threadObjectStackOffset;
+label_L404294128:
+ tryBlockOffsetL40429412801 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L40429412801);
+    restoreToL40429412801 = threadStateData->threadObjectStackOffset;
 
     virtual_java_lang_Object_notify__(threadStateData, get_static_java_lang_System_LOCK(threadStateData)); 
     BC_ALOAD(0);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L254669696:
+label_L530249538:
 END_TRY(1);    JUMP_TO(label_L1057507014, 0);
 
 label_L977160959:
@@ -229,7 +229,7 @@ label_L977160959:
     BC_ALOAD(0);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L741827271:
+label_L18070049:
 END_TRY(1);    BC_ALOAD(1);
     throwException(threadStateData, POP_OBJ());
 
@@ -240,7 +240,7 @@ label_L1057507014:
 
     /* CustomInvoke */java_lang_Thread_sleep___long(threadStateData, 2LL); 
 
-label_L1825634724:
+label_L1847419884:
 END_TRY(1);    JUMP_TO(label_L2007599722, 0);
 
 label_L1563053805:
@@ -254,7 +254,7 @@ label_L2007599722:
 
 JAVA_OBJECT java_lang_System_getProperty___java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 1134, 547);
+    DEFINE_METHOD_STACK(1, 1, 0, 1133, 546);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(JAVA_NULL); /* ACONST_NULL */
@@ -275,7 +275,7 @@ JAVA_LONG java_lang_System_nanoTime___R_long(CODENAME_ONE_THREAD_STATE) {
 
 JAVA_OBJECT java_lang_System_access$000___R_java_lang_Object(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 1134, 218);
+    DEFINE_METHOD_STACK(1, 0, 0, 1133, 217);
     PUSH_POINTER(get_static_java_lang_System_LOCK(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -284,7 +284,7 @@ JAVA_OBJECT java_lang_System_access$000___R_java_lang_Object(CODENAME_ONE_THREAD
 
 JAVA_BOOLEAN java_lang_System_access$102___boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 1134, 1148);
+    DEFINE_METHOD_STACK(2, 1, 0, 1133, 1147);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_0_; 
@@ -297,7 +297,7 @@ JAVA_BOOLEAN java_lang_System_access$102___boolean_R_boolean(CODENAME_ONE_THREAD
 
 JAVA_BOOLEAN java_lang_System_access$100___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 1134, 799);
+    DEFINE_METHOD_STACK(1, 0, 0, 1133, 798);
     PUSH_INT(get_static_java_lang_System_gcShouldLoop(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -305,7 +305,7 @@ JAVA_BOOLEAN java_lang_System_access$100___R_boolean(CODENAME_ONE_THREAD_STATE) 
 
 JAVA_VOID java_lang_System_access$200__(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(0, 0, 0, 1134, 800);
+    DEFINE_METHOD_STACK(0, 0, 0, 1133, 799);
     java_lang_System_gcMarkSweep__(threadStateData); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -314,7 +314,7 @@ JAVA_VOID java_lang_System_access$200__(CODENAME_ONE_THREAD_STATE) {
 
 JAVA_BOOLEAN java_lang_System_access$300___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 1134, 1149);
+    DEFINE_METHOD_STACK(1, 0, 0, 1133, 1148);
     PUSH_INT(get_static_java_lang_System_forceGc(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -322,7 +322,7 @@ JAVA_BOOLEAN java_lang_System_access$300___R_boolean(CODENAME_ONE_THREAD_STATE) 
 
 JAVA_BOOLEAN java_lang_System_access$400___R_boolean(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 1134, 1150);
+    DEFINE_METHOD_STACK(1, 0, 0, 1133, 1149);
     PUSH_INT(java_lang_System_isHighFrequencyGC___R_boolean(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
@@ -330,7 +330,7 @@ JAVA_BOOLEAN java_lang_System_access$400___R_boolean(CODENAME_ONE_THREAD_STATE) 
 
 JAVA_BOOLEAN java_lang_System_access$302___boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 1134, 1151);
+    DEFINE_METHOD_STACK(2, 1, 0, 1133, 1150);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_0_; 
@@ -343,7 +343,7 @@ JAVA_BOOLEAN java_lang_System_access$302___boolean_R_boolean(CODENAME_ONE_THREAD
 
 JAVA_BOOLEAN java_lang_System_access$502___boolean_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_BOOLEAN __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 1134, 804);
+    DEFINE_METHOD_STACK(2, 1, 0, 1133, 803);
     JAVA_INT ilocals_0_ = __cn1Arg1;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_0_; 
@@ -356,7 +356,7 @@ JAVA_BOOLEAN java_lang_System_access$502___boolean_R_boolean(CODENAME_ONE_THREAD
 
 JAVA_OBJECT java_lang_System_access$602___java_lang_Thread_R_java_lang_Thread(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_java_lang_System(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 1134, 805);
+    DEFINE_METHOD_STACK(2, 1, 0, 1133, 804);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     BC_ALOAD(0);
@@ -367,7 +367,7 @@ JAVA_OBJECT java_lang_System_access$602___java_lang_Thread_R_java_lang_Thread(CO
 
 
 JAVA_VOID java_lang_System___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(4, 0, 0, 1134, 860);
+    DEFINE_METHOD_STACK(4, 0, 0, 1133, 859);
     PUSH_POINTER(__NEW_java_io_PrintStream(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_io_NSLogOutputStream(threadStateData)); /* NEW */

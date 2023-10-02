@@ -82,7 +82,7 @@ JAVA_OBJECT __NEW_ARRAY_java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_INT 
 
 
 JAVA_VOID java_lang_Throwable___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 909, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 908, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -90,7 +90,7 @@ JAVA_VOID java_lang_Throwable___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT 
 
 
 JAVA_VOID java_lang_Throwable___INIT_____java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 909, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 908, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -123,7 +123,7 @@ JAVA_OBJECT java_lang_Throwable_getCause___R_java_lang_Throwable(CODENAME_ONE_TH
 
 
 JAVA_VOID java_lang_Throwable___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 909, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 908, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -134,7 +134,7 @@ JAVA_VOID java_lang_Throwable___INIT_____java_lang_String(CODENAME_ONE_THREAD_ST
 
 
 JAVA_VOID java_lang_Throwable___INIT_____java_lang_String_java_lang_Throwable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 909, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 908, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -148,7 +148,7 @@ JAVA_VOID java_lang_Throwable___INIT_____java_lang_String_java_lang_Throwable(CO
 
 
 JAVA_OBJECT java_lang_Throwable_getMessage___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 909, 912);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 908, 911);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(get_field_java_lang_Throwable_message(__cn1ThisObject));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
@@ -156,10 +156,10 @@ JAVA_OBJECT java_lang_Throwable_getMessage___R_java_lang_String(CODENAME_ONE_THR
 
 
 JAVA_VOID java_lang_Throwable_printStackTrace__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 909, 915);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 908, 914);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */virtual_java_io_PrintStream_println___java_lang_String(threadStateData, get_static_java_lang_System_out(threadStateData), get_field_java_lang_Throwable_stack(__cn1ThisObject)); 
     if (get_field_java_lang_Throwable_cause(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1201004240;
-    /* CustomInvoke */virtual_java_io_PrintStream_println___java_lang_String(threadStateData, get_static_java_lang_System_out(threadStateData), STRING_FROM_CONSTANT_POOL_OFFSET(916)); 
+    /* CustomInvoke */virtual_java_io_PrintStream_println___java_lang_String(threadStateData, get_static_java_lang_System_out(threadStateData), STRING_FROM_CONSTANT_POOL_OFFSET(915)); 
     virtual_java_lang_Throwable_printStackTrace__(threadStateData, get_field_java_lang_Throwable_cause(__cn1ThisObject)); 
 
 label_L1201004240:
@@ -184,7 +184,7 @@ JAVA_VOID java_lang_Throwable_setStackTrace___java_lang_StackTraceElement_1ARRAY
 
 
 JAVA_OBJECT java_lang_Throwable_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 909, 896);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 908, 895);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
@@ -199,7 +199,7 @@ JAVA_OBJECT java_lang_Throwable_toString___R_java_lang_String(CODENAME_ONE_THREA
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(919));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(918));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_java_lang_Throwable_message(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -209,7 +209,7 @@ JAVA_OBJECT java_lang_Throwable_toString___R_java_lang_String(CODENAME_ONE_THREA
 
 label_L349259569:
     /* LDC: ''*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(220));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(219));
 
 label_L785306763:
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);

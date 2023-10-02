@@ -79,7 +79,7 @@ JAVA_OBJECT __NEW_com_codename1_impl_ios_IOSImplementation_16(CODENAME_ONE_THREA
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_16___INIT_____com_codename1_impl_ios_IOSImplementation_java_lang_String_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_INT __cn1Arg3, JAVA_INT __cn1Arg4) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 5, 0, 9501, 202);
+    DEFINE_INSTANCE_METHOD_STACK(6, 5, 0, 9500, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -111,7 +111,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_16___INIT_____com_codename1_i
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_16_playImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9501, 8637);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9500, 8636);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3186);
     set_field_com_codename1_impl_ios_IOSImplementation_16_isPlaying(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(3187);
@@ -125,7 +125,7 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_16_playImpl__(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_16_pauseImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9501, 8638);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9500, 8637);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3193);
     set_field_com_codename1_impl_ios_IOSImplementation_16_isPlaying(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(3194);
@@ -144,20 +144,20 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_16_prepare__(CODENAME_ONE_THR
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_16_cleanup__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9501, 1726);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 9500, 1725);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3205);
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_16_peer(__cn1ThisObject), 0 /* LCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L1850646717;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_16_peer(__cn1ThisObject), 0 /* LCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L1466413743;
     __CN1_DEBUG_INFO(3206);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1850646717:
+label_L1466413743:
     __CN1_DEBUG_INFO(3208);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_16_isPlaying(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1458748394;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_16_isPlaying(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L2065886345;
     __CN1_DEBUG_INFO(3209);
     virtual_com_codename1_impl_ios_IOSImplementation_16_pauseImpl__(threadStateData, __cn1ThisObject); 
 
-label_L1458748394:
+label_L2065886345:
     __CN1_DEBUG_INFO(3211);
     /* CustomInvoke */com_codename1_media_MediaManager_releaseAudioBuffer___java_lang_String(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_16_val_path(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(3212);
@@ -194,7 +194,7 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_16_getVolume___R_int(CODENAME_
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_16_isPlaying___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9501, 8607);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9500, 8606);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(3242);
 
 {

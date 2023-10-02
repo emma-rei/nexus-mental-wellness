@@ -76,7 +76,7 @@ com_codename1_contacts_Address___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_contacts_Address___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9198, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9197, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(41);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(42);
@@ -86,7 +86,7 @@ JAVA_VOID com_codename1_contacts_Address___INIT____(CODENAME_ONE_THREAD_STATE, J
 
 
 JAVA_OBJECT com_codename1_contacts_Address_getCountry___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9198, 1279);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9197, 1278);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(49);
 
 {
@@ -117,7 +117,7 @@ JAVA_OBJECT com_codename1_contacts_Address_getStreetAddress___R_java_lang_String
 
 
 JAVA_VOID com_codename1_contacts_Address_setCountry___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9198, 9203);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9197, 9202);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(88);
@@ -129,7 +129,7 @@ JAVA_VOID com_codename1_contacts_Address_setCountry___java_lang_String(CODENAME_
 
 
 JAVA_VOID com_codename1_contacts_Address_setLocality___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9198, 9204);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9197, 9203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(95);
@@ -141,7 +141,7 @@ JAVA_VOID com_codename1_contacts_Address_setLocality___java_lang_String(CODENAME
 
 
 JAVA_VOID com_codename1_contacts_Address_setPostalCode___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9198, 9205);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9197, 9204);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(102);
@@ -153,7 +153,7 @@ JAVA_VOID com_codename1_contacts_Address_setPostalCode___java_lang_String(CODENA
 
 
 JAVA_VOID com_codename1_contacts_Address_setRegion___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9198, 9206);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9197, 9205);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(109);
@@ -165,7 +165,7 @@ JAVA_VOID com_codename1_contacts_Address_setRegion___java_lang_String(CODENAME_O
 
 
 JAVA_VOID com_codename1_contacts_Address_setStreetAddress___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9198, 9207);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9197, 9206);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(116);

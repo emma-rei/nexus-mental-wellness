@@ -39,7 +39,7 @@ void __GC_MARK_java_util_AbstractList(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT obj
 
 
 JAVA_VOID java_util_AbstractList___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1226, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 1225, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_util_AbstractCollection___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -47,7 +47,7 @@ JAVA_VOID java_util_AbstractList___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJE
 
 
 JAVA_VOID java_util_AbstractList_add___int_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1226, 1227);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1225, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -60,7 +60,7 @@ JAVA_VOID java_util_AbstractList_add___int_java_lang_Object(CODENAME_ONE_THREAD_
 
 
 JAVA_BOOLEAN java_util_AbstractList_add___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 1226, 1227);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 1225, 1226);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */virtual_java_util_AbstractList_add___int_java_lang_Object(threadStateData, __cn1ThisObject, virtual_java_util_AbstractList_size___R_int(threadStateData, __cn1ThisObject), locals[1].data.o); 
@@ -70,7 +70,7 @@ JAVA_BOOLEAN java_util_AbstractList_add___java_lang_Object_R_boolean(CODENAME_ON
 
 
 JAVA_BOOLEAN java_util_AbstractList_addAll___int_java_util_Collection_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 1226, 1228);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 1225, 1227);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -101,7 +101,7 @@ label_L2151717:
 
 
 JAVA_VOID java_util_AbstractList_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 1226, 1229);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 1225, 1228);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */virtual_java_util_AbstractList_removeRange___int_int(threadStateData, __cn1ThisObject, 0 /* ICONST_0 */, virtual_java_util_AbstractList_size___R_int(threadStateData, __cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -109,7 +109,7 @@ JAVA_VOID java_util_AbstractList_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT 
 
 
 JAVA_BOOLEAN java_util_AbstractList_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 7, 0, 1226, 877);
+    DEFINE_INSTANCE_METHOD_STACK(2, 7, 0, 1225, 876);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     if (__cn1ThisObject!=locals[1].data.o) /* IF_ACMPNE CustomJump */ goto label_L1644231115;
@@ -156,7 +156,7 @@ JAVA_OBJECT java_util_AbstractList_get___int_R_java_lang_Object(CODENAME_ONE_THR
 
 JAVA_INT java_util_AbstractList_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 1226, 882);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 1225, 881);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* VarOp.assignFrom */     ilocals_1_ = 1 /* ICONST_1 */; 
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_AbstractList_iterator___R_java_util_Iterator(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;
 label_L769798433:
@@ -188,7 +188,7 @@ label_L1136768342:
 
 
 JAVA_INT java_util_AbstractList_indexOf___java_lang_Object_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1226, 883);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1225, 882);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_AbstractList_listIterator___R_java_util_ListIterator(threadStateData, __cn1ThisObject);locals[2].type=CN1_TYPE_OBJECT;    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1665620686;
@@ -224,7 +224,7 @@ label_L1233705144:
 
 
 JAVA_OBJECT java_util_AbstractList_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 1226, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 1225, 1229);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_util_AbstractList_SimpleListIterator(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_AbstractList_SimpleListIterator___INIT_____java_util_AbstractList_java_util_AbstractList_1(threadStateData, SP[-1].data.o, __cn1ThisObject, JAVA_NULL /* ACONST_NULL */);     SP -= 1;
@@ -239,7 +239,7 @@ JAVA_INT java_util_AbstractList_lastIndexOf___java_lang_Object_R_int(CODENAME_ON
 
 
 JAVA_OBJECT java_util_AbstractList_listIterator___R_java_util_ListIterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1226, 1231);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 1225, 1230);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_AbstractList_listIterator___int_R_java_util_ListIterator(threadStateData, __cn1ThisObject, 0 /* ICONST_0 */);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -248,7 +248,7 @@ JAVA_OBJECT java_util_AbstractList_listIterator___R_java_util_ListIterator(CODEN
 
 
 JAVA_OBJECT java_util_AbstractList_listIterator___int_R_java_util_ListIterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 1226, 1231);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 1225, 1230);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     PUSH_POINTER(__NEW_java_util_AbstractList_FullListIterator(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -259,7 +259,7 @@ JAVA_OBJECT java_util_AbstractList_listIterator___int_R_java_util_ListIterator(C
 
 
 JAVA_OBJECT java_util_AbstractList_remove___int_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1226, 1232);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 1225, 1231);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     PUSH_POINTER(__NEW_java_lang_UnsupportedOperationException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -271,7 +271,7 @@ JAVA_OBJECT java_util_AbstractList_remove___int_R_java_lang_Object(CODENAME_ONE_
 
 JAVA_VOID java_util_AbstractList_removeRange___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 1226, 1233);
+    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 1225, 1232);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */virtual_java_util_AbstractList_listIterator___int_R_java_util_ListIterator(threadStateData, __cn1ThisObject, ilocals_1_);locals[3].type=CN1_TYPE_OBJECT;    /* VarOp.assignFrom */     ilocals_4_ = ilocals_1_;
@@ -290,7 +290,7 @@ label_L197964393:
 
 
 JAVA_OBJECT java_util_AbstractList_set___int_java_lang_Object_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1226, 1223);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 1225, 1222);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
@@ -303,7 +303,7 @@ JAVA_OBJECT java_util_AbstractList_set___int_java_lang_Object_R_java_lang_Object
 
 
 JAVA_OBJECT java_util_AbstractList_subList___int_int_R_java_util_List(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 1226, 1234);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 1225, 1233);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     if (0 /* ICONST_0 */>ilocals_1_) /* IF_ICMPGT CustomJump */ goto label_L402115881;
@@ -342,7 +342,7 @@ label_L402115881:
 
 JAVA_OBJECT java_util_AbstractList_toArray___R_java_lang_Object_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 1226, 1235);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 1225, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     { JAVA_INT tmpResult = virtual_java_util_AbstractList_size___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
     SP--;
@@ -365,7 +365,7 @@ label_L361398902:
 
 JAVA_OBJECT java_util_AbstractList_toArray___java_lang_Object_1ARRAY_R_java_lang_Object_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 1226, 1235);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 1225, 1234);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;

@@ -62,7 +62,7 @@ com_codename1_io_FileSystemStorage___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_io_FileSystemStorage___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3133, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3132, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(75);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(76);
@@ -73,7 +73,7 @@ JAVA_VOID com_codename1_io_FileSystemStorage___INIT____(CODENAME_ONE_THREAD_STAT
 
 JAVA_OBJECT com_codename1_io_FileSystemStorage_getInstance___R_com_codename1_io_FileSystemStorage(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_io_FileSystemStorage(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 3133, 1319);
+    DEFINE_METHOD_STACK(1, 0, 0, 3132, 1318);
     __CN1_DEBUG_INFO(84);
     PUSH_POINTER(get_static_com_codename1_io_FileSystemStorage_INSTANCE(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -82,7 +82,7 @@ JAVA_OBJECT com_codename1_io_FileSystemStorage_getInstance___R_com_codename1_io_
 
 
 JAVA_OBJECT com_codename1_io_FileSystemStorage_getRoots___R_java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3133, 3134);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3132, 3133);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(94);
     PUSH_OBJ(com_codename1_io_Util_getImplementation___R_com_codename1_impl_CodenameOneImplementation(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_impl_CodenameOneImplementation_listFilesystemRoots___R_java_lang_String_1ARRAY(threadStateData, SP[-1].data.o);
@@ -98,7 +98,7 @@ JAVA_INT com_codename1_io_FileSystemStorage_getRootType___java_lang_String_R_int
 
 
 JAVA_OBJECT com_codename1_io_FileSystemStorage_listFiles___java_lang_String_R_java_lang_String_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3133, 675);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3132, 674);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(116);
@@ -121,7 +121,7 @@ JAVA_LONG com_codename1_io_FileSystemStorage_getRootAvailableSpace___java_lang_S
 
 
 JAVA_VOID com_codename1_io_FileSystemStorage_mkdir___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3133, 678);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3132, 677);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(145);
@@ -134,7 +134,7 @@ JAVA_VOID com_codename1_io_FileSystemStorage_mkdir___java_lang_String(CODENAME_O
 
 
 JAVA_VOID com_codename1_io_FileSystemStorage_delete___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3133, 1003);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3132, 1002);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(155);
@@ -148,41 +148,41 @@ JAVA_VOID com_codename1_io_FileSystemStorage_delete___java_lang_String(CODENAME_
 
 JAVA_VOID com_codename1_io_FileSystemStorage_deleteRetry___java_lang_String_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_2_ = 0; /* retryCount */
-    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 3133, 3135);
+    DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 3132, 3134);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
-    int restoreToL830679762cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL830679762cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L830679762cn1_class_id_java_lang_Throwable1, label_L2089976729, restoreToL830679762cn1_class_id_java_lang_Throwable1);
+    int restoreToL423955773cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL423955773cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L423955773cn1_class_id_java_lang_Throwable1, label_L1901190557, restoreToL423955773cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(167);
     java_lang_System_gc__(threadStateData); 
 
-label_L830679762:
- tryBlockOffsetL830679762cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L830679762cn1_class_id_java_lang_Throwable1);
-    restoreToL830679762cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L423955773:
+ tryBlockOffsetL423955773cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L423955773cn1_class_id_java_lang_Throwable1);
+    restoreToL423955773cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(169);
     PUSH_OBJ(com_codename1_io_Util_getImplementation___R_com_codename1_impl_CodenameOneImplementation(threadStateData));
     /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_deleteFile___java_lang_String(threadStateData, SP[-1].data.o, locals[1].data.o);     SP -= 1;
 
-label_L2133593962:
+label_L1040118365:
 END_TRY(1);    __CN1_DEBUG_INFO(171);
-    JUMP_TO(label_L466396438, 0);
+    JUMP_TO(label_L525953416, 0);
 
-label_L2089976729:
+label_L1901190557:
     __CN1_DEBUG_INFO(170);
     BC_ASTORE(3);
 
-label_L466396438:
+label_L525953416:
     __CN1_DEBUG_INFO(172);
     PUSH_OBJ(com_codename1_io_Util_getImplementation___R_com_codename1_impl_CodenameOneImplementation(threadStateData));
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_impl_CodenameOneImplementation_exists___java_lang_String_R_boolean(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L216998824, 0);
+    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1811106066, 0);
     __CN1_DEBUG_INFO(173);
-    if (ilocals_2_<=0) /* IFLE CustomJump */ JUMP_TO(label_L216998824, 0);
+    if (ilocals_2_<=0) /* IFLE CustomJump */ JUMP_TO(label_L1811106066, 0);
     __CN1_DEBUG_INFO(174);
     PUSH_POINTER(__NEW_java_util_Timer(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -193,7 +193,7 @@ label_L466396438:
     PUSH_LONG(500LL); /* LDC */
     virtual_java_util_Timer_schedule___java_util_TimerTask_long(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.l);     SP-= 3;
 
-label_L216998824:
+label_L1811106066:
     __CN1_DEBUG_INFO(181);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -201,7 +201,7 @@ label_L216998824:
 
 
 JAVA_BOOLEAN com_codename1_io_FileSystemStorage_exists___java_lang_String_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3133, 693);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3132, 692);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(191);
@@ -228,7 +228,7 @@ JAVA_VOID com_codename1_io_FileSystemStorage_rename___java_lang_String_java_lang
 
 
 JAVA_LONG com_codename1_io_FileSystemStorage_getLength___java_lang_String_R_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3133, 3137);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3132, 3136);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(235);
@@ -246,7 +246,7 @@ JAVA_LONG com_codename1_io_FileSystemStorage_getLastModified___java_lang_String_
 
 
 JAVA_BOOLEAN com_codename1_io_FileSystemStorage_isDirectory___java_lang_String_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3133, 688);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3132, 687);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(255);
@@ -258,7 +258,7 @@ JAVA_BOOLEAN com_codename1_io_FileSystemStorage_isDirectory___java_lang_String_R
 
 
 JAVA_CHAR com_codename1_io_FileSystemStorage_getFileSystemSeparator___R_char(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3133, 689);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3132, 688);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(264);
     PUSH_OBJ(com_codename1_io_Util_getImplementation___R_com_codename1_impl_CodenameOneImplementation(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_impl_CodenameOneImplementation_getFileSystemSeparator___R_char(threadStateData, SP[-1].data.o);
@@ -268,7 +268,7 @@ JAVA_CHAR com_codename1_io_FileSystemStorage_getFileSystemSeparator___R_char(COD
 
 
 JAVA_OBJECT com_codename1_io_FileSystemStorage_openOutputStream___java_lang_String_R_java_io_OutputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3133, 645);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3132, 644);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(274);
@@ -281,7 +281,7 @@ JAVA_OBJECT com_codename1_io_FileSystemStorage_openOutputStream___java_lang_Stri
 
 
 JAVA_OBJECT com_codename1_io_FileSystemStorage_openInputStream___java_lang_String_R_java_io_InputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3133, 646);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 3132, 645);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(284);
@@ -295,7 +295,7 @@ JAVA_OBJECT com_codename1_io_FileSystemStorage_openInputStream___java_lang_Strin
 
 JAVA_OBJECT com_codename1_io_FileSystemStorage_openOutputStream___java_lang_String_int_R_java_io_OutputStream(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_2_ = 0; /* offset */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3133, 645);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 3132, 644);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -309,7 +309,7 @@ JAVA_OBJECT com_codename1_io_FileSystemStorage_openOutputStream___java_lang_Stri
 
 
 JAVA_OBJECT com_codename1_io_FileSystemStorage_getAppHomePath___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3133, 1824);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3132, 1823);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(309);
     PUSH_OBJ(com_codename1_io_Util_getImplementation___R_com_codename1_impl_CodenameOneImplementation(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_impl_CodenameOneImplementation_getAppHomePath___R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -320,7 +320,7 @@ JAVA_OBJECT com_codename1_io_FileSystemStorage_getAppHomePath___R_java_lang_Stri
 
 
 JAVA_BOOLEAN com_codename1_io_FileSystemStorage_hasCachesDir___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3133, 672);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3132, 671);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(317);
     PUSH_OBJ(com_codename1_io_Util_getImplementation___R_com_codename1_impl_CodenameOneImplementation(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_impl_CodenameOneImplementation_hasCachesDir___R_boolean(threadStateData, SP[-1].data.o);
@@ -330,7 +330,7 @@ JAVA_BOOLEAN com_codename1_io_FileSystemStorage_hasCachesDir___R_boolean(CODENAM
 
 
 JAVA_OBJECT com_codename1_io_FileSystemStorage_getCachesDir___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3133, 673);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 3132, 672);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(326);
     PUSH_OBJ(com_codename1_io_Util_getImplementation___R_com_codename1_impl_CodenameOneImplementation(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_impl_CodenameOneImplementation_getCachesDir___R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -346,7 +346,7 @@ JAVA_OBJECT com_codename1_io_FileSystemStorage_toNativePath___java_lang_String_R
 
 
 JAVA_VOID com_codename1_io_FileSystemStorage___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(2, 0, 0, 3133, 860);
+    DEFINE_METHOD_STACK(2, 0, 0, 3132, 859);
     __CN1_DEBUG_INFO(51);
     PUSH_POINTER(__NEW_com_codename1_io_FileSystemStorage(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */

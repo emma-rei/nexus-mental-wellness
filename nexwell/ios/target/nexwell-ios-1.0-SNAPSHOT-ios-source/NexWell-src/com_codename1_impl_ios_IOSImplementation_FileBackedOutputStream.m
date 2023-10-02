@@ -84,7 +84,7 @@ com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream___INIT____(threa
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9633, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 9632, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(7041);
     java_io_OutputStream___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(7038);
@@ -104,18 +104,18 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream___INIT
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_write___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* b */
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9633, 936);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9632, 935);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(7047);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1095203437;
-    if (virtual_java_io_ByteArrayOutputStream_size___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject))>=get_static_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_maxBufferSize(threadStateData)) /* IF_ICMPGE CustomJump */ goto label_L1095203437;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L763236610;
+    if (virtual_java_io_ByteArrayOutputStream_size___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject))>=get_static_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_maxBufferSize(threadStateData)) /* IF_ICMPGE CustomJump */ goto label_L763236610;
     __CN1_DEBUG_INFO(7048);
     /* CustomInvoke */virtual_java_io_ByteArrayOutputStream_write___int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject), ilocals_1_); 
-    goto label_L45880026;
+    goto label_L106113013;
 
-label_L1095203437:
+label_L763236610:
     __CN1_DEBUG_INFO(7049);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L824357143;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L719182854;
     __CN1_DEBUG_INFO(7050);
     set_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(7051);
@@ -140,13 +140,13 @@ label_L1095203437:
     /* CustomInvoke */virtual_com_codename1_impl_ios_NSDataOutputStream_write___int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject), ilocals_1_); 
     __CN1_DEBUG_INFO(7055);
     set_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
-    goto label_L45880026;
+    goto label_L106113013;
 
-label_L824357143:
+label_L719182854:
     __CN1_DEBUG_INFO(7057);
     /* CustomInvoke */virtual_com_codename1_impl_ios_NSDataOutputStream_write___int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject), ilocals_1_); 
 
-label_L45880026:
+label_L106113013:
     __CN1_DEBUG_INFO(7059);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -154,7 +154,7 @@ label_L45880026:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_write___byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9633, 936);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 9632, 935);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(7063);
@@ -168,13 +168,13 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_write_
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_write___byte_1ARRAY_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_2_ = 0; /* off */
     volatile JAVA_INT ilocals_3_ = 0; /* len */
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 9633, 936);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 9632, 935);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
     __CN1_DEBUG_INFO(7068);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1397530667;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L807239968;
     { JAVA_INT tmpResult = virtual_java_io_ByteArrayOutputStream_size___R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -182,14 +182,14 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_write_
     SP++;
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     PUSH_INT(get_static_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_maxBufferSize(threadStateData));
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1397530667;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L807239968;
     __CN1_DEBUG_INFO(7069);
     /* CustomInvoke */virtual_java_io_ByteArrayOutputStream_write___byte_1ARRAY_int_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject), locals[1].data.o, ilocals_2_, ilocals_3_); 
-    goto label_L698498109;
+    goto label_L1832284192;
 
-label_L1397530667:
+label_L807239968:
     __CN1_DEBUG_INFO(7070);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1265287441;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1917161212;
     __CN1_DEBUG_INFO(7071);
     set_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(7072);
@@ -214,13 +214,13 @@ label_L1397530667:
     /* CustomInvoke */virtual_com_codename1_impl_ios_NSDataOutputStream_write___byte_1ARRAY_int_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject), locals[1].data.o, ilocals_2_, ilocals_3_); 
     __CN1_DEBUG_INFO(7076);
     set_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
-    goto label_L698498109;
+    goto label_L1832284192;
 
-label_L1265287441:
+label_L1917161212:
     __CN1_DEBUG_INFO(7078);
     /* CustomInvoke */virtual_com_codename1_impl_ios_NSDataOutputStream_write___byte_1ARRAY_int_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject), locals[1].data.o, ilocals_2_, ilocals_3_); 
 
-label_L698498109:
+label_L1832284192:
     __CN1_DEBUG_INFO(7080);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -228,21 +228,21 @@ label_L698498109:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_close__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9633, 930);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9632, 929);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(7084);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1877240674;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L918307166;
     __CN1_DEBUG_INFO(7085);
     virtual_java_io_ByteArrayOutputStream_close__(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject)); 
 
-label_L1877240674:
+label_L918307166:
     __CN1_DEBUG_INFO(7087);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1495257933;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1786040872;
     __CN1_DEBUG_INFO(7088);
     virtual_com_codename1_impl_ios_NSDataOutputStream_flush__(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(7089);
     virtual_com_codename1_impl_ios_NSDataOutputStream_close__(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject)); 
 
-label_L1495257933:
+label_L1786040872:
     __CN1_DEBUG_INFO(7091);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -250,19 +250,19 @@ label_L1495257933:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_flush__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9633, 931);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9632, 930);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(7095);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1642356615;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L882706486;
     __CN1_DEBUG_INFO(7096);
     virtual_java_io_ByteArrayOutputStream_flush__(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject)); 
 
-label_L1642356615:
+label_L882706486:
     __CN1_DEBUG_INFO(7098);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2090563811;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1785807415;
     __CN1_DEBUG_INFO(7099);
     virtual_com_codename1_impl_ios_NSDataOutputStream_flush__(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject)); 
 
-label_L2090563811:
+label_L1785807415:
     __CN1_DEBUG_INFO(7101);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -270,9 +270,9 @@ label_L2090563811:
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_getFilePath___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9633, 9634);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9632, 9633);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(7106);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L812168041;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_fos(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1041451158;
     __CN1_DEBUG_INFO(7107);
 
 {
@@ -280,31 +280,31 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_getF
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L812168041:
+label_L1041451158:
     __CN1_DEBUG_INFO(7109);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }
 
 
 JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_isBackedByFile___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9633, 9635);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9632, 9634);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(7114);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L399149970;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_usingBuffer(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1924802798;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1418851979;
+    goto label_L775574071;
 
-label_L399149970:
+label_L1924802798:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1418851979:
+label_L775574071:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_toByteArray___R_byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9633, 302);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 9632, 301);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(7119);
-    if (virtual_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_isBackedByFile___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1936375962;
+    if (virtual_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_isBackedByFile___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1320869181;
     __CN1_DEBUG_INFO(7120);
     /* VarOp.assignFrom */ locals[1].type=CN1_TYPE_INVALID;    locals[1].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(7122);
@@ -324,7 +324,7 @@ locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(7122);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1936375962:
+label_L1320869181:
     __CN1_DEBUG_INFO(7131);
     { JAVA_OBJECT tmpResult = virtual_java_io_ByteArrayOutputStream_toByteArray___R_byte_1ARRAY(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_buf(__cn1ThisObject));
     PUSH_OBJ(tmpResult); }
@@ -340,7 +340,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_getI
 
 JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_createTempFile___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_LONG llocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 9633, 7967);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 9632, 7966);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(7146);
     PUSH_OBJ(com_codename1_io_FileSystemStorage_getInstance___R_com_codename1_io_FileSystemStorage(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_io_FileSystemStorage_getAppHomePath___R_java_lang_String(threadStateData, SP[-1].data.o);
@@ -353,7 +353,7 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_crea
     PUSH_INT(tmpResult); }
     PUSH_INT(1); /* ICONST_1 */
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1161382705;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1226298219;
     __CN1_DEBUG_INFO(7148);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -366,11 +366,11 @@ JAVA_OBJECT com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_crea
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
 
-label_L1161382705:
+label_L1226298219:
     __CN1_DEBUG_INFO(7150);
     /* VarOp.assignFrom */ llocals_2_ = java_lang_System_currentTimeMillis___R_long(threadStateData);
 
-label_L990684641:
+label_L755759908:
     __CN1_DEBUG_INFO(7151);
     PUSH_OBJ(com_codename1_io_FileSystemStorage_getInstance___R_com_codename1_io_FileSystemStorage(threadStateData));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -378,7 +378,7 @@ label_L990684641:
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9636));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9635));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___long_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, llocals_2_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -387,19 +387,19 @@ label_L990684641:
     { JAVA_INT tmpResult = virtual_com_codename1_io_FileSystemStorage_exists___java_lang_String_R_boolean(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L516413619;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L901815188;
     __CN1_DEBUG_INFO(7152);
     /* VarOp.assignFrom */ llocals_2_=(llocals_2_ + 1 /* LCONST_1 */);
-    goto label_L990684641;
+    goto label_L755759908;
 
-label_L516413619:
+label_L901815188:
     __CN1_DEBUG_INFO(7154);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9636));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9635));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___long_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, llocals_2_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -411,7 +411,7 @@ label_L516413619:
 
 
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(1, 0, 0, 9633, 860);
+    DEFINE_METHOD_STACK(1, 0, 0, 9632, 859);
     __CN1_DEBUG_INFO(7037);
     set_static_com_codename1_impl_ios_IOSImplementation_FileBackedOutputStream_maxBufferSize(threadStateData, 102400);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 

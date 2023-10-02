@@ -36,10 +36,10 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_games_SnakeGameForm_2(CODENAME_ONE_THREAD_ST
 
 
 JAVA_VOID com_nexus_nexwell_games_SnakeGameForm_2___INIT_____com_nexus_nexwell_games_SnakeGameForm(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10416, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10597, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(30);
+    __CN1_DEBUG_INFO(41);
     set_field_com_nexus_nexwell_games_SnakeGameForm_2_this_0(threadStateData, locals[1].data.o, __cn1ThisObject);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -52,62 +52,62 @@ JAVA_VOID com_nexus_nexwell_games_SnakeGameForm_2_actionPerformed___com_codename
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 10416, 3048);
+    DEFINE_INSTANCE_METHOD_STACK(2, 6, 0, 10597, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(33);
+    __CN1_DEBUG_INFO(44);
     /* VarOp.assignFrom */ ilocals_2_ = virtual_com_codename1_ui_events_ActionEvent_getX___R_int(threadStateData, locals[1].data.o);
-    __CN1_DEBUG_INFO(34);
+    __CN1_DEBUG_INFO(45);
     /* VarOp.assignFrom */ ilocals_3_ = virtual_com_codename1_ui_events_ActionEvent_getY___R_int(threadStateData, locals[1].data.o);
-    __CN1_DEBUG_INFO(35);
+    __CN1_DEBUG_INFO(46);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 
     SP++;
     /* CustomInvoke */PUSH_INT(com_nexus_nexwell_games_SnakeGameForm_access$000___com_nexus_nexwell_games_SnakeGameForm_R_int(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_2_this_0(__cn1ThisObject)));
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(4);
-    __CN1_DEBUG_INFO(36);
+    __CN1_DEBUG_INFO(47);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     /* CustomInvoke */PUSH_INT(com_nexus_nexwell_games_SnakeGameForm_access$100___com_nexus_nexwell_games_SnakeGameForm_R_int(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_2_this_0(__cn1ThisObject)));
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(5);
-    __CN1_DEBUG_INFO(38);
+    __CN1_DEBUG_INFO(49);
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_SnakeGameForm_access$200___com_nexus_nexwell_games_SnakeGameForm_R_com_nexus_nexwell_games_SnakeGame(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_2_this_0(__cn1ThisObject)));
     { JAVA_INT tmpResult = virtual_com_nexus_nexwell_games_SnakeGame_isGameOver___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L878991463;
-    __CN1_DEBUG_INFO(40);
-    if (/* CustomInvoke */java_lang_Math_abs___int_R_int(threadStateData, ilocals_4_)<=/* CustomInvoke */java_lang_Math_abs___int_R_int(threadStateData, ilocals_5_)) /* IF_ICMPLE CustomJump */ goto label_L612693043;
-    __CN1_DEBUG_INFO(41);
-    if (ilocals_4_<=0) /* IFLE CustomJump */ goto label_L1622613647;
-    __CN1_DEBUG_INFO(42);
+    if(POP_INT() != 0) /* IFNE */ goto label_L1419125235;
+    __CN1_DEBUG_INFO(51);
+    if (/* CustomInvoke */java_lang_Math_abs___int_R_int(threadStateData, ilocals_4_)<=/* CustomInvoke */java_lang_Math_abs___int_R_int(threadStateData, ilocals_5_)) /* IF_ICMPLE CustomJump */ goto label_L88301993;
+    __CN1_DEBUG_INFO(52);
+    if (ilocals_4_<=0) /* IFLE CustomJump */ goto label_L841166421;
+    __CN1_DEBUG_INFO(53);
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_SnakeGameForm_access$200___com_nexus_nexwell_games_SnakeGameForm_R_com_nexus_nexwell_games_SnakeGame(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_2_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_nexus_nexwell_games_SnakeGame_setDirection___int(threadStateData, SP[-1].data.o, 1 /* ICONST_1 */);     SP -= 1;
-    goto label_L878991463;
+    goto label_L1419125235;
 
-label_L1622613647:
-    __CN1_DEBUG_INFO(44);
+label_L841166421:
+    __CN1_DEBUG_INFO(55);
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_SnakeGameForm_access$200___com_nexus_nexwell_games_SnakeGameForm_R_com_nexus_nexwell_games_SnakeGame(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_2_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_nexus_nexwell_games_SnakeGame_setDirection___int(threadStateData, SP[-1].data.o, 3 /* ICONST_3 */);     SP -= 1;
-    goto label_L878991463;
+    goto label_L1419125235;
 
-label_L612693043:
-    __CN1_DEBUG_INFO(47);
-    if (ilocals_5_<=0) /* IFLE CustomJump */ goto label_L307605969;
-    __CN1_DEBUG_INFO(48);
+label_L88301993:
+    __CN1_DEBUG_INFO(58);
+    if (ilocals_5_<=0) /* IFLE CustomJump */ goto label_L1377301456;
+    __CN1_DEBUG_INFO(59);
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_SnakeGameForm_access$200___com_nexus_nexwell_games_SnakeGameForm_R_com_nexus_nexwell_games_SnakeGame(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_2_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_nexus_nexwell_games_SnakeGame_setDirection___int(threadStateData, SP[-1].data.o, 2 /* ICONST_2 */);     SP -= 1;
-    goto label_L878991463;
+    goto label_L1419125235;
 
-label_L307605969:
-    __CN1_DEBUG_INFO(50);
+label_L1377301456:
+    __CN1_DEBUG_INFO(61);
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_SnakeGameForm_access$200___com_nexus_nexwell_games_SnakeGameForm_R_com_nexus_nexwell_games_SnakeGame(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_2_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_nexus_nexwell_games_SnakeGame_setDirection___int(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);     SP -= 1;
 
-label_L878991463:
-    __CN1_DEBUG_INFO(54);
+label_L1419125235:
+    __CN1_DEBUG_INFO(65);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }

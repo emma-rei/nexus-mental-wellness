@@ -34,7 +34,7 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_forms_MainForm__Lambda_4(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_nexus_nexwell_forms_MainForm__Lambda_4___INIT_____com_nexus_nexwell_forms_MainForm(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10372, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10524, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -45,7 +45,7 @@ JAVA_VOID com_nexus_nexwell_forms_MainForm__Lambda_4___INIT_____com_nexus_nexwel
 
 
 JAVA_VOID com_nexus_nexwell_forms_MainForm__Lambda_4_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10372, 3048);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10524, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */com_nexus_nexwell_forms_MainForm_lambda$new$3___com_nexus_nexwell_forms_MainForm_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_nexus_nexwell_forms_MainForm__Lambda_4_arg_1(__cn1ThisObject), locals[1].data.o); 
@@ -56,7 +56,7 @@ JAVA_VOID com_nexus_nexwell_forms_MainForm__Lambda_4_actionPerformed___com_coden
 
 JAVA_OBJECT com_nexus_nexwell_forms_MainForm__Lambda_4_lambdaFactory$___com_nexus_nexwell_forms_MainForm_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_MainForm__Lambda_4(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 10372, 10186);
+    DEFINE_METHOD_STACK(3, 1, 0, 10524, 10185);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_com_nexus_nexwell_forms_MainForm__Lambda_4(threadStateData)); /* NEW */

@@ -1,9 +1,11 @@
 #include "com_nexus_nexwell_games_GameOfLifeForm.h"
 #include "com_codename1_ui_Button.h"
+#include "com_codename1_ui_CN.h"
 #include "com_codename1_ui_Component.h"
 #include "com_codename1_ui_Container.h"
 #include "com_codename1_ui_Label.h"
 #include "com_codename1_ui_Slider.h"
+#include "com_codename1_ui_Toolbar.h"
 #include "com_codename1_ui_events_ActionEvent.h"
 #include "com_codename1_ui_layouts_BorderLayout.h"
 #include "com_codename1_ui_layouts_FlowLayout.h"
@@ -16,6 +18,7 @@
 #include "com_nexus_nexwell_games_GameOfLifeForm__Lambda_3.h"
 #include "com_nexus_nexwell_games_GameOfLifeForm__Lambda_4.h"
 #include "com_nexus_nexwell_games_GameOfLifeForm__Lambda_5.h"
+#include "com_nexus_nexwell_games_GameOfLifeForm__Lambda_6.h"
 #include "java_lang_NullPointerException.h"
 #include "java_lang_StringBuilder.h"
 const struct clazz *base_interfaces_for_com_nexus_nexwell_games_GameOfLifeForm[] = {};
@@ -310,31 +313,52 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_THREAD_STA
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm___INIT_____int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* boardSize */
-    DEFINE_INSTANCE_METHOD_STACK(5, 8, 0, 10376, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 10, 0, 10552, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
+    __CN1_DEBUG_INFO(19);
+    /* CustomInvoke */com_codename1_ui_Form___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(219)); 
     __CN1_DEBUG_INFO(20);
-    com_codename1_ui_Form___INIT____(threadStateData, __cn1ThisObject); 
-    __CN1_DEBUG_INFO(21);
+    /* CustomInvoke */virtual_com_nexus_nexwell_games_GameOfLifeForm_setTitle___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(10553)); 
+    __CN1_DEBUG_INFO(22);
+    PUSH_POINTER(__NEW_com_codename1_ui_Toolbar(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    com_codename1_ui_Toolbar___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    BC_ASTORE(2);
+    __CN1_DEBUG_INFO(23);
+    /* CustomInvoke */virtual_com_nexus_nexwell_games_GameOfLifeForm_setToolbar___com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject, locals[2].data.o); 
+    __CN1_DEBUG_INFO(24);
+    /* VarOp.assignFrom */ locals[3].data.o = com_codename1_ui_CN_getCurrentForm___R_com_codename1_ui_Form(threadStateData);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(25);
+    { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_games_GameOfLifeForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
+    PUSH_OBJ(tmpResult); }
+    /* LDC: ''*/
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(219));
+    PUSH_INT(58090); /* LDC */
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_GameOfLifeForm__Lambda_1_lambdaFactory$___com_codename1_ui_Form_R_com_codename1_ui_events_ActionListener(threadStateData, locals[3].data.o));
+    { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_addMaterialCommandToLeftBar___java_lang_String_char_com_codename1_ui_events_ActionListener_R_com_codename1_ui_Command(threadStateData, SP[-4].data.o, SP[-3].data.o, SP[-2].data.i, SP[-1].data.o);
+    SP-=3;
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    SP--; /* POP */
+    __CN1_DEBUG_INFO(27);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_nexus_nexwell_games_GameOfLife(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_nexus_nexwell_games_GameOfLife___INIT_____int_int(threadStateData, SP[-1].data.o, ilocals_1_, ilocals_1_);     SP -= 1;
     set_field_com_nexus_nexwell_games_GameOfLifeForm_game(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(23);
+    __CN1_DEBUG_INFO(28);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_nexus_nexwell_games_GameOfLifeComponent(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_nexus_nexwell_games_GameOfLifeComponent___INIT_____com_nexus_nexwell_games_GameOfLife(threadStateData, SP[-1].data.o, get_field_com_nexus_nexwell_games_GameOfLifeForm_game(__cn1ThisObject));     SP -= 1;
     set_field_com_nexus_nexwell_games_GameOfLifeForm_gameComponent(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(25);
+    __CN1_DEBUG_INFO(30);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_layouts_BorderLayout(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_codename1_ui_layouts_BorderLayout___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     virtual_com_nexus_nexwell_games_GameOfLifeForm_setLayout___com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(27);
+    __CN1_DEBUG_INFO(32);
     PUSH_INT(1); /* ICONST_1 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_com_codename1_ui_Component(threadStateData, SP[0].data.i));
@@ -347,160 +371,160 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm___INIT_____int(CODENAME_ONE_THR
     SP -= 3; }
     { JAVA_OBJECT tmpResult = com_codename1_ui_layouts_FlowLayout_encloseCenter___com_codename1_ui_Component_1ARRAY_R_com_codename1_ui_Container(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    BC_ASTORE(2);
-    __CN1_DEBUG_INFO(28);
-    /* CustomInvoke */virtual_com_nexus_nexwell_games_GameOfLifeForm_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(138), locals[2].data.o); 
-    __CN1_DEBUG_INFO(30);
+    BC_ASTORE(4);
+    __CN1_DEBUG_INFO(33);
+    /* CustomInvoke */virtual_com_nexus_nexwell_games_GameOfLifeForm_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(137), locals[4].data.o); 
+    __CN1_DEBUG_INFO(35);
     PUSH_POINTER(__NEW_com_codename1_ui_Container(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_com_codename1_ui_layouts_FlowLayout(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_layouts_FlowLayout___INIT_____int(threadStateData, SP[-1].data.o, 3 /* ICONST_3 */);     SP -= 1;
     com_codename1_ui_Container___INIT_____com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    BC_ASTORE(3);
-    __CN1_DEBUG_INFO(31);
-    PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
-    BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10377));     SP -= 1;
-    BC_ASTORE(4);
-    __CN1_DEBUG_INFO(32);
-    BC_ALOAD(4);
-    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_GameOfLifeForm__Lambda_1_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject));
-    virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(34);
-    PUSH_POINTER(__NEW_com_codename1_ui_Container(threadStateData)); /* NEW */
-    BC_DUP(); /* DUP */
-    PUSH_POINTER(__NEW_com_codename1_ui_layouts_BorderLayout(threadStateData)); /* NEW */
-    BC_DUP(); /* DUP */
-    com_codename1_ui_layouts_BorderLayout___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    com_codename1_ui_Container___INIT_____com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     BC_ASTORE(5);
     __CN1_DEBUG_INFO(36);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10378));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10554));     SP -= 1;
     BC_ASTORE(6);
     __CN1_DEBUG_INFO(37);
     BC_ALOAD(6);
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_GameOfLifeForm__Lambda_2_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject));
     virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(39);
+    PUSH_POINTER(__NEW_com_codename1_ui_Container(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    PUSH_POINTER(__NEW_com_codename1_ui_layouts_BorderLayout(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    com_codename1_ui_layouts_BorderLayout___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    com_codename1_ui_Container___INIT_____com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    BC_ASTORE(7);
+    __CN1_DEBUG_INFO(41);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(137));     SP -= 1;
-    BC_ASTORE(7);
-    __CN1_DEBUG_INFO(40);
-    BC_ALOAD(7);
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10555));     SP -= 1;
+    BC_ASTORE(8);
+    __CN1_DEBUG_INFO(42);
+    BC_ALOAD(8);
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_GameOfLifeForm__Lambda_3_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject));
     virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(42);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[3].data.o, locals[4].data.o); 
-    __CN1_DEBUG_INFO(43);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[3].data.o, locals[6].data.o); 
     __CN1_DEBUG_INFO(44);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[3].data.o, locals[7].data.o); 
-    __CN1_DEBUG_INFO(46);
+    PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(136));     SP -= 1;
+    BC_ASTORE(9);
+    __CN1_DEBUG_INFO(45);
+    BC_ALOAD(9);
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject));
+    virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    __CN1_DEBUG_INFO(47);
+    /* CustomInvoke */virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[5].data.o, locals[6].data.o); 
+    __CN1_DEBUG_INFO(48);
+    /* CustomInvoke */virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[5].data.o, locals[8].data.o); 
+    __CN1_DEBUG_INFO(49);
+    /* CustomInvoke */virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[5].data.o, locals[9].data.o); 
+    __CN1_DEBUG_INFO(51);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_Slider(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_codename1_ui_Slider___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     set_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(47);
-    /* CustomInvoke */virtual_com_codename1_ui_Slider_setEditable___boolean(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject), 1 /* ICONST_1 */); 
-    __CN1_DEBUG_INFO(48);
-    /* CustomInvoke */virtual_com_codename1_ui_Slider_setMinValue___int(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject), 100); 
-    __CN1_DEBUG_INFO(49);
-    /* CustomInvoke */virtual_com_codename1_ui_Slider_setMaxValue___int(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject), 999); 
-    __CN1_DEBUG_INFO(50);
-    /* CustomInvoke */virtual_com_codename1_ui_Slider_setProgress___int(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject), 200); 
-    __CN1_DEBUG_INFO(51);
-    PUSH_POINTER(get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject));
-    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_GameOfLifeForm__Lambda_4_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_com_codename1_ui_events_DataChangedListener(threadStateData, __cn1ThisObject));
-    virtual_com_codename1_ui_Slider_addDataChangedListener___com_codename1_ui_events_DataChangedListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(53);
+    /* CustomInvoke */virtual_com_codename1_ui_Slider_setEditable___boolean(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject), 1 /* ICONST_1 */); 
+    __CN1_DEBUG_INFO(54);
+    /* CustomInvoke */virtual_com_codename1_ui_Slider_setMinValue___int(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject), 100); 
+    __CN1_DEBUG_INFO(55);
+    /* CustomInvoke */virtual_com_codename1_ui_Slider_setMaxValue___int(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject), 999); 
+    __CN1_DEBUG_INFO(56);
+    /* CustomInvoke */virtual_com_codename1_ui_Slider_setProgress___int(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject), 200); 
+    __CN1_DEBUG_INFO(57);
+    PUSH_POINTER(get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject));
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_GameOfLifeForm__Lambda_5_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_com_codename1_ui_events_DataChangedListener(threadStateData, __cn1ThisObject));
+    virtual_com_codename1_ui_Slider_addDataChangedListener___com_codename1_ui_events_DataChangedListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    __CN1_DEBUG_INFO(59);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_Label(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10379));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10556));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, virtual_com_codename1_ui_Slider_getProgress___R_int(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject)));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10151));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10150));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     com_codename1_ui_Label___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     set_field_com_nexus_nexwell_games_GameOfLifeForm_intervalLabel(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(55);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, locals[5].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(66), get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(56);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, locals[5].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(65), get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalLabel(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(57);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, locals[5].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(64), locals[3].data.o); 
-    __CN1_DEBUG_INFO(59);
-    /* CustomInvoke */virtual_com_nexus_nexwell_games_GameOfLifeForm_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(64), locals[5].data.o); 
-    __CN1_DEBUG_INFO(60);
+    __CN1_DEBUG_INFO(61);
+    /* CustomInvoke */virtual_com_codename1_ui_Container_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(65), get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject)); 
+    __CN1_DEBUG_INFO(62);
+    /* CustomInvoke */virtual_com_codename1_ui_Container_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(64), get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalLabel(__cn1ThisObject)); 
+    __CN1_DEBUG_INFO(63);
+    /* CustomInvoke */virtual_com_codename1_ui_Container_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(63), locals[5].data.o); 
+    __CN1_DEBUG_INFO(65);
+    /* CustomInvoke */virtual_com_nexus_nexwell_games_GameOfLifeForm_addComponent___java_lang_Object_com_codename1_ui_Component(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(63), locals[7].data.o); 
+    __CN1_DEBUG_INFO(66);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_startSimulation__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10376, 10380);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(63);
-    if (get_field_com_nexus_nexwell_games_GameOfLifeForm_isRunning(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1850874910;
-    __CN1_DEBUG_INFO(64);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10552, 10557);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(69);
+    if (get_field_com_nexus_nexwell_games_GameOfLifeForm_isRunning(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L191310504;
+    __CN1_DEBUG_INFO(70);
     set_field_com_nexus_nexwell_games_GameOfLifeForm_isRunning(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
-    __CN1_DEBUG_INFO(65);
+    __CN1_DEBUG_INFO(71);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_util_UITimer(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_GameOfLifeForm__Lambda_5_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_java_lang_Runnable(threadStateData, __cn1ThisObject));
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_GameOfLifeForm__Lambda_6_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_java_lang_Runnable(threadStateData, __cn1ThisObject));
     com_codename1_ui_util_UITimer___INIT_____java_lang_Runnable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     set_field_com_nexus_nexwell_games_GameOfLifeForm_uiTimer(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(69);
+    __CN1_DEBUG_INFO(75);
     /* CustomInvoke */virtual_com_codename1_ui_util_UITimer_schedule___int_boolean_com_codename1_ui_Form(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_uiTimer(__cn1ThisObject), virtual_com_codename1_ui_Slider_getProgress___R_int(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject)), 1 /* ICONST_1 */, __cn1ThisObject); 
 
-label_L1850874910:
-    __CN1_DEBUG_INFO(71);
+label_L191310504:
+    __CN1_DEBUG_INFO(77);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_stopSimulation__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10376, 10381);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(74);
-    if (get_field_com_nexus_nexwell_games_GameOfLifeForm_isRunning(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L575360353;
-    __CN1_DEBUG_INFO(75);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10552, 10558);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(80);
+    if (get_field_com_nexus_nexwell_games_GameOfLifeForm_isRunning(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L799755007;
+    __CN1_DEBUG_INFO(81);
     set_field_com_nexus_nexwell_games_GameOfLifeForm_isRunning(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
-    __CN1_DEBUG_INFO(76);
-    if (get_field_com_nexus_nexwell_games_GameOfLifeForm_uiTimer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L575360353;
-    __CN1_DEBUG_INFO(77);
+    __CN1_DEBUG_INFO(82);
+    if (get_field_com_nexus_nexwell_games_GameOfLifeForm_uiTimer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L799755007;
+    __CN1_DEBUG_INFO(83);
     virtual_com_codename1_ui_util_UITimer_cancel__(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_uiTimer(__cn1ThisObject)); 
 
-label_L575360353:
-    __CN1_DEBUG_INFO(80);
+label_L799755007:
+    __CN1_DEBUG_INFO(86);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_clearCells__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10376, 10382);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(83);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10552, 10559);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(89);
     com_nexus_nexwell_games_GameOfLifeForm_stopSimulation__(threadStateData, __cn1ThisObject); 
-    __CN1_DEBUG_INFO(84);
+    __CN1_DEBUG_INFO(90);
     virtual_com_nexus_nexwell_games_GameOfLife_clear__(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_game(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(85);
+    __CN1_DEBUG_INFO(91);
     virtual_com_nexus_nexwell_games_GameOfLifeComponent_repaint__(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_gameComponent(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(86);
+    __CN1_DEBUG_INFO(92);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -508,64 +532,78 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_clearCells__(CODENAME_ONE_THREA
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_updateSimulationInterval__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10376, 10383);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(89);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10552, 10560);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(95);
     /* VarOp.assignFrom */ ilocals_1_ = virtual_com_codename1_ui_Slider_getProgress___R_int(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalSlider(__cn1ThisObject));
-    __CN1_DEBUG_INFO(90);
+    __CN1_DEBUG_INFO(96);
     PUSH_POINTER(get_field_com_nexus_nexwell_games_GameOfLifeForm_intervalLabel(__cn1ThisObject));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10379));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10556));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, ilocals_1_);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10151));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10150));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_com_codename1_ui_Label_setText___java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(91);
-    if (get_field_com_nexus_nexwell_games_GameOfLifeForm_uiTimer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L97901029;
-    if (get_field_com_nexus_nexwell_games_GameOfLifeForm_isRunning(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L97901029;
-    __CN1_DEBUG_INFO(92);
+    __CN1_DEBUG_INFO(97);
+    if (get_field_com_nexus_nexwell_games_GameOfLifeForm_uiTimer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L247515192;
+    if (get_field_com_nexus_nexwell_games_GameOfLifeForm_isRunning(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L247515192;
+    __CN1_DEBUG_INFO(98);
     virtual_com_codename1_ui_util_UITimer_cancel__(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_uiTimer(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(93);
+    __CN1_DEBUG_INFO(99);
     /* CustomInvoke */virtual_com_codename1_ui_util_UITimer_schedule___int_boolean_com_codename1_ui_Form(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_uiTimer(__cn1ThisObject), ilocals_1_, 1 /* ICONST_1 */, __cn1ThisObject); 
 
-label_L97901029:
-    __CN1_DEBUG_INFO(95);
+label_L247515192:
+    __CN1_DEBUG_INFO(101);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$startSimulation$4___com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$startSimulation$5___com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_GameOfLifeForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10376, 10384);
+    DEFINE_METHOD_STACK(1, 1, 0, 10552, 10561);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(66);
+    __CN1_DEBUG_INFO(72);
     virtual_com_nexus_nexwell_games_GameOfLife_nextGeneration__(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_game(locals[0].data.o)); 
-    __CN1_DEBUG_INFO(67);
+    __CN1_DEBUG_INFO(73);
     virtual_com_nexus_nexwell_games_GameOfLifeComponent_repaint__(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm_gameComponent(locals[0].data.o)); 
-    __CN1_DEBUG_INFO(68);
+    __CN1_DEBUG_INFO(74);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$3___com_nexus_nexwell_games_GameOfLifeForm_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
+JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$4___com_nexus_nexwell_games_GameOfLifeForm_int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2, JAVA_INT __cn1Arg3) {
     volatile JAVA_INT ilocals_1_ = 0; /* a */
     volatile JAVA_INT ilocals_2_ = 0; /* b */
     __STATIC_INITIALIZER_com_nexus_nexwell_games_GameOfLifeForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 3, 0, 10376, 10255);
+    DEFINE_METHOD_STACK(1, 3, 0, 10552, 10350);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;
     ilocals_2_ = __cn1Arg3;
-    __CN1_DEBUG_INFO(51);
+    __CN1_DEBUG_INFO(57);
     com_nexus_nexwell_games_GameOfLifeForm_updateSimulationInterval__(threadStateData, locals[0].data.o); 
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$3___com_nexus_nexwell_games_GameOfLifeForm_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    __STATIC_INITIALIZER_com_nexus_nexwell_games_GameOfLifeForm(threadStateData);
+    DEFINE_METHOD_STACK(1, 2, 0, 10552, 10351);
+    locals[0].data.o = __cn1Arg1;
+    locals[0].type = CN1_TYPE_OBJECT;
+    locals[1].data.o = __cn1Arg2;
+    locals[1].type = CN1_TYPE_OBJECT;
+    __CN1_DEBUG_INFO(45);
+    com_nexus_nexwell_games_GameOfLifeForm_clearCells__(threadStateData, locals[0].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -573,13 +611,13 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$3___com_nexus_nexwel
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$2___com_nexus_nexwell_games_GameOfLifeForm_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_GameOfLifeForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10376, 10256);
+    DEFINE_METHOD_STACK(1, 2, 0, 10552, 10352);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(40);
-    com_nexus_nexwell_games_GameOfLifeForm_clearCells__(threadStateData, locals[0].data.o); 
+    __CN1_DEBUG_INFO(42);
+    com_nexus_nexwell_games_GameOfLifeForm_stopSimulation__(threadStateData, locals[0].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -587,27 +625,27 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$2___com_nexus_nexwel
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$1___com_nexus_nexwell_games_GameOfLifeForm_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_GameOfLifeForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10376, 10257);
+    DEFINE_METHOD_STACK(1, 2, 0, 10552, 10215);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(37);
-    com_nexus_nexwell_games_GameOfLifeForm_stopSimulation__(threadStateData, locals[0].data.o); 
+    com_nexus_nexwell_games_GameOfLifeForm_startSimulation__(threadStateData, locals[0].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$0___com_nexus_nexwell_games_GameOfLifeForm_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm_lambda$new$0___com_codename1_ui_Form_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_GameOfLifeForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10376, 10216);
+    DEFINE_METHOD_STACK(1, 2, 0, 10552, 10216);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(32);
-    com_nexus_nexwell_games_GameOfLifeForm_startSimulation__(threadStateData, locals[0].data.o); 
+    __CN1_DEBUG_INFO(25);
+    virtual_com_codename1_ui_Form_showBack__(threadStateData, locals[0].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -4121,12 +4159,39 @@ JAVA_VOID virtual_com_nexus_nexwell_games_GameOfLifeForm_addComponent___java_lan
 }
 
 
+typedef JAVA_VOID (*functionPtr_com_nexus_nexwell_games_GameOfLifeForm_setTitle___java_lang_String)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID virtual_com_nexus_nexwell_games_GameOfLifeForm_setTitle___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    (*(functionPtr_com_nexus_nexwell_games_GameOfLifeForm_setTitle___java_lang_String)__cn1ThisObject->__codenameOneParentClsReference->vtable[457])(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
 typedef JAVA_VOID (*functionPtr_com_nexus_nexwell_games_GameOfLifeForm_show__)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
 JAVA_VOID virtual_com_nexus_nexwell_games_GameOfLifeForm_show__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
     (*(functionPtr_com_nexus_nexwell_games_GameOfLifeForm_show__)__cn1ThisObject->__codenameOneParentClsReference->vtable[477])(threadStateData, __cn1ThisObject);
+}
+
+
+typedef JAVA_VOID (*functionPtr_com_nexus_nexwell_games_GameOfLifeForm_setToolbar___com_codename1_ui_Toolbar)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_VOID virtual_com_nexus_nexwell_games_GameOfLifeForm_setToolbar___com_codename1_ui_Toolbar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    (*(functionPtr_com_nexus_nexwell_games_GameOfLifeForm_setToolbar___com_codename1_ui_Toolbar)__cn1ThisObject->__codenameOneParentClsReference->vtable[526])(threadStateData, __cn1ThisObject, __cn1Arg1);
+}
+
+
+typedef JAVA_OBJECT (*functionPtr_com_nexus_nexwell_games_GameOfLifeForm_getToolbar___R_com_codename1_ui_Toolbar)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT virtual_com_nexus_nexwell_games_GameOfLifeForm_getToolbar___R_com_codename1_ui_Toolbar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    return (*(functionPtr_com_nexus_nexwell_games_GameOfLifeForm_getToolbar___R_com_codename1_ui_Toolbar)__cn1ThisObject->__codenameOneParentClsReference->vtable[527])(threadStateData, __cn1ThisObject);
 }
 
 void __INIT_VTABLE_com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_THREAD_STATE, void** vtable) {
@@ -4143,7 +4208,7 @@ void __STATIC_INITIALIZER_com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_TH
         return;
     }
 
-    class__com_nexus_nexwell_games_GameOfLifeForm.vtable = malloc(sizeof(void*) *529);
+    class__com_nexus_nexwell_games_GameOfLifeForm.vtable = malloc(sizeof(void*) *530);
     __INIT_VTABLE_com_nexus_nexwell_games_GameOfLifeForm(threadStateData, class__com_nexus_nexwell_games_GameOfLifeForm.vtable);
     class__com_nexus_nexwell_games_GameOfLifeForm.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_nexus_nexwell_games_GameOfLifeForm);

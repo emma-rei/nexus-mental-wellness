@@ -94,7 +94,7 @@ JAVA_VOID com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve___INIT_____doubl
     volatile JAVA_DOUBLE dlocals_3_ = 0; /* y1 */
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* cx */
     volatile JAVA_DOUBLE dlocals_7_ = 0; /* cy */
-    DEFINE_INSTANCE_METHOD_STACK(5, 13, 0, 3752, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 13, 0, 3751, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     dlocals_1_ = __cn1Arg1;
     dlocals_3_ = __cn1Arg2;
     dlocals_5_ = __cn1Arg3;
@@ -134,7 +134,7 @@ JAVA_INT com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_cross___double_1A
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* py2 */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
     volatile JAVA_INT ilocals_8_ = 0; /* v8 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 15, 0, 3752, 3747);
+    DEFINE_INSTANCE_METHOD_STACK(6, 15, 0, 3751, 3746);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -145,95 +145,95 @@ JAVA_INT com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_cross___double_1A
     __CN1_DEBUG_INFO(2483);
     /* VarOp.assignFrom */     ilocals_8_ = 0 /* ICONST_0 */; 
 
-label_L1720072513:
-    if (ilocals_8_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L1455871253;
+label_L1423314849:
+    if (ilocals_8_>=ilocals_2_) /* IF_ICMPGE CustomJump */ goto label_L2078785618;
     __CN1_DEBUG_INFO(2484);
     /* VarOp.assignFrom */ dlocals_9_=CN1_ARRAY_ELEMENT_DOUBLE(locals[1].data.o, ilocals_8_);
     __CN1_DEBUG_INFO(2487);
-    if (CN1_CMP_EXPR(dlocals_9_, -1.0E-5)<0) /* IFLT CustomJump */ goto label_L1881892202;
-    if (CN1_CMP_EXPR(dlocals_9_, 1.00001)<=0) /* IFLE CustomJump */ goto label_L1385126783;
+    if (CN1_CMP_EXPR(dlocals_9_, -1.0E-5)<0) /* IFLT CustomJump */ goto label_L1253691744;
+    if (CN1_CMP_EXPR(dlocals_9_, 1.00001)<=0) /* IFLE CustomJump */ goto label_L1436146784;
     __CN1_DEBUG_INFO(2488);
-    goto label_L1881892202;
+    goto label_L1253691744;
 
-label_L1385126783:
+label_L1436146784:
     __CN1_DEBUG_INFO(2491);
-    if (CN1_CMP_EXPR(dlocals_9_, 1.0E-5)>=0) /* IFGE CustomJump */ goto label_L1020242985;
+    if (CN1_CMP_EXPR(dlocals_9_, 1.0E-5)>=0) /* IFGE CustomJump */ goto label_L894780981;
     __CN1_DEBUG_INFO(2492);
-    if (CN1_CMP_EXPR(dlocals_3_, 0 /* DCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L1881892202;
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_bx(__cn1ThisObject), 0 /* DCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1547811032;
+    if (CN1_CMP_EXPR(dlocals_3_, 0 /* DCONST_0 */)>=0) /* IFGE CustomJump */ goto label_L1253691744;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_bx(__cn1ThisObject), 0 /* DCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1895167389;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_bx(__cn1ThisObject));
-    goto label_L2011862543;
+    goto label_L1950554162;
 
-label_L1547811032:
+label_L1895167389:
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_ax(__cn1ThisObject));
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_bx(__cn1ThisObject));
     SP--; SP[-1].data.d = (SP[-1].data.d - (*SP).data.d); /* DSUB */
 
-label_L2011862543:
+label_L1950554162:
     PUSH_DOUBLE(0); /* DCONST_0 */
     BC_DCMPL();
-    if(POP_INT() >= 0) /* IFGE */ goto label_L1881892202;
+    if(POP_INT() >= 0) /* IFGE */ goto label_L1253691744;
     __CN1_DEBUG_INFO(2493);
     BC_IINC(7, -1);
-    goto label_L1881892202;
+    goto label_L1253691744;
 
-label_L1020242985:
+label_L894780981:
     __CN1_DEBUG_INFO(2498);
-    if (CN1_CMP_EXPR(dlocals_9_, 0.99999)<=0) /* IFLE CustomJump */ goto label_L1595305774;
+    if (CN1_CMP_EXPR(dlocals_9_, 0.99999)<=0) /* IFLE CustomJump */ goto label_L1872928774;
     __CN1_DEBUG_INFO(2499);
-    if (CN1_CMP_EXPR(dlocals_3_, get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_ay(__cn1ThisObject))>=0) /* IFGE CustomJump */ goto label_L1881892202;
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_ax(__cn1ThisObject), get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_bx(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L519650817;
+    if (CN1_CMP_EXPR(dlocals_3_, get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_ay(__cn1ThisObject))>=0) /* IFGE CustomJump */ goto label_L1253691744;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_ax(__cn1ThisObject), get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_bx(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1884890921;
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_ax(__cn1ThisObject));
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_bx(__cn1ThisObject));
     SP--; SP[-1].data.d = (SP[-1].data.d - (*SP).data.d); /* DSUB */
-    goto label_L1336922750;
+    goto label_L803175842;
 
-label_L519650817:
+label_L1884890921:
     PUSH_DOUBLE(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_bx(__cn1ThisObject));
 
-label_L1336922750:
+label_L803175842:
     PUSH_DOUBLE(0); /* DCONST_0 */
     BC_DCMPL();
-    if(POP_INT() <= 0) /* IFLE */ goto label_L1881892202;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L1253691744;
     __CN1_DEBUG_INFO(2500);
     BC_IINC(7, 1);
-    goto label_L1881892202;
+    goto label_L1253691744;
 
-label_L1595305774:
+label_L1872928774:
     __CN1_DEBUG_INFO(2505);
     /* VarOp.assignFrom */ dlocals_11_=(dlocals_9_ * ((dlocals_9_ * get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_Ay(__cn1ThisObject)) + get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_By(__cn1ThisObject)));
     __CN1_DEBUG_INFO(2507);
-    if (CN1_CMP_EXPR(dlocals_11_, dlocals_5_)<=0) /* IFLE CustomJump */ goto label_L1881892202;
+    if (CN1_CMP_EXPR(dlocals_11_, dlocals_5_)<=0) /* IFLE CustomJump */ goto label_L1253691744;
     __CN1_DEBUG_INFO(2508);
     /* VarOp.assignFrom */ dlocals_13_=((dlocals_9_ * get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_Ax(__cn1ThisObject)) + get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_bx(__cn1ThisObject));
     __CN1_DEBUG_INFO(2510);
-    if (CN1_CMP_EXPR(dlocals_13_, -1.0E-5)<=0) /* IFLE CustomJump */ goto label_L1825992554;
-    if (CN1_CMP_EXPR(dlocals_13_, 1.0E-5)>=0) /* IFGE CustomJump */ goto label_L1825992554;
+    if (CN1_CMP_EXPR(dlocals_13_, -1.0E-5)<=0) /* IFLE CustomJump */ goto label_L1135702755;
+    if (CN1_CMP_EXPR(dlocals_13_, 1.0E-5)>=0) /* IFGE CustomJump */ goto label_L1135702755;
     __CN1_DEBUG_INFO(2511);
-    goto label_L1881892202;
+    goto label_L1253691744;
 
-label_L1825992554:
+label_L1135702755:
     __CN1_DEBUG_INFO(2513);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_7_; 
     SP++;
-    if (CN1_CMP_EXPR(dlocals_13_, 0 /* DCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L13963969;
+    if (CN1_CMP_EXPR(dlocals_13_, 0 /* DCONST_0 */)<=0) /* IFLE CustomJump */ goto label_L963205123;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1468739052;
+    goto label_L3162216;
 
-label_L13963969:
+label_L963205123:
     PUSH_INT(-1); /* ICONST_M1 */
 
-label_L1468739052:
+label_L3162216:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     BC_ISTORE(7);
 
-label_L1881892202:
+label_L1253691744:
     __CN1_DEBUG_INFO(2483);
     BC_IINC(8, 1);
-    goto label_L1720072513;
+    goto label_L1423314849;
 
-label_L1455871253:
+label_L2078785618:
     __CN1_DEBUG_INFO(2517);
 
 {
@@ -245,7 +245,7 @@ label_L1455871253:
 
 JAVA_INT com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_solvePoint___double_1ARRAY_double_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_DOUBLE __cn1Arg2) {
     volatile JAVA_DOUBLE dlocals_2_ = 0; /* px */
-    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 3752, 3748);
+    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 3751, 3747);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     dlocals_2_ = __cn1Arg2;
@@ -280,13 +280,13 @@ JAVA_INT com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_solvePoint___doub
 
 JAVA_INT com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_solveExtrem___double_1ARRAY_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 3752, 3753);
+    DEFINE_INSTANCE_METHOD_STACK(8, 3, 0, 3751, 3752);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(2526);
     /* VarOp.assignFrom */     ilocals_2_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(2527);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_Ax(__cn1ThisObject), 0 /* DCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L972335044;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_Ax(__cn1ThisObject), 0 /* DCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L481839538;
     __CN1_DEBUG_INFO(2528);
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -302,9 +302,9 @@ JAVA_INT com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_solveExtrem___dou
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* DASTORE */
     DOUBLE_ARRAY_LOOKUP((JAVA_ARRAY)SP[-3].data.o, SP[-2].data.i) = SP[-1].data.d; SP -= 3;
 
-label_L972335044:
+label_L481839538:
     __CN1_DEBUG_INFO(2530);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_Ay(__cn1ThisObject), 0 /* DCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L287303969;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_Ay(__cn1ThisObject), 0 /* DCONST_0 */)==0) /* IFEQ CustomJump */ goto label_L1877123942;
     __CN1_DEBUG_INFO(2531);
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -320,7 +320,7 @@ label_L972335044:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* DASTORE */
     DOUBLE_ARRAY_LOOKUP((JAVA_ARRAY)SP[-3].data.o, SP[-2].data.i) = SP[-1].data.d; SP -= 3;
 
-label_L287303969:
+label_L1877123942:
     __CN1_DEBUG_INFO(2533);
 
 {
@@ -340,7 +340,7 @@ JAVA_INT com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_addBound___double
     volatile JAVA_INT ilocals_4_ = 0; /* rc */
     volatile JAVA_DOUBLE dlocals_5_ = 0; /* minX */
     volatile JAVA_DOUBLE dlocals_7_ = 0; /* maxX */
-    DEFINE_INSTANCE_METHOD_STACK(8, 16, 0, 3752, 3751);
+    DEFINE_INSTANCE_METHOD_STACK(8, 16, 0, 3751, 3750);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
@@ -354,18 +354,18 @@ JAVA_INT com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_addBound___double
     __CN1_DEBUG_INFO(2537);
     /* VarOp.assignFrom */     ilocals_11_ = 0 /* ICONST_0 */; 
 
-label_L1412986995:
-    if (ilocals_11_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L536167075;
+label_L1471615414:
+    if (ilocals_11_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L1842580978;
     __CN1_DEBUG_INFO(2538);
     /* VarOp.assignFrom */ dlocals_12_=CN1_ARRAY_ELEMENT_DOUBLE(locals[3].data.o, ilocals_11_);
     __CN1_DEBUG_INFO(2539);
-    if (CN1_CMP_EXPR(dlocals_12_, -1.0E-5)<=0) /* IFLE CustomJump */ goto label_L1223572525;
-    if (CN1_CMP_EXPR(dlocals_12_, 1.00001)>=0) /* IFGE CustomJump */ goto label_L1223572525;
+    if (CN1_CMP_EXPR(dlocals_12_, -1.0E-5)<=0) /* IFLE CustomJump */ goto label_L161234158;
+    if (CN1_CMP_EXPR(dlocals_12_, 1.00001)>=0) /* IFGE CustomJump */ goto label_L161234158;
     __CN1_DEBUG_INFO(2540);
     /* VarOp.assignFrom */ dlocals_14_=(dlocals_12_ * ((dlocals_12_ * get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_Ax(__cn1ThisObject)) + get_field_com_codename1_ui_geom_GeneralPath_ShapeUtil_QuadCurve_Bx(__cn1ThisObject)));
     __CN1_DEBUG_INFO(2541);
-    if (CN1_CMP_EXPR(dlocals_5_, dlocals_14_)>0) /* IFGT CustomJump */ goto label_L1223572525;
-    if (CN1_CMP_EXPR(dlocals_14_, dlocals_7_)>0) /* IFGT CustomJump */ goto label_L1223572525;
+    if (CN1_CMP_EXPR(dlocals_5_, dlocals_14_)>0) /* IFGT CustomJump */ goto label_L161234158;
+    if (CN1_CMP_EXPR(dlocals_14_, dlocals_7_)>0) /* IFGT CustomJump */ goto label_L161234158;
     __CN1_DEBUG_INFO(2542);
     BC_ALOAD(1);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -412,16 +412,16 @@ label_L1412986995:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* DASTORE */
     DOUBLE_ARRAY_LOOKUP((JAVA_ARRAY)SP[-3].data.o, SP[-2].data.i) = SP[-1].data.d; SP -= 3;
     __CN1_DEBUG_INFO(2546);
-    if (ilocals_9_==0) /* IFEQ CustomJump */ goto label_L1223572525;
+    if (ilocals_9_==0) /* IFEQ CustomJump */ goto label_L161234158;
     __CN1_DEBUG_INFO(2547);
     BC_IINC(10, 1);
 
-label_L1223572525:
+label_L161234158:
     __CN1_DEBUG_INFO(2537);
     BC_IINC(11, 1);
-    goto label_L1412986995;
+    goto label_L1471615414;
 
-label_L536167075:
+label_L1842580978:
     __CN1_DEBUG_INFO(2552);
 
 {

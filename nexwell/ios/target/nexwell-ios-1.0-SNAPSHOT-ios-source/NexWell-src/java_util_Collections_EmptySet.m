@@ -38,7 +38,7 @@ java_util_Collections_EmptySet___INIT____(threadStateData, o);
 
 
 JAVA_VOID java_util_Collections_EmptySet___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6339, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6338, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_util_AbstractSet___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -46,7 +46,7 @@ JAVA_VOID java_util_Collections_EmptySet___INIT____(CODENAME_ONE_THREAD_STATE, J
 
 
 JAVA_BOOLEAN java_util_Collections_EmptySet_contains___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6339, 905);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6338, 904);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_INT(0); /* ICONST_0 */
@@ -55,14 +55,14 @@ JAVA_BOOLEAN java_util_Collections_EmptySet_contains___java_lang_Object_R_boolea
 
 
 JAVA_INT java_util_Collections_EmptySet_size___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6339, 1224);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6338, 1223);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_INT(0); /* ICONST_0 */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 
 
 JAVA_OBJECT java_util_Collections_EmptySet_iterator___R_java_util_Iterator(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6339, 1230);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 6338, 1229);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     PUSH_POINTER(__NEW_java_util_Collections_EmptySet_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_util_Collections_EmptySet_1___INIT_____java_util_Collections_EmptySet(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
@@ -77,7 +77,7 @@ JAVA_OBJECT java_util_Collections_EmptySet_readResolve___R_java_lang_Object(CODE
 
 
 JAVA_VOID java_util_Collections_EmptySet___INIT_____java_util_Collections_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6339, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 6338, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_util_Collections_EmptySet___INIT____(threadStateData, __cn1ThisObject); 

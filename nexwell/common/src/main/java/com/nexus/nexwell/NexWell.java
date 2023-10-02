@@ -70,38 +70,6 @@ public class NexWell{
     public void destroy() {
     }
 
-      
-    
-
-    
-  
-    
 
 }
-
-
-
-        /*
-        Form hi = new Form("Hi World", BoxLayout.y());
-        
-        Button helloButton = new Button("Hello World", getGlobalResources().getImage(WEST));
-        hi.add(helloButton);
-        Label logo = new Label("What the fuck am I doing?");
-        
-        
-        FloatingActionButton fab = FloatingActionButton.createFAB(FontImage.MATERIAL_ADD);
-        fab.bindFabToContainer(hi);
-        fab.addActionListener(e -> addNewItem());
-        
-        helloButton.addActionListener(e -> hello());
-        hi.getToolbar().addMaterialCommandToSideMenu("Hello Command",
-        FontImage.MATERIAL_CHECK, 4, e -> hello());
-        hi.getToolbar().addMaterialCommandToSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_CIRCLE, 3, e-> hello());
-        hi.getToolbar().addMaterialCommandToSideMenu("Settings", FontImage.MATERIAL_SETTINGS, 3, e-> hello());
-        hi.getToolbar().addMaterialCommandToSideMenu("Bookings", FontImage.MATERIAL_CALENDAR_MONTH, 3, e-> hello());
-        hi.getToolbar().addMaterialCommandToSideMenu("Mindfulness", FontImage.MATERIAL_COFFEE, 3, e-> hello());
-        
-        hi.show();
-        
-        new HomePageForm().show();
-        */
+  

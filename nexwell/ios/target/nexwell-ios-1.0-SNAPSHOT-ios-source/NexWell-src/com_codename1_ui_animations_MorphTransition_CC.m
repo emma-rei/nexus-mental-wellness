@@ -146,7 +146,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_ui_animations_MorphTransition_CC(CODENAME_
 
 
 JAVA_VOID com_codename1_ui_animations_MorphTransition_CC___INIT_____com_codename1_ui_animations_MorphTransition_com_codename1_ui_Component_com_codename1_ui_Component_com_codename1_ui_Form_com_codename1_ui_Form(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4, JAVA_OBJECT __cn1Arg5) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 10197, 202);
+    DEFINE_INSTANCE_METHOD_STACK(5, 6, 0, 10196, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -202,14 +202,14 @@ JAVA_INT com_codename1_ui_animations_MorphTransition_CC_positionRelativeToScreen
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_2_ = 0; /* yAxis */
-    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 10197, 10198);
+    DEFINE_INSTANCE_METHOD_STACK(2, 5, 0, 10196, 10197);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(274);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(275);
-    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L1641107631;
+    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L148900866;
     __CN1_DEBUG_INFO(276);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getComponentForm___R_com_codename1_ui_Form(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -227,13 +227,13 @@ JAVA_INT com_codename1_ui_animations_MorphTransition_CC_positionRelativeToScreen
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(278);
-    goto label_L747595226;
+    goto label_L1179476219;
 
-label_L1641107631:
+label_L148900866:
     __CN1_DEBUG_INFO(279);
     /* VarOp.assignFrom */ ilocals_3_ = virtual_com_codename1_ui_Component_getAbsoluteX___R_int(threadStateData, locals[1].data.o);
 
-label_L747595226:
+label_L1179476219:
     __CN1_DEBUG_INFO(282);
 
 {

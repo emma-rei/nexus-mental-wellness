@@ -55,7 +55,7 @@ public class HomePageForm extends Form {
             
             
             Style mbStyle = mb.getAllStyles();
-            mbStyle.setBorder(RoundRectBorder.create());
+            mbStyle.setBorder(RoundRectBorder.create().shadowOpacity(100));
             mbStyle.setTextDecoration(Style.TEXT_DECORATION_OVERLINE);
             
             mbStyle.setMarginUnit(Style.UNIT_TYPE_DIPS);
@@ -65,10 +65,10 @@ public class HomePageForm extends Form {
             mbStyle.setPadding(3, 3, 5, 5);
             mbStyle.setAlignment(Component.TOP);
             
-            mbStyle.setOpacity(100);
             
-            //mb.getAllStyles().setBorder(RoundBorder.create().rectangle(true));
-            //mbStyle.setBorder(RoundBorder.create().rectangle(true).color(ColorUtil.rgb(170, 245, 250)).shadowOpacity(100).opacity(60));
+            
+            
+            
             int index = random.nextInt(quotes.length);
             
             RichTextView r = new RichTextView(quotes[index]);
@@ -76,8 +76,7 @@ public class HomePageForm extends Form {
             r.setUIID("HalfPaddedContainer");
             
             
-            //mb.getAllStyles().setBackgroundGradientStartColor(ColorUtil.rgb(43, 196, 153));
-            //mb.getAllStyles().setBackgroundGradientEndColor(ColorUtil.rgb(135, 255, 243));
+            
             
             mb.setText(r.getText());
             cnt.add( mb);

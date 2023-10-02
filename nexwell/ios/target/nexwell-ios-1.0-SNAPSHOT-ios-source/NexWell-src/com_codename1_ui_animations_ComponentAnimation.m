@@ -74,7 +74,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_ui_animations_ComponentAnimation(CODENAME_
 
 
 JAVA_VOID com_codename1_ui_animations_ComponentAnimation___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2786, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 2785, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(37);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(40);
@@ -98,7 +98,7 @@ JAVA_BOOLEAN com_codename1_ui_animations_ComponentAnimation_isStepModeSupported_
 
 JAVA_VOID com_codename1_ui_animations_ComponentAnimation_setStep___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* step */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2786, 2789);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 2785, 2788);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(70);
     set_field_com_codename1_ui_animations_ComponentAnimation_step(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -114,7 +114,7 @@ JAVA_INT com_codename1_ui_animations_ComponentAnimation_getStep___R_int(CODENAME
 
 
 JAVA_INT com_codename1_ui_animations_ComponentAnimation_getMaxSteps___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2786, 2791);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 2785, 2790);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(82);
     PUSH_INT(100);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
@@ -132,33 +132,33 @@ JAVA_VOID com_codename1_ui_animations_ComponentAnimation_updateState__(CODENAME_
 
 
 JAVA_VOID com_codename1_ui_animations_ComponentAnimation_updateAnimationState__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 2786, 2794);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL24956979101;
-    int tryBlockOffsetL24956979101;
-    DEFINE_CATCH_BLOCK(catch_L24956979101, label_L341985996, restoreToL24956979101);
-    int restoreToL34198599602;
-    int tryBlockOffsetL34198599602;
-    DEFINE_CATCH_BLOCK(catch_L34198599602, label_L341985996, restoreToL34198599602);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 2785, 2793);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL26529620901;
+    int tryBlockOffsetL26529620901;
+    DEFINE_CATCH_BLOCK(catch_L26529620901, label_L504672873, restoreToL26529620901);
+    int restoreToL50467287302;
+    int tryBlockOffsetL50467287302;
+    DEFINE_CATCH_BLOCK(catch_L50467287302, label_L504672873, restoreToL50467287302);
     __CN1_DEBUG_INFO(100);
     virtual_com_codename1_ui_animations_ComponentAnimation_updateState__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(101);
-    if (virtual_com_codename1_ui_animations_ComponentAnimation_isInProgress___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L460212065, 0);
+    if (virtual_com_codename1_ui_animations_ComponentAnimation_isInProgress___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L1750350389, 0);
     __CN1_DEBUG_INFO(102);
-    if (get_field_com_codename1_ui_animations_ComponentAnimation_completed(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L256192809, 0);
+    if (get_field_com_codename1_ui_animations_ComponentAnimation_completed(__cn1ThisObject)!=0) /* IFNE CustomJump */ JUMP_TO(label_L483012253, 0);
     __CN1_DEBUG_INFO(103);
     set_field_com_codename1_ui_animations_ComponentAnimation_completed(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(104);
-    if (get_field_com_codename1_ui_animations_ComponentAnimation_notifyLock(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L6565574, 0);
+    if (get_field_com_codename1_ui_animations_ComponentAnimation_notifyLock(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L2010366935, 0);
     __CN1_DEBUG_INFO(105);
     PUSH_POINTER(get_field_com_codename1_ui_animations_ComponentAnimation_notifyLock(__cn1ThisObject));
     BC_DUP(); /* DUP */
     BC_ASTORE(1);
     monitorEnter(threadStateData, POP_OBJ());
 
-label_L249569791:
- tryBlockOffsetL24956979101 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L24956979101);
-    restoreToL24956979101 = threadStateData->threadObjectStackOffset;
+label_L265296209:
+ tryBlockOffsetL26529620901 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L26529620901);
+    restoreToL26529620901 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(106);
     virtual_java_lang_Object_notify__(threadStateData, get_field_com_codename1_ui_animations_ComponentAnimation_notifyLock(__cn1ThisObject)); 
@@ -166,48 +166,48 @@ label_L249569791:
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L731032740:
-END_TRY(1);    JUMP_TO(label_L6565574, 0);
+label_L1773085261:
+END_TRY(1);    JUMP_TO(label_L2010366935, 0);
 
-label_L341985996:
- tryBlockOffsetL34198599602 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(0, catch_L34198599602);
-    restoreToL34198599602 = threadStateData->threadObjectStackOffset;
+label_L504672873:
+ tryBlockOffsetL50467287302 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(0, catch_L50467287302);
+    restoreToL50467287302 = threadStateData->threadObjectStackOffset;
 
     BC_ASTORE(2);
     BC_ALOAD(1);
     monitorExit(threadStateData, POP_OBJ());
 
-label_L199097599:
+label_L809656078:
 END_TRY(1);    BC_ALOAD(2);
     throwException(threadStateData, POP_OBJ());
 
-label_L6565574:
+label_L2010366935:
     __CN1_DEBUG_INFO(109);
-    if (get_field_com_codename1_ui_animations_ComponentAnimation_onCompletion(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L106311724, 0);
+    if (get_field_com_codename1_ui_animations_ComponentAnimation_onCompletion(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L1290772670, 0);
     __CN1_DEBUG_INFO(110);
     virtual_java_lang_Runnable_run__(threadStateData, get_field_com_codename1_ui_animations_ComponentAnimation_onCompletion(__cn1ThisObject)); 
 
-label_L106311724:
+label_L1290772670:
     __CN1_DEBUG_INFO(112);
-    if (get_field_com_codename1_ui_animations_ComponentAnimation_post(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L256192809, 0);
+    if (get_field_com_codename1_ui_animations_ComponentAnimation_post(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L483012253, 0);
     __CN1_DEBUG_INFO(113);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_java_util_ArrayList_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_ui_animations_ComponentAnimation_post(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;
-label_L1233162869:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1869228744, 0);
+label_L1213257323:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L94617220, 0);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(114);
     virtual_java_lang_Runnable_run__(threadStateData, locals[2].data.o); 
     __CN1_DEBUG_INFO(115);
-    JUMP_TO(label_L1233162869, 0);
+    JUMP_TO(label_L1213257323, 0);
 
-label_L1869228744:
-    JUMP_TO(label_L256192809, 0);
+label_L94617220:
+    JUMP_TO(label_L483012253, 0);
 
-label_L460212065:
+label_L1750350389:
     __CN1_DEBUG_INFO(120);
     set_field_com_codename1_ui_animations_ComponentAnimation_completed(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
 
-label_L256192809:
+label_L483012253:
     __CN1_DEBUG_INFO(122);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
@@ -220,18 +220,18 @@ JAVA_VOID com_codename1_ui_animations_ComponentAnimation_flush__(CODENAME_ONE_TH
 
 
 JAVA_VOID com_codename1_ui_animations_ComponentAnimation_setNotifyLock___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 2786, 2795);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 2785, 2794);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(136);
-    if (get_field_com_codename1_ui_animations_ComponentAnimation_notifyLock(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1756600221;
+    if (get_field_com_codename1_ui_animations_ComponentAnimation_notifyLock(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L569670093;
     __CN1_DEBUG_INFO(137);
     PUSH_POINTER(__NEW_java_lang_RuntimeException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2796));     SP -= 1;
+    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2795));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L1756600221:
+label_L569670093:
     __CN1_DEBUG_INFO(139);
     set_field_com_codename1_ui_animations_ComponentAnimation_notifyLock(threadStateData, locals[1].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(140);
@@ -241,18 +241,18 @@ label_L1756600221:
 
 
 JAVA_VOID com_codename1_ui_animations_ComponentAnimation_setOnCompletion___java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 2786, 2797);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 2785, 2796);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(149);
-    if (get_field_com_codename1_ui_animations_ComponentAnimation_onCompletion(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1607671287;
+    if (get_field_com_codename1_ui_animations_ComponentAnimation_onCompletion(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L271570717;
     __CN1_DEBUG_INFO(150);
     PUSH_POINTER(__NEW_java_lang_RuntimeException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2798));     SP -= 1;
+    /* CustomInvoke */java_lang_RuntimeException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(2797));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L1607671287:
+label_L271570717:
     __CN1_DEBUG_INFO(152);
     set_field_com_codename1_ui_animations_ComponentAnimation_onCompletion(threadStateData, locals[1].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(153);

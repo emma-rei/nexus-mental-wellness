@@ -214,7 +214,7 @@ com_codename1_ui_CheckBox___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_ui_CheckBox___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6821, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6820, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(60);
@@ -226,9 +226,9 @@ JAVA_VOID com_codename1_ui_CheckBox___INIT_____java_lang_String(CODENAME_ONE_THR
 
 
 JAVA_VOID com_codename1_ui_CheckBox___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6821, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6820, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(67);
-    /* CustomInvoke */com_codename1_ui_CheckBox___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(220)); 
+    /* CustomInvoke */com_codename1_ui_CheckBox___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(219)); 
     __CN1_DEBUG_INFO(68);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -236,11 +236,11 @@ JAVA_VOID com_codename1_ui_CheckBox___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_O
 
 
 JAVA_VOID com_codename1_ui_CheckBox___INIT_____com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6821, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6820, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(76);
-    /* CustomInvoke */com_codename1_ui_CheckBox___INIT_____java_lang_String_com_codename1_ui_Image(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(220), locals[1].data.o); 
+    /* CustomInvoke */com_codename1_ui_CheckBox___INIT_____java_lang_String_com_codename1_ui_Image(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(219), locals[1].data.o); 
     __CN1_DEBUG_INFO(77);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -248,7 +248,7 @@ JAVA_VOID com_codename1_ui_CheckBox___INIT_____com_codename1_ui_Image(CODENAME_O
 
 
 JAVA_VOID com_codename1_ui_CheckBox___INIT_____java_lang_String_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6821, 202);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6820, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -260,7 +260,7 @@ JAVA_VOID com_codename1_ui_CheckBox___INIT_____java_lang_String_com_codename1_ui
     __CN1_DEBUG_INFO(51);
     set_field_com_codename1_ui_CheckBox_bindListeners(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
     __CN1_DEBUG_INFO(87);
-    /* CustomInvoke */virtual_com_codename1_ui_CheckBox_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(3034)); 
+    /* CustomInvoke */virtual_com_codename1_ui_CheckBox_setUIID___java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(3033)); 
     __CN1_DEBUG_INFO(88);
     com_codename1_ui_CheckBox_updateSide__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(89);
@@ -270,7 +270,7 @@ JAVA_VOID com_codename1_ui_CheckBox___INIT_____java_lang_String_com_codename1_ui
 
 
 JAVA_BOOLEAN com_codename1_ui_CheckBox_isSelected___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6821, 3030);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6820, 3029);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(98);
 
 {
@@ -283,26 +283,26 @@ JAVA_BOOLEAN com_codename1_ui_CheckBox_isSelected___R_boolean(CODENAME_ONE_THREA
 JAVA_VOID com_codename1_ui_CheckBox_setSelected___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_1_ = 0; /* selected */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6821, 4284);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 6820, 4283);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(107);
-    if (ilocals_1_==get_field_com_codename1_ui_CheckBox_selected(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L561227586;
+    if (ilocals_1_==get_field_com_codename1_ui_CheckBox_selected(__cn1ThisObject)) /* IF_ICMPEQ CustomJump */ goto label_L1938377818;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1886186662;
+    goto label_L1989719972;
 
-label_L561227586:
+label_L1938377818:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1886186662:
+label_L1989719972:
     BC_ISTORE(2);
     __CN1_DEBUG_INFO(108);
     set_field_com_codename1_ui_CheckBox_selected(threadStateData, ilocals_1_, __cn1ThisObject);
     __CN1_DEBUG_INFO(109);
-    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L2137205195;
+    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L2057104863;
     __CN1_DEBUG_INFO(110);
     com_codename1_ui_CheckBox_fireChangeEvent__(threadStateData, __cn1ThisObject); 
 
-label_L2137205195:
+label_L2057104863:
     __CN1_DEBUG_INFO(112);
     virtual_com_codename1_ui_CheckBox_repaint__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(113);
@@ -314,19 +314,19 @@ label_L2137205195:
 JAVA_VOID com_codename1_ui_CheckBox_released___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6821, 3029);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6820, 3028);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(119);
     BC_ALOAD(0);
-    if (virtual_com_codename1_ui_CheckBox_isSelected___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1266759621;
+    if (virtual_com_codename1_ui_CheckBox_isSelected___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L672493939;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L2012528704;
+    goto label_L298259383;
 
-label_L1266759621:
+label_L672493939:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L2012528704:
+label_L298259383:
     virtual_com_codename1_ui_CheckBox_setSelected___boolean(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
     __CN1_DEBUG_INFO(120);
     /* CustomInvoke */com_codename1_ui_Button_released___int_int(threadStateData, __cn1ThisObject, ilocals_1_, ilocals_2_); 
@@ -339,24 +339,24 @@ label_L2012528704:
 JAVA_VOID com_codename1_ui_CheckBox_fireActionEvent___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6821, 2483);
+    DEFINE_INSTANCE_METHOD_STACK(5, 3, 0, 6820, 2482);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(128);
     /* CustomInvoke */com_codename1_ui_Button_fireActionEvent___int_int(threadStateData, __cn1ThisObject, ilocals_1_, ilocals_2_); 
     __CN1_DEBUG_INFO(129);
-    if (get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1617566660;
+    if (get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L575779772;
     __CN1_DEBUG_INFO(130);
-    if (virtual_com_codename1_ui_CheckBox_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L111238003;
+    if (virtual_com_codename1_ui_CheckBox_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1069436988;
     __CN1_DEBUG_INFO(131);
-    /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireBindTargetChange___com_codename1_ui_Component_java_lang_String_java_lang_Object_java_lang_Object(threadStateData, get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject), __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4349), get_static_java_lang_Boolean_FALSE(threadStateData), get_static_java_lang_Boolean_TRUE(threadStateData)); 
-    goto label_L1617566660;
+    /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireBindTargetChange___com_codename1_ui_Component_java_lang_String_java_lang_Object_java_lang_Object(threadStateData, get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject), __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4348), get_static_java_lang_Boolean_FALSE(threadStateData), get_static_java_lang_Boolean_TRUE(threadStateData)); 
+    goto label_L575779772;
 
-label_L111238003:
+label_L1069436988:
     __CN1_DEBUG_INFO(133);
-    /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireBindTargetChange___com_codename1_ui_Component_java_lang_String_java_lang_Object_java_lang_Object(threadStateData, get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject), __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4349), get_static_java_lang_Boolean_TRUE(threadStateData), get_static_java_lang_Boolean_FALSE(threadStateData)); 
+    /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireBindTargetChange___com_codename1_ui_Component_java_lang_String_java_lang_Object_java_lang_Object(threadStateData, get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject), __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(4348), get_static_java_lang_Boolean_TRUE(threadStateData), get_static_java_lang_Boolean_FALSE(threadStateData)); 
 
-label_L1617566660:
+label_L575779772:
     __CN1_DEBUG_INFO(136);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -364,20 +364,20 @@ label_L1617566660:
 
 
 JAVA_VOID com_codename1_ui_CheckBox_paint___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6821, 2356);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 6820, 2355);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(142);
-    if (virtual_com_codename1_ui_CheckBox_isToggle___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1155300221;
+    if (virtual_com_codename1_ui_CheckBox_isToggle___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1008934993;
     __CN1_DEBUG_INFO(143);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_CheckBox_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_getLookAndFeel___R_com_codename1_ui_plaf_LookAndFeel(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */virtual_com_codename1_ui_plaf_LookAndFeel_drawButton___com_codename1_ui_Graphics_com_codename1_ui_Button(threadStateData, SP[-1].data.o, locals[1].data.o, __cn1ThisObject);     SP -= 1;
-    goto label_L368788838;
+    goto label_L366008009;
 
-label_L1155300221:
+label_L1008934993:
     __CN1_DEBUG_INFO(145);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_CheckBox_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -385,7 +385,7 @@ label_L1155300221:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */virtual_com_codename1_ui_plaf_LookAndFeel_drawCheckBox___com_codename1_ui_Graphics_com_codename1_ui_Button(threadStateData, SP[-1].data.o, locals[1].data.o, __cn1ThisObject);     SP -= 1;
 
-label_L368788838:
+label_L366008009:
     __CN1_DEBUG_INFO(147);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -393,7 +393,7 @@ label_L368788838:
 
 
 JAVA_OBJECT com_codename1_ui_CheckBox_calcPreferredSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6821, 1857);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6820, 1856);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(153);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_CheckBox_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -407,7 +407,7 @@ JAVA_OBJECT com_codename1_ui_CheckBox_calcPreferredSize___R_com_codename1_ui_geo
 
 
 JAVA_OBJECT com_codename1_ui_CheckBox_paramString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6821, 2668);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 6820, 2667);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(160);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -417,7 +417,7 @@ JAVA_OBJECT com_codename1_ui_CheckBox_paramString___R_java_lang_String(CODENAME_
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-2].data.o, SP[-1].data.o);
     SP-=1;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6822));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6821));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___boolean_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_CheckBox_selected(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -429,7 +429,7 @@ JAVA_OBJECT com_codename1_ui_CheckBox_paramString___R_java_lang_String(CODENAME_
 
 
 JAVA_VOID com_codename1_ui_CheckBox_initComponentImpl__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6821, 2695);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6820, 2694);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(164);
     com_codename1_ui_Button_initComponentImpl__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(165);
@@ -439,22 +439,22 @@ JAVA_VOID com_codename1_ui_CheckBox_initComponentImpl__(CODENAME_ONE_THREAD_STAT
 
 
 JAVA_VOID com_codename1_ui_CheckBox_updateSide__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6821, 6823);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6820, 6822);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(168);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_CheckBox_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_R_java_lang_Boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6824));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_isThemeConstant___java_lang_String_R_java_lang_Boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(6823));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(169);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L637524006;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L984832924;
     __CN1_DEBUG_INFO(170);
     BC_ALOAD(0);
     { JAVA_INT tmpResult = virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[1].data.o);
     PUSH_INT(tmpResult); }
     set_field_com_codename1_ui_CheckBox_oppositeSide(threadStateData, POP_INT(), POP_OBJ());
 
-label_L637524006:
+label_L984832924:
     __CN1_DEBUG_INFO(172);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -463,7 +463,7 @@ label_L637524006:
 
 JAVA_VOID com_codename1_ui_CheckBox_refreshTheme___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* merge */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6821, 2674);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6820, 2673);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(178);
     /* CustomInvoke */com_codename1_ui_Button_refreshTheme___boolean(threadStateData, __cn1ThisObject, ilocals_1_); 
@@ -477,9 +477,9 @@ JAVA_VOID com_codename1_ui_CheckBox_refreshTheme___boolean(CODENAME_ONE_THREAD_S
 
 JAVA_INT com_codename1_ui_CheckBox_getAvaliableSpaceForText___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 6821, 4222);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 6820, 4221);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(183);
-    if (virtual_com_codename1_ui_CheckBox_isToggle___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L696870185;
+    if (virtual_com_codename1_ui_CheckBox_isToggle___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L2000802630;
     __CN1_DEBUG_INFO(184);
 
 {
@@ -487,7 +487,7 @@ JAVA_INT com_codename1_ui_CheckBox_getAvaliableSpaceForText___R_int(CODENAME_ONE
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L696870185:
+label_L2000802630:
     __CN1_DEBUG_INFO(186);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_CheckBox_getUIManager___R_com_codename1_ui_plaf_UIManager(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -497,19 +497,19 @@ label_L696870185:
     __CN1_DEBUG_INFO(187);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_plaf_DefaultLookAndFeel);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L237630710;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1380271191;
     __CN1_DEBUG_INFO(188);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_plaf_DefaultLookAndFeel_getCheckBoxImages___R_com_codename1_ui_Image_1ARRAY(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(189);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L237630710;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1380271191;
     __CN1_DEBUG_INFO(190);
-    if (virtual_com_codename1_ui_CheckBox_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1102463008;
+    if (virtual_com_codename1_ui_CheckBox_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1093707336;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L441683672;
+    goto label_L1644128841;
 
-label_L1102463008:
+label_L1093707336:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L441683672:
+label_L1644128841:
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(191);
     { JAVA_INT tmpResult = com_codename1_ui_Button_getAvaliableSpaceForText___R_int(threadStateData, __cn1ThisObject);
@@ -519,7 +519,7 @@ label_L441683672:
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L237630710:
+label_L1380271191:
     __CN1_DEBUG_INFO(194);
     { JAVA_INT tmpResult = com_codename1_ui_Button_getAvaliableSpaceForText___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
@@ -534,7 +534,7 @@ label_L237630710:
 
 
 JAVA_BOOLEAN com_codename1_ui_CheckBox_isOppositeSide___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6821, 3037);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 6820, 3036);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(203);
 
 {
@@ -560,15 +560,15 @@ JAVA_OBJECT com_codename1_ui_CheckBox_getBindablePropertyTypes___R_java_lang_Cla
 
 
 JAVA_VOID com_codename1_ui_CheckBox_bindProperty___java_lang_String_com_codename1_cloud_BindTarget(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6821, 2761);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6820, 2760);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(233);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4349))==0) /* IFEQ CustomJump */ goto label_L2022768790;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4348))==0) /* IFEQ CustomJump */ goto label_L417160915;
     __CN1_DEBUG_INFO(234);
-    if (get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L970900790;
+    if (get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1614992995;
     __CN1_DEBUG_INFO(235);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_util_EventDispatcher(threadStateData)); /* NEW */
@@ -577,14 +577,14 @@ JAVA_VOID com_codename1_ui_CheckBox_bindProperty___java_lang_String_com_codename
     set_field_com_codename1_ui_CheckBox_bindListeners(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L970900790:
+label_L1614992995:
     __CN1_DEBUG_INFO(237);
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_addListener___java_lang_Object(threadStateData, get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject), locals[2].data.o); 
     __CN1_DEBUG_INFO(238);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L2022768790:
+label_L417160915:
     __CN1_DEBUG_INFO(240);
     /* CustomInvoke */com_codename1_ui_Button_bindProperty___java_lang_String_com_codename1_cloud_BindTarget(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(241);
@@ -594,33 +594,33 @@ label_L2022768790:
 
 
 JAVA_VOID com_codename1_ui_CheckBox_unbindProperty___java_lang_String_com_codename1_cloud_BindTarget(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6821, 2762);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6820, 2761);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(247);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4349))==0) /* IFEQ CustomJump */ goto label_L1243227501;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4348))==0) /* IFEQ CustomJump */ goto label_L604257989;
     __CN1_DEBUG_INFO(248);
-    if (get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1287215032;
+    if (get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1043576110;
     __CN1_DEBUG_INFO(249);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1287215032:
+label_L1043576110:
     __CN1_DEBUG_INFO(251);
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_removeListener___java_lang_Object(threadStateData, get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject), locals[2].data.o); 
     __CN1_DEBUG_INFO(252);
-    if (virtual_com_codename1_ui_util_EventDispatcher_hasListeners___R_boolean(threadStateData, get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1021082377;
+    if (virtual_com_codename1_ui_util_EventDispatcher_hasListeners___R_boolean(threadStateData, get_field_com_codename1_ui_CheckBox_bindListeners(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1282035709;
     __CN1_DEBUG_INFO(253);
     set_field_com_codename1_ui_CheckBox_bindListeners(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L1021082377:
+label_L1282035709:
     __CN1_DEBUG_INFO(255);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1243227501:
+label_L604257989:
     __CN1_DEBUG_INFO(257);
     /* CustomInvoke */com_codename1_ui_Button_unbindProperty___java_lang_String_com_codename1_cloud_BindTarget(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(258);
@@ -630,13 +630,13 @@ label_L1243227501:
 
 
 JAVA_OBJECT com_codename1_ui_CheckBox_getBoundPropertyValue___java_lang_String_R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6821, 2763);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 6820, 2762);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(264);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4349))==0) /* IFEQ CustomJump */ goto label_L1935994577;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4348))==0) /* IFEQ CustomJump */ goto label_L988637661;
     __CN1_DEBUG_INFO(265);
-    if (virtual_com_codename1_ui_CheckBox_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1749978269;
+    if (virtual_com_codename1_ui_CheckBox_isSelected___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1058708051;
     __CN1_DEBUG_INFO(266);
 
 {
@@ -644,7 +644,7 @@ JAVA_OBJECT com_codename1_ui_CheckBox_getBoundPropertyValue___java_lang_String_R
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1749978269:
+label_L1058708051:
     __CN1_DEBUG_INFO(268);
 
 {
@@ -652,7 +652,7 @@ label_L1749978269:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1935994577:
+label_L988637661:
     __CN1_DEBUG_INFO(270);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = com_codename1_ui_Button_getBoundPropertyValue___java_lang_String_R_java_lang_Object(threadStateData, __cn1ThisObject, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -662,30 +662,30 @@ label_L1935994577:
 
 
 JAVA_VOID com_codename1_ui_CheckBox_setBoundPropertyValue___java_lang_String_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6821, 2764);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 6820, 2763);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(277);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4349))==0) /* IFEQ CustomJump */ goto label_L1858863803;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4348))==0) /* IFEQ CustomJump */ goto label_L480498267;
     __CN1_DEBUG_INFO(278);
     BC_ALOAD(0);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L831993944;
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L831993944;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L36205461;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L36205461;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1699826397;
+    goto label_L1398428044;
 
-label_L831993944:
+label_L36205461:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1699826397:
+label_L1398428044:
     virtual_com_codename1_ui_CheckBox_setSelected___boolean(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
     __CN1_DEBUG_INFO(279);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1858863803:
+label_L480498267:
     __CN1_DEBUG_INFO(281);
     /* CustomInvoke */com_codename1_ui_Button_setBoundPropertyValue___java_lang_String_java_lang_Object(threadStateData, __cn1ThisObject, locals[1].data.o, locals[2].data.o); 
     __CN1_DEBUG_INFO(282);
@@ -720,9 +720,9 @@ JAVA_VOID com_codename1_ui_CheckBox_removeChangeListeners___com_codename1_ui_eve
 
 
 JAVA_VOID com_codename1_ui_CheckBox_fireChangeEvent__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 6821, 4375);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 6820, 4374);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(355);
-    if (get_field_com_codename1_ui_CheckBox_changeListeners(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2146285461;
+    if (get_field_com_codename1_ui_CheckBox_changeListeners(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2076165631;
     __CN1_DEBUG_INFO(356);
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -731,7 +731,7 @@ JAVA_VOID com_codename1_ui_CheckBox_fireChangeEvent__(CODENAME_ONE_THREAD_STATE,
     __CN1_DEBUG_INFO(357);
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireActionEvent___com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_codename1_ui_CheckBox_changeListeners(__cn1ThisObject), locals[1].data.o); 
 
-label_L2146285461:
+label_L2076165631:
     __CN1_DEBUG_INFO(359);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

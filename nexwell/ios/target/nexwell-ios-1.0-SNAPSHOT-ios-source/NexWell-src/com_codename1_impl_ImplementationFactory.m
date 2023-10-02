@@ -42,7 +42,7 @@ com_codename1_impl_ImplementationFactory___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_codename1_impl_ImplementationFactory___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9179, 202);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 9178, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(41);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(42);
@@ -53,7 +53,7 @@ JAVA_VOID com_codename1_impl_ImplementationFactory___INIT____(CODENAME_ONE_THREA
 
 JAVA_OBJECT com_codename1_impl_ImplementationFactory_getInstance___R_com_codename1_impl_ImplementationFactory(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_codename1_impl_ImplementationFactory(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 9179, 1319);
+    DEFINE_METHOD_STACK(1, 0, 0, 9178, 1318);
     __CN1_DEBUG_INFO(50);
     PUSH_POINTER(get_static_com_codename1_impl_ImplementationFactory_instance(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -67,7 +67,7 @@ JAVA_VOID com_codename1_impl_ImplementationFactory_setInstance___com_codename1_i
 
 
 JAVA_OBJECT com_codename1_impl_ImplementationFactory_createImplementation___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9179, 9181);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9178, 9180);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(69);
     PUSH_POINTER(__NEW_com_codename1_impl_ios_IOSImplementation(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -78,7 +78,7 @@ JAVA_OBJECT com_codename1_impl_ImplementationFactory_createImplementation___R_ja
 
 
 JAVA_VOID com_codename1_impl_ImplementationFactory___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(2, 0, 0, 9179, 860);
+    DEFINE_METHOD_STACK(2, 0, 0, 9178, 859);
     __CN1_DEBUG_INFO(36);
     PUSH_POINTER(__NEW_com_codename1_impl_ImplementationFactory(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */

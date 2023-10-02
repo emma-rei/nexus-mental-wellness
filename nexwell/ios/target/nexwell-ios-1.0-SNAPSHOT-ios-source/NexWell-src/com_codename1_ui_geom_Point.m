@@ -53,7 +53,7 @@ JAVA_OBJECT __NEW_ARRAY_com_codename1_ui_geom_Point(CODENAME_ONE_THREAD_STATE, J
 JAVA_VOID com_codename1_ui_geom_Point___INIT_____int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10402, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10579, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(39);
@@ -69,7 +69,7 @@ JAVA_VOID com_codename1_ui_geom_Point___INIT_____int_int(CODENAME_ONE_THREAD_STA
 
 
 JAVA_INT com_codename1_ui_geom_Point_getX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10402, 2403);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10579, 2402);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(49);
 
 {
@@ -80,7 +80,7 @@ JAVA_INT com_codename1_ui_geom_Point_getX___R_int(CODENAME_ONE_THREAD_STATE, JAV
 
 
 JAVA_INT com_codename1_ui_geom_Point_getY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10402, 2406);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10579, 2405);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(57);
 
 {
@@ -92,7 +92,7 @@ JAVA_INT com_codename1_ui_geom_Point_getY___R_int(CODENAME_ONE_THREAD_STATE, JAV
 
 JAVA_VOID com_codename1_ui_geom_Point_setX___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10402, 2424);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10579, 2423);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(65);
     set_field_com_codename1_ui_geom_Point_x(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -104,7 +104,7 @@ JAVA_VOID com_codename1_ui_geom_Point_setX___int(CODENAME_ONE_THREAD_STATE, JAVA
 
 JAVA_VOID com_codename1_ui_geom_Point_setY___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10402, 2425);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10579, 2424);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(73);
     set_field_com_codename1_ui_geom_Point_y(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -115,14 +115,14 @@ JAVA_VOID com_codename1_ui_geom_Point_setY___int(CODENAME_ONE_THREAD_STATE, JAVA
 
 
 JAVA_OBJECT com_codename1_ui_geom_Point_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10402, 896);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10579, 895);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(80);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_geom_Point_x(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1206));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(1205));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_codename1_ui_geom_Point_y(__cn1ThisObject));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
