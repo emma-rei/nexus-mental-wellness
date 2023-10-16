@@ -1,42 +1,35 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.nexus.nexwell.forms;
 
 import com.codename1.components.MultiButton;
 import static com.codename1.ui.CN.*;
 import static com.codename1.ui.Component.CENTER;
 import static com.codename1.ui.Component.TOP;
-import com.codename1.ui.Container;
-import com.codename1.ui.Dialog;
-import com.codename1.ui.FontImage;
-import com.codename1.ui.Form;
-import com.codename1.ui.Toolbar;
+import com.nexus.nexwell.components.Colors;
+import com.codename1.ui.*;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.plaf.RoundRectBorder;
+import com.codename1.ui.plaf.Style;
 import com.codename1.ui.util.SwipeBackSupport;
 import com.nexus.nexwell.forms.MainForm;
 import java.util.HashMap;
+import java.util.Map;
 
-/**
- *
- * @author kazybekkhairulla
- */
 public class EmergencyHelpForm extends Form{
     public EmergencyHelpForm(){
-        Form hi = new Form("Emergency Help", new BorderLayout());
-        Toolbar tb = new Toolbar();
-        hi.setToolbar(tb);
+        super("", new BorderLayout());
+        //Toolbar tb = new Toolbar();
+        //setToolbar(tb);
         Container cnt = new Container(BoxLayout.y());
-        
+
         cnt.setScrollableY(true);
         Form previous = getCurrentForm();
-        
-        hi.getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, e -> previous.showBack());
-        
-        
-        
+
+        //getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, e -> previous.showBack());
+
+
+
         HashMap<String, String> PhoneBook = new HashMap<String, String>();
         PhoneBook.put("Daniel Tan", "92793403");
         PhoneBook.put("Lori Ecran", "94894394");
@@ -53,26 +46,66 @@ public class EmergencyHelpForm extends Form{
         PhoneBook.put("HELP123 by TOUCH Youth Integrated Team", "1800-6123-123");
         PhoneBook.put("Singapore Association for Mental Health (SAMH)", "1800-283-7019");
         PhoneBook.put("PAVE: Individual or Family Protection", "1800-353-5800");
-        MultiButton twoLinesIconEmblemHorizontal = new MultiButton("Icon + Emblem");
-        /*
-        twoLinesIconEmblemHorizontal.setIcon(icon);
-        twoLinesIconEmblemHorizontal.setEmblem(emblem);
-        twoLinesIconEmblemHorizontal.setTextLine2("Line 2 Horizontal");
-        twoLinesIconEmblemHorizontal.setHorizontalLayout(true);
-        */
-        
-        for (String i : PhoneBook.keySet()){
-            MultiButton mb = new MultiButton(i);
-            mb.setMaterialIcon(FontImage.MATERIAL_PERSON, TOP); 
-            String call = "Are you sure you want to call " + i+"?";
-            
-            mb.addActionListener(e -> Dialog.show("Confirm Call", call, "Call", "Cancel"));
+
+
+        // Keoni's design of Emergency Help form, follows a specific color pattern
+        // pattern is 12, 23, 31
+        // 1 = pink, 2 = cyan, 3 = blue
+        // Implementating same structure using array of int color values
+        int[] colorArr = {
+                Colors.PINK,
+                Colors.CYAN,
+                Colors.BLUE
+        };
+        int colorIndex = 0;
+        for (Map.Entry<String, String> set : PhoneBook.entrySet()){
+
+            MultiButton mb = new MultiButton(set.getKey());
+            mb.setTextLine2(set.getValue());
+            mb.addActionListener(e-> Call_Function(set.getKey(),set.getValue()));
+
+
+
+
+            mb.setUIID("SpanLabel");
+            mb.setUIIDLine1("WhiteText");
+            if (colorIndex == 2){
+                colorIndex = colorIndex % 2;
+            }
+            mb.getAllStyles().setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
+            mb.setGap(1);
+            mb.getAllStyles().setBackgroundGradientStartColor(colorArr[colorIndex]);
+            colorIndex++;
+            mb.getAllStyles().setBackgroundGradientEndColor(colorArr[colorIndex]);
+
+
+
+
+            if(set.getKey().contains("Counsellor")){
+                FontImage.setMaterialIcon(mb,FontImage.MATERIAL_PERSON);
+
+            }else {
+                FontImage.setMaterialIcon(mb,FontImage.MATERIAL_CALL);
+
+            }
+
+
             cnt.add(mb);
-            
+
         }
-        hi.add(CENTER, cnt);
-        hi.show();
+
+
+
+
+        add(CENTER, cnt);
+
     }
-    
+    private void Call_Function(String name,String number){
+        if(Dialog.show("Confirm call","Are you sure you want to call "+number +"? (" + name+")" +"."+" After" +
+                " midnight, interactive voice recording directs callers to 24 hour helpline).", "Call", "Cancel")){
+            Display.getInstance().dial(number);
+
+        }
+    }
 }
 

@@ -1,6 +1,8 @@
+/Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/forms/MusicForm.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/games/SnakeGameApp.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/satisfyingvisuals/Ant.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/satisfyingvisuals/ChaosGame.java
+/Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/components/ArcProgress.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/forms/AccountForm.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/forms/PomodoroTimer.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/homepage/Todo.java
@@ -8,6 +10,8 @@
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/forms/EmergencyHelpForm.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/models/User.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/server/ServerAPI.java
+/Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/forms/WebsiteForm.java
+/Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/components/Colors.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/games/GameOfLifeForm.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/components/Pomodoro.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/forms/LoginForm.java
@@ -25,5 +29,8 @@
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/forms/GamesContainer.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/components/RichTextView.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/UIUtils.java
+/Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/components/CircleProgress.java
+/Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/components/CircleFilledProgress.java
+/Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/components/BaseRoundProgress.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/homepage/UIController.java
 /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/java/com/nexus/nexwell/satisfyingvisuals/Bubble.java

@@ -1,40 +1,77 @@
-
 package com.nexus.nexwell.forms;
 
-
-import com.codename1.components.MultiButton;
+import java.util.Random;
+import com.codename1.components.SpanLabel;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BoxLayout;
-import com.codename1.ui.layouts.FlowLayout;
-import java.util.Stack;
+import com.codename1.ui.plaf.RoundRectBorder;
+import com.codename1.ui.plaf.Style;
+import com.nexus.nexwell.components.RichTextView;
+import java.util.HashMap;
 
 public class HomePageForm extends Form {
     
     public HomePageForm(){
-        super("", new BoxLayout(BoxLayout.Y_AXIS));
+        super("");
         
-        Container cnt = new Container(BoxLayout.x());
-        cnt.setScrollableX(true);
-        Stack<SwipeableContainer> frontStack = new Stack();
-        Stack<SwipeableContainer> backStack = new Stack();
-        /*
-        frontStack.push(createWidget("Tip of the day","You must always do what you're supposed to"));
-        frontStack.push(createWidget("Quote of the Day", "Creating values isn't only about you"));
-        frontStack.push(createWidget("Study tip", "Focus is like a cognitive athletics, if you practice it, you will get better"));
-        for (int i = 0; i<frontStack.size(); i++){
+        setLayout(new BoxLayout(BoxLayout.Y_AXIS)); 
+        Container cnt = new Container();
+        cnt.setUIID("HalfPaddedContainer");
+        
+        
+        // 0 = pink, 1 = cyan, 2 = blue,  
+        // the pattern is 12, 23, 31
+        // HashMap will be used for list of quotes in which quotes and the auther is stored
+        // If no author, leave it at ""
+        HashMap<String, String> quotesList = new HashMap<String, String>();
+        String[] quotes = {
+            "There is a difference between passion and obsession",
+            "It's all on you, the self part that is big",
+            "It's okay not to be okay"
+        };
+        Random random = new Random();
+        
             
-            cnt.addComponent(frontStack.get(i));
-        }
+       
+        for (int i = 0; i<quotes.length; i++){
+            SpanLabel mb = new SpanLabel();
+            
+            mb.setUIID("SpanLabel");
+            
+            
+            
+            
+            Style mbStyle = mb.getAllStyles();
+            mbStyle.setBorder(RoundRectBorder.create().shadowOpacity(100));
+            mbStyle.setTextDecoration(Style.TEXT_DECORATION_OVERLINE);
+            
+            mbStyle.setMarginUnit(Style.UNIT_TYPE_DIPS);
+            mbStyle.setPaddingUnit(Style.UNIT_TYPE_DIPS);
+            
+            mbStyle.setMargin(4, 3, 3, 3);
+            mbStyle.setPadding(3, 3, 5, 5);
+            mbStyle.setAlignment(Component.TOP);
+            
+            
+            
+            
+            
+            int index = random.nextInt(quotes.length);
+            
+            RichTextView r = new RichTextView(quotes[index]);
+            
+            r.setUIID("HalfPaddedContainer");
+            
+            
+            
+            
+            mb.setText(r.getText());
+            cnt.add( mb);
+        }    
+        add(BoxLayout.encloseYCenter(cnt));
         
+        add (BoxLayout.encloseYCenter(new Label("Health Hub Singapore")));
         
-        addComponent(createWidget("Tip of the day","You must always do what you're supposed to"));
-        addComponent(createWidget("Tip of the day","You must always do what you're supposed to"));
-        addComponent(createWidget("Tip of the day","You must always do what you're supposed to"));
-        addComponent(createWidget("Tip of the day","You must always do what you're supposed to"));
-        
-        
-        */
-        // For now just create a multibutton
         
         
         
@@ -42,11 +79,5 @@ public class HomePageForm extends Form {
         
     }
     
-    public SwipeableContainer createWidget(String title, String content){
-        MultiButton button = new MultiButton(title);
-        button.setTextLine2(content);
-        return new SwipeableContainer(BoxLayout.encloseX(button),button);
-        
-    }
     
-}
+}   

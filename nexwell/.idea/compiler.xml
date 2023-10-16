@@ -6,12 +6,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="nexwell-javase" />
-        <module name="nexwell-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="nexwell" target="8" />
+      <module name="nexwell" target="1.8" />
       <module name="nexwell-common" target="1.8" />
       <module name="nexwell-javase" target="1.8" />
     </bytecodeTargetLevel>
