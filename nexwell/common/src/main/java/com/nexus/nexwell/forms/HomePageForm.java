@@ -7,6 +7,7 @@ import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.plaf.RoundRectBorder;
 import com.codename1.ui.plaf.Style;
 import com.nexus.nexwell.components.RichTextView;
+import com.nexus.nexwell.homepage.ContentFeed;
 import java.util.HashMap;
 
 public class HomePageForm extends Form {
@@ -23,17 +24,11 @@ public class HomePageForm extends Form {
         // the pattern is 12, 23, 31
         // HashMap will be used for list of quotes in which quotes and the auther is stored
         // If no author, leave it at ""
-        HashMap<String, String> quotesList = new HashMap<String, String>();
-        String[] quotes = {
-            "There is a difference between passion and obsession",
-            "It's all on you, the self part that is big",
-            "It's okay not to be okay"
-        };
-        Random random = new Random();
+        
         
             
        
-        for (int i = 0; i<quotes.length; i++){
+        for (int i = 0; i<4; i++){
             SpanLabel mb = new SpanLabel();
             
             mb.setUIID("SpanLabel");
@@ -56,9 +51,9 @@ public class HomePageForm extends Form {
             
             
             
-            int index = random.nextInt(quotes.length);
             
-            RichTextView r = new RichTextView(quotes[index]);
+            
+            RichTextView r = new RichTextView(ContentFeed.getRandomQuote());
             
             r.setUIID("HalfPaddedContainer");
             

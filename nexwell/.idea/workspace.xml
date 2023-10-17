@@ -5,37 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="336d32c5-6f4b-4a8f-b637-9fea310958e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/css/img/Black/Search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/ArcProgress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/BaseRoundProgress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/CircleFilledProgress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/CircleProgress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/Colors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/MusicForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/WebsiteForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nexwell.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/css/img/nexus-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/AccountForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/AccountForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/EmergencyHelpForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/EmergencyHelpForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/GamesContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/GamesContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/HomePageForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/HomePageForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/MainForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/PomodoroTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/PomodoroTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/.cn1_css_checksums" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/.cn1_css_checksums" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/classes/theme.res" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/classes/theme.res" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/codenameone/simulator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/codenameone/simulator.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/css/theme.css.checksums" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/css/theme.css.checksums" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
