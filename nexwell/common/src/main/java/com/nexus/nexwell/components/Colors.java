@@ -2,6 +2,7 @@
 package com.nexus.nexwell.components;
 
 import com.codename1.charts.util.ColorUtil;
+import com.codename1.ui.FontImage;
 
 
 public class Colors {
@@ -13,6 +14,11 @@ public class Colors {
     public static final int LIGHT_GREEN = ColorUtil.rgb(148, 251, 168);
     public static final int REGBLUE = ColorUtil.rgb(78, 138, 243);
     public static final int PEACH = ColorUtil.rgb(235, 76, 132);
+    public static final char HOMEICON = FontImage.MATERIAL_HOME;
+    public static final char LIBRARYICON = FontImage.MATERIAL_LIBRARY_ADD;
+    public static final char GAMESICON = FontImage.MATERIAL_GAMES;
+    public static final char HEADPHONESICON = FontImage.MATERIAL_HEADPHONES;
+    public static final char EMERGENCYICON = FontImage.MATERIAL_CONTACT_EMERGENCY;
     
     
 }

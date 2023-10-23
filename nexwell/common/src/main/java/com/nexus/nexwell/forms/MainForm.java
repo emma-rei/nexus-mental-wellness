@@ -20,6 +20,7 @@ import com.codename1.ui.geom.Dimension;
 
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.plaf.Style;
 import com.codename1.ui.plaf.UIManager;
 import static com.codename1.ui.util.Resources.getGlobalResources;
 import com.nexus.nexwell.components.Colors;
@@ -41,15 +42,25 @@ public class MainForm extends Form {
         //setTitle(str);
         Toolbar.setGlobalToolbar(focusScrolling);
         
+        char[] icons = {
+            Colors.HOMEICON,
+            Colors.LIBRARYICON,
+            Colors.GAMESICON,
+            Colors.HEADPHONESICON,
+            Colors.EMERGENCYICON
+        };
         
-        
+        for (int i = 0; i<icons.length; i++){
+            
+        }
         
         mainUI.setTabPlacement(BOTTOM);
         mainUI.addTab("", FontImage.MATERIAL_HOME, 5f,  new HomePageForm());
-        mainUI.addTab("", FontImage.MATERIAL_WEB, 5f, new RichTextView());// replace e-> with new NewsFeedContainer()
-        mainUI.addTab("", FontImage.MATERIAL_GAMES, 5f, new GamesContainer());// replace e-> with new GamesContainer()
+        mainUI.addTab("", FontImage.MATERIAL_BOOK, 5f, new RichTextView());// replace e-> with new NewsFeedContainer()
+        mainUI.addTab("", FontImage.MATERIAL_GAMES, 5f, new PomodoroTimer());// replace e-> with new GamesContainer()
         mainUI.addTab("", FontImage.MATERIAL_HEADPHONES, 5f, new MusicForm());// replace e-> with new RelaxContainer()
-        mainUI.addTab("", FontImage.MATERIAL_LIBRARY_ADD, 5f, new RichTextView());// replace e-> with new ResourcesContainer()
+        mainUI.addTab("", FontImage.MATERIAL_CONTACT_EMERGENCY, 5f, new EmergencyHelpForm());// replace e-> with new ResourcesContainer()
+        
         add(CENTER, mainUI);
         Image icon = getGlobalResources().getImage("Search.png");
         Button searchButton = new Button("Search", "TitleSearch");
@@ -65,14 +76,15 @@ public class MainForm extends Form {
         */
         //Label l = new Label("Welcome Back" + ServerAPI.me().fullName());
         
-        
+        /*
         FloatingActionButton fab = FloatingActionButton.
                 createFAB(FontImage.MATERIAL_CALL);
         fab.bindFabToContainer(this);
         fab.setText("Helpline");
         fab.addActionListener(e -> new EmergencyHelpForm());
+        */
         
-        getToolbar().addMaterialCommandToOverflowMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm().show());
+        getToolbar().addMaterialCommandToOverflowMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm());
         getToolbar().addMaterialCommandToOverflowMenu("Resources",FontImage.MATERIAL_BOOKMARKS,4, e -> new PomodoroTimer().show());
         getToolbar().addMaterialCommandToOverflowMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
         getToolbar().addMaterialCommandToOverflowMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
@@ -166,7 +178,7 @@ public class MainForm extends Form {
     } 
     public void search(Button searchButton){
         mainUI.setSelectedIndex(2);
-        searchButton.addActionListener(e -> searchAction());
+        searchButton.addActionListener(e -> {});
         
         getToolbar().setTitleComponent(searchButton);
         getToolbar().addSearchCommand(e->{
@@ -194,8 +206,6 @@ public class MainForm extends Form {
         },4);
     }
         
-    public void searchAction(){
-        
-        
-    }
+
+
 }

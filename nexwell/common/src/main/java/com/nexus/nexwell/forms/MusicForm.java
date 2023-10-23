@@ -1,4 +1,3 @@
-
 package com.nexus.nexwell.forms;
 
 import com.codename1.ui.Button;
@@ -16,14 +15,14 @@ import java.util.Map;
 public class MusicForm extends Form{
     public MusicForm(){
         super("");
-        
+
         removeComponent(getTitleComponent());
         setLayout(new GridLayout(2,2));
-        
-        
-        
-        
-        
+
+
+
+
+
         HashMap<String, String> MusicLinks = new HashMap<String, String>();
         MusicLinks.put("Stress & Anxiety Detox", "https://www.youtube.com/watch?v=79kpoGF8KWU");
         MusicLinks.put("Calming & Relaxing", "https://www.youtube.com/watch?v=lFcSrYw-ARY");
@@ -34,12 +33,12 @@ public class MusicForm extends Form{
         MusicLinks.put("Release Anger","https://www.youtube.com/watch?v=biajGO7G0_M");
         MusicLinks.put("Flow Free","https://www.youtube.com/watch?v=DN5N_w6Mb-c");
         MusicLinks.put("Reprogram Your Mind", "https://www.youtube.com/watch?v=8wVtNyJN-pA");
-        
+
         int[] colorArr = {
-            Colors.LIGHT_GREEN,
-            Colors.REGBLUE,
-            Colors.PEACH,
-            
+                Colors.LIGHT_GREEN,
+                Colors.REGBLUE,
+                Colors.PEACH,
+
         };
         int colorIndex = 0;
         for (Map.Entry<String, String> set : MusicLinks.entrySet()){
@@ -54,13 +53,13 @@ public class MusicForm extends Form{
             colorIndex++;
             btnStyle.setBackgroundGradientEndColor(colorArr[colorIndex]);
             btn.addActionListener(e -> executeVideo(set.getValue()));
-            
+
             add(btn);
-            
+
         }
     }
     public void executeVideo(String value){
         Display.getInstance().execute(value);
     }
-    
+
 }

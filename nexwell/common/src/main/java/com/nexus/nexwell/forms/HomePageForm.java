@@ -1,52 +1,34 @@
-
 package com.nexus.nexwell.forms;
 
 import java.util.Random;
-import com.codename1.charts.util.ColorUtil;
-import com.codename1.components.MultiButton;
 import com.codename1.components.SpanLabel;
-import com.codename1.components.ToastBar;
-import com.codename1.io.Log;
-import com.codename1.properties.UiBinding;
-
 import com.codename1.ui.*;
-import com.codename1.ui.geom.Dimension;
-import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
-import com.codename1.ui.plaf.Border;
-import com.codename1.ui.plaf.CSSBorder;
-import com.codename1.ui.plaf.RoundBorder;
 import com.codename1.ui.plaf.RoundRectBorder;
-
-
 import com.codename1.ui.plaf.Style;
 import com.nexus.nexwell.components.RichTextView;
-import java.io.IOException;
+import com.nexus.nexwell.homepage.ContentFeed;
 import java.util.HashMap;
 
 public class HomePageForm extends Form {
     
     public HomePageForm(){
         super("");
-        setLayout(new BoxLayout(BoxLayout.Y_AXIS)); 
-        // Here is where I edit the MultiButton to the tip of the day look
-        // random should be implemented afterwards
-        Container cnt = new Container();
         
-        String[] quotes = {
-            "There is a difference between passion and obsession",
-            "It's all on you, the self part that is big",
-            "It's okay not to be okay"
-        };
+        setLayout(new BoxLayout(BoxLayout.Y_AXIS)); 
+        Container cnt = new Container();
+        cnt.setUIID("HalfPaddedContainer");
+        
+        
         // 0 = pink, 1 = cyan, 2 = blue,  
         // the pattern is 12, 23, 31
+        // HashMap will be used for list of quotes in which quotes and the auther is stored
+        // If no author, leave it at ""
         
-        
-        Random random = new Random();
         
             
        
-        for (int i = 0; i<quotes.length; i++){
+        for (int i = 0; i<4; i++){
             SpanLabel mb = new SpanLabel();
             
             mb.setUIID("SpanLabel");
@@ -69,9 +51,9 @@ public class HomePageForm extends Form {
             
             
             
-            int index = random.nextInt(quotes.length);
             
-            RichTextView r = new RichTextView(quotes[index]);
+            
+            RichTextView r = new RichTextView(ContentFeed.getRandomQuote());
             
             r.setUIID("HalfPaddedContainer");
             

@@ -1,5 +1,5 @@
 
-/* /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/javase/../common/src/main/css/theme.css */
+/* /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/css/theme.css */
 /** Define Theme Constants here */
 #Constants {
     includeNativeBool: true;
@@ -9,8 +9,8 @@
     capButtonUiids: "BlueText, GreenButton, BlueButton";
 }
 Images{
-    background-image:   url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Black/Search.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/User.svg")
+    background-image:   url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Black/Search.png")
+
                         
 }
 /** Style for Button class */
@@ -240,4 +240,4 @@ HalfPaddedContainer{
     background: transparent;
 }
 
-/* end /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/javase/../common/src/main/css/theme.css*/
+/* end /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/common/src/main/css/theme.css*/
