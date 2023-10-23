@@ -4,6 +4,8 @@
  */
 package com.nexus.nexwell.homepage;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
 
 /**
@@ -75,6 +77,24 @@ public class ContentFeed{
 
         
     };
+    public static Map<String, String> webLinks = new HashMap<>();
+    
+    static{
+        webLinks.put("Mental Well-being", "https://www.healthhub.sg/programmes/186/MindSG/About-Mental-Well-Being#home");
+        webLinks.put("Stress", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Coping-With-Stress-Adults#home ");
+        webLinks.put("Depression", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Understanding-Depression-Adults#home");
+        webLinks.put("Self-Harm", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Preventing-Self-harm-and-Suicide-Teens#home");
+        webLinks.put("Social Isolation", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Experiencing-Social-Isolation-Seniors#home");
+    }
+    
+    public static String getValueForKey(String key){
+        return webLinks.get(key);
+    }
+    
+    public static String insertKeyValue(String key, String value){
+        webLinks.put(key, value);
+        return key;
+    } 
     
     public static String getRandomQuote(){
         Random random = new Random();
