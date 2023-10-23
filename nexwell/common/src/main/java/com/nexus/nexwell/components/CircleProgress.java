@@ -98,6 +98,7 @@ public class CircleProgress extends BaseRoundProgress {
             g.setFont(style.getFont());
             g.drawString(val, x + (size + arcWidth - style.getFont().stringWidth(val))/2, y + (size - style.getFont().getHeight())/2);
         }
+        
     }
 
 

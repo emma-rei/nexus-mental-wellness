@@ -3,6 +3,8 @@ package com.nexus.nexwell.forms;
 import java.util.Random;
 import com.codename1.components.SpanLabel;
 import com.codename1.ui.*;
+import static com.codename1.ui.CN.NATIVE_ITALIC_LIGHT;
+import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.plaf.RoundRectBorder;
 import com.codename1.ui.plaf.Style;
@@ -15,10 +17,30 @@ public class HomePageForm extends Form {
     public HomePageForm(){
         super("");
         
-        setLayout(new BoxLayout(BoxLayout.Y_AXIS)); 
-        Container cnt = new Container();
+        
+        
+        
+        Container cnt = new Container(BoxLayout.y());
         cnt.setUIID("HalfPaddedContainer");
         
+        // Quote generation and pass it to richtextview
+        RichTextView r = new RichTextView(ContentFeed.getRandomQuote());
+        
+        r.setUIID("HalfPaddedContainer");
+        
+        SpanLabel quote = new SpanLabel(r.getText());
+        
+        quote.getAllStyles().setTextDecoration(Style.UNIT_TYPE_DIPS);
+        
+        quote.getTextUnselectedStyle().setFgColor(0xffffff);
+        
+        
+        cnt.add(new Label(" "));// TitleArea Space
+        cnt.add(quote);
+        
+        cnt.setSafeArea(true);
+        cnt.setCellRenderer(true);
+        add(cnt);
         
         // 0 = pink, 1 = cyan, 2 = blue,  
         // the pattern is 12, 23, 31
@@ -27,7 +49,7 @@ public class HomePageForm extends Form {
         
         
             
-       
+        /*
         for (int i = 0; i<4; i++){
             SpanLabel mb = new SpanLabel();
             
@@ -71,7 +93,7 @@ public class HomePageForm extends Form {
         
         
         
-        
+        */
     }
     
     

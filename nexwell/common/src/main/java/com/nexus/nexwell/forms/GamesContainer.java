@@ -1,48 +1,56 @@
-
 package com.nexus.nexwell.forms;
 
+import com.codename1.ui.BrowserComponent;
 import com.codename1.ui.Button;
 import com.codename1.ui.Component;
 import com.codename1.ui.Container;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
+import com.codename1.ui.Sheet;
 import com.codename1.ui.TextArea;
 import com.codename1.ui.TextField;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
-import com.codename1.ui.layouts.FlowLayout;
-import com.codename1.ui.layouts.GridLayout;
+
+import com.nexus.nexwell.homepage.ContentFeed;
+
+import com.codename1.ui.plaf.RoundBorder;
+import com.codename1.ui.plaf.Style;
 import com.codename1.ui.table.TableLayout;
 import com.nexus.nexwell.games.*;
+import java.util.Map;
+import java.util.Set;
 
-public class GamesContainer extends Form {
+public class GamesContainer extends Form{
 
-    /*
-    public GamesContainer(){
-        Button snakeButton = new Button("Snake");
-        Button gameOfLifeButton = new Button("Game of Life");
-        snakeButton.addActionListener(e -> new SnakeGameApp().start());
-        gameOfLifeButton.addActionListener(e -> new GameOfLifeForm(25).show());
-        Container buttonContainer = new Container(BoxLayout.x());
-        buttonContainer.setScrollableX(true);
-        buttonContainer.addComponent(snakeButton);
-        buttonContainer.addComponent(gameOfLifeButton);
-        buttonContainer.setVisible(true);
-
-    }
-
-    public void showContainer(){
-        new GamesContainer().showContainer();
-
-    }
-
-    */
+    
+    // This form is designed to be a test form used for different purposes
 
 
     public GamesContainer(){
-        super("");
-
-
+        super("", new BoxLayout(BoxLayout.Y_AXIS));
+        
+        // Accessing the webLinks HashMap from ContentFeed class
+        
+        Map<String, String> webLinks = ContentFeed.webLinks;
+        
+        // Iterating through the Hashmap to create buttons
+        
+        Set<Map.Entry<String, String>> entrySet = webLinks.entrySet();
+        
+        for (Map.Entry<String, String> entry: entrySet){
+            String key = entry.getKey();
+            String value = entry.getValue();
+            
+            Button btn = new Button(key);
+            btn.addActionListener(e -> new webSheet(null, value));
+            CustomButtonStyle(btn);
+            add(btn);
+        }
+        
+        
+        
+        /*
         TableLayout tl;
         int spanButton = 2;
         if (Display.getInstance().isTablet()){
@@ -71,8 +79,49 @@ public class GamesContainer extends Form {
         cn.setHorizontalSpan(spanButton);
         cn.setHorizontalAlign(Component.RIGHT);
         add("First Name").add(firstName).add("Last Name").add(lastName).add("Email").add(email).add("Phone Number").add(number).add("Credit Card").add(GridLayout.encloseIn(4, num1, num2, num3, num4)).add(cn, submit);
-
-
+        */
+        setFormBottomPaddingEditingMode(true);
     }
+    public static void CustomButtonStyle(Button button){
+        button.setUIID("GreenButton");
+        Style s = button.getAllStyles();
+        s.setBorder(RoundBorder.create().rectangle(true).color(999999));
+        s.setMarginUnit(Style.UNIT_TYPE_DIPS);
+    }
+    
+    
+    private void openBrowser(String url){
+        Form hi = new Form("Browser", new BorderLayout());
+        
+        
+    }
+    
+    private class webSheet extends Sheet{
+        
+        webSheet(Sheet parent, String url) {
+            super(parent, "sheet 2");
+            Container cnt = getContentPane();
+            cnt.setLayout(BoxLayout.y());
+            cnt.setScrollableY(true);
+            
+            BrowserComponent browser = new BrowserComponent();
+            browser.setURL(url);
+            
+            
+        }
+        
+    }
+    /*
+    private class webSheet2 extends Sheet{
+        
 
+        webSheet2(Sheet parent, String title) {
+            super(parent, title);
+            Container cnt = getContentPane();
+            cnt.setLayout(BoxLayout.y());
+            cnt.setScrollableY(true);
+            
+        }
+    }
+    */
 }

@@ -12,6 +12,7 @@ import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
 import com.codename1.ui.Graphics;
 import com.codename1.ui.Image;
+import com.codename1.ui.Label;
 import com.codename1.ui.Tabs;
 import com.codename1.ui.TextArea;
 import com.codename1.ui.TextField;
@@ -39,7 +40,10 @@ public class MainForm extends Form {
     public MainForm(){
         super("", new BorderLayout());
         String str = "Welcome Back! <usr>";
-        //setTitle(str);
+        
+        setTitle(str);
+
+        getCurrentForm().getTitleComponent().setTextPosition(Component.LEFT);
         Toolbar.setGlobalToolbar(focusScrolling);
         
         char[] icons = {
@@ -50,9 +54,7 @@ public class MainForm extends Form {
             Colors.EMERGENCYICON
         };
         
-        for (int i = 0; i<icons.length; i++){
-            
-        }
+        
         
         mainUI.setTabPlacement(BOTTOM);
         mainUI.addTab("", FontImage.MATERIAL_HOME, 5f,  new HomePageForm());
@@ -62,8 +64,8 @@ public class MainForm extends Form {
         mainUI.addTab("", FontImage.MATERIAL_CONTACT_EMERGENCY, 5f, new EmergencyHelpForm());// replace e-> with new ResourcesContainer()
         
         add(CENTER, mainUI);
-        Image icon = getGlobalResources().getImage("Search.png");
-        Button searchButton = new Button("Search", "TitleSearch");
+        //Image icon = getGlobalResources().getImage("Search.png");
+        //Button searchButton = new Button("Search", "TitleSearch");
         
         
         
@@ -74,7 +76,7 @@ public class MainForm extends Form {
             list.refresh();
         });
         */
-        //Label l = new Label("Welcome Back" + ServerAPI.me().fullName());
+        
         
         /*
         FloatingActionButton fab = FloatingActionButton.
@@ -84,11 +86,14 @@ public class MainForm extends Form {
         fab.addActionListener(e -> new EmergencyHelpForm());
         */
         
-        getToolbar().addMaterialCommandToOverflowMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm());
-        getToolbar().addMaterialCommandToOverflowMenu("Resources",FontImage.MATERIAL_BOOKMARKS,4, e -> new PomodoroTimer().show());
-        getToolbar().addMaterialCommandToOverflowMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
-        getToolbar().addMaterialCommandToOverflowMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
-        getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_SEARCH, 4, e->search(searchButton));
+        getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm());
+        getToolbar().addMaterialCommandToLeftSideMenu("Mindfulness",FontImage.MATERIAL_BOOKMARKS,4, e -> new PomodoroTimer().show());
+        getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
+        getToolbar().addMaterialCommandToLeftSideMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
+        getToolbar().addMaterialCommandToLeftSideMenu("Settings", FontImage.MATERIAL_SETTINGS, 4, e -> new Settings().show());
+        //getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_SEARCH, 4, e->search(searchButton));
+        getToolbar().addMaterialCommandToLeftSideMenu("RESOURCES", FontImage.MATERIAL_CHAT, 4, e -> new ArticlesForm().show());
+        
     }
     public void games(){
         Dialog gameOptionsDialog = new Dialog("Choose a game");
@@ -176,6 +181,7 @@ public class MainForm extends Form {
         visualsOptionsDialog.add(options);
         visualsOptionsDialog.show();
     } 
+    /*
     public void search(Button searchButton){
         mainUI.setSelectedIndex(2);
         searchButton.addActionListener(e -> {});
@@ -205,7 +211,7 @@ public class MainForm extends Form {
             getContentPane().animateLayout(150);
         },4);
     }
-        
+    */ 
 
 
 }

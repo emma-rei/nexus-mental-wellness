@@ -5,10 +5,10 @@ com/nexus/nexwell/satisfyingvisuals/Direction.class
 com/nexus/nexwell/forms/MainForm$1.class
 com/nexus/nexwell/homepage/UIController.class
 com/nexus/nexwell/games/SnakeGameForm$2.class
+com/nexus/nexwell/forms/Settings.class
 com/nexus/nexwell/games/SnakeGame.class
 com/nexus/nexwell/satisfyingvisuals/Ant$1.class
 com/nexus/nexwell/server/ServerAPI.class
-com/nexus/nexwell/components/RichTextView$Parser.class
 com/nexus/nexwell/forms/GamesContainer.class
 com/nexus/nexwell/satisfyingvisuals/ChaosGame.class
 com/nexus/nexwell/games/SnakeGameForm$1.class
@@ -26,7 +26,6 @@ com/nexus/nexwell/forms/LoginForm.class
 com/nexus/nexwell/forms/PomodoroTimer.class
 com/nexus/nexwell/satisfyingvisuals/LangtonsAntForm.class
 com/nexus/nexwell/homepage/Item.class
-com/nexus/nexwell/forms/ImagePicker.class
 com/nexus/nexwell/components/BaseRoundProgress.class
 com/nexus/nexwell/games/GameOfLifeForm.class
 com/nexus/nexwell/forms/EmergencyHelpForm.class

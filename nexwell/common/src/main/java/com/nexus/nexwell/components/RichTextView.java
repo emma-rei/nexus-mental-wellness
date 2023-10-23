@@ -2,6 +2,7 @@
 package com.nexus.nexwell.components;
 
 import com.codename1.io.CharArrayReader;
+import com.codename1.io.Log;
 import com.codename1.ui.Button;
 import static com.codename1.ui.CN.*;
 import com.codename1.ui.Container;
@@ -18,133 +19,86 @@ import java.io.IOException;
 
 
 
-public class RichTextView extends Container{
+
+
+public class RichTextView extends Container {
     private String text;
-    private final float fontSize = 2.6f;
-    private EventDispatcher listeners = new EventDispatcher();
-    
-    private Font currentFont;
-    private int currentColor = 0;
-    private String currentLink;
-    private Style lastCmp;
-    private Font defaultFont;
-    private Font boldFont;
-    private Font italicFont;
-    private int sizeOfSpace;
-    
-    public RichTextView(){
-        init();
+    public RichTextView() { 
     }
-    
-    public RichTextView(String text){
-        init();
+
+    public RichTextView(String text) {
         setText(text);
     }
-    private void init(){
-        defaultFont = Font.createTrueTypeFont(NATIVE_MAIN_LIGHT, fontSize);
-        boldFont = Font.createTrueTypeFont(NATIVE_MAIN_BOLD, fontSize);
-        italicFont = Font.createTrueTypeFont(NATIVE_ITALIC_LIGHT, fontSize);
-        sizeOfSpace = defaultFont.charWidth(' ');
-        currentFont = defaultFont;
-    }
-    public void setAlignment(int align){
-        ((FlowLayout)getLayout()).setAlign(align);
-    }
-    
-    private void createComponent(String t){
-        if (t.indexOf(' ')> -1){
-            // if a string has a space we can separate it into multiple strings so each individual component can get aligned in the flow layout 
-            for (String s : StringUtil.tokenize(t, ' ')){
-                createComponent(s);
-            }
-            return;
-        }
-        Label l;
-        if (currentLink != null){
-            Button b = new Button(t, "Label");
-            final String currentLinkValue = currentLink;// content of href
-            b.addActionListener(e -> listeners.fireActionEvent(new ActionEvent(currentLinkValue)));
-            l = b;
-            
-        }
-        else{
-            l = new Label(t);
-        }
-        Style s = l.getAllStyles();
-        s.setFont(currentFont);
-        s.setFgColor(currentColor);
-        s.setPaddingUnit(Style.UNIT_TYPE_PIXELS);
-        s.setPadding(0, 0,0, sizeOfSpace);
-        s.setMargin(0, 0, 0,0);
-        lastCmp = s;
-        add(l);
-    }
-    public final void setText(String text){
+
+    public final void setText(String text) {
         this.text = text;
-        removeAll();
-        try
-        {
-            char[] chrs = ("<body>"+text+"</body>").toCharArray();
-            new Parser().eventParser(new CharArrayReader(chrs));
-        }
-        catch (IOException err){
-            log(err);
+        final Font defaultFont = Font.createTrueTypeFont("native:MainRegular", "native:MainRegular");
+        final Font boldFont = Font.createTrueTypeFont("native:MainBold", "native:MainBold");
+        final Font italicFont = Font.createTrueTypeFont("native:ItalicRegular", "native:ItalicRegular");
+        final int sizeOfSpace = defaultFont.charWidth(' ');
+        XMLParser parser = new XMLParser() {
+            private Font currentFont = defaultFont;
+            @Override
+            protected void textElement(String text) {
+                if(text.length() > 0) {
+                    if(text.indexOf(' ') > -1) {
+                        for(String s : StringUtil.tokenize(text, ' ')) {
+                            createComponent(s);
+                        }
+                    } else {
+                        createComponent(text);
+                    }
+                }
+            }
+
+            private void createComponent(String t) {
+                Label l = new Label(t);
+                Style s = l.getAllStyles();
+                s.setFont(currentFont); 
+                s.setPaddingUnit(Style.UNIT_TYPE_PIXELS);
+                s.setPadding(0, 0, 0, sizeOfSpace);
+                s.setMargin(0, 0, 0, 0);
+                add(l);
+            }
+
+            @Override
+            protected boolean startTag(String tag) {
+                switch(tag.toLowerCase()) {
+                    case "b":
+                        currentFont = boldFont;
+                        break;
+                    case "i":
+                        currentFont = italicFont;
+                        break;
+                }
+                return true;
+            }
+
+            @Override
+            protected void endTag(String tag) {
+                currentFont = defaultFont;
+            }
+
+            @Override
+            protected void attribute(String tag, String attributeName, String value) {
+            }
+
+            @Override
+            protected void notifyError(int errorId, String tag, String attribute, String value, String description) {
+                Log.p("Error during parsing: " + tag);
+            }
+
+        };
+        try {
+            parser.eventParser(new CharArrayReader(("<body>" + text + "</body>").toCharArray())); 
+        } catch(IOException err) {
+            Log.e(err);
         }
     }
-    public String getText(){
+
+    public String getText() {
         return text;
     }
-    public void addLinkListener(ActionListener al){
-        listeners.addListener(al);
-    }
-    public void removeLinkListener(ActionListener al){
-        listeners.removeListener(al);
-    }
-    class Parser extends XMLParser{
-        @Override
-        protected void textElement(String text){
-            if(text.length() > 0 ){
-                if (lastCmp != null && text.startsWith(" ")){
-                    lastCmp.setPadding(0, 0, 0, sizeOfSpace);
-                }
-                createComponent(text);
-                if(!text.endsWith(" ")){
-                    lastCmp.setPadding(0, 0, 0, 0);
-                }
-            }
-        }
-        @Override
-        protected boolean startTag(String tag){
-            switch(tag.toLowerCase()){
-                case "a":
-                    currentColor = 0x4267B2;
-                    break;
-                case "b":
-                    currentFont = boldFont;
-                    break;
-                case "i":
-                    currentFont = italicFont;
-                    break;
-            }
-            return true;
-        }
-        
-        @Override
-        protected void endTag(String tag){
-            currentColor = 0;
-            currentLink = null;
-            currentFont = defaultFont;
-        }
-        @Override
-        protected void attribute(String tag, String attributeName, String value){
-            if (tag.toLowerCase().equals("a") && attributeName.toLowerCase().equals("href")){
-                currentLink = value;
-            }
-        }
-        @Override
-        protected void notifyError(int errorId, String tag, String attribute, String value, String description){
-            log("Error during parsing"+tag);
-        }
-        
-    }
 }
+
+

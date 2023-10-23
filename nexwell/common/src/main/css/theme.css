@@ -5,6 +5,24 @@
     scrollVisibleBool: false;
     labelGap: 2;
     capButtonUiids: "BlueText, GreenButton, BlueButton";
+    
+}
+Switch {
+    switchThumbPaddingInt: 2;
+    switchThumbScaleY: "1.5";
+    switchTrackScaleY: "0.9";
+    switchTrackScaleX: "3";
+    switchTrackOffOutlineWidthMM: "0";
+    switchTrackOnOutlineWidthMM: "0";
+    switchTrackOffOutlineColor: "cccccc";
+    switchThumbInsetMM: "0";
+    color: rgb(237, 237, 237);
+    background-color: rgb(159, 158, 158);
+
+}
+Switch.selected {
+    color: rgb(34,44,50);
+    background-color: rgb(117, 126, 132);
 }
 Images{
     background-image:   url(img/Black/Search.png)
@@ -24,7 +42,7 @@ circle{
 Title {
     color: white;
     font-family: "native:MainLight";
-    font-size: 7mm;
+    font-size: 3.5mm;
 }
 
 /** Style for Dialog body */
@@ -153,6 +171,16 @@ Label{
     font-size: 3.5mm;
     border-bottom: #cccccc 2px solid;
 }
+Quote{
+    color: white;
+    padding: 2px;
+    margin: 2px;
+    font-family: "native:ItalicThin";
+    font-size: 3mm;
+    
+    background: transparent;
+    border: none;
+}
 Task{
     border-bottom: #cccccc 2px solid;
     padding: 0px;
@@ -172,6 +200,11 @@ TitleCommand{
     background: transparent;
     font-size: 5mm;
 }
+TitleArea{
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+}
 SplashForm{
     background-color: #52ADCA;
     margin: 0px;
@@ -188,7 +221,7 @@ IconFont{
     background-color: transparent;
 }
 Form{
-    background: linear-gradient(to bottom, #ffffff, #6868FD);
+    background: linear-gradient(to bottom, #1d193b, #6868FD);
     
     margin: 0px;
     padding: 0px;
@@ -235,5 +268,13 @@ HalfPaddedSeparator{
 HalfPaddedContainer{
     padding: 1.5mm;
     margin: 0mm;
+    border: none;
     background: transparent;
+    
+}
+DarkForm{
+    background: linear-gradient(to bottom, #6868FD, #1d193b);
+    
+    margin: 0px;
+    padding: 0px;
 }
