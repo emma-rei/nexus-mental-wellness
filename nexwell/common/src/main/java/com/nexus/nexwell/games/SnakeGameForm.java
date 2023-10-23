@@ -1,6 +1,7 @@
 package com.nexus.nexwell.games;
 
 import static com.codename1.ui.CN.getCurrentForm;
+
 import com.codename1.ui.Command;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
@@ -23,8 +24,8 @@ public class SnakeGameForm extends Form {
         setLayout(new BorderLayout());
         Toolbar tb = new Toolbar();
         setToolbar(tb);
-        
-        
+
+
         Form current = getCurrentForm();
         getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, e -> current.showBack());
 
@@ -69,10 +70,9 @@ public class SnakeGameForm extends Form {
             if (!snakeGame.isGameOver()) {
                 snakeGame.move();
                 repaint();
-            } else if(snakeGame.isCancel() == true) {
+            } else if (snakeGame.isCancel() == true) {
                 // nothing should happen, the form should just stop
-            }
-            else{
+            } else {
                 snakeGame.showGameOverMessage();
             }
         });
