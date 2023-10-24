@@ -59,7 +59,7 @@ public class MainForm extends Form {
         mainUI.setTabPlacement(BOTTOM);
         mainUI.addTab("", FontImage.MATERIAL_HOME, 5f,  new HomePageForm());
         mainUI.addTab("", FontImage.MATERIAL_BOOK, 5f, new RichTextView());// replace e-> with new NewsFeedContainer()
-        mainUI.addTab("", FontImage.MATERIAL_GAMES, 5f, new PomodoroTimer());// replace e-> with new GamesContainer()
+        mainUI.addTab("", FontImage.MATERIAL_GAMES, 5f, new BreathingTimerForm());// replace e-> with new GamesContainer()
         mainUI.addTab("", FontImage.MATERIAL_HEADPHONES, 5f, new MusicForm());// replace e-> with new RelaxContainer()
         mainUI.addTab("", FontImage.MATERIAL_CONTACT_EMERGENCY, 5f, new EmergencyHelpForm());// replace e-> with new ResourcesContainer()
         
@@ -87,7 +87,7 @@ public class MainForm extends Form {
         */
         
         getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm());
-        getToolbar().addMaterialCommandToLeftSideMenu("Mindfulness",FontImage.MATERIAL_BOOKMARKS,4, e -> new PomodoroTimer().show());
+        getToolbar().addMaterialCommandToLeftSideMenu("Mindfulness",FontImage.MATERIAL_BOOKMARKS,4, e -> new BreathingTimerForm().show());
         getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
         getToolbar().addMaterialCommandToLeftSideMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
         getToolbar().addMaterialCommandToLeftSideMenu("Settings", FontImage.MATERIAL_SETTINGS, 4, e -> new Settings().show());

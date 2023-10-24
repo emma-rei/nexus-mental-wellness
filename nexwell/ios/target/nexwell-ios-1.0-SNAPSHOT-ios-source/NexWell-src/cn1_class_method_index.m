@@ -28473,7 +28473,7 @@ const char * const constantPool[] = {
     "com.nexus.nexwell.NexWellStub.1" /* 10863 */,
     "com.nexus.nexwell.forms.AccountForm" /* 10864 */,
     "com.nexus.nexwell.forms.MainForm..Lambda.2" /* 10865 */,
-    "com.nexus.nexwell.forms.PomodoroTimer" /* 10866 */,
+    "com.nexus.nexwell.forms.BreathingTimerForm" /* 10866 */,
     "com.nexus.nexwell.forms.MusicForm" /* 10867 */,
     "com.nexus.nexwell.forms.MainForm..Lambda.4" /* 10868 */,
     "com.nexus.nexwell.forms.MainForm..Lambda.6" /* 10869 */,
