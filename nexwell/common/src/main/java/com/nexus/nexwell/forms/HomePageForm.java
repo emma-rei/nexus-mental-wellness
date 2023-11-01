@@ -17,9 +17,6 @@ public class HomePageForm extends Form {
     public HomePageForm(){
         super("");
         
-        
-        
-        
         Container cnt = new Container(BoxLayout.y());
         cnt.setUIID("HalfPaddedContainer");
         
