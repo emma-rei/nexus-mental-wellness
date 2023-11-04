@@ -7,10 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
       </profile>
+      <profile name="Annotation profile for nexwell" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="nexwell-android" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="nexwell-common" target="1.8" />
-      <module name="nexwell-javase" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

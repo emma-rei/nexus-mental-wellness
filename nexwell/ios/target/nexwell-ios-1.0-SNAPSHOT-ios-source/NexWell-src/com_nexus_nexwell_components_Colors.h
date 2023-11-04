@@ -1,0 +1,80 @@
+#ifndef __COM_NEXUS_NEXWELL_COMPONENTS_COLORS__
+#define __COM_NEXUS_NEXWELL_COMPONENTS_COLORS__
+
+#include "cn1_globals.h"
+#include "java_lang_Object.h"
+extern struct clazz class__com_nexus_nexwell_components_Colors;
+extern void __INIT_VTABLE_com_nexus_nexwell_components_Colors(CODENAME_ONE_THREAD_STATE, void** vtable);
+extern void __STATIC_INITIALIZER_com_nexus_nexwell_components_Colors(CODENAME_ONE_THREAD_STATE);
+extern void __FINALIZER_com_nexus_nexwell_components_Colors(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete);
+extern void __GC_MARK_com_nexus_nexwell_components_Colors(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
+extern JAVA_OBJECT __NEW_com_nexus_nexwell_components_Colors(CODENAME_ONE_THREAD_STATE);
+extern JAVA_OBJECT __NEW_INSTANCE_com_nexus_nexwell_components_Colors(CODENAME_ONE_THREAD_STATE);
+
+JAVA_VOID com_nexus_nexwell_components_Colors___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_components_Colors___CLINIT____(CODENAME_ONE_THREAD_STATE);
+
+JAVA_BOOLEAN com_nexus_nexwell_components_Colors_equals___java_lang_Object_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+
+JAVA_OBJECT com_nexus_nexwell_components_Colors_getClass___R_java_lang_Class(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_INT com_nexus_nexwell_components_Colors_hashCode___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_components_Colors_notify__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_components_Colors_notifyAll__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT com_nexus_nexwell_components_Colors_toString___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_components_Colors_wait__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_components_Colors_wait___long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1);
+
+JAVA_VOID com_nexus_nexwell_components_Colors_wait___long_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_LONG __cn1Arg1, JAVA_INT __cn1Arg2);
+
+JAVA_OBJECT com_nexus_nexwell_components_Colors_clone___R_java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+extern JAVA_INT get_static_com_nexus_nexwell_components_Colors_PINK();
+extern JAVA_INT STATIC_FIELD_com_nexus_nexwell_components_Colors_PINK;
+extern void set_static_com_nexus_nexwell_components_Colors_PINK(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_nexus_nexwell_components_Colors_CYAN();
+extern JAVA_INT STATIC_FIELD_com_nexus_nexwell_components_Colors_CYAN;
+extern void set_static_com_nexus_nexwell_components_Colors_CYAN(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_nexus_nexwell_components_Colors_BLUE();
+extern JAVA_INT STATIC_FIELD_com_nexus_nexwell_components_Colors_BLUE;
+extern void set_static_com_nexus_nexwell_components_Colors_BLUE(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_nexus_nexwell_components_Colors_LIGHT();
+extern JAVA_INT STATIC_FIELD_com_nexus_nexwell_components_Colors_LIGHT;
+extern void set_static_com_nexus_nexwell_components_Colors_LIGHT(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_nexus_nexwell_components_Colors_DARK();
+extern JAVA_INT STATIC_FIELD_com_nexus_nexwell_components_Colors_DARK;
+extern void set_static_com_nexus_nexwell_components_Colors_DARK(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_nexus_nexwell_components_Colors_LIGHT_GREEN();
+extern JAVA_INT STATIC_FIELD_com_nexus_nexwell_components_Colors_LIGHT_GREEN;
+extern void set_static_com_nexus_nexwell_components_Colors_LIGHT_GREEN(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_nexus_nexwell_components_Colors_REGBLUE();
+extern JAVA_INT STATIC_FIELD_com_nexus_nexwell_components_Colors_REGBLUE;
+extern void set_static_com_nexus_nexwell_components_Colors_REGBLUE(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_INT get_static_com_nexus_nexwell_components_Colors_PEACH();
+extern JAVA_INT STATIC_FIELD_com_nexus_nexwell_components_Colors_PEACH;
+extern void set_static_com_nexus_nexwell_components_Colors_PEACH(CODENAME_ONE_THREAD_STATE, JAVA_INT v);
+extern JAVA_CHAR get_static_com_nexus_nexwell_components_Colors_HOMEICON();
+extern JAVA_CHAR get_static_com_nexus_nexwell_components_Colors_LIBRARYICON();
+extern JAVA_CHAR get_static_com_nexus_nexwell_components_Colors_GAMESICON();
+extern JAVA_CHAR get_static_com_nexus_nexwell_components_Colors_HEADPHONESICON();
+extern JAVA_CHAR get_static_com_nexus_nexwell_components_Colors_EMERGENCYICON();
+
+
+struct obj__com_nexus_nexwell_components_Colors {
+    DEBUG_GC_VARIABLES
+    struct clazz *__codenameOneParentClsReference;
+    int __codenameOneReferenceCount;
+    void* __codenameOneThreadData;
+    int __codenameOneGcMark;
+    void* __ownerThread;
+    int __heapPosition;
+};
+
+
+
+#endif //__COM_NEXUS_NEXWELL_COMPONENTS_COLORS__

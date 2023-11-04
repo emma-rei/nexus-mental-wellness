@@ -43,7 +43,7 @@ public class GamesContainer extends Form{
             String value = entry.getValue();
             
             Button btn = new Button(key);
-            btn.addActionListener(e -> new webSheet(null, value));
+
             CustomButtonStyle(btn);
             add(btn);
         }
@@ -96,32 +96,5 @@ public class GamesContainer extends Form{
         
     }
     
-    private class webSheet extends Sheet{
-        
-        webSheet(Sheet parent, String url) {
-            super(parent, "sheet 2");
-            Container cnt = getContentPane();
-            cnt.setLayout(BoxLayout.y());
-            cnt.setScrollableY(true);
-            
-            BrowserComponent browser = new BrowserComponent();
-            browser.setURL(url);
-            
-            
-        }
-        
-    }
-    /*
-    private class webSheet2 extends Sheet{
-        
 
-        webSheet2(Sheet parent, String title) {
-            super(parent, title);
-            Container cnt = getContentPane();
-            cnt.setLayout(BoxLayout.y());
-            cnt.setScrollableY(true);
-            
-        }
-    }
-    */
 }

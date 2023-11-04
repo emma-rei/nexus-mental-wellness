@@ -25,12 +25,10 @@ com/nexus/nexwell/satisfyingvisuals/BubbleGame.class
 com/nexus/nexwell/components/RichTextView.class
 com/nexus/nexwell/forms/LoginForm.class
 com/nexus/nexwell/components/Articles.class
-com/nexus/nexwell/satisfyingvisuals/LangtonsAntForm.class
 com/nexus/nexwell/components/ImagePicker.class
 com/nexus/nexwell/homepage/Item.class
 com/nexus/nexwell/components/BaseRoundProgress.class
 com/nexus/nexwell/games/GameOfLifeForm.class
-com/nexus/nexwell/forms/GamesContainer$webSheet.class
 com/nexus/nexwell/forms/EmergencyHelpForm.class
 com/nexus/nexwell/components/BreathingTimer.class
 com/nexus/nexwell/games/GameOfLife.class

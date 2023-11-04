@@ -5,13 +5,113 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="336d32c5-6f4b-4a8f-b637-9fea310958e7" name="Default Changelist" comment="Add 4/5/7 breathing timer basic functionality&#10;TODO: add start/stop button, change circle according to phase">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/MySheet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/MySheet2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/target/codenameone/update-dummy/codenameone_settings.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_components_Switch.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_components_Switch.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_components_Switch_1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_components_Switch_1.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_components_Switch_2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_components_Switch_2.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_components_Switch_3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_components_Switch_3.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_components_Switch_4.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_components_Switch_4.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_1.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_2.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_3.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_4.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_4.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_5.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_5.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_6.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_Sheet_6.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_table_TableLayout.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_table_TableLayout.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_table_TableLayout_Constraint.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_codename1_ui_table_TableLayout_Constraint.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_BaseRoundProgress.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_BaseRoundProgress.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_BreathingTimer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_BreathingTimer.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_BreathingTimer__Lambda_1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_BreathingTimer__Lambda_1.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_CircleProgress.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_CircleProgress.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_Colors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_Colors.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_RichTextView_1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_components_RichTextView_1.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_AccountForm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_AccountForm.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_ArticlesForm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_ArticlesForm.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_ArticlesForm__Lambda_1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_ArticlesForm__Lambda_1.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_BreathingTimerForm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_BreathingTimerForm.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_BreathingTimerForm__Lambda_1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_BreathingTimerForm__Lambda_1.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_BreathingTimerForm__Lambda_2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_BreathingTimerForm__Lambda_2.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_BreathingTimerForm__Lambda_3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_BreathingTimerForm__Lambda_3.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_EmergencyHelpForm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_EmergencyHelpForm.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_EmergencyHelpForm__Lambda_1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_EmergencyHelpForm__Lambda_1.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_GamesContainer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_GamesContainer.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_GamesContainer__Lambda_2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_GamesContainer__Lambda_2.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_GamesContainer_webSheet.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_GamesContainer_webSheet.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_HomePageForm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_HomePageForm.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_LoginForm__Lambda_2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_LoginForm__Lambda_2.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_MainForm__Lambda_8.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_MainForm__Lambda_8.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_MainForm__Lambda_9.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_MainForm__Lambda_9.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_MusicForm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_MusicForm.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_MusicForm__Lambda_1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_MusicForm__Lambda_1.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_SearchForm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_SearchForm.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_Settings.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_Settings.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_Settings__Lambda_1.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_Settings__Lambda_1.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_Settings__Lambda_2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_forms_Settings__Lambda_2.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_games_GameOfLifeForm__Lambda_6.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_games_GameOfLifeForm__Lambda_6.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_games_SnakeGameForm__Lambda_2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_games_SnakeGameForm__Lambda_2.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_games_SnakeGame__Lambda_2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/com_nexus_nexwell_games_SnakeGame__Lambda_2.m" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javase/nexwell-javase.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml.bak" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/Pomodoro.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/BreathingTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/EmergencyHelpForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/EmergencyHelpForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/MainForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/PomodoroTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/BreathingTimerForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/cn1_class_method_index.m" beforeDir="false" afterPath="$PROJECT_DIR$/ios/target/nexwell-ios-1.0-SNAPSHOT-ios-source/NexWell-src/cn1_class_method_index.m" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/GamesContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/GamesContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/codenameone/simulator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/codenameone/simulator.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javase/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +130,12 @@
       <MavenImportingSettings>
         <option name="vmOptionsForImporter" value="-Xmx768m" />
       </MavenImportingSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="install-codenameone" />
+        <option value="android" />
+      </list>
     </option>
   </component>
   <component name="MavenRunner">
@@ -84,7 +190,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -98,9 +203,6 @@
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -130,7 +232,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -143,9 +244,6 @@
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -177,7 +275,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -193,9 +290,6 @@
               <map>
                 <entry key="executable-jar" value="true" />
               </map>
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -225,7 +319,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -238,9 +331,6 @@
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -273,7 +363,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -287,9 +376,6 @@
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -322,7 +408,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -336,9 +421,6 @@
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -371,7 +453,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -385,9 +466,6 @@
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -419,7 +497,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -434,9 +511,6 @@
               <map>
                 <entry key="run-desktop" value="true" />
               </map>
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -468,7 +542,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -483,9 +556,6 @@
               <map>
                 <entry key="idea-simulator" value="true" />
               </map>
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -515,7 +585,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -528,9 +597,6 @@
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -563,7 +629,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -577,9 +642,6 @@
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -612,7 +674,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -626,9 +687,6 @@
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -661,7 +719,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -676,9 +733,6 @@
             <option name="profilesMap">
               <map />
             </option>
-            <option name="projectsCmdOptionValues">
-              <list />
-            </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
           </MavenRunnerParameters>
@@ -692,7 +746,6 @@
         <option name="myRunnerSettings" />
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -704,9 +757,6 @@
               <map>
                 <entry key="simulator" value="true" />
               </map>
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="" />
@@ -739,7 +789,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -753,9 +802,6 @@
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />
@@ -788,7 +834,6 @@
         </option>
         <option name="myRunnerParameters">
           <MavenRunnerParameters>
-            <option name="cmdOptions" />
             <option name="profiles">
               <set />
             </option>
@@ -802,9 +847,6 @@
             <option name="pomFileName" />
             <option name="profilesMap">
               <map />
-            </option>
-            <option name="projectsCmdOptionValues">
-              <list />
             </option>
             <option name="resolveToWorkspace" value="false" />
             <option name="workingDirPath" value="$PROJECT_DIR$" />

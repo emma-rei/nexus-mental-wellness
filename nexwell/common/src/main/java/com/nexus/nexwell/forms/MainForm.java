@@ -149,7 +149,6 @@ public class MainForm extends Form {
         
         Container options = new Container(new BoxLayout(BoxLayout.Y_AXIS));
         Button chaosGameButton = new Button("Chaos Game");
-        Button langtonsAntButton = new Button("LangtonsAnt");
         Button bubbleGameButton = new Button("Bubble Game");
         Button cancelButton = new Button("Cancel");
         chaosGameButton.addActionListener(e -> {
@@ -157,12 +156,7 @@ public class MainForm extends Form {
             new ChaosGame().show();
             
         });
-        langtonsAntButton.addActionListener(e -> {
-            visualsOptionsDialog.dispose();
-            new LangtonsAntForm().show();
-            
-            
-        });
+        
         bubbleGameButton.addActionListener(e -> {
             visualsOptionsDialog.dispose();
             new BubbleGame().show();
@@ -175,7 +169,6 @@ public class MainForm extends Form {
             visualsOptionsDialog.dispose();
         });
         options.add(chaosGameButton);
-        options.add(langtonsAntButton);
         options.add(bubbleGameButton);
         options.add(cancelButton);
         visualsOptionsDialog.add(options);
