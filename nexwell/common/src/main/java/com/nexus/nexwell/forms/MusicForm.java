@@ -1,11 +1,14 @@
 package com.nexus.nexwell.forms;
 
+import com.codename1.components.MultiButton;
+import com.codename1.components.SpanButton;
 import com.codename1.ui.Button;
 import static com.codename1.ui.CN.getCurrentForm;
 import com.codename1.ui.Display;
 import com.codename1.ui.Form;
 import com.codename1.ui.Toolbar;
 import com.codename1.ui.layouts.GridLayout;
+import com.codename1.ui.plaf.RoundRectBorder;
 import com.codename1.ui.plaf.Style;
 import com.nexus.nexwell.components.Colors;
 import java.util.HashMap;
@@ -49,7 +52,8 @@ public class MusicForm extends Form{
             if (colorIndex==2){
                 colorIndex = colorIndex % 2;
             }
-            btnStyle.setBackgroundGradientStartColor(colorArr[colorIndex]);
+            btnStyle.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
+            
             colorIndex++;
             btnStyle.setBackgroundGradientEndColor(colorArr[colorIndex]);
             btn.addActionListener(e -> executeVideo(set.getValue()));

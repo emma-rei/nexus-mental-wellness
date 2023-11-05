@@ -18,7 +18,6 @@ Switch {
     switchThumbInsetMM: "0";
     color: rgb(237, 237, 237);
     background-color: rgb(159, 158, 158);
-
 }
 Switch.selected {
     color: rgb(34,44,50);
@@ -80,12 +79,13 @@ BaseButton{
 }
 SpanLabel{
     
-    font-family: "native:MainBold";
-    background: linear-gradient(to left, #3DAECB, #ADF0F2);
-    text-align:center;
+    font-family: "native:MainRegular";
+    background: linear-gradient(to left, #6ddaf2, #57997a);
+    text-align: center;
     margin:3mm 3mm 3mm 3mm;
-    padding:3mm 3mm 3mm 3mm;
-    color: white;
+    padding:4mm 2mm 3mm 3mm;
+    border: none;
+    
 }
 
 BlueButtonOnBlueBackground{
@@ -136,8 +136,15 @@ GroupElementLast{
 
 /** Style for the side menu */
 SideNavigationPanel {
-    background: white;
-    padding: 2mm 1mm 1mm 1mm;
+    
+    color: #617678;
+    font-family: "native:MainThin";
+    font-size: 2.6mm;
+    background-color: #006666;
+    padding: 2mm 2mm 2mm 2mm;
+    
+    
+    
 }
 
 @media platform-ios {
@@ -152,8 +159,7 @@ SideNavigationPanel {
 SideCommand {
     padding: 1mm;
     border: none;
-    text-decoration: none;
-    color: black;
+    color: white;
     font-family: "native:MainLight";
     font-size: 4mm;
     border-bottom: 2px solid #cccccc;
@@ -166,20 +172,22 @@ Toolbar {
     margin: 0px;
 }
 Label{
-    padding: 4mm 3mm 4mm 3mm;
+    padding: 1mm 1mm 1mm 1mm;
     font-family: "native:MainLight";
     font-size: 3.5mm;
-    border-bottom: #cccccc 2px solid;
+    
+    
 }
+
 Quote{
     color: white;
     padding: 2px;
     margin: 2px;
     font-family: "native:ItalicThin";
     font-size: 3mm;
-    
     background: transparent;
     border: none;
+    
 }
 Task{
     border-bottom: #cccccc 2px solid;
@@ -210,6 +218,11 @@ SplashForm{
     margin: 0px;
     padding: 0px;
 }
+HomePageForm{
+    background-color: #333333;
+    margin: 0px;
+    padding: 0px;
+}
 @font-face{
     font-family: "mindfulness";
     src: url(img/mind.ttf);
@@ -221,8 +234,7 @@ IconFont{
     background-color: transparent;
 }
 Form{
-    background: linear-gradient(to bottom, #1d193b, #6868FD);
-    
+    background:linear-gradient(to top, #6868FD, #1d193b); 
     margin: 0px;
     padding: 0px;
 }
@@ -237,18 +249,19 @@ TitleSearch{
 }
 Tab{
     font-family: "native:MainLight";
-    font-size:4mm;
-    color: black;
-    text-align: center;
-    padding: 2mm 2mm 1mm 2mm;
+    font-size:2mm;
+    color: aqua;
+    
+    padding: 1mm 1mm 1mm 1mm;
     border: none;
-    background-color: #2c2c2c;
-    margin: 1px 0px 1px 0px;
+    background-color: #333333;
+    margin: 0px 0px 1px 0px;
 }
 TabsContainer{
     margin: 0px;
     padding: 1px 0px 1px 0px;
-    background: gray;
+    background: transparent;
+    
 }
 Tab.selected, Tab.pressed{
     color: #2D72E4;
@@ -264,11 +277,11 @@ HalfPaddedSeparator{
     cn1-derive: PaddedSeparator;
     padding: 0.25mm;
     
+    
 }
 HalfPaddedContainer{
     padding: 1.5mm;
     margin: 0mm;
-    border: none;
     background: transparent;
     
 }
@@ -277,4 +290,17 @@ DarkForm{
     
     margin: 0px;
     padding: 0px;
+}
+
+GamesBar{
+    background: linear-gradient(to top, #6868FD, #1d193b);
+}
+MusicBar{
+    background: linear-gradient(to bottom, #6868FD, #1d193b);
+}
+RsourcesBar{
+    background: linear-gradient(to top, #6868FD, #ffffff);
+}
+EmergencyBar{
+    background: linear-gradient(to bottom, #6868FD, #1d193b);
 }

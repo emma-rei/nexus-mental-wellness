@@ -55,7 +55,7 @@ public class NexWell{
             current.show();
             return;
         }
-
+        // Straight to MainForm (Homepage)
         UIController.showSplashScreen();
         
     }

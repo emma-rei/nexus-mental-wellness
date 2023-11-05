@@ -16,28 +16,20 @@ public class HomePageForm extends Form {
     
     public HomePageForm(){
         super("");
-        
+        setUIID("HomePageForm");
         Container cnt = new Container(BoxLayout.y());
-        cnt.setUIID("HalfPaddedContainer");
+        cnt.setUIID("PaddedContainer");
         
+        
+        Label quoteOfTheDay = new Label("Quote of the day");
         // Quote generation and pass it to richtextview
-        RichTextView r = new RichTextView(ContentFeed.getRandomQuote());
-        
-        r.setUIID("HalfPaddedContainer");
-        
-        SpanLabel quote = new SpanLabel(r.getText());
-        
-        quote.getAllStyles().setTextDecoration(Style.UNIT_TYPE_DIPS);
-        
-        quote.getTextUnselectedStyle().setFgColor(0xffffff);
+        String q = ContentFeed.getRandomQuote();
+        RichTextView ct = new RichTextView("<i>"+q+"</i>"); //RichtextView is also a type of Container
+        ct.setUIID("SpanLabel");
         
         
-        cnt.add(new Label(" "));// TitleArea Space
-        cnt.add(quote);
-        
-        cnt.setSafeArea(true);
-        cnt.setCellRenderer(true);
-        add(cnt);
+        add(quoteOfTheDay);
+        add(ct);
         
         // 0 = pink, 1 = cyan, 2 = blue,  
         // the pattern is 12, 23, 31

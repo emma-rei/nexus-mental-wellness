@@ -46,6 +46,8 @@ public class MainForm extends Form {
         getCurrentForm().getTitleComponent().setTextPosition(Component.LEFT);
         Toolbar.setGlobalToolbar(focusScrolling);
         
+        
+        
         char[] icons = {
             Colors.HOMEICON,
             Colors.LIBRARYICON,
@@ -57,11 +59,13 @@ public class MainForm extends Form {
         
         
         mainUI.setTabPlacement(BOTTOM);
-        mainUI.addTab("", FontImage.MATERIAL_HOME, 5f,  new HomePageForm());
-        mainUI.addTab("", FontImage.MATERIAL_BOOK, 5f, new RichTextView());// replace e-> with new NewsFeedContainer()
-        mainUI.addTab("", FontImage.MATERIAL_GAMES, 5f, new BreathingTimerForm());// replace e-> with new GamesContainer()
-        mainUI.addTab("", FontImage.MATERIAL_HEADPHONES, 5f, new MusicForm());// replace e-> with new RelaxContainer()
-        mainUI.addTab("", FontImage.MATERIAL_CONTACT_EMERGENCY, 5f, new EmergencyHelpForm());// replace e-> with new ResourcesContainer()
+        
+        mainUI.getTabsContainer().getAllStyles().setBgTransparency(60, true);
+        mainUI.addTab("Home", FontImage.MATERIAL_HOME, 5f,  new HomePageForm());
+        mainUI.addTab("Resources", FontImage.MATERIAL_BOOK, 5f, new RichTextView());// replace e-> with new NewsFeedContainer()
+        mainUI.addTab("Games", FontImage.MATERIAL_GAMES, 5f, new BreathingTimerForm());// replace e-> with new GamesContainer()
+        mainUI.addTab("Music", FontImage.MATERIAL_HEADPHONES, 5f, new MusicForm());// replace e-> with new RelaxContainer()
+        mainUI.addTab("Emergency", FontImage.MATERIAL_CONTACT_EMERGENCY, 5f, new EmergencyHelpForm());// replace e-> with new ResourcesContainer()
         
         add(CENTER, mainUI);
         //Image icon = getGlobalResources().getImage("Search.png");
@@ -78,13 +82,7 @@ public class MainForm extends Form {
         */
         
         
-        /*
-        FloatingActionButton fab = FloatingActionButton.
-                createFAB(FontImage.MATERIAL_CALL);
-        fab.bindFabToContainer(this);
-        fab.setText("Helpline");
-        fab.addActionListener(e -> new EmergencyHelpForm());
-        */
+        
         
         getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm());
         getToolbar().addMaterialCommandToLeftSideMenu("Mindfulness",FontImage.MATERIAL_BOOKMARKS,4, e -> new BreathingTimerForm().show());
@@ -174,37 +172,7 @@ public class MainForm extends Form {
         visualsOptionsDialog.add(options);
         visualsOptionsDialog.show();
     } 
-    /*
-    public void search(Button searchButton){
-        mainUI.setSelectedIndex(2);
-        searchButton.addActionListener(e -> {});
-        
-        getToolbar().setTitleComponent(searchButton);
-        getToolbar().addSearchCommand(e->{
-            String text = (String)e.getSource();
-            // clear search
-            if(text == null || text.length() == 0) {
-                for(Component cmp : getContentPane()) {
-                    cmp.setHidden(false);
-                    cmp.setVisible(true);
-                }
-                getContentPane().animateLayout(150);
-            } 
-            else{
-                text = text.toLowerCase();
-                for(Component cmp : getContentPane()) {
-                    MultiButton mb = (MultiButton)cmp;
-                    String line1 = mb.getTextLine1();
-                    String line2 = mb.getTextLine2();
-                    boolean show = line1 != null && line1.toLowerCase().contains(text) || line2 != null && line2.toLowerCase().contains(text);
-                    mb.setHidden(!show);
-                    mb.setVisible(show);
-                }
-            }
-            getContentPane().animateLayout(150);
-        },4);
-    }
-    */ 
-
+    
+    
 
 }

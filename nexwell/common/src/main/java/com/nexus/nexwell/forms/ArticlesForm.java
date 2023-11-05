@@ -38,6 +38,8 @@ public class ArticlesForm extends Form{
         super("", new BoxLayout(BoxLayout.Y_AXIS));
         Toolbar tb = new Toolbar();
         setToolbar(tb);
+        setTitle("Resources");
+        tb.setUIID("ResourcesBar");
         Form current = getCurrentForm();
         getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> current.showBack());
         mode.setTabPlacement(BOTTOM);
@@ -53,19 +55,19 @@ public class ArticlesForm extends Form{
 
         Button wellbeingButton = new Button("Mental Wellbeing");
         wellbeingButton.addActionListener(e -> wellbeingpg());
-        wellbeingButton.setUIID("SpanLabel");
+        
         Button stressButton = new Button("Stress");
         stressButton.addActionListener(e -> stresspg());
-        stressButton.setUIID("SpanLabel");
+        
         Button depresionButton = new Button("Depression");
         depresionButton.addActionListener(e -> depressionpg());
-        depresionButton.setUIID("SpanLabel");
+        
         Button selfharmButton = new Button("Self Harm");
         selfharmButton.addActionListener(e -> selfharmpg());
-        selfharmButton.setUIID("SpanLabel");
+        
         Button socialIsolationButton = new Button("Social Isolation");
         socialIsolationButton.addActionListener(e -> socialisolationpg());
-        socialIsolationButton.setUIID("SpanLabel");
+        
 
         add(wellbeingButton);
         add(stressButton);
@@ -91,7 +93,7 @@ public class ArticlesForm extends Form{
         Toolbar tb = new Toolbar();
         stressf.setToolbar(tb);
         Form current = getCurrentForm();
-        tb.addCommandToOverflowMenu("Back to Articles", null, e -> showArticlesForm());
+        tb.addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> current.showBack());
 
         BrowserComponent browser = new BrowserComponent();
         browser.setURL("https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Coping-With-Stress-Adults#home");
@@ -116,8 +118,9 @@ public class ArticlesForm extends Form{
 
         Toolbar tb = new Toolbar();
         wellbeingf.setToolbar(tb);
+        getToolbar().setSafeArea(true);
         Form current = getCurrentForm();
-        tb.addCommandToOverflowMenu("Back to Articles", null, e -> showArticlesForm());
+        tb.addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> current.showBack());
 
         BrowserComponent browser = new BrowserComponent();
         browser.setURL("https://www.healthhub.sg/programmes/186/MindSG/About-Mental-Well-Being#home");
@@ -144,7 +147,8 @@ public class ArticlesForm extends Form{
         Toolbar tb = new Toolbar();
         depressionf.setToolbar(tb);
         Form current = getCurrentForm();
-        tb.addCommandToOverflowMenu("Back to Articles", null, e -> showArticlesForm());
+        tb.addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> current.showBack());
+        getToolbar().setSafeArea(true);
 
         BrowserComponent browser = new BrowserComponent();
         browser.setURL("https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Understanding-Depression-Adults#home");
@@ -169,7 +173,9 @@ public class ArticlesForm extends Form{
         Toolbar tb = new Toolbar();
         selfharmf.setToolbar(tb);
         Form current = getCurrentForm();
-        tb.addCommandToOverflowMenu("Back to Articles", null, e -> showArticlesForm());
+        
+        tb.addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> current.showBack());
+        getToolbar().setSafeArea(true);
 
         BrowserComponent browser = new BrowserComponent();
         browser.setURL("https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Preventing-Self-harm-and-Suicide-Teens#home");
@@ -194,7 +200,8 @@ public class ArticlesForm extends Form{
         Toolbar tb = new Toolbar();
         socialisolationf.setToolbar(tb);
         Form current = getCurrentForm();
-        tb.addCommandToOverflowMenu("Back to Articles", null, e -> showArticlesForm());
+        getToolbar().setSafeArea(true);
+        
 
         BrowserComponent browser = new BrowserComponent();
         browser.setURL("https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Experiencing-Social-Isolation-Seniors#home");
@@ -202,10 +209,13 @@ public class ArticlesForm extends Form{
         socialisolationf.add(BorderLayout.CENTER, browser);
 
         tb.setTitleComponent(titleLabel);
-
+        tb.addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> {
+            current.showBack();
+            browser.clearHistory();
+            browser.destroy();
+        });
         socialisolationf.show();
     }
-
 
 }
 

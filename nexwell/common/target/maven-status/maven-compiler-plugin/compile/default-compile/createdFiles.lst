@@ -40,7 +40,6 @@ com/nexus/nexwell/forms/BreathingTimerForm.class
 com/nexus/nexwell/forms/MusicForm.class
 com/nexus/nexwell/components/CircleFilledProgress.class
 com/nexus/nexwell/games/SnakeGameForm.class
-com/nexus/nexwell/components/RichTextView$1.class
 com/nexus/nexwell/NexWell.class
 com/nexus/nexwell/satisfyingvisuals/Ant.class
 com/nexus/nexwell/games/GameOfLifeComponent.class
