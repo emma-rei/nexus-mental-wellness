@@ -26,7 +26,22 @@ Switch.selected {
     background-color: rgb(117, 126, 132);
 }
 Images{
-    background-image:   url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Black/Search.png")
+    background-image:   url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Black/Search.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/megaphone.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/music.note.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/gamecontroller.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/house.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/books.vertical.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedmegaphone.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedmusic.note.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedgamecontroller.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedhouse.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedbooks.vertical.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/paintpalette.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/timer.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/wind.circle.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/calendar.badge.plus.png")
+                        
 
                         
 }
@@ -34,6 +49,8 @@ Images{
 Button {
     font-family: "native:MainLight";
     font-size: 3mm;
+    
+    border-radius: 100px;
 }
 circle{
     font-family: "native:MainLight";
@@ -41,9 +58,9 @@ circle{
 }
 /** Style for App Title Bar Text */
 Title {
-    color: white;
-    font-family: "native:MainLight";
-    font-size: 3.5mm;
+    color: lightgrey;
+    font-family: "native:MainBold";
+    font-size: 8mm;
 }
 
 /** Style for Dialog body */
@@ -82,6 +99,7 @@ BaseButton{
 SpanLabel{
     
     font-family: "native:MainRegular";
+    
     background: linear-gradient(to left, #6ddaf2, #57997a);
     text-align: center;
     margin:3mm 3mm 3mm 3mm;
@@ -203,7 +221,7 @@ ToggleButton{
     border: none;
 }
 ToggleButton.selected, ToggleButton.pressed{
-    color: #6868FD
+    color: #6868FD;
 }
 TitleCommand{
     color: #ffffff;
@@ -220,11 +238,7 @@ SplashForm{
     margin: 0px;
     padding: 0px;
 }
-HomePageForm{
-    background-color: #333333;
-    margin: 0px;
-    padding: 0px;
-}
+
 @font-face{
     font-family: "mindfulness";
     src: url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/mind.ttf");
@@ -236,7 +250,7 @@ IconFont{
     background-color: transparent;
 }
 Form{
-    background:linear-gradient(to top, #6868FD, #1d193b); 
+    background-color: #333333;
     margin: 0px;
     padding: 0px;
 }
@@ -250,9 +264,9 @@ TitleSearch{
     margin: 0.5mm 1.5mm 0.5mm 1.5mm;
 }
 Tab{
+    color: grey;
     font-family: "native:MainLight";
     font-size:2mm;
-    color: aqua;
     
     padding: 1mm 1mm 1mm 1mm;
     border: none;
@@ -260,13 +274,15 @@ Tab{
     margin: 0px 0px 1px 0px;
 }
 TabsContainer{
+    color: white;
     margin: 0px;
     padding: 1px 0px 1px 0px;
     background: transparent;
     
 }
 Tab.selected, Tab.pressed{
-    color: #2D72E4;
+    color: #0085FE;
+    
     border: none;
 }
 
@@ -294,16 +310,29 @@ DarkForm{
     padding: 0px;
 }
 
-GamesBar{
+GamesToolbar{
+    font-size: 5mm;
+    padding: 3mm 3mm 3mm 3mm;
     background: linear-gradient(to top, #6868FD, #1d193b);
 }
-MusicBar{
-    background: linear-gradient(to bottom, #6868FD, #1d193b);
+MusicToolbar{
+    font-size: 5mm;
+    padding: 3mm 3mm 3mm 3mm;
+    background: linear-gradient(to bottom, #000000, #48C875);
 }
-RsourcesBar{
+ArticlesToolbar{
+    font-size: 5mm;
+    padding: 3mm 3mm 3mm 3mm;
     background: linear-gradient(to top, #6868FD, #ffffff);
 }
-EmergencyBar{
-    background: linear-gradient(to bottom, #6868FD, #1d193b);
+EmergencyToolbar{
+    font-size: 5mm;
+    padding: 3mm 3mm 3mm 3mm;
+    background: linear-gradient(to bottom, #000000, #5368D3);
+}
+HomeButton {
+    font-family: "native:MainLight";
+    font-size: 3mm;
+    border-radius: 100px;
 }
 /* end /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/javase/../common/src/main/css/theme.css*/

@@ -21,15 +21,14 @@ import java.util.Map;
 
 public class EmergencyHelpForm extends Form {
     public EmergencyHelpForm() {
-        super("", new BorderLayout());
-        //Toolbar tb = new Toolbar();
-        //setToolbar(tb);
+        super("Connections", new BorderLayout());
+        getToolbar().setUIID("EmergencyToolbar");
         Container cnt = new Container(BoxLayout.y());
 
         cnt.setScrollableY(true);
-        Form previous = getCurrentForm();
+        
 
-        //getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, e -> previous.showBack());
+        
 
 
         HashMap<String, String> phoneBook = new HashMap<String, String>();

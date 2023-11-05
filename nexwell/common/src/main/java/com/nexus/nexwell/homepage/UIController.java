@@ -35,7 +35,7 @@ public class UIController {
         splash.show();
     }
     public static void showHomePageForm(){
-        new MainForm().show();
+        new LoginForm().show();
     }
     public static void showMainUI(){
         new MainForm().show();

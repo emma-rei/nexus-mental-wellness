@@ -28,8 +28,8 @@ public class GamesContainer extends Form{
 
 
     public GamesContainer(){
-        super("", new BoxLayout(BoxLayout.Y_AXIS));
-        
+        super("Games", new BoxLayout(BoxLayout.Y_AXIS));
+        getToolbar().setUIID("GamesToolbar");
         // Accessing the webLinks HashMap from ContentFeed class
         
         Map<String, String> webLinks = ContentFeed.webLinks;

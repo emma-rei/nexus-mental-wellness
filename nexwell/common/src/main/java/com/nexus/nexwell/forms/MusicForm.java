@@ -5,6 +5,7 @@ import com.codename1.components.SpanButton;
 import com.codename1.ui.Button;
 import static com.codename1.ui.CN.getCurrentForm;
 import com.codename1.ui.Display;
+import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
 import com.codename1.ui.Toolbar;
 import com.codename1.ui.layouts.GridLayout;
@@ -17,9 +18,13 @@ import java.util.Map;
 
 public class MusicForm extends Form{
     public MusicForm(){
-        super("");
+        super("Music");
+        getToolbar().setUIID("MusicToolbar");
+        getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_HEADPHONES, e->{});
+        
+        
 
-        removeComponent(getTitleComponent());
+        
         setLayout(new GridLayout(2,2));
 
 

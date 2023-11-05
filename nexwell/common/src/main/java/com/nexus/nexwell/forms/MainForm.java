@@ -40,11 +40,11 @@ public class MainForm extends Form {
     public MainForm(){
         super("", new BorderLayout());
         String str = "Welcome Back! <usr>";
+        getToolbar().setUIID("Container");
         
-        setTitle(str);
 
-        getCurrentForm().getTitleComponent().setTextPosition(Component.LEFT);
-        Toolbar.setGlobalToolbar(focusScrolling);
+        //getCurrentForm().getTitleComponent().setTextPosition(Component.LEFT);
+        //Toolbar.setGlobalToolbar(focusScrolling);
         
         
         
@@ -58,39 +58,30 @@ public class MainForm extends Form {
         
         
         
+        
         mainUI.setTabPlacement(BOTTOM);
         
         mainUI.getTabsContainer().getAllStyles().setBgTransparency(60, true);
-        mainUI.addTab("Home", FontImage.MATERIAL_HOME, 5f,  new HomePageForm());
-        mainUI.addTab("Resources", FontImage.MATERIAL_BOOK, 5f, new RichTextView());// replace e-> with new NewsFeedContainer()
-        mainUI.addTab("Games", FontImage.MATERIAL_GAMES, 5f, new BreathingTimerForm());// replace e-> with new GamesContainer()
-        mainUI.addTab("Music", FontImage.MATERIAL_HEADPHONES, 5f, new MusicForm());// replace e-> with new RelaxContainer()
-        mainUI.addTab("Emergency", FontImage.MATERIAL_CONTACT_EMERGENCY, 5f, new EmergencyHelpForm());// replace e-> with new ResourcesContainer()
+        mainUI.addTab("Home", Colors.HOUSE, Colors.HOUSE_PRESSED,  new HomePageForm());
+        mainUI.addTab("Articles", Colors.BOOKS, Colors.BOOKS_PRESSED, new RichTextView());// replace e-> with new NewsFeedContainer()
+        mainUI.addTab("Games", Colors.GAMES, Colors.GAMES_PRESSED, new GamesContainer());// replace e-> with new GamesContainer()
+        mainUI.addTab("Music", Colors.MUSIC, Colors.MUSIC_PRESSED, new MusicForm());// replace e-> with new RelaxContainer()
+        mainUI.addTab("Emergency", Colors.HELPLINE, Colors.HELPLINE_PRESSED ,new EmergencyHelpForm());// replace e-> with new ResourcesContainer()
+        
         
         add(CENTER, mainUI);
-        //Image icon = getGlobalResources().getImage("Search.png");
+        
         //Button searchButton = new Button("Search", "TitleSearch");
         
         
         
         
-        /*
-        getToolbar().addSearchCommand(e -> {
-            searchString = (String)e.getSource();
-            list.refresh();
-        });
-        */
         
         
         
         
-        getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm());
-        getToolbar().addMaterialCommandToLeftSideMenu("Mindfulness",FontImage.MATERIAL_BOOKMARKS,4, e -> new BreathingTimerForm().show());
-        getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
-        getToolbar().addMaterialCommandToLeftSideMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
-        getToolbar().addMaterialCommandToLeftSideMenu("Settings", FontImage.MATERIAL_SETTINGS, 4, e -> new Settings().show());
-        //getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_SEARCH, 4, e->search(searchButton));
-        getToolbar().addMaterialCommandToLeftSideMenu("RESOURCES", FontImage.MATERIAL_CHAT, 4, e -> new ArticlesForm().show());
+        
+        
         
     }
     public void games(){
@@ -122,26 +113,7 @@ public class MainForm extends Form {
         gameOptionsDialog.add(options);
         gameOptionsDialog.show();
     }
-    public void Pomodoro(){
-        add(BorderLayout.CENTER, new Component(){
-            @Override
-            public void paint(Graphics g){
-                // red color
-                g.setColor(0xff0000);
-                // paint screen in red
-                g.drawArc(150, 300, 800, 800, 0, 360);
-                g.fillArc(TOP+50, TOP+50, LEFT+50, RIGHT+50, RIGHT, CENTER);
-                
-                
-                
-                
-            }
-            
-        });
-
-        
-        
-    }
+    
     public void satisfyingvisuals(){
         Dialog visualsOptionsDialog = new Dialog("Choose a visual");
         

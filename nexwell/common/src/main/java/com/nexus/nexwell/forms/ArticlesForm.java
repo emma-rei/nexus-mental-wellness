@@ -35,11 +35,9 @@ public class ArticlesForm extends Form{
 
     private Tabs mode = new Tabs();
     public ArticlesForm(){
-        super("", new BoxLayout(BoxLayout.Y_AXIS));
-        Toolbar tb = new Toolbar();
-        setToolbar(tb);
-        setTitle("Resources");
-        tb.setUIID("ResourcesBar");
+        super("Resources", new BoxLayout(BoxLayout.Y_AXIS));
+        getToolbar().setUIID("ResourcesToolbar");
+        
         Form current = getCurrentForm();
         getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> current.showBack());
         mode.setTabPlacement(BOTTOM);
@@ -74,7 +72,7 @@ public class ArticlesForm extends Form{
         add(depresionButton);
         add(selfharmButton);
         add(socialIsolationButton);
-        //add(mode);
+        
     }
     private void showArticlesForm() {
         ArticlesForm articlesForm = new ArticlesForm();
