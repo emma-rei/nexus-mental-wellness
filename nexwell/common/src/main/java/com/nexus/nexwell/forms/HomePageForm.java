@@ -5,6 +5,7 @@ import java.util.Random;
 import com.codename1.components.SpanLabel;
 import com.codename1.ui.*;
 import static com.codename1.ui.CN.NATIVE_ITALIC_LIGHT;
+import static com.codename1.ui.CN.getCurrentForm;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.plaf.RoundRectBorder;
@@ -31,13 +32,16 @@ public class HomePageForm extends Form {
         Image calendaricon = getGlobalResources().getImage("calendar.badge.plus.png");
         Button btn1 = new Button("", ico1, "RaisedButton");
         Button btn2 = new Button("", timericon, "RaisedButton");
+        btn2.addActionListener(e -> new BreathingTimerForm().show());
         Button btn3 = new Button("", windicon, "RaisedButton");
         cnt.add(btn1);
         cnt.add(btn2);
         cnt.add(btn3);
         
         Button booking = new Button("Book an appointment");
-        
+        booking.addActionListener(e -> {
+            bookme();
+        });
         booking.setUIID("SpanLabel");
         booking.setIcon(calendaricon);
         Label quoteOfTheDay = new Label("                        Quote of the day");
@@ -125,5 +129,28 @@ public class HomePageForm extends Form {
         visualsOptionsDialog.add(options);
         visualsOptionsDialog.show();
     }
-    
+    private void bookme() {
+        Form stressf = new Form(new BorderLayout());
+
+        Label titleLabel = new Label("YouCanBookMe");
+        titleLabel.getUnselectedStyle().setFgColor(0x000000);
+        titleLabel.getUnselectedStyle().setFont(Font.createSystemFont(Font.FACE_SYSTEM, Font.STYLE_BOLD, Font.SIZE_LARGE)); // Set a larger font size
+
+        Button backButton = new Button(FontImage.MATERIAL_ARROW_BACK_IOS_NEW);
+        backButton.addActionListener(e -> getCurrentForm().showBack());
+
+        Toolbar tb = new Toolbar();
+        stressf.setToolbar(tb);
+        Form current = getCurrentForm();
+        tb.addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> current.showBack());
+
+        BrowserComponent browser = new BrowserComponent();
+        browser.setURL("https://nexuscounsellors.youcanbook.me/");
+
+        stressf.add(BorderLayout.CENTER, browser);
+
+        tb.setTitleComponent(titleLabel);
+
+        stressf.show();
+    }
 }   

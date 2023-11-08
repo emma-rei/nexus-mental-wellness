@@ -36,6 +36,7 @@ public class ArticlesForm extends Form{
     private Tabs mode = new Tabs();
     public ArticlesForm(){
         super("Resources", new BoxLayout(BoxLayout.Y_AXIS));
+        setUIID("ArticlesToolbar");
         getToolbar().setUIID("ResourcesToolbar");
         
         Form current = getCurrentForm();

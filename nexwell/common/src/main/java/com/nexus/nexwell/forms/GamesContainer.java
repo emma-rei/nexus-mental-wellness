@@ -17,7 +17,10 @@ import com.nexus.nexwell.homepage.ContentFeed;
 import com.codename1.ui.plaf.RoundBorder;
 import com.codename1.ui.plaf.Style;
 import com.codename1.ui.table.TableLayout;
+import com.nexus.nexwell.components.Colors;
 import com.nexus.nexwell.games.*;
+import com.nexus.nexwell.satisfyingvisuals.BubbleGame;
+import com.nexus.nexwell.satisfyingvisuals.ChaosGame;
 import java.util.Map;
 import java.util.Set;
 
@@ -28,73 +31,38 @@ public class GamesContainer extends Form{
 
 
     public GamesContainer(){
-        super("Games", new BoxLayout(BoxLayout.Y_AXIS));
-        getToolbar().setUIID("GamesToolbar");
-        // Accessing the webLinks HashMap from ContentFeed class
-        
-        Map<String, String> webLinks = ContentFeed.webLinks;
-        
-        // Iterating through the Hashmap to create buttons
-        
-        Set<Map.Entry<String, String>> entrySet = webLinks.entrySet();
-        
-        for (Map.Entry<String, String> entry: entrySet){
-            String key = entry.getKey();
-            String value = entry.getValue();
-            
-            Button btn = new Button(key);
-
-            CustomButtonStyle(btn);
-            add(btn);
-        }
-        
-        
-        
-        /*
-        TableLayout tl;
-        int spanButton = 2;
-        if (Display.getInstance().isTablet()){
-            tl = new TableLayout(7,2);
-        }
-        else{
-            tl = new TableLayout(14, 1);
-            spanButton = 1;
-        }
-        tl.setGrowHorizontally(true);
-        setLayout(tl);
-
-
-        TextField firstName = new TextField("", "First Name", 20, TextArea.ANY);
-        TextField lastName = new TextField("", "Last Name", 20, TextArea.ANY);
-        TextField email = new TextField("", "Email", 20, TextArea.EMAILADDR);
-        TextField number = new TextField("", "Phone Number", 20, TextArea.PHONENUMBER);
-
-        TextField num1 = new TextField("", "1234", 4, TextArea.NUMERIC);
-        TextField num2 = new TextField("", "1234", 4, TextArea.NUMERIC);
-        TextField num3 = new TextField("", "1234", 4, TextArea.NUMERIC);
-        TextField num4 = new TextField("", "1234", 4, TextArea.NUMERIC);
-
-        Button submit = new Button("Submit");
-        TableLayout.Constraint cn = tl.createConstraint();
-        cn.setHorizontalSpan(spanButton);
-        cn.setHorizontalAlign(Component.RIGHT);
-        add("First Name").add(firstName).add("Last Name").add(lastName).add("Email").add(email).add("Phone Number").add(number).add("Credit Card").add(GridLayout.encloseIn(4, num1, num2, num3, num4)).add(cn, submit);
-        */
-        setFormBottomPaddingEditingMode(true);
-    }
-    public static void CustomButtonStyle(Button button){
-        button.setUIID("GreenButton");
-        Style s = button.getAllStyles();
-        s.setBorder(RoundBorder.create().rectangle(true).color(999999));
-        s.setMarginUnit(Style.UNIT_TYPE_DIPS);
+        super("");
+        setUIID("GamesToolbar");
+        setLayout(new BoxLayout(BoxLayout.Y_AXIS));
+        Button snakeButton = new Button("Snake Game");
+        Colors.CustomButtonStyle(snakeButton);
+        snakeButton.addActionListener(e ->{
+            new SnakeGameForm().show();
+        });
+        Button gameOfLifeButton = new Button("Conway's Game Of Life");
+        Colors.CustomButtonStyle(gameOfLifeButton);
+        gameOfLifeButton.addActionListener(e ->{
+            new GameOfLifeForm(25).show();
+        });
+        Button bubbleGameButton = new Button("Bubble Game");
+        Colors.CustomButtonStyle(bubbleGameButton);
+        bubbleGameButton.addActionListener(e ->{
+            new BubbleGame().show();
+        });
+        Button chaosGameButton = new Button("Chaos Game");
+        Colors.CustomButtonStyle(chaosGameButton);
+        chaosGameButton.addActionListener(e ->{
+            new ChaosGame().show();
+        });
+        add(snakeButton);
+        add(gameOfLifeButton);
+        add(bubbleGameButton);
+        add(chaosGameButton);
     }
     
     
-    private void openBrowser(String url){
-        Form hi = new Form("Browser", new BorderLayout());
-        
-        
-    }
+    
+    
     
 
 }

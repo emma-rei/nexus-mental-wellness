@@ -7,9 +7,11 @@ import com.codename1.ui.Button;
 import static com.codename1.ui.CN.getCurrentForm;
 
 import com.codename1.ui.Container;
+import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
 import com.codename1.ui.Label;
 import com.codename1.ui.Slider;
+import com.codename1.ui.Toolbar;
 import com.codename1.ui.events.DataChangedListener;
 
 
@@ -22,11 +24,15 @@ import com.nexus.nexwell.forms.GamesContainer;
 
 
 //import com.codename1.ui.spinner.GenericSpinner;
-public class BreathingTimerForm extends Form {
+public class BreathingTimerForm extends Form { 
 
 
     public BreathingTimerForm() {
         super("");
+        Toolbar tb = new Toolbar();
+        setToolbar(tb);
+        Form hi = getCurrentForm();
+        tb.addMaterialCommandToLeftBar("Back", FontImage.MATERIAL_ARROW_BACK, e-> hi.showBack());
         setLayout(new BoxLayout(BoxLayout.Y_AXIS));
         final CircleProgress p = new CircleProgress();
         p.setRenderPercentageOnTop(false);
@@ -47,11 +53,11 @@ public class BreathingTimerForm extends Form {
 
         BreathingTimer timer = new BreathingTimer(this);
         Button start = new Button("Start");
-        GamesContainer.CustomButtonStyle(start);
+        Colors.CustomButtonStyle(start);
         Button cancel = new Button("Cancel");
-        GamesContainer.CustomButtonStyle(cancel);
+        Colors.CustomButtonStyle(cancel);
         Button reset = new Button("Reset");
-        GamesContainer.CustomButtonStyle(reset);
+        Colors.CustomButtonStyle(reset);
 
 
         start.addActionListener(e -> {

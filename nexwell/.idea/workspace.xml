@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="336d32c5-6f4b-4a8f-b637-9fea310958e7" name="Default Changelist" comment="Add 4/5/7 breathing timer basic functionality&#10;TODO: add start/stop button, change circle according to phase">
-      <change beforePath="$PROJECT_DIR$/android/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/Colors.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/Colors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/ArticlesForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/ArticlesForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/BreathingTimerForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/BreathingTimerForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/GamesContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/GamesContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/HomePageForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/HomePageForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/MainForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/satisfyingvisuals/Ant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/codenameone/simulator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/codenameone/simulator.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

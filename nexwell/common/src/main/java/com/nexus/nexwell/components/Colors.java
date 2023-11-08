@@ -2,8 +2,11 @@
 package com.nexus.nexwell.components;
 
 import com.codename1.charts.util.ColorUtil;
+import com.codename1.ui.Button;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Image;
+import com.codename1.ui.plaf.RoundBorder;
+import com.codename1.ui.plaf.Style;
 import static com.codename1.ui.util.Resources.getGlobalResources;
 
 
@@ -38,5 +41,11 @@ public class Colors {
     public static final Image GAMES_PRESSED = getGlobalResources().getImage("pressedgamecontroller.fill.png");
     public static final Image BOOKS_PRESSED = getGlobalResources().getImage("pressedbooks.vertical.fill.png");
     public static final Image HELPLINE_PRESSED = getGlobalResources().getImage("pressedmegaphone.fill.png");
+    public static void CustomButtonStyle(Button button){
+        button.setUIID("GreenButton");
+        Style s = button.getAllStyles();
+        s.setBorder(RoundBorder.create().rectangle(true).color(999999));
+        s.setMarginUnit(Style.UNIT_TYPE_DIPS);
+    }
     
 }

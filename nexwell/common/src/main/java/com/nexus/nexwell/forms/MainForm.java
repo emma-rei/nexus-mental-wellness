@@ -63,7 +63,7 @@ public class MainForm extends Form {
         
         mainUI.getTabsContainer().getAllStyles().setBgTransparency(60, true);
         mainUI.addTab("Home", Colors.HOUSE, Colors.HOUSE_PRESSED,  new HomePageForm());
-        mainUI.addTab("Articles", Colors.BOOKS, Colors.BOOKS_PRESSED, new RichTextView());// replace e-> with new NewsFeedContainer()
+        mainUI.addTab("Articles", Colors.BOOKS, Colors.BOOKS_PRESSED, new ArticlesForm());// replace e-> with new NewsFeedContainer()
         mainUI.addTab("Games", Colors.GAMES, Colors.GAMES_PRESSED, new GamesContainer());// replace e-> with new GamesContainer()
         mainUI.addTab("Music", Colors.MUSIC, Colors.MUSIC_PRESSED, new MusicForm());// replace e-> with new RelaxContainer()
         mainUI.addTab("Emergency", Colors.HELPLINE, Colors.HELPLINE_PRESSED ,new EmergencyHelpForm());// replace e-> with new ResourcesContainer()
