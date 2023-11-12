@@ -81,10 +81,17 @@ public class ContentFeed{
     
     static{
         webLinks.put("Mental Well-being", "https://www.healthhub.sg/programmes/186/MindSG/About-Mental-Well-Being#home");
-        webLinks.put("Stress", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Coping-With-Stress-Adults#home ");
-        webLinks.put("Depression", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Understanding-Depression-Adults#home");
-        webLinks.put("Self-Harm", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Preventing-Self-harm-and-Suicide-Teens#home");
+        webLinks.put("Coping with Stress", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Coping-With-Stress-Adults#home ");
+        webLinks.put("Understanding Depression", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Understanding-Depression-Adults#home");
+        webLinks.put("Preventing Self-Harm", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Preventing-Self-harm-and-Suicide-Teens#home");
         webLinks.put("Social Isolation", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Experiencing-Social-Isolation-Seniors#home");
+        webLinks.put("Psycom", "https://www.psycom.net/");
+        webLinks.put("Harvard Health", "https://www.health.harvard.edu/topics/mental-health/all");
+        webLinks.put("NIH", "https://magazine.medlineplus.gov/topic/mental-health/#:~:text=,FOIA%3B%20HHS%20Vulnerability%20Disclosure");
+        webLinks.put("Dealing with Anxiety", "https://www.healthhub.sg/programmes/mindsg/caring-for-ourselves/dealing-with-anxiety-disorder-adults#anxiety-self-assessment-tool-questions");
+        webLinks.put("Programmes", "https://www.healthhub.sg/programmes");
+        webLinks.put("Mindline", "https://www.mindline.sg/home");
+        webLinks.put("Other", "https://www.healthhub.sg/programmes/mindsg/other-useful-websites#home");
     }
     
     public static String getValueForKey(String key){

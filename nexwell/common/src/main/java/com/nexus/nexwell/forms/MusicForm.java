@@ -20,17 +20,8 @@ public class MusicForm extends Form{
     public MusicForm(){
         super("Music");
         getToolbar().setUIID("MusicToolbar");
-        getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_HEADPHONES, e->{});
-        
-        
-
-        
+        getToolbar().addMaterialCommandToRightBar("", FontImage.MATERIAL_HEADPHONES, e->{});
         setLayout(new GridLayout(2,2));
-
-
-
-
-
         HashMap<String, String> musicLinks = new HashMap<String, String>();
         musicLinks.put("Stress & Anxiety Detox", "https://www.youtube.com/watch?v=79kpoGF8KWU");
         musicLinks.put("Calming & Relaxing", "https://www.youtube.com/watch?v=lFcSrYw-ARY");
@@ -58,7 +49,6 @@ public class MusicForm extends Form{
                 colorIndex = colorIndex % 2;
             }
             btnStyle.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
-            
             colorIndex++;
             btnStyle.setBackgroundGradientEndColor(colorArr[colorIndex]);
             btn.addActionListener(e -> executeVideo(set.getValue()));
@@ -72,3 +62,4 @@ public class MusicForm extends Form{
     }
 
 }
+

@@ -23,18 +23,13 @@ public class EmergencyHelpForm extends Form {
     public EmergencyHelpForm() {
         super("Connections", new BorderLayout());
         getToolbar().setUIID("EmergencyToolbar");
+        getToolbar().addMaterialCommandToRightBar("",FontImage.MATERIAL_CALL, e->{});
         Container cnt = new Container(BoxLayout.y());
 
         cnt.setScrollableY(true);
         
 
-        
-
-
         HashMap<String, String> phoneBook = new HashMap<String, String>();
-        phoneBook.put("Daniel Tan", "92793403");
-        phoneBook.put("Lori Ecran", "94894394");
-        phoneBook.put("Zanthe Ng", "93405831");
         phoneBook.put("IMH Mental Health Helpline", "6389-2222");
         phoneBook.put("TOUCHline (Counselling)", "1800-377-2252");
         phoneBook.put("All addictions (NAMS)", "6732-683");

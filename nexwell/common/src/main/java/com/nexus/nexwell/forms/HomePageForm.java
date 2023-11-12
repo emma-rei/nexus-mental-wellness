@@ -64,7 +64,7 @@ public class HomePageForm extends Form {
         getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
         getToolbar().addMaterialCommandToLeftSideMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
         getToolbar().addMaterialCommandToLeftSideMenu("Settings", FontImage.MATERIAL_SETTINGS, 4, e -> new Settings().show());
-        getToolbar().addMaterialCommandToLeftSideMenu("RESOURCES", FontImage.MATERIAL_CHAT, 4, e -> new ArticlesForm().show());
+        getToolbar().addMaterialCommandToLeftSideMenu("RESOURCES", FontImage.MATERIAL_CHAT, 4, e -> new ResourcesForm().show());
         
         
     }
