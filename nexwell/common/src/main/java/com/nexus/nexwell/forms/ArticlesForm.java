@@ -15,7 +15,7 @@ import java.lang.Object;
 import com.codename1.ui.Label;
 import com.codename1.ui.Button;
 import com.codename1.ui.layouts.FlowLayout;
-
+import com.codename1.system.Lifecycle;
 import com.nexus.nexwell.components.Colors;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.BorderLayout;
@@ -25,7 +25,7 @@ import com.codename1.ui.plaf.Style;
 import com.codename1.ui.util.SwipeBackSupport;
 import com.nexus.nexwell.forms.MainForm;
 import com.codename1.ui.Button;
-
+import com.codename1.ui.layouts.GridLayout;
 
 /**
  *
@@ -36,44 +36,42 @@ public class ArticlesForm extends Form{
     private Tabs mode = new Tabs();
     public ArticlesForm(){
         super("Resources", new BoxLayout(BoxLayout.Y_AXIS));
-        setUIID("ArticlesToolbar");
-        getToolbar().setUIID("ResourcesToolbar");
-        
-        Form current = getCurrentForm();
-        getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> current.showBack());
-        mode.setTabPlacement(BOTTOM);
+        getToolbar().addMaterialCommandToRightBar("",FontImage.MATERIAL_ARTICLE, e->{});
+        getToolbar().setUIID("ArticlesToolbar");
+        // Form current = getCurrentForm();
+        // getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> current.showBack());
+        // mode.setTabPlacement(BOTTOM);
        /*
        mode.addTab("", FontImage.MATERIAL_BOOKMARK, 5f, new RichTextView());
        mode.addTab("", FontImage.MATERIAL_PAGES, 5f, new RichTextView());
        */
         mode.addTab("", FontImage.MATERIAL_SEARCH, 5f, new SearchForm());
-
         String str = "Resources";
         setTitle(str);
         getCurrentForm().getTitleComponent().setTextPosition(Component.LEFT);
 
         Button wellbeingButton = new Button("Mental Wellbeing");
         wellbeingButton.addActionListener(e -> wellbeingpg());
-        
+
         Button stressButton = new Button("Stress");
         stressButton.addActionListener(e -> stresspg());
-        
+
         Button depresionButton = new Button("Depression");
         depresionButton.addActionListener(e -> depressionpg());
-        
+
         Button selfharmButton = new Button("Self Harm");
         selfharmButton.addActionListener(e -> selfharmpg());
-        
+
         Button socialIsolationButton = new Button("Social Isolation");
         socialIsolationButton.addActionListener(e -> socialisolationpg());
-        
+
 
         add(wellbeingButton);
         add(stressButton);
         add(depresionButton);
         add(selfharmButton);
         add(socialIsolationButton);
-        
+
     }
     private void showArticlesForm() {
         ArticlesForm articlesForm = new ArticlesForm();
@@ -172,7 +170,7 @@ public class ArticlesForm extends Form{
         Toolbar tb = new Toolbar();
         selfharmf.setToolbar(tb);
         Form current = getCurrentForm();
-        
+
         tb.addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> current.showBack());
         getToolbar().setSafeArea(true);
 
@@ -200,7 +198,7 @@ public class ArticlesForm extends Form{
         socialisolationf.setToolbar(tb);
         Form current = getCurrentForm();
         getToolbar().setSafeArea(true);
-        
+
 
         BrowserComponent browser = new BrowserComponent();
         browser.setURL("https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Experiencing-Social-Isolation-Seniors#home");

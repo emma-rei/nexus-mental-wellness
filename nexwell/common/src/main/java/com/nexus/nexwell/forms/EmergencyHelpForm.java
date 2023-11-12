@@ -23,13 +23,11 @@ public class EmergencyHelpForm extends Form {
     public EmergencyHelpForm() {
         super("Connections", new BorderLayout());
         getToolbar().setUIID("EmergencyToolbar");
+        getToolbar().addMaterialCommandToRightBar("",FontImage.MATERIAL_CALL, e->{});
         Container cnt = new Container(BoxLayout.y());
 
         cnt.setScrollableY(true);
         
-
-        
-
 
         HashMap<String, String> phoneBook = new HashMap<String, String>();
         phoneBook.put("Daniel Tan", "92793403");

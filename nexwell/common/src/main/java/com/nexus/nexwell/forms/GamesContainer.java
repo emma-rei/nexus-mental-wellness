@@ -1,68 +1,80 @@
 package com.nexus.nexwell.forms;
-
-import com.codename1.ui.BrowserComponent;
+import com.codename1.ui.layouts.GridLayout;
 import com.codename1.ui.Button;
-import com.codename1.ui.Component;
-import com.codename1.ui.Container;
-import com.codename1.ui.Display;
-import com.codename1.ui.Form;
-import com.codename1.ui.Sheet;
-import com.codename1.ui.TextArea;
-import com.codename1.ui.TextField;
-import com.codename1.ui.layouts.BorderLayout;
-import com.codename1.ui.layouts.BoxLayout;
-
-import com.nexus.nexwell.homepage.ContentFeed;
-
-import com.codename1.ui.plaf.RoundBorder;
-import com.codename1.ui.plaf.Style;
-import com.codename1.ui.table.TableLayout;
 import com.nexus.nexwell.components.Colors;
+import java.util.HashMap;
+import java.util.Map;
+import com.codename1.components.MultiButton;
+import com.codename1.components.SpanButton;
+import com.codename1.ui.Component;
+import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.*;
+import com.codename1.ui.Form;
+import static com.codename1.ui.CN.getCurrentForm;
+import com.nexus.nexwell.components.Colors;
+import com.codename1.ui.plaf.RoundRectBorder;
 import com.nexus.nexwell.games.*;
 import com.nexus.nexwell.satisfyingvisuals.BubbleGame;
 import com.nexus.nexwell.satisfyingvisuals.ChaosGame;
-import java.util.Map;
-import java.util.Set;
-
+import com.codename1.ui.plaf.Style;
 public class GamesContainer extends Form{
 
-    
+
     // This form is designed to be a test form used for different purposes
 
 
     public GamesContainer(){
         super("");
-        setUIID("GamesToolbar");
-        setLayout(new BoxLayout(BoxLayout.Y_AXIS));
-        Button snakeButton = new Button("Snake Game");
-        Colors.CustomButtonStyle(snakeButton);
-        snakeButton.addActionListener(e ->{
-            new SnakeGameForm().show();
-        });
-        Button gameOfLifeButton = new Button("Conway's Game Of Life");
-        Colors.CustomButtonStyle(gameOfLifeButton);
-        gameOfLifeButton.addActionListener(e ->{
-            new GameOfLifeForm(25).show();
-        });
-        Button bubbleGameButton = new Button("Bubble Game");
-        Colors.CustomButtonStyle(bubbleGameButton);
-        bubbleGameButton.addActionListener(e ->{
-            new BubbleGame().show();
-        });
-        Button chaosGameButton = new Button("Chaos Game");
-        Colors.CustomButtonStyle(chaosGameButton);
-        chaosGameButton.addActionListener(e ->{
-            new ChaosGame().show();
-        });
-        add(snakeButton);
-        add(gameOfLifeButton);
-        add(bubbleGameButton);
-        add(chaosGameButton);
-    }
-    
-    
-    
-    
-    
+        //set the icon of the page
+        getToolbar().addMaterialCommandToRightBar("",FontImage.MATERIAL_GAMES, e->{});
+        setLayout(new GridLayout(2,2));
+        getToolbar().setUIID("GamesToolbar");
+        String str = "Games";
+        setTitle(str);
+        getCurrentForm().getTitleComponent().setTextPosition(Component.LEFT);
+        int[] colorArr = {
+                Colors.CYAN,
+                Colors.BLUE,
 
+        };
+        int colorIndex = 0;
+        //SETTING Mb for GAMES
+        HashMap<String,String> gamelist = new HashMap<String, String>();
+        gamelist.put("Snake game", "Snake");
+        gamelist.put("Game of life", "Game of life");
+        gamelist.put("Bubble game", "Bubble");
+        gamelist.put("Chaos games", "Chaos");
+
+        for (HashMap.Entry<String, String> set : gamelist.entrySet()) {
+                String name  = set.getKey();
+                MultiButton mb = new MultiButton(name);
+                mb.addActionListener(e->gamesopen(set.getValue()));
+                mb.setUIID("SpanLabel");
+                mb.setUIIDLine1("WhiteText");
+                Style mbStyle = mb.getAllStyles();
+                if (colorIndex==1){
+                    colorIndex = colorIndex % 1;
+                }
+                mbStyle.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
+                colorIndex++;
+                mbStyle.setBackgroundGradientEndColor(colorArr[colorIndex]);
+                add(mb);
+            }
+        }
+    public void gamesopen(String name){
+        switch (name){
+            case "Snake":
+                new SnakeGameForm().show();
+                break;
+            case "Game of life":
+                new GameOfLifeForm(25).show();
+                break;
+            case "Bubble":
+                new BubbleGame().show();
+                break;
+            case "Chaos":
+                new ChaosGame().show();
+                break;
+        }
+    }
 }
