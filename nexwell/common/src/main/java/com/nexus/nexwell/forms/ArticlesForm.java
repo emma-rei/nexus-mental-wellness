@@ -23,20 +23,15 @@ import com.codename1.ui.Tabs;
  *
  * @author kazybekkhairulla
  */
-public class ArticlesForm extends Form{
-
+public class ArticlesForm extends Form {
     private Tabs mode = new Tabs();
-    public ArticlesForm(){
-        super("Resources", new BoxLayout(BoxLayout.Y_AXIS));
-        getToolbar().addMaterialCommandToRightBar("",FontImage.MATERIAL_ARTICLE, e->{});
+
+    public ArticlesForm() {
+        super("Articles", new BoxLayout(BoxLayout.Y_AXIS));
         getToolbar().setUIID("ArticlesToolbar");
-        // Form current = getCurrentForm();
-        // getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_ARROW_BACK_IOS_NEW, 4, e -> current.showBack());
-        // mode.setTabPlacement(BOTTOM);
-       /*
-       mode.addTab("", FontImage.MATERIAL_BOOKMARK, 5f, new RichTextView());
-       mode.addTab("", FontImage.MATERIAL_PAGES, 5f, new RichTextView());
-       */
+        getToolbar().addMaterialCommandToLeftBar("", FontImage.MATERIAL_HEADPHONES, e->{});
+
+
         HashMap<String, String> articlesLinks = new HashMap<String, String>();
         articlesLinks.put("Psycomp", "https://www.psycom.net/");
         articlesLinks.put("Harvard Health", "https://www.health.harvard.edu/topics/mental-health/all");
@@ -57,8 +52,9 @@ public class ArticlesForm extends Form{
                 Colors.LIGHT_GREEN,
                 Colors.REGBLUE,
                 Colors.PEACH,
-        };
 
+
+        };
         int colorIndex = 0;
         for (Map.Entry<String, String> set : articlesLinks.entrySet()) {
             String txt = set.getKey();
@@ -70,17 +66,14 @@ public class ArticlesForm extends Form{
             }
             btnStyle.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
 
+
             colorIndex++;
             btnStyle.setBackgroundGradientEndColor(colorArr[colorIndex]);
             btn.addActionListener(e -> executeBrowser(set.getValue()));
 
+
             add(btn);
         }
-
-    }
-    private void showArticlesForm() {
-        ArticlesForm articlesForm = new ArticlesForm();
-        articlesForm.showBack();
     }
     public void executeBrowser(String value) {
         Form form = new Form("Resources", new BorderLayout());
@@ -93,8 +86,10 @@ public class ArticlesForm extends Form{
         form.setToolbar(tb);
         tb.addCommandToOverflowMenu("Back to Articles", null, e -> current.showBack());
 
+
         BrowserComponent browser = new BrowserComponent();
         browser.setURL(value);
+
 
         form.add(BorderLayout.CENTER, browser);
         form.show();

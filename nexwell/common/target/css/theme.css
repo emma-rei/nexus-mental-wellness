@@ -323,7 +323,11 @@ MusicToolbar{
 ArticlesToolbar{
     font-size: 5mm;
     padding: 3mm 3mm 3mm 3mm;
+<<<<<<< HEAD
     background: linear-gradient(to bottom, #000000, #00d2ff);
+=======
+    background: linear-gradient(to top, #75496e, #e09119);
+>>>>>>> 57a4d5be045d4f5404e103219fa832850652bb00
 }
 EmergencyToolbar{
     font-size: 5mm;

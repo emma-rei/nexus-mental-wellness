@@ -16,6 +16,7 @@ import com.nexus.nexwell.games.*;
 
 import com.nexus.nexwell.forms.HomePageForm;
 import static com.codename1.ui.util.Resources.getGlobalResources;
+import com.nexus.nexwell.forms.MainForm;
 import com.nexus.nexwell.homepage.UIController;
 
 /**
@@ -58,6 +59,7 @@ public class NexWell{
         // Straight to MainForm (Homepage)
         UIController.showSplashScreen();
         
+       
     }
     public void stop() {
         current = getCurrentForm();

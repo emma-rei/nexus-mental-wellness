@@ -18,7 +18,6 @@ com/nexus/nexwell/server/ServerAPI.class
 com/nexus/nexwell/components/RichTextView$Parser.class
 com/nexus/nexwell/components/MySheet.class
 com/nexus/nexwell/forms/MainForm.class
-com/nexus/nexwell/forms/GamesContainer.class
 com/nexus/nexwell/forms/SearchForm.class
 com/nexus/nexwell/forms/BreathingTimerForm.class
 com/nexus/nexwell/satisfyingvisuals/ChaosGame.class
