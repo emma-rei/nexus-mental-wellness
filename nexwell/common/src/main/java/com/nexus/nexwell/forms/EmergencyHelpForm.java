@@ -21,7 +21,7 @@ import java.util.Map;
 
 public class EmergencyHelpForm extends Form {
     public EmergencyHelpForm() {
-        super("Connections", new BorderLayout());
+        super("Call", new BorderLayout());
         getToolbar().setUIID("EmergencyToolbar");
         getToolbar().addMaterialCommandToRightBar("",FontImage.MATERIAL_CALL, e->{});
         Container cnt = new Container(BoxLayout.y());

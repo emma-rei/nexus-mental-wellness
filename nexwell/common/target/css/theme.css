@@ -1,5 +1,5 @@
 
-/* /Users/mialloyd/Desktop/nexus-mental-wellness/nexwell/common/src/main/css/theme.css */
+/* /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/javase/../common/src/main/css/theme.css */
 /** Define Theme Constants here */
 #Constants {
     includeNativeBool: true;
@@ -26,21 +26,21 @@ Switch.selected {
     background-color: rgb(117, 126, 132);
 }
 Images{
-    background-image:   url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/Black/Search.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/TabIconsDefault/megaphone.fill.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/TabIconsDefault/music.note.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/TabIconsDefault/gamecontroller.fill.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/TabIconsDefault/house.fill.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/TabIconsDefault/books.vertical.fill.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/TabIconsPressed/pressedmegaphone.fill.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/TabIconsPressed/pressedmusic.note.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/TabIconsPressed/pressedgamecontroller.fill.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/TabIconsPressed/pressedhouse.fill.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/TabIconsPressed/pressedbooks.vertical.fill.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/Buttons/paintpalette.fill.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/Buttons/timer.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/Buttons/wind.circle.png"),
-                        url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/Buttons/calendar.badge.plus.png")
+    background-image:   url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Black/Search.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/megaphone.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/music.note.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/gamecontroller.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/house.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/books.vertical.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedmegaphone.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedmusic.note.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedgamecontroller.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedhouse.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedbooks.vertical.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/paintpalette.fill.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/timer.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/wind.circle.png"),
+                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/calendar.badge.plus.png")
                         
 
                         
@@ -99,7 +99,7 @@ BaseButton{
 SpanLabel{
     
     font-family: "native:MainRegular";
-    
+    color: white;
     background: linear-gradient(to left, #6ddaf2, #57997a);
     text-align: center;
     margin:3mm 3mm 3mm 3mm;
@@ -241,7 +241,7 @@ SplashForm{
 
 @font-face{
     font-family: "mindfulness";
-    src: url("cn1-merged-files/4013a4ec25a16ea68d9f8f77b13c78aa/img/mind.ttf");
+    src: url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/mind.ttf");
 }
 IconFont{
     font-family: "mindfulness";
@@ -323,11 +323,7 @@ MusicToolbar{
 ArticlesToolbar{
     font-size: 5mm;
     padding: 3mm 3mm 3mm 3mm;
-<<<<<<< HEAD
     background: linear-gradient(to bottom, #000000, #00d2ff);
-=======
-    background: linear-gradient(to top, #75496e, #e09119);
->>>>>>> 57a4d5be045d4f5404e103219fa832850652bb00
 }
 EmergencyToolbar{
     font-size: 5mm;
@@ -339,4 +335,4 @@ HomeButton {
     font-size: 3mm;
     border-radius: 100px;
 }
-/* end /Users/mialloyd/Desktop/nexus-mental-wellness/nexwell/common/src/main/css/theme.css*/
+/* end /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/javase/../common/src/main/css/theme.css*/

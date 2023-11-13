@@ -97,7 +97,7 @@ BaseButton{
 SpanLabel{
     
     font-family: "native:MainRegular";
-    
+    color: white;
     background: linear-gradient(to left, #6ddaf2, #57997a);
     text-align: center;
     margin:3mm 3mm 3mm 3mm;
@@ -321,7 +321,7 @@ MusicToolbar{
 ArticlesToolbar{
     font-size: 5mm;
     padding: 3mm 3mm 3mm 3mm;
-    background: linear-gradient(to top, #75496e, #e09119);
+    background: linear-gradient(to bottom, #000000, #00d2ff);
 }
 EmergencyToolbar{
     font-size: 5mm;

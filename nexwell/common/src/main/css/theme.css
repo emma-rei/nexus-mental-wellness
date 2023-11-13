@@ -97,7 +97,7 @@ BaseButton{
 SpanLabel{
     
     font-family: "native:MainRegular";
-    
+    color: white;
     background: linear-gradient(to left, #6ddaf2, #57997a);
     text-align: center;
     margin:3mm 3mm 3mm 3mm;

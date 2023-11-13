@@ -8,6 +8,7 @@ import static com.codename1.ui.CN.NATIVE_ITALIC_LIGHT;
 import static com.codename1.ui.CN.getCurrentForm;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.layouts.FlowLayout;
 import com.codename1.ui.plaf.RoundRectBorder;
 import com.codename1.ui.plaf.Style;
 import static com.codename1.ui.util.Resources.getGlobalResources;
@@ -23,33 +24,40 @@ import java.util.HashMap;
 public class HomePageForm extends Form {
     
     public HomePageForm(){
-        super("");
-        Container cnt = new Container(BoxLayout.x());
-        cnt.setUIID("PaddedContainer");
+        super(" N E X W E L L", BoxLayout.y());
+        
+//        cnt.setUIID("PaddedContainer");
         Image ico1 = getGlobalResources().getImage("paintpalette.fill.png");
         Image timericon = getGlobalResources().getImage("timer.png");
         Image windicon = getGlobalResources().getImage("wind.circle.png");
         Image calendaricon = getGlobalResources().getImage("calendar.badge.plus.png");
-        Button btn1 = new Button("", ico1, "RaisedButton");
-        Button btn2 = new Button("", timericon, "RaisedButton");
+        Button btn1 = new Button("", ico1 );
+        Button btn2 = new Button("", timericon );
         btn2.addActionListener(e -> new BreathingTimerForm().show());
-        Button btn3 = new Button("", windicon, "RaisedButton");
-        cnt.add(btn1);
-        cnt.add(btn2);
-        cnt.add(btn3);
+        Button btn3 = new Button("", windicon);
+        Container cnt = FlowLayout.encloseCenter(btn1, btn2, btn3);
         
         Button booking = new Button("Book an appointment");
+        booking.setUIID("SpanLabel");
+        Style btnStyle = booking.getAllStyles();
+        btnStyle.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
+        btnStyle.setBackgroundGradientEndColor(Colors.CYAN);
         booking.addActionListener(e -> {
             bookme();
         });
-        booking.setUIID("SpanLabel");
+        
         booking.setIcon(calendaricon);
-        Label quoteOfTheDay = new Label("                        Quote of the day");
+        Label quoteOfTheDay = new Label("                           Quote of the day");
+        
         quoteOfTheDay.setUIID("WhiteText");
         // Quote generation and pass it to richtextview
         String q = ContentFeed.getRandomQuote();
         RichTextView ct = new RichTextView("  "+"<i>"+q+"</i>"); //RichtextView is also a type of Container
         ct.setUIID("SpanLabel");
+        Style s = ct.getAllStyles();
+        s.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
+        s.setTextDecoration(Style.BACKGROUND_IMAGE_TILE_VERTICAL_ALIGN_CENTER);
+        
         
         
         
@@ -59,7 +67,7 @@ public class HomePageForm extends Form {
         add(cnt);
         
         
-        getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm());
+        getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm().show());
         getToolbar().addMaterialCommandToLeftSideMenu("Mindfulness",FontImage.MATERIAL_BOOKMARKS,4, e -> new BreathingTimerForm().show());
         getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
         getToolbar().addMaterialCommandToLeftSideMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());

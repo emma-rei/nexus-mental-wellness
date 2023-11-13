@@ -6,6 +6,7 @@ package com.nexus.nexwell.components;
 
 
 
+import com.codename1.charts.util.ColorUtil;
 import com.codename1.ui.Component;
 import com.codename1.ui.Display;
 import com.codename1.ui.Graphics;
@@ -18,7 +19,7 @@ import com.codename1.ui.plaf.Style;
 
 public class CircleProgress extends BaseRoundProgress {
 
-    private int arcWidth = 10;
+    private int arcWidth = 50;
     
     private boolean clockwise = false;
     
@@ -54,7 +55,7 @@ public class CircleProgress extends BaseRoundProgress {
         int hPadding = style.getPadding(Component.TOP) + style.getPadding(Component.BOTTOM);
         GeneralPath path = new GeneralPath();
         int size = Math.min(getWidth() - wPadding, getHeight() - hPadding);
-        size = size - arcWidth;
+        size = size+400 - arcWidth;
         int x = getX() + style.getPadding(isRTL(), Component.LEFT) + arcWidth/2;
         int y = getY() + style.getPadding(Component.TOP) + arcWidth/2;
         if(style.getAlignment() == CENTER){
@@ -66,7 +67,7 @@ public class CircleProgress extends BaseRoundProgress {
         path.arc(x, y, size, size, 0, 2*Math.PI);
         Stroke stroke1 = new Stroke(arcWidth, Stroke.CAP_ROUND, Stroke.JOIN_ROUND, 4);
         g.setAntiAliased(true);
-        g.setColor(getStyle().getBgColor());
+        g.setColor(Colors.BLUE);
         g.drawShape(path, stroke1);        
         int p = getProgress();
         GeneralPath path1 = new GeneralPath();
@@ -90,7 +91,7 @@ public class CircleProgress extends BaseRoundProgress {
         }else{
             path1.arc(x, y, size, size, angle, (Math.PI*2)*p/getMaxValue());
         }
-        g.setColor(getStyle().getFgColor());
+        g.setColor(Colors.CYAN);
         g.drawShape(path1, stroke1);        
         
         if(isRenderPercentageOnTop()){

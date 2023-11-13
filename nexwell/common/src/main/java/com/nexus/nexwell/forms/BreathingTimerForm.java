@@ -17,7 +17,9 @@ import com.codename1.ui.events.DataChangedListener;
 
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
+import com.codename1.ui.layouts.FlowLayout;
 import com.codename1.ui.layouts.GridLayout;
+import com.codename1.ui.plaf.Style;
 import com.codename1.ui.util.UITimer;
 import com.nexus.nexwell.components.*;
 import com.nexus.nexwell.forms.GamesContainer;
@@ -28,7 +30,7 @@ public class BreathingTimerForm extends Form {
 
 
     public BreathingTimerForm() {
-        super("");
+        super("", new BoxLayout(BoxLayout.Y_AXIS));
         Toolbar tb = new Toolbar();
         setToolbar(tb);
         Form hi = getCurrentForm();
@@ -40,7 +42,8 @@ public class BreathingTimerForm extends Form {
         p.setRenderValueOnTop(true);
         p.setClockwise(true);
         p.setStartAngle(CircleProgress.START_9_OCLOCK);
-        add(p);
+        p.setAutoSizeMode(true);
+        
 //        final ArcProgress p2 = new ArcProgress();
 //        p2.setProgress(50);
 //        add(p2);
@@ -48,13 +51,13 @@ public class BreathingTimerForm extends Form {
 //        p3.setProgress(50);
 //        add(p3);
 
-        SpanLabel stateLabel = new SpanLabel("");
-
+        SpanLabel stateLabel = new SpanLabel("", "WhiteText");
+        
 
         BreathingTimer timer = new BreathingTimer(this);
         Button start = new Button("Start");
         Colors.CustomButtonStyle(start);
-        Button cancel = new Button("Cancel");
+        Button cancel = new Button("Stop");
         Colors.CustomButtonStyle(cancel);
         Button reset = new Button("Reset");
         Colors.CustomButtonStyle(reset);
@@ -82,16 +85,20 @@ public class BreathingTimerForm extends Form {
             timer.reset();
             p.setProgress(0);
         });
+        
+        Container cnt = FlowLayout.encloseCenter(start, cancel, reset);
+        
 
-        Container cnt = Container.encloseIn(new GridLayout(3, 3), start, cancel, reset);
-
-
+        
 //        add(start);
 //        add(cancel);
 //        add(reset);
-
-        add(cnt);
+        
+        
+        add(p);
         add(stateLabel);
+        add(cnt);
+        
 
         UITimer loop = new UITimer(() -> {
             if (timer.phase == 0 && timer.active) {
