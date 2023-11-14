@@ -1,5 +1,6 @@
 package com.nexus.nexwell.satisfyingvisuals;
 
+import com.codename1.components.ToastBar;
 import static com.codename1.ui.CN.getCurrentForm;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
@@ -41,6 +42,13 @@ public class ChaosGame extends Form {
 
         UITimer timer = new UITimer(() -> repaint());
         timer.schedule(interval, true, this);
+
+        // temporarily show instructions for how to go back
+        ToastBar.Status status = ToastBar.getInstance().createStatus();
+        status.setMessage("Press and hold to exit");
+        status.setExpires(1000);
+        status.show();
+        status.clear();
     }
 
     @Override

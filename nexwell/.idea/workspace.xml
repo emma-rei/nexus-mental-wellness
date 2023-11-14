@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="336d32c5-6f4b-4a8f-b637-9fea310958e7" name="Default Changelist" comment="Add 4/5/7 breathing timer basic functionality&#10;TODO: add start/stop button, change circle according to phase">
+    <list default="true" id="336d32c5-6f4b-4a8f-b637-9fea310958e7" name="Default Changelist" comment="Added pomodoro timer functionality, some formatting">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/BreathingTimer.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/components/BreathingTimer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/AccountForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/AccountForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/MainForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/forms/MainForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/test/java/com/nexus/nexwell/MyFirstTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/satisfyingvisuals/BubbleGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/satisfyingvisuals/BubbleGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/satisfyingvisuals/ChaosGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/nexus/nexwell/satisfyingvisuals/ChaosGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/codenameone/simulator.properties" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/codenameone/simulator.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/common/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javase/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/javase/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -873,7 +871,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698060896087</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added pomodoro timer functionality, some formatting">
+      <option name="closed" value="true" />
+      <created>1699941348983</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699941348983</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -902,7 +908,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;nexwell/.idea/workspace.xml&#10;#&#9;nexwell/common/src/main/css/img/Black/Search.png&#10;#&#9;nexwell/common/src/main/css/theme.css&#10;#&#9;nexwell/common/src/main/java/com/nexus/nexwell/components/Colors.java&#10;#&#9;nexwell/common/src/main/java/com/nexus/nexwell/forms/EmergencyHelpForm.java&#10;#&#9;nexwell/common/src/main/java/com/nexus/nexwell/forms/HomePageForm.java&#10;#&#9;nexwell/common/src/main/java/com/nexus/nexwell/forms/MainForm.java&#10;#&#9;nexwell/common/src/main/java/com/nexus/nexwell/forms/MusicForm.java&#10;#&#9;nexwell/common/src/main/java/com/nexus/nexwell/forms/PomodoroTimer.java&#10;#&#9;nexwell/common/target/.cn1_css_checksums&#10;#&#9;nexwell/common/target/classes/theme.res&#10;#&#9;nexwell/common/target/codenameone/simulator.properties&#10;#&#9;nexwell/common/target/css/cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/nexus-logo.png&#10;#&#9;nexwell/common/target/css/theme.css&#10;#&#9;nexwell/common/target/css/theme.css.checksums&#10;#&#9;nexwell/common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst&#10;#&#9;nexwell/common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     <MESSAGE value="Add 4/5/7 breathing timer basic functionality&#10;TODO: add start/stop button, change circle according to phase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add 4/5/7 breathing timer basic functionality&#10;TODO: add start/stop button, change circle according to phase" />
+    <MESSAGE value="Added pomodoro timer functionality, some formatting" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added pomodoro timer functionality, some formatting" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

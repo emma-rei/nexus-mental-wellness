@@ -9,7 +9,6 @@ com/nexus/nexwell/games/SnakeGame.class
 com/nexus/nexwell/server/ServerAPI.class
 com/nexus/nexwell/components/RichTextView$Parser.class
 com/nexus/nexwell/components/MySheet.class
-com/nexus/nexwell/satisfyingvisuals/ChaosGame.class
 com/nexus/nexwell/forms/ArticlesForm.class
 com/nexus/nexwell/games/SnakeGameForm$1.class
 com/nexus/nexwell/forms/AccountForm.class

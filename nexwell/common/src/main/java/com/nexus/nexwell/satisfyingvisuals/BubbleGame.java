@@ -1,6 +1,8 @@
 package com.nexus.nexwell.satisfyingvisuals;
 
+import com.codename1.components.ToastBar;
 import static com.codename1.ui.CN.getCurrentForm;
+
 import com.codename1.ui.FontImage;
 import com.nexus.nexwell.satisfyingvisuals.Bubble;
 import com.codename1.ui.Form;
@@ -26,18 +28,21 @@ public class BubbleGame extends Form {
         Toolbar tb = new Toolbar();
         setToolbar(tb);
         tb.setVisible(true);
+
         Form current = getCurrentForm();
-        
-        
-        
-        
         addLongPressListener(l -> current.showBack());
-        
-        
+
         bubbles = new ArrayList<>();
         r = new Random();
         score = 0;
         start();
+        
+        // temporarily show instructions for how to go back
+        ToastBar.Status status = ToastBar.getInstance().createStatus();
+        status.setMessage("Press and hold to exit");
+        status.setExpires(1000);
+        status.show();
+        status.clear();
     }
 
     public void start() {
@@ -56,7 +61,7 @@ public class BubbleGame extends Form {
     }
 
     public void pointerPressed(int x, int y) {
-        for (int i = bubbles.size()-1; i>=0; i--) {
+        for (int i = bubbles.size() - 1; i >= 0; i--) {
             Bubble b = bubbles.get(i);
             if (Math.sqrt((b.getX() - x) * (b.getX() - x) + (b.getY() - y) * (b.getY() - y)) <= b.getSize()) {
                 bubbles.remove(i);
@@ -68,7 +73,7 @@ public class BubbleGame extends Form {
 
     public synchronized void tick() {
         // must be in reverse order to prevent ConcurrentModificationException
-        for (int i = bubbles.size()-1; i>=0; i--) {
+        for (int i = bubbles.size() - 1; i >= 0; i--) {
             if (bubbles.get(i).getSize() <= 10) {
                 bubbles.remove(i);
             } else {
