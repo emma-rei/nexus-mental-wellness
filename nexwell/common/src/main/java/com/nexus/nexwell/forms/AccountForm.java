@@ -47,8 +47,8 @@ public class AccountForm extends Form {
         cn.setHorizontalAlign(Component.RIGHT);
         add("First Name").add(firstName).add("Last Name").add(lastName).add("Email").add(email).add("Phone Number").add(number).add(cn, submit);
         
-        Container cnt = new Container();
-        cnt.addComponent(cnt);
+        //Container cnt = new Container();
+        //cnt.addComponent(cnt);
     }
     
 }

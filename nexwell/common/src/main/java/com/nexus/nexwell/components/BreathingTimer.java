@@ -8,6 +8,7 @@ import com.codename1.ui.util.UITimer;
 // 4-7-8 timer
 public class BreathingTimer {
 
+    // not very accurate but works
     private UITimer timer;
 
     // 0 = in, 1 = hold, 2 = out
