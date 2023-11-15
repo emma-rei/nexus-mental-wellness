@@ -51,12 +51,12 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_37_run__(CODENAME_ONE_THREAD_
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8705);
     /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_addPurchase___java_lang_String(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_instance(threadStateData), get_field_com_codename1_impl_ios_IOSImplementation_37_val_sku(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(8706);
-    if (com_codename1_impl_ios_IOSImplementation_access$6700___R_com_codename1_payment_PurchaseCallback(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L944348744;
+    if (com_codename1_impl_ios_IOSImplementation_access$6700___R_com_codename1_payment_PurchaseCallback(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L45643137;
     __CN1_DEBUG_INFO(8707);
     PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$6700___R_com_codename1_payment_PurchaseCallback(threadStateData));
     /* CustomInvoke */virtual_com_codename1_payment_PurchaseCallback_itemPurchased___java_lang_String(threadStateData, SP[-1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_37_val_sku(__cn1ThisObject));     SP -= 1;
 
-label_L944348744:
+label_L45643137:
     __CN1_DEBUG_INFO(8709);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

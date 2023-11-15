@@ -59,14 +59,14 @@ JAVA_LONG com_codename1_io_tar_Octal_parseOctal___byte_1ARRAY_int_int_R_long(COD
     __CN1_DEBUG_INFO(48);
     /* VarOp.assignFrom */     ilocals_7_ = ilocals_1_;
 
-label_L399662621:
-    if (ilocals_7_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L1843171329;
+label_L527979439:
+    if (ilocals_7_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L1867633100;
     __CN1_DEBUG_INFO(49);
-    if (CN1_ARRAY_ELEMENT_BYTE(locals[0].data.o, ilocals_7_)!=0) /* IFNE CustomJump */ goto label_L523875258;
+    if (CN1_ARRAY_ELEMENT_BYTE(locals[0].data.o, ilocals_7_)!=0) /* IFNE CustomJump */ goto label_L399662621;
     __CN1_DEBUG_INFO(50);
-    goto label_L1843171329;
+    goto label_L1867633100;
 
-label_L523875258:
+label_L399662621:
     __CN1_DEBUG_INFO(52);
     BC_ALOAD(0);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -77,7 +77,7 @@ label_L523875258:
     SP[-1].data.i = ((JAVA_ARRAY_BYTE*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i]; 
     }
     PUSH_INT(32);
-    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L1404402130;
+    SP-=2; if((*SP).data.i == SP[1].data.i) /* IF_ICMPEQ */ goto label_L899666082;
     BC_ALOAD(0);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_7_; 
@@ -87,15 +87,15 @@ label_L523875258:
     SP[-1].data.i = ((JAVA_ARRAY_BYTE*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i]; 
     }
     PUSH_INT(48);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L888329126;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L816870841;
 
-label_L1404402130:
+label_L899666082:
     __CN1_DEBUG_INFO(53);
-    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L1034355105;
+    if (ilocals_5_==0) /* IFEQ CustomJump */ goto label_L1359875538;
     __CN1_DEBUG_INFO(54);
-    goto label_L1867633100;
+    goto label_L1420395352;
 
-label_L1034355105:
+label_L1359875538:
     __CN1_DEBUG_INFO(56);
     BC_ALOAD(0);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -106,22 +106,22 @@ label_L1034355105:
     SP[-1].data.i = ((JAVA_ARRAY_BYTE*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i]; 
     }
     PUSH_INT(32);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L888329126;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L816870841;
     __CN1_DEBUG_INFO(57);
-    goto label_L1843171329;
+    goto label_L1867633100;
 
-label_L888329126:
+label_L816870841:
     __CN1_DEBUG_INFO(60);
     /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(62);
     /* VarOp.assignFrom */ llocals_3_=(BC_LSHL_EXPR(llocals_3_, 3 /* ICONST_3 */) + ((JAVA_LONG)(CN1_ARRAY_ELEMENT_BYTE(locals[0].data.o, ilocals_7_) - 48)));
 
-label_L1867633100:
+label_L1420395352:
     __CN1_DEBUG_INFO(48);
     BC_IINC(7, 1);
-    goto label_L399662621;
+    goto label_L527979439;
 
-label_L1843171329:
+label_L1867633100:
     __CN1_DEBUG_INFO(65);
 
 {

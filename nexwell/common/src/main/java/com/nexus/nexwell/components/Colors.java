@@ -41,6 +41,17 @@ public class Colors {
     public static final Image GAMES_PRESSED = getGlobalResources().getImage("pressedgamecontroller.fill.png");
     public static final Image BOOKS_PRESSED = getGlobalResources().getImage("pressedbooks.vertical.fill.png");
     public static final Image HELPLINE_PRESSED = getGlobalResources().getImage("pressedmegaphone.fill.png");
+    
+    public static final Image TIMERICON = getGlobalResources().getImage("timer.circle.fill.png");
+    
+    public static final Image PLAY = getGlobalResources().getImage("play.circle.fill.png");
+    public static final Image PAUSE = getGlobalResources().getImage("pause.circle.fill.png");
+    public static final Image RESTART = getGlobalResources().getImage("restart.circle.fill.png");
+    public static final Image PLAYPAUSE = getGlobalResources().getImage("playpause.circle.fill.png");
+    public static final Image PLAYPAUSEPRESSED = getGlobalResources().getImage("playpausePressed.circle.fill.png");
+    
+    
+    
     public static void CustomButtonStyle(Button button){
         button.setUIID("GreenButton");
         Style s = button.getAllStyles();

@@ -202,14 +202,14 @@ JAVA_VOID com_codename1_ui_spinner_SpinnerNode_4___INIT_____com_codename1_ui_spi
 JAVA_OBJECT com_codename1_ui_spinner_SpinnerNode_4_getStyle___R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10087, 557);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(370);
-    if (/* CustomInvoke */virtual_com_codename1_ui_scene_Node_hasTag___java_lang_String_R_boolean(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_4_val_n(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(4348))==0) /* IFEQ CustomJump */ goto label_L234476544;
+    if (/* CustomInvoke */virtual_com_codename1_ui_scene_Node_hasTag___java_lang_String_R_boolean(threadStateData, get_field_com_codename1_ui_spinner_SpinnerNode_4_val_n(__cn1ThisObject), STRING_FROM_CONSTANT_POOL_OFFSET(4348))==0) /* IFEQ CustomJump */ goto label_L987586071;
     __CN1_DEBUG_INFO(371);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_spinner_SpinnerNode_4_getSelectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L234476544:
+label_L987586071:
     __CN1_DEBUG_INFO(373);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_spinner_SpinnerNode_4_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -2755,7 +2755,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_spinner_SpinnerNode_4(CODENAME_ONE_TH
         return;
     }
 
-    class__com_codename1_ui_spinner_SpinnerNode_4.vtable = malloc(sizeof(void*) *373);
+    class__com_codename1_ui_spinner_SpinnerNode_4.vtable = malloc(sizeof(void*) *375);
     __INIT_VTABLE_com_codename1_ui_spinner_SpinnerNode_4(threadStateData, class__com_codename1_ui_spinner_SpinnerNode_4.vtable);
     class__com_codename1_ui_spinner_SpinnerNode_4.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_spinner_SpinnerNode_4);

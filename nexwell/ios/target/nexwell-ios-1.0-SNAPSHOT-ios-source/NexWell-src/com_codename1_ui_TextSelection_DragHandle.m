@@ -355,16 +355,16 @@ JAVA_VOID com_codename1_ui_TextSelection_DragHandle_paint___com_codename1_ui_Gra
     __CN1_DEBUG_INFO(1406);
     /* VarOp.assignFrom */ ilocals_6_ = virtual_com_codename1_ui_TextSelection_DragHandle_getPreferredH___R_int(threadStateData, __cn1ThisObject);
     __CN1_DEBUG_INFO(1407);
-    if (get_field_com_codename1_ui_TextSelection_DragHandle_start(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1522975986;
+    if (get_field_com_codename1_ui_TextSelection_DragHandle_start(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1403413933;
     __CN1_DEBUG_INFO(1408);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillArc___int_int_int_int_int_int(threadStateData, locals[1].data.o, ilocals_3_, ilocals_4_, ilocals_5_, ilocals_6_, 0 /* ICONST_0 */, 360); 
     __CN1_DEBUG_INFO(1409);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillRect___int_int_int_int(threadStateData, locals[1].data.o, (ilocals_3_ + (ilocals_5_ / 2 /* ICONST_2 */)), ilocals_4_, (ilocals_5_ / 2 /* ICONST_2 */), (ilocals_6_ / 2 /* ICONST_2 */)); 
     __CN1_DEBUG_INFO(1410);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawRect___int_int_int_int(threadStateData, locals[1].data.o, (ilocals_3_ + (ilocals_5_ / 2 /* ICONST_2 */)), ilocals_4_, (ilocals_5_ / 2 /* ICONST_2 */), (ilocals_6_ / 2 /* ICONST_2 */)); 
-    goto label_L715534618;
+    goto label_L738937987;
 
-label_L1522975986:
+label_L1403413933:
     __CN1_DEBUG_INFO(1412);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillArc___int_int_int_int_int_int(threadStateData, locals[1].data.o, ilocals_3_, ilocals_4_, ilocals_5_, ilocals_6_, 0 /* ICONST_0 */, 360); 
     __CN1_DEBUG_INFO(1413);
@@ -372,7 +372,7 @@ label_L1522975986:
     __CN1_DEBUG_INFO(1414);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawRect___int_int_int_int(threadStateData, locals[1].data.o, ilocals_3_, ilocals_4_, (ilocals_5_ / 2 /* ICONST_2 */), (ilocals_6_ / 2 /* ICONST_2 */)); 
 
-label_L715534618:
+label_L738937987:
     __CN1_DEBUG_INFO(1416);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setAntiAliased___boolean(threadStateData, locals[1].data.o, ilocals_2_); 
     __CN1_DEBUG_INFO(1417);
@@ -3301,7 +3301,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_TextSelection_DragHandle_setAut
 JAVA_VOID virtual_com_codename1_ui_TextSelection_DragHandle_setAutoRelease___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_TextSelection_DragHandle_setAutoRelease___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[374])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    (*(functionPtr_com_codename1_ui_TextSelection_DragHandle_setAutoRelease___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[376])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 
@@ -3310,7 +3310,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_TextSelection_DragHandle_setRel
 JAVA_VOID virtual_com_codename1_ui_TextSelection_DragHandle_setReleaseRadius___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_TextSelection_DragHandle_setReleaseRadius___int)__cn1ThisObject->__codenameOneParentClsReference->vtable[376])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    (*(functionPtr_com_codename1_ui_TextSelection_DragHandle_setReleaseRadius___int)__cn1ThisObject->__codenameOneParentClsReference->vtable[378])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 void __INIT_VTABLE_com_codename1_ui_TextSelection_DragHandle(CODENAME_ONE_THREAD_STATE, void** vtable) {
@@ -3335,7 +3335,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_TextSelection_DragHandle(CODENAME_ONE
         return;
     }
 
-    class__com_codename1_ui_TextSelection_DragHandle.vtable = malloc(sizeof(void*) *404);
+    class__com_codename1_ui_TextSelection_DragHandle.vtable = malloc(sizeof(void*) *406);
     __INIT_VTABLE_com_codename1_ui_TextSelection_DragHandle(threadStateData, class__com_codename1_ui_TextSelection_DragHandle.vtable);
     class__com_codename1_ui_TextSelection_DragHandle.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_TextSelection_DragHandle);

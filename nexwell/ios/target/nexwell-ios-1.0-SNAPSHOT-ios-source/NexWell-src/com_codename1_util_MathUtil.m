@@ -501,13 +501,13 @@ JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_exp___double_R_double(CODENAME_O
     __CN1_DEBUG_INFO(229);
     /* VarOp.assignFrom */ ilocals_14_=(ilocals_14_ & 2147483647);
     __CN1_DEBUG_INFO(232);
-    if (ilocals_14_<1082535490) /* IF_IMPLT CustomJump */ goto label_L600825762;
+    if (ilocals_14_<1082535490) /* IF_IMPLT CustomJump */ goto label_L270071554;
     __CN1_DEBUG_INFO(233);
-    if (ilocals_14_<2146435072) /* IF_IMPLT CustomJump */ goto label_L31497227;
+    if (ilocals_14_<2146435072) /* IF_IMPLT CustomJump */ goto label_L1409342334;
     __CN1_DEBUG_INFO(234);
     /* VarOp.assignFrom */ ilocals_15_=((JAVA_INT)(llocals_18_ & 4294967295LL));
     __CN1_DEBUG_INFO(235);
-    if (((ilocals_14_ & 1048575) | ilocals_15_)==0) /* IFEQ CustomJump */ goto label_L76024477;
+    if (((ilocals_14_ & 1048575) | ilocals_15_)==0) /* IFEQ CustomJump */ goto label_L176469726;
     __CN1_DEBUG_INFO(236);
 
 {
@@ -515,45 +515,45 @@ JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_exp___double_R_double(CODENAME_O
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L76024477:
+label_L176469726:
     __CN1_DEBUG_INFO(238);
-    if (ilocals_13_!=0) /* IFNE CustomJump */ goto label_L1223873821;
+    if (ilocals_13_!=0) /* IFNE CustomJump */ goto label_L1995366577;
     BC_DLOAD(0);
-    goto label_L354230638;
+    goto label_L555334025;
 
-label_L1223873821:
+label_L1995366577:
     PUSH_DOUBLE(0); /* DCONST_0 */
 
-label_L354230638:
+label_L555334025:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
-label_L31497227:
+label_L1409342334:
     __CN1_DEBUG_INFO(241);
-    if (CN1_CMP_EXPR(dlocals_0_, 709.782712893384)<=0) /* IFLE CustomJump */ goto label_L270071554;
+    if (CN1_CMP_EXPR(dlocals_0_, 709.782712893384)<=0) /* IFLE CustomJump */ goto label_L1938841087;
     __CN1_DEBUG_INFO(242);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1.0 / 0.0;
 
-label_L270071554:
+label_L1938841087:
     __CN1_DEBUG_INFO(244);
-    if (CN1_CMP_EXPR(dlocals_0_, -745.1332191019411)>=0) /* IFGE CustomJump */ goto label_L600825762;
+    if (CN1_CMP_EXPR(dlocals_0_, -745.1332191019411)>=0) /* IFGE CustomJump */ goto label_L270071554;
     __CN1_DEBUG_INFO(245);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* DCONST_0 */;
 
-label_L600825762:
+label_L270071554:
     __CN1_DEBUG_INFO(250);
-    if (ilocals_14_<=1071001154) /* IF_ICMPLE CustomJump */ goto label_L1409342334;
+    if (ilocals_14_<=1071001154) /* IF_ICMPLE CustomJump */ goto label_L1544369941;
     __CN1_DEBUG_INFO(251);
-    if (ilocals_14_>=1072734898) /* IF_ICMPGE CustomJump */ goto label_L176469726;
+    if (ilocals_14_>=1072734898) /* IF_ICMPGE CustomJump */ goto label_L1567080269;
     __CN1_DEBUG_INFO(252);
     /* VarOp.assignFrom */ dlocals_8_=(dlocals_0_ - CN1_ARRAY_ELEMENT_DOUBLE(get_static_com_codename1_util_MathUtil_ln2HI(threadStateData), ilocals_13_));
     __CN1_DEBUG_INFO(253);
     /* VarOp.assignFrom */ dlocals_10_=CN1_ARRAY_ELEMENT_DOUBLE(get_static_com_codename1_util_MathUtil_ln2LO(threadStateData), ilocals_13_);
     __CN1_DEBUG_INFO(254);
     /* VarOp.assignFrom */ ilocals_12_=((1 /* ICONST_1 */ - ilocals_13_) - ilocals_13_);
-    goto label_L1995366577;
+    goto label_L836665497;
 
-label_L176469726:
+label_L1567080269:
     __CN1_DEBUG_INFO(256);
     /* VarOp.assignFrom */ ilocals_12_=((JAVA_INT)((1.4426950408889634 * dlocals_0_) + CN1_ARRAY_ELEMENT_DOUBLE(get_static_com_codename1_util_MathUtil_halF(threadStateData), ilocals_13_)));
     __CN1_DEBUG_INFO(257);
@@ -563,16 +563,16 @@ label_L176469726:
     __CN1_DEBUG_INFO(259);
     /* VarOp.assignFrom */ dlocals_10_=(dlocals_6_ * CN1_ARRAY_ELEMENT_DOUBLE(get_static_com_codename1_util_MathUtil_ln2LO(threadStateData), 0 /* ICONST_0 */));
 
-label_L1995366577:
+label_L836665497:
     __CN1_DEBUG_INFO(261);
     /* VarOp.assignFrom */ dlocals_0_=(dlocals_8_ - dlocals_10_);
-    goto label_L555334025;
+    goto label_L1087393016;
 
-label_L1409342334:
+label_L1544369941:
     __CN1_DEBUG_INFO(262);
-    if (ilocals_14_>=1043333120) /* IF_ICMPGE CustomJump */ goto label_L555334025;
+    if (ilocals_14_>=1043333120) /* IF_ICMPGE CustomJump */ goto label_L1087393016;
     __CN1_DEBUG_INFO(263);
-    if (CN1_CMP_EXPR((1.0E300 + dlocals_0_), 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L555334025;
+    if (CN1_CMP_EXPR((1.0E300 + dlocals_0_), 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L1087393016;
     __CN1_DEBUG_INFO(264);
 
 {
@@ -580,13 +580,13 @@ label_L1409342334:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L555334025:
+label_L1087393016:
     __CN1_DEBUG_INFO(270);
     /* VarOp.assignFrom */ dlocals_6_=(dlocals_0_ * dlocals_0_);
     __CN1_DEBUG_INFO(271);
     /* VarOp.assignFrom */ dlocals_4_=(dlocals_0_ - (dlocals_6_ * (0.16666666666666602 + (dlocals_6_ * (-0.0027777777777015593 + (dlocals_6_ * (6.613756321437934E-5 + (dlocals_6_ * (-1.6533902205465252E-6 + (dlocals_6_ * 4.1381367970572385E-8))))))))));
     __CN1_DEBUG_INFO(272);
-    if (ilocals_12_!=0) /* IFNE CustomJump */ goto label_L1938841087;
+    if (ilocals_12_!=0) /* IFNE CustomJump */ goto label_L1968209512;
     __CN1_DEBUG_INFO(273);
 
 {
@@ -594,7 +594,7 @@ label_L555334025:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1938841087:
+label_L1968209512:
     __CN1_DEBUG_INFO(275);
     /* VarOp.assignFrom */ dlocals_2_=(1 /* DCONST_1 */ - ((dlocals_10_ - ((dlocals_0_ * dlocals_4_) / (2.0 - dlocals_4_))) - dlocals_8_));
     __CN1_DEBUG_INFO(277);
@@ -604,7 +604,7 @@ label_L1938841087:
     (*SP).data.i = ilocals_12_; 
     SP++;
     PUSH_INT(-1021);
-    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L1544369941;
+    SP-=2; if((*SP).data.i < SP[1].data.i) /* IF_ICMPLT */ goto label_L355281496;
     __CN1_DEBUG_INFO(279);
     /* VarOp.assignFrom */ llocals_16_=(llocals_16_ + BC_LSHL_EXPR(((JAVA_LONG)ilocals_12_), 52));
     __CN1_DEBUG_INFO(280);
@@ -614,7 +614,7 @@ label_L1938841087:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1544369941:
+label_L355281496:
     __CN1_DEBUG_INFO(282);
     /* VarOp.assignFrom */ llocals_16_=(llocals_16_ + BC_LSHL_EXPR(((JAVA_LONG)(ilocals_12_ + 1000)), 52));
     __CN1_DEBUG_INFO(283);
@@ -699,22 +699,22 @@ JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_pow___double_double_R_double(COD
     __CN1_DEBUG_INFO(502);
     /* VarOp.assignFrom */ ilocals_42_=(ilocals_40_ & 2147483647);
     __CN1_DEBUG_INFO(505);
-    if ((ilocals_42_ | ilocals_44_)!=0) /* IFNE CustomJump */ goto label_L130052131;
+    if ((ilocals_42_ | ilocals_44_)!=0) /* IFNE CustomJump */ goto label_L1106589855;
     __CN1_DEBUG_INFO(506);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* DCONST_1 */;
 
-label_L130052131:
+label_L1106589855:
     __CN1_DEBUG_INFO(510);
-    if (ilocals_41_>2146435072) /* IF_ICMPGT CustomJump */ goto label_L330205094;
-    if (ilocals_41_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L2000783824;
-    if (ilocals_43_!=0) /* IFNE CustomJump */ goto label_L330205094;
+    if (ilocals_41_>2146435072) /* IF_ICMPGT CustomJump */ goto label_L973153912;
+    if (ilocals_41_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L963383848;
+    if (ilocals_43_!=0) /* IFNE CustomJump */ goto label_L973153912;
 
-label_L2000783824:
-    if (ilocals_42_>2146435072) /* IF_ICMPGT CustomJump */ goto label_L330205094;
-    if (ilocals_42_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L583284045;
-    if (ilocals_44_==0) /* IFEQ CustomJump */ goto label_L583284045;
+label_L963383848:
+    if (ilocals_42_>2146435072) /* IF_ICMPGT CustomJump */ goto label_L973153912;
+    if (ilocals_42_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L385990323;
+    if (ilocals_44_==0) /* IFEQ CustomJump */ goto label_L385990323;
 
-label_L330205094:
+label_L973153912:
     __CN1_DEBUG_INFO(512);
 
 {
@@ -722,20 +722,20 @@ label_L330205094:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L583284045:
+label_L385990323:
     __CN1_DEBUG_INFO(520);
     /* VarOp.assignFrom */     ilocals_37_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(521);
-    if (ilocals_39_>=0) /* IFGE CustomJump */ goto label_L645994590;
+    if (ilocals_39_>=0) /* IFGE CustomJump */ goto label_L2136493324;
     __CN1_DEBUG_INFO(522);
-    if (ilocals_42_<1128267776) /* IF_IMPLT CustomJump */ goto label_L1106589855;
+    if (ilocals_42_<1128267776) /* IF_IMPLT CustomJump */ goto label_L1280939641;
     __CN1_DEBUG_INFO(523);
     /* VarOp.assignFrom */     ilocals_37_ = 2 /* ICONST_2 */; 
-    goto label_L645994590;
+    goto label_L2136493324;
 
-label_L1106589855:
+label_L1280939641:
     __CN1_DEBUG_INFO(524);
-    if (ilocals_42_<1072693248) /* IF_IMPLT CustomJump */ goto label_L645994590;
+    if (ilocals_42_<1072693248) /* IF_IMPLT CustomJump */ goto label_L2136493324;
     __CN1_DEBUG_INFO(525);
     /* VarOp.assignFrom */ ilocals_36_=(BC_ISHR_EXPR(ilocals_42_, 20) - 1023);
     __CN1_DEBUG_INFO(526);
@@ -743,32 +743,32 @@ label_L1106589855:
     (*SP).data.i = ilocals_36_; 
     SP++;
     PUSH_INT(20);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L973153912;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L368914568;
     __CN1_DEBUG_INFO(527);
     /* VarOp.assignFrom */ ilocals_35_=BC_ISHR_EXPR(ilocals_44_, (52 - ilocals_36_));
     __CN1_DEBUG_INFO(528);
-    if (BC_ISHL_EXPR(ilocals_35_, (52 - ilocals_36_))!=ilocals_44_) /* IF_ICMPNE CustomJump */ goto label_L645994590;
+    if (BC_ISHL_EXPR(ilocals_35_, (52 - ilocals_36_))!=ilocals_44_) /* IF_ICMPNE CustomJump */ goto label_L2136493324;
     __CN1_DEBUG_INFO(529);
     /* VarOp.assignFrom */ ilocals_37_=(2 /* ICONST_2 */ - (ilocals_35_ & 1 /* ICONST_1 */));
-    goto label_L645994590;
+    goto label_L2136493324;
 
-label_L973153912:
+label_L368914568:
     __CN1_DEBUG_INFO(531);
-    if (ilocals_44_!=0) /* IFNE CustomJump */ goto label_L645994590;
+    if (ilocals_44_!=0) /* IFNE CustomJump */ goto label_L2136493324;
     __CN1_DEBUG_INFO(532);
     /* VarOp.assignFrom */ ilocals_35_=BC_ISHR_EXPR(ilocals_42_, (20 - ilocals_36_));
     __CN1_DEBUG_INFO(533);
-    if (BC_ISHL_EXPR(ilocals_35_, (20 - ilocals_36_))!=ilocals_42_) /* IF_ICMPNE CustomJump */ goto label_L645994590;
+    if (BC_ISHL_EXPR(ilocals_35_, (20 - ilocals_36_))!=ilocals_42_) /* IF_ICMPNE CustomJump */ goto label_L2136493324;
     __CN1_DEBUG_INFO(534);
     /* VarOp.assignFrom */ ilocals_37_=(2 /* ICONST_2 */ - (ilocals_35_ & 1 /* ICONST_1 */));
 
-label_L645994590:
+label_L2136493324:
     __CN1_DEBUG_INFO(541);
-    if (ilocals_44_!=0) /* IFNE CustomJump */ goto label_L963383848;
+    if (ilocals_44_!=0) /* IFNE CustomJump */ goto label_L252960930;
     __CN1_DEBUG_INFO(542);
-    if (ilocals_42_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L385990323;
+    if (ilocals_42_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L849280097;
     __CN1_DEBUG_INFO(543);
-    if (((ilocals_41_ - 1072693248) | ilocals_43_)!=0) /* IFNE CustomJump */ goto label_L2136493324;
+    if (((ilocals_41_ - 1072693248) | ilocals_43_)!=0) /* IFNE CustomJump */ goto label_L854875669;
     __CN1_DEBUG_INFO(544);
 
 {
@@ -776,40 +776,40 @@ label_L645994590:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L2136493324:
+label_L854875669:
     __CN1_DEBUG_INFO(545);
-    if (ilocals_41_<1072693248) /* IF_IMPLT CustomJump */ goto label_L1280939641;
+    if (ilocals_41_<1072693248) /* IF_IMPLT CustomJump */ goto label_L1316049331;
     __CN1_DEBUG_INFO(546);
-    if (ilocals_40_<0) /* IFLT CustomJump */ goto label_L368914568;
+    if (ilocals_40_<0) /* IFLT CustomJump */ goto label_L1593290287;
     BC_DLOAD(2);
-    goto label_L252960930;
+    goto label_L466562148;
 
-label_L368914568:
+label_L1593290287:
     PUSH_DOUBLE(0); /* DCONST_0 */
 
-label_L252960930:
+label_L466562148:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
-label_L1280939641:
+label_L1316049331:
     __CN1_DEBUG_INFO(548);
-    if (ilocals_40_>=0) /* IFGE CustomJump */ goto label_L849280097;
+    if (ilocals_40_>=0) /* IFGE CustomJump */ goto label_L190569982;
     BC_DLOAD(2);
     SP[-1].data.d *= -1; /* DNEG */
-    goto label_L854875669;
+    goto label_L1340340719;
 
-label_L849280097:
+label_L190569982:
     PUSH_DOUBLE(0); /* DCONST_0 */
 
-label_L854875669:
+label_L1340340719:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
-label_L385990323:
+label_L849280097:
     __CN1_DEBUG_INFO(551);
-    if (ilocals_42_!=1072693248) /* IF_ICMPNE CustomJump */ goto label_L1316049331;
+    if (ilocals_42_!=1072693248) /* IF_ICMPNE CustomJump */ goto label_L747024618;
     __CN1_DEBUG_INFO(552);
-    if (ilocals_40_>=0) /* IFGE CustomJump */ goto label_L1593290287;
+    if (ilocals_40_>=0) /* IFGE CustomJump */ goto label_L1313346834;
     __CN1_DEBUG_INFO(553);
 
 {
@@ -817,7 +817,7 @@ label_L385990323:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1593290287:
+label_L1313346834:
     __CN1_DEBUG_INFO(555);
 
 {
@@ -825,9 +825,9 @@ label_L1593290287:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1316049331:
+label_L747024618:
     __CN1_DEBUG_INFO(558);
-    if (ilocals_40_!=1073741824) /* IF_ICMPNE CustomJump */ goto label_L466562148;
+    if (ilocals_40_!=1073741824) /* IF_ICMPNE CustomJump */ goto label_L464094472;
     __CN1_DEBUG_INFO(559);
 
 {
@@ -835,11 +835,11 @@ label_L1316049331:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L466562148:
+label_L464094472:
     __CN1_DEBUG_INFO(561);
-    if (ilocals_40_!=1071644672) /* IF_ICMPNE CustomJump */ goto label_L963383848;
+    if (ilocals_40_!=1071644672) /* IF_ICMPNE CustomJump */ goto label_L252960930;
     __CN1_DEBUG_INFO(562);
-    if (ilocals_39_<0) /* IFLT CustomJump */ goto label_L963383848;
+    if (ilocals_39_<0) /* IFLT CustomJump */ goto label_L252960930;
     __CN1_DEBUG_INFO(563);
 
 {
@@ -847,40 +847,40 @@ label_L466562148:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L963383848:
+label_L252960930:
     __CN1_DEBUG_INFO(568);
     /* VarOp.assignFrom */ dlocals_6_ = /* CustomInvoke */java_lang_Math_abs___double_R_double(threadStateData, dlocals_0_);
     __CN1_DEBUG_INFO(570);
-    if (ilocals_43_!=0) /* IFNE CustomJump */ goto label_L190569982;
+    if (ilocals_43_!=0) /* IFNE CustomJump */ goto label_L1263872787;
     __CN1_DEBUG_INFO(571);
-    if (ilocals_41_==2146435072) /* IF_ICMPEQ CustomJump */ goto label_L1340340719;
-    if (ilocals_41_==0) /* IFEQ CustomJump */ goto label_L1340340719;
-    if (ilocals_41_!=1072693248) /* IF_ICMPNE CustomJump */ goto label_L190569982;
+    if (ilocals_41_==2146435072) /* IF_ICMPEQ CustomJump */ goto label_L1380832115;
+    if (ilocals_41_==0) /* IFEQ CustomJump */ goto label_L1380832115;
+    if (ilocals_41_!=1072693248) /* IF_ICMPNE CustomJump */ goto label_L1263872787;
 
-label_L1340340719:
+label_L1380832115:
     __CN1_DEBUG_INFO(572);
     /* VarOp.assignFrom */     dlocals_4_ = dlocals_6_;
     __CN1_DEBUG_INFO(573);
-    if (ilocals_40_>=0) /* IFGE CustomJump */ goto label_L747024618;
+    if (ilocals_40_>=0) /* IFGE CustomJump */ goto label_L1554230445;
     __CN1_DEBUG_INFO(574);
     /* VarOp.assignFrom */ dlocals_4_=(1 /* DCONST_1 */ / dlocals_4_);
 
-label_L747024618:
+label_L1554230445:
     __CN1_DEBUG_INFO(576);
-    if (ilocals_39_>=0) /* IFGE CustomJump */ goto label_L1313346834;
+    if (ilocals_39_>=0) /* IFGE CustomJump */ goto label_L192279540;
     __CN1_DEBUG_INFO(577);
-    if (((ilocals_41_ - 1072693248) | ilocals_37_)!=0) /* IFNE CustomJump */ goto label_L464094472;
+    if (((ilocals_41_ - 1072693248) | ilocals_37_)!=0) /* IFNE CustomJump */ goto label_L1763335226;
     __CN1_DEBUG_INFO(578);
     /* VarOp.assignFrom */ dlocals_4_=((dlocals_4_ - dlocals_4_) / (dlocals_4_ - dlocals_4_));
-    goto label_L1313346834;
+    goto label_L192279540;
 
-label_L464094472:
+label_L1763335226:
     __CN1_DEBUG_INFO(579);
-    if (ilocals_37_!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L1313346834;
+    if (ilocals_37_!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L192279540;
     __CN1_DEBUG_INFO(580);
     /* VarOp.assignFrom */ dlocals_4_=(-(dlocals_4_));
 
-label_L1313346834:
+label_L192279540:
     __CN1_DEBUG_INFO(583);
 
 {
@@ -888,11 +888,11 @@ label_L1313346834:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L190569982:
+label_L1263872787:
     __CN1_DEBUG_INFO(587);
     /* VarOp.assignFrom */ ilocals_38_=(BC_IUSHR_EXPR(ilocals_39_, 31) + 1 /* ICONST_1 */);
     __CN1_DEBUG_INFO(590);
-    if ((ilocals_38_ | ilocals_37_)!=0) /* IFNE CustomJump */ goto label_L1263872787;
+    if ((ilocals_38_ | ilocals_37_)!=0) /* IFNE CustomJump */ goto label_L1433459745;
     __CN1_DEBUG_INFO(591);
 
 {
@@ -900,95 +900,95 @@ label_L190569982:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1263872787:
+label_L1433459745:
     __CN1_DEBUG_INFO(594);
     /* VarOp.assignFrom */     dlocals_24_ = 1 /* DCONST_1 */; 
     __CN1_DEBUG_INFO(595);
-    if ((ilocals_38_ | (ilocals_37_ - 1 /* ICONST_1 */))!=0) /* IFNE CustomJump */ goto label_L1380832115;
+    if ((ilocals_38_ | (ilocals_37_ - 1 /* ICONST_1 */))!=0) /* IFNE CustomJump */ goto label_L343397606;
     __CN1_DEBUG_INFO(596);
     /* VarOp.assignFrom */     dlocals_24_ = -1.0;
 
-label_L1380832115:
-    __CN1_DEBUG_INFO(600);
-    if (ilocals_42_<=1105199104) /* IF_ICMPLE CustomJump */ goto label_L1554230445;
-    __CN1_DEBUG_INFO(601);
-    if (ilocals_42_<=1139802112) /* IF_ICMPLE CustomJump */ goto label_L192279540;
-    __CN1_DEBUG_INFO(602);
-    if (ilocals_41_>1072693247) /* IF_ICMPGT CustomJump */ goto label_L1763335226;
-    __CN1_DEBUG_INFO(603);
-    if (ilocals_40_>=0) /* IFGE CustomJump */ goto label_L1433459745;
-    PUSH_DOUBLE(1.0 / 0.0); /* LDC */
-    goto label_L343397606;
-
-label_L1433459745:
-    PUSH_DOUBLE(0); /* DCONST_0 */
-
 label_L343397606:
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
-    return POP_DOUBLE();
-
-label_L1763335226:
-    __CN1_DEBUG_INFO(605);
-    if (ilocals_41_<1072693248) /* IF_IMPLT CustomJump */ goto label_L192279540;
-    __CN1_DEBUG_INFO(606);
-    if (ilocals_40_<=0) /* IFLE CustomJump */ goto label_L817463247;
-    PUSH_DOUBLE(1.0 / 0.0); /* LDC */
-    goto label_L192487022;
-
-label_L817463247:
-    PUSH_DOUBLE(0); /* DCONST_0 */
-
-label_L192487022:
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
-    return POP_DOUBLE();
-
-label_L192279540:
-    __CN1_DEBUG_INFO(610);
-    if (ilocals_41_>=1072693247) /* IF_ICMPGE CustomJump */ goto label_L1480280820;
-    __CN1_DEBUG_INFO(611);
+    __CN1_DEBUG_INFO(600);
+    if (ilocals_42_<=1105199104) /* IF_ICMPLE CustomJump */ goto label_L817463247;
+    __CN1_DEBUG_INFO(601);
+    if (ilocals_42_<=1139802112) /* IF_ICMPLE CustomJump */ goto label_L192487022;
+    __CN1_DEBUG_INFO(602);
+    if (ilocals_41_>1072693247) /* IF_ICMPGT CustomJump */ goto label_L1480280820;
+    __CN1_DEBUG_INFO(603);
     if (ilocals_40_>=0) /* IFGE CustomJump */ goto label_L1925281265;
-    BC_DLOAD(24);
-    PUSH_DOUBLE(1.0E300); /* LDC */
-    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
-    PUSH_DOUBLE(1.0E300); /* LDC */
-    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
+    PUSH_DOUBLE(1.0 / 0.0); /* LDC */
     goto label_L167590753;
 
 label_L1925281265:
-    BC_DLOAD(24);
-    PUSH_DOUBLE(1.0E-300); /* LDC */
-    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
-    PUSH_DOUBLE(1.0E-300); /* LDC */
-    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
+    PUSH_DOUBLE(0); /* DCONST_0 */
 
 label_L167590753:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
 label_L1480280820:
-    __CN1_DEBUG_INFO(613);
-    if (ilocals_41_<=1072693248) /* IF_ICMPLE CustomJump */ goto label_L1244978782;
-    __CN1_DEBUG_INFO(614);
-    if (ilocals_40_<=0) /* IFLE CustomJump */ goto label_L1222267142;
-    BC_DLOAD(24);
-    PUSH_DOUBLE(1.0E300); /* LDC */
-    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
-    PUSH_DOUBLE(1.0E300); /* LDC */
-    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
-    goto label_L835574545;
+    __CN1_DEBUG_INFO(605);
+    if (ilocals_41_<1072693248) /* IF_IMPLT CustomJump */ goto label_L192487022;
+    __CN1_DEBUG_INFO(606);
+    if (ilocals_40_<=0) /* IFLE CustomJump */ goto label_L1244978782;
+    PUSH_DOUBLE(1.0 / 0.0); /* LDC */
+    goto label_L1222267142;
+
+label_L1244978782:
+    PUSH_DOUBLE(0); /* DCONST_0 */
 
 label_L1222267142:
-    BC_DLOAD(24);
-    PUSH_DOUBLE(1.0E-300); /* LDC */
-    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
-    PUSH_DOUBLE(1.0E-300); /* LDC */
-    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
-
-label_L835574545:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
-label_L1244978782:
+label_L192487022:
+    __CN1_DEBUG_INFO(610);
+    if (ilocals_41_>=1072693247) /* IF_ICMPGE CustomJump */ goto label_L835574545;
+    __CN1_DEBUG_INFO(611);
+    if (ilocals_40_>=0) /* IFGE CustomJump */ goto label_L1359730810;
+    BC_DLOAD(24);
+    PUSH_DOUBLE(1.0E300); /* LDC */
+    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
+    PUSH_DOUBLE(1.0E300); /* LDC */
+    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
+    goto label_L1025587755;
+
+label_L1359730810:
+    BC_DLOAD(24);
+    PUSH_DOUBLE(1.0E-300); /* LDC */
+    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
+    PUSH_DOUBLE(1.0E-300); /* LDC */
+    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
+
+label_L1025587755:
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return POP_DOUBLE();
+
+label_L835574545:
+    __CN1_DEBUG_INFO(613);
+    if (ilocals_41_<=1072693248) /* IF_ICMPLE CustomJump */ goto label_L661200616;
+    __CN1_DEBUG_INFO(614);
+    if (ilocals_40_<=0) /* IFLE CustomJump */ goto label_L2023967815;
+    BC_DLOAD(24);
+    PUSH_DOUBLE(1.0E300); /* LDC */
+    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
+    PUSH_DOUBLE(1.0E300); /* LDC */
+    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
+    goto label_L2003075873;
+
+label_L2023967815:
+    BC_DLOAD(24);
+    PUSH_DOUBLE(1.0E-300); /* LDC */
+    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
+    PUSH_DOUBLE(1.0E-300); /* LDC */
+    SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
+
+label_L2003075873:
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return POP_DOUBLE();
+
+label_L661200616:
     __CN1_DEBUG_INFO(618);
     /* VarOp.assignFrom */ dlocals_26_=(dlocals_0_ - 1 /* DCONST_1 */);
     __CN1_DEBUG_INFO(619);
@@ -1008,13 +1008,13 @@ label_L1244978782:
     BC_DSTORE(18);
     __CN1_DEBUG_INFO(625);
     /* VarOp.assignFrom */ dlocals_20_=(dlocals_30_ - (dlocals_18_ - dlocals_28_));
-    goto label_L1359730810;
+    goto label_L1126178692;
 
-label_L1554230445:
+label_L817463247:
     __CN1_DEBUG_INFO(628);
     /* VarOp.assignFrom */     ilocals_38_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(630);
-    if (ilocals_41_>=1048576) /* IF_ICMPGE CustomJump */ goto label_L1025587755;
+    if (ilocals_41_>=1048576) /* IF_ICMPGE CustomJump */ goto label_L743556950;
     __CN1_DEBUG_INFO(631);
     /* VarOp.assignFrom */ dlocals_6_=(dlocals_6_ * 9.007199254740992E15);
     __CN1_DEBUG_INFO(632);
@@ -1026,7 +1026,7 @@ label_L1554230445:
     SP[-1].data.i = (JAVA_INT)SP[-1].data.l; /* L2I */
     BC_ISTORE(41);
 
-label_L1025587755:
+label_L743556950:
     __CN1_DEBUG_INFO(635);
     /* VarOp.assignFrom */ ilocals_38_=(ilocals_38_ + (BC_ISHR_EXPR(ilocals_41_, 20) - 1023));
     __CN1_DEBUG_INFO(636);
@@ -1034,19 +1034,19 @@ label_L1025587755:
     __CN1_DEBUG_INFO(638);
     /* VarOp.assignFrom */ ilocals_41_=(ilocals_35_ | 1072693248);
     __CN1_DEBUG_INFO(639);
-    if (ilocals_35_>235662) /* IF_ICMPGT CustomJump */ goto label_L661200616;
+    if (ilocals_35_>235662) /* IF_ICMPGT CustomJump */ goto label_L1324513263;
     __CN1_DEBUG_INFO(640);
     /* VarOp.assignFrom */     ilocals_36_ = 0 /* ICONST_0 */; 
-    goto label_L2023967815;
+    goto label_L500992155;
 
-label_L661200616:
+label_L1324513263:
     __CN1_DEBUG_INFO(641);
-    if (ilocals_35_>=767610) /* IF_ICMPGE CustomJump */ goto label_L2003075873;
+    if (ilocals_35_>=767610) /* IF_ICMPGE CustomJump */ goto label_L1589864603;
     __CN1_DEBUG_INFO(642);
     /* VarOp.assignFrom */     ilocals_36_ = 1 /* ICONST_1 */; 
-    goto label_L2023967815;
+    goto label_L500992155;
 
-label_L2003075873:
+label_L1589864603:
     __CN1_DEBUG_INFO(644);
     /* VarOp.assignFrom */     ilocals_36_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(645);
@@ -1054,7 +1054,7 @@ label_L2003075873:
     __CN1_DEBUG_INFO(646);
     /* VarOp.assignFrom */ ilocals_41_=(ilocals_41_ - 1048576);
 
-label_L2023967815:
+label_L500992155:
     __CN1_DEBUG_INFO(649);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_41_; 
@@ -1168,7 +1168,7 @@ label_L2023967815:
     __CN1_DEBUG_INFO(688);
     /* VarOp.assignFrom */ dlocals_20_=(dlocals_10_ - (((dlocals_18_ - dlocals_26_) - CN1_ARRAY_ELEMENT_DOUBLE(get_static_com_codename1_util_MathUtil_dp_h(threadStateData), ilocals_36_)) - dlocals_8_));
 
-label_L1359730810:
+label_L1126178692:
     __CN1_DEBUG_INFO(692);
     /* VarOp.assignFrom */     dlocals_16_ = dlocals_2_;
     __CN1_DEBUG_INFO(694);
@@ -1197,9 +1197,9 @@ label_L1359730810:
     SP[-1].data.i = (JAVA_INT)SP[-1].data.l; /* L2I */
     BC_ISTORE(34);
     __CN1_DEBUG_INFO(700);
-    if (ilocals_35_<1083179008) /* IF_IMPLT CustomJump */ goto label_L1126178692;
+    if (ilocals_35_<1083179008) /* IF_IMPLT CustomJump */ goto label_L2081058658;
     __CN1_DEBUG_INFO(701);
-    if (((ilocals_35_ - 1083179008) | ilocals_34_)==0) /* IFEQ CustomJump */ goto label_L743556950;
+    if (((ilocals_35_ - 1083179008) | ilocals_34_)==0) /* IFEQ CustomJump */ goto label_L563749379;
     __CN1_DEBUG_INFO(702);
 
 {
@@ -1207,9 +1207,9 @@ label_L1359730810:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L743556950:
+label_L563749379:
     __CN1_DEBUG_INFO(704);
-    if (CN1_CMP_EXPR((dlocals_14_ + 8.008566259537294E-17), (dlocals_4_ - dlocals_12_))<=0) /* IFLE CustomJump */ goto label_L1324513263;
+    if (CN1_CMP_EXPR((dlocals_14_ + 8.008566259537294E-17), (dlocals_4_ - dlocals_12_))<=0) /* IFLE CustomJump */ goto label_L1492909819;
     __CN1_DEBUG_INFO(705);
 
 {
@@ -1217,11 +1217,11 @@ label_L743556950:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1126178692:
+label_L2081058658:
     __CN1_DEBUG_INFO(708);
-    if ((ilocals_35_ & 2147483647)<1083231232) /* IF_IMPLT CustomJump */ goto label_L1324513263;
+    if ((ilocals_35_ & 2147483647)<1083231232) /* IF_IMPLT CustomJump */ goto label_L1492909819;
     __CN1_DEBUG_INFO(709);
-    if (((ilocals_35_ - -1064252416) | ilocals_34_)==0) /* IFEQ CustomJump */ goto label_L500992155;
+    if (((ilocals_35_ - -1064252416) | ilocals_34_)==0) /* IFEQ CustomJump */ goto label_L498713295;
     __CN1_DEBUG_INFO(710);
 
 {
@@ -1229,9 +1229,9 @@ label_L1126178692:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L500992155:
+label_L498713295:
     __CN1_DEBUG_INFO(712);
-    if (CN1_CMP_EXPR(dlocals_14_, (dlocals_4_ - dlocals_12_))>0) /* IFGT CustomJump */ goto label_L1324513263;
+    if (CN1_CMP_EXPR(dlocals_14_, (dlocals_4_ - dlocals_12_))>0) /* IFGT CustomJump */ goto label_L1492909819;
     __CN1_DEBUG_INFO(713);
 
 {
@@ -1239,7 +1239,7 @@ label_L500992155:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1324513263:
+label_L1492909819:
     __CN1_DEBUG_INFO(720);
     /* VarOp.assignFrom */ ilocals_34_=(ilocals_35_ & 2147483647);
     __CN1_DEBUG_INFO(721);
@@ -1247,7 +1247,7 @@ label_L1324513263:
     __CN1_DEBUG_INFO(722);
     /* VarOp.assignFrom */     ilocals_38_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(723);
-    if (ilocals_34_<=1071644672) /* IF_ICMPLE CustomJump */ goto label_L1589864603;
+    if (ilocals_34_<=1071644672) /* IF_ICMPLE CustomJump */ goto label_L854056805;
     __CN1_DEBUG_INFO(724);
     /* VarOp.assignFrom */ ilocals_38_=(ilocals_35_ + BC_ISHR_EXPR(1048576, (ilocals_36_ + 1 /* ICONST_1 */)));
     __CN1_DEBUG_INFO(725);
@@ -1279,15 +1279,15 @@ label_L1324513263:
     __CN1_DEBUG_INFO(729);
     /* VarOp.assignFrom */ ilocals_38_=BC_ISHR_EXPR(((ilocals_38_ & 1048575) | 1048576), (20 - ilocals_36_));
     __CN1_DEBUG_INFO(730);
-    if (ilocals_35_>=0) /* IFGE CustomJump */ goto label_L2081058658;
+    if (ilocals_35_>=0) /* IFGE CustomJump */ goto label_L1109227776;
     __CN1_DEBUG_INFO(731);
     /* VarOp.assignFrom */ ilocals_38_=(-(ilocals_38_));
 
-label_L2081058658:
+label_L1109227776:
     __CN1_DEBUG_INFO(733);
     /* VarOp.assignFrom */ dlocals_12_=(dlocals_12_ - dlocals_26_);
 
-label_L1589864603:
+label_L854056805:
     __CN1_DEBUG_INFO(735);
     /* VarOp.assignFrom */ dlocals_26_=(dlocals_14_ + dlocals_12_);
     __CN1_DEBUG_INFO(737);
@@ -1322,12 +1322,12 @@ label_L1589864603:
     __CN1_DEBUG_INFO(747);
     /* VarOp.assignFrom */ ilocals_35_=(ilocals_35_ + BC_ISHL_EXPR(ilocals_38_, 20));
     __CN1_DEBUG_INFO(748);
-    if (BC_ISHR_EXPR(ilocals_35_, 20)>0) /* IFGT CustomJump */ goto label_L563749379;
+    if (BC_ISHR_EXPR(ilocals_35_, 20)>0) /* IFGT CustomJump */ goto label_L1167477662;
     __CN1_DEBUG_INFO(749);
     /* VarOp.assignFrom */ dlocals_4_ = /* CustomInvoke */com_codename1_util_MathUtil_scalb___double_int_R_double(threadStateData, dlocals_4_, ilocals_38_);
-    goto label_L1492909819;
+    goto label_L376067673;
 
-label_L563749379:
+label_L1167477662:
     __CN1_DEBUG_INFO(752);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_35_; 
@@ -1343,7 +1343,7 @@ label_L563749379:
     SP[-1].data.d = tmpResult; SP[-1].type = CN1_TYPE_DOUBLE; }
     BC_DSTORE(4);
 
-label_L1492909819:
+label_L376067673:
     __CN1_DEBUG_INFO(754);
 
 {
@@ -1377,7 +1377,7 @@ JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_acos___double_R_double(CODENAME_
     __CN1_DEBUG_INFO(785);
     /* VarOp.assignFrom */ ilocals_19_=(ilocals_18_ & 2147483647);
     __CN1_DEBUG_INFO(786);
-    if (ilocals_19_<1072693248) /* IF_IMPLT CustomJump */ goto label_L498713295;
+    if (ilocals_19_<1072693248) /* IF_IMPLT CustomJump */ goto label_L452640518;
     __CN1_DEBUG_INFO(787);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_19_; 
@@ -1389,17 +1389,17 @@ JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_acos___double_R_double(CODENAME_
     SP--; SP[-1].data.l = SP[-1].data.l & (*SP).data.l; /* LAND */
     SP[-1].data.i = (JAVA_INT)SP[-1].data.l; /* L2I */
     SP--; SP[-1].data.i = SP[-1].data.i | (*SP).data.i; /* IOR */
-    if(POP_INT() != 0) /* IFNE */ goto label_L854056805;
+    if(POP_INT() != 0) /* IFNE */ goto label_L856031264;
     __CN1_DEBUG_INFO(788);
-    if (ilocals_18_<=0) /* IFLE CustomJump */ goto label_L1109227776;
+    if (ilocals_18_<=0) /* IFLE CustomJump */ goto label_L1144743781;
     __CN1_DEBUG_INFO(789);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* DCONST_0 */;
 
-label_L1109227776:
+label_L1144743781:
     __CN1_DEBUG_INFO(791);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 3.141592653589793;
 
-label_L854056805:
+label_L856031264:
     __CN1_DEBUG_INFO(794);
 
 {
@@ -1407,15 +1407,15 @@ label_L854056805:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L498713295:
+label_L452640518:
     __CN1_DEBUG_INFO(796);
-    if (ilocals_19_>=1071644672) /* IF_ICMPGE CustomJump */ goto label_L1167477662;
+    if (ilocals_19_>=1071644672) /* IF_ICMPGE CustomJump */ goto label_L10955045;
     __CN1_DEBUG_INFO(797);
-    if (ilocals_19_>1012924416) /* IF_ICMPGT CustomJump */ goto label_L376067673;
+    if (ilocals_19_>1012924416) /* IF_ICMPGT CustomJump */ goto label_L1340777656;
     __CN1_DEBUG_INFO(798);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1.5707963267948966;
 
-label_L376067673:
+label_L1340777656:
     __CN1_DEBUG_INFO(800);
     /* VarOp.assignFrom */ dlocals_2_=(dlocals_0_ * dlocals_0_);
     __CN1_DEBUG_INFO(801);
@@ -1431,9 +1431,9 @@ label_L376067673:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1167477662:
+label_L10955045:
     __CN1_DEBUG_INFO(805);
-    if (ilocals_18_>=0) /* IFGE CustomJump */ goto label_L452640518;
+    if (ilocals_18_>=0) /* IFGE CustomJump */ goto label_L1282320997;
     __CN1_DEBUG_INFO(806);
     /* VarOp.assignFrom */ dlocals_2_=((1 /* DCONST_1 */ + dlocals_0_) * 0.5);
     __CN1_DEBUG_INFO(807);
@@ -1453,7 +1453,7 @@ label_L1167477662:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L452640518:
+label_L1282320997:
     __CN1_DEBUG_INFO(814);
     /* VarOp.assignFrom */ dlocals_2_=((1 /* DCONST_1 */ - dlocals_0_) * 0.5);
     __CN1_DEBUG_INFO(815);
@@ -1512,10 +1512,10 @@ JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_atan___double_R_double(CODENAME_
     __CN1_DEBUG_INFO(953);
     /* VarOp.assignFrom */ ilocals_10_=(ilocals_11_ & 2147483647);
     __CN1_DEBUG_INFO(954);
-    if (ilocals_10_<1141899264) /* IF_IMPLT CustomJump */ goto label_L1895022336;
+    if (ilocals_10_<1141899264) /* IF_IMPLT CustomJump */ goto label_L1402712627;
     __CN1_DEBUG_INFO(955);
-    if (ilocals_10_>2146435072) /* IF_ICMPGT CustomJump */ goto label_L1232539385;
-    if (ilocals_10_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L364702969;
+    if (ilocals_10_>2146435072) /* IF_ICMPGT CustomJump */ goto label_L565335965;
+    if (ilocals_10_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L142545409;
     BC_DLOAD(0);
     __CN1_DEBUG_INFO(956);
     { JAVA_LONG tmpResult = java_lang_Double_doubleToLongBits___double_R_long(threadStateData, SP[-1].data.d);
@@ -1523,9 +1523,9 @@ JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_atan___double_R_double(CODENAME_
     PUSH_LONG(4294967295LL); /* LDC */
     SP--; SP[-1].data.l = SP[-1].data.l & (*SP).data.l; /* LAND */
     SP[-1].data.i = (JAVA_INT)SP[-1].data.l; /* L2I */
-    if(POP_INT() == 0) /* IFEQ */ goto label_L364702969;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L142545409;
 
-label_L1232539385:
+label_L565335965:
     __CN1_DEBUG_INFO(957);
 
 {
@@ -1533,9 +1533,9 @@ label_L1232539385:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L364702969:
+label_L142545409:
     __CN1_DEBUG_INFO(959);
-    if (ilocals_11_<=0) /* IFLE CustomJump */ goto label_L1326243087;
+    if (ilocals_11_<=0) /* IFLE CustomJump */ goto label_L2036732855;
     __CN1_DEBUG_INFO(960);
 
 {
@@ -1543,7 +1543,7 @@ label_L364702969:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1326243087:
+label_L2036732855:
     __CN1_DEBUG_INFO(962);
 
 {
@@ -1551,13 +1551,13 @@ label_L1326243087:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1895022336:
+label_L1402712627:
     __CN1_DEBUG_INFO(965);
-    if (ilocals_10_>=1071382528) /* IF_ICMPGE CustomJump */ goto label_L585785425;
+    if (ilocals_10_>=1071382528) /* IF_ICMPGE CustomJump */ goto label_L2002922626;
     __CN1_DEBUG_INFO(966);
-    if (ilocals_10_>=1042284544) /* IF_ICMPGE CustomJump */ goto label_L1402712627;
+    if (ilocals_10_>=1042284544) /* IF_ICMPGE CustomJump */ goto label_L1155498828;
     __CN1_DEBUG_INFO(967);
-    if (CN1_CMP_EXPR((1.0E300 + dlocals_0_), 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L1402712627;
+    if (CN1_CMP_EXPR((1.0E300 + dlocals_0_), 1 /* DCONST_1 */)<=0) /* IFLE CustomJump */ goto label_L1155498828;
     __CN1_DEBUG_INFO(968);
 
 {
@@ -1565,47 +1565,47 @@ label_L1895022336:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1402712627:
+label_L1155498828:
     __CN1_DEBUG_INFO(971);
     /* VarOp.assignFrom */     ilocals_12_ = -1 /* ICONST_M1 */; 
-    goto label_L565335965;
+    goto label_L885030604;
 
-label_L585785425:
+label_L2002922626:
     __CN1_DEBUG_INFO(973);
     /* VarOp.assignFrom */ dlocals_0_ = /* CustomInvoke */java_lang_Math_abs___double_R_double(threadStateData, dlocals_0_);
     __CN1_DEBUG_INFO(974);
-    if (ilocals_10_>=1072889856) /* IF_ICMPGE CustomJump */ goto label_L142545409;
+    if (ilocals_10_>=1072889856) /* IF_ICMPGE CustomJump */ goto label_L2113026120;
     __CN1_DEBUG_INFO(975);
-    if (ilocals_10_>=1072037888) /* IF_ICMPGE CustomJump */ goto label_L2036732855;
+    if (ilocals_10_>=1072037888) /* IF_ICMPGE CustomJump */ goto label_L454167880;
     __CN1_DEBUG_INFO(976);
     /* VarOp.assignFrom */     ilocals_12_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(977);
     /* VarOp.assignFrom */ dlocals_0_=(((2.0 * dlocals_0_) - 1 /* DCONST_1 */) / (2.0 + dlocals_0_));
-    goto label_L565335965;
+    goto label_L885030604;
 
-label_L2036732855:
+label_L454167880:
     __CN1_DEBUG_INFO(979);
     /* VarOp.assignFrom */     ilocals_12_ = 1 /* ICONST_1 */; 
     __CN1_DEBUG_INFO(980);
     /* VarOp.assignFrom */ dlocals_0_=((dlocals_0_ - 1 /* DCONST_1 */) / (dlocals_0_ + 1 /* DCONST_1 */));
-    goto label_L565335965;
+    goto label_L885030604;
 
-label_L142545409:
+label_L2113026120:
     __CN1_DEBUG_INFO(983);
-    if (ilocals_10_>=1073971200) /* IF_ICMPGE CustomJump */ goto label_L2002922626;
+    if (ilocals_10_>=1073971200) /* IF_ICMPGE CustomJump */ goto label_L594491525;
     __CN1_DEBUG_INFO(984);
     /* VarOp.assignFrom */     ilocals_12_ = 2 /* ICONST_2 */; 
     __CN1_DEBUG_INFO(985);
     /* VarOp.assignFrom */ dlocals_0_=((dlocals_0_ - 1.5) / (1 /* DCONST_1 */ + (1.5 * dlocals_0_)));
-    goto label_L565335965;
+    goto label_L885030604;
 
-label_L2002922626:
+label_L594491525:
     __CN1_DEBUG_INFO(987);
     /* VarOp.assignFrom */     ilocals_12_ = 3 /* ICONST_3 */; 
     __CN1_DEBUG_INFO(988);
     /* VarOp.assignFrom */ dlocals_0_=(-1.0 / dlocals_0_);
 
-label_L565335965:
+label_L885030604:
     __CN1_DEBUG_INFO(993);
     /* VarOp.assignFrom */ dlocals_8_=(dlocals_0_ * dlocals_0_);
     __CN1_DEBUG_INFO(994);
@@ -1701,7 +1701,7 @@ label_L565335965:
     SP--; SP[-1].data.d = SP[-1].data.d * (*SP).data.d; /* DMUL */
     BC_DSTORE(6);
     __CN1_DEBUG_INFO(998);
-    if (ilocals_12_>=0) /* IFGE CustomJump */ goto label_L1155498828;
+    if (ilocals_12_>=0) /* IFGE CustomJump */ goto label_L351147066;
     __CN1_DEBUG_INFO(999);
 
 {
@@ -1709,19 +1709,19 @@ label_L565335965:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1155498828:
+label_L351147066:
     __CN1_DEBUG_INFO(1001);
     /* VarOp.assignFrom */ dlocals_8_=(CN1_ARRAY_ELEMENT_DOUBLE(get_static_com_codename1_util_MathUtil_atanhi(threadStateData), ilocals_12_) - (((dlocals_0_ * (dlocals_4_ + dlocals_6_)) - CN1_ARRAY_ELEMENT_DOUBLE(get_static_com_codename1_util_MathUtil_atanlo(threadStateData), ilocals_12_)) - dlocals_0_));
     __CN1_DEBUG_INFO(1002);
-    if (ilocals_11_>=0) /* IFGE CustomJump */ goto label_L885030604;
+    if (ilocals_11_>=0) /* IFGE CustomJump */ goto label_L2016562839;
     BC_DLOAD(8);
     SP[-1].data.d *= -1; /* DNEG */
-    goto label_L2113026120;
+    goto label_L1933669524;
 
-label_L885030604:
+label_L2016562839:
     BC_DLOAD(8);
 
-label_L2113026120:
+label_L1933669524:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 }
@@ -1772,10 +1772,10 @@ JAVA_DOUBLE com_codename1_util_MathUtil_ieee754_atan2___double_double_R_double(C
     __CN1_DEBUG_INFO(1046);
     /* VarOp.assignFrom */ ilocals_11_=(ilocals_9_ & 2147483647);
     __CN1_DEBUG_INFO(1048);
-    if ((ilocals_10_ | BC_ISHR_EXPR((ilocals_12_ | (-(ilocals_12_))), 31))>2146435072) /* IF_ICMPGT CustomJump */ goto label_L454167880;
-    if ((ilocals_11_ | BC_ISHR_EXPR((ilocals_13_ | (-(ilocals_13_))), 31))<=2146435072) /* IF_ICMPLE CustomJump */ goto label_L594491525;
+    if ((ilocals_10_ | BC_ISHR_EXPR((ilocals_12_ | (-(ilocals_12_))), 31))>2146435072) /* IF_ICMPGT CustomJump */ goto label_L699449705;
+    if ((ilocals_11_ | BC_ISHR_EXPR((ilocals_13_ | (-(ilocals_13_))), 31))<=2146435072) /* IF_ICMPLE CustomJump */ goto label_L1293635489;
 
-label_L454167880:
+label_L699449705:
     __CN1_DEBUG_INFO(1050);
 
 {
@@ -1783,9 +1783,9 @@ label_L454167880:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L594491525:
+label_L1293635489:
     __CN1_DEBUG_INFO(1052);
-    if (((ilocals_8_ - 1072693248) | ilocals_12_)!=0) /* IFNE CustomJump */ goto label_L351147066;
+    if (((ilocals_8_ - 1072693248) | ilocals_12_)!=0) /* IFNE CustomJump */ goto label_L666363491;
     __CN1_DEBUG_INFO(1053);
 
 {
@@ -1793,25 +1793,25 @@ label_L594491525:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L351147066:
+label_L666363491:
     __CN1_DEBUG_INFO(1055);
     /* VarOp.assignFrom */ ilocals_7_=((BC_ISHR_EXPR(ilocals_9_, 31) & 1 /* ICONST_1 */) | (BC_ISHR_EXPR(ilocals_8_, 30) & 2 /* ICONST_2 */));
     __CN1_DEBUG_INFO(1058);
-    if ((ilocals_11_ | ilocals_13_)!=0) /* IFNE CustomJump */ goto label_L2016562839;
+    if ((ilocals_11_ | ilocals_13_)!=0) /* IFNE CustomJump */ goto label_L1596642261;
     __CN1_DEBUG_INFO(1059);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_7_; 
     SP++;
     SP--;
     switch((*SP).data.i) {
-        case 0: goto label_L1933669524;
-        case 1: goto label_L1933669524;
-        case 2: goto label_L699449705;
-        case 3: goto label_L1293635489;
-        default: goto label_L2016562839;
+        case 0: goto label_L1883171536;
+        case 1: goto label_L1883171536;
+        case 2: goto label_L1733285169;
+        case 3: goto label_L2136191813;
+        default: goto label_L1596642261;
     }
 
-label_L1933669524:
+label_L1883171536:
     __CN1_DEBUG_INFO(1062);
 
 {
@@ -1819,68 +1819,35 @@ label_L1933669524:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L699449705:
+label_L1733285169:
     __CN1_DEBUG_INFO(1064);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 3.141592653589793;
 
-label_L1293635489:
+label_L2136191813:
     __CN1_DEBUG_INFO(1066);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -3.141592653589793;
 
-label_L2016562839:
-    __CN1_DEBUG_INFO(1070);
-    if ((ilocals_10_ | ilocals_12_)!=0) /* IFNE CustomJump */ goto label_L666363491;
-    __CN1_DEBUG_INFO(1071);
-    if (ilocals_9_>=0) /* IFGE CustomJump */ goto label_L1596642261;
-    PUSH_DOUBLE(-1.5707963267948966); /* LDC */
-    goto label_L1883171536;
-
 label_L1596642261:
+    __CN1_DEBUG_INFO(1070);
+    if ((ilocals_10_ | ilocals_12_)!=0) /* IFNE CustomJump */ goto label_L1995338497;
+    __CN1_DEBUG_INFO(1071);
+    if (ilocals_9_>=0) /* IFGE CustomJump */ goto label_L1904312166;
+    PUSH_DOUBLE(-1.5707963267948966); /* LDC */
+    goto label_L1761528378;
+
+label_L1904312166:
     PUSH_DOUBLE(1.5707963267948966); /* LDC */
 
-label_L1883171536:
+label_L1761528378:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
-label_L666363491:
-    __CN1_DEBUG_INFO(1075);
-    if (ilocals_10_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L1733285169;
-    __CN1_DEBUG_INFO(1076);
-    if (ilocals_11_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L2136191813;
-    __CN1_DEBUG_INFO(1077);
-    (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
-    (*SP).data.i = ilocals_7_; 
-    SP++;
-    SP--;
-    switch((*SP).data.i) {
-        case 0: goto label_L1995338497;
-        case 1: goto label_L1904312166;
-        case 2: goto label_L1761528378;
-        case 3: goto label_L181765627;
-        default: goto label_L262572507;
-    }
-
 label_L1995338497:
-    __CN1_DEBUG_INFO(1079);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0.7853981633974483;
-
-label_L1904312166:
-    __CN1_DEBUG_INFO(1081);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -0.7853981633974483;
-
-label_L1761528378:
-    __CN1_DEBUG_INFO(1083);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 2.356194490192345;
-
-label_L181765627:
-    __CN1_DEBUG_INFO(1085);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -2.356194490192345;
-
-label_L262572507:
-    goto label_L1733285169;
-
-label_L2136191813:
-    __CN1_DEBUG_INFO(1088);
+    __CN1_DEBUG_INFO(1075);
+    if (ilocals_10_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L181765627;
+    __CN1_DEBUG_INFO(1076);
+    if (ilocals_11_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L262572507;
+    __CN1_DEBUG_INFO(1077);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_7_; 
     SP++;
@@ -1890,41 +1857,74 @@ label_L2136191813:
         case 1: goto label_L1796671122;
         case 2: goto label_L1296804950;
         case 3: goto label_L1989676149;
-        default: goto label_L1733285169;
+        default: goto label_L915853613;
     }
 
 label_L1973861638:
+    __CN1_DEBUG_INFO(1079);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0.7853981633974483;
+
+label_L1796671122:
+    __CN1_DEBUG_INFO(1081);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -0.7853981633974483;
+
+label_L1296804950:
+    __CN1_DEBUG_INFO(1083);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 2.356194490192345;
+
+label_L1989676149:
+    __CN1_DEBUG_INFO(1085);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -2.356194490192345;
+
+label_L915853613:
+    goto label_L181765627;
+
+label_L262572507:
+    __CN1_DEBUG_INFO(1088);
+    (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
+    (*SP).data.i = ilocals_7_; 
+    SP++;
+    SP--;
+    switch((*SP).data.i) {
+        case 0: goto label_L1701212923;
+        case 1: goto label_L1977568029;
+        case 2: goto label_L1125255799;
+        case 3: goto label_L1124971649;
+        default: goto label_L181765627;
+    }
+
+label_L1701212923:
     __CN1_DEBUG_INFO(1090);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* DCONST_0 */;
 
-label_L1796671122:
+label_L1977568029:
     __CN1_DEBUG_INFO(1092);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -0.0;
 
-label_L1296804950:
+label_L1125255799:
     __CN1_DEBUG_INFO(1094);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 3.141592653589793;
 
-label_L1989676149:
+label_L1124971649:
     __CN1_DEBUG_INFO(1096);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return -3.141592653589793;
 
-label_L1733285169:
+label_L181765627:
     __CN1_DEBUG_INFO(1101);
-    if (ilocals_11_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L915853613;
+    if (ilocals_11_!=2146435072) /* IF_ICMPNE CustomJump */ goto label_L363526065;
     __CN1_DEBUG_INFO(1102);
-    if (ilocals_9_>=0) /* IFGE CustomJump */ goto label_L1701212923;
+    if (ilocals_9_>=0) /* IFGE CustomJump */ goto label_L438485434;
     PUSH_DOUBLE(-1.5707963267948966); /* LDC */
-    goto label_L1977568029;
+    goto label_L1227891003;
 
-label_L1701212923:
+label_L438485434:
     PUSH_DOUBLE(1.5707963267948966); /* LDC */
 
-label_L1977568029:
+label_L1227891003:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
-label_L915853613:
+label_L363526065:
     __CN1_DEBUG_INFO(1106);
     /* VarOp.assignFrom */ ilocals_6_=BC_ISHR_EXPR((ilocals_11_ - ilocals_10_), 20);
     __CN1_DEBUG_INFO(1107);
@@ -1932,41 +1932,41 @@ label_L915853613:
     (*SP).data.i = ilocals_6_; 
     SP++;
     PUSH_INT(60);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1125255799;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1731669280;
     __CN1_DEBUG_INFO(1108);
     /* VarOp.assignFrom */     dlocals_4_ = 1.5707963267948966;
-    goto label_L1124971649;
+    goto label_L635586824;
 
-label_L1125255799:
+label_L1731669280:
     __CN1_DEBUG_INFO(1109);
-    if (ilocals_8_>=0) /* IFGE CustomJump */ goto label_L363526065;
+    if (ilocals_8_>=0) /* IFGE CustomJump */ goto label_L692151071;
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_6_; 
     SP++;
     PUSH_INT(-60);
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L363526065;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L692151071;
     __CN1_DEBUG_INFO(1110);
     /* VarOp.assignFrom */     dlocals_4_ = 0 /* DCONST_0 */; 
-    goto label_L1124971649;
+    goto label_L635586824;
 
-label_L363526065:
+label_L692151071:
     __CN1_DEBUG_INFO(1112);
     /* VarOp.assignFrom */ dlocals_4_ = /* CustomInvoke */com_codename1_util_MathUtil_ieee754_atan___double_R_double(threadStateData, /* CustomInvoke */java_lang_Math_abs___double_R_double(threadStateData, (dlocals_2_ / dlocals_0_)));
 
-label_L1124971649:
+label_L635586824:
     __CN1_DEBUG_INFO(1114);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_7_; 
     SP++;
     SP--;
     switch((*SP).data.i) {
-        case 0: goto label_L438485434;
-        case 1: goto label_L1227891003;
-        case 2: goto label_L1731669280;
-        default: goto label_L635586824;
+        case 0: goto label_L1630578421;
+        case 1: goto label_L1068554718;
+        case 2: goto label_L145583401;
+        default: goto label_L718712504;
     }
 
-label_L438485434:
+label_L1630578421:
     __CN1_DEBUG_INFO(1116);
 
 {
@@ -1974,7 +1974,7 @@ label_L438485434:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1227891003:
+label_L1068554718:
     __CN1_DEBUG_INFO(1118);
 
 {
@@ -1982,7 +1982,7 @@ label_L1227891003:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1731669280:
+label_L145583401:
     __CN1_DEBUG_INFO(1120);
 
 {
@@ -1990,7 +1990,7 @@ label_L1731669280:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L635586824:
+label_L718712504:
     __CN1_DEBUG_INFO(1122);
 
 {
@@ -2025,9 +2025,9 @@ JAVA_DOUBLE com_codename1_util_MathUtil_scalb___double_int_R_double(CODENAME_ONE
     __CN1_DEBUG_INFO(1136);
     /* VarOp.assignFrom */ ilocals_3_=BC_ISHR_EXPR((ilocals_4_ & 2146435072), 20);
     __CN1_DEBUG_INFO(1137);
-    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L692151071;
+    if (ilocals_3_!=0) /* IFNE CustomJump */ goto label_L1312137753;
     __CN1_DEBUG_INFO(1138);
-    if ((ilocals_5_ | (ilocals_4_ & 2147483647))!=0) /* IFNE CustomJump */ goto label_L1630578421;
+    if ((ilocals_5_ | (ilocals_4_ & 2147483647))!=0) /* IFNE CustomJump */ goto label_L2004020264;
     __CN1_DEBUG_INFO(1139);
 
 {
@@ -2035,7 +2035,7 @@ JAVA_DOUBLE com_codename1_util_MathUtil_scalb___double_int_R_double(CODENAME_ONE
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1630578421:
+label_L2004020264:
     __CN1_DEBUG_INFO(1141);
     /* VarOp.assignFrom */ dlocals_0_=(dlocals_0_ * 1.8014398509481984E16);
     __CN1_DEBUG_INFO(1142);
@@ -2047,7 +2047,7 @@ label_L1630578421:
     __CN1_DEBUG_INFO(1143);
     /* VarOp.assignFrom */ ilocals_3_=(BC_ISHR_EXPR((ilocals_4_ & 2146435072), 20) - 54);
     __CN1_DEBUG_INFO(1144);
-    if (ilocals_2_>=-50000) /* IF_ICMPGE CustomJump */ goto label_L692151071;
+    if (ilocals_2_>=-50000) /* IF_ICMPGE CustomJump */ goto label_L1312137753;
     __CN1_DEBUG_INFO(1145);
 
 {
@@ -2055,13 +2055,13 @@ label_L1630578421:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L692151071:
+label_L1312137753:
     __CN1_DEBUG_INFO(1148);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(2047);
-    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L1068554718;
+    SP-=2; if((*SP).data.i != SP[1].data.i) /* IF_ICMPNE */ goto label_L349508554;
     __CN1_DEBUG_INFO(1149);
 
 {
@@ -2069,7 +2069,7 @@ label_L692151071:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1068554718:
+label_L349508554:
     __CN1_DEBUG_INFO(1151);
     /* VarOp.assignFrom */ ilocals_3_=(ilocals_3_ + ilocals_2_);
     __CN1_DEBUG_INFO(1152);
@@ -2077,7 +2077,7 @@ label_L1068554718:
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(2046);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L145583401;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L199871622;
     __CN1_DEBUG_INFO(1153);
     PUSH_DOUBLE(1.0E300); /* LDC */
     /* CustomInvoke */PUSH_DOUBLE(com_codename1_util_MathUtil_copySign___double_double_R_double(threadStateData, 1.0E300, dlocals_0_));
@@ -2085,9 +2085,9 @@ label_L1068554718:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
-label_L145583401:
+label_L199871622:
     __CN1_DEBUG_INFO(1155);
-    if (ilocals_3_<=0) /* IFLE CustomJump */ goto label_L718712504;
+    if (ilocals_3_<=0) /* IFLE CustomJump */ goto label_L1756332680;
     __CN1_DEBUG_INFO(1157);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_4_; 
@@ -2117,15 +2117,15 @@ label_L145583401:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L718712504:
+label_L1756332680:
     __CN1_DEBUG_INFO(1160);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(-54);
-    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L1312137753;
+    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L148647961;
     __CN1_DEBUG_INFO(1161);
-    if (ilocals_2_<=50000) /* IF_ICMPLE CustomJump */ goto label_L2004020264;
+    if (ilocals_2_<=50000) /* IF_ICMPLE CustomJump */ goto label_L883636619;
     __CN1_DEBUG_INFO(1162);
     PUSH_DOUBLE(1.0E300); /* LDC */
     /* CustomInvoke */PUSH_DOUBLE(com_codename1_util_MathUtil_copySign___double_double_R_double(threadStateData, 1.0E300, dlocals_0_));
@@ -2133,7 +2133,7 @@ label_L718712504:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
-label_L2004020264:
+label_L883636619:
     __CN1_DEBUG_INFO(1164);
     PUSH_DOUBLE(1.0E-300); /* LDC */
     /* CustomInvoke */PUSH_DOUBLE(com_codename1_util_MathUtil_copySign___double_double_R_double(threadStateData, 1.0E-300, dlocals_0_));
@@ -2141,7 +2141,7 @@ label_L2004020264:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_DOUBLE();
 
-label_L1312137753:
+label_L148647961:
     __CN1_DEBUG_INFO(1167);
     BC_IINC(3, 54);
     __CN1_DEBUG_INFO(1169);

@@ -32,17 +32,18 @@ public class BubbleGame extends Form {
         Form current = getCurrentForm();
         addLongPressListener(l -> current.showBack());
 
+        // temporarily show instructions for how to go back
+        ToastBar.Status status = ToastBar.getInstance().createStatus();
+        status.setMessage("Press and hold to exit");
+        status.setExpires(4000);
+        status.show();
+        
+        
         bubbles = new ArrayList<>();
         r = new Random();
         score = 0;
         start();
         
-        // temporarily show instructions for how to go back
-        ToastBar.Status status = ToastBar.getInstance().createStatus();
-        status.setMessage("Press and hold to exit");
-        status.setExpires(1000);
-        status.show();
-        status.clear();
     }
 
     public void start() {

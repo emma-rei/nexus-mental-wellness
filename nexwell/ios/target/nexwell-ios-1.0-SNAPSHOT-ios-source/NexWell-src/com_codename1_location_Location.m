@@ -211,11 +211,11 @@ JAVA_VOID com_codename1_location_Location_setAccuracy___float(CODENAME_ONE_THREA
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 9015, 9024);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(150);
-    if (CN1_CMP_EXPR(flocals_1_, 0.0/0.0)==0) /* IFEQ CustomJump */ goto label_L328246293;
+    if (CN1_CMP_EXPR(flocals_1_, 0.0/0.0)==0) /* IFEQ CustomJump */ goto label_L38489930;
     __CN1_DEBUG_INFO(151);
     set_field_com_codename1_location_Location_accuracy(threadStateData, flocals_1_, __cn1ThisObject);
 
-label_L328246293:
+label_L38489930:
     __CN1_DEBUG_INFO(153);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -368,16 +368,16 @@ JAVA_BOOLEAN com_codename1_location_Location_equalsLatLng___com_codename1_locati
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(279);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L979049207;
-    if (CN1_CMP_EXPR(get_field_com_codename1_location_Location_latitude(locals[1].data.o), get_field_com_codename1_location_Location_latitude(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L979049207;
-    if (CN1_CMP_EXPR(get_field_com_codename1_location_Location_longitude(locals[1].data.o), get_field_com_codename1_location_Location_longitude(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L979049207;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1569330262;
+    if (CN1_CMP_EXPR(get_field_com_codename1_location_Location_latitude(locals[1].data.o), get_field_com_codename1_location_Location_latitude(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1569330262;
+    if (CN1_CMP_EXPR(get_field_com_codename1_location_Location_longitude(locals[1].data.o), get_field_com_codename1_location_Location_longitude(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1569330262;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1228068224;
+    goto label_L891268602;
 
-label_L979049207:
+label_L1569330262:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1228068224:
+label_L891268602:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

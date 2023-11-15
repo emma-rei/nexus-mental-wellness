@@ -236,24 +236,24 @@ JAVA_BOOLEAN com_codename1_ui_Stroke_equals___java_lang_Object_R_boolean(CODENAM
     __CN1_DEBUG_INFO(216);
     BC_ALOAD(1);
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Stroke);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L384887832;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L898655932;
     __CN1_DEBUG_INFO(217);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(218);
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_Stroke_miterLimit(locals[2].data.o), get_field_com_codename1_ui_Stroke_miterLimit(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1821867471;
-    if (get_field_com_codename1_ui_Stroke_capStyle(locals[2].data.o)!=get_field_com_codename1_ui_Stroke_capStyle(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1821867471;
-    if (get_field_com_codename1_ui_Stroke_joinStyle(locals[2].data.o)!=get_field_com_codename1_ui_Stroke_joinStyle(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1821867471;
-    if (CN1_CMP_EXPR(get_field_com_codename1_ui_Stroke_lineWidth(locals[2].data.o), get_field_com_codename1_ui_Stroke_lineWidth(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1821867471;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_Stroke_miterLimit(locals[2].data.o), get_field_com_codename1_ui_Stroke_miterLimit(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L945683299;
+    if (get_field_com_codename1_ui_Stroke_capStyle(locals[2].data.o)!=get_field_com_codename1_ui_Stroke_capStyle(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L945683299;
+    if (get_field_com_codename1_ui_Stroke_joinStyle(locals[2].data.o)!=get_field_com_codename1_ui_Stroke_joinStyle(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L945683299;
+    if (CN1_CMP_EXPR(get_field_com_codename1_ui_Stroke_lineWidth(locals[2].data.o), get_field_com_codename1_ui_Stroke_lineWidth(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L945683299;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1713204150;
+    goto label_L911201454;
 
-label_L1821867471:
+label_L945683299:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1713204150:
+label_L911201454:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L384887832:
+label_L898655932:
     __CN1_DEBUG_INFO(220);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }

@@ -286,24 +286,24 @@ com_nexus_nexwell_games_SnakeGameForm___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_games_SnakeGameForm___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 10578, 201);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(22);
+    DEFINE_INSTANCE_METHOD_STACK(4, 4, 0, 10512, 201);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(23);
     /* CustomInvoke */com_codename1_ui_Form___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(219)); 
-    __CN1_DEBUG_INFO(23);
+    __CN1_DEBUG_INFO(24);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_layouts_BorderLayout(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_codename1_ui_layouts_BorderLayout___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     virtual_com_nexus_nexwell_games_SnakeGameForm_setLayout___com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(24);
+    __CN1_DEBUG_INFO(25);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_codename1_ui_Toolbar___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(1);
-    __CN1_DEBUG_INFO(25);
+    __CN1_DEBUG_INFO(26);
     /* CustomInvoke */virtual_com_nexus_nexwell_games_SnakeGameForm_setToolbar___com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject, locals[1].data.o); 
-    __CN1_DEBUG_INFO(28);
-    /* VarOp.assignFrom */ locals[2].data.o = com_codename1_ui_CN_getCurrentForm___R_com_codename1_ui_Form(threadStateData);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(29);
+    __CN1_DEBUG_INFO(29);
+    /* VarOp.assignFrom */ locals[2].data.o = com_codename1_ui_CN_getCurrentForm___R_com_codename1_ui_Form(threadStateData);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(30);
     { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_games_SnakeGameForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* LDC: ''*/
@@ -314,26 +314,26 @@ JAVA_VOID com_nexus_nexwell_games_SnakeGameForm___INIT____(CODENAME_ONE_THREAD_S
     SP-=3;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
-    __CN1_DEBUG_INFO(31);
+    __CN1_DEBUG_INFO(32);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_nexus_nexwell_games_SnakeGame(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_nexus_nexwell_games_SnakeGame___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     set_field_com_nexus_nexwell_games_SnakeGameForm_snakeGame(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(33);
+    __CN1_DEBUG_INFO(34);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_nexus_nexwell_games_SnakeGameForm_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_nexus_nexwell_games_SnakeGameForm_1___INIT_____com_nexus_nexwell_games_SnakeGameForm(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     virtual_com_nexus_nexwell_games_SnakeGameForm_addPointerPressedListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(41);
+    __CN1_DEBUG_INFO(42);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_nexus_nexwell_games_SnakeGameForm_2(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_nexus_nexwell_games_SnakeGameForm_2___INIT_____com_nexus_nexwell_games_SnakeGameForm(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
     virtual_com_nexus_nexwell_games_SnakeGameForm_addPointerReleasedListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(68);
+    __CN1_DEBUG_INFO(69);
     PUSH_POINTER(__NEW_com_codename1_ui_util_UITimer(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_games_SnakeGameForm__Lambda_2_lambdaFactory$___com_nexus_nexwell_games_SnakeGameForm_R_java_lang_Runnable(threadStateData, __cn1ThisObject));
@@ -353,7 +353,7 @@ JAVA_VOID com_nexus_nexwell_games_SnakeGameForm_paintBackground___com_codename1_
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_5_ = 0; /* v5 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 10578, 2532);
+    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 10512, 2532);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(84);
@@ -410,7 +410,7 @@ JAVA_VOID com_nexus_nexwell_games_SnakeGameForm_paint___com_codename1_ui_Graphic
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
     volatile JAVA_INT ilocals_8_ = 0; /* v8 */
     volatile JAVA_INT ilocals_9_ = 0; /* v9 */
-    DEFINE_INSTANCE_METHOD_STACK(7, 10, 0, 10578, 2355);
+    DEFINE_INSTANCE_METHOD_STACK(7, 10, 0, 10512, 2355);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(99);
@@ -431,8 +431,8 @@ JAVA_VOID com_nexus_nexwell_games_SnakeGameForm_paint___com_codename1_ui_Graphic
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(104);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_ArrayList_iterator___R_java_util_Iterator(threadStateData, locals[2].data.o);locals[4].type=CN1_TYPE_OBJECT;
-label_L691779749:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L938199512;
+label_L2079961240:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L1927499639;
     /* VarOp.assignFrom */ locals[5].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[4].data.o);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(105);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Point_getX___R_int(threadStateData, locals[5].data.o);
     PUSH_INT(tmpResult); }
@@ -478,9 +478,9 @@ label_L691779749:
     __CN1_DEBUG_INFO(113);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillRect___int_int_int_int(threadStateData, locals[1].data.o, (ilocals_8_ + ilocals_6_), (ilocals_9_ + ilocals_7_), ilocals_3_, ilocals_3_); 
     __CN1_DEBUG_INFO(114);
-    goto label_L691779749;
+    goto label_L2079961240;
 
-label_L938199512:
+label_L1927499639:
     __CN1_DEBUG_INFO(117);
     /* VarOp.assignFrom */ locals[4].data.o = virtual_com_nexus_nexwell_games_SnakeGame_getFood___R_com_codename1_ui_geom_Point(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_snakeGame(__cn1ThisObject));locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(118);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_geom_Point_getX___R_int(threadStateData, locals[4].data.o);
@@ -534,27 +534,27 @@ label_L938199512:
 
 JAVA_VOID com_nexus_nexwell_games_SnakeGameForm_lambda$new$1___com_nexus_nexwell_games_SnakeGameForm(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_SnakeGameForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 10578, 10215);
+    DEFINE_METHOD_STACK(2, 1, 0, 10512, 10352);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(69);
-    if (virtual_com_nexus_nexwell_games_SnakeGame_isGameOver___R_boolean(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_snakeGame(locals[0].data.o))!=0) /* IFNE CustomJump */ goto label_L37841489;
     __CN1_DEBUG_INFO(70);
-    virtual_com_nexus_nexwell_games_SnakeGame_move__(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_snakeGame(locals[0].data.o)); 
+    if (virtual_com_nexus_nexwell_games_SnakeGame_isGameOver___R_boolean(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_snakeGame(locals[0].data.o))!=0) /* IFNE CustomJump */ goto label_L949673757;
     __CN1_DEBUG_INFO(71);
-    virtual_com_nexus_nexwell_games_SnakeGameForm_repaint__(threadStateData, locals[0].data.o); 
-    goto label_L1873121466;
-
-label_L37841489:
+    virtual_com_nexus_nexwell_games_SnakeGame_move__(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_snakeGame(locals[0].data.o)); 
     __CN1_DEBUG_INFO(72);
-    if (virtual_com_nexus_nexwell_games_SnakeGame_isCancel___R_boolean(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_snakeGame(locals[0].data.o))!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L115945887;
-    goto label_L1873121466;
+    virtual_com_nexus_nexwell_games_SnakeGameForm_repaint__(threadStateData, locals[0].data.o); 
+    goto label_L1999664216;
 
-label_L115945887:
+label_L949673757:
+    __CN1_DEBUG_INFO(73);
+    if (virtual_com_nexus_nexwell_games_SnakeGame_isCancel___R_boolean(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_snakeGame(locals[0].data.o))!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L532677950;
+    goto label_L1999664216;
+
+label_L532677950:
     __CN1_DEBUG_INFO(76);
     virtual_com_nexus_nexwell_games_SnakeGame_showGameOverMessage__(threadStateData, get_field_com_nexus_nexwell_games_SnakeGameForm_snakeGame(locals[0].data.o)); 
 
-label_L1873121466:
+label_L1999664216:
     __CN1_DEBUG_INFO(78);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -563,12 +563,12 @@ label_L1873121466:
 
 JAVA_VOID com_nexus_nexwell_games_SnakeGameForm_lambda$new$0___com_codename1_ui_Form_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_SnakeGameForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10578, 10216);
+    DEFINE_METHOD_STACK(1, 2, 0, 10512, 10353);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(29);
+    __CN1_DEBUG_INFO(30);
     virtual_com_codename1_ui_Form_showBack__(threadStateData, locals[0].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -578,11 +578,11 @@ JAVA_VOID com_nexus_nexwell_games_SnakeGameForm_lambda$new$0___com_codename1_ui_
 JAVA_INT com_nexus_nexwell_games_SnakeGameForm_access$002___com_nexus_nexwell_games_SnakeGameForm_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x1 */
     __STATIC_INITIALIZER_com_nexus_nexwell_games_SnakeGameForm(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 10578, 1521);
+    DEFINE_METHOD_STACK(3, 2, 0, 10512, 1521);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;
-    __CN1_DEBUG_INFO(17);
+    __CN1_DEBUG_INFO(18);
     BC_ALOAD(0);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_1_; 
@@ -596,11 +596,11 @@ JAVA_INT com_nexus_nexwell_games_SnakeGameForm_access$002___com_nexus_nexwell_ga
 JAVA_INT com_nexus_nexwell_games_SnakeGameForm_access$102___com_nexus_nexwell_games_SnakeGameForm_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x1 */
     __STATIC_INITIALIZER_com_nexus_nexwell_games_SnakeGameForm(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 10578, 1147);
+    DEFINE_METHOD_STACK(3, 2, 0, 10512, 1147);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;
-    __CN1_DEBUG_INFO(17);
+    __CN1_DEBUG_INFO(18);
     BC_ALOAD(0);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_1_; 
@@ -613,10 +613,10 @@ JAVA_INT com_nexus_nexwell_games_SnakeGameForm_access$102___com_nexus_nexwell_ga
 
 JAVA_INT com_nexus_nexwell_games_SnakeGameForm_access$000___com_nexus_nexwell_games_SnakeGameForm_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_SnakeGameForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10578, 217);
+    DEFINE_METHOD_STACK(1, 1, 0, 10512, 217);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(17);
+    __CN1_DEBUG_INFO(18);
 
 {
     JAVA_INT ___returnValue=get_field_com_nexus_nexwell_games_SnakeGameForm_initialX(locals[0].data.o);
@@ -627,10 +627,10 @@ JAVA_INT com_nexus_nexwell_games_SnakeGameForm_access$000___com_nexus_nexwell_ga
 
 JAVA_INT com_nexus_nexwell_games_SnakeGameForm_access$100___com_nexus_nexwell_games_SnakeGameForm_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_SnakeGameForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10578, 798);
+    DEFINE_METHOD_STACK(1, 1, 0, 10512, 798);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(17);
+    __CN1_DEBUG_INFO(18);
 
 {
     JAVA_INT ___returnValue=get_field_com_nexus_nexwell_games_SnakeGameForm_initialY(locals[0].data.o);
@@ -641,10 +641,10 @@ JAVA_INT com_nexus_nexwell_games_SnakeGameForm_access$100___com_nexus_nexwell_ga
 
 JAVA_OBJECT com_nexus_nexwell_games_SnakeGameForm_access$200___com_nexus_nexwell_games_SnakeGameForm_R_com_nexus_nexwell_games_SnakeGame(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_SnakeGameForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10578, 799);
+    DEFINE_METHOD_STACK(1, 1, 0, 10512, 799);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(17);
+    __CN1_DEBUG_INFO(18);
 
 {
     JAVA_OBJECT ___returnValue=get_field_com_nexus_nexwell_games_SnakeGameForm_snakeGame(locals[0].data.o);
@@ -4187,7 +4187,7 @@ typedef JAVA_VOID (*functionPtr_com_nexus_nexwell_games_SnakeGameForm_show__)(CO
 JAVA_VOID virtual_com_nexus_nexwell_games_SnakeGameForm_show__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_nexus_nexwell_games_SnakeGameForm_show__)__cn1ThisObject->__codenameOneParentClsReference->vtable[477])(threadStateData, __cn1ThisObject);
+    (*(functionPtr_com_nexus_nexwell_games_SnakeGameForm_show__)__cn1ThisObject->__codenameOneParentClsReference->vtable[479])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -4196,7 +4196,7 @@ typedef JAVA_VOID (*functionPtr_com_nexus_nexwell_games_SnakeGameForm_setToolbar
 JAVA_VOID virtual_com_nexus_nexwell_games_SnakeGameForm_setToolbar___com_codename1_ui_Toolbar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_nexus_nexwell_games_SnakeGameForm_setToolbar___com_codename1_ui_Toolbar)__cn1ThisObject->__codenameOneParentClsReference->vtable[526])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    (*(functionPtr_com_nexus_nexwell_games_SnakeGameForm_setToolbar___com_codename1_ui_Toolbar)__cn1ThisObject->__codenameOneParentClsReference->vtable[528])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 
@@ -4205,7 +4205,7 @@ typedef JAVA_OBJECT (*functionPtr_com_nexus_nexwell_games_SnakeGameForm_getToolb
 JAVA_OBJECT virtual_com_nexus_nexwell_games_SnakeGameForm_getToolbar___R_com_codename1_ui_Toolbar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_nexus_nexwell_games_SnakeGameForm_getToolbar___R_com_codename1_ui_Toolbar)__cn1ThisObject->__codenameOneParentClsReference->vtable[527])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_nexus_nexwell_games_SnakeGameForm_getToolbar___R_com_codename1_ui_Toolbar)__cn1ThisObject->__codenameOneParentClsReference->vtable[529])(threadStateData, __cn1ThisObject);
 }
 
 void __INIT_VTABLE_com_nexus_nexwell_games_SnakeGameForm(CODENAME_ONE_THREAD_STATE, void** vtable) {
@@ -4224,7 +4224,7 @@ void __STATIC_INITIALIZER_com_nexus_nexwell_games_SnakeGameForm(CODENAME_ONE_THR
         return;
     }
 
-    class__com_nexus_nexwell_games_SnakeGameForm.vtable = malloc(sizeof(void*) *530);
+    class__com_nexus_nexwell_games_SnakeGameForm.vtable = malloc(sizeof(void*) *531);
     __INIT_VTABLE_com_nexus_nexwell_games_SnakeGameForm(threadStateData, class__com_nexus_nexwell_games_SnakeGameForm.vtable);
     class__com_nexus_nexwell_games_SnakeGameForm.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_nexus_nexwell_games_SnakeGameForm);

@@ -79,14 +79,14 @@ public class SnakeGame {
     public void showGameOverMessage() {
         Dialog gameOverDialog = new Dialog("Game Over");
 
-        Container content = new Container(new BoxLayout(BoxLayout.Y_AXIS));
+        Container content = new Container(new BoxLayout(BoxLayout.Y_AXIS),"Container");
 
-        Button restartButton = new Button("Restart");
+        Button restartButton = new Button("Restart", "SpanLabel");
         restartButton.addActionListener(e -> {
             restartGame();
             gameOverDialog.dispose();
         });
-        Button cancelButton = new Button("Cancel");
+        Button cancelButton = new Button("Cancel", "SpanLabel");
         cancelButton.addActionListener(e -> {
             setCancel(true);// When the user clicks cancel btn, cancel becomes true in stopform and thus else if condition gets triggered
             gameOverDialog.dispose();

@@ -274,15 +274,15 @@ JAVA_VOID com_codename1_ui_ComboBox_1_sizeChangedInternal___int_int(CODENAME_ONE
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(294);
-    if (virtual_com_codename1_ui_ComboBox_1_getWidth___R_int(threadStateData, __cn1ThisObject)!=ilocals_1_) /* IF_ICMPNE CustomJump */ goto label_L1033304734;
-    if (virtual_com_codename1_ui_ComboBox_1_getHeight___R_int(threadStateData, __cn1ThisObject)==ilocals_2_) /* IF_ICMPEQ CustomJump */ goto label_L1033304734;
+    if (virtual_com_codename1_ui_ComboBox_1_getWidth___R_int(threadStateData, __cn1ThisObject)!=ilocals_1_) /* IF_ICMPNE CustomJump */ goto label_L193492784;
+    if (virtual_com_codename1_ui_ComboBox_1_getHeight___R_int(threadStateData, __cn1ThisObject)==ilocals_2_) /* IF_ICMPEQ CustomJump */ goto label_L193492784;
     __CN1_DEBUG_INFO(295);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_ui_ComboBox_1_getPreviousForm___R_com_codename1_ui_Form(threadStateData, __cn1ThisObject);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(296);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L995381766;
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L643328884;
     __CN1_DEBUG_INFO(297);
     /* CustomInvoke */virtual_com_codename1_ui_Form_sizeChangedInternal___int_int(threadStateData, locals[3].data.o, ilocals_1_, ilocals_2_); 
 
-label_L995381766:
+label_L643328884:
     __CN1_DEBUG_INFO(299);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Dimension(threadStateData)); /* NEW */
@@ -292,13 +292,13 @@ label_L995381766:
     __CN1_DEBUG_INFO(300);
     virtual_com_codename1_ui_ComboBox_1_repaint__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(301);
-    goto label_L2008762581;
+    goto label_L1391818342;
 
-label_L1033304734:
+label_L193492784:
     __CN1_DEBUG_INFO(302);
     virtual_com_codename1_ui_ComboBox_1_dispose__(threadStateData, __cn1ThisObject); 
 
-label_L2008762581:
+label_L1391818342:
     __CN1_DEBUG_INFO(304);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -4171,7 +4171,7 @@ typedef JAVA_OBJECT (*functionPtr_com_codename1_ui_ComboBox_1_getPreviousForm___
 JAVA_OBJECT virtual_com_codename1_ui_ComboBox_1_getPreviousForm___R_com_codename1_ui_Form(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_codename1_ui_ComboBox_1_getPreviousForm___R_com_codename1_ui_Form)__cn1ThisObject->__codenameOneParentClsReference->vtable[441])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_codename1_ui_ComboBox_1_getPreviousForm___R_com_codename1_ui_Form)__cn1ThisObject->__codenameOneParentClsReference->vtable[443])(threadStateData, __cn1ThisObject);
 }
 
 
@@ -4180,12 +4180,12 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_ComboBox_1_dispose__)(CODENAME_
 JAVA_VOID virtual_com_codename1_ui_ComboBox_1_dispose__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_ComboBox_1_dispose__)__cn1ThisObject->__codenameOneParentClsReference->vtable[487])(threadStateData, __cn1ThisObject);
+    (*(functionPtr_com_codename1_ui_ComboBox_1_dispose__)__cn1ThisObject->__codenameOneParentClsReference->vtable[489])(threadStateData, __cn1ThisObject);
 }
 
 void __INIT_VTABLE_com_codename1_ui_ComboBox_1(CODENAME_ONE_THREAD_STATE, void** vtable) {
         __INIT_VTABLE_com_codename1_ui_Dialog(threadStateData, vtable);
-    vtable[431] = &com_codename1_ui_ComboBox_1_sizeChangedInternal___int_int;
+    vtable[433] = &com_codename1_ui_ComboBox_1_sizeChangedInternal___int_int;
 }
 
 static int __com_codename1_ui_ComboBox_1_LOADED__=0;
@@ -4198,7 +4198,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_ComboBox_1(CODENAME_ONE_THREAD_STATE)
         return;
     }
 
-    class__com_codename1_ui_ComboBox_1.vtable = malloc(sizeof(void*) *556);
+    class__com_codename1_ui_ComboBox_1.vtable = malloc(sizeof(void*) *555);
     __INIT_VTABLE_com_codename1_ui_ComboBox_1(threadStateData, class__com_codename1_ui_ComboBox_1.vtable);
     class__com_codename1_ui_ComboBox_1.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_ComboBox_1);

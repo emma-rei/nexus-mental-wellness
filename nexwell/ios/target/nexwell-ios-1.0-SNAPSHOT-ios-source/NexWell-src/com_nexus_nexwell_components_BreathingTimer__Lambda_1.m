@@ -15,6 +15,14 @@ void set_field_com_nexus_nexwell_components_BreathingTimer__Lambda_1_arg_1(CODEN
     (*(struct obj__com_nexus_nexwell_components_BreathingTimer__Lambda_1*)__cn1T).com_nexus_nexwell_components_BreathingTimer__Lambda_1_arg_1 = __cn1Val;
 }
 
+JAVA_INT get_field_com_nexus_nexwell_components_BreathingTimer__Lambda_1_arg_2(JAVA_OBJECT __cn1T) {
+  return (*(struct obj__com_nexus_nexwell_components_BreathingTimer__Lambda_1*)__cn1T).com_nexus_nexwell_components_BreathingTimer__Lambda_1_arg_2;
+}
+
+void set_field_com_nexus_nexwell_components_BreathingTimer__Lambda_1_arg_2(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T) {
+    (*(struct obj__com_nexus_nexwell_components_BreathingTimer__Lambda_1*)__cn1T).com_nexus_nexwell_components_BreathingTimer__Lambda_1_arg_2 = __cn1Val;
+}
+
 JAVA_VOID __FINALIZER_com_nexus_nexwell_components_BreathingTimer__Lambda_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete) {
     __FINALIZER_java_lang_Object(threadStateData, objToDelete);
 }
@@ -32,33 +40,36 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_components_BreathingTimer__Lambda_1(CODENAME
 }
 
 
-JAVA_VOID com_nexus_nexwell_components_BreathingTimer__Lambda_1___INIT_____com_nexus_nexwell_components_BreathingTimer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10508, 201);
+JAVA_VOID com_nexus_nexwell_components_BreathingTimer__Lambda_1___INIT_____com_nexus_nexwell_components_BreathingTimer_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10676, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
+    JAVA_INT ilocals_2_ = __cn1Arg2;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     set_field_com_nexus_nexwell_components_BreathingTimer__Lambda_1_arg_1(threadStateData, locals[1].data.o, __cn1ThisObject);
+    set_field_com_nexus_nexwell_components_BreathingTimer__Lambda_1_arg_2(threadStateData, ilocals_2_, __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_nexus_nexwell_components_BreathingTimer__Lambda_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10508, 203);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */com_nexus_nexwell_components_BreathingTimer_lambda$new$0___com_nexus_nexwell_components_BreathingTimer(threadStateData, get_field_com_nexus_nexwell_components_BreathingTimer__Lambda_1_arg_1(__cn1ThisObject)); 
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10676, 203);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */com_nexus_nexwell_components_BreathingTimer_lambda$new$0___com_nexus_nexwell_components_BreathingTimer_int(threadStateData, get_field_com_nexus_nexwell_components_BreathingTimer__Lambda_1_arg_1(__cn1ThisObject), get_field_com_nexus_nexwell_components_BreathingTimer__Lambda_1_arg_2(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_OBJECT com_nexus_nexwell_components_BreathingTimer__Lambda_1_lambdaFactory$___com_nexus_nexwell_components_BreathingTimer_R_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+JAVA_OBJECT com_nexus_nexwell_components_BreathingTimer__Lambda_1_lambdaFactory$___com_nexus_nexwell_components_BreathingTimer_int_R_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_components_BreathingTimer__Lambda_1(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 10508, 10185);
+    DEFINE_METHOD_STACK(4, 2, 0, 10676, 10185);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
+    JAVA_INT ilocals_1_ = __cn1Arg2;
     PUSH_POINTER(__NEW_com_nexus_nexwell_components_BreathingTimer__Lambda_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_nexus_nexwell_components_BreathingTimer__Lambda_1___INIT_____com_nexus_nexwell_components_BreathingTimer(threadStateData, SP[-1].data.o, locals[0].data.o);     SP -= 1;
+    /* CustomInvoke */com_nexus_nexwell_components_BreathingTimer__Lambda_1___INIT_____com_nexus_nexwell_components_BreathingTimer_int(threadStateData, SP[-1].data.o, locals[0].data.o, ilocals_1_);     SP -= 1;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 }

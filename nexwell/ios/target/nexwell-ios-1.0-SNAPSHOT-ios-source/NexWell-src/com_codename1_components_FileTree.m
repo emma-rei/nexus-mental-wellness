@@ -229,13 +229,13 @@ JAVA_OBJECT com_codename1_components_FileTree_childToDisplayLabel___java_lang_Ob
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(53);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_lang_Object_toString___R_java_lang_String(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(54);
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))==0) /* IFEQ CustomJump */ goto label_L1574410839;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))==0) /* IFEQ CustomJump */ goto label_L1065031099;
     __CN1_DEBUG_INFO(55);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return STRING_FROM_CONSTANT_POOL_OFFSET(8893);
 
-label_L1574410839:
+label_L1065031099:
     __CN1_DEBUG_INFO(57);
-    if (/* CustomInvoke */virtual_java_lang_String_endsWith___java_lang_String_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))==0) /* IFEQ CustomJump */ goto label_L1085793932;
+    if (/* CustomInvoke */virtual_java_lang_String_endsWith___java_lang_String_R_boolean(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(18))==0) /* IFEQ CustomJump */ goto label_L766291229;
     __CN1_DEBUG_INFO(58);
     BC_ALOAD(2);
     PUSH_INT(0); /* ICONST_0 */
@@ -248,7 +248,7 @@ label_L1574410839:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
 
-label_L1085793932:
+label_L766291229:
     __CN1_DEBUG_INFO(60);
     /* VarOp.assignFrom */ ilocals_3_ = /* CustomInvoke */virtual_java_lang_String_lastIndexOf___int_R_int(threadStateData, locals[2].data.o, 47);
     __CN1_DEBUG_INFO(61);
@@ -3114,7 +3114,7 @@ JAVA_VOID virtual_com_codename1_components_FileTree_setUIID___java_lang_String(C
 
 void __INIT_VTABLE_com_codename1_components_FileTree(CODENAME_ONE_THREAD_STATE, void** vtable) {
         __INIT_VTABLE_com_codename1_ui_tree_Tree(threadStateData, vtable);
-    vtable[413] = &com_codename1_components_FileTree_childToDisplayLabel___java_lang_Object_R_java_lang_String;
+    vtable[415] = &com_codename1_components_FileTree_childToDisplayLabel___java_lang_Object_R_java_lang_String;
 }
 
 static int __com_codename1_components_FileTree_LOADED__=0;
@@ -3127,7 +3127,7 @@ void __STATIC_INITIALIZER_com_codename1_components_FileTree(CODENAME_ONE_THREAD_
         return;
     }
 
-    class__com_codename1_components_FileTree.vtable = malloc(sizeof(void*) *414);
+    class__com_codename1_components_FileTree.vtable = malloc(sizeof(void*) *416);
     __INIT_VTABLE_com_codename1_components_FileTree(threadStateData, class__com_codename1_components_FileTree.vtable);
     class__com_codename1_components_FileTree.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_components_FileTree);

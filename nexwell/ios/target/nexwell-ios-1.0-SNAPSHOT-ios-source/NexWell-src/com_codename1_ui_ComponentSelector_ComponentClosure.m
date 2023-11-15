@@ -76,6 +76,8 @@ void __STATIC_INITIALIZER_com_codename1_ui_ComponentSelector_ComponentClosure(CO
     classToInterfaceMap_com_codename1_ui_ComponentSelector_ComponentClosure = malloc(sizeof(int*) * cn1_array_start_offset);
     classToInterfaceMap_com_codename1_ui_ComponentSelector_ComponentClosure[cn1_class_id_com_codename1_ui_TextSelection_3] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_com_codename1_ui_ComponentSelector_ComponentClosure[cn1_class_id_com_codename1_ui_TextSelection_3][0] = 10;
+    classToInterfaceMap_com_codename1_ui_ComponentSelector_ComponentClosure[cn1_class_id_com_codename1_ui_Sheet_5] = malloc(sizeof(int*) * 13);
+    classToInterfaceMap_com_codename1_ui_ComponentSelector_ComponentClosure[cn1_class_id_com_codename1_ui_Sheet_5][0] = 10;
     classToInterfaceMap_com_codename1_ui_ComponentSelector_ComponentClosure[cn1_class_id_com_codename1_ui_plaf_DefaultLookAndFeel_2] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_com_codename1_ui_ComponentSelector_ComponentClosure[cn1_class_id_com_codename1_ui_plaf_DefaultLookAndFeel_2][0] = 10;
     class__com_codename1_ui_ComponentSelector_ComponentClosure.initialized = JAVA_TRUE;

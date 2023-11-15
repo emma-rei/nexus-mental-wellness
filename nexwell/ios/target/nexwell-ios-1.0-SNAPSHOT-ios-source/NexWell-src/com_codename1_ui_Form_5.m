@@ -52,25 +52,25 @@ JAVA_INT com_codename1_ui_Form_5_compare___com_codename1_ui_Component_com_codena
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(3139);
-    if (virtual_com_codename1_ui_Component_getTabIndex___R_int(threadStateData, locals[1].data.o)>=virtual_com_codename1_ui_Component_getTabIndex___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPGE CustomJump */ goto label_L1597400455;
+    if (virtual_com_codename1_ui_Component_getTabIndex___R_int(threadStateData, locals[1].data.o)>=virtual_com_codename1_ui_Component_getTabIndex___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPGE CustomJump */ goto label_L1897372527;
     PUSH_INT(-1); /* ICONST_M1 */
-    goto label_L1610853733;
+    goto label_L331216192;
 
-label_L1597400455:
+label_L1897372527:
     BC_ALOAD(2);
     __CN1_DEBUG_INFO(3140);
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getTabIndex___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Component_getTabIndex___R_int(threadStateData, locals[1].data.o);
     PUSH_INT(tmpResult); }
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L784961589;
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ goto label_L1382973704;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1610853733;
+    goto label_L331216192;
 
-label_L784961589:
+label_L1382973704:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1610853733:
+label_L331216192:
     __CN1_DEBUG_INFO(3139);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }

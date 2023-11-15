@@ -2922,7 +2922,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_InputComponent_1_setAutoRelease
 JAVA_VOID virtual_com_codename1_ui_InputComponent_1_setAutoRelease___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_InputComponent_1_setAutoRelease___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[374])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    (*(functionPtr_com_codename1_ui_InputComponent_1_setAutoRelease___boolean)__cn1ThisObject->__codenameOneParentClsReference->vtable[376])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 
@@ -2931,7 +2931,7 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_InputComponent_1_setReleaseRadi
 JAVA_VOID virtual_com_codename1_ui_InputComponent_1_setReleaseRadius___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_InputComponent_1_setReleaseRadius___int)__cn1ThisObject->__codenameOneParentClsReference->vtable[376])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    (*(functionPtr_com_codename1_ui_InputComponent_1_setReleaseRadius___int)__cn1ThisObject->__codenameOneParentClsReference->vtable[378])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 void __INIT_VTABLE_com_codename1_ui_InputComponent_1(CODENAME_ONE_THREAD_STATE, void** vtable) {
@@ -2949,7 +2949,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_InputComponent_1(CODENAME_ONE_THREAD_
         return;
     }
 
-    class__com_codename1_ui_InputComponent_1.vtable = malloc(sizeof(void*) *404);
+    class__com_codename1_ui_InputComponent_1.vtable = malloc(sizeof(void*) *406);
     __INIT_VTABLE_com_codename1_ui_InputComponent_1(threadStateData, class__com_codename1_ui_InputComponent_1.vtable);
     class__com_codename1_ui_InputComponent_1.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_InputComponent_1);

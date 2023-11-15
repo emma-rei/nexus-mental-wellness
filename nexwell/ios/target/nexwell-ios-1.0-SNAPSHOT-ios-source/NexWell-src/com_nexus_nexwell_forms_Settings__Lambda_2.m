@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_forms_Settings__Lambda_2(CODENAME_ONE_THREAD
 
 
 JAVA_VOID com_nexus_nexwell_forms_Settings__Lambda_2___INIT_____com_codename1_components_Switch(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10667, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10772, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -46,7 +46,7 @@ JAVA_VOID com_nexus_nexwell_forms_Settings__Lambda_2___INIT_____com_codename1_co
 
 
 JAVA_VOID com_nexus_nexwell_forms_Settings__Lambda_2_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10667, 3047);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10772, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */com_nexus_nexwell_forms_Settings_lambda$new$1___com_codename1_components_Switch_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_nexus_nexwell_forms_Settings__Lambda_2_arg_1(__cn1ThisObject), locals[1].data.o); 
@@ -57,7 +57,7 @@ JAVA_VOID com_nexus_nexwell_forms_Settings__Lambda_2_actionPerformed___com_coden
 
 JAVA_OBJECT com_nexus_nexwell_forms_Settings__Lambda_2_lambdaFactory$___com_codename1_components_Switch_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_Settings__Lambda_2(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 10667, 10185);
+    DEFINE_METHOD_STACK(3, 1, 0, 10772, 10185);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_com_nexus_nexwell_forms_Settings__Lambda_2(threadStateData)); /* NEW */

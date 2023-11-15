@@ -201,7 +201,7 @@ label_L2096539129:
 label_L1900366749:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1511134896:
+label_L530249538:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return SP[-1].data.i;
 
 label_L712410124:
@@ -215,7 +215,7 @@ label_L712410124:
     if (/* CustomInvoke */virtual_java_lang_Object_equals___java_lang_Object_R_boolean(threadStateData, locals[6].data.o, locals[7].data.o)!=0) /* IFNE CustomJump */ JUMP_TO(label_L249177573, 0);
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1547961565:
+label_L18070049:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return SP[-1].data.i;
 
 label_L249177573:

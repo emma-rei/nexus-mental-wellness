@@ -7,6 +7,12 @@
     capButtonUiids: "BlueText, GreenButton, BlueButton";
     
 }
+SheetBackButton{
+    color:white;
+}
+SheetTitle{
+    color:white;
+}
 Switch {
     switchThumbPaddingInt: 2;
     switchThumbScaleY: "1.5";
@@ -36,9 +42,14 @@ Images{
                         url(img/TabIconsPressed/pressedhouse.fill.png),
                         url(img/TabIconsPressed/pressedbooks.vertical.fill.png),
                         url(img/Buttons/paintpalette.fill.png),
-                        url(img/Buttons/timer.png),
+                        url(img/Buttons/timer.circle.fill.png),
                         url(img/Buttons/wind.circle.png),
-                        url(img/Buttons/calendar.badge.plus.png)
+                        url(img/Buttons/calendar.badge.plus.png),
+                        url(img/Buttons/play.circle.fill.png),
+                        url(img/Buttons/pause.circle.fill.png),
+                        url(img/Buttons/restart.circle.fill.png),
+                        url(img/PlayButtonsPressed/playpause.circle.fill.png),
+                        url(img/PlayButtonsPressed/playpausePressed.circle.fill.png)
                         
 
                         
@@ -46,8 +57,9 @@ Images{
 /** Style for Button class */
 Button {
     font-family: "native:MainLight";
-    font-size: 3mm;
-    
+    font-size: 0mm;
+    margin: 1mm;
+    padding: 1mm;
     border-radius: 100px;
 }
 circle{
@@ -94,6 +106,14 @@ BaseButton{
     color:white;
     
 }
+ToggleButton{
+    
+    font-size:2.8mm;
+    padding: 1mm;
+    margin:1mm;
+    
+    color:white;
+}
 SpanLabel{
     
     font-family: "native:MainRegular";
@@ -102,6 +122,50 @@ SpanLabel{
     text-align: center;
     margin:3mm 3mm 3mm 3mm;
     padding:4mm 2mm 3mm 3mm;
+    border: none;
+    
+}
+PeachContainer{
+    
+    font-family: "native:MainRegular";
+    color: white;
+    background: linear-gradient(to left, #e36b8d, #e8b5c3);
+    text-align: center;
+    margin:3mm 3mm 3mm 3mm;
+    padding: 3mm 2mm 2mm 2mm;
+    border: none;
+    
+}
+BlueContainer{
+    
+    font-family: "native:MainRegular";
+    color: white;
+    background: linear-gradient(to left, #9ecaf0, #23659e);
+    text-align: center;
+    margin:3mm 3mm 3mm 3mm;
+    padding:3mm 2mm 2mm 2mm;
+    border: none;
+    
+}
+GreenContainer{
+    
+    font-family: "native:MainRegular";
+    color: white;
+    background: linear-gradient(to left, #9ef0b1, #39874b);
+    text-align: center;
+    margin:3mm 3mm 3mm 3mm;
+    padding:3mm 2mm 2mm 2mm;
+    border: none;
+    
+}
+YellowContainer{
+    
+    font-family: "native:MainRegular";
+    color: white;
+    background: linear-gradient(to left, #bd7817, #edc68e);
+    text-align: center;
+    margin:3mm 3mm 3mm 3mm;
+    padding:3mm 2mm 2mm 2mm;
     border: none;
     
 }
@@ -123,8 +187,9 @@ BlueText{
     background: transparent;
 }
 WhiteText{
-    font-family: "native:MainBold";
+    font-family: "native:ItalicBold";
     color:#ffffff ;
+    font-size: 3mm;
     background: transparent;
 }
 GreenButton{
@@ -186,13 +251,14 @@ SideCommand {
 Toolbar {
     border: none;
     background: linear-gradient(to bottom, #2c2c2c, #2c2c2c);
-    padding: 3mm 3mm 3mm 3mm;
+    padding: 1mm 1mm 1mm 2mm;
     margin: 0px;
 }
 Label{
+    color: white;
     padding: 1mm 1mm 1mm 1mm;
     font-family: "native:MainLight";
-    font-size: 3.5mm;
+    font-size: 3mm;
     
     
 }
@@ -307,11 +373,13 @@ DarkForm{
     margin: 0px;
     padding: 0px;
 }
-
+Sheet{
+    background: #13393d;
+}
 GamesToolbar{
     font-size: 5mm;
     padding: 3mm 3mm 3mm 3mm;
-    background: linear-gradient(to top, #6868FD, #1d193b);
+    background: linear-gradient(to top, #6868FD, #32363d);
 }
 MusicToolbar{
     font-size: 5mm;

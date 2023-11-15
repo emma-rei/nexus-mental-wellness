@@ -33,7 +33,7 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_games_GameOfLifeForm__Lambda_5(CODENAME_ONE_
 
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_5___INIT_____com_nexus_nexwell_games_GameOfLifeForm(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10576, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10510, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -44,7 +44,7 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_5___INIT_____com_nexus_
 
 
 JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_5_dataChanged___int_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1, JAVA_INT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10576, 4483);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10510, 4483);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     JAVA_INT ilocals_1_ = __cn1Arg1;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     /* CustomInvoke */com_nexus_nexwell_games_GameOfLifeForm_lambda$new$4___com_nexus_nexwell_games_GameOfLifeForm_int_int(threadStateData, get_field_com_nexus_nexwell_games_GameOfLifeForm__Lambda_5_arg_1(__cn1ThisObject), ilocals_1_, ilocals_2_); 
@@ -55,7 +55,7 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm__Lambda_5_dataChanged___int_int
 
 JAVA_OBJECT com_nexus_nexwell_games_GameOfLifeForm__Lambda_5_lambdaFactory$___com_nexus_nexwell_games_GameOfLifeForm_R_com_codename1_ui_events_DataChangedListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_games_GameOfLifeForm__Lambda_5(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 10576, 10185);
+    DEFINE_METHOD_STACK(3, 1, 0, 10510, 10185);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_com_nexus_nexwell_games_GameOfLifeForm__Lambda_5(threadStateData)); /* NEW */

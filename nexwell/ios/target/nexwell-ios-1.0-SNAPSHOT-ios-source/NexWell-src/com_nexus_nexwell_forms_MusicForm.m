@@ -1,12 +1,15 @@
 #include "com_nexus_nexwell_forms_MusicForm.h"
 #include "com_codename1_ui_Button.h"
 #include "com_codename1_ui_Display.h"
+#include "com_codename1_ui_Toolbar.h"
 #include "com_codename1_ui_events_ActionEvent.h"
 #include "com_codename1_ui_layouts_GridLayout.h"
+#include "com_codename1_ui_plaf_RoundRectBorder.h"
 #include "com_codename1_ui_plaf_Style.h"
 #include "com_nexus_nexwell_components_Colors.h"
 #include "com_nexus_nexwell_forms_MusicForm.h"
 #include "com_nexus_nexwell_forms_MusicForm__Lambda_1.h"
+#include "com_nexus_nexwell_forms_MusicForm__Lambda_2.h"
 #include "java_lang_NullPointerException.h"
 #include "java_lang_String.h"
 #include "java_util_HashMap.h"
@@ -259,44 +262,54 @@ com_nexus_nexwell_forms_MusicForm___INIT____(threadStateData, o);
 
 JAVA_VOID com_nexus_nexwell_forms_MusicForm___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 9, 0, 10580, 201);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(17);
-    /* CustomInvoke */com_codename1_ui_Form___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(219)); 
-    __CN1_DEBUG_INFO(19);
-    BC_ALOAD(0);
-    { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_MusicForm_getTitleComponent___R_com_codename1_ui_Label(threadStateData, __cn1ThisObject);
+    DEFINE_INSTANCE_METHOD_STACK(5, 9, 0, 10779, 201);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(21);
+    /* CustomInvoke */com_codename1_ui_Form___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(10201)); 
+    __CN1_DEBUG_INFO(22);
+    { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_MusicForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
-    virtual_com_nexus_nexwell_forms_MusicForm_removeComponent___com_codename1_ui_Component(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(20);
+    /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setUIID___java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10780));     SP -= 1;
+    __CN1_DEBUG_INFO(23);
+    { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_MusicForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
+    PUSH_OBJ(tmpResult); }
+    /* LDC: ''*/
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(219));
+    PUSH_INT(61471); /* LDC */
+    PUSH_OBJ(com_nexus_nexwell_forms_MusicForm__Lambda_1_lambdaFactory$___R_com_codename1_ui_events_ActionListener(threadStateData));
+    { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_addMaterialCommandToRightBar___java_lang_String_char_com_codename1_ui_events_ActionListener_R_com_codename1_ui_Command(threadStateData, SP[-4].data.o, SP[-3].data.o, SP[-2].data.i, SP[-1].data.o);
+    SP-=3;
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    SP--; /* POP */
+    __CN1_DEBUG_INFO(24);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_layouts_GridLayout(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_layouts_GridLayout___INIT_____int_int(threadStateData, SP[-1].data.o, 2 /* ICONST_2 */, 2 /* ICONST_2 */);     SP -= 1;
     virtual_com_nexus_nexwell_forms_MusicForm_setLayout___com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(26);
+    __CN1_DEBUG_INFO(25);
     PUSH_POINTER(__NEW_java_util_HashMap(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_HashMap___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(1);
+    __CN1_DEBUG_INFO(26);
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10781), STRING_FROM_CONSTANT_POOL_OFFSET(10782)); 
     __CN1_DEBUG_INFO(27);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10581), STRING_FROM_CONSTANT_POOL_OFFSET(10582)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10783), STRING_FROM_CONSTANT_POOL_OFFSET(10784)); 
     __CN1_DEBUG_INFO(28);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10583), STRING_FROM_CONSTANT_POOL_OFFSET(10584)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10785), STRING_FROM_CONSTANT_POOL_OFFSET(10786)); 
     __CN1_DEBUG_INFO(29);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10585), STRING_FROM_CONSTANT_POOL_OFFSET(10586)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10787), STRING_FROM_CONSTANT_POOL_OFFSET(10788)); 
     __CN1_DEBUG_INFO(30);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10587), STRING_FROM_CONSTANT_POOL_OFFSET(10588)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10789), STRING_FROM_CONSTANT_POOL_OFFSET(10790)); 
     __CN1_DEBUG_INFO(31);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10589), STRING_FROM_CONSTANT_POOL_OFFSET(10590)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10791), STRING_FROM_CONSTANT_POOL_OFFSET(10792)); 
     __CN1_DEBUG_INFO(32);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10591), STRING_FROM_CONSTANT_POOL_OFFSET(10592)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10793), STRING_FROM_CONSTANT_POOL_OFFSET(10794)); 
     __CN1_DEBUG_INFO(33);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10593), STRING_FROM_CONSTANT_POOL_OFFSET(10594)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10376), STRING_FROM_CONSTANT_POOL_OFFSET(10795)); 
     __CN1_DEBUG_INFO(34);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10595), STRING_FROM_CONSTANT_POOL_OFFSET(10596)); 
-    __CN1_DEBUG_INFO(35);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10597), STRING_FROM_CONSTANT_POOL_OFFSET(10598)); 
-    __CN1_DEBUG_INFO(37);
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10796), STRING_FROM_CONSTANT_POOL_OFFSET(10797)); 
+    __CN1_DEBUG_INFO(36);
     PUSH_INT(3); /* ICONST_3 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_INT, sizeof(JAVA_ARRAY_INT), 1));
     BC_DUP(); /* DUP */
@@ -315,82 +328,91 @@ JAVA_VOID com_nexus_nexwell_forms_MusicForm___INIT____(CODENAME_ONE_THREAD_STATE
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* IASTORE */
     ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
     BC_ASTORE(2);
-    __CN1_DEBUG_INFO(43);
+    __CN1_DEBUG_INFO(42);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
-    __CN1_DEBUG_INFO(44);
+    __CN1_DEBUG_INFO(43);
     { JAVA_OBJECT tmpResult = virtual_java_util_HashMap_entrySet___R_java_util_Set(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Set_iterator___R_java_util_Iterator(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(4);
 
-label_L1998137093:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L1380044647;
-    /* VarOp.assignFrom */ locals[5].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[4].data.o);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(45);
-    /* VarOp.assignFrom */ locals[6].data.o = virtual_java_util_Map_Entry_getKey___R_java_lang_Object(threadStateData, locals[5].data.o);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(46);
+label_L1650332494:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L2122357625;
+    /* VarOp.assignFrom */ locals[5].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[4].data.o);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(44);
+    /* VarOp.assignFrom */ locals[6].data.o = virtual_java_util_Map_Entry_getKey___R_java_lang_Object(threadStateData, locals[5].data.o);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(45);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, locals[6].data.o);     SP -= 1;
     BC_ASTORE(7);
+    __CN1_DEBUG_INFO(46);
+    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10344)); 
     __CN1_DEBUG_INFO(47);
-    /* CustomInvoke */virtual_com_codename1_ui_Button_setUIID___java_lang_String(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10550)); 
-    __CN1_DEBUG_INFO(48);
-    /* VarOp.assignFrom */ locals[8].data.o = virtual_com_codename1_ui_Button_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[7].data.o);locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(49);
-    if (ilocals_3_!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L1902801188;
-    __CN1_DEBUG_INFO(50);
+    /* VarOp.assignFrom */ locals[8].data.o = virtual_com_codename1_ui_Button_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[7].data.o);locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(48);
+    if (ilocals_3_!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L1556162268;
+    __CN1_DEBUG_INFO(49);
     /* VarOp.assignFrom */ ilocals_3_=(ilocals_3_ % 2 /* ICONST_2 */);
 
-label_L1902801188:
+label_L1556162268:
+    __CN1_DEBUG_INFO(51);
+    BC_ALOAD(8);
+    PUSH_OBJ(com_codename1_ui_plaf_RoundRectBorder_create___R_com_codename1_ui_plaf_RoundRectBorder(threadStateData));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_RoundRectBorder_shadowColor___int_R_com_codename1_ui_plaf_RoundRectBorder(threadStateData, SP[-1].data.o, get_static_com_nexus_nexwell_components_Colors_BLUE(threadStateData));
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    virtual_com_codename1_ui_plaf_Style_setBorder___com_codename1_ui_plaf_Border(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(52);
-    /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBackgroundGradientStartColor___int(threadStateData, locals[8].data.o, CN1_ARRAY_ELEMENT_INT(locals[2].data.o, ilocals_3_)); 
-    __CN1_DEBUG_INFO(53);
     BC_IINC(3, 1);
-    __CN1_DEBUG_INFO(54);
+    __CN1_DEBUG_INFO(53);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBackgroundGradientEndColor___int(threadStateData, locals[8].data.o, CN1_ARRAY_ELEMENT_INT(locals[2].data.o, ilocals_3_)); 
-    __CN1_DEBUG_INFO(55);
+    __CN1_DEBUG_INFO(54);
     BC_ALOAD(7);
-    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_MusicForm__Lambda_1_lambdaFactory$___com_nexus_nexwell_forms_MusicForm_java_util_Map_Entry_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, locals[5].data.o));
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_MusicForm__Lambda_2_lambdaFactory$___com_nexus_nexwell_forms_MusicForm_java_util_Map_Entry_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, locals[5].data.o));
     virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(57);
+    __CN1_DEBUG_INFO(56);
     /* CustomInvoke */virtual_com_nexus_nexwell_forms_MusicForm_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, locals[7].data.o); 
-    __CN1_DEBUG_INFO(59);
-    goto label_L1998137093;
+    __CN1_DEBUG_INFO(58);
+    goto label_L1650332494;
 
-label_L1380044647:
-    __CN1_DEBUG_INFO(60);
+label_L2122357625:
+    __CN1_DEBUG_INFO(59);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_nexus_nexwell_forms_MusicForm_executeVideo___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10580, 10599);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10779, 10798);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(62);
+    __CN1_DEBUG_INFO(61);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_execute___java_lang_String(threadStateData, SP[-1].data.o, locals[1].data.o);     SP -= 1;
-    __CN1_DEBUG_INFO(63);
+    __CN1_DEBUG_INFO(62);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_MusicForm_lambda$new$0___com_nexus_nexwell_forms_MusicForm_java_util_Map_Entry_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+JAVA_VOID com_nexus_nexwell_forms_MusicForm_lambda$new$1___com_nexus_nexwell_forms_MusicForm_java_util_Map_Entry_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_MusicForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 3, 0, 10580, 10216);
+    DEFINE_METHOD_STACK(2, 3, 0, 10779, 10352);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg3;
     locals[2].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(55);
+    __CN1_DEBUG_INFO(54);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_Entry_getValue___R_java_lang_Object(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     virtual_com_nexus_nexwell_forms_MusicForm_executeVideo___java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_nexus_nexwell_forms_MusicForm_lambda$new$0___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     return;
 }
 
@@ -3898,21 +3920,12 @@ JAVA_VOID virtual_com_nexus_nexwell_forms_MusicForm_setLayout___com_codename1_ui
 }
 
 
-typedef JAVA_VOID (*functionPtr_com_nexus_nexwell_forms_MusicForm_removeComponent___com_codename1_ui_Component)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+typedef JAVA_OBJECT (*functionPtr_com_nexus_nexwell_forms_MusicForm_getToolbar___R_com_codename1_ui_Toolbar)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
-JAVA_VOID virtual_com_nexus_nexwell_forms_MusicForm_removeComponent___com_codename1_ui_Component(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+JAVA_OBJECT virtual_com_nexus_nexwell_forms_MusicForm_getToolbar___R_com_codename1_ui_Toolbar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_nexus_nexwell_forms_MusicForm_removeComponent___com_codename1_ui_Component)__cn1ThisObject->__codenameOneParentClsReference->vtable[350])(threadStateData, __cn1ThisObject, __cn1Arg1);
-}
-
-
-typedef JAVA_OBJECT (*functionPtr_com_nexus_nexwell_forms_MusicForm_getTitleComponent___R_com_codename1_ui_Label)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
-
-JAVA_OBJECT virtual_com_nexus_nexwell_forms_MusicForm_getTitleComponent___R_com_codename1_ui_Label(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    
-    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    return (*(functionPtr_com_nexus_nexwell_forms_MusicForm_getTitleComponent___R_com_codename1_ui_Label)__cn1ThisObject->__codenameOneParentClsReference->vtable[435])(threadStateData, __cn1ThisObject);
+    return (*(functionPtr_com_nexus_nexwell_forms_MusicForm_getToolbar___R_com_codename1_ui_Toolbar)__cn1ThisObject->__codenameOneParentClsReference->vtable[529])(threadStateData, __cn1ThisObject);
 }
 
 void __INIT_VTABLE_com_nexus_nexwell_forms_MusicForm(CODENAME_ONE_THREAD_STATE, void** vtable) {
@@ -3929,7 +3942,7 @@ void __STATIC_INITIALIZER_com_nexus_nexwell_forms_MusicForm(CODENAME_ONE_THREAD_
         return;
     }
 
-    class__com_nexus_nexwell_forms_MusicForm.vtable = malloc(sizeof(void*) *531);
+    class__com_nexus_nexwell_forms_MusicForm.vtable = malloc(sizeof(void*) *532);
     __INIT_VTABLE_com_nexus_nexwell_forms_MusicForm(threadStateData, class__com_nexus_nexwell_forms_MusicForm.vtable);
     class__com_nexus_nexwell_forms_MusicForm.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_nexus_nexwell_forms_MusicForm);

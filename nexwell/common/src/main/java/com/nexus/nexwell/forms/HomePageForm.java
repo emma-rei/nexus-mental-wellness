@@ -1,5 +1,6 @@
 package com.nexus.nexwell.forms;
 
+import com.codename1.components.MultiButton;
 import com.codename1.components.SpanButton;
 import java.util.Random;
 import com.codename1.components.SpanLabel;
@@ -9,6 +10,7 @@ import static com.codename1.ui.CN.getCurrentForm;
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
 import com.codename1.ui.layouts.FlowLayout;
+import com.codename1.ui.plaf.RoundBorder;
 import com.codename1.ui.plaf.RoundRectBorder;
 import com.codename1.ui.plaf.Style;
 import static com.codename1.ui.util.Resources.getGlobalResources;
@@ -28,17 +30,32 @@ public class HomePageForm extends Form {
         
 //        cnt.setUIID("PaddedContainer");
         Image ico1 = getGlobalResources().getImage("paintpalette.fill.png");
-        Image timericon = getGlobalResources().getImage("timer.png");
+        
         Image windicon = getGlobalResources().getImage("wind.circle.png");
         Image calendaricon = getGlobalResources().getImage("calendar.badge.plus.png");
         Button btn1 = new Button("", ico1 );
-        Button btn2 = new Button("", timericon );
-        btn2.addActionListener(e -> new BreathingTimerForm().show());
+        Button btn2 = new Button("", Colors.TIMERICON);
         Button btn3 = new Button("", windicon);
-        Container cnt = FlowLayout.encloseCenter(btn1, btn2, btn3);
         
-        Button booking = new Button("Book an appointment");
-        booking.setUIID("SpanLabel");
+        
+        
+        Button booking = new Button("Book an appointment", "BlueButton");
+        
+        RichTextView r1 = new RichTextView("<b>"+"Need someone to talk to? We are here to support you"+"</b>");
+        Style g = r1.getAllStyles();
+        g.setFgColor(0x00ff);
+        
+        Container bookContainer = FlowLayout.encloseCenter(
+                    new RichTextView("<b>"+"Need someone to talk to? We are here to support you"+"</b>"),
+                booking
+                    
+        );
+        bookContainer.setUIID("SpanLabel");
+        Style t = bookContainer.getAllStyles();
+        
+        t.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
+        t.setPadding(3,2,2,2);
+        
         Style btnStyle = booking.getAllStyles();
         btnStyle.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
         btnStyle.setBackgroundGradientEndColor(Colors.CYAN);
@@ -47,32 +64,50 @@ public class HomePageForm extends Form {
         });
         
         booking.setIcon(calendaricon);
-        Label quoteOfTheDay = new Label("                           Quote of the day");
         
-        quoteOfTheDay.setUIID("WhiteText");
+        
+        
         // Quote generation and pass it to richtextview
         String q = ContentFeed.getRandomQuote();
-        RichTextView ct = new RichTextView("  "+"<i>"+q+"</i>"); //RichtextView is also a type of Container
+        RichTextView r = new RichTextView(q); //RichtextView is also a type of Container
+        r.setUIID("WhiteText");
+        Label lbl = new Label(q, "WhiteText");
+        Container ct = FlowLayout.encloseIn(
+                new Label("Quote of the day", "WhiteText"),
+                new Label(q, "WhiteText")
+                
+        );
         ct.setUIID("SpanLabel");
         Style s = ct.getAllStyles();
+        
         s.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
+        s.setPadding(5,5,5,5);
         s.setTextDecoration(Style.BACKGROUND_IMAGE_TILE_VERTICAL_ALIGN_CENTER);
         
+        String[] containerUIIDS = {"PeachContainer", "BlueContainer", "GreenContainer", "YellowContainer"};
+        int[] colorset = {Colors.PEACH, Colors.BLUE, Colors.LIGHT_GREEN, Colors.DARK};
+        btn3.addActionListener(e -> new BreathingTimer(null).show());
+        btn1.addActionListener(e->{
+            int rnd = new Random().nextInt(containerUIIDS.length);
+            ct.setUIID(containerUIIDS[rnd]);
+            bookContainer.setUIID(containerUIIDS[rnd]);
+            t.setBorder(RoundRectBorder.create().shadowColor(colorset[rnd]));
+            t.setPadding(3,2,2,2);
+        });
         
+        Container cnt = FlowLayout.encloseCenter(btn1, btn2, btn3);
         
-        
-        add(quoteOfTheDay);
         add(ct);
-        add(booking);
+        add(bookContainer);
         add(cnt);
         
         
-        getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm().show());
-        getToolbar().addMaterialCommandToLeftSideMenu("Mindfulness",FontImage.MATERIAL_BOOKMARKS,4, e -> new BreathingTimerForm().show());
-        getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
-        getToolbar().addMaterialCommandToLeftSideMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
+//        getToolbar().addMaterialCommandToLeftSideMenu("Profile", FontImage.MATERIAL_ACCOUNT_BOX, e-> new AccountForm().show());
+//        getToolbar().addMaterialCommandToLeftSideMenu("Mindfulness",FontImage.MATERIAL_BOOKMARKS,4, e -> new BreathingTimerForm().show());
+//        getToolbar().addMaterialCommandToLeftSideMenu("Games",FontImage.MATERIAL_GAMES,4, e -> games());
+//        getToolbar().addMaterialCommandToLeftSideMenu("Visuals",FontImage.MATERIAL_COFFEE,4, e -> satisfyingvisuals());
         getToolbar().addMaterialCommandToLeftSideMenu("Settings", FontImage.MATERIAL_SETTINGS, 4, e -> new Settings().show());
-        getToolbar().addMaterialCommandToLeftSideMenu("RESOURCES", FontImage.MATERIAL_CHAT, 4, e -> new ResourcesForm().show());
+//        getToolbar().addMaterialCommandToLeftSideMenu("RESOURCES", FontImage.MATERIAL_CHAT, 4, e -> new ResourcesForm().show());
         
         
     }
@@ -139,7 +174,6 @@ public class HomePageForm extends Form {
     }
     private void bookme() {
         Form stressf = new Form(new BorderLayout());
-
         Label titleLabel = new Label("YouCanBookMe");
         titleLabel.getUnselectedStyle().setFgColor(0x000000);
         titleLabel.getUnselectedStyle().setFont(Font.createSystemFont(Font.FACE_SYSTEM, Font.STYLE_BOLD, Font.SIZE_LARGE)); // Set a larger font size
@@ -160,5 +194,40 @@ public class HomePageForm extends Form {
         tb.setTitleComponent(titleLabel);
 
         stressf.show();
+    }
+    private class BreathingTimer extends Sheet {
+        BreathingTimer(Sheet parent) {
+            super(parent, "Breathing Timer");
+            setLayout(new BoxLayout(BoxLayout.Y_AXIS));
+            
+            
+           
+            
+            Container cnt = getContentPane();
+            cnt.setLayout(BoxLayout.y());
+            cnt.setScrollableY(true);
+            
+            cnt.add(new BreathingTimerForm());
+            
+            
+        }
+    }
+    private class PomodoroTimer extends Sheet {
+        PomodoroTimer(Sheet parent) {
+            super(parent, "Pomodoro Timer");
+            setLayout(new BoxLayout(BoxLayout.Y_AXIS));
+            
+            
+           
+            
+            Container cnt = getContentPane();
+            cnt.setLayout(BoxLayout.y());
+            cnt.setScrollableY(true);
+
+            
+            //cnt.add(new Pomodoro(60, 60, hi));
+            
+            
+        }
     }
 }   

@@ -55,16 +55,16 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_33_1_onSucess___java_lang_Boo
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(8499);
-    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L1532800776;
+    if (virtual_java_lang_Boolean_booleanValue___R_boolean(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L167175174;
     __CN1_DEBUG_INFO(8500);
     virtual_com_codename1_impl_ios_IOSNative_fireUIBackgroundFetchResultNoData__(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData)); 
-    goto label_L600657906;
+    goto label_L2056566350;
 
-label_L1532800776:
+label_L167175174:
     __CN1_DEBUG_INFO(8502);
     virtual_com_codename1_impl_ios_IOSNative_fireUIBackgroundFetchResultNewData__(threadStateData, get_static_com_codename1_impl_ios_IOSImplementation_nativeInstance(threadStateData)); 
 
-label_L600657906:
+label_L2056566350:
     __CN1_DEBUG_INFO(8504);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

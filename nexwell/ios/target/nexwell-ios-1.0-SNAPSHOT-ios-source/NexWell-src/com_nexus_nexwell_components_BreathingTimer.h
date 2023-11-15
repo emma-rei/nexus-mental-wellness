@@ -10,7 +10,7 @@ extern void __FINALIZER_com_nexus_nexwell_components_BreathingTimer(CODENAME_ONE
 extern void __GC_MARK_com_nexus_nexwell_components_BreathingTimer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force);
 extern JAVA_OBJECT __NEW_com_nexus_nexwell_components_BreathingTimer(CODENAME_ONE_THREAD_STATE);
 
-JAVA_VOID com_nexus_nexwell_components_BreathingTimer___INIT_____com_codename1_ui_Form(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
+JAVA_VOID com_nexus_nexwell_components_BreathingTimer___INIT_____com_codename1_ui_Form_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
 
 JAVA_VOID com_nexus_nexwell_components_BreathingTimer_start__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
@@ -18,7 +18,11 @@ JAVA_VOID com_nexus_nexwell_components_BreathingTimer_stop__(CODENAME_ONE_THREAD
 
 JAVA_VOID com_nexus_nexwell_components_BreathingTimer_reset__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
-JAVA_VOID com_nexus_nexwell_components_BreathingTimer_lambda$new$0___com_nexus_nexwell_components_BreathingTimer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1);
+JAVA_INT com_nexus_nexwell_components_BreathingTimer_getLimit___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_components_BreathingTimer_setLimit___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
+JAVA_VOID com_nexus_nexwell_components_BreathingTimer_lambda$new$0___com_nexus_nexwell_components_BreathingTimer_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2);
 
 JAVA_VOID com_nexus_nexwell_components_BreathingTimer___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
@@ -48,6 +52,10 @@ JAVA_OBJECT get_field_com_nexus_nexwell_components_BreathingTimer_timer(JAVA_OBJ
 void set_field_com_nexus_nexwell_components_BreathingTimer_timer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T);
 JAVA_INT get_field_com_nexus_nexwell_components_BreathingTimer_phase(JAVA_OBJECT t);
 void set_field_com_nexus_nexwell_components_BreathingTimer_phase(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_nexus_nexwell_components_BreathingTimer_cycles(JAVA_OBJECT t);
+void set_field_com_nexus_nexwell_components_BreathingTimer_cycles(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
+JAVA_INT get_field_com_nexus_nexwell_components_BreathingTimer_limit(JAVA_OBJECT t);
+void set_field_com_nexus_nexwell_components_BreathingTimer_limit(CODENAME_ONE_THREAD_STATE, JAVA_INT __cn1Val, JAVA_OBJECT __cn1T);
 JAVA_DOUBLE get_field_com_nexus_nexwell_components_BreathingTimer_seconds(JAVA_OBJECT t);
 void set_field_com_nexus_nexwell_components_BreathingTimer_seconds(CODENAME_ONE_THREAD_STATE, JAVA_DOUBLE __cn1Val, JAVA_OBJECT __cn1T);
 JAVA_DOUBLE get_field_com_nexus_nexwell_components_BreathingTimer_interval(JAVA_OBJECT t);
@@ -68,6 +76,8 @@ struct obj__com_nexus_nexwell_components_BreathingTimer {
     int __heapPosition;
     JAVA_OBJECT com_nexus_nexwell_components_BreathingTimer_timer;
     JAVA_INT com_nexus_nexwell_components_BreathingTimer_phase;
+    JAVA_INT com_nexus_nexwell_components_BreathingTimer_cycles;
+    JAVA_INT com_nexus_nexwell_components_BreathingTimer_limit;
     JAVA_DOUBLE com_nexus_nexwell_components_BreathingTimer_seconds;
     JAVA_DOUBLE com_nexus_nexwell_components_BreathingTimer_interval;
     JAVA_BOOLEAN com_nexus_nexwell_components_BreathingTimer_active;

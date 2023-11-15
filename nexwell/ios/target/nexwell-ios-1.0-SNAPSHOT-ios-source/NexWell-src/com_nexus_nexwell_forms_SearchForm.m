@@ -245,7 +245,7 @@ com_nexus_nexwell_forms_SearchForm___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_forms_SearchForm___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10500, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10396, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(16);
     /* CustomInvoke */com_codename1_ui_Form___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(219)); 
     __CN1_DEBUG_INFO(18);
@@ -3752,7 +3752,7 @@ void __STATIC_INITIALIZER_com_nexus_nexwell_forms_SearchForm(CODENAME_ONE_THREAD
         return;
     }
 
-    class__com_nexus_nexwell_forms_SearchForm.vtable = malloc(sizeof(void*) *530);
+    class__com_nexus_nexwell_forms_SearchForm.vtable = malloc(sizeof(void*) *531);
     __INIT_VTABLE_com_nexus_nexwell_forms_SearchForm(threadStateData, class__com_nexus_nexwell_forms_SearchForm.vtable);
     class__com_nexus_nexwell_forms_SearchForm.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_nexus_nexwell_forms_SearchForm);

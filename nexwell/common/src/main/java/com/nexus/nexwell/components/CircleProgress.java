@@ -15,11 +15,13 @@ import com.codename1.ui.Stroke;
 import com.codename1.ui.geom.Dimension;
 import com.codename1.ui.geom.GeneralPath;
 import com.codename1.ui.plaf.Style;
-
+/*
+    Link to CircleProgress tutorial can be found here: https://github.com/chen-fishbein/CN1CircleProgress
+*/
 
 public class CircleProgress extends BaseRoundProgress {
 
-    private int arcWidth = 50;
+    private int arcWidth = 80;
     
     private boolean clockwise = false;
     
@@ -55,7 +57,7 @@ public class CircleProgress extends BaseRoundProgress {
         int hPadding = style.getPadding(Component.TOP) + style.getPadding(Component.BOTTOM);
         GeneralPath path = new GeneralPath();
         int size = Math.min(getWidth() - wPadding, getHeight() - hPadding);
-        size = size+400 - arcWidth;
+        size = size - arcWidth;
         int x = getX() + style.getPadding(isRTL(), Component.LEFT) + arcWidth/2;
         int y = getY() + style.getPadding(Component.TOP) + arcWidth/2;
         if(style.getAlignment() == CENTER){
@@ -64,7 +66,7 @@ public class CircleProgress extends BaseRoundProgress {
             x = getX() + getWidth() - (style.getPadding(isRTL(), Component.RIGHT) + arcWidth/2);           
         }
 
-        path.arc(x, y, size, size, 0, 2*Math.PI);
+        path.arc(x, y,  size, size, 0, 2*Math.PI);
         Stroke stroke1 = new Stroke(arcWidth, Stroke.CAP_ROUND, Stroke.JOIN_ROUND, 4);
         g.setAntiAliased(true);
         g.setColor(Colors.BLUE);

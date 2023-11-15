@@ -54,18 +54,18 @@ JAVA_OBJECT com_codename1_ui_spinner_TimeSpinner3D_2_format___java_lang_String_R
     DEFINE_INSTANCE_METHOD_STACK(6, 4, 0, 10145, 903);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL762175304cn1_class_id_java_lang_Throwable1;
-    int tryBlockOffsetL762175304cn1_class_id_java_lang_Throwable1;
-    DEFINE_CATCH_BLOCK(catch_L762175304cn1_class_id_java_lang_Throwable1, label_L1894652259, restoreToL762175304cn1_class_id_java_lang_Throwable1);
+    int restoreToL484453433cn1_class_id_java_lang_Throwable1;
+    int tryBlockOffsetL484453433cn1_class_id_java_lang_Throwable1;
+    DEFINE_CATCH_BLOCK(catch_L484453433cn1_class_id_java_lang_Throwable1, label_L246535285, restoreToL484453433cn1_class_id_java_lang_Throwable1);
     __CN1_DEBUG_INFO(101);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L772166315, 0);
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L948963537, 0);
     __CN1_DEBUG_INFO(102);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = JAVA_NULL /* ACONST_NULL */; 
 locals[2].type=CN1_TYPE_OBJECT;
-label_L762175304:
- tryBlockOffsetL762175304cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L762175304cn1_class_id_java_lang_Throwable1);
-    restoreToL762175304cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
+label_L484453433:
+ tryBlockOffsetL484453433cn1_class_id_java_lang_Throwable1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_Throwable, catch_L484453433cn1_class_id_java_lang_Throwable1);
+    restoreToL484453433cn1_class_id_java_lang_Throwable1 = threadStateData->threadObjectStackOffset;
 
     __CN1_DEBUG_INFO(104);
     PUSH_POINTER(__NEW_java_lang_Integer(threadStateData)); /* NEW */
@@ -78,20 +78,20 @@ label_L762175304:
     java_lang_Integer___INIT_____int(threadStateData, SP[-2].data.o, SP[-1].data.i);     SP-= 2;
     BC_ASTORE(2);
 
-label_L1250053611:
+label_L259447529:
 END_TRY(1);    __CN1_DEBUG_INFO(107);
-    JUMP_TO(label_L583178920, 0);
+    JUMP_TO(label_L1905209480, 0);
 
-label_L1894652259:
+label_L246535285:
     __CN1_DEBUG_INFO(105);
     BC_ASTORE(3);
 
-label_L583178920:
+label_L1905209480:
     __CN1_DEBUG_INFO(108);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L772166315, 0);
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ JUMP_TO(label_L948963537, 0);
     BC_ALOAD(2);
     BC_INSTANCEOF(cn1_class_id_java_lang_Integer);
-    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L772166315, 0);
+    if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L948963537, 0);
     __CN1_DEBUG_INFO(109);
     /* VarOp.assignFrom */ ilocals_3_ = virtual_java_lang_Integer_intValue___R_int(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(110);
@@ -99,7 +99,7 @@ label_L583178920:
     (*SP).data.i = ilocals_3_; 
     SP++;
     PUSH_INT(10);
-    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ JUMP_TO(label_L312175026, 0);
+    SP-=2; if((*SP).data.i >= SP[1].data.i) /* IF_ICMPGE */ JUMP_TO(label_L296594285, 0);
     __CN1_DEBUG_INFO(111);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -113,7 +113,7 @@ label_L583178920:
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L312175026:
+label_L296594285:
     __CN1_DEBUG_INFO(113);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -127,7 +127,7 @@ label_L312175026:
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
-label_L772166315:
+label_L948963537:
     __CN1_DEBUG_INFO(117);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return JAVA_NULL /* ACONST_NULL */;
 }

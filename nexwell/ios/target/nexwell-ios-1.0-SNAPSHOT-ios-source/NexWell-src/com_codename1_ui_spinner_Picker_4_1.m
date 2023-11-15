@@ -48,14 +48,14 @@ JAVA_VOID com_codename1_ui_spinner_Picker_4_1___INIT_____com_codename1_ui_spinne
 JAVA_VOID com_codename1_ui_spinner_Picker_4_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10177, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(1124);
-    if (/* CustomInvoke */com_codename1_ui_spinner_Picker_access$2100___com_codename1_ui_spinner_Picker_R_java_lang_Runnable(threadStateData, get_field_com_codename1_ui_spinner_Picker_4_this_0(get_field_com_codename1_ui_spinner_Picker_4_1_this_1(__cn1ThisObject)))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L93241065;
+    if (/* CustomInvoke */com_codename1_ui_spinner_Picker_access$2100___com_codename1_ui_spinner_Picker_R_java_lang_Runnable(threadStateData, get_field_com_codename1_ui_spinner_Picker_4_this_0(get_field_com_codename1_ui_spinner_Picker_4_1_this_1(__cn1ThisObject)))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1810172725;
     __CN1_DEBUG_INFO(1125);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_codename1_ui_spinner_Picker_access$2100___com_codename1_ui_spinner_Picker_R_java_lang_Runnable(threadStateData, get_field_com_codename1_ui_spinner_Picker_4_this_0(get_field_com_codename1_ui_spinner_Picker_4_1_this_1(__cn1ThisObject)));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(1126);
     /* CustomInvoke */com_codename1_ui_spinner_Picker_access$2102___com_codename1_ui_spinner_Picker_java_lang_Runnable_R_java_lang_Runnable(threadStateData, get_field_com_codename1_ui_spinner_Picker_4_this_0(get_field_com_codename1_ui_spinner_Picker_4_1_this_1(__cn1ThisObject)), JAVA_NULL /* ACONST_NULL */); 
     __CN1_DEBUG_INFO(1127);
     virtual_java_lang_Runnable_run__(threadStateData, locals[1].data.o); 
 
-label_L93241065:
+label_L1810172725:
     __CN1_DEBUG_INFO(1129);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

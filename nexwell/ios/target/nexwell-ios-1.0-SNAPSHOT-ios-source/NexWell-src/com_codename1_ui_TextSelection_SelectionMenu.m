@@ -339,16 +339,16 @@ JAVA_VOID com_codename1_ui_TextSelection_SelectionMenu_actionPerformed___com_cod
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     PUSH_POINTER(get_field_com_codename1_ui_TextSelection_SelectionMenu_selectAll(__cn1ThisObject));
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1067414015;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1379757019;
     __CN1_DEBUG_INFO(1320);
     virtual_com_codename1_ui_TextSelection_selectAll__(threadStateData, get_field_com_codename1_ui_TextSelection_SelectionMenu_this_0(__cn1ThisObject)); 
-    goto label_L262911569;
+    goto label_L1481206935;
 
-label_L1067414015:
+label_L1379757019:
     __CN1_DEBUG_INFO(1322);
     virtual_com_codename1_ui_TextSelection_copy__(threadStateData, get_field_com_codename1_ui_TextSelection_SelectionMenu_this_0(__cn1ThisObject)); 
 
-label_L262911569:
+label_L1481206935:
     __CN1_DEBUG_INFO(1324);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -3108,7 +3108,7 @@ JAVA_OBJECT virtual_com_codename1_ui_TextSelection_SelectionMenu_addAll___com_co
 
 void __INIT_VTABLE_com_codename1_ui_TextSelection_SelectionMenu(CODENAME_ONE_THREAD_STATE, void** vtable) {
         __INIT_VTABLE_com_codename1_ui_Container(threadStateData, vtable);
-    vtable[405] = &com_codename1_ui_TextSelection_SelectionMenu_actionPerformed___com_codename1_ui_events_ActionEvent;
+    vtable[407] = &com_codename1_ui_TextSelection_SelectionMenu_actionPerformed___com_codename1_ui_events_ActionEvent;
 }
 
 static int __com_codename1_ui_TextSelection_SelectionMenu_LOADED__=0;
@@ -3121,7 +3121,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_TextSelection_SelectionMenu(CODENAME_
         return;
     }
 
-    class__com_codename1_ui_TextSelection_SelectionMenu.vtable = malloc(sizeof(void*) *406);
+    class__com_codename1_ui_TextSelection_SelectionMenu.vtable = malloc(sizeof(void*) *408);
     __INIT_VTABLE_com_codename1_ui_TextSelection_SelectionMenu(threadStateData, class__com_codename1_ui_TextSelection_SelectionMenu.vtable);
     class__com_codename1_ui_TextSelection_SelectionMenu.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_TextSelection_SelectionMenu);

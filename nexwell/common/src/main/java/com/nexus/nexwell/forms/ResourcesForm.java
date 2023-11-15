@@ -77,7 +77,7 @@ public class ResourcesForm extends Form{
 
     }
     
-    private void showWebPage(String title, String url) {
+    public static void showWebPage(String title, String url) {
         Form form = new Form(title, new BorderLayout());
         Form current = getCurrentForm();
 
@@ -96,7 +96,7 @@ public class ResourcesForm extends Form{
 
     
     
-    private void execute(String key, String value){
+    public static void execute(String key, String value){
         showWebPage(key, value);
     }
 }

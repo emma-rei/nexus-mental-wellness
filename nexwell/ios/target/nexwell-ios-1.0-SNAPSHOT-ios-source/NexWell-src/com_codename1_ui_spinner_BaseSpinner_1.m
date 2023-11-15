@@ -2724,7 +2724,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_spinner_BaseSpinner_1(CODENAME_ONE_TH
         return;
     }
 
-    class__com_codename1_ui_spinner_BaseSpinner_1.vtable = malloc(sizeof(void*) *373);
+    class__com_codename1_ui_spinner_BaseSpinner_1.vtable = malloc(sizeof(void*) *375);
     __INIT_VTABLE_com_codename1_ui_spinner_BaseSpinner_1(threadStateData, class__com_codename1_ui_spinner_BaseSpinner_1.vtable);
     class__com_codename1_ui_spinner_BaseSpinner_1.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_spinner_BaseSpinner_1);

@@ -61,7 +61,7 @@ com_nexus_nexwell_NexWell___INIT____(threadStateData, o);
 
 JAVA_VOID com_nexus_nexwell_NexWell___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10179, 201);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(25);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(26);
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -72,21 +72,21 @@ JAVA_VOID com_nexus_nexwell_NexWell_init___java_lang_Object(CODENAME_ONE_THREAD_
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10179, 227);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(32);
+    __CN1_DEBUG_INFO(33);
     /* CustomInvoke */com_codename1_ui_CN_updateNetworkThreadCount___int(threadStateData, 2 /* ICONST_2 */); 
-    __CN1_DEBUG_INFO(34);
+    __CN1_DEBUG_INFO(35);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_plaf_UIManager_initFirstTheme___java_lang_String_R_com_codename1_ui_util_Resources(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10180)));
     set_field_com_nexus_nexwell_NexWell_theme(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(37);
+    __CN1_DEBUG_INFO(38);
     /* CustomInvoke */com_codename1_ui_Toolbar_setGlobalToolbar___boolean(threadStateData, 1 /* ICONST_1 */); 
-    __CN1_DEBUG_INFO(40);
+    __CN1_DEBUG_INFO(41);
     /* CustomInvoke */com_codename1_io_Log_bindCrashProtection___boolean(threadStateData, 1 /* ICONST_1 */); 
-    __CN1_DEBUG_INFO(42);
+    __CN1_DEBUG_INFO(43);
     PUSH_OBJ(com_nexus_nexwell_NexWell__Lambda_1_lambdaFactory$___R_com_codename1_ui_events_ActionListener(threadStateData));
     com_codename1_ui_CN_addNetworkErrorListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-1].data.o);     SP-= 1;
-    __CN1_DEBUG_INFO(51);
+    __CN1_DEBUG_INFO(52);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -94,18 +94,18 @@ JAVA_VOID com_nexus_nexwell_NexWell_init___java_lang_Object(CODENAME_ONE_THREAD_
 
 JAVA_VOID com_nexus_nexwell_NexWell_start__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10179, 1166);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(54);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(55);
     if (get_field_com_nexus_nexwell_NexWell_current(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1950136544;
-    __CN1_DEBUG_INFO(55);
-    virtual_com_codename1_ui_Form_show__(threadStateData, get_field_com_nexus_nexwell_NexWell_current(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(56);
+    virtual_com_codename1_ui_Form_show__(threadStateData, get_field_com_nexus_nexwell_NexWell_current(__cn1ThisObject)); 
+    __CN1_DEBUG_INFO(57);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
 label_L1950136544:
-    __CN1_DEBUG_INFO(59);
+    __CN1_DEBUG_INFO(60);
     com_nexus_nexwell_homepage_UIController_showSplashScreen__(threadStateData); 
-    __CN1_DEBUG_INFO(61);
+    __CN1_DEBUG_INFO(63);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -113,25 +113,25 @@ label_L1950136544:
 
 JAVA_VOID com_nexus_nexwell_NexWell_stop__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10179, 2235);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(63);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(65);
     BC_ALOAD(0);
     PUSH_OBJ(com_codename1_ui_CN_getCurrentForm___R_com_codename1_ui_Form(threadStateData));
     set_field_com_nexus_nexwell_NexWell_current(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(64);
+    __CN1_DEBUG_INFO(66);
     PUSH_POINTER(get_field_com_nexus_nexwell_NexWell_current(__cn1ThisObject));
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Dialog);
     if(POP_INT() == 0) /* IFEQ */ goto label_L209360730;
-    __CN1_DEBUG_INFO(65);
+    __CN1_DEBUG_INFO(67);
     virtual_com_codename1_ui_Dialog_dispose__(threadStateData, get_field_com_nexus_nexwell_NexWell_current(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(66);
+    __CN1_DEBUG_INFO(68);
     BC_ALOAD(0);
     PUSH_OBJ(com_codename1_ui_CN_getCurrentForm___R_com_codename1_ui_Form(threadStateData));
     set_field_com_nexus_nexwell_NexWell_current(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
 label_L209360730:
-    __CN1_DEBUG_INFO(68);
+    __CN1_DEBUG_INFO(70);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -147,19 +147,19 @@ JAVA_VOID com_nexus_nexwell_NexWell_lambda$init$0___com_codename1_io_NetworkEven
     DEFINE_METHOD_STACK(4, 1, 0, 10179, 10181);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(44);
-    virtual_com_codename1_io_NetworkEvent_consume__(threadStateData, locals[0].data.o); 
     __CN1_DEBUG_INFO(45);
-    if (virtual_com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(threadStateData, locals[0].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L740007499;
+    virtual_com_codename1_io_NetworkEvent_consume__(threadStateData, locals[0].data.o); 
     __CN1_DEBUG_INFO(46);
+    if (virtual_com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(threadStateData, locals[0].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L740007499;
+    __CN1_DEBUG_INFO(47);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_io_NetworkEvent_getError___R_java_lang_Exception(threadStateData, locals[0].data.o);
     PUSH_OBJ(tmpResult); }
     com_codename1_io_Log_e___java_lang_Throwable(threadStateData, SP[-1].data.o);     SP-= 1;
 
 label_L740007499:
-    __CN1_DEBUG_INFO(48);
-    com_codename1_io_Log_sendLogAsync__(threadStateData); 
     __CN1_DEBUG_INFO(49);
+    com_codename1_io_Log_sendLogAsync__(threadStateData); 
+    __CN1_DEBUG_INFO(50);
     /* LDC: 'Connection Error'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10182));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
@@ -183,7 +183,7 @@ label_L740007499:
     SP-=3;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
-    __CN1_DEBUG_INFO(50);
+    __CN1_DEBUG_INFO(51);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }

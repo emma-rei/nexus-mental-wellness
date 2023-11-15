@@ -1185,6 +1185,8 @@ JAVA_OBJECT virtual_com_codename1_ui_Label_getIconFont___R_com_codename1_ui_Font
 
 JAVA_VOID virtual_com_codename1_ui_Label_setAlignment___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
 
+JAVA_VOID virtual_com_codename1_ui_Label_setVerticalAlignment___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1);
+
 JAVA_INT virtual_com_codename1_ui_Label_getVerticalAlignment___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
 
 JAVA_VOID virtual_com_codename1_ui_Label_paintImpl___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
@@ -1230,6 +1232,8 @@ JAVA_VOID virtual_com_codename1_ui_Label_setShowEvenIfBlank___boolean(CODENAME_O
 JAVA_INT virtual_com_codename1_ui_Label_getStringWidth___com_codename1_ui_Font_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
 
 JAVA_VOID virtual_com_codename1_ui_Label_setLegacyRenderer___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
+
+JAVA_VOID virtual_com_codename1_ui_Label_setAutoSizeMode___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1);
 extern JAVA_INT get_static_com_codename1_ui_Label_defaultGap();
 extern JAVA_INT STATIC_FIELD_com_codename1_ui_Label_defaultGap;
 extern void set_static_com_codename1_ui_Label_defaultGap(CODENAME_ONE_THREAD_STATE, JAVA_INT v);

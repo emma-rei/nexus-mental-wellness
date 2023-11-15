@@ -2959,13 +2959,13 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_spinner_CalendarPicker_setValue
 JAVA_VOID virtual_com_codename1_ui_spinner_CalendarPicker_setValue___java_lang_Object(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_spinner_CalendarPicker_setValue___java_lang_Object)__cn1ThisObject->__codenameOneParentClsReference->vtable[405])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    (*(functionPtr_com_codename1_ui_spinner_CalendarPicker_setValue___java_lang_Object)__cn1ThisObject->__codenameOneParentClsReference->vtable[407])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 void __INIT_VTABLE_com_codename1_ui_spinner_CalendarPicker(CODENAME_ONE_THREAD_STATE, void** vtable) {
         __INIT_VTABLE_com_codename1_ui_Container(threadStateData, vtable);
-    vtable[405] = &com_codename1_ui_spinner_CalendarPicker_setValue___java_lang_Object;
-    vtable[406] = &com_codename1_ui_spinner_CalendarPicker_getValue___R_java_lang_Object;
+    vtable[407] = &com_codename1_ui_spinner_CalendarPicker_setValue___java_lang_Object;
+    vtable[408] = &com_codename1_ui_spinner_CalendarPicker_getValue___R_java_lang_Object;
 }
 
 static int __com_codename1_ui_spinner_CalendarPicker_LOADED__=0;
@@ -2978,7 +2978,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_spinner_CalendarPicker(CODENAME_ONE_T
         return;
     }
 
-    class__com_codename1_ui_spinner_CalendarPicker.vtable = malloc(sizeof(void*) *407);
+    class__com_codename1_ui_spinner_CalendarPicker.vtable = malloc(sizeof(void*) *409);
     __INIT_VTABLE_com_codename1_ui_spinner_CalendarPicker(threadStateData, class__com_codename1_ui_spinner_CalendarPicker.vtable);
     class__com_codename1_ui_spinner_CalendarPicker.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_spinner_CalendarPicker);

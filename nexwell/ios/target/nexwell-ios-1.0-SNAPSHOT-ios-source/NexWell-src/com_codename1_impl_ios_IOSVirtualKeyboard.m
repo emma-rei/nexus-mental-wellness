@@ -67,43 +67,43 @@ JAVA_VOID com_codename1_impl_ios_IOSVirtualKeyboard_showKeyboard___boolean(CODEN
     DEFINE_INSTANCE_METHOD_STACK(1, 4, 0, 9677, 9184);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(54);
-    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L1940912369;
+    if (ilocals_1_==0) /* IFEQ CustomJump */ goto label_L943666520;
     __CN1_DEBUG_INFO(55);
-    if (virtual_com_codename1_impl_ios_IOSVirtualKeyboard_isVirtualKeyboardShowing___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L667680223;
+    if (virtual_com_codename1_impl_ios_IOSVirtualKeyboard_isVirtualKeyboardShowing___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1236303587;
     __CN1_DEBUG_INFO(56);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L667680223:
+label_L1236303587:
     __CN1_DEBUG_INFO(58);
     /* VarOp.assignFrom */ locals[2].data.o = com_codename1_ui_CN_getCurrentForm___R_com_codename1_ui_Form(threadStateData);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(59);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L669700766;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L892231982;
     __CN1_DEBUG_INFO(60);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_ui_Form_getFocused___R_com_codename1_ui_Component(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(61);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L669700766;
-    if (virtual_com_codename1_ui_Component_isEditable___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L669700766;
-    if (virtual_com_codename1_ui_Component_isEnabled___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L669700766;
-    if (virtual_com_codename1_ui_Component_isVisible___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L669700766;
-    if (virtual_com_codename1_ui_Component_isEditing___R_boolean(threadStateData, locals[3].data.o)!=0) /* IFNE CustomJump */ goto label_L669700766;
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L892231982;
+    if (virtual_com_codename1_ui_Component_isEditable___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L892231982;
+    if (virtual_com_codename1_ui_Component_isEnabled___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L892231982;
+    if (virtual_com_codename1_ui_Component_isVisible___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L892231982;
+    if (virtual_com_codename1_ui_Component_isEditing___R_boolean(threadStateData, locals[3].data.o)!=0) /* IFNE CustomJump */ goto label_L892231982;
     __CN1_DEBUG_INFO(62);
     virtual_com_codename1_ui_Component_startEditingAsync__(threadStateData, locals[3].data.o); 
 
-label_L669700766:
+label_L892231982:
     __CN1_DEBUG_INFO(65);
-    goto label_L1275464847;
+    goto label_L1710228600;
 
-label_L1940912369:
+label_L943666520:
     __CN1_DEBUG_INFO(66);
-    if (virtual_com_codename1_impl_ios_IOSVirtualKeyboard_isVirtualKeyboardShowing___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1080167822;
+    if (virtual_com_codename1_impl_ios_IOSVirtualKeyboard_isVirtualKeyboardShowing___R_boolean(threadStateData, __cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L606365803;
     __CN1_DEBUG_INFO(67);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1080167822:
+label_L606365803:
     __CN1_DEBUG_INFO(69);
     virtual_com_codename1_impl_ios_IOSImplementation_stopTextEditing__(threadStateData, get_field_com_codename1_impl_ios_IOSVirtualKeyboard_impl(__cn1ThisObject)); 
 
-label_L1275464847:
+label_L1710228600:
     __CN1_DEBUG_INFO(71);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

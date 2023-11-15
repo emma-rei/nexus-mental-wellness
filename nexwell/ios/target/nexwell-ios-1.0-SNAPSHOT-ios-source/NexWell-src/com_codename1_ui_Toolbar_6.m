@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_ui_Toolbar_6(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_ui_Toolbar_6___INIT_____com_codename1_ui_Toolbar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7191, 202);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 7190, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1422);
@@ -47,21 +47,21 @@ JAVA_VOID com_codename1_ui_Toolbar_6___INIT_____com_codename1_ui_Toolbar(CODENAM
 
 
 JAVA_VOID com_codename1_ui_Toolbar_6_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7191, 3048);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 7190, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1424);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Toolbar_access$000___com_codename1_ui_Toolbar_R_com_codename1_components_InteractionDialog(threadStateData, get_field_com_codename1_ui_Toolbar_6_this_0(__cn1ThisObject)));
     { JAVA_INT tmpResult = virtual_com_codename1_components_InteractionDialog_isShowing___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L918606013;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1183701566;
     __CN1_DEBUG_INFO(1425);
     virtual_com_codename1_ui_Toolbar_closeSideMenu__(threadStateData, get_field_com_codename1_ui_Toolbar_6_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(1426);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L918606013:
+label_L1183701566:
     __CN1_DEBUG_INFO(1428);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_showOnTopSidemenu___int_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_6_this_0(__cn1ThisObject), -1 /* ICONST_M1 */, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1429);

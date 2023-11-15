@@ -235,19 +235,19 @@ JAVA_VOID com_codename1_ui_scene_Scene_setRoot___com_codename1_ui_scene_Node(COD
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(55);
-    if (get_field_com_codename1_ui_scene_Scene_root(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L727064401;
+    if (get_field_com_codename1_ui_scene_Scene_root(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L621845892;
     __CN1_DEBUG_INFO(56);
     /* CustomInvoke */virtual_com_codename1_ui_scene_Node_setScene___com_codename1_ui_scene_Scene(threadStateData, get_field_com_codename1_ui_scene_Scene_root(__cn1ThisObject), JAVA_NULL /* ACONST_NULL */); 
 
-label_L727064401:
+label_L621845892:
     __CN1_DEBUG_INFO(58);
     set_field_com_codename1_ui_scene_Scene_root(threadStateData, locals[1].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(59);
-    if (get_field_com_codename1_ui_scene_Scene_root(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1029638356;
+    if (get_field_com_codename1_ui_scene_Scene_root(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1243165922;
     __CN1_DEBUG_INFO(60);
     /* CustomInvoke */virtual_com_codename1_ui_scene_Node_setScene___com_codename1_ui_scene_Scene(threadStateData, locals[1].data.o, __cn1ThisObject); 
 
-label_L1029638356:
+label_L1243165922:
     __CN1_DEBUG_INFO(63);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -265,7 +265,7 @@ JAVA_VOID com_codename1_ui_scene_Scene_paint___com_codename1_ui_Graphics(CODENAM
     __CN1_DEBUG_INFO(67);
     /* CustomInvoke */com_codename1_ui_Container_paint___com_codename1_ui_Graphics(threadStateData, __cn1ThisObject, locals[1].data.o); 
     __CN1_DEBUG_INFO(68);
-    if (get_field_com_codename1_ui_scene_Scene_root(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L989504415;
+    if (get_field_com_codename1_ui_scene_Scene_root(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1768140989;
     __CN1_DEBUG_INFO(69);
     virtual_com_codename1_ui_Graphics_resetAffine__(threadStateData, locals[1].data.o); 
     __CN1_DEBUG_INFO(70);
@@ -296,7 +296,7 @@ JAVA_VOID com_codename1_ui_scene_Scene_paint___com_codename1_ui_Graphics(CODENAM
     __CN1_DEBUG_INFO(79);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setClip___int_int_int_int(threadStateData, locals[1].data.o, ilocals_2_, ilocals_3_, ilocals_4_, ilocals_5_); 
 
-label_L989504415:
+label_L1768140989:
     __CN1_DEBUG_INFO(81);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -3066,14 +3066,14 @@ typedef JAVA_VOID (*functionPtr_com_codename1_ui_scene_Scene_setRoot___com_coden
 JAVA_VOID virtual_com_codename1_ui_scene_Scene_setRoot___com_codename1_ui_scene_Node(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
     
     if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
-    (*(functionPtr_com_codename1_ui_scene_Scene_setRoot___com_codename1_ui_scene_Node)__cn1ThisObject->__codenameOneParentClsReference->vtable[405])(threadStateData, __cn1ThisObject, __cn1Arg1);
+    (*(functionPtr_com_codename1_ui_scene_Scene_setRoot___com_codename1_ui_scene_Node)__cn1ThisObject->__codenameOneParentClsReference->vtable[407])(threadStateData, __cn1ThisObject, __cn1Arg1);
 }
 
 void __INIT_VTABLE_com_codename1_ui_scene_Scene(CODENAME_ONE_THREAD_STATE, void** vtable) {
         __INIT_VTABLE_com_codename1_ui_Container(threadStateData, vtable);
     vtable[11] = &com_codename1_ui_scene_Scene_paint___com_codename1_ui_Graphics;
     vtable[371] = &com_codename1_ui_scene_Scene_layoutContainer__;
-    vtable[405] = &com_codename1_ui_scene_Scene_setRoot___com_codename1_ui_scene_Node;
+    vtable[407] = &com_codename1_ui_scene_Scene_setRoot___com_codename1_ui_scene_Node;
 }
 
 static int __com_codename1_ui_scene_Scene_LOADED__=0;
@@ -3086,7 +3086,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_scene_Scene(CODENAME_ONE_THREAD_STATE
         return;
     }
 
-    class__com_codename1_ui_scene_Scene.vtable = malloc(sizeof(void*) *406);
+    class__com_codename1_ui_scene_Scene.vtable = malloc(sizeof(void*) *408);
     __INIT_VTABLE_com_codename1_ui_scene_Scene(threadStateData, class__com_codename1_ui_scene_Scene.vtable);
     class__com_codename1_ui_scene_Scene.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_scene_Scene);

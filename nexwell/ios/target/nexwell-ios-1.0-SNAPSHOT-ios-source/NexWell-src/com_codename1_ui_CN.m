@@ -109,64 +109,20 @@ JAVA_INT get_static_com_codename1_ui_CN_STYLE_PLAIN(CODENAME_ONE_THREAD_STATE) {
     return 0;
 }
 
-JAVA_OBJECT STATIC_FIELD_com_codename1_ui_CN_NORTH = 0;
 JAVA_OBJECT get_static_com_codename1_ui_CN_NORTH(CODENAME_ONE_THREAD_STATE) {
-    __STATIC_INITIALIZER_com_codename1_ui_CN(threadStateData);
-     return STATIC_FIELD_com_codename1_ui_CN_NORTH;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(62) /* North */;
 }
 
-void set_static_com_codename1_ui_CN_NORTH(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1StaticVal) {
-    __STATIC_INITIALIZER_com_codename1_ui_CN(threadStateData);
-    STATIC_FIELD_com_codename1_ui_CN_NORTH = __cn1StaticVal;
-    removeObjectFromHeapCollection(threadStateData, __cn1StaticVal);
-    if(__cn1StaticVal != 0) {
-        removeObjectFromHeapCollection(threadStateData, ((struct obj__java_lang_String*)__cn1StaticVal)->java_lang_String_value);
-    }
-}
-
-JAVA_OBJECT STATIC_FIELD_com_codename1_ui_CN_SOUTH = 0;
 JAVA_OBJECT get_static_com_codename1_ui_CN_SOUTH(CODENAME_ONE_THREAD_STATE) {
-    __STATIC_INITIALIZER_com_codename1_ui_CN(threadStateData);
-     return STATIC_FIELD_com_codename1_ui_CN_SOUTH;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(63) /* South */;
 }
 
-void set_static_com_codename1_ui_CN_SOUTH(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1StaticVal) {
-    __STATIC_INITIALIZER_com_codename1_ui_CN(threadStateData);
-    STATIC_FIELD_com_codename1_ui_CN_SOUTH = __cn1StaticVal;
-    removeObjectFromHeapCollection(threadStateData, __cn1StaticVal);
-    if(__cn1StaticVal != 0) {
-        removeObjectFromHeapCollection(threadStateData, ((struct obj__java_lang_String*)__cn1StaticVal)->java_lang_String_value);
-    }
-}
-
-JAVA_OBJECT STATIC_FIELD_com_codename1_ui_CN_WEST = 0;
 JAVA_OBJECT get_static_com_codename1_ui_CN_WEST(CODENAME_ONE_THREAD_STATE) {
-    __STATIC_INITIALIZER_com_codename1_ui_CN(threadStateData);
-     return STATIC_FIELD_com_codename1_ui_CN_WEST;
+    return STRING_FROM_CONSTANT_POOL_OFFSET(64) /* West */;
 }
 
-void set_static_com_codename1_ui_CN_WEST(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1StaticVal) {
-    __STATIC_INITIALIZER_com_codename1_ui_CN(threadStateData);
-    STATIC_FIELD_com_codename1_ui_CN_WEST = __cn1StaticVal;
-    removeObjectFromHeapCollection(threadStateData, __cn1StaticVal);
-    if(__cn1StaticVal != 0) {
-        removeObjectFromHeapCollection(threadStateData, ((struct obj__java_lang_String*)__cn1StaticVal)->java_lang_String_value);
-    }
-}
-
-JAVA_OBJECT STATIC_FIELD_com_codename1_ui_CN_EAST = 0;
 JAVA_OBJECT get_static_com_codename1_ui_CN_EAST(CODENAME_ONE_THREAD_STATE) {
-    __STATIC_INITIALIZER_com_codename1_ui_CN(threadStateData);
-     return STATIC_FIELD_com_codename1_ui_CN_EAST;
-}
-
-void set_static_com_codename1_ui_CN_EAST(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1StaticVal) {
-    __STATIC_INITIALIZER_com_codename1_ui_CN(threadStateData);
-    STATIC_FIELD_com_codename1_ui_CN_EAST = __cn1StaticVal;
-    removeObjectFromHeapCollection(threadStateData, __cn1StaticVal);
-    if(__cn1StaticVal != 0) {
-        removeObjectFromHeapCollection(threadStateData, ((struct obj__java_lang_String*)__cn1StaticVal)->java_lang_String_value);
-    }
+    return STRING_FROM_CONSTANT_POOL_OFFSET(65) /* East */;
 }
 
 JAVA_INT STATIC_FIELD_com_codename1_ui_CN_CENTER = 0;

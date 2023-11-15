@@ -1,10 +1,10 @@
 #include "com_nexus_nexwell_forms_EmergencyHelpForm.h"
 #include "com_codename1_components_MultiButton.h"
-#include "com_codename1_ui_CN.h"
 #include "com_codename1_ui_Container.h"
 #include "com_codename1_ui_Dialog.h"
 #include "com_codename1_ui_Display.h"
 #include "com_codename1_ui_FontImage.h"
+#include "com_codename1_ui_Toolbar.h"
 #include "com_codename1_ui_events_ActionEvent.h"
 #include "com_codename1_ui_layouts_BorderLayout.h"
 #include "com_codename1_ui_layouts_BoxLayout.h"
@@ -13,6 +13,7 @@
 #include "com_nexus_nexwell_components_Colors.h"
 #include "com_nexus_nexwell_forms_EmergencyHelpForm.h"
 #include "com_nexus_nexwell_forms_EmergencyHelpForm__Lambda_1.h"
+#include "com_nexus_nexwell_forms_EmergencyHelpForm__Lambda_2.h"
 #include "java_lang_Integer.h"
 #include "java_lang_NullPointerException.h"
 #include "java_lang_String.h"
@@ -266,16 +267,31 @@ com_nexus_nexwell_forms_EmergencyHelpForm___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_forms_EmergencyHelpForm___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    volatile JAVA_INT ilocals_5_ = 0; /* v5 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 9, 0, 10520, 201);
+    volatile JAVA_INT ilocals_4_ = 0; /* v4 */
+    DEFINE_INSTANCE_METHOD_STACK(4, 8, 0, 10318, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(24);
     BC_ALOAD(0);
-    /* LDC: ''*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(219));
+    /* LDC: 'Call'*/
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10319));
     PUSH_POINTER(__NEW_com_codename1_ui_layouts_BorderLayout(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_codename1_ui_layouts_BorderLayout___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     com_codename1_ui_Form___INIT_____java_lang_String_com_codename1_ui_layouts_Layout(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
+    __CN1_DEBUG_INFO(25);
+    { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_EmergencyHelpForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
+    PUSH_OBJ(tmpResult); }
+    /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setUIID___java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10320));     SP -= 1;
+    __CN1_DEBUG_INFO(26);
+    { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_EmergencyHelpForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
+    PUSH_OBJ(tmpResult); }
+    /* LDC: ''*/
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(219));
+    PUSH_INT(57520); /* LDC */
+    PUSH_OBJ(com_nexus_nexwell_forms_EmergencyHelpForm__Lambda_1_lambdaFactory$___R_com_codename1_ui_events_ActionListener(threadStateData));
+    { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_addMaterialCommandToRightBar___java_lang_String_char_com_codename1_ui_events_ActionListener_R_com_codename1_ui_Command(threadStateData, SP[-4].data.o, SP[-3].data.o, SP[-2].data.i, SP[-1].data.o);
+    SP-=3;
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    SP--; /* POP */
     __CN1_DEBUG_INFO(27);
     PUSH_POINTER(__NEW_com_codename1_ui_Container(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -284,43 +300,36 @@ JAVA_VOID com_nexus_nexwell_forms_EmergencyHelpForm___INIT____(CODENAME_ONE_THRE
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(29);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setScrollableY___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
-    __CN1_DEBUG_INFO(30);
-    /* VarOp.assignFrom */ locals[2].data.o = com_codename1_ui_CN_getCurrentForm___R_com_codename1_ui_Form(threadStateData);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(35);
+    __CN1_DEBUG_INFO(32);
     PUSH_POINTER(__NEW_java_util_HashMap(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_HashMap___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    BC_ASTORE(3);
+    BC_ASTORE(2);
+    __CN1_DEBUG_INFO(33);
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10321), STRING_FROM_CONSTANT_POOL_OFFSET(10322)); 
+    __CN1_DEBUG_INFO(34);
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10323), STRING_FROM_CONSTANT_POOL_OFFSET(10324)); 
+    __CN1_DEBUG_INFO(35);
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10325), STRING_FROM_CONSTANT_POOL_OFFSET(10326)); 
     __CN1_DEBUG_INFO(36);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10521), STRING_FROM_CONSTANT_POOL_OFFSET(10522)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10327), STRING_FROM_CONSTANT_POOL_OFFSET(10328)); 
     __CN1_DEBUG_INFO(37);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10523), STRING_FROM_CONSTANT_POOL_OFFSET(10524)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10329), STRING_FROM_CONSTANT_POOL_OFFSET(10330)); 
     __CN1_DEBUG_INFO(38);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10525), STRING_FROM_CONSTANT_POOL_OFFSET(10526)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10331), STRING_FROM_CONSTANT_POOL_OFFSET(10332)); 
     __CN1_DEBUG_INFO(39);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10527), STRING_FROM_CONSTANT_POOL_OFFSET(10528)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10333), STRING_FROM_CONSTANT_POOL_OFFSET(10334)); 
     __CN1_DEBUG_INFO(40);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10529), STRING_FROM_CONSTANT_POOL_OFFSET(10530)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10335), STRING_FROM_CONSTANT_POOL_OFFSET(10336)); 
     __CN1_DEBUG_INFO(41);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10531), STRING_FROM_CONSTANT_POOL_OFFSET(10532)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10337), STRING_FROM_CONSTANT_POOL_OFFSET(10338)); 
     __CN1_DEBUG_INFO(42);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10533), STRING_FROM_CONSTANT_POOL_OFFSET(10534)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10339), STRING_FROM_CONSTANT_POOL_OFFSET(10340)); 
     __CN1_DEBUG_INFO(43);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10535), STRING_FROM_CONSTANT_POOL_OFFSET(10536)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10341), STRING_FROM_CONSTANT_POOL_OFFSET(10342)); 
     __CN1_DEBUG_INFO(44);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10537), STRING_FROM_CONSTANT_POOL_OFFSET(10538)); 
-    __CN1_DEBUG_INFO(45);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10539), STRING_FROM_CONSTANT_POOL_OFFSET(10540)); 
-    __CN1_DEBUG_INFO(46);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10541), STRING_FROM_CONSTANT_POOL_OFFSET(10542)); 
-    __CN1_DEBUG_INFO(47);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10543), STRING_FROM_CONSTANT_POOL_OFFSET(10544)); 
-    __CN1_DEBUG_INFO(48);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10545), STRING_FROM_CONSTANT_POOL_OFFSET(10546)); 
-    __CN1_DEBUG_INFO(49);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10547), STRING_FROM_CONSTANT_POOL_OFFSET(10548)); 
-    __CN1_DEBUG_INFO(50);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10549), STRING_FROM_CONSTANT_POOL_OFFSET(10544)); 
-    __CN1_DEBUG_INFO(57);
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[2].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10343), STRING_FROM_CONSTANT_POOL_OFFSET(10338)); 
+    __CN1_DEBUG_INFO(51);
     PUSH_INT(3); /* ICONST_3 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_INT, sizeof(JAVA_ARRAY_INT), 1));
     BC_DUP(); /* DUP */
@@ -338,85 +347,80 @@ JAVA_VOID com_nexus_nexwell_forms_EmergencyHelpForm___INIT____(CODENAME_ONE_THRE
     PUSH_INT(get_static_com_nexus_nexwell_components_Colors_BLUE(threadStateData));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* IASTORE */
     ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
-    BC_ASTORE(4);
-    __CN1_DEBUG_INFO(62);
-    /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
-    __CN1_DEBUG_INFO(63);
-    { JAVA_OBJECT tmpResult = virtual_java_util_HashMap_entrySet___R_java_util_Set(threadStateData, locals[3].data.o);
+    BC_ASTORE(3);
+    __CN1_DEBUG_INFO(56);
+    /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
+    __CN1_DEBUG_INFO(57);
+    { JAVA_OBJECT tmpResult = virtual_java_util_HashMap_entrySet___R_java_util_Set(threadStateData, locals[2].data.o);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_util_Set_iterator___R_java_util_Iterator(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    BC_ASTORE(6);
+    BC_ASTORE(5);
 
-label_L1924990666:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[6].data.o)==0) /* IFEQ CustomJump */ goto label_L577127077;
-    /* VarOp.assignFrom */ locals[7].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[6].data.o);locals[7].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(65);
+label_L1434015813:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[5].data.o)==0) /* IFEQ CustomJump */ goto label_L1924990666;
+    /* VarOp.assignFrom */ locals[6].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[5].data.o);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(59);
     PUSH_POINTER(__NEW_com_codename1_components_MultiButton(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    { JAVA_OBJECT tmpResult = virtual_java_util_Map_Entry_getKey___R_java_lang_Object(threadStateData, locals[7].data.o);
+    { JAVA_OBJECT tmpResult = virtual_java_util_Map_Entry_getKey___R_java_lang_Object(threadStateData, locals[6].data.o);
     PUSH_OBJ(tmpResult); }
     com_codename1_components_MultiButton___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    BC_ASTORE(8);
-    __CN1_DEBUG_INFO(66);
-    BC_ALOAD(8);
-    { JAVA_OBJECT tmpResult = virtual_java_util_Map_Entry_getValue___R_java_lang_Object(threadStateData, locals[7].data.o);
-    PUSH_OBJ(tmpResult); }
-    virtual_com_codename1_components_MultiButton_setTextLine2___java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(67);
-    BC_ALOAD(8);
-    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_EmergencyHelpForm__Lambda_1_lambdaFactory$___com_nexus_nexwell_forms_EmergencyHelpForm_java_util_Map_Entry_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, locals[7].data.o));
+    BC_ASTORE(7);
+    __CN1_DEBUG_INFO(61);
+    BC_ALOAD(7);
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_EmergencyHelpForm__Lambda_2_lambdaFactory$___com_nexus_nexwell_forms_EmergencyHelpForm_java_util_Map_Entry_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, locals[6].data.o));
     virtual_com_codename1_components_MultiButton_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(70);
-    /* CustomInvoke */virtual_com_codename1_components_MultiButton_setUIID___java_lang_String(threadStateData, locals[8].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10550)); 
-    __CN1_DEBUG_INFO(71);
-    /* CustomInvoke */virtual_com_codename1_components_MultiButton_setUIIDLine1___java_lang_String(threadStateData, locals[8].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10551)); 
-    __CN1_DEBUG_INFO(72);
-    if (ilocals_5_!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L2122357625;
-    __CN1_DEBUG_INFO(73);
-    /* VarOp.assignFrom */ ilocals_5_=(ilocals_5_ % 2 /* ICONST_2 */);
+    __CN1_DEBUG_INFO(64);
+    /* CustomInvoke */virtual_com_codename1_components_MultiButton_setUIID___java_lang_String(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10344)); 
+    __CN1_DEBUG_INFO(65);
+    /* CustomInvoke */virtual_com_codename1_components_MultiButton_setUIIDLine1___java_lang_String(threadStateData, locals[7].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10345)); 
+    __CN1_DEBUG_INFO(66);
+    if (ilocals_4_!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L144445623;
+    __CN1_DEBUG_INFO(67);
+    /* VarOp.assignFrom */ ilocals_4_=(ilocals_4_ % 2 /* ICONST_2 */);
 
-label_L2122357625:
-    __CN1_DEBUG_INFO(75);
-    { JAVA_OBJECT tmpResult = virtual_com_codename1_components_MultiButton_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[8].data.o);
+label_L144445623:
+    __CN1_DEBUG_INFO(69);
+    { JAVA_OBJECT tmpResult = virtual_com_codename1_components_MultiButton_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[7].data.o);
     PUSH_OBJ(tmpResult); }
     PUSH_OBJ(com_codename1_ui_plaf_RoundRectBorder_create___R_com_codename1_ui_plaf_RoundRectBorder(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_RoundRectBorder_shadowColor___int_R_com_codename1_ui_plaf_RoundRectBorder(threadStateData, SP[-1].data.o, get_static_com_nexus_nexwell_components_Colors_BLUE(threadStateData));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_com_codename1_ui_plaf_Style_setBorder___com_codename1_ui_plaf_Border(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    __CN1_DEBUG_INFO(70);
+    /* CustomInvoke */virtual_com_codename1_components_MultiButton_setGap___int(threadStateData, locals[7].data.o, 1 /* ICONST_1 */); 
+    __CN1_DEBUG_INFO(71);
+    { JAVA_OBJECT tmpResult = virtual_com_codename1_components_MultiButton_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[7].data.o);
+    PUSH_OBJ(tmpResult); }
+    /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBackgroundGradientStartColor___int(threadStateData, SP[-1].data.o, CN1_ARRAY_ELEMENT_INT(locals[3].data.o, ilocals_4_));     SP -= 1;
+    __CN1_DEBUG_INFO(72);
+    BC_IINC(4, 1);
+    __CN1_DEBUG_INFO(73);
+    { JAVA_OBJECT tmpResult = virtual_com_codename1_components_MultiButton_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[7].data.o);
+    PUSH_OBJ(tmpResult); }
+    /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBackgroundGradientEndColor___int(threadStateData, SP[-1].data.o, CN1_ARRAY_ELEMENT_INT(locals[3].data.o, ilocals_4_));     SP -= 1;
     __CN1_DEBUG_INFO(76);
-    /* CustomInvoke */virtual_com_codename1_components_MultiButton_setGap___int(threadStateData, locals[8].data.o, 1 /* ICONST_1 */); 
-    __CN1_DEBUG_INFO(77);
-    { JAVA_OBJECT tmpResult = virtual_com_codename1_components_MultiButton_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[8].data.o);
+    { JAVA_OBJECT tmpResult = virtual_java_util_Map_Entry_getKey___R_java_lang_Object(threadStateData, locals[6].data.o);
     PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBackgroundGradientStartColor___int(threadStateData, SP[-1].data.o, CN1_ARRAY_ELEMENT_INT(locals[4].data.o, ilocals_5_));     SP -= 1;
-    __CN1_DEBUG_INFO(78);
-    BC_IINC(5, 1);
-    __CN1_DEBUG_INFO(79);
-    { JAVA_OBJECT tmpResult = virtual_com_codename1_components_MultiButton_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[8].data.o);
-    PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBackgroundGradientEndColor___int(threadStateData, SP[-1].data.o, CN1_ARRAY_ELEMENT_INT(locals[4].data.o, ilocals_5_));     SP -= 1;
-    __CN1_DEBUG_INFO(82);
-    { JAVA_OBJECT tmpResult = virtual_java_util_Map_Entry_getKey___R_java_lang_Object(threadStateData, locals[7].data.o);
-    PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_String_contains___java_lang_CharSequence_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10552));
+    /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_lang_String_contains___java_lang_CharSequence_R_boolean(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10346));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1556162268;
-    __CN1_DEBUG_INFO(83);
-    /* CustomInvoke */com_codename1_ui_FontImage_setMaterialIcon___com_codename1_components_MultiButton_char(threadStateData, locals[8].data.o, 59389); 
-    goto label_L1650332494;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1572745406;
+    __CN1_DEBUG_INFO(77);
+    /* CustomInvoke */com_codename1_ui_FontImage_setMaterialIcon___com_codename1_components_MultiButton_char(threadStateData, locals[7].data.o, 59389); 
+    goto label_L1340644388;
 
-label_L1556162268:
-    __CN1_DEBUG_INFO(86);
-    /* CustomInvoke */com_codename1_ui_FontImage_setMaterialIcon___com_codename1_components_MultiButton_char(threadStateData, locals[8].data.o, 57520); 
+label_L1572745406:
+    __CN1_DEBUG_INFO(80);
+    /* CustomInvoke */com_codename1_ui_FontImage_setMaterialIcon___com_codename1_components_MultiButton_char(threadStateData, locals[7].data.o, 57520); 
 
-label_L1650332494:
-    __CN1_DEBUG_INFO(91);
-    /* CustomInvoke */virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[1].data.o, locals[8].data.o); 
-    __CN1_DEBUG_INFO(93);
-    goto label_L1924990666;
+label_L1340644388:
+    __CN1_DEBUG_INFO(85);
+    /* CustomInvoke */virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[1].data.o, locals[7].data.o); 
+    __CN1_DEBUG_INFO(87);
+    goto label_L1434015813;
 
-label_L577127077:
-    __CN1_DEBUG_INFO(96);
+label_L1924990666:
+    __CN1_DEBUG_INFO(90);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(java_lang_Integer_valueOf___int_R_java_lang_Integer(threadStateData, 4/* ICONST_4 */));
     BC_ALOAD(1);
@@ -424,65 +428,65 @@ label_L577127077:
     SP-=2;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
-    __CN1_DEBUG_INFO(98);
+    __CN1_DEBUG_INFO(92);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_nexus_nexwell_forms_EmergencyHelpForm_phoneCall___java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 10520, 10553);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 10318, 10347);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(101);
+    __CN1_DEBUG_INFO(95);
     /* LDC: 'Confirm call'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10554));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10348));
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10555));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10349));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[2].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10556));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10350));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10557));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10351));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* LDC: 'Call'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10558));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10319));
     /* LDC: 'Cancel'*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(464));
     { JAVA_INT tmpResult = com_codename1_ui_Dialog_show___java_lang_String_java_lang_String_java_lang_String_java_lang_String_R_boolean(threadStateData, SP[-4].data.o, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
     SP-=3;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L144445623;
-    __CN1_DEBUG_INFO(103);
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1023996917;
+    __CN1_DEBUG_INFO(97);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     /* CustomInvoke */virtual_com_codename1_ui_Display_dial___java_lang_String(threadStateData, SP[-1].data.o, locals[2].data.o);     SP -= 1;
 
-label_L144445623:
-    __CN1_DEBUG_INFO(106);
+label_L1023996917:
+    __CN1_DEBUG_INFO(100);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_EmergencyHelpForm_lambda$new$0___com_nexus_nexwell_forms_EmergencyHelpForm_java_util_Map_Entry_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+JAVA_VOID com_nexus_nexwell_forms_EmergencyHelpForm_lambda$new$1___com_nexus_nexwell_forms_EmergencyHelpForm_java_util_Map_Entry_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_EmergencyHelpForm(threadStateData);
-    DEFINE_METHOD_STACK(3, 3, 0, 10520, 10216);
+    DEFINE_METHOD_STACK(3, 3, 0, 10318, 10352);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg3;
     locals[2].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(67);
+    __CN1_DEBUG_INFO(61);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_util_Map_Entry_getKey___R_java_lang_Object(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -490,6 +494,11 @@ JAVA_VOID com_nexus_nexwell_forms_EmergencyHelpForm_lambda$new$0___com_nexus_nex
     PUSH_OBJ(tmpResult); }
     com_nexus_nexwell_forms_EmergencyHelpForm_phoneCall___java_lang_String_java_lang_String(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_nexus_nexwell_forms_EmergencyHelpForm_lambda$new$0___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     return;
 }
 
@@ -3987,6 +3996,15 @@ JAVA_OBJECT virtual_com_nexus_nexwell_forms_EmergencyHelpForm_add___java_lang_Ob
     return (*(functionPtr_com_nexus_nexwell_forms_EmergencyHelpForm_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container)__cn1ThisObject->__codenameOneParentClsReference->vtable[328])(threadStateData, __cn1ThisObject, __cn1Arg1, __cn1Arg2);
 }
 
+
+typedef JAVA_OBJECT (*functionPtr_com_nexus_nexwell_forms_EmergencyHelpForm_getToolbar___R_com_codename1_ui_Toolbar)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT virtual_com_nexus_nexwell_forms_EmergencyHelpForm_getToolbar___R_com_codename1_ui_Toolbar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    return (*(functionPtr_com_nexus_nexwell_forms_EmergencyHelpForm_getToolbar___R_com_codename1_ui_Toolbar)__cn1ThisObject->__codenameOneParentClsReference->vtable[529])(threadStateData, __cn1ThisObject);
+}
+
 void __INIT_VTABLE_com_nexus_nexwell_forms_EmergencyHelpForm(CODENAME_ONE_THREAD_STATE, void** vtable) {
         __INIT_VTABLE_com_codename1_ui_Form(threadStateData, vtable);
 }
@@ -4001,7 +4019,7 @@ void __STATIC_INITIALIZER_com_nexus_nexwell_forms_EmergencyHelpForm(CODENAME_ONE
         return;
     }
 
-    class__com_nexus_nexwell_forms_EmergencyHelpForm.vtable = malloc(sizeof(void*) *530);
+    class__com_nexus_nexwell_forms_EmergencyHelpForm.vtable = malloc(sizeof(void*) *531);
     __INIT_VTABLE_com_nexus_nexwell_forms_EmergencyHelpForm(threadStateData, class__com_nexus_nexwell_forms_EmergencyHelpForm.vtable);
     class__com_nexus_nexwell_forms_EmergencyHelpForm.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_nexus_nexwell_forms_EmergencyHelpForm);

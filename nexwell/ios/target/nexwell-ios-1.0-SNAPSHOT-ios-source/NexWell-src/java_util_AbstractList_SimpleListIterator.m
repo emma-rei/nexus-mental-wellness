@@ -118,7 +118,7 @@ label_L253011924:
     set_field_java_util_AbstractList_SimpleListIterator_numLeft(threadStateData, (get_field_java_util_AbstractList_SimpleListIterator_numLeft(__cn1ThisObject) - 1 /* ICONST_1 */), __cn1ThisObject);
     BC_ALOAD(2);
 
-label_L73933800:
+label_L1519949883:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 
@@ -166,7 +166,7 @@ label_L127702987:
 label_L765242091:
     /* CustomInvoke */virtual_java_util_AbstractList_remove___int_R_java_lang_Object(threadStateData, get_field_java_util_AbstractList_SimpleListIterator_this_0(__cn1ThisObject), get_field_java_util_AbstractList_SimpleListIterator_lastPosition(__cn1ThisObject)); 
 
-label_L938056719:
+label_L328256588:
 END_TRY(1);    JUMP_TO(label_L1117871068, 0);
 
 label_L1390913202:

@@ -35,7 +35,7 @@ JAVA_OBJECT __NEW_com_codename1_components_Switch_2(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_components_Switch_2___INIT_____com_codename1_components_Switch(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10662, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10767, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(701);
@@ -47,7 +47,7 @@ JAVA_VOID com_codename1_components_Switch_2___INIT_____com_codename1_components_
 
 
 JAVA_VOID com_codename1_components_Switch_2_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10662, 3047);
+    DEFINE_INSTANCE_METHOD_STACK(6, 2, 0, 10767, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(704);
@@ -82,20 +82,20 @@ JAVA_VOID com_codename1_components_Switch_2_actionPerformed___com_codename1_ui_e
     { JAVA_DOUBLE tmpResult = java_lang_Math_abs___double_R_double(threadStateData, SP[-1].data.d);
     SP[-1].data.d = tmpResult; SP[-1].type = CN1_TYPE_DOUBLE; }
     BC_DCMPL();
-    if(POP_INT() < 0) /* IFLT */ goto label_L629334547;
+    if(POP_INT() < 0) /* IFLT */ goto label_L1752227897;
     __CN1_DEBUG_INFO(708);
     /* CustomInvoke */com_codename1_components_Switch_access$002___com_codename1_components_Switch_boolean_R_boolean(threadStateData, get_field_com_codename1_components_Switch_2_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(709);
     /* CustomInvoke */com_codename1_components_Switch_access$202___com_codename1_components_Switch_int_R_int(threadStateData, get_field_com_codename1_components_Switch_2_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(710);
     /* CustomInvoke */com_codename1_components_Switch_access$302___com_codename1_components_Switch_int_R_int(threadStateData, get_field_com_codename1_components_Switch_2_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
-    goto label_L1243393970;
+    goto label_L1113168772;
 
-label_L629334547:
+label_L1752227897:
     __CN1_DEBUG_INFO(712);
     virtual_com_codename1_ui_events_ActionEvent_consume__(threadStateData, locals[1].data.o); 
 
-label_L1243393970:
+label_L1113168772:
     __CN1_DEBUG_INFO(714);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

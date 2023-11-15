@@ -53,7 +53,7 @@ JAVA_OBJECT __NEW_com_codename1_components_Switch_4(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_components_Switch_4___INIT_____com_codename1_components_Switch_com_codename1_ui_animations_Motion_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_BOOLEAN __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10665, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10770, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -70,13 +70,13 @@ JAVA_VOID com_codename1_components_Switch_4___INIT_____com_codename1_components_
 
 
 JAVA_BOOLEAN com_codename1_components_Switch_4_animate___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10665, 1587);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10770, 1587);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(791);
     /* CustomInvoke */com_codename1_components_Switch_access$202___com_codename1_components_Switch_int_R_int(threadStateData, get_field_com_codename1_components_Switch_4_this_0(__cn1ThisObject), virtual_com_codename1_ui_animations_Motion_getValue___R_int(threadStateData, get_field_com_codename1_components_Switch_4_val_current(__cn1ThisObject))); 
     __CN1_DEBUG_INFO(792);
     /* CustomInvoke */com_codename1_components_Switch_access$002___com_codename1_components_Switch_boolean_R_boolean(threadStateData, get_field_com_codename1_components_Switch_4_this_0(__cn1ThisObject), 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(793);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, get_field_com_codename1_components_Switch_4_val_current(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L440708502;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, get_field_com_codename1_components_Switch_4_val_current(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1649563001;
     __CN1_DEBUG_INFO(794);
     /* CustomInvoke */com_codename1_components_Switch_access$002___com_codename1_components_Switch_boolean_R_boolean(threadStateData, get_field_com_codename1_components_Switch_4_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(795);
@@ -85,15 +85,15 @@ JAVA_BOOLEAN com_codename1_components_Switch_4_animate___R_boolean(CODENAME_ONE_
     /* CustomInvoke */com_codename1_components_Switch_access$302___com_codename1_components_Switch_int_R_int(threadStateData, get_field_com_codename1_components_Switch_4_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(797);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_codename1_components_Switch_getComponentForm___R_com_codename1_ui_Form(threadStateData, get_field_com_codename1_components_Switch_4_this_0(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(798);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1791871546;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1820373458;
     __CN1_DEBUG_INFO(799);
     /* CustomInvoke */virtual_com_codename1_ui_Form_deregisterAnimated___com_codename1_ui_animations_Animation(threadStateData, locals[1].data.o, __cn1ThisObject); 
 
-label_L1791871546:
+label_L1820373458:
     __CN1_DEBUG_INFO(801);
     /* CustomInvoke */com_codename1_components_Switch_access$1200___com_codename1_components_Switch_boolean_boolean(threadStateData, get_field_com_codename1_components_Switch_4_this_0(__cn1ThisObject), get_field_com_codename1_components_Switch_4_val_value(__cn1ThisObject), 1 /* ICONST_1 */); 
 
-label_L440708502:
+label_L1649563001:
     __CN1_DEBUG_INFO(803);
     virtual_com_codename1_components_Switch_repaint__(threadStateData, get_field_com_codename1_components_Switch_4_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(804);

@@ -7,6 +7,7 @@
 #include "com_codename1_ui_events_ActionEvent.h"
 #include "com_codename1_ui_layouts_FlowLayout.h"
 #include "com_codename1_ui_plaf_Style.h"
+#include "com_codename1_ui_plaf_UIManager.h"
 #include "com_codename1_ui_util_EventDispatcher.h"
 #include "com_codename1_util_StringUtil.h"
 #include "com_nexus_nexwell_components_RichTextView.h"
@@ -303,80 +304,153 @@ com_nexus_nexwell_components_RichTextView___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_components_RichTextView___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10451, 201);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(35);
+    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10617, 201);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(40);
     com_codename1_ui_Container___INIT____(threadStateData, __cn1ThisObject); 
-    __CN1_DEBUG_INFO(23);
+    __CN1_DEBUG_INFO(28);
     set_field_com_nexus_nexwell_components_RichTextView_fontSize(threadStateData, 2.6, __cn1ThisObject);
-    __CN1_DEBUG_INFO(24);
+    __CN1_DEBUG_INFO(29);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_com_codename1_ui_util_EventDispatcher(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_codename1_ui_util_EventDispatcher___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     set_field_com_nexus_nexwell_components_RichTextView_listeners(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(27);
+    __CN1_DEBUG_INFO(32);
     set_field_com_nexus_nexwell_components_RichTextView_currentColor(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
-    __CN1_DEBUG_INFO(36);
-    com_nexus_nexwell_components_RichTextView_init__(threadStateData, __cn1ThisObject); 
-    __CN1_DEBUG_INFO(37);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
-    return;
-}
-
-
-JAVA_VOID com_nexus_nexwell_components_RichTextView___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10451, 201);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
-    locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(39);
-    com_codename1_ui_Container___INIT____(threadStateData, __cn1ThisObject); 
-    __CN1_DEBUG_INFO(23);
-    set_field_com_nexus_nexwell_components_RichTextView_fontSize(threadStateData, 2.6, __cn1ThisObject);
-    __CN1_DEBUG_INFO(24);
-    BC_ALOAD(0);
-    PUSH_POINTER(__NEW_com_codename1_ui_util_EventDispatcher(threadStateData)); /* NEW */
-    BC_DUP(); /* DUP */
-    com_codename1_ui_util_EventDispatcher___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    set_field_com_nexus_nexwell_components_RichTextView_listeners(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
-    POP_MANY(2);
-    __CN1_DEBUG_INFO(27);
-    set_field_com_nexus_nexwell_components_RichTextView_currentColor(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
-    __CN1_DEBUG_INFO(40);
-    com_nexus_nexwell_components_RichTextView_init__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(41);
-    /* CustomInvoke */virtual_com_nexus_nexwell_components_RichTextView_setText___java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o); 
+    /* CustomInvoke */com_nexus_nexwell_components_RichTextView_init___java_lang_String(threadStateData, __cn1ThisObject, JAVA_NULL /* ACONST_NULL */); 
     __CN1_DEBUG_INFO(42);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_VOID com_nexus_nexwell_components_RichTextView_init__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 1, 0, 10451, 227);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(44);
+JAVA_VOID com_nexus_nexwell_components_RichTextView___INIT_____java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10617, 201);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
+    locals[1].type = CN1_TYPE_OBJECT;
+    locals[2].data.o = __cn1Arg2;
+    locals[2].type = CN1_TYPE_OBJECT;
+    __CN1_DEBUG_INFO(44);
+    com_codename1_ui_Container___INIT____(threadStateData, __cn1ThisObject); 
+    __CN1_DEBUG_INFO(28);
+    set_field_com_nexus_nexwell_components_RichTextView_fontSize(threadStateData, 2.6, __cn1ThisObject);
+    __CN1_DEBUG_INFO(29);
     BC_ALOAD(0);
-    /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Font_createTrueTypeFont___java_lang_String_float_R_com_codename1_ui_Font(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(53), 2.6));
-    set_field_com_nexus_nexwell_components_RichTextView_defaultFont(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
+    PUSH_POINTER(__NEW_com_codename1_ui_util_EventDispatcher(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    com_codename1_ui_util_EventDispatcher___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    set_field_com_nexus_nexwell_components_RichTextView_listeners(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
+    __CN1_DEBUG_INFO(32);
+    set_field_com_nexus_nexwell_components_RichTextView_currentColor(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(45);
+    /* CustomInvoke */com_nexus_nexwell_components_RichTextView_init___java_lang_String(threadStateData, __cn1ThisObject, locals[2].data.o); 
+    __CN1_DEBUG_INFO(46);
+    /* CustomInvoke */virtual_com_nexus_nexwell_components_RichTextView_setText___java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o); 
+    __CN1_DEBUG_INFO(47);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_nexus_nexwell_components_RichTextView___INIT_____java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10617, 201);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
+    locals[1].type = CN1_TYPE_OBJECT;
+    __CN1_DEBUG_INFO(49);
+    com_codename1_ui_Container___INIT____(threadStateData, __cn1ThisObject); 
+    __CN1_DEBUG_INFO(28);
+    set_field_com_nexus_nexwell_components_RichTextView_fontSize(threadStateData, 2.6, __cn1ThisObject);
+    __CN1_DEBUG_INFO(29);
     BC_ALOAD(0);
-    /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Font_createTrueTypeFont___java_lang_String_float_R_com_codename1_ui_Font(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(55), 2.6));
+    PUSH_POINTER(__NEW_com_codename1_ui_util_EventDispatcher(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    com_codename1_ui_util_EventDispatcher___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    set_field_com_nexus_nexwell_components_RichTextView_listeners(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
+    POP_MANY(2);
+    __CN1_DEBUG_INFO(32);
+    set_field_com_nexus_nexwell_components_RichTextView_currentColor(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
+    __CN1_DEBUG_INFO(50);
+    /* CustomInvoke */com_nexus_nexwell_components_RichTextView_init___java_lang_String(threadStateData, __cn1ThisObject, JAVA_NULL /* ACONST_NULL */); 
+    __CN1_DEBUG_INFO(51);
+    /* CustomInvoke */virtual_com_nexus_nexwell_components_RichTextView_setText___java_lang_String(threadStateData, __cn1ThisObject, locals[1].data.o); 
+    __CN1_DEBUG_INFO(52);
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_nexus_nexwell_components_RichTextView_init___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 10617, 227);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
+    locals[1].type = CN1_TYPE_OBJECT;
+    __CN1_DEBUG_INFO(55);
+    BC_ALOAD(0);
+    /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Font_createTrueTypeFont___java_lang_String_float_R_com_codename1_ui_Font(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(55), get_field_com_nexus_nexwell_components_RichTextView_fontSize(__cn1ThisObject)));
     set_field_com_nexus_nexwell_components_RichTextView_boldFont(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(46);
+    __CN1_DEBUG_INFO(56);
     BC_ALOAD(0);
-    /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Font_createTrueTypeFont___java_lang_String_float_R_com_codename1_ui_Font(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(58), 2.6));
+    /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Font_createTrueTypeFont___java_lang_String_float_R_com_codename1_ui_Font(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(58), get_field_com_nexus_nexwell_components_RichTextView_fontSize(__cn1ThisObject)));
     set_field_com_nexus_nexwell_components_RichTextView_italicFont(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
-    __CN1_DEBUG_INFO(47);
+    __CN1_DEBUG_INFO(57);
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1690050988;
+    __CN1_DEBUG_INFO(58);
+    BC_ALOAD(0);
+    /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Font_createTrueTypeFont___java_lang_String_float_R_com_codename1_ui_Font(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(53), get_field_com_nexus_nexwell_components_RichTextView_fontSize(__cn1ThisObject)));
+    set_field_com_nexus_nexwell_components_RichTextView_defaultFont(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
+    POP_MANY(2);
+    goto label_L1228798862;
+
+label_L1690050988:
+    __CN1_DEBUG_INFO(61);
+    PUSH_OBJ(com_codename1_ui_plaf_UIManager_getInstance___R_com_codename1_ui_plaf_UIManager(threadStateData));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_UIManager_getComponentStyle___java_lang_String_R_com_codename1_ui_plaf_Style(threadStateData, SP[-1].data.o, locals[1].data.o);
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    BC_ASTORE(2);
+    __CN1_DEBUG_INFO(62);
+    BC_ALOAD(0);
+    { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_Style_getFont___R_com_codename1_ui_Font(threadStateData, locals[2].data.o);
+    PUSH_OBJ(tmpResult); }
+    set_field_com_nexus_nexwell_components_RichTextView_defaultFont(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
+    POP_MANY(2);
+    __CN1_DEBUG_INFO(63);
+    BC_ALOAD(0);
+    PUSH_POINTER(get_field_com_nexus_nexwell_components_RichTextView_boldFont(__cn1ThisObject));
+    { JAVA_INT tmpResult = virtual_com_codename1_ui_Font_getHeight___R_int(threadStateData, get_field_com_nexus_nexwell_components_RichTextView_defaultFont(__cn1ThisObject));
+    PUSH_INT(tmpResult); }
+    SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
+    PUSH_INT(1); /* ICONST_1 */
+    { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Font_derive___float_int_R_com_codename1_ui_Font(threadStateData, SP[-3].data.o, SP[-2].data.f, SP[-1].data.i);
+    SP-=2;
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    set_field_com_nexus_nexwell_components_RichTextView_boldFont(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
+    POP_MANY(2);
+    __CN1_DEBUG_INFO(65);
+    BC_ALOAD(0);
+    PUSH_POINTER(get_field_com_nexus_nexwell_components_RichTextView_italicFont(__cn1ThisObject));
+    { JAVA_INT tmpResult = virtual_com_codename1_ui_Font_getHeight___R_int(threadStateData, get_field_com_nexus_nexwell_components_RichTextView_defaultFont(__cn1ThisObject));
+    PUSH_INT(tmpResult); }
+    SP[-1].data.f = (JAVA_FLOAT)SP[-1].data.i; /* I2F */
+    PUSH_INT(2); /* ICONST_2 */
+    { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Font_derive___float_int_R_com_codename1_ui_Font(threadStateData, SP[-3].data.o, SP[-2].data.f, SP[-1].data.i);
+    SP-=2;
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    set_field_com_nexus_nexwell_components_RichTextView_italicFont(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
+    POP_MANY(2);
+
+label_L1228798862:
+    __CN1_DEBUG_INFO(68);
     BC_ALOAD(0);
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_Font_charWidth___char_R_int(threadStateData, get_field_com_nexus_nexwell_components_RichTextView_defaultFont(__cn1ThisObject), 32);
     PUSH_INT(tmpResult); }
     set_field_com_nexus_nexwell_components_RichTextView_sizeOfSpace(threadStateData, POP_INT(), POP_OBJ());
-    __CN1_DEBUG_INFO(48);
+    __CN1_DEBUG_INFO(69);
     set_field_com_nexus_nexwell_components_RichTextView_currentFont(threadStateData, get_field_com_nexus_nexwell_components_RichTextView_defaultFont(__cn1ThisObject), __cn1ThisObject);
-    __CN1_DEBUG_INFO(49);
+    __CN1_DEBUG_INFO(70);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -384,75 +458,75 @@ JAVA_VOID com_nexus_nexwell_components_RichTextView_init__(CODENAME_ONE_THREAD_S
 
 JAVA_VOID com_nexus_nexwell_components_RichTextView_setAlignment___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* align */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10451, 3030);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10617, 3030);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
-    __CN1_DEBUG_INFO(51);
+    __CN1_DEBUG_INFO(73);
     { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_components_RichTextView_getLayout___R_com_codename1_ui_layouts_Layout(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_layouts_FlowLayout_setAlign___int(threadStateData, SP[-1].data.o, ilocals_1_);     SP -= 1;
-    __CN1_DEBUG_INFO(52);
+    __CN1_DEBUG_INFO(74);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_nexus_nexwell_components_RichTextView_createComponent___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 10451, 10452);
+    DEFINE_INSTANCE_METHOD_STACK(5, 5, 0, 10617, 10618);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(55);
-    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[1].data.o, 32)<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ goto label_L1497268815;
-    __CN1_DEBUG_INFO(57);
+    __CN1_DEBUG_INFO(77);
+    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[1].data.o, 32)<=-1 /* ICONST_M1 */) /* IF_ICMPLE CustomJump */ goto label_L1562764987;
+    __CN1_DEBUG_INFO(78);
     /* CustomInvoke */PUSH_OBJ(com_codename1_util_StringUtil_tokenize___java_lang_String_char_R_java_util_List(threadStateData, locals[1].data.o, 32));
     { JAVA_OBJECT tmpResult = virtual_java_util_List_iterator___R_java_util_Iterator(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
 
-label_L1837601499:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1926027290;
-    /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(58);
+label_L164714495:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L216376974;
+    /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(79);
     /* CustomInvoke */com_nexus_nexwell_components_RichTextView_createComponent___java_lang_String(threadStateData, __cn1ThisObject, locals[3].data.o); 
-    __CN1_DEBUG_INFO(59);
-    goto label_L1837601499;
+    __CN1_DEBUG_INFO(80);
+    goto label_L164714495;
 
-label_L1926027290:
-    __CN1_DEBUG_INFO(60);
+label_L216376974:
+    __CN1_DEBUG_INFO(81);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L1497268815:
-    __CN1_DEBUG_INFO(63);
-    if (get_field_com_nexus_nexwell_components_RichTextView_currentLink(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1690050988;
-    __CN1_DEBUG_INFO(64);
+label_L1562764987:
+    __CN1_DEBUG_INFO(84);
+    if (get_field_com_nexus_nexwell_components_RichTextView_currentLink(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L789982400;
+    __CN1_DEBUG_INFO(85);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(4056));     SP -= 1;
     BC_ASTORE(3);
-    __CN1_DEBUG_INFO(65);
+    __CN1_DEBUG_INFO(86);
     /* VarOp.assignFrom */ locals[4].type=CN1_TYPE_INVALID;locals[4].data.o = get_field_com_nexus_nexwell_components_RichTextView_currentLink(__cn1ThisObject);
-locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(66);
+locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(87);
     BC_ALOAD(3);
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_components_RichTextView__Lambda_1_lambdaFactory$___com_nexus_nexwell_components_RichTextView_java_lang_String_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject, locals[4].data.o));
     virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(67);
+    __CN1_DEBUG_INFO(89);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[3].data.o;
-locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(69);
-    goto label_L1228798862;
+locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(90);
+    goto label_L1576277927;
 
-label_L1690050988:
-    __CN1_DEBUG_INFO(71);
+label_L789982400:
+    __CN1_DEBUG_INFO(91);
     PUSH_POINTER(__NEW_com_codename1_ui_Label(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String(threadStateData, SP[-1].data.o, locals[1].data.o);     SP -= 1;
     BC_ASTORE(2);
 
-label_L1228798862:
-    __CN1_DEBUG_INFO(73);
-    /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_ui_Label_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(74);
+label_L1576277927:
+    __CN1_DEBUG_INFO(93);
+    /* VarOp.assignFrom */ locals[3].data.o = virtual_com_codename1_ui_Label_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(94);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setFont___com_codename1_ui_Font(threadStateData, locals[3].data.o, get_field_com_nexus_nexwell_components_RichTextView_currentFont(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(75);
+    __CN1_DEBUG_INFO(95);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setFgColor___int(threadStateData, locals[3].data.o, get_field_com_nexus_nexwell_components_RichTextView_currentColor(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(76);
+    __CN1_DEBUG_INFO(96);
     BC_ALOAD(3);
     PUSH_INT(1); /* ICONST_1 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_BYTE, sizeof(JAVA_ARRAY_BYTE), 1));
@@ -462,53 +536,53 @@ label_L1228798862:
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* BASTORE */
     ((JAVA_ARRAY_BYTE*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
     virtual_com_codename1_ui_plaf_Style_setPaddingUnit___byte_1ARRAY(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(77);
+    __CN1_DEBUG_INFO(97);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setPadding___int_int_int_int(threadStateData, locals[3].data.o, 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */, get_field_com_nexus_nexwell_components_RichTextView_sizeOfSpace(__cn1ThisObject)); 
-    __CN1_DEBUG_INFO(78);
+    __CN1_DEBUG_INFO(98);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setMargin___int_int_int_int(threadStateData, locals[3].data.o, 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */, 0 /* ICONST_0 */); 
-    __CN1_DEBUG_INFO(79);
+    __CN1_DEBUG_INFO(99);
     set_field_com_nexus_nexwell_components_RichTextView_lastCmp(threadStateData, locals[3].data.o, __cn1ThisObject);
-    __CN1_DEBUG_INFO(80);
+    __CN1_DEBUG_INFO(100);
     /* CustomInvoke */virtual_com_nexus_nexwell_components_RichTextView_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, locals[2].data.o); 
-    __CN1_DEBUG_INFO(81);
+    __CN1_DEBUG_INFO(101);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_nexus_nexwell_components_RichTextView_setText___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 10451, 3045);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 10617, 3045);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL1056922674cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL1056922674cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L1056922674cn1_class_id_java_io_IOException1, label_L1562764987, restoreToL1056922674cn1_class_id_java_io_IOException1);
-    __CN1_DEBUG_INFO(83);
+    int restoreToL2101744720cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL2101744720cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L2101744720cn1_class_id_java_io_IOException1, label_L2080643905, restoreToL2101744720cn1_class_id_java_io_IOException1);
+    __CN1_DEBUG_INFO(104);
     set_field_com_nexus_nexwell_components_RichTextView_text(threadStateData, locals[1].data.o, __cn1ThisObject);
-    __CN1_DEBUG_INFO(84);
+    __CN1_DEBUG_INFO(105);
     virtual_com_nexus_nexwell_components_RichTextView_removeAll__(threadStateData, __cn1ThisObject); 
 
-label_L1056922674:
- tryBlockOffsetL1056922674cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1056922674cn1_class_id_java_io_IOException1);
-    restoreToL1056922674cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L2101744720:
+ tryBlockOffsetL2101744720cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L2101744720cn1_class_id_java_io_IOException1);
+    restoreToL2101744720cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
-    __CN1_DEBUG_INFO(87);
+    __CN1_DEBUG_INFO(107);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10453));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10619));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10454));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10620));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     { JAVA_OBJECT tmpResult = virtual_java_lang_String_toCharArray___R_char_1ARRAY(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
-    __CN1_DEBUG_INFO(88);
+    __CN1_DEBUG_INFO(108);
     PUSH_POINTER(__NEW_com_nexus_nexwell_components_RichTextView_Parser(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_nexus_nexwell_components_RichTextView_Parser___INIT_____com_nexus_nexwell_components_RichTextView(threadStateData, SP[-1].data.o, __cn1ThisObject);     SP -= 1;
@@ -517,26 +591,26 @@ label_L1056922674:
     /* CustomInvoke */com_codename1_io_CharArrayReader___INIT_____char_1ARRAY(threadStateData, SP[-1].data.o, locals[2].data.o);     SP -= 1;
     virtual_com_nexus_nexwell_components_RichTextView_Parser_eventParser___java_io_Reader(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
 
-label_L2044016833:
-END_TRY(1);    __CN1_DEBUG_INFO(92);
-    JUMP_TO(label_L216376974, 0);
+label_L1978557426:
+END_TRY(1);    __CN1_DEBUG_INFO(111);
+    JUMP_TO(label_L2137642385, 0);
 
-label_L1562764987:
-    __CN1_DEBUG_INFO(90);
+label_L2080643905:
+    __CN1_DEBUG_INFO(109);
     BC_ASTORE(2);
-    __CN1_DEBUG_INFO(91);
+    __CN1_DEBUG_INFO(110);
     /* CustomInvoke */com_codename1_ui_CN_log___java_lang_Throwable(threadStateData, locals[2].data.o); 
 
-label_L216376974:
-    __CN1_DEBUG_INFO(93);
+label_L2137642385:
+    __CN1_DEBUG_INFO(112);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return;
 }
 
 
 JAVA_OBJECT com_nexus_nexwell_components_RichTextView_getText___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10451, 4108);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(95);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10617, 4108);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(115);
 
 {
     JAVA_OBJECT ___returnValue=get_field_com_nexus_nexwell_components_RichTextView_text(__cn1ThisObject);
@@ -557,14 +631,14 @@ JAVA_VOID com_nexus_nexwell_components_RichTextView_removeLinkListener___com_cod
 
 JAVA_VOID com_nexus_nexwell_components_RichTextView_lambda$createComponent$0___com_nexus_nexwell_components_RichTextView_java_lang_String_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     __STATIC_INITIALIZER_com_nexus_nexwell_components_RichTextView(threadStateData);
-    DEFINE_METHOD_STACK(4, 3, 0, 10451, 10457);
+    DEFINE_METHOD_STACK(4, 3, 0, 10617, 10623);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg3;
     locals[2].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(66);
+    __CN1_DEBUG_INFO(87);
     PUSH_POINTER(get_field_com_nexus_nexwell_components_RichTextView_listeners(locals[0].data.o));
     PUSH_POINTER(__NEW_com_codename1_ui_events_ActionEvent(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -577,10 +651,10 @@ JAVA_VOID com_nexus_nexwell_components_RichTextView_lambda$createComponent$0___c
 
 JAVA_OBJECT com_nexus_nexwell_components_RichTextView_access$000___com_nexus_nexwell_components_RichTextView_R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_components_RichTextView(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10451, 217);
+    DEFINE_METHOD_STACK(1, 1, 0, 10617, 217);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(21);
+    __CN1_DEBUG_INFO(26);
 
 {
     JAVA_OBJECT ___returnValue=get_field_com_nexus_nexwell_components_RichTextView_lastCmp(locals[0].data.o);
@@ -591,10 +665,10 @@ JAVA_OBJECT com_nexus_nexwell_components_RichTextView_access$000___com_nexus_nex
 
 JAVA_INT com_nexus_nexwell_components_RichTextView_access$100___com_nexus_nexwell_components_RichTextView_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_components_RichTextView(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10451, 798);
+    DEFINE_METHOD_STACK(1, 1, 0, 10617, 798);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(21);
+    __CN1_DEBUG_INFO(26);
 
 {
     JAVA_INT ___returnValue=get_field_com_nexus_nexwell_components_RichTextView_sizeOfSpace(locals[0].data.o);
@@ -605,12 +679,12 @@ JAVA_INT com_nexus_nexwell_components_RichTextView_access$100___com_nexus_nexwel
 
 JAVA_VOID com_nexus_nexwell_components_RichTextView_access$200___com_nexus_nexwell_components_RichTextView_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_components_RichTextView(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 10451, 799);
+    DEFINE_METHOD_STACK(2, 2, 0, 10617, 799);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(21);
+    __CN1_DEBUG_INFO(26);
     /* CustomInvoke */com_nexus_nexwell_components_RichTextView_createComponent___java_lang_String(threadStateData, locals[0].data.o, locals[1].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -620,11 +694,11 @@ JAVA_VOID com_nexus_nexwell_components_RichTextView_access$200___com_nexus_nexwe
 JAVA_INT com_nexus_nexwell_components_RichTextView_access$302___com_nexus_nexwell_components_RichTextView_int_R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_INT __cn1Arg2) {
     volatile JAVA_INT ilocals_1_ = 0; /* x1 */
     __STATIC_INITIALIZER_com_nexus_nexwell_components_RichTextView(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 10451, 1150);
+    DEFINE_METHOD_STACK(3, 2, 0, 10617, 1150);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     ilocals_1_ = __cn1Arg2;
-    __CN1_DEBUG_INFO(21);
+    __CN1_DEBUG_INFO(26);
     BC_ALOAD(0);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_1_; 
@@ -637,12 +711,12 @@ JAVA_INT com_nexus_nexwell_components_RichTextView_access$302___com_nexus_nexwel
 
 JAVA_OBJECT com_nexus_nexwell_components_RichTextView_access$402___com_nexus_nexwell_components_RichTextView_com_codename1_ui_Font_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_components_RichTextView(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 10451, 802);
+    DEFINE_METHOD_STACK(3, 2, 0, 10617, 802);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(21);
+    __CN1_DEBUG_INFO(26);
     BC_ALOAD(0);
     BC_ALOAD(1);
     BC_DUP_X1(); /* DUP_X1 */
@@ -655,10 +729,10 @@ JAVA_OBJECT com_nexus_nexwell_components_RichTextView_access$402___com_nexus_nex
 
 JAVA_OBJECT com_nexus_nexwell_components_RichTextView_access$500___com_nexus_nexwell_components_RichTextView_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_components_RichTextView(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10451, 1857);
+    DEFINE_METHOD_STACK(1, 1, 0, 10617, 1857);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(21);
+    __CN1_DEBUG_INFO(26);
 
 {
     JAVA_OBJECT ___returnValue=get_field_com_nexus_nexwell_components_RichTextView_boldFont(locals[0].data.o);
@@ -669,10 +743,10 @@ JAVA_OBJECT com_nexus_nexwell_components_RichTextView_access$500___com_nexus_nex
 
 JAVA_OBJECT com_nexus_nexwell_components_RichTextView_access$600___com_nexus_nexwell_components_RichTextView_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_components_RichTextView(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10451, 1522);
+    DEFINE_METHOD_STACK(1, 1, 0, 10617, 1522);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(21);
+    __CN1_DEBUG_INFO(26);
 
 {
     JAVA_OBJECT ___returnValue=get_field_com_nexus_nexwell_components_RichTextView_italicFont(locals[0].data.o);
@@ -683,12 +757,12 @@ JAVA_OBJECT com_nexus_nexwell_components_RichTextView_access$600___com_nexus_nex
 
 JAVA_OBJECT com_nexus_nexwell_components_RichTextView_access$702___com_nexus_nexwell_components_RichTextView_java_lang_String_R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_components_RichTextView(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 10451, 1858);
+    DEFINE_METHOD_STACK(3, 2, 0, 10617, 1858);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(21);
+    __CN1_DEBUG_INFO(26);
     BC_ALOAD(0);
     BC_ALOAD(1);
     BC_DUP_X1(); /* DUP_X1 */
@@ -701,10 +775,10 @@ JAVA_OBJECT com_nexus_nexwell_components_RichTextView_access$702___com_nexus_nex
 
 JAVA_OBJECT com_nexus_nexwell_components_RichTextView_access$800___com_nexus_nexwell_components_RichTextView_R_com_codename1_ui_Font(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_components_RichTextView(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10451, 807);
+    DEFINE_METHOD_STACK(1, 1, 0, 10617, 807);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(21);
+    __CN1_DEBUG_INFO(26);
 
 {
     JAVA_OBJECT ___returnValue=get_field_com_nexus_nexwell_components_RichTextView_defaultFont(locals[0].data.o);
@@ -3388,6 +3462,15 @@ JAVA_OBJECT com_nexus_nexwell_components_RichTextView_clone___R_java_lang_Object
 }
 
 
+typedef JAVA_OBJECT (*functionPtr_com_nexus_nexwell_components_RichTextView_getAllStyles___R_com_codename1_ui_plaf_Style)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject);
+
+JAVA_OBJECT virtual_com_nexus_nexwell_components_RichTextView_getAllStyles___R_com_codename1_ui_plaf_Style(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    
+    if(__cn1ThisObject == JAVA_NULL) THROW_NULL_POINTER_EXCEPTION();
+    return (*(functionPtr_com_nexus_nexwell_components_RichTextView_getAllStyles___R_com_codename1_ui_plaf_Style)__cn1ThisObject->__codenameOneParentClsReference->vtable[22])(threadStateData, __cn1ThisObject);
+}
+
+
 typedef JAVA_VOID (*functionPtr_com_nexus_nexwell_components_RichTextView_setUIID___java_lang_String)(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1);
 
 JAVA_VOID virtual_com_nexus_nexwell_components_RichTextView_setUIID___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
@@ -3437,7 +3520,7 @@ void __STATIC_INITIALIZER_com_nexus_nexwell_components_RichTextView(CODENAME_ONE
         return;
     }
 
-    class__com_nexus_nexwell_components_RichTextView.vtable = malloc(sizeof(void*) *408);
+    class__com_nexus_nexwell_components_RichTextView.vtable = malloc(sizeof(void*) *410);
     __INIT_VTABLE_com_nexus_nexwell_components_RichTextView(threadStateData, class__com_nexus_nexwell_components_RichTextView.vtable);
     class__com_nexus_nexwell_components_RichTextView.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_nexus_nexwell_components_RichTextView);

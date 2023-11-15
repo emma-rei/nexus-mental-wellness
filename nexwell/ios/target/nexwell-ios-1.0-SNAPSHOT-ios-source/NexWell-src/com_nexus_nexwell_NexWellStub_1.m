@@ -43,7 +43,7 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_NexWellStub_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_nexus_nexwell_NexWellStub_1___INIT_____com_nexus_nexwell_NexWellStub_long(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_LONG __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 10639, 201);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 10802, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_LONG llocals_2_ = __cn1Arg2;
@@ -57,7 +57,7 @@ JAVA_VOID com_nexus_nexwell_NexWellStub_1___INIT_____com_nexus_nexwell_NexWellSt
 
 
 JAVA_VOID com_nexus_nexwell_NexWellStub_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10639, 203);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10802, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(38);
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_NexWellStub_access$000___com_nexus_nexwell_NexWellStub_R_com_nexus_nexwell_NexWell(threadStateData, get_field_com_nexus_nexwell_NexWellStub_1_this_0(__cn1ThisObject)));
     virtual_com_nexus_nexwell_NexWell_stop__(threadStateData, SP[-1].data.o);     SP -= 1;

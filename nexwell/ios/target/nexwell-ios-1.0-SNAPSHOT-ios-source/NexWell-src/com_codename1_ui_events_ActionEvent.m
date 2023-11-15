@@ -144,11 +144,11 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_com_co
     __CN1_DEBUG_INFO(212);
     set_field_com_codename1_ui_events_ActionEvent_trigger(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(213);
-    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L256993264;
+    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L892609277;
     __CN1_DEBUG_INFO(214);
     set_field_com_codename1_ui_events_ActionEvent_longEvent(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L256993264:
+label_L892609277:
     __CN1_DEBUG_INFO(216);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -182,11 +182,11 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_com_co
     __CN1_DEBUG_INFO(230);
     set_field_com_codename1_ui_events_ActionEvent_trigger(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(231);
-    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L308332638;
+    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L1699525388;
     __CN1_DEBUG_INFO(232);
     set_field_com_codename1_ui_events_ActionEvent_longEvent(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L308332638:
+label_L1699525388:
     __CN1_DEBUG_INFO(234);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -224,11 +224,11 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____com_codename1_ui_Comman
     __CN1_DEBUG_INFO(250);
     set_field_com_codename1_ui_events_ActionEvent_trigger(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(251);
-    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L1800892408;
+    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L97281693;
     __CN1_DEBUG_INFO(252);
     set_field_com_codename1_ui_events_ActionEvent_longEvent(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L1800892408:
+label_L97281693:
     __CN1_DEBUG_INFO(254);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -266,11 +266,11 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____com_codename1_ui_Compon
     __CN1_DEBUG_INFO(269);
     set_field_com_codename1_ui_events_ActionEvent_trigger(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(270);
-    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L636002577;
+    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L891020651;
     __CN1_DEBUG_INFO(271);
     set_field_com_codename1_ui_events_ActionEvent_longEvent(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L636002577:
+label_L891020651:
     __CN1_DEBUG_INFO(273);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -300,11 +300,11 @@ JAVA_VOID com_codename1_ui_events_ActionEvent___INIT_____java_lang_Object_com_co
     __CN1_DEBUG_INFO(286);
     set_field_com_codename1_ui_events_ActionEvent_trigger(threadStateData, locals[2].data.o, __cn1ThisObject);
     __CN1_DEBUG_INFO(287);
-    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L553790651;
+    if (locals[2].data.o!=get_static_com_codename1_ui_events_ActionEvent_Type_LongPointerPress(threadStateData)) /* IF_ACMPNE CustomJump */ goto label_L556534527;
     __CN1_DEBUG_INFO(288);
     set_field_com_codename1_ui_events_ActionEvent_longEvent(threadStateData, 1 /* ICONST_1 */, __cn1ThisObject);
 
-label_L553790651:
+label_L556534527:
     __CN1_DEBUG_INFO(290);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -531,7 +531,7 @@ JAVA_OBJECT com_codename1_ui_events_ActionEvent_getCommand___R_com_codename1_ui_
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(411);
     PUSH_POINTER(get_field_com_codename1_ui_events_ActionEvent_source(__cn1ThisObject));
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Command);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L892609277;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L561514757;
     __CN1_DEBUG_INFO(412);
 
 {
@@ -539,7 +539,7 @@ JAVA_OBJECT com_codename1_ui_events_ActionEvent_getCommand___R_com_codename1_ui_
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L892609277:
+label_L561514757:
     __CN1_DEBUG_INFO(414);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 }

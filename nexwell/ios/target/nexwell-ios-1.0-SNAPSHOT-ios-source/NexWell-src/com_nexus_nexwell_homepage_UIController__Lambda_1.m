@@ -44,7 +44,7 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_homepage_UIController__Lambda_1(CODENAME_ONE
 
 
 JAVA_VOID com_nexus_nexwell_homepage_UIController__Lambda_1___INIT_____com_codename1_ui_animations_Motion_com_codename1_ui_Label(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10638, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10801, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -58,7 +58,7 @@ JAVA_VOID com_nexus_nexwell_homepage_UIController__Lambda_1___INIT_____com_coden
 
 
 JAVA_VOID com_nexus_nexwell_homepage_UIController__Lambda_1_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10638, 203);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10801, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */com_nexus_nexwell_homepage_UIController_lambda$showSplashScreen$0___com_codename1_ui_animations_Motion_com_codename1_ui_Label(threadStateData, get_field_com_nexus_nexwell_homepage_UIController__Lambda_1_arg_1(__cn1ThisObject), get_field_com_nexus_nexwell_homepage_UIController__Lambda_1_arg_2(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -67,7 +67,7 @@ JAVA_VOID com_nexus_nexwell_homepage_UIController__Lambda_1_run__(CODENAME_ONE_T
 
 JAVA_OBJECT com_nexus_nexwell_homepage_UIController__Lambda_1_lambdaFactory$___com_codename1_ui_animations_Motion_com_codename1_ui_Label_R_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_homepage_UIController__Lambda_1(threadStateData);
-    DEFINE_METHOD_STACK(4, 2, 0, 10638, 10185);
+    DEFINE_METHOD_STACK(4, 2, 0, 10801, 10185);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

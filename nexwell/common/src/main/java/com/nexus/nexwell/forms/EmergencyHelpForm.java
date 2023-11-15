@@ -57,7 +57,7 @@ public class EmergencyHelpForm extends Form {
         for (Map.Entry<String, String> set : phoneBook.entrySet()) {
 
             MultiButton mb = new MultiButton(set.getKey());
-            mb.setTextLine2(set.getValue());
+            //mb.setTextLine2(set.getValue());
             mb.addActionListener(e -> phoneCall(set.getKey(), set.getValue()));
 
 

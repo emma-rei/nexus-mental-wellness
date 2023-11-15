@@ -3,26 +3,20 @@
 #include "com_nexus_nexwell_forms_MusicForm.h"
 #include "com_nexus_nexwell_forms_MusicForm__Lambda_1.h"
 #include "java_lang_NullPointerException.h"
-#include "java_util_Map_Entry.h"
 const struct clazz *base_interfaces_for_com_nexus_nexwell_forms_MusicForm__Lambda_1[] = {&class__com_codename1_ui_events_ActionListener};
 struct clazz class__com_nexus_nexwell_forms_MusicForm__Lambda_1 = {
-  DEBUG_GC_INIT &class__java_lang_Class, 999999, 0, 0, 0, 0, &__FINALIZER_com_nexus_nexwell_forms_MusicForm__Lambda_1 ,0 , &__GC_MARK_com_nexus_nexwell_forms_MusicForm__Lambda_1,  0, cn1_class_id_com_nexus_nexwell_forms_MusicForm__Lambda_1, "com.nexus.nexwell.forms.MusicForm..Lambda.1", 0, 0, 0, JAVA_FALSE, &class__java_lang_Object, base_interfaces_for_com_nexus_nexwell_forms_MusicForm__Lambda_1, 1, 0, 0
+  DEBUG_GC_INIT &class__java_lang_Class, 999999, 0, 0, 0, 0, &__FINALIZER_com_nexus_nexwell_forms_MusicForm__Lambda_1 ,0 , &__GC_MARK_com_nexus_nexwell_forms_MusicForm__Lambda_1,  0, cn1_class_id_com_nexus_nexwell_forms_MusicForm__Lambda_1, "com.nexus.nexwell.forms.MusicForm..Lambda.1", 0, 0, 0, JAVA_FALSE, &class__java_lang_Object, base_interfaces_for_com_nexus_nexwell_forms_MusicForm__Lambda_1, 1, &__NEW_INSTANCE_com_nexus_nexwell_forms_MusicForm__Lambda_1, 0
 , 0, JAVA_TRUE, 0, 0, 0, 0};
 
-JAVA_OBJECT get_field_com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_1(JAVA_OBJECT __cn1T) {
-  return (*(struct obj__com_nexus_nexwell_forms_MusicForm__Lambda_1*)__cn1T).com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_1;
+JAVA_OBJECT STATIC_FIELD_com_nexus_nexwell_forms_MusicForm__Lambda_1_instance = 0;
+JAVA_OBJECT get_static_com_nexus_nexwell_forms_MusicForm__Lambda_1_instance(CODENAME_ONE_THREAD_STATE) {
+    __STATIC_INITIALIZER_com_nexus_nexwell_forms_MusicForm__Lambda_1(threadStateData);
+     return STATIC_FIELD_com_nexus_nexwell_forms_MusicForm__Lambda_1_instance;
 }
 
-void set_field_com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
-    (*(struct obj__com_nexus_nexwell_forms_MusicForm__Lambda_1*)__cn1T).com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_1 = __cn1Val;
-}
-
-JAVA_OBJECT get_field_com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_2(JAVA_OBJECT __cn1T) {
-  return (*(struct obj__com_nexus_nexwell_forms_MusicForm__Lambda_1*)__cn1T).com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_2;
-}
-
-void set_field_com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_2(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Val, JAVA_OBJECT __cn1T) {
-    (*(struct obj__com_nexus_nexwell_forms_MusicForm__Lambda_1*)__cn1T).com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_2 = __cn1Val;
+void set_static_com_nexus_nexwell_forms_MusicForm__Lambda_1_instance(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1StaticVal) {
+    __STATIC_INITIALIZER_com_nexus_nexwell_forms_MusicForm__Lambda_1(threadStateData);
+    STATIC_FIELD_com_nexus_nexwell_forms_MusicForm__Lambda_1_instance = __cn1StaticVal;
 }
 
 JAVA_VOID __FINALIZER_com_nexus_nexwell_forms_MusicForm__Lambda_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToDelete) {
@@ -31,8 +25,6 @@ JAVA_VOID __FINALIZER_com_nexus_nexwell_forms_MusicForm__Lambda_1(CODENAME_ONE_T
 
 void __GC_MARK_com_nexus_nexwell_forms_MusicForm__Lambda_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT objToMark, JAVA_BOOLEAN force) {
     struct obj__com_nexus_nexwell_forms_MusicForm__Lambda_1* objInstance = (struct obj__com_nexus_nexwell_forms_MusicForm__Lambda_1*)objToMark;
-    gcMarkObject(threadStateData, objInstance->com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_1, force);
-    gcMarkObject(threadStateData, objInstance->com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_2, force);
     __GC_MARK_java_lang_Object(threadStateData, objToMark, force);
 }
 
@@ -42,48 +34,50 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_forms_MusicForm__Lambda_1(CODENAME_ONE_THREA
     return o;
 }
 
+JAVA_OBJECT __NEW_INSTANCE_com_nexus_nexwell_forms_MusicForm__Lambda_1(CODENAME_ONE_THREAD_STATE) {
+    __STATIC_INITIALIZER_com_nexus_nexwell_forms_MusicForm__Lambda_1(threadStateData);
+    JAVA_OBJECT o = codenameOneGcMalloc(threadStateData, sizeof(struct obj__com_nexus_nexwell_forms_MusicForm__Lambda_1), &class__com_nexus_nexwell_forms_MusicForm__Lambda_1);
+com_nexus_nexwell_forms_MusicForm__Lambda_1___INIT____(threadStateData, o);
+    return o;
+}
 
-JAVA_VOID com_nexus_nexwell_forms_MusicForm__Lambda_1___INIT_____com_nexus_nexwell_forms_MusicForm_java_util_Map_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10600, 201);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
-    locals[1].type = CN1_TYPE_OBJECT;
-    locals[2].data.o = __cn1Arg2;
-    locals[2].type = CN1_TYPE_OBJECT;
-    java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
-    set_field_com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_1(threadStateData, locals[1].data.o, __cn1ThisObject);
-    set_field_com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_2(threadStateData, locals[2].data.o, __cn1ThisObject);
+
+JAVA_VOID com_nexus_nexwell_forms_MusicForm__Lambda_1___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10799, 201);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
 JAVA_VOID com_nexus_nexwell_forms_MusicForm__Lambda_1_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10600, 3047);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 10799, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    /* CustomInvoke */com_nexus_nexwell_forms_MusicForm_lambda$new$0___com_nexus_nexwell_forms_MusicForm_java_util_Map_Entry_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_1(__cn1ThisObject), get_field_com_nexus_nexwell_forms_MusicForm__Lambda_1_arg_2(__cn1ThisObject), locals[1].data.o); 
+    /* CustomInvoke */com_nexus_nexwell_forms_MusicForm_lambda$new$0___com_codename1_ui_events_ActionEvent(threadStateData, locals[1].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_OBJECT com_nexus_nexwell_forms_MusicForm__Lambda_1_lambdaFactory$___com_nexus_nexwell_forms_MusicForm_java_util_Map_Entry_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    __STATIC_INITIALIZER_com_nexus_nexwell_forms_MusicForm__Lambda_1(threadStateData);
-    DEFINE_METHOD_STACK(4, 2, 0, 10600, 10185);
-    locals[0].data.o = __cn1Arg1;
-    locals[0].type = CN1_TYPE_OBJECT;
-    locals[1].data.o = __cn1Arg2;
-    locals[1].type = CN1_TYPE_OBJECT;
+JAVA_VOID com_nexus_nexwell_forms_MusicForm__Lambda_1___CLINIT____(CODENAME_ONE_THREAD_STATE) {
+    DEFINE_METHOD_STACK(2, 0, 0, 10799, 859);
     PUSH_POINTER(__NEW_com_nexus_nexwell_forms_MusicForm__Lambda_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_nexus_nexwell_forms_MusicForm__Lambda_1___INIT_____com_nexus_nexwell_forms_MusicForm_java_util_Map_Entry(threadStateData, SP[-1].data.o, locals[0].data.o, locals[1].data.o);     SP -= 1;
+    com_nexus_nexwell_forms_MusicForm__Lambda_1___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    set_static_com_nexus_nexwell_forms_MusicForm__Lambda_1_instance(threadStateData, PEEK_OBJ(1));
+    SP--;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
-    return POP_OBJ();
+    return;
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_MusicForm__Lambda_1___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-java_lang_Object___INIT____(threadStateData, __cn1ThisObject);
+JAVA_OBJECT com_nexus_nexwell_forms_MusicForm__Lambda_1_lambdaFactory$___R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE) {
+    __STATIC_INITIALIZER_com_nexus_nexwell_forms_MusicForm__Lambda_1(threadStateData);
+    DEFINE_METHOD_STACK(1, 0, 0, 10799, 10185);
+    PUSH_POINTER(get_static_com_nexus_nexwell_forms_MusicForm__Lambda_1_instance(threadStateData));
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return POP_OBJ();
 }
 
 
@@ -129,6 +123,7 @@ void __STATIC_INITIALIZER_com_nexus_nexwell_forms_MusicForm__Lambda_1(CODENAME_O
     class__com_nexus_nexwell_forms_MusicForm__Lambda_1.vtable = malloc(sizeof(void*) *11);
     __INIT_VTABLE_com_nexus_nexwell_forms_MusicForm__Lambda_1(threadStateData, class__com_nexus_nexwell_forms_MusicForm__Lambda_1.vtable);
     class__com_nexus_nexwell_forms_MusicForm__Lambda_1.initialized = JAVA_TRUE;
+    com_nexus_nexwell_forms_MusicForm__Lambda_1___CLINIT____(threadStateData);
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_nexus_nexwell_forms_MusicForm__Lambda_1);
 __com_nexus_nexwell_forms_MusicForm__Lambda_1_LOADED__=1;
 }

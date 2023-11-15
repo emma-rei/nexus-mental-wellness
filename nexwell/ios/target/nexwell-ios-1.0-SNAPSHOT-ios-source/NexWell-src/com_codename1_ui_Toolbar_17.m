@@ -70,22 +70,22 @@ JAVA_VOID com_codename1_ui_Toolbar_17_actionPerformed___com_codename1_ui_events_
     PUSH_INT(2); /* ICONST_2 */
     SP--; SP[-1].data.i = SP[-1].data.i / (*SP).data.i; /* IDIV */
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
-    if(POP_INT() <= 0) /* IFLE */ goto label_L1549005458;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L1609565447;
     __CN1_DEBUG_INFO(2405);
-    if (/* CustomInvoke */com_codename1_ui_Toolbar_access$900___com_codename1_ui_Toolbar_R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_17_this_0(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1190857779;
-    if (/* CustomInvoke */com_codename1_ui_Toolbar_access$600___com_codename1_ui_Toolbar_R_int(threadStateData, get_field_com_codename1_ui_Toolbar_17_this_0(__cn1ThisObject))>=0) /* IFGE CustomJump */ goto label_L1190857779;
+    if (/* CustomInvoke */com_codename1_ui_Toolbar_access$900___com_codename1_ui_Toolbar_R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_17_this_0(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1614588868;
+    if (/* CustomInvoke */com_codename1_ui_Toolbar_access$600___com_codename1_ui_Toolbar_R_int(threadStateData, get_field_com_codename1_ui_Toolbar_17_this_0(__cn1ThisObject))>=0) /* IFGE CustomJump */ goto label_L1614588868;
     __CN1_DEBUG_INFO(2406);
     virtual_com_codename1_ui_Toolbar_showToolbar__(threadStateData, get_field_com_codename1_ui_Toolbar_17_this_0(__cn1ThisObject)); 
-    goto label_L1190857779;
+    goto label_L1614588868;
 
-label_L1549005458:
+label_L1609565447:
     __CN1_DEBUG_INFO(2409);
-    if (/* CustomInvoke */com_codename1_ui_Toolbar_access$900___com_codename1_ui_Toolbar_R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_17_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1190857779;
-    if (/* CustomInvoke */com_codename1_ui_Toolbar_access$600___com_codename1_ui_Toolbar_R_int(threadStateData, get_field_com_codename1_ui_Toolbar_17_this_0(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L1190857779;
+    if (/* CustomInvoke */com_codename1_ui_Toolbar_access$900___com_codename1_ui_Toolbar_R_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_17_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1614588868;
+    if (/* CustomInvoke */com_codename1_ui_Toolbar_access$600___com_codename1_ui_Toolbar_R_int(threadStateData, get_field_com_codename1_ui_Toolbar_17_this_0(__cn1ThisObject))<=0) /* IFLE CustomJump */ goto label_L1614588868;
     __CN1_DEBUG_INFO(2410);
     virtual_com_codename1_ui_Toolbar_hideToolbar__(threadStateData, get_field_com_codename1_ui_Toolbar_17_this_0(__cn1ThisObject)); 
 
-label_L1190857779:
+label_L1614588868:
     __CN1_DEBUG_INFO(2413);
     virtual_com_codename1_ui_Form_repaint__(threadStateData, get_field_com_codename1_ui_Toolbar_17_val_f(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(2414);

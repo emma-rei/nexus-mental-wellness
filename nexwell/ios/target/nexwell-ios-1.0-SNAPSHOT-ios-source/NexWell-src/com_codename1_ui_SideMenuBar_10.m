@@ -231,7 +231,7 @@ JAVA_VOID com_codename1_ui_SideMenuBar_10_paint___com_codename1_ui_Graphics(CODE
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(1368);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1799521220;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1332121385;
     __CN1_DEBUG_INFO(1369);
     /* VarOp.assignFrom */ ilocals_3_ = virtual_com_codename1_ui_Component_isVisible___R_boolean(threadStateData, locals[2].data.o);
     __CN1_DEBUG_INFO(1370);
@@ -251,7 +251,7 @@ JAVA_VOID com_codename1_ui_SideMenuBar_10_paint___com_codename1_ui_Graphics(CODE
     __CN1_DEBUG_INFO(1377);
     /* CustomInvoke */virtual_com_codename1_ui_Component_setVisible___boolean(threadStateData, locals[2].data.o, ilocals_3_); 
 
-label_L1799521220:
+label_L1332121385:
     __CN1_DEBUG_INFO(1379);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -2948,7 +2948,7 @@ void __STATIC_INITIALIZER_com_codename1_ui_SideMenuBar_10(CODENAME_ONE_THREAD_ST
         return;
     }
 
-    class__com_codename1_ui_SideMenuBar_10.vtable = malloc(sizeof(void*) *405);
+    class__com_codename1_ui_SideMenuBar_10.vtable = malloc(sizeof(void*) *407);
     __INIT_VTABLE_com_codename1_ui_SideMenuBar_10(threadStateData, class__com_codename1_ui_SideMenuBar_10.vtable);
     class__com_codename1_ui_SideMenuBar_10.initialized = JAVA_TRUE;
 monitorExit(threadStateData, (JAVA_OBJECT)&class__com_codename1_ui_SideMenuBar_10);

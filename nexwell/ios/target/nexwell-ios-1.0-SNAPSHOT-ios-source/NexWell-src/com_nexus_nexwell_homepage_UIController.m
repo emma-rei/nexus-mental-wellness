@@ -6,7 +6,7 @@
 #include "com_codename1_ui_layouts_BorderLayout.h"
 #include "com_codename1_ui_plaf_Style.h"
 #include "com_codename1_ui_util_UITimer.h"
-#include "com_nexus_nexwell_forms_LoginForm.h"
+#include "com_nexus_nexwell_forms_MainForm.h"
 #include "com_nexus_nexwell_homepage_UIController.h"
 #include "com_nexus_nexwell_homepage_UIController__Lambda_1.h"
 #include "java_lang_Integer.h"
@@ -106,10 +106,10 @@ JAVA_VOID com_nexus_nexwell_homepage_UIController_showHomePageForm__(CODENAME_ON
     __STATIC_INITIALIZER_com_nexus_nexwell_homepage_UIController(threadStateData);
     DEFINE_METHOD_STACK(2, 0, 0, 10186, 10192);
     __CN1_DEBUG_INFO(38);
-    PUSH_POINTER(__NEW_com_nexus_nexwell_forms_LoginForm(threadStateData)); /* NEW */
+    PUSH_POINTER(__NEW_com_nexus_nexwell_forms_MainForm(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    com_nexus_nexwell_forms_LoginForm___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    virtual_com_nexus_nexwell_forms_LoginForm_show__(threadStateData, SP[-1].data.o);     SP -= 1;
+    com_nexus_nexwell_forms_MainForm___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    virtual_com_nexus_nexwell_forms_MainForm_show__(threadStateData, SP[-1].data.o);     SP -= 1;
     __CN1_DEBUG_INFO(39);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -129,12 +129,12 @@ JAVA_VOID com_nexus_nexwell_homepage_UIController_lambda$showSplashScreen$0___co
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(25);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L579447973;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1160487387;
     __CN1_DEBUG_INFO(26);
     com_nexus_nexwell_homepage_UIController_showHomePageForm__(threadStateData); 
-    goto label_L1990421361;
+    goto label_L579447973;
 
-label_L579447973:
+label_L1160487387:
     __CN1_DEBUG_INFO(30);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Label_getSelectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -146,7 +146,7 @@ label_L579447973:
     __CN1_DEBUG_INFO(31);
     virtual_com_codename1_ui_Label_repaint__(threadStateData, locals[1].data.o); 
 
-label_L1990421361:
+label_L579447973:
     __CN1_DEBUG_INFO(34);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
