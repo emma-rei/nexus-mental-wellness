@@ -39,7 +39,8 @@ public class PomodoroForm extends Form {
         
         SpanLabel stateLabel = new SpanLabel("", "WhiteText");
 
-        pomodoro = new Pomodoro(workTime, breakTime);
+        pomodoro = new Pomodoro(workTime, breakTime, this);
+        
         RadioButton play = new RadioButton("", Colors.PLAY);
         Colors.CustomButtonStyle(play);
         RadioButton pause = new RadioButton("", Colors.PAUSE);
@@ -90,7 +91,7 @@ public class PomodoroForm extends Form {
             }
         });
 
-        loop.schedule((int) ((workTime + breakTime) * 1000), true, this);
+        loop.schedule(1000, true, this);
     }
     
     

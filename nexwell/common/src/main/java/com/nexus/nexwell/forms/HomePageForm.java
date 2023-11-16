@@ -86,7 +86,6 @@ public class HomePageForm extends Form {
         
         String[] containerUIIDS = {"PeachContainer", "BlueContainer", "GreenContainer", "YellowContainer"};
         int[] colorset = {Colors.PEACH, Colors.BLUE, Colors.LIGHT_GREEN, Colors.DARK};
-        btn3.addActionListener(e -> new BreathingTimer(null).show());
         btn1.addActionListener(e->{
             int rnd = new Random().nextInt(containerUIIDS.length);
             ct.setUIID(containerUIIDS[rnd]);
@@ -94,7 +93,8 @@ public class HomePageForm extends Form {
             t.setBorder(RoundRectBorder.create().shadowColor(colorset[rnd]));
             t.setPadding(3,2,2,2);
         });
-        
+        btn2.addActionListener(e -> new PomodoroTimer(null).show());
+        btn3.addActionListener(e -> new BreathingTimer(null).show());
         Container cnt = FlowLayout.encloseCenter(btn1, btn2, btn3);
         
         add(ct);
@@ -225,7 +225,7 @@ public class HomePageForm extends Form {
             cnt.setScrollableY(true);
 
             
-            //cnt.add(new Pomodoro(60, 60, hi));
+            cnt.add(new PomodoroForm(60, 60));
             
             
         }
