@@ -26,12 +26,10 @@ public class Pomodoro {
      * 
      * @param workTime work phase duration in seconds
      * @param breakTime break time duration in seconds
-     * @param form form to return to when back button is pressed
      */
-    public Pomodoro(int workTime, int breakTime, Form form) {
+    public Pomodoro(int workTime, int breakTime) {
         this.workTime = workTime;
         this.breakTime = breakTime;
-        this.form = form;
         
         workTimer = new UITimer(() -> {
             if (isRunning) {
