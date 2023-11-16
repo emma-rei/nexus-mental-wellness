@@ -385,7 +385,7 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm___INIT_____int(CODENAME_ONE_THR
     __CN1_DEBUG_INFO(36);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10486));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10486), STRING_FROM_CONSTANT_POOL_OFFSET(10344));     SP -= 1;
     BC_ASTORE(6);
     __CN1_DEBUG_INFO(37);
     BC_ALOAD(6);
@@ -402,7 +402,7 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm___INIT_____int(CODENAME_ONE_THR
     __CN1_DEBUG_INFO(41);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10487));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10487), STRING_FROM_CONSTANT_POOL_OFFSET(10344));     SP -= 1;
     BC_ASTORE(8);
     __CN1_DEBUG_INFO(42);
     BC_ALOAD(8);
@@ -411,7 +411,7 @@ JAVA_VOID com_nexus_nexwell_games_GameOfLifeForm___INIT_____int(CODENAME_ONE_THR
     __CN1_DEBUG_INFO(44);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(136));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(136), STRING_FROM_CONSTANT_POOL_OFFSET(10344));     SP -= 1;
     BC_ASTORE(9);
     __CN1_DEBUG_INFO(45);
     BC_ALOAD(9);
