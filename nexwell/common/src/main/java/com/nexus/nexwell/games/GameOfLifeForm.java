@@ -33,15 +33,15 @@ public class GameOfLifeForm extends Form {
         addComponent(BorderLayout.CENTER, centerContainer);
 
         Container buttonContainer = new Container(new FlowLayout(RIGHT));
-        Button startButton = new Button("Start");
+        Button startButton = new Button("Start", "SpanLabel");
         startButton.addActionListener(e -> startSimulation());
 
         Container bottomContainer = new Container(new BorderLayout());
 
-        Button stopButton = new Button("Stop");
+        Button stopButton = new Button("Stop", "SpanLabel");
         stopButton.addActionListener(e -> stopSimulation());
 
-        Button clearButton = new Button("Clear");
+        Button clearButton = new Button("Clear", "SpanLabel");
         clearButton.addActionListener(e -> clearCells());
 
         buttonContainer.add(startButton);
@@ -51,7 +51,7 @@ public class GameOfLifeForm extends Form {
         intervalSlider = new Slider();
         
         intervalSlider.setEditable(true);
-        intervalSlider.setMinValue(100); // Minimum interval (in milliseconds)
+        intervalSlider.setMinValue(50); // Minimum interval (in milliseconds)
         intervalSlider.setMaxValue(999); // Maximum interval (in milliseconds)
         intervalSlider.setProgress(200); // Default interval (500 milliseconds)
         intervalSlider.addDataChangedListener((a, b) -> updateSimulationInterval());
