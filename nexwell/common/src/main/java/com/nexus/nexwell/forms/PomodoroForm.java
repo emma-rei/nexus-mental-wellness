@@ -30,7 +30,7 @@ public class PomodoroForm extends Form {
         getToolbar().setVisible(false);
         setLayout(new BoxLayout(BoxLayout.Y_AXIS));
         final CircleProgress p = new CircleProgress();
-        p.setRenderPercentageOnTop(false);
+        
 
         p.setRenderValueOnTop(true);
         p.setClockwise(true);

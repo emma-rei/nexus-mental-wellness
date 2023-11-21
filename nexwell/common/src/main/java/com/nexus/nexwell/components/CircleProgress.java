@@ -21,7 +21,7 @@ import com.codename1.ui.plaf.Style;
 
 public class CircleProgress extends BaseRoundProgress {
 
-    private int arcWidth = 80;
+    private int arcWidth =40;
     
     private boolean clockwise = false;
     

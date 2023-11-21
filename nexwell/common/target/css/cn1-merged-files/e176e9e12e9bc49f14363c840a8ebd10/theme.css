@@ -68,9 +68,10 @@ circle{
 }
 /** Style for App Title Bar Text */
 Title {
-    color: lightgrey;
+    color: #0894e6;
     font-family: "native:MainBold";
     font-size: 8mm;
+    margin: 1mm 4mm 1mm 3mm;
 }
 
 /** Style for Dialog body */
@@ -118,7 +119,7 @@ SpanLabel{
     
     font-family: "native:MainRegular";
     color: white;
-    background: linear-gradient(to left, #6ddaf2, #57997a);
+    background: linear-gradient(to right, #97CBCD, #00A3CC);
     text-align: center;
     margin:3mm 3mm 3mm 3mm;
     padding:4mm 2mm 3mm 3mm;
@@ -176,9 +177,18 @@ BlueButtonOnBlueBackground{
     cn1-derive: BaseButton;
 }
 BlueButton{
-    background: #3f92c4;
+    background: #5dafdf;
     font-family: "native:MainBold";
     cn1-derive: BaseButton;
+}
+CyanButton {
+    color: white;
+    background: #2beef1;
+    font-family: "native:MainLight";
+    font-size: 3mm;
+    margin: 1mm;
+    padding: 3mm;
+    border-radius: 100px;
 }
 BlueText{
     cn1-derive: BaseButton;
@@ -265,12 +275,10 @@ Label{
 
 Quote{
     color: white;
-    padding: 2px;
-    margin: 2px;
-    font-family: "native:ItalicThin";
-    font-size: 3mm;
-    background: transparent;
-    border: none;
+    padding: 1mm 1mm 1mm 1mm;
+    font-family: "native:MainBold";
+    font-size: 4.5mm;
+    
     
 }
 Task{

@@ -54,7 +54,7 @@ public class HomePageForm extends Form {
         Style t = bookContainer.getAllStyles();
         
         t.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
-        t.setPadding(3,2,2,2);
+        t.setPadding(3,2,5,5);
         
         Style btnStyle = booking.getAllStyles();
         btnStyle.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
@@ -69,19 +69,19 @@ public class HomePageForm extends Form {
         
         // Quote generation and pass it to richtextview
         String q = ContentFeed.getRandomQuote();
-        RichTextView r = new RichTextView(q); //RichtextView is also a type of Container
+        RichTextView r = new RichTextView("<b>"+q+"</b>"); //RichtextView is also a type of Container
         r.setUIID("WhiteText");
-        Label lbl = new Label(q, "WhiteText");
+        Label lbl = new Label(q, "Quote");
         Container ct = FlowLayout.encloseIn(
-                new Label("Quote of the day", "WhiteText"),
-                new Label(q, "WhiteText")
+                new Label("Quote of the day", "Quote"),
+                r
                 
         );
         ct.setUIID("SpanLabel");
         Style s = ct.getAllStyles();
         
         s.setBorder(RoundRectBorder.create().shadowColor(Colors.BLUE));
-        s.setPadding(5,5,5,5);
+        s.setPadding(4,4,5,5);
         s.setTextDecoration(Style.BACKGROUND_IMAGE_TILE_VERTICAL_ALIGN_CENTER);
         
         String[] containerUIIDS = {"PeachContainer", "BlueContainer", "GreenContainer", "YellowContainer"};
@@ -96,7 +96,12 @@ public class HomePageForm extends Form {
         btn2.addActionListener(e -> new PomodoroTimer(null).show());
         btn3.addActionListener(e -> new BreathingTimer(null).show());
         Container cnt = FlowLayout.encloseCenter(btn1, btn2, btn3);
-        
+        Container threetopButtons = new Container(BoxLayout.x());
+        Button selectImage = new Button("Select Image", "CyanButton");
+        Button viewImage = new Button("View Image", "CyanButton");
+        Button reminders = new Button("Reminders", "CyanButton");
+        threetopButtons.add(selectImage).add(viewImage).add(reminders);
+        //add(threetopButtons);
         add(ct);
         add(bookContainer);
         add(cnt);

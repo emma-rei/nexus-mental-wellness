@@ -12,6 +12,7 @@ import com.codename1.ui.*;
 import static com.codename1.ui.CN.getCurrentForm;
 import com.codename1.ui.Form;
 import com.codename1.ui.layouts.BorderLayout;
+import com.codename1.ui.layouts.FlowLayout;
 import com.nexus.nexwell.components.Colors;
 import com.codename1.ui.plaf.RoundRectBorder;
 import com.nexus.nexwell.games.*;
@@ -28,7 +29,7 @@ public class GamesContainer extends Form{
         super("");
         //set the icon of the page
         getToolbar().addMaterialCommandToRightBar("",FontImage.MATERIAL_GAMES, e->{});
-        setLayout(new GridLayout(2,2));
+        setLayout(new BoxLayout(BoxLayout.Y_AXIS));
         getToolbar().setUIID("GamesToolbar");
         String str = "Games";
         setTitle(str);

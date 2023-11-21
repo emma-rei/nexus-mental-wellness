@@ -25,7 +25,7 @@ import java.io.IOException;
 
 public class RichTextView extends Container {
     private String text;
-    private float fontSize = 2.6f;
+    private float fontSize = 3.45f;
     private EventDispatcher listeners = new EventDispatcher();
 
     private Font currentFont;
