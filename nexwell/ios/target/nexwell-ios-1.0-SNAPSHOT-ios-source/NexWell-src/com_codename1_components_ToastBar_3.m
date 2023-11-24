@@ -52,7 +52,7 @@ JAVA_OBJECT __NEW_com_codename1_components_ToastBar_3(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_components_ToastBar_3___INIT_____com_codename1_components_ToastBar_com_codename1_ui_Container_com_codename1_ui_Container(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10577, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10582, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -70,7 +70,7 @@ JAVA_VOID com_codename1_components_ToastBar_3___INIT_____com_codename1_component
 
 
 JAVA_VOID com_codename1_components_ToastBar_3_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10577, 203);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10582, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(811);
     /* CustomInvoke */virtual_com_codename1_ui_Container_removeComponent___com_codename1_ui_Component(threadStateData, get_field_com_codename1_components_ToastBar_3_val_parent(__cn1ThisObject), get_field_com_codename1_components_ToastBar_3_val_layered(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(812);

@@ -128,7 +128,7 @@ JAVA_OBJECT __NEW_com_codename1_components_ToastBar_Status(CODENAME_ONE_THREAD_S
 
 
 JAVA_VOID com_codename1_components_ToastBar_Status___INIT_____com_codename1_components_ToastBar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10560, 201);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10565, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(290);
@@ -160,28 +160,28 @@ JAVA_VOID com_codename1_components_ToastBar_Status___INIT_____com_codename1_comp
 
 JAVA_VOID com_codename1_components_ToastBar_Status_setExpires___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* millis */
-    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10560, 8534);
+    DEFINE_INSTANCE_METHOD_STACK(4, 2, 0, 10565, 8534);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(300);
-    if (ilocals_1_>=0) /* IFGE CustomJump */ goto label_L1779887629;
-    if (get_field_com_codename1_components_ToastBar_Status_timer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1779887629;
+    if (ilocals_1_>=0) /* IFGE CustomJump */ goto label_L1149706788;
+    if (get_field_com_codename1_components_ToastBar_Status_timer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1149706788;
     __CN1_DEBUG_INFO(301);
     virtual_java_util_Timer_cancel__(threadStateData, get_field_com_codename1_components_ToastBar_Status_timer(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(302);
     set_field_com_codename1_components_ToastBar_Status_timer(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
-    goto label_L340058975;
+    goto label_L1321102372;
 
-label_L1779887629:
+label_L1149706788:
     __CN1_DEBUG_INFO(303);
-    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L340058975;
+    if (ilocals_1_<=0) /* IFLE CustomJump */ goto label_L1321102372;
     __CN1_DEBUG_INFO(304);
-    if (get_field_com_codename1_components_ToastBar_Status_timer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1062613911;
+    if (get_field_com_codename1_components_ToastBar_Status_timer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1747961620;
     __CN1_DEBUG_INFO(305);
     virtual_java_util_Timer_cancel__(threadStateData, get_field_com_codename1_components_ToastBar_Status_timer(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(306);
     set_field_com_codename1_components_ToastBar_Status_timer(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L1062613911:
+label_L1747961620:
     __CN1_DEBUG_INFO(308);
     BC_ALOAD(0);
     PUSH_POINTER(__NEW_java_util_Timer(threadStateData)); /* NEW */
@@ -200,7 +200,7 @@ label_L1062613911:
     SP[-1].data.l = SP[-1].data.i; /* I2L */
     virtual_java_util_Timer_schedule___java_util_TimerTask_long(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.l);     SP-= 3;
 
-label_L340058975:
+label_L1321102372:
     __CN1_DEBUG_INFO(323);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -208,7 +208,7 @@ label_L340058975:
 
 
 JAVA_VOID com_codename1_components_ToastBar_Status_setMessage___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10560, 10561);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10565, 10566);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(330);
@@ -226,7 +226,7 @@ JAVA_VOID com_codename1_components_ToastBar_Status_setListener___com_codename1_u
 
 JAVA_VOID com_codename1_components_ToastBar_Status_setProgress___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* progress */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10560, 8810);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10565, 8810);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(349);
     set_field_com_codename1_components_ToastBar_Status_progress(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -239,18 +239,18 @@ JAVA_VOID com_codename1_components_ToastBar_Status_setProgress___int(CODENAME_ON
 
 
 JAVA_VOID com_codename1_components_ToastBar_Status_show__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10560, 2927);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10565, 2927);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(363);
-    if (get_field_com_codename1_components_ToastBar_Status_showTimer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L646898461;
+    if (get_field_com_codename1_components_ToastBar_Status_showTimer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L599403550;
     __CN1_DEBUG_INFO(364);
     virtual_java_util_Timer_cancel__(threadStateData, get_field_com_codename1_components_ToastBar_Status_showTimer(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(365);
     set_field_com_codename1_components_ToastBar_Status_showTimer(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L646898461:
+label_L599403550:
     __CN1_DEBUG_INFO(367);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */com_codename1_components_ToastBar_access$400___com_codename1_components_ToastBar_R_com_codename1_components_ToastBar_ToastBarComponent(threadStateData, get_field_com_codename1_components_ToastBar_Status_this_0(__cn1ThisObject));locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(368);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2075461447;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1590803535;
     __CN1_DEBUG_INFO(369);
     /* CustomInvoke */com_codename1_components_ToastBar_ToastBarComponent_access$502___com_codename1_components_ToastBar_ToastBarComponent_com_codename1_components_ToastBar_Status_R_com_codename1_components_ToastBar_Status(threadStateData, locals[1].data.o, __cn1ThisObject); 
     __CN1_DEBUG_INFO(370);
@@ -258,7 +258,7 @@ label_L646898461:
     __CN1_DEBUG_INFO(371);
     /* CustomInvoke */virtual_com_codename1_components_ToastBar_setVisible___boolean(threadStateData, get_field_com_codename1_components_ToastBar_Status_this_0(__cn1ThisObject), 1 /* ICONST_1 */); 
 
-label_L2075461447:
+label_L1590803535:
     __CN1_DEBUG_INFO(374);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -271,23 +271,23 @@ JAVA_VOID com_codename1_components_ToastBar_Status_showDelayed___int(CODENAME_ON
 
 
 JAVA_VOID com_codename1_components_ToastBar_Status_clear__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10560, 1228);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10565, 1228);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(408);
-    if (get_field_com_codename1_components_ToastBar_Status_showTimer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1222135157;
+    if (get_field_com_codename1_components_ToastBar_Status_showTimer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1672688893;
     __CN1_DEBUG_INFO(409);
     virtual_java_util_Timer_cancel__(threadStateData, get_field_com_codename1_components_ToastBar_Status_showTimer(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(410);
     set_field_com_codename1_components_ToastBar_Status_showTimer(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L1222135157:
+label_L1672688893:
     __CN1_DEBUG_INFO(412);
-    if (get_field_com_codename1_components_ToastBar_Status_timer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1176241522;
+    if (get_field_com_codename1_components_ToastBar_Status_timer(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1966229752;
     __CN1_DEBUG_INFO(413);
     virtual_java_util_Timer_cancel__(threadStateData, get_field_com_codename1_components_ToastBar_Status_timer(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(414);
     set_field_com_codename1_components_ToastBar_Status_timer(threadStateData, JAVA_NULL /* ACONST_NULL */, __cn1ThisObject);
 
-label_L1176241522:
+label_L1966229752:
     __CN1_DEBUG_INFO(416);
     /* CustomInvoke */com_codename1_components_ToastBar_access$700___com_codename1_components_ToastBar_com_codename1_components_ToastBar_Status(threadStateData, get_field_com_codename1_components_ToastBar_Status_this_0(__cn1ThisObject), __cn1ThisObject); 
     __CN1_DEBUG_INFO(417);
@@ -297,7 +297,7 @@ label_L1176241522:
 
 
 JAVA_OBJECT com_codename1_components_ToastBar_Status_getMessage___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10560, 911);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10565, 911);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(424);
 
 {
@@ -308,7 +308,7 @@ JAVA_OBJECT com_codename1_components_ToastBar_Status_getMessage___R_java_lang_St
 
 
 JAVA_OBJECT com_codename1_components_ToastBar_Status_getListener___R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10560, 8988);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10565, 8988);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(433);
 
 {
@@ -319,7 +319,7 @@ JAVA_OBJECT com_codename1_components_ToastBar_Status_getListener___R_com_codenam
 
 
 JAVA_INT com_codename1_components_ToastBar_Status_getProgress___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10560, 3052);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10565, 3052);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(443);
 
 {
@@ -330,7 +330,7 @@ JAVA_INT com_codename1_components_ToastBar_Status_getProgress___R_int(CODENAME_O
 
 
 JAVA_OBJECT com_codename1_components_ToastBar_Status_getIcon___R_com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10560, 3064);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10565, 3064);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(451);
 
 {
@@ -341,7 +341,7 @@ JAVA_OBJECT com_codename1_components_ToastBar_Status_getIcon___R_com_codename1_u
 
 
 JAVA_VOID com_codename1_components_ToastBar_Status_setIcon___com_codename1_ui_Image(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10560, 3065);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10565, 3065);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(459);
@@ -353,7 +353,7 @@ JAVA_VOID com_codename1_components_ToastBar_Status_setIcon___com_codename1_ui_Im
 
 
 JAVA_BOOLEAN com_codename1_components_ToastBar_Status_isShowProgressIndicator___R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10560, 10564);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10565, 10569);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(466);
 
 {
@@ -369,7 +369,7 @@ JAVA_VOID com_codename1_components_ToastBar_Status_setShowProgressIndicator___bo
 
 
 JAVA_OBJECT com_codename1_components_ToastBar_Status_getMessageUIID___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10560, 10566);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10565, 10571);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(482);
 
 {
@@ -385,7 +385,7 @@ JAVA_VOID com_codename1_components_ToastBar_Status_setMessageUIID___java_lang_St
 
 
 JAVA_OBJECT com_codename1_components_ToastBar_Status_getUiid___R_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10560, 10568);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10565, 10573);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(499);
 
 {
@@ -402,7 +402,7 @@ JAVA_VOID com_codename1_components_ToastBar_Status_setUiid___java_lang_String(CO
 
 JAVA_OBJECT com_codename1_components_ToastBar_Status_access$202___com_codename1_components_ToastBar_Status_java_util_Timer_R_java_util_Timer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_components_ToastBar_Status(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 10560, 808);
+    DEFINE_METHOD_STACK(3, 2, 0, 10565, 808);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -430,7 +430,7 @@ JAVA_OBJECT com_codename1_components_ToastBar_Status_access$602___com_codename1_
 
 JAVA_BOOLEAN com_codename1_components_ToastBar_Status_access$800___com_codename1_components_ToastBar_Status_R_boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_components_ToastBar_Status(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10560, 807);
+    DEFINE_METHOD_STACK(1, 1, 0, 10565, 807);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(231);
@@ -443,7 +443,7 @@ JAVA_BOOLEAN com_codename1_components_ToastBar_Status_access$800___com_codename1
 
 
 JAVA_VOID com_codename1_components_ToastBar_Status___INIT_____com_codename1_components_ToastBar_com_codename1_components_ToastBar_1(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10560, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10565, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -457,7 +457,7 @@ JAVA_VOID com_codename1_components_ToastBar_Status___INIT_____com_codename1_comp
 
 JAVA_OBJECT com_codename1_components_ToastBar_Status_access$200___com_codename1_components_ToastBar_Status_R_java_util_Timer(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_components_ToastBar_Status(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10560, 799);
+    DEFINE_METHOD_STACK(1, 1, 0, 10565, 799);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(231);

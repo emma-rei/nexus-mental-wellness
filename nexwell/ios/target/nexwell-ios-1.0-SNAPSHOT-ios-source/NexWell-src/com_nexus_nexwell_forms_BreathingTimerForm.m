@@ -13,7 +13,7 @@
 #include "com_codename1_ui_plaf_Style.h"
 #include "com_codename1_ui_util_UITimer.h"
 #include "com_nexus_nexwell_components_BreathingTimer.h"
-#include "com_nexus_nexwell_components_CircleProgress.h"
+#include "com_nexus_nexwell_components_CircleFilledProgress.h"
 #include "com_nexus_nexwell_components_Colors.h"
 #include "com_nexus_nexwell_forms_BreathingTimerForm.h"
 #include "com_nexus_nexwell_forms_BreathingTimerForm__Lambda_1.h"
@@ -281,7 +281,7 @@ com_nexus_nexwell_forms_BreathingTimerForm___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(6, 17, 0, 10632, 201);
+    DEFINE_INSTANCE_METHOD_STACK(6, 17, 0, 10645, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(27);
     BC_ALOAD(0);
     /* LDC: ''*/
@@ -309,20 +309,16 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm___INIT____(CODENAME_ONE_THR
     /* CustomInvoke */com_codename1_ui_layouts_BoxLayout___INIT_____int(threadStateData, SP[-1].data.o, 2 /* ICONST_2 */);     SP -= 1;
     virtual_com_nexus_nexwell_forms_BreathingTimerForm_setLayout___com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(32);
-    PUSH_POINTER(__NEW_com_nexus_nexwell_components_CircleProgress(threadStateData)); /* NEW */
+    PUSH_POINTER(__NEW_com_nexus_nexwell_components_CircleFilledProgress(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    com_nexus_nexwell_components_CircleProgress___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    com_nexus_nexwell_components_CircleFilledProgress___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(33);
-    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleProgress_setRenderPercentageOnTop___boolean(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
+    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleFilledProgress_setRenderPercentageOnTop___boolean(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(35);
-    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleProgress_setRenderValueOnTop___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
-    __CN1_DEBUG_INFO(36);
-    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleProgress_setClockwise___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
-    __CN1_DEBUG_INFO(37);
-    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleProgress_setStartAngle___int(threadStateData, locals[1].data.o, 3 /* ICONST_3 */); 
+    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleFilledProgress_setRenderValueOnTop___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(38);
-    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleProgress_setAutoSizeMode___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
+    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleFilledProgress_setAutoSizeMode___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(47);
     PUSH_POINTER(__NEW_com_codename1_components_SpanLabel(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -407,10 +403,10 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm___INIT____(CODENAME_ONE_THR
     virtual_com_codename1_ui_RadioButton_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(91);
     BC_ALOAD(7);
-    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4_lambdaFactory$___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleProgress_R_com_codename1_ui_events_ActionListener(threadStateData, locals[4].data.o, locals[1].data.o));
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4_lambdaFactory$___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleFilledProgress_R_com_codename1_ui_events_ActionListener(threadStateData, locals[4].data.o, locals[1].data.o));
     virtual_com_codename1_ui_RadioButton_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(96);
-    { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_components_CircleProgress_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[1].data.o);
+    { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_components_CircleFilledProgress_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setMargin___int_int_int_int(threadStateData, SP[-1].data.o, 100, 100, 0 /* ICONST_0 */, 0 /* ICONST_0 */);     SP -= 1;
     __CN1_DEBUG_INFO(97);
@@ -433,11 +429,11 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm___INIT____(CODENAME_ONE_THR
     com_codename1_ui_ButtonGroup___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(10);
     __CN1_DEBUG_INFO(104);
-    /* VarOp.assignFrom */ locals[11].data.o = /* CustomInvoke */com_codename1_ui_RadioButton_createToggle___java_lang_String_com_codename1_ui_ButtonGroup_R_com_codename1_ui_RadioButton(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10633), locals[10].data.o);locals[11].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(106);
-    /* VarOp.assignFrom */ locals[12].data.o = /* CustomInvoke */com_codename1_ui_RadioButton_createToggle___java_lang_String_com_codename1_ui_ButtonGroup_R_com_codename1_ui_RadioButton(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10634), locals[10].data.o);locals[12].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(108);
-    /* VarOp.assignFrom */ locals[13].data.o = /* CustomInvoke */com_codename1_ui_RadioButton_createToggle___java_lang_String_com_codename1_ui_ButtonGroup_R_com_codename1_ui_RadioButton(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10635), locals[10].data.o);locals[13].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(110);
-    /* VarOp.assignFrom */ locals[14].data.o = /* CustomInvoke */com_codename1_ui_RadioButton_createToggle___java_lang_String_com_codename1_ui_ButtonGroup_R_com_codename1_ui_RadioButton(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10636), locals[10].data.o);locals[14].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(112);
-    /* VarOp.assignFrom */ locals[15].data.o = /* CustomInvoke */com_codename1_ui_RadioButton_createToggle___java_lang_String_com_codename1_ui_ButtonGroup_R_com_codename1_ui_RadioButton(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10637), locals[10].data.o);locals[15].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(115);
+    /* VarOp.assignFrom */ locals[11].data.o = /* CustomInvoke */com_codename1_ui_RadioButton_createToggle___java_lang_String_com_codename1_ui_ButtonGroup_R_com_codename1_ui_RadioButton(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10646), locals[10].data.o);locals[11].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(106);
+    /* VarOp.assignFrom */ locals[12].data.o = /* CustomInvoke */com_codename1_ui_RadioButton_createToggle___java_lang_String_com_codename1_ui_ButtonGroup_R_com_codename1_ui_RadioButton(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10647), locals[10].data.o);locals[12].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(108);
+    /* VarOp.assignFrom */ locals[13].data.o = /* CustomInvoke */com_codename1_ui_RadioButton_createToggle___java_lang_String_com_codename1_ui_ButtonGroup_R_com_codename1_ui_RadioButton(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10648), locals[10].data.o);locals[13].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(110);
+    /* VarOp.assignFrom */ locals[14].data.o = /* CustomInvoke */com_codename1_ui_RadioButton_createToggle___java_lang_String_com_codename1_ui_ButtonGroup_R_com_codename1_ui_RadioButton(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10649), locals[10].data.o);locals[14].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(112);
+    /* VarOp.assignFrom */ locals[15].data.o = /* CustomInvoke */com_codename1_ui_RadioButton_createToggle___java_lang_String_com_codename1_ui_ButtonGroup_R_com_codename1_ui_RadioButton(threadStateData, STRING_FROM_CONSTANT_POOL_OFFSET(10650), locals[10].data.o);locals[15].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(115);
     /* CustomInvoke */virtual_com_codename1_ui_RadioButton_setSelected___boolean(threadStateData, locals[11].data.o, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(118);
     BC_ALOAD(11);
@@ -516,7 +512,7 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm___INIT____(CODENAME_ONE_THR
     __CN1_DEBUG_INFO(147);
     PUSH_POINTER(__NEW_com_codename1_ui_util_UITimer(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_BreathingTimerForm__Lambda_10_lambdaFactory$___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleProgress_com_codename1_components_SpanLabel_com_codename1_components_SpanLabel_R_java_lang_Runnable(threadStateData, locals[4].data.o, locals[1].data.o, locals[3].data.o, locals[2].data.o));
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_BreathingTimerForm__Lambda_10_lambdaFactory$___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleFilledProgress_com_codename1_components_SpanLabel_com_codename1_components_SpanLabel_R_java_lang_Runnable(threadStateData, locals[4].data.o, locals[1].data.o, locals[3].data.o, locals[2].data.o));
     com_codename1_ui_util_UITimer___INIT_____java_lang_Runnable(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     BC_ASTORE(16);
     __CN1_DEBUG_INFO(178);
@@ -527,9 +523,9 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm___INIT____(CODENAME_ONE_THR
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$9___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleProgress_com_codename1_components_SpanLabel_com_codename1_components_SpanLabel(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
+JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$9___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleFilledProgress_com_codename1_components_SpanLabel_com_codename1_components_SpanLabel(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_BreathingTimerForm(threadStateData);
-    DEFINE_METHOD_STACK(5, 4, 0, 10632, 10638);
+    DEFINE_METHOD_STACK(5, 4, 0, 10645, 10651);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -541,7 +537,7 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$9___com_nexus_ne
     __CN1_DEBUG_INFO(148);
     if (get_field_com_nexus_nexwell_components_BreathingTimer_active(locals[0].data.o)!=0) /* IFNE CustomJump */ goto label_L1060042118;
     __CN1_DEBUG_INFO(149);
-    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleProgress_setProgress___int(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
+    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleFilledProgress_setProgress___int(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(150);
     set_field_com_nexus_nexwell_components_BreathingTimer_phase(threadStateData, 0 /* ICONST_0 */, locals[0].data.o);
     __CN1_DEBUG_INFO(151);
@@ -549,7 +545,7 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$9___com_nexus_ne
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10639));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10652));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_nexus_nexwell_components_BreathingTimer_cycles(locals[0].data.o));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -564,13 +560,13 @@ label_L1060042118:
     if (get_field_com_nexus_nexwell_components_BreathingTimer_phase(locals[0].data.o)!=0) /* IFNE CustomJump */ goto label_L1964847681;
     if (get_field_com_nexus_nexwell_components_BreathingTimer_active(locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1964847681;
     __CN1_DEBUG_INFO(157);
-    /* CustomInvoke */virtual_com_codename1_components_SpanLabel_setText___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10640)); 
+    /* CustomInvoke */virtual_com_codename1_components_SpanLabel_setText___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10653)); 
     __CN1_DEBUG_INFO(158);
     BC_ALOAD(2);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10639));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10652));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___int_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, get_field_com_nexus_nexwell_components_BreathingTimer_cycles(locals[0].data.o));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
@@ -578,7 +574,7 @@ label_L1060042118:
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_com_codename1_components_SpanLabel_setText___java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     __CN1_DEBUG_INFO(159);
-    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleProgress_setProgress___int(threadStateData, locals[1].data.o, ((JAVA_INT)((get_field_com_nexus_nexwell_components_BreathingTimer_seconds(locals[0].data.o) * 100.0) / 4.0))); 
+    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleFilledProgress_setProgress___int(threadStateData, locals[1].data.o, ((JAVA_INT)((get_field_com_nexus_nexwell_components_BreathingTimer_seconds(locals[0].data.o) * 100.0) / 4.0))); 
     goto label_L1992801971;
 
 label_L1964847681:
@@ -586,9 +582,9 @@ label_L1964847681:
     if (get_field_com_nexus_nexwell_components_BreathingTimer_phase(locals[0].data.o)!=1 /* ICONST_1 */) /* IF_ICMPNE CustomJump */ goto label_L1681094402;
     if (get_field_com_nexus_nexwell_components_BreathingTimer_active(locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1681094402;
     __CN1_DEBUG_INFO(164);
-    /* CustomInvoke */virtual_com_codename1_components_SpanLabel_setText___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10641)); 
+    /* CustomInvoke */virtual_com_codename1_components_SpanLabel_setText___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10654)); 
     __CN1_DEBUG_INFO(165);
-    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleProgress_setProgress___int(threadStateData, locals[1].data.o, ((JAVA_INT)((get_field_com_nexus_nexwell_components_BreathingTimer_seconds(locals[0].data.o) * 100.0) / 7.0))); 
+    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleFilledProgress_setProgress___int(threadStateData, locals[1].data.o, ((JAVA_INT)((get_field_com_nexus_nexwell_components_BreathingTimer_seconds(locals[0].data.o) * 100.0) / 7.0))); 
     goto label_L1992801971;
 
 label_L1681094402:
@@ -596,9 +592,9 @@ label_L1681094402:
     if (get_field_com_nexus_nexwell_components_BreathingTimer_phase(locals[0].data.o)!=2 /* ICONST_2 */) /* IF_ICMPNE CustomJump */ goto label_L1992801971;
     if (get_field_com_nexus_nexwell_components_BreathingTimer_active(locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1992801971;
     __CN1_DEBUG_INFO(170);
-    /* CustomInvoke */virtual_com_codename1_components_SpanLabel_setText___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10642)); 
+    /* CustomInvoke */virtual_com_codename1_components_SpanLabel_setText___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10655)); 
     __CN1_DEBUG_INFO(171);
-    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleProgress_setProgress___int(threadStateData, locals[1].data.o, ((JAVA_INT)((get_field_com_nexus_nexwell_components_BreathingTimer_seconds(locals[0].data.o) * 100.0) / 8.0))); 
+    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleFilledProgress_setProgress___int(threadStateData, locals[1].data.o, ((JAVA_INT)((get_field_com_nexus_nexwell_components_BreathingTimer_seconds(locals[0].data.o) * 100.0) / 8.0))); 
 
 label_L1992801971:
     __CN1_DEBUG_INFO(176);
@@ -609,7 +605,7 @@ label_L1992801971:
 
 JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$8___com_nexus_nexwell_components_BreathingTimer_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_BreathingTimerForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 10632, 10643);
+    DEFINE_METHOD_STACK(2, 2, 0, 10645, 10656);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -624,7 +620,7 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$8___com_nexus_ne
 
 JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$7___com_nexus_nexwell_components_BreathingTimer_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_BreathingTimerForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 10632, 10644);
+    DEFINE_METHOD_STACK(2, 2, 0, 10645, 10657);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -639,7 +635,7 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$7___com_nexus_ne
 
 JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$6___com_nexus_nexwell_components_BreathingTimer_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_BreathingTimerForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 10632, 10645);
+    DEFINE_METHOD_STACK(2, 2, 0, 10645, 10658);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -654,7 +650,7 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$6___com_nexus_ne
 
 JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$5___com_nexus_nexwell_components_BreathingTimer_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_BreathingTimerForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 10632, 10646);
+    DEFINE_METHOD_STACK(2, 2, 0, 10645, 10659);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -669,7 +665,7 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$5___com_nexus_ne
 
 JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$4___com_nexus_nexwell_components_BreathingTimer_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_BreathingTimerForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 10632, 10494);
+    DEFINE_METHOD_STACK(2, 2, 0, 10645, 10499);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -682,9 +678,9 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$4___com_nexus_ne
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$3___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleProgress_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
+JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$3___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleFilledProgress_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_BreathingTimerForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 3, 0, 10632, 10495);
+    DEFINE_METHOD_STACK(2, 3, 0, 10645, 10500);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -694,7 +690,7 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$3___com_nexus_ne
     __CN1_DEBUG_INFO(92);
     virtual_com_nexus_nexwell_components_BreathingTimer_reset__(threadStateData, locals[0].data.o); 
     __CN1_DEBUG_INFO(93);
-    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleProgress_setProgress___int(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
+    /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleFilledProgress_setProgress___int(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(94);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -703,7 +699,7 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$3___com_nexus_ne
 
 JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$2___com_nexus_nexwell_components_BreathingTimer_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_BreathingTimerForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10632, 10381);
+    DEFINE_METHOD_STACK(1, 2, 0, 10645, 10386);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -718,7 +714,7 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$2___com_nexus_ne
 
 JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$1___com_nexus_nexwell_components_BreathingTimer_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_BreathingTimerForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10632, 10352);
+    DEFINE_METHOD_STACK(1, 2, 0, 10645, 10352);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -733,7 +729,7 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$1___com_nexus_ne
 
 JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$0___com_codename1_ui_Button_com_nexus_nexwell_components_BreathingTimer_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_BreathingTimerForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 3, 0, 10632, 10353);
+    DEFINE_METHOD_STACK(2, 3, 0, 10645, 10353);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

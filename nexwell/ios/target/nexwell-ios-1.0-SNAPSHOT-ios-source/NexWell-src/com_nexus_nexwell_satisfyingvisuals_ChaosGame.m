@@ -320,7 +320,7 @@ com_nexus_nexwell_satisfyingvisuals_ChaosGame___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(10, 5, 0, 10587, 201);
+    DEFINE_INSTANCE_METHOD_STACK(10, 5, 0, 10592, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(27);
     /* CustomInvoke */com_codename1_ui_Form___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(219)); 
     __CN1_DEBUG_INFO(17);
@@ -499,7 +499,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame___INIT____(CODENAME_ONE_
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(4);
     __CN1_DEBUG_INFO(48);
-    /* CustomInvoke */virtual_com_codename1_components_ToastBar_Status_setMessage___java_lang_String(threadStateData, locals[4].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10535)); 
+    /* CustomInvoke */virtual_com_codename1_components_ToastBar_Status_setMessage___java_lang_String(threadStateData, locals[4].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10540)); 
     __CN1_DEBUG_INFO(49);
     /* CustomInvoke */virtual_com_codename1_components_ToastBar_Status_setExpires___int(threadStateData, locals[4].data.o, 1000); 
     __CN1_DEBUG_INFO(50);
@@ -518,7 +518,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame_paint___com_codename1_ui
     volatile JAVA_INT ilocals_4_ = 0; /* v4 */
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     volatile JAVA_INT ilocals_7_ = 0; /* v7 */
-    DEFINE_INSTANCE_METHOD_STACK(7, 9, 0, 10587, 2355);
+    DEFINE_INSTANCE_METHOD_STACK(7, 9, 0, 10592, 2355);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(56);
@@ -552,21 +552,21 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame_paint___com_codename1_ui
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     SP--; /* POP */
 
-label_L407148497:
+label_L1107204185:
     __CN1_DEBUG_INFO(65);
     { JAVA_INT tmpResult = virtual_java_util_LinkedList_size___R_int(threadStateData, get_field_com_nexus_nexwell_satisfyingvisuals_ChaosGame_dots(__cn1ThisObject));
     PUSH_INT(tmpResult); }
     PUSH_INT(10000);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1990421361;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L901689694;
     __CN1_DEBUG_INFO(66);
     virtual_java_util_LinkedList_removeFirst___R_java_lang_Object(threadStateData, get_field_com_nexus_nexwell_satisfyingvisuals_ChaosGame_dots(__cn1ThisObject)); 
-    goto label_L407148497;
+    goto label_L1107204185;
 
-label_L1990421361:
+label_L901689694:
     __CN1_DEBUG_INFO(69);
     /* VarOp.assignFrom */ locals[5].data.o = virtual_java_util_LinkedList_iterator___R_java_util_Iterator(threadStateData, get_field_com_nexus_nexwell_satisfyingvisuals_ChaosGame_dots(__cn1ThisObject));locals[5].type=CN1_TYPE_OBJECT;
-label_L1878700101:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[5].data.o)==0) /* IFEQ CustomJump */ goto label_L16373883;
+label_L1818747191:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[5].data.o)==0) /* IFEQ CustomJump */ goto label_L1523084197;
     /* VarOp.assignFrom */ locals[6].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[5].data.o);locals[6].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(70);
     BC_ALOAD(1);
     BC_ALOAD(6);
@@ -602,9 +602,9 @@ label_L1878700101:
     __CN1_DEBUG_INFO(71);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillRoundRect___int_int_int_int_int_int(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_INT(locals[6].data.o, 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_INT(locals[6].data.o, 1 /* ICONST_1 */), 10, 10, 10, 10); 
     __CN1_DEBUG_INFO(72);
-    goto label_L1878700101;
+    goto label_L1818747191;
 
-label_L16373883:
+label_L1523084197:
     __CN1_DEBUG_INFO(74);
     CN1_SET_ARRAY_ELEMENT_INT(get_field_com_nexus_nexwell_satisfyingvisuals_ChaosGame_prevDot(__cn1ThisObject), 0 /* ICONST_0 */, ilocals_3_);
     __CN1_DEBUG_INFO(75);
@@ -614,8 +614,8 @@ label_L16373883:
 locals[5].type=CN1_TYPE_OBJECT;    /* VarOp.assignFrom */ ilocals_6_ = CN1_ARRAY_LENGTH(locals[5].data.o);
     /* VarOp.assignFrom */     ilocals_7_ = 0 /* ICONST_0 */; 
 
-label_L1042891691:
-    if (ilocals_7_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L40875560;
+label_L421191743:
+    if (ilocals_7_>=ilocals_6_) /* IF_ICMPGE CustomJump */ goto label_L747870628;
     /* VarOp.assignFrom */ locals[8].type=CN1_TYPE_INVALID;locals[8].data.o=CN1_ARRAY_ELEMENT_OBJECT(locals[5].data.o, ilocals_7_);
 locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(78);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setColor___int(threadStateData, locals[1].data.o, 16777215); 
@@ -623,9 +623,9 @@ locals[8].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(78);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillRoundRect___int_int_int_int_int_int(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_INT(locals[8].data.o, 0 /* ICONST_0 */), CN1_ARRAY_ELEMENT_INT(locals[8].data.o, 1 /* ICONST_1 */), 10, 10, 10, 10); 
     __CN1_DEBUG_INFO(77);
     BC_IINC(7, 1);
-    goto label_L1042891691;
+    goto label_L421191743;
 
-label_L40875560:
+label_L747870628:
     __CN1_DEBUG_INFO(81);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -633,7 +633,7 @@ label_L40875560:
 
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame_paintBackground___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 10587, 2532);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 10592, 2532);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(85);
@@ -659,7 +659,7 @@ JAVA_INT com_nexus_nexwell_satisfyingvisuals_ChaosGame_HSBtoRGB___float_float_fl
     volatile JAVA_FLOAT flocals_1_ = 0; /* saturation */
     volatile JAVA_FLOAT flocals_2_ = 0; /* brightness */
     __STATIC_INITIALIZER_com_nexus_nexwell_satisfyingvisuals_ChaosGame(threadStateData);
-    DEFINE_METHOD_STACK(5, 11, 0, 10587, 10588);
+    DEFINE_METHOD_STACK(5, 11, 0, 10592, 10593);
     flocals_0_ = __cn1Arg1;
     flocals_1_ = __cn1Arg2;
     flocals_2_ = __cn1Arg3;
@@ -668,7 +668,7 @@ JAVA_INT com_nexus_nexwell_satisfyingvisuals_ChaosGame_HSBtoRGB___float_float_fl
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
     /* VarOp.assignFrom */     ilocals_5_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(91);
-    if (CN1_CMP_EXPR(flocals_1_, 0 /* FCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L1893563925;
+    if (CN1_CMP_EXPR(flocals_1_, 0 /* FCONST_0 */)!=0) /* IFNE CustomJump */ goto label_L9844218;
     __CN1_DEBUG_INFO(92);
     BC_FLOAD(2);
     PUSH_FLOAT(255.0); /* LDC */
@@ -681,9 +681,9 @@ JAVA_INT com_nexus_nexwell_satisfyingvisuals_ChaosGame_HSBtoRGB___float_float_fl
     BC_DUP(); /* DUP */
     BC_ISTORE(4);
     BC_ISTORE(3);
-    goto label_L1251967187;
+    goto label_L1403716230;
 
-label_L1893563925:
+label_L9844218:
     __CN1_DEBUG_INFO(94);
     BC_FLOAD(0);
     /* CustomInvoke */PUSH_DOUBLE(java_lang_Math_floor___double_R_double(threadStateData, flocals_0_));
@@ -709,16 +709,16 @@ label_L1893563925:
     SP[-1].data.i = (JAVA_INT)SP[-1].data.f; /* F2I */
     SP--;
     switch((*SP).data.i) {
-        case 0: goto label_L901689694;
-        case 1: goto label_L1107204185;
-        case 2: goto label_L1523084197;
-        case 3: goto label_L1818747191;
-        case 4: goto label_L747870628;
-        case 5: goto label_L421191743;
-        default: goto label_L1251967187;
+        case 0: goto label_L1673916398;
+        case 1: goto label_L756080817;
+        case 2: goto label_L479734028;
+        case 3: goto label_L388802347;
+        case 4: goto label_L1541046463;
+        case 5: goto label_L1910896157;
+        default: goto label_L1403716230;
     }
 
-label_L901689694:
+label_L1673916398:
     __CN1_DEBUG_INFO(101);
     /* VarOp.assignFrom */ ilocals_3_=((JAVA_INT)((flocals_2_ * 255.0) + 0.5));
     __CN1_DEBUG_INFO(102);
@@ -726,9 +726,9 @@ label_L901689694:
     __CN1_DEBUG_INFO(103);
     /* VarOp.assignFrom */ ilocals_5_=((JAVA_INT)((flocals_8_ * 255.0) + 0.5));
     __CN1_DEBUG_INFO(104);
-    goto label_L1251967187;
+    goto label_L1403716230;
 
-label_L1107204185:
+label_L756080817:
     __CN1_DEBUG_INFO(106);
     /* VarOp.assignFrom */ ilocals_3_=((JAVA_INT)((flocals_9_ * 255.0) + 0.5));
     __CN1_DEBUG_INFO(107);
@@ -736,9 +736,9 @@ label_L1107204185:
     __CN1_DEBUG_INFO(108);
     /* VarOp.assignFrom */ ilocals_5_=((JAVA_INT)((flocals_8_ * 255.0) + 0.5));
     __CN1_DEBUG_INFO(109);
-    goto label_L1251967187;
+    goto label_L1403716230;
 
-label_L1523084197:
+label_L479734028:
     __CN1_DEBUG_INFO(111);
     /* VarOp.assignFrom */ ilocals_3_=((JAVA_INT)((flocals_8_ * 255.0) + 0.5));
     __CN1_DEBUG_INFO(112);
@@ -746,9 +746,9 @@ label_L1523084197:
     __CN1_DEBUG_INFO(113);
     /* VarOp.assignFrom */ ilocals_5_=((JAVA_INT)((flocals_10_ * 255.0) + 0.5));
     __CN1_DEBUG_INFO(114);
-    goto label_L1251967187;
+    goto label_L1403716230;
 
-label_L1818747191:
+label_L388802347:
     __CN1_DEBUG_INFO(116);
     /* VarOp.assignFrom */ ilocals_3_=((JAVA_INT)((flocals_8_ * 255.0) + 0.5));
     __CN1_DEBUG_INFO(117);
@@ -756,9 +756,9 @@ label_L1818747191:
     __CN1_DEBUG_INFO(118);
     /* VarOp.assignFrom */ ilocals_5_=((JAVA_INT)((flocals_2_ * 255.0) + 0.5));
     __CN1_DEBUG_INFO(119);
-    goto label_L1251967187;
+    goto label_L1403716230;
 
-label_L747870628:
+label_L1541046463:
     __CN1_DEBUG_INFO(121);
     /* VarOp.assignFrom */ ilocals_3_=((JAVA_INT)((flocals_10_ * 255.0) + 0.5));
     __CN1_DEBUG_INFO(122);
@@ -766,9 +766,9 @@ label_L747870628:
     __CN1_DEBUG_INFO(123);
     /* VarOp.assignFrom */ ilocals_5_=((JAVA_INT)((flocals_2_ * 255.0) + 0.5));
     __CN1_DEBUG_INFO(124);
-    goto label_L1251967187;
+    goto label_L1403716230;
 
-label_L421191743:
+label_L1910896157:
     __CN1_DEBUG_INFO(126);
     /* VarOp.assignFrom */ ilocals_3_=((JAVA_INT)((flocals_2_ * 255.0) + 0.5));
     __CN1_DEBUG_INFO(127);
@@ -776,7 +776,7 @@ label_L421191743:
     __CN1_DEBUG_INFO(128);
     /* VarOp.assignFrom */ ilocals_5_=((JAVA_INT)((flocals_9_ * 255.0) + 0.5));
 
-label_L1251967187:
+label_L1403716230:
     __CN1_DEBUG_INFO(132);
 
 {
@@ -788,7 +788,7 @@ label_L1251967187:
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame_lambda$new$2___com_nexus_nexwell_satisfyingvisuals_ChaosGame(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_satisfyingvisuals_ChaosGame(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10587, 10381);
+    DEFINE_METHOD_STACK(1, 1, 0, 10592, 10386);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(43);
@@ -800,7 +800,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame_lambda$new$2___com_nexus
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame_lambda$new$1___com_codename1_ui_Form_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_satisfyingvisuals_ChaosGame(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10587, 10352);
+    DEFINE_METHOD_STACK(1, 2, 0, 10592, 10352);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -814,7 +814,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame_lambda$new$1___com_coden
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame_lambda$new$0___com_codename1_ui_Form_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_satisfyingvisuals_ChaosGame(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10587, 10353);
+    DEFINE_METHOD_STACK(1, 2, 0, 10592, 10353);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

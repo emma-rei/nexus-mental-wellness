@@ -1,5 +1,4 @@
 package com.nexus.nexwell.forms;
-
 import com.codename1.components.MultiButton;
 import com.codename1.components.SpanButton;
 import java.util.Random;
@@ -235,4 +234,5 @@ public class HomePageForm extends Form {
             
         }
     }
+    
 }   

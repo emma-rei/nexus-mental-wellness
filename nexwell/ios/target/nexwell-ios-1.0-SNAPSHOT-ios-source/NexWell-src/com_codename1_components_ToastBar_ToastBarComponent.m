@@ -266,7 +266,7 @@ JAVA_OBJECT __NEW_com_codename1_components_ToastBar_ToastBarComponent(CODENAME_O
 
 
 JAVA_VOID com_codename1_components_ToastBar_ToastBarComponent___INIT_____com_codename1_components_ToastBar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 10574, 201);
+    DEFINE_INSTANCE_METHOD_STACK(5, 2, 0, 10579, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(712);
@@ -374,9 +374,9 @@ JAVA_VOID com_codename1_components_ToastBar_ToastBarComponent___INIT_____com_cod
 
 
 JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_calcPreferredSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10574, 1856);
+    DEFINE_INSTANCE_METHOD_STACK(4, 1, 0, 10579, 1856);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(755);
-    if (get_field_com_codename1_components_ToastBar_ToastBarComponent_hidden(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1763823167;
+    if (get_field_com_codename1_components_ToastBar_ToastBarComponent_hidden(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L849145650;
     __CN1_DEBUG_INFO(756);
     PUSH_POINTER(__NEW_com_codename1_ui_geom_Dimension(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -388,7 +388,7 @@ JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_calcPreferredSiz
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1763823167:
+label_L849145650:
     __CN1_DEBUG_INFO(760);
     { JAVA_OBJECT tmpResult = com_codename1_ui_Container_calcPreferredSize___R_com_codename1_ui_geom_Dimension(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -399,7 +399,7 @@ label_L1763823167:
 
 JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$502___com_codename1_components_ToastBar_ToastBarComponent_com_codename1_components_ToastBar_Status_R_com_codename1_components_ToastBar_Status(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_components_ToastBar_ToastBarComponent(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 10574, 803);
+    DEFINE_METHOD_STACK(3, 2, 0, 10579, 803);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -417,7 +417,7 @@ JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$502___com
 
 JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$500___com_codename1_components_ToastBar_ToastBarComponent_R_com_codename1_components_ToastBar_Status(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_components_ToastBar_ToastBarComponent(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10574, 1857);
+    DEFINE_METHOD_STACK(1, 1, 0, 10579, 1857);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(703);
@@ -431,7 +431,7 @@ JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$500___com
 
 JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$900___com_codename1_components_ToastBar_ToastBarComponent_R_com_codename1_components_InfiniteProgress(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_components_ToastBar_ToastBarComponent(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10574, 809);
+    DEFINE_METHOD_STACK(1, 1, 0, 10579, 809);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(703);
@@ -445,7 +445,7 @@ JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$900___com
 
 JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$1000___com_codename1_components_ToastBar_ToastBarComponent_R_com_codename1_ui_Slider(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_components_ToastBar_ToastBarComponent(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10574, 1859);
+    DEFINE_METHOD_STACK(1, 1, 0, 10579, 1859);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(703);
@@ -459,7 +459,7 @@ JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$1000___co
 
 JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$1100___com_codename1_components_ToastBar_ToastBarComponent_R_com_codename1_ui_Label(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_components_ToastBar_ToastBarComponent(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10574, 1860);
+    DEFINE_METHOD_STACK(1, 1, 0, 10579, 1860);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(703);
@@ -473,7 +473,7 @@ JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$1100___co
 
 JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$1200___com_codename1_components_ToastBar_ToastBarComponent_R_com_codename1_ui_TextArea(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_codename1_components_ToastBar_ToastBarComponent(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10574, 810);
+    DEFINE_METHOD_STACK(1, 1, 0, 10579, 810);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(703);
@@ -487,7 +487,7 @@ JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$1200___co
 
 JAVA_OBJECT com_codename1_components_ToastBar_ToastBarComponent_access$1202___com_codename1_components_ToastBar_ToastBarComponent_com_codename1_ui_TextArea_R_com_codename1_ui_TextArea(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_codename1_components_ToastBar_ToastBarComponent(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 10574, 3400);
+    DEFINE_METHOD_STACK(3, 2, 0, 10579, 3400);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

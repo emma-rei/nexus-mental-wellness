@@ -33,7 +33,7 @@ JAVA_OBJECT __NEW_com_codename1_components_ToastBar_2(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_components_ToastBar_2___INIT_____com_codename1_components_ToastBar(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10576, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10581, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(689);
@@ -45,7 +45,7 @@ JAVA_VOID com_codename1_components_ToastBar_2___INIT_____com_codename1_component
 
 
 JAVA_VOID com_codename1_components_ToastBar_2_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10576, 203);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10581, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(691);
     /* CustomInvoke */com_codename1_components_ToastBar_access$300___com_codename1_components_ToastBar(threadStateData, get_field_com_codename1_components_ToastBar_2_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(692);

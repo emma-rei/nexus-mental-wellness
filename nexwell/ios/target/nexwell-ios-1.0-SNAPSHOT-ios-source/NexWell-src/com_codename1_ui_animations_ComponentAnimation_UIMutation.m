@@ -100,29 +100,29 @@ JAVA_BOOLEAN com_codename1_ui_animations_ComponentAnimation_UIMutation_add___com
     locals[2].data.o = __cn1Arg2;
     locals[2].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(318);
-    if (get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_isStarted(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1555711823;
+    if (get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_isStarted(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1040394205;
     __CN1_DEBUG_INFO(319);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L1555711823:
+label_L1040394205:
     __CN1_DEBUG_INFO(321);
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Set_iterator___R_java_util_Iterator(threadStateData, get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_containers(__cn1ThisObject));locals[3].type=CN1_TYPE_OBJECT;
-label_L217859585:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L688924887;
+label_L1241213245:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L247461277;
     /* VarOp.assignFrom */ locals[4].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(322);
-    if (locals[1].data.o==locals[4].data.o) /* IF_ACMPEQ CustomJump */ goto label_L726226084;
-    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[4].data.o, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L726226084;
-    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[1].data.o, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L49477935;
+    if (locals[1].data.o==locals[4].data.o) /* IF_ACMPEQ CustomJump */ goto label_L862048902;
+    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[4].data.o, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L862048902;
+    if (/* CustomInvoke */virtual_com_codename1_ui_Container_contains___com_codename1_ui_Component_R_boolean(threadStateData, locals[1].data.o, locals[4].data.o)==0) /* IFEQ CustomJump */ goto label_L1860273907;
 
-label_L726226084:
+label_L862048902:
     __CN1_DEBUG_INFO(323);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L49477935:
+label_L1860273907:
     __CN1_DEBUG_INFO(325);
-    goto label_L217859585;
+    goto label_L1241213245;
 
-label_L688924887:
+label_L247461277:
     __CN1_DEBUG_INFO(327);
     PUSH_POINTER(get_field_com_codename1_ui_animations_ComponentAnimation_UIMutation_anims(__cn1ThisObject));
     { /* ARRAYLENGTH */

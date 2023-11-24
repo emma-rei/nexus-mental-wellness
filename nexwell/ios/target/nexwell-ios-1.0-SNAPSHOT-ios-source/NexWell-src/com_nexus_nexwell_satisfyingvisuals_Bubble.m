@@ -50,7 +50,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_Bubble___INIT_____int_int_int(CODE
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
     volatile JAVA_INT ilocals_3_ = 0; /* size */
-    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10581, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 10586, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     ilocals_3_ = __cn1Arg3;
@@ -69,7 +69,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_Bubble___INIT_____int_int_int(CODE
 
 
 JAVA_INT com_nexus_nexwell_satisfyingvisuals_Bubble_getX___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10581, 2402);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10586, 2402);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(16);
 
 {
@@ -81,7 +81,7 @@ JAVA_INT com_nexus_nexwell_satisfyingvisuals_Bubble_getX___R_int(CODENAME_ONE_TH
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_Bubble_setX___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* x */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10581, 2423);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10586, 2423);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(20);
     set_field_com_nexus_nexwell_satisfyingvisuals_Bubble_x(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -92,7 +92,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_Bubble_setX___int(CODENAME_ONE_THR
 
 
 JAVA_INT com_nexus_nexwell_satisfyingvisuals_Bubble_getY___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10581, 2405);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10586, 2405);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(24);
 
 {
@@ -104,7 +104,7 @@ JAVA_INT com_nexus_nexwell_satisfyingvisuals_Bubble_getY___R_int(CODENAME_ONE_TH
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_Bubble_setY___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* y */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10581, 2424);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10586, 2424);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(28);
     set_field_com_nexus_nexwell_satisfyingvisuals_Bubble_y(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -115,7 +115,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_Bubble_setY___int(CODENAME_ONE_THR
 
 
 JAVA_INT com_nexus_nexwell_satisfyingvisuals_Bubble_getSize___R_int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10581, 556);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10586, 556);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(32);
 
 {
@@ -132,7 +132,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_Bubble_setSize___int(CODENAME_ONE_
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_Bubble_shrink___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* val */
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10581, 10582);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10586, 10587);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(40);
     set_field_com_nexus_nexwell_satisfyingvisuals_Bubble_size(threadStateData, (get_field_com_nexus_nexwell_satisfyingvisuals_Bubble_size(__cn1ThisObject) - ilocals_1_), __cn1ThisObject);

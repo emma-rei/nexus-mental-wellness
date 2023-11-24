@@ -213,12 +213,12 @@ com_nexus_nexwell_components_CircleProgress___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_components_CircleProgress___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10677, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10710, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(38);
     com_nexus_nexwell_components_BaseRoundProgress___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(24);
     BC_ALOAD(0);
-    PUSH_INT(80);
+    PUSH_INT(40);
     set_field_com_nexus_nexwell_components_CircleProgress_arcWidth(threadStateData, POP_INT(), POP_OBJ());
     __CN1_DEBUG_INFO(26);
     set_field_com_nexus_nexwell_components_CircleProgress_clockwise(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
@@ -239,7 +239,7 @@ JAVA_VOID com_nexus_nexwell_components_CircleProgress_setArcWidth___int(CODENAME
 
 JAVA_VOID com_nexus_nexwell_components_CircleProgress_setClockwise___boolean(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_BOOLEAN __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* clockwise */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10677, 10679);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10710, 10712);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(47);
     set_field_com_nexus_nexwell_components_CircleProgress_clockwise(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -251,7 +251,7 @@ JAVA_VOID com_nexus_nexwell_components_CircleProgress_setClockwise___boolean(COD
 
 JAVA_VOID com_nexus_nexwell_components_CircleProgress_setStartAngle___int(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_INT __cn1Arg1) {
     volatile JAVA_INT ilocals_1_ = 0; /* startAngle */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10677, 10680);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10710, 10713);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     __CN1_DEBUG_INFO(50);
     set_field_com_nexus_nexwell_components_CircleProgress_startAngle(threadStateData, ilocals_1_, __cn1ThisObject);
@@ -269,7 +269,7 @@ JAVA_VOID com_nexus_nexwell_components_CircleProgress_paint___com_codename1_ui_G
     volatile JAVA_INT ilocals_8_ = 0; /* v8 */
     volatile JAVA_INT ilocals_10_ = 0; /* v10 */
     volatile JAVA_DOUBLE dlocals_12_ = 0; /* v12 */
-    DEFINE_INSTANCE_METHOD_STACK(15, 15, 0, 10677, 2355);
+    DEFINE_INSTANCE_METHOD_STACK(15, 15, 0, 10710, 2355);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(55);
@@ -334,7 +334,7 @@ JAVA_VOID com_nexus_nexwell_components_CircleProgress_paint___com_codename1_ui_G
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     BC_ISTORE(8);
     __CN1_DEBUG_INFO(63);
-    if (virtual_com_codename1_ui_plaf_Style_getAlignment___R_int(threadStateData, locals[2].data.o)!=4/* ICONST_4 */) /* IF_ICMPNE CustomJump */ goto label_L1599674462;
+    if (virtual_com_codename1_ui_plaf_Style_getAlignment___R_int(threadStateData, locals[2].data.o)!=4/* ICONST_4 */) /* IF_ICMPNE CustomJump */ goto label_L727860268;
     __CN1_DEBUG_INFO(64);
     { JAVA_INT tmpResult = virtual_com_nexus_nexwell_components_CircleProgress_getX___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
@@ -348,11 +348,11 @@ JAVA_VOID com_nexus_nexwell_components_CircleProgress_paint___com_codename1_ui_G
     SP--; SP[-1].data.i = SP[-1].data.i / (*SP).data.i; /* IDIV */
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     BC_ISTORE(7);
-    goto label_L1623060829;
+    goto label_L1717739363;
 
-label_L1599674462:
+label_L727860268:
     __CN1_DEBUG_INFO(65);
-    if (virtual_com_codename1_ui_plaf_Style_getAlignment___R_int(threadStateData, locals[2].data.o)!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L1623060829;
+    if (virtual_com_codename1_ui_plaf_Style_getAlignment___R_int(threadStateData, locals[2].data.o)!=3 /* ICONST_3 */) /* IF_ICMPNE CustomJump */ goto label_L1717739363;
     __CN1_DEBUG_INFO(66);
     { JAVA_INT tmpResult = virtual_com_nexus_nexwell_components_CircleProgress_getX___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }
@@ -368,7 +368,7 @@ label_L1599674462:
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(7);
 
-label_L1623060829:
+label_L1717739363:
     __CN1_DEBUG_INFO(69);
     /* CustomInvoke */virtual_com_codename1_ui_geom_GeneralPath_arc___double_double_double_double_double_double(threadStateData, locals[5].data.o, ((JAVA_DOUBLE)ilocals_7_), ((JAVA_DOUBLE)ilocals_8_), ((JAVA_DOUBLE)ilocals_6_), ((JAVA_DOUBLE)ilocals_6_), 0 /* DCONST_0 */, 6.283185307179586); 
     __CN1_DEBUG_INFO(70);
@@ -395,38 +395,38 @@ label_L1623060829:
     PUSH_INT(get_field_com_nexus_nexwell_components_CircleProgress_startAngle(__cn1ThisObject));
     SP--;
     switch((*SP).data.i) {
-        case 0: goto label_L1205483858;
-        case 1: goto label_L1373949107;
-        case 2: goto label_L1189651769;
-        case 3: goto label_L1230013344;
-        default: goto label_L1607869297;
+        case 0: goto label_L138536309;
+        case 1: goto label_L665137804;
+        case 2: goto label_L509559152;
+        case 3: goto label_L1815370847;
+        default: goto label_L1801021153;
     }
 
-label_L1205483858:
+label_L138536309:
     __CN1_DEBUG_INFO(79);
     /* VarOp.assignFrom */     dlocals_12_ = 1.5707963267948966;
     __CN1_DEBUG_INFO(80);
-    goto label_L1607869297;
+    goto label_L1801021153;
 
-label_L1373949107:
+label_L665137804:
     __CN1_DEBUG_INFO(82);
     /* VarOp.assignFrom */     dlocals_12_ = 0 /* DCONST_0 */; 
     __CN1_DEBUG_INFO(83);
-    goto label_L1607869297;
+    goto label_L1801021153;
 
-label_L1189651769:
+label_L509559152:
     __CN1_DEBUG_INFO(85);
     /* VarOp.assignFrom */     dlocals_12_ = -1.5707963267948966;
     __CN1_DEBUG_INFO(86);
-    goto label_L1607869297;
+    goto label_L1801021153;
 
-label_L1230013344:
+label_L1815370847:
     __CN1_DEBUG_INFO(88);
     /* VarOp.assignFrom */     dlocals_12_ = 3.141592653589793;
 
-label_L1607869297:
+label_L1801021153:
     __CN1_DEBUG_INFO(91);
-    if (get_field_com_nexus_nexwell_components_CircleProgress_clockwise(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L681639276;
+    if (get_field_com_nexus_nexwell_components_CircleProgress_clockwise(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1709578324;
     __CN1_DEBUG_INFO(92);
     BC_ALOAD(11);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -457,9 +457,9 @@ label_L1607869297:
     SP[-1].data.d = SP[-1].data.i; /* I2D */;
     SP--; SP[-1].data.d = SP[-1].data.d / (*SP).data.d; /* DDIV */
     virtual_com_codename1_ui_geom_GeneralPath_arc___double_double_double_double_double_double(threadStateData, SP[-7].data.o, SP[-6].data.d, SP[-5].data.d, SP[-4].data.d, SP[-3].data.d, SP[-2].data.d, SP[-1].data.d);     SP-= 7;
-    goto label_L727860268;
+    goto label_L22446425;
 
-label_L681639276:
+label_L1709578324:
     __CN1_DEBUG_INFO(94);
     BC_ALOAD(11);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
@@ -491,13 +491,13 @@ label_L681639276:
     SP--; SP[-1].data.d = SP[-1].data.d / (*SP).data.d; /* DDIV */
     virtual_com_codename1_ui_geom_GeneralPath_arc___double_double_double_double_double_double(threadStateData, SP[-7].data.o, SP[-6].data.d, SP[-5].data.d, SP[-4].data.d, SP[-3].data.d, SP[-2].data.d, SP[-1].data.d);     SP-= 7;
 
-label_L727860268:
+label_L22446425:
     __CN1_DEBUG_INFO(96);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setColor___int(threadStateData, locals[1].data.o, get_static_com_nexus_nexwell_components_Colors_CYAN(threadStateData)); 
     __CN1_DEBUG_INFO(97);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_drawShape___com_codename1_ui_geom_Shape_com_codename1_ui_Stroke(threadStateData, locals[1].data.o, locals[11].data.o, locals[9].data.o); 
     __CN1_DEBUG_INFO(99);
-    if (virtual_com_nexus_nexwell_components_CircleProgress_isRenderPercentageOnTop___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1717739363;
+    if (virtual_com_nexus_nexwell_components_CircleProgress_isRenderPercentageOnTop___R_boolean(threadStateData, __cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1338958728;
     __CN1_DEBUG_INFO(100);
     /* VarOp.assignFrom */ locals[14].data.o = /* CustomInvoke */virtual_com_nexus_nexwell_components_CircleProgress_formattedValue___int_R_java_lang_String(threadStateData, __cn1ThisObject, ilocals_10_);locals[14].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(101);
     BC_ALOAD(1);
@@ -539,7 +539,7 @@ label_L727860268:
     SP--; SP[-1].data.i = SP[-1].data.i + (*SP).data.i; /* IADD */
     virtual_com_codename1_ui_Graphics_drawString___java_lang_String_int_int(threadStateData, SP[-4].data.o, SP[-3].data.o, SP[-2].data.i, SP[-1].data.i);     SP-= 4;
 
-label_L1717739363:
+label_L1338958728:
     __CN1_DEBUG_INFO(105);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

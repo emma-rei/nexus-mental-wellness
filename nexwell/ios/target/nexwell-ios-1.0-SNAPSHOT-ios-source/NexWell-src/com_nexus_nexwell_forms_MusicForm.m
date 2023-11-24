@@ -262,13 +262,13 @@ com_nexus_nexwell_forms_MusicForm___INIT____(threadStateData, o);
 
 JAVA_VOID com_nexus_nexwell_forms_MusicForm___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 9, 0, 10779, 201);
+    DEFINE_INSTANCE_METHOD_STACK(5, 9, 0, 10806, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(21);
     /* CustomInvoke */com_codename1_ui_Form___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(10201)); 
     __CN1_DEBUG_INFO(22);
     { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_MusicForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setUIID___java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10780));     SP -= 1;
+    /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setUIID___java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10807));     SP -= 1;
     __CN1_DEBUG_INFO(23);
     { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_MusicForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -292,23 +292,23 @@ JAVA_VOID com_nexus_nexwell_forms_MusicForm___INIT____(CODENAME_ONE_THREAD_STATE
     java_util_HashMap___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(1);
     __CN1_DEBUG_INFO(26);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10781), STRING_FROM_CONSTANT_POOL_OFFSET(10782)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10808), STRING_FROM_CONSTANT_POOL_OFFSET(10809)); 
     __CN1_DEBUG_INFO(27);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10783), STRING_FROM_CONSTANT_POOL_OFFSET(10784)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10810), STRING_FROM_CONSTANT_POOL_OFFSET(10811)); 
     __CN1_DEBUG_INFO(28);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10785), STRING_FROM_CONSTANT_POOL_OFFSET(10786)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10812), STRING_FROM_CONSTANT_POOL_OFFSET(10813)); 
     __CN1_DEBUG_INFO(29);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10787), STRING_FROM_CONSTANT_POOL_OFFSET(10788)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10814), STRING_FROM_CONSTANT_POOL_OFFSET(10815)); 
     __CN1_DEBUG_INFO(30);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10789), STRING_FROM_CONSTANT_POOL_OFFSET(10790)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10816), STRING_FROM_CONSTANT_POOL_OFFSET(10817)); 
     __CN1_DEBUG_INFO(31);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10791), STRING_FROM_CONSTANT_POOL_OFFSET(10792)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10818), STRING_FROM_CONSTANT_POOL_OFFSET(10819)); 
     __CN1_DEBUG_INFO(32);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10793), STRING_FROM_CONSTANT_POOL_OFFSET(10794)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10820), STRING_FROM_CONSTANT_POOL_OFFSET(10821)); 
     __CN1_DEBUG_INFO(33);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10376), STRING_FROM_CONSTANT_POOL_OFFSET(10795)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10370), STRING_FROM_CONSTANT_POOL_OFFSET(10822)); 
     __CN1_DEBUG_INFO(34);
-    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10796), STRING_FROM_CONSTANT_POOL_OFFSET(10797)); 
+    /* CustomInvoke */virtual_java_util_HashMap_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10823), STRING_FROM_CONSTANT_POOL_OFFSET(10824)); 
     __CN1_DEBUG_INFO(36);
     PUSH_INT(3); /* ICONST_3 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_INT, sizeof(JAVA_ARRAY_INT), 1));
@@ -381,7 +381,7 @@ label_L2122357625:
 
 
 JAVA_VOID com_nexus_nexwell_forms_MusicForm_executeVideo___java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10779, 10798);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10806, 10825);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(61);
@@ -395,7 +395,7 @@ JAVA_VOID com_nexus_nexwell_forms_MusicForm_executeVideo___java_lang_String(CODE
 
 JAVA_VOID com_nexus_nexwell_forms_MusicForm_lambda$new$1___com_nexus_nexwell_forms_MusicForm_java_util_Map_Entry_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_MusicForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 3, 0, 10779, 10352);
+    DEFINE_METHOD_STACK(2, 3, 0, 10806, 10352);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

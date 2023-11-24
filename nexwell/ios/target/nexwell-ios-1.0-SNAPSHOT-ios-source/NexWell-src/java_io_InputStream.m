@@ -72,18 +72,18 @@ JAVA_INT java_io_InputStream_read___byte_1ARRAY_int_int_R_int(CODENAME_ONE_THREA
     locals[1].type = CN1_TYPE_OBJECT;
     JAVA_INT ilocals_2_ = __cn1Arg2;
     JAVA_INT ilocals_3_ = __cn1Arg3;
-    int restoreToL1794394038cn1_class_id_java_io_IOException1;
-    int tryBlockOffsetL1794394038cn1_class_id_java_io_IOException1;
-    DEFINE_CATCH_BLOCK(catch_L1794394038cn1_class_id_java_io_IOException1, label_L1111897955, restoreToL1794394038cn1_class_id_java_io_IOException1);
+    int restoreToL208427878cn1_class_id_java_io_IOException1;
+    int tryBlockOffsetL208427878cn1_class_id_java_io_IOException1;
+    DEFINE_CATCH_BLOCK(catch_L208427878cn1_class_id_java_io_IOException1, label_L1111897955, restoreToL208427878cn1_class_id_java_io_IOException1);
     /* VarOp.assignFrom */     ilocals_4_ = 0 /* ICONST_0 */; 
 
 label_L1631227617:
     if (ilocals_4_>=ilocals_3_) /* IF_ICMPGE CustomJump */ JUMP_TO(label_L1509309988, 0);
 
-label_L1794394038:
- tryBlockOffsetL1794394038cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L1794394038cn1_class_id_java_io_IOException1);
-    restoreToL1794394038cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
+label_L208427878:
+ tryBlockOffsetL208427878cn1_class_id_java_io_IOException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_IOException, catch_L208427878cn1_class_id_java_io_IOException1);
+    restoreToL208427878cn1_class_id_java_io_IOException1 = threadStateData->threadObjectStackOffset;
 
     { JAVA_INT tmpResult = virtual_java_io_InputStream_read___R_int(threadStateData, __cn1ThisObject);
     PUSH_INT(tmpResult); }

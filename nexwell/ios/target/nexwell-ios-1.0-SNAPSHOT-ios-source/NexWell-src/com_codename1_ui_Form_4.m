@@ -50,18 +50,18 @@ JAVA_BOOLEAN com_codename1_ui_Form_4_filter___com_codename1_ui_Component_R_boole
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(3131);
-    if (virtual_com_codename1_ui_Component_getTabIndex___R_int(threadStateData, locals[1].data.o)<0) /* IFLT CustomJump */ goto label_L31567969;
-    if (virtual_com_codename1_ui_Component_isVisible___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L31567969;
-    if (virtual_com_codename1_ui_Component_isFocusable___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L31567969;
-    if (virtual_com_codename1_ui_Component_isEnabled___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L31567969;
-    if (/* CustomInvoke */virtual_com_codename1_ui_Component_isHidden___boolean_R_boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */)!=0) /* IFNE CustomJump */ goto label_L31567969;
+    if (virtual_com_codename1_ui_Component_getTabIndex___R_int(threadStateData, locals[1].data.o)<0) /* IFLT CustomJump */ goto label_L598284487;
+    if (virtual_com_codename1_ui_Component_isVisible___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L598284487;
+    if (virtual_com_codename1_ui_Component_isFocusable___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L598284487;
+    if (virtual_com_codename1_ui_Component_isEnabled___R_boolean(threadStateData, locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L598284487;
+    if (/* CustomInvoke */virtual_com_codename1_ui_Component_isHidden___boolean_R_boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */)!=0) /* IFNE CustomJump */ goto label_L598284487;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L955743449;
+    goto label_L2051397396;
 
-label_L31567969:
+label_L598284487:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L955743449:
+label_L2051397396:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

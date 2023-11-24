@@ -32,12 +32,12 @@ JAVA_BOOLEAN java_util_AbstractSet_equals___java_lang_Object_R_boolean(CODENAME_
     DEFINE_INSTANCE_METHOD_STACK(2, 4, 0, 2011, 876);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    int restoreToL404294128cn1_class_id_java_lang_NullPointerException1;
-    int tryBlockOffsetL404294128cn1_class_id_java_lang_NullPointerException1;
-    DEFINE_CATCH_BLOCK(catch_L404294128cn1_class_id_java_lang_NullPointerException1, label_L2131597042, restoreToL404294128cn1_class_id_java_lang_NullPointerException1);
-    int restoreToL404294128cn1_class_id_java_lang_ClassCastException2;
-    int tryBlockOffsetL404294128cn1_class_id_java_lang_ClassCastException2;
-    DEFINE_CATCH_BLOCK(catch_L404294128cn1_class_id_java_lang_ClassCastException2, label_L1415289182, restoreToL404294128cn1_class_id_java_lang_ClassCastException2);
+    int restoreToL1204609798cn1_class_id_java_lang_NullPointerException1;
+    int tryBlockOffsetL1204609798cn1_class_id_java_lang_NullPointerException1;
+    DEFINE_CATCH_BLOCK(catch_L1204609798cn1_class_id_java_lang_NullPointerException1, label_L2131597042, restoreToL1204609798cn1_class_id_java_lang_NullPointerException1);
+    int restoreToL1204609798cn1_class_id_java_lang_ClassCastException2;
+    int tryBlockOffsetL1204609798cn1_class_id_java_lang_ClassCastException2;
+    DEFINE_CATCH_BLOCK(catch_L1204609798cn1_class_id_java_lang_ClassCastException2, label_L1415289182, restoreToL1204609798cn1_class_id_java_lang_ClassCastException2);
     if (__cn1ThisObject!=locals[1].data.o) /* IF_ACMPNE CustomJump */ JUMP_TO(label_L1990385139, 0);
     releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); return 1 /* ICONST_1 */;
 
@@ -47,13 +47,13 @@ label_L1990385139:
     if(POP_INT() == 0) /* IFEQ */ JUMP_TO(label_L1380924218, 0);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;
-label_L404294128:
- tryBlockOffsetL404294128cn1_class_id_java_lang_ClassCastException2 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_ClassCastException, catch_L404294128cn1_class_id_java_lang_ClassCastException2);
-    restoreToL404294128cn1_class_id_java_lang_ClassCastException2 = threadStateData->threadObjectStackOffset;
- tryBlockOffsetL404294128cn1_class_id_java_lang_NullPointerException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_lang_NullPointerException, catch_L404294128cn1_class_id_java_lang_NullPointerException1);
-    restoreToL404294128cn1_class_id_java_lang_NullPointerException1 = threadStateData->threadObjectStackOffset;
+label_L1204609798:
+ tryBlockOffsetL1204609798cn1_class_id_java_lang_ClassCastException2 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_ClassCastException, catch_L1204609798cn1_class_id_java_lang_ClassCastException2);
+    restoreToL1204609798cn1_class_id_java_lang_ClassCastException2 = threadStateData->threadObjectStackOffset;
+ tryBlockOffsetL1204609798cn1_class_id_java_lang_NullPointerException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_lang_NullPointerException, catch_L1204609798cn1_class_id_java_lang_NullPointerException1);
+    restoreToL1204609798cn1_class_id_java_lang_NullPointerException1 = threadStateData->threadObjectStackOffset;
 
     if (virtual_java_util_AbstractSet_size___R_int(threadStateData, __cn1ThisObject)!=virtual_java_util_Set_size___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPNE CustomJump */ JUMP_TO(label_L1105628551, 2);
     if (/* CustomInvoke */virtual_java_util_AbstractSet_containsAll___java_util_Collection_R_boolean(threadStateData, __cn1ThisObject, locals[2].data.o)==0) /* IFEQ CustomJump */ JUMP_TO(label_L1105628551, 2);

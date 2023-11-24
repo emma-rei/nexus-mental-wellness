@@ -54,27 +54,27 @@ JAVA_VOID com_codename1_ui_Tabs_TabFocusListener_focusGained___com_codename1_ui_
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1347);
-    if (/* CustomInvoke */com_codename1_ui_Tabs_access$1000___com_codename1_ui_Tabs_R_com_codename1_ui_util_EventDispatcher(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L596376940;
+    if (/* CustomInvoke */com_codename1_ui_Tabs_access$1000___com_codename1_ui_Tabs_R_com_codename1_ui_util_EventDispatcher(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L41633258;
     __CN1_DEBUG_INFO(1348);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Tabs_access$1000___com_codename1_ui_Tabs_R_com_codename1_ui_util_EventDispatcher(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireFocus___com_codename1_ui_Component(threadStateData, SP[-1].data.o, locals[1].data.o);     SP -= 1;
 
-label_L596376940:
+label_L41633258:
     __CN1_DEBUG_INFO(1350);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_shouldRenderSelection___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L250702170;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1041735841;
     __CN1_DEBUG_INFO(1351);
-    if (virtual_com_codename1_ui_Tabs_isChangeTabOnFocus___R_boolean(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1485179287;
+    if (virtual_com_codename1_ui_Tabs_isChangeTabOnFocus___R_boolean(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L2030707995;
     __CN1_DEBUG_INFO(1352);
-    if (virtual_com_codename1_ui_Button_isSelected___R_boolean(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L1485179287;
+    if (virtual_com_codename1_ui_Button_isSelected___R_boolean(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L2030707995;
     __CN1_DEBUG_INFO(1353);
     virtual_com_codename1_ui_Button_fireClicked__(threadStateData, locals[1].data.o); 
 
-label_L1485179287:
+label_L2030707995:
     __CN1_DEBUG_INFO(1356);
-    if (/* CustomInvoke */com_codename1_ui_Tabs_access$1100___com_codename1_ui_Tabs_R_boolean(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L250702170;
+    if (/* CustomInvoke */com_codename1_ui_Tabs_access$1100___com_codename1_ui_Tabs_R_boolean(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1041735841;
     __CN1_DEBUG_INFO(1357);
     virtual_com_codename1_ui_Tabs_initTabsContainerStyle__(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(1358);
@@ -85,7 +85,7 @@ label_L1485179287:
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Tabs_access$300___com_codename1_ui_Tabs_R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject)));
     virtual_com_codename1_ui_Container_repaint__(threadStateData, SP[-1].data.o);     SP -= 1;
 
-label_L250702170:
+label_L1041735841:
     __CN1_DEBUG_INFO(1362);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -97,14 +97,14 @@ JAVA_VOID com_codename1_ui_Tabs_TabFocusListener_focusLost___com_codename1_ui_Co
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(1366);
-    if (/* CustomInvoke */com_codename1_ui_Tabs_access$1000___com_codename1_ui_Tabs_R_com_codename1_ui_util_EventDispatcher(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L136011184;
+    if (/* CustomInvoke */com_codename1_ui_Tabs_access$1000___com_codename1_ui_Tabs_R_com_codename1_ui_util_EventDispatcher(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1300399812;
     __CN1_DEBUG_INFO(1367);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Tabs_access$1000___com_codename1_ui_Tabs_R_com_codename1_ui_util_EventDispatcher(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject)));
     /* CustomInvoke */virtual_com_codename1_ui_util_EventDispatcher_fireFocus___com_codename1_ui_Component(threadStateData, SP[-1].data.o, locals[1].data.o);     SP -= 1;
 
-label_L136011184:
+label_L1300399812:
     __CN1_DEBUG_INFO(1369);
-    if (/* CustomInvoke */com_codename1_ui_Tabs_access$1100___com_codename1_ui_Tabs_R_boolean(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1955049794;
+    if (/* CustomInvoke */com_codename1_ui_Tabs_access$1100___com_codename1_ui_Tabs_R_boolean(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L353296011;
     __CN1_DEBUG_INFO(1370);
     virtual_com_codename1_ui_Tabs_initTabsContainerStyle__(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(1371);
@@ -115,7 +115,7 @@ label_L136011184:
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Tabs_access$300___com_codename1_ui_Tabs_R_com_codename1_ui_Container(threadStateData, get_field_com_codename1_ui_Tabs_TabFocusListener_this_0(__cn1ThisObject)));
     virtual_com_codename1_ui_Container_repaint__(threadStateData, SP[-1].data.o);     SP -= 1;
 
-label_L1955049794:
+label_L353296011:
     __CN1_DEBUG_INFO(1374);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

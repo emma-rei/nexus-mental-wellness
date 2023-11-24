@@ -134,6 +134,11 @@ void __STATIC_INITIALIZER_com_codename1_ui_Editable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_HomePageForm][1] = 14;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_HomePageForm][2] = 15;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_HomePageForm][3] = 16;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_HomePageForm_PomodoroTimer] = malloc(sizeof(int*) * 16);
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_HomePageForm_PomodoroTimer][0] = 13;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_HomePageForm_PomodoroTimer][1] = 14;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_HomePageForm_PomodoroTimer][2] = 15;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_HomePageForm_PomodoroTimer][3] = 16;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_MainForm] = malloc(sizeof(int*) * 16);
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_MainForm][0] = 13;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_MainForm][1] = 14;
@@ -164,6 +169,11 @@ void __STATIC_INITIALIZER_com_codename1_ui_Editable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_BreathingTimerForm][1] = 14;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_BreathingTimerForm][2] = 15;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_BreathingTimerForm][3] = 16;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_PomodoroForm] = malloc(sizeof(int*) * 16);
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_PomodoroForm][0] = 13;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_PomodoroForm][1] = 14;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_PomodoroForm][2] = 15;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_PomodoroForm][3] = 16;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_GamesContainer] = malloc(sizeof(int*) * 16);
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_GamesContainer][0] = 13;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_forms_GamesContainer][1] = 14;
@@ -189,6 +199,11 @@ void __STATIC_INITIALIZER_com_codename1_ui_Editable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_components_BaseRoundProgress][1] = 14;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_components_BaseRoundProgress][2] = 15;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_components_BaseRoundProgress][3] = 16;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_components_CircleFilledProgress] = malloc(sizeof(int*) * 16);
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_components_CircleFilledProgress][0] = 13;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_components_CircleFilledProgress][1] = 14;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_components_CircleFilledProgress][2] = 15;
+    classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_components_CircleFilledProgress][3] = 16;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_components_RichTextView] = malloc(sizeof(int*) * 16);
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_components_RichTextView][0] = 13;
     classToInterfaceMap_com_codename1_ui_Editable[cn1_class_id_com_nexus_nexwell_components_RichTextView][1] = 14;

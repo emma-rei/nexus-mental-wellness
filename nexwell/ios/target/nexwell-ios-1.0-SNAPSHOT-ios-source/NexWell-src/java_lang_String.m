@@ -479,19 +479,19 @@ label_L1087072654:
 
 JAVA_OBJECT java_lang_String_getBytes___R_byte_1ARRAY(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 866, 878);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL1679546686cn1_class_id_java_io_UnsupportedEncodingException1;
-    int tryBlockOffsetL1679546686cn1_class_id_java_io_UnsupportedEncodingException1;
-    DEFINE_CATCH_BLOCK(catch_L1679546686cn1_class_id_java_io_UnsupportedEncodingException1, label_L1979080261, restoreToL1679546686cn1_class_id_java_io_UnsupportedEncodingException1);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     int restoreToL648756251cn1_class_id_java_io_UnsupportedEncodingException1;
+    int tryBlockOffsetL648756251cn1_class_id_java_io_UnsupportedEncodingException1;
+    DEFINE_CATCH_BLOCK(catch_L648756251cn1_class_id_java_io_UnsupportedEncodingException1, label_L1979080261, restoreToL648756251cn1_class_id_java_io_UnsupportedEncodingException1);
 
-label_L1679546686:
- tryBlockOffsetL1679546686cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->tryBlockOffset;
-    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L1679546686cn1_class_id_java_io_UnsupportedEncodingException1);
-    restoreToL1679546686cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->threadObjectStackOffset;
+label_L648756251:
+ tryBlockOffsetL648756251cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->tryBlockOffset;
+    BEGIN_TRY(cn1_class_id_java_io_UnsupportedEncodingException, catch_L648756251cn1_class_id_java_io_UnsupportedEncodingException1);
+    restoreToL648756251cn1_class_id_java_io_UnsupportedEncodingException1 = threadStateData->threadObjectStackOffset;
 
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_String_getBytes___java_lang_String_R_byte_1ARRAY(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(131));
     PUSH_OBJ(tmpResult); }
 
-label_L1657866292:
+label_L160284738:
 END_TRY(1);    releaseForReturnInException(threadStateData, cn1LocalsBeginInThread, methodBlockOffset); 
     return POP_OBJ();
 

@@ -33,7 +33,7 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_satisfyingvisuals_ChaosGame__Lambda_3(CODENA
 
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame__Lambda_3___INIT_____com_nexus_nexwell_satisfyingvisuals_ChaosGame(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10591, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10596, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
@@ -44,7 +44,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame__Lambda_3___INIT_____com
 
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame__Lambda_3_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10591, 203);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10596, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     /* CustomInvoke */com_nexus_nexwell_satisfyingvisuals_ChaosGame_lambda$new$2___com_nexus_nexwell_satisfyingvisuals_ChaosGame(threadStateData, get_field_com_nexus_nexwell_satisfyingvisuals_ChaosGame__Lambda_3_arg_1(__cn1ThisObject)); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -53,7 +53,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_ChaosGame__Lambda_3_run__(CODENAME
 
 JAVA_OBJECT com_nexus_nexwell_satisfyingvisuals_ChaosGame__Lambda_3_lambdaFactory$___com_nexus_nexwell_satisfyingvisuals_ChaosGame_R_java_lang_Runnable(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_satisfyingvisuals_ChaosGame__Lambda_3(threadStateData);
-    DEFINE_METHOD_STACK(3, 1, 0, 10591, 10185);
+    DEFINE_METHOD_STACK(3, 1, 0, 10596, 10185);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_com_nexus_nexwell_satisfyingvisuals_ChaosGame__Lambda_3(threadStateData)); /* NEW */

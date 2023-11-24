@@ -45,7 +45,7 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_forms_GamesContainer__Lambda_5(CODENAME_ONE_
 
 
 JAVA_VOID com_nexus_nexwell_forms_GamesContainer__Lambda_5___INIT_____java_lang_String_java_util_Map_Entry(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10384, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10389, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -59,7 +59,7 @@ JAVA_VOID com_nexus_nexwell_forms_GamesContainer__Lambda_5___INIT_____java_lang_
 
 
 JAVA_VOID com_nexus_nexwell_forms_GamesContainer__Lambda_5_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10384, 3047);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10389, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */com_nexus_nexwell_forms_GamesContainer_lambda$new$2___java_lang_String_java_util_Map_Entry_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_nexus_nexwell_forms_GamesContainer__Lambda_5_arg_1(__cn1ThisObject), get_field_com_nexus_nexwell_forms_GamesContainer__Lambda_5_arg_2(__cn1ThisObject), locals[1].data.o); 
@@ -70,7 +70,7 @@ JAVA_VOID com_nexus_nexwell_forms_GamesContainer__Lambda_5_actionPerformed___com
 
 JAVA_OBJECT com_nexus_nexwell_forms_GamesContainer__Lambda_5_lambdaFactory$___java_lang_String_java_util_Map_Entry_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_GamesContainer__Lambda_5(threadStateData);
-    DEFINE_METHOD_STACK(4, 2, 0, 10384, 10185);
+    DEFINE_METHOD_STACK(4, 2, 0, 10389, 10185);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

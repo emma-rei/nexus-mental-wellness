@@ -240,15 +240,15 @@ JAVA_OBJECT com_codename1_ui_Font_createTrueTypeFont___java_lang_String_R_com_co
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_isSimulator___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1021082377;
-    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(592))!=0) /* IFNE CustomJump */ goto label_L1021082377;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L2146285461;
+    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(592))!=0) /* IFNE CustomJump */ goto label_L2146285461;
     __CN1_DEBUG_INFO(163);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3087));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L1021082377:
+label_L2146285461:
     __CN1_DEBUG_INFO(165);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Font_createTrueTypeFont___java_lang_String_java_lang_String_R_com_codename1_ui_Font(threadStateData, locals[0].data.o, locals[0].data.o));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -312,7 +312,7 @@ JAVA_OBJECT com_codename1_ui_Font_createTrueTypeFont___java_lang_String_java_lan
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(219);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */virtual_java_util_HashMap_get___java_lang_Object_R_java_lang_Object(threadStateData, get_static_com_codename1_ui_Font_derivedFontCache(threadStateData), locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(220);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1935994577;
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L277155095;
     __CN1_DEBUG_INFO(221);
 
 {
@@ -320,22 +320,22 @@ JAVA_OBJECT com_codename1_ui_Font_createTrueTypeFont___java_lang_String_java_lan
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1935994577:
+label_L277155095:
     __CN1_DEBUG_INFO(223);
-    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(592))==0) /* IFEQ CustomJump */ goto label_L1749978269;
+    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(592))==0) /* IFEQ CustomJump */ goto label_L1374115041;
     __CN1_DEBUG_INFO(224);
-    if (virtual_com_codename1_impl_CodenameOneImplementation_isNativeFontSchemeSupported___R_boolean(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData))!=0) /* IFNE CustomJump */ goto label_L1858863803;
+    if (virtual_com_codename1_impl_CodenameOneImplementation_isNativeFontSchemeSupported___R_boolean(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData))!=0) /* IFNE CustomJump */ goto label_L646337666;
     __CN1_DEBUG_INFO(225);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L1749978269:
+label_L1374115041:
     __CN1_DEBUG_INFO(228);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1858863803;
-    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[1].data.o, 47)>-1 /* ICONST_M1 */) /* IF_ICMPGT CustomJump */ goto label_L831993944;
-    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[1].data.o, 92)>-1 /* ICONST_M1 */) /* IF_ICMPGT CustomJump */ goto label_L831993944;
-    if (/* CustomInvoke */virtual_java_lang_String_endsWith___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3088))!=0) /* IFNE CustomJump */ goto label_L1858863803;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L646337666;
+    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[1].data.o, 47)>-1 /* ICONST_M1 */) /* IF_ICMPGT CustomJump */ goto label_L876945112;
+    if (/* CustomInvoke */virtual_java_lang_String_indexOf___int_R_int(threadStateData, locals[1].data.o, 92)>-1 /* ICONST_M1 */) /* IF_ICMPGT CustomJump */ goto label_L876945112;
+    if (/* CustomInvoke */virtual_java_lang_String_endsWith___java_lang_String_R_boolean(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3088))!=0) /* IFNE CustomJump */ goto label_L646337666;
 
-label_L831993944:
+label_L876945112:
     __CN1_DEBUG_INFO(229);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -351,14 +351,14 @@ label_L831993944:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L1858863803:
+label_L646337666:
     __CN1_DEBUG_INFO(232);
     /* VarOp.assignFrom */ locals[4].data.o = /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_loadTrueTypeFont___java_lang_String_java_lang_String_R_java_lang_Object(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), locals[0].data.o, locals[1].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(233);
-    if (locals[4].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1699826397;
+    if (locals[4].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L202395890;
     __CN1_DEBUG_INFO(234);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L1699826397:
+label_L202395890:
     __CN1_DEBUG_INFO(236);
     PUSH_POINTER(__NEW_com_codename1_ui_Font(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -418,7 +418,7 @@ JAVA_OBJECT com_codename1_ui_Font_derive___float_int_R_com_codename1_ui_Font(COD
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     flocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(276);
-    if (get_field_com_codename1_ui_Font_fontUniqueId(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2045188238;
+    if (get_field_com_codename1_ui_Font_fontUniqueId(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1740328397;
     __CN1_DEBUG_INFO(278);
     PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -438,7 +438,7 @@ JAVA_OBJECT com_codename1_ui_Font_derive___float_int_R_com_codename1_ui_Font(COD
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(279);
     /* VarOp.assignFrom */ locals[4].data.o = /* CustomInvoke */virtual_java_util_HashMap_get___java_lang_Object_R_java_lang_Object(threadStateData, get_static_com_codename1_ui_Font_derivedFontCache(threadStateData), locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(280);
-    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1999639763;
+    if (locals[4].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1938634748;
     __CN1_DEBUG_INFO(281);
 
 {
@@ -446,7 +446,7 @@ JAVA_OBJECT com_codename1_ui_Font_derive___float_int_R_com_codename1_ui_Font(COD
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1999639763:
+label_L1938634748:
     __CN1_DEBUG_INFO(283);
     PUSH_POINTER(__NEW_com_codename1_ui_Font(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -469,9 +469,9 @@ label_L1999639763:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L2045188238:
+label_L1740328397:
     __CN1_DEBUG_INFO(291);
-    if (get_field_com_codename1_ui_Font_font(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2146285461;
+    if (get_field_com_codename1_ui_Font_font(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1872905355;
     __CN1_DEBUG_INFO(292);
     PUSH_POINTER(__NEW_com_codename1_ui_Font(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -490,9 +490,9 @@ label_L2045188238:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L2146285461:
+label_L1872905355:
     __CN1_DEBUG_INFO(297);
-    if (get_field_com_codename1_ui_Font_ttf(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L277155095;
+    if (get_field_com_codename1_ui_Font_ttf(__cn1ThisObject)!=0) /* IFNE CustomJump */ goto label_L1639652941;
     __CN1_DEBUG_INFO(298);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -510,7 +510,7 @@ label_L2146285461:
     java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     throwException(threadStateData, POP_OBJ());
 
-label_L277155095:
+label_L1639652941:
     __CN1_DEBUG_INFO(300);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -548,20 +548,20 @@ JAVA_OBJECT com_codename1_ui_Font_create___java_lang_String_R_com_codename1_ui_F
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(327);
-    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(592))==0) /* IFEQ CustomJump */ goto label_L1374115041;
+    if (/* CustomInvoke */virtual_java_lang_String_startsWith___java_lang_String_R_boolean(threadStateData, locals[0].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(592))==0) /* IFEQ CustomJump */ goto label_L1549005458;
     __CN1_DEBUG_INFO(328);
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Font_createTrueTypeFont___java_lang_String_java_lang_String_R_com_codename1_ui_Font(threadStateData, locals[0].data.o, locals[0].data.o));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 
-label_L1374115041:
+label_L1549005458:
     __CN1_DEBUG_INFO(330);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_com_codename1_impl_CodenameOneImplementation_loadNativeFont___java_lang_String_R_java_lang_Object(threadStateData, get_static_com_codename1_ui_Display_impl(threadStateData), locals[0].data.o);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(331);
-    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L646337666;
+    if (locals[1].data.o!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L1190857779;
     __CN1_DEBUG_INFO(332);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return JAVA_NULL /* ACONST_NULL */;
 
-label_L646337666:
+label_L1190857779:
     __CN1_DEBUG_INFO(334);
     PUSH_POINTER(__NEW_com_codename1_ui_Font(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
@@ -681,20 +681,20 @@ JAVA_INT com_codename1_ui_Font_stringWidth___java_lang_String_R_int(CODENAME_ONE
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(434);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L876945112;
-    if (virtual_java_lang_String_length___R_int(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L202395890;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L989896315;
+    if (virtual_java_lang_String_length___R_int(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L40936992;
 
-label_L876945112:
+label_L989896315:
     __CN1_DEBUG_INFO(435);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L202395890:
+label_L40936992:
     __CN1_DEBUG_INFO(439);
-    if (locals[1].data.o!=STRING_FROM_CONSTANT_POOL_OFFSET(613)) /* IF_ACMPNE CustomJump */ goto label_L1740328397;
+    if (locals[1].data.o!=STRING_FROM_CONSTANT_POOL_OFFSET(613)) /* IF_ACMPNE CustomJump */ goto label_L1106510750;
     __CN1_DEBUG_INFO(440);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 5 /* ICONST_5 */;
 
-label_L1740328397:
+label_L1106510750:
     __CN1_DEBUG_INFO(442);
 
 {
@@ -749,11 +749,11 @@ JAVA_VOID com_codename1_ui_Font_setDefaultFont___com_codename1_ui_Font(CODENAME_
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(491);
-    if (locals[0].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1938634748;
+    if (locals[0].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1609565447;
     __CN1_DEBUG_INFO(492);
     set_static_com_codename1_ui_Font_defaultFont(threadStateData, locals[0].data.o);
 
-label_L1938634748:
+label_L1609565447:
     __CN1_DEBUG_INFO(494);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -838,46 +838,46 @@ JAVA_BOOLEAN com_codename1_ui_Font_equals___java_lang_Object_R_boolean(CODENAME_
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(597);
-    if (get_field_com_codename1_ui_Font_ttf(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1872905355;
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1872905355;
+    if (get_field_com_codename1_ui_Font_ttf(__cn1ThisObject)==0) /* IFEQ CustomJump */ goto label_L1614588868;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1614588868;
     __CN1_DEBUG_INFO(598);
-    if (get_field_com_codename1_ui_Font_font(locals[1].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1639652941;
-    if (get_field_com_codename1_ui_Font_ttf(locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1639652941;
-    if (/* CustomInvoke */virtual_java_lang_Object_equals___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_ui_Font_font(locals[1].data.o), get_field_com_codename1_ui_Font_font(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1639652941;
+    if (get_field_com_codename1_ui_Font_font(locals[1].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1744457797;
+    if (get_field_com_codename1_ui_Font_ttf(locals[1].data.o)==0) /* IFEQ CustomJump */ goto label_L1744457797;
+    if (/* CustomInvoke */virtual_java_lang_Object_equals___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_ui_Font_font(locals[1].data.o), get_field_com_codename1_ui_Font_font(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1744457797;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1549005458;
+    goto label_L116606935;
 
-label_L1639652941:
+label_L1744457797:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1549005458:
+label_L116606935:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L1872905355:
+label_L1614588868:
     __CN1_DEBUG_INFO(600);
-    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1190857779;
+    if (locals[1].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1500820019;
     { JAVA_OBJECT tmpResult = virtual_java_lang_Object_getClass___R_java_lang_Class(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     { JAVA_OBJECT tmpResult = virtual_java_lang_Object_getClass___R_java_lang_Class(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
-    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1190857779;
+    SP-=2; if((*SP).data.o != SP[1].data.o) /* IF_ACMPNE */ goto label_L1500820019;
     __CN1_DEBUG_INFO(601);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(602);
-    if (get_field_com_codename1_ui_Font_ttf(locals[2].data.o)!=0) /* IFNE CustomJump */ goto label_L989896315;
-    if (virtual_com_codename1_ui_Font_getFace___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getFace___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L989896315;
-    if (virtual_com_codename1_ui_Font_getSize___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getSize___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L989896315;
-    if (virtual_com_codename1_ui_Font_getStyle___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getStyle___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L989896315;
+    if (get_field_com_codename1_ui_Font_ttf(locals[2].data.o)!=0) /* IFNE CustomJump */ goto label_L1544765522;
+    if (virtual_com_codename1_ui_Font_getFace___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getFace___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1544765522;
+    if (virtual_com_codename1_ui_Font_getSize___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getSize___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1544765522;
+    if (virtual_com_codename1_ui_Font_getStyle___R_int(threadStateData, locals[2].data.o)!=virtual_com_codename1_ui_Font_getStyle___R_int(threadStateData, __cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1544765522;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L40936992;
+    goto label_L1776180205;
 
-label_L989896315:
+label_L1544765522:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L40936992:
+label_L1776180205:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L1190857779:
+label_L1500820019:
     __CN1_DEBUG_INFO(604);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 }

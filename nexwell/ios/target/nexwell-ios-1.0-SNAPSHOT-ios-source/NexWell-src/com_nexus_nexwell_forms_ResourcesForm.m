@@ -278,11 +278,11 @@ com_nexus_nexwell_forms_ResourcesForm___INIT____(threadStateData, o);
 
 JAVA_VOID com_nexus_nexwell_forms_ResourcesForm___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
-    DEFINE_INSTANCE_METHOD_STACK(6, 11, 0, 10385, 201);
+    DEFINE_INSTANCE_METHOD_STACK(6, 11, 0, 10392, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(31);
     BC_ALOAD(0);
     /* LDC: 'Resources'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10386));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10393));
     PUSH_POINTER(__NEW_com_codename1_ui_layouts_GridLayout(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_layouts_GridLayout___INIT_____int_int(threadStateData, SP[-1].data.o, 2 /* ICONST_2 */, 2 /* ICONST_2 */);     SP -= 1;
@@ -297,7 +297,7 @@ JAVA_VOID com_nexus_nexwell_forms_ResourcesForm___INIT____(CODENAME_ONE_THREAD_S
     __CN1_DEBUG_INFO(32);
     { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_ResourcesForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
-    /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setUIID___java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10387));     SP -= 1;
+    /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setUIID___java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10394));     SP -= 1;
     __CN1_DEBUG_INFO(33);
     { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_ResourcesForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
@@ -394,7 +394,7 @@ label_L1635082651:
 
 JAVA_VOID com_nexus_nexwell_forms_ResourcesForm_showWebPage___java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_ResourcesForm(threadStateData);
-    DEFINE_METHOD_STACK(5, 7, 0, 10385, 10388);
+    DEFINE_METHOD_STACK(5, 7, 0, 10392, 10382);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -428,7 +428,7 @@ JAVA_VOID com_nexus_nexwell_forms_ResourcesForm_showWebPage___java_lang_String_j
     __CN1_DEBUG_INFO(88);
     BC_ALOAD(5);
     /* LDC: 'Back to Articles'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10389));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10395));
     PUSH_POINTER(JAVA_NULL); /* ACONST_NULL */
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_ResourcesForm__Lambda_4_lambdaFactory$___com_codename1_ui_Form_R_com_codename1_ui_events_ActionListener(threadStateData, locals[3].data.o));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_addCommandToOverflowMenu___java_lang_String_com_codename1_ui_Image_com_codename1_ui_events_ActionListener_R_com_codename1_ui_Command(threadStateData, SP[-4].data.o, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);
@@ -454,7 +454,7 @@ JAVA_VOID com_nexus_nexwell_forms_ResourcesForm_showWebPage___java_lang_String_j
 
 JAVA_VOID com_nexus_nexwell_forms_ResourcesForm_execute___java_lang_String_java_lang_String(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_ResourcesForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 2, 0, 10385, 528);
+    DEFINE_METHOD_STACK(2, 2, 0, 10392, 528);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -469,7 +469,7 @@ JAVA_VOID com_nexus_nexwell_forms_ResourcesForm_execute___java_lang_String_java_
 
 JAVA_VOID com_nexus_nexwell_forms_ResourcesForm_lambda$showWebPage$3___com_codename1_ui_Form_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_ResourcesForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10385, 10390);
+    DEFINE_METHOD_STACK(1, 2, 0, 10392, 10385);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -483,7 +483,7 @@ JAVA_VOID com_nexus_nexwell_forms_ResourcesForm_lambda$showWebPage$3___com_coden
 
 JAVA_VOID com_nexus_nexwell_forms_ResourcesForm_lambda$showWebPage$2___com_codename1_ui_Form_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_ResourcesForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10385, 10391);
+    DEFINE_METHOD_STACK(1, 2, 0, 10392, 10396);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -497,7 +497,7 @@ JAVA_VOID com_nexus_nexwell_forms_ResourcesForm_lambda$showWebPage$2___com_coden
 
 JAVA_VOID com_nexus_nexwell_forms_ResourcesForm_lambda$new$1___java_lang_String_java_lang_String_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_ResourcesForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 3, 0, 10385, 10352);
+    DEFINE_METHOD_STACK(2, 3, 0, 10392, 10352);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

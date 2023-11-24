@@ -43,7 +43,7 @@ com_nexus_nexwell_forms_ResourcesForm__Lambda_1___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_forms_ResourcesForm__Lambda_1___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10392, 201);
+    DEFINE_INSTANCE_METHOD_STACK(1, 1, 0, 10397, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     java_lang_Object___INIT____(threadStateData, __cn1ThisObject); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -51,7 +51,7 @@ JAVA_VOID com_nexus_nexwell_forms_ResourcesForm__Lambda_1___INIT____(CODENAME_ON
 
 
 JAVA_VOID com_nexus_nexwell_forms_ResourcesForm__Lambda_1_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 10392, 3047);
+    DEFINE_INSTANCE_METHOD_STACK(1, 2, 0, 10397, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     /* CustomInvoke */com_nexus_nexwell_forms_ResourcesForm_lambda$new$0___com_codename1_ui_events_ActionEvent(threadStateData, locals[1].data.o); 
@@ -61,7 +61,7 @@ JAVA_VOID com_nexus_nexwell_forms_ResourcesForm__Lambda_1_actionPerformed___com_
 
 
 JAVA_VOID com_nexus_nexwell_forms_ResourcesForm__Lambda_1___CLINIT____(CODENAME_ONE_THREAD_STATE) {
-    DEFINE_METHOD_STACK(2, 0, 0, 10392, 859);
+    DEFINE_METHOD_STACK(2, 0, 0, 10397, 859);
     PUSH_POINTER(__NEW_com_nexus_nexwell_forms_ResourcesForm__Lambda_1(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_nexus_nexwell_forms_ResourcesForm__Lambda_1___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
@@ -74,7 +74,7 @@ JAVA_VOID com_nexus_nexwell_forms_ResourcesForm__Lambda_1___CLINIT____(CODENAME_
 
 JAVA_OBJECT com_nexus_nexwell_forms_ResourcesForm__Lambda_1_lambdaFactory$___R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_ResourcesForm__Lambda_1(threadStateData);
-    DEFINE_METHOD_STACK(1, 0, 0, 10392, 10185);
+    DEFINE_METHOD_STACK(1, 0, 0, 10397, 10185);
     PUSH_POINTER(get_static_com_nexus_nexwell_forms_ResourcesForm__Lambda_1_instance(threadStateData));
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();

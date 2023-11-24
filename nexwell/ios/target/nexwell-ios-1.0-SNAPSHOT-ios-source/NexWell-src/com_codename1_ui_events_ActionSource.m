@@ -95,6 +95,9 @@ void __STATIC_INITIALIZER_com_codename1_ui_events_ActionSource(CODENAME_ONE_THRE
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_nexus_nexwell_components_BaseRoundProgress] = malloc(sizeof(int*) * 14);
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_nexus_nexwell_components_BaseRoundProgress][0] = 375;
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_nexus_nexwell_components_BaseRoundProgress][1] = 376;
+    classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_nexus_nexwell_components_CircleFilledProgress] = malloc(sizeof(int*) * 14);
+    classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_nexus_nexwell_components_CircleFilledProgress][0] = 375;
+    classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_nexus_nexwell_components_CircleFilledProgress][1] = 376;
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_TextArea] = malloc(sizeof(int*) * 14);
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_TextArea][0] = 323;
     classToInterfaceMap_com_codename1_ui_events_ActionSource[cn1_class_id_com_codename1_ui_TextArea][1] = 324;

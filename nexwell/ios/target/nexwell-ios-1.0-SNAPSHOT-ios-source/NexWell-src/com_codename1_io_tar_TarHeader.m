@@ -267,10 +267,10 @@ locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(144);
     { JAVA_INT tmpResult = virtual_java_lang_String_length___R_int(threadStateData, locals[1].data.o);
     PUSH_INT(tmpResult); }
     PUSH_INT(31);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1405855903;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L992023758;
     __CN1_DEBUG_INFO(145);
     /* VarOp.assignFrom */ locals[1].data.o = /* CustomInvoke */virtual_java_lang_String_substring___int_int_R_java_lang_String(threadStateData, locals[1].data.o, 0 /* ICONST_0 */, 31);locals[1].type=CN1_TYPE_OBJECT;
-label_L1405855903:
+label_L992023758:
     __CN1_DEBUG_INFO(147);
     set_field_com_codename1_io_tar_TarHeader_userId(threadStateData, 0 /* ICONST_0 */, __cn1ThisObject);
     __CN1_DEBUG_INFO(148);
@@ -316,21 +316,21 @@ JAVA_OBJECT com_codename1_io_tar_TarHeader_parseName___byte_1ARRAY_int_int_R_jav
     __CN1_DEBUG_INFO(169);
     /* VarOp.assignFrom */     ilocals_5_ = ilocals_1_;
 
-label_L2112840400:
-    if (ilocals_5_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L1722642791;
+label_L365475676:
+    if (ilocals_5_>=ilocals_4_) /* IF_ICMPGE CustomJump */ goto label_L1806402192;
     __CN1_DEBUG_INFO(170);
-    if (CN1_ARRAY_ELEMENT_BYTE(locals[0].data.o, ilocals_5_)!=0) /* IFNE CustomJump */ goto label_L346693923;
+    if (CN1_ARRAY_ELEMENT_BYTE(locals[0].data.o, ilocals_5_)!=0) /* IFNE CustomJump */ goto label_L1251496840;
     __CN1_DEBUG_INFO(171);
-    goto label_L1722642791;
+    goto label_L1806402192;
 
-label_L346693923:
+label_L1251496840:
     __CN1_DEBUG_INFO(172);
     /* CustomInvoke */virtual_java_lang_StringBuffer_append___char_R_java_lang_StringBuffer(threadStateData, locals[3].data.o, (CN1_ARRAY_ELEMENT_BYTE(locals[0].data.o, ilocals_5_) & 0xffff)); 
     __CN1_DEBUG_INFO(169);
     BC_IINC(5, 1);
-    goto label_L2112840400;
+    goto label_L365475676;
 
-label_L1722642791:
+label_L1806402192:
     __CN1_DEBUG_INFO(175);
 
 {

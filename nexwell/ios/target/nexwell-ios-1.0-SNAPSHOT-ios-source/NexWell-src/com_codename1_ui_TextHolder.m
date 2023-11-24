@@ -95,6 +95,9 @@ void __STATIC_INITIALIZER_com_codename1_ui_TextHolder(CODENAME_ONE_THREAD_STATE)
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_nexus_nexwell_components_BaseRoundProgress] = malloc(sizeof(int*) * 14);
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_nexus_nexwell_components_BaseRoundProgress][0] = 334;
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_nexus_nexwell_components_BaseRoundProgress][1] = 335;
+    classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_nexus_nexwell_components_CircleFilledProgress] = malloc(sizeof(int*) * 14);
+    classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_nexus_nexwell_components_CircleFilledProgress][0] = 334;
+    classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_nexus_nexwell_components_CircleFilledProgress][1] = 335;
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_TextArea] = malloc(sizeof(int*) * 14);
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_TextArea][0] = 325;
     classToInterfaceMap_com_codename1_ui_TextHolder[cn1_class_id_com_codename1_ui_TextArea][1] = 326;

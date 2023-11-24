@@ -36,7 +36,7 @@ JAVA_OBJECT __NEW_com_codename1_components_Switch_1(CODENAME_ONE_THREAD_STATE) {
 
 
 JAVA_VOID com_codename1_components_Switch_1___INIT_____com_codename1_components_Switch(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10766, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10793, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(686);
@@ -48,16 +48,16 @@ JAVA_VOID com_codename1_components_Switch_1___INIT_____com_codename1_components_
 
 
 JAVA_VOID com_codename1_components_Switch_1_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10766, 3047);
+    DEFINE_INSTANCE_METHOD_STACK(3, 3, 0, 10793, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(688);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_components_Switch_getComponentForm___R_com_codename1_ui_Form(threadStateData, get_field_com_codename1_components_Switch_1_this_0(__cn1ThisObject));locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(689);
-    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L2013715263;
+    if (locals[2].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1805752626;
     __CN1_DEBUG_INFO(690);
     /* CustomInvoke */virtual_com_codename1_ui_Form_addComponentAwaitingRelease___com_codename1_ui_Component(threadStateData, locals[2].data.o, get_field_com_codename1_components_Switch_1_this_0(__cn1ThisObject)); 
 
-label_L2013715263:
+label_L1805752626:
     __CN1_DEBUG_INFO(692);
     /* CustomInvoke */com_codename1_components_Switch_access$002___com_codename1_components_Switch_boolean_R_boolean(threadStateData, get_field_com_codename1_components_Switch_1_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(693);

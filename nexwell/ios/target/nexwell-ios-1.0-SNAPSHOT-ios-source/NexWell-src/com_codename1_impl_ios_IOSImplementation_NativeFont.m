@@ -138,7 +138,7 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeFont_getMaxStringLength_
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
     DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 9580, 9581);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(5398);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_maxStringLength(__cn1ThisObject)!=-1 /* ICONST_M1 */) /* IF_ICMPNE CustomJump */ goto label_L678115778;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_maxStringLength(__cn1ThisObject)!=-1 /* ICONST_M1 */) /* IF_ICMPNE CustomJump */ goto label_L46627301;
     __CN1_DEBUG_INFO(5399);
     /* VarOp.assignFrom */ ilocals_1_ = /* CustomInvoke */virtual_com_codename1_impl_ios_IOSImplementation_NativeFont_charWidth___char_R_int(threadStateData, __cn1ThisObject, 88);
     __CN1_DEBUG_INFO(5400);
@@ -152,7 +152,7 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeFont_getMaxStringLength_
     SP--; SP[-1].data.i = SP[-1].data.i / (*SP).data.i; /* IDIV */
     set_field_com_codename1_impl_ios_IOSImplementation_NativeFont_maxStringLength(threadStateData, POP_INT(), POP_OBJ());
 
-label_L678115778:
+label_L46627301:
     __CN1_DEBUG_INFO(5402);
 
 {
@@ -174,7 +174,7 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeFont_charWidth___char_R_
     BC_ASTORE(2);
     __CN1_DEBUG_INFO(5407);
     /* VarOp.assignFrom */ locals[3].data.o = /* CustomInvoke */virtual_java_util_Map_get___java_lang_Object_R_java_lang_Object(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_widthCache(__cn1ThisObject), locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(5408);
-    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1412564235;
+    if (locals[3].data.o==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1787083818;
     __CN1_DEBUG_INFO(5409);
 
 {
@@ -182,7 +182,7 @@ JAVA_INT com_codename1_impl_ios_IOSImplementation_NativeFont_charWidth___char_R_
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return ___returnValue;
 }
 
-label_L1412564235:
+label_L1787083818:
     __CN1_DEBUG_INFO(5411);
     /* VarOp.assignFrom */ ilocals_4_ = /* CustomInvoke */com_codename1_impl_ios_IOSImplementation_access$4900___com_codename1_impl_ios_IOSImplementation_long_char_R_int(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_this_0(__cn1ThisObject), get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_peer(__cn1ThisObject), ilocals_1_);
     __CN1_DEBUG_INFO(5412);
@@ -209,34 +209,34 @@ JAVA_BOOLEAN com_codename1_impl_ios_IOSImplementation_NativeFont_equals___java_l
     __CN1_DEBUG_INFO(5417);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(5418);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_name(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L123674777;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_name(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1367594377;
     __CN1_DEBUG_INFO(5419);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_name(locals[2].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L471004142;
-    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_name(locals[2].data.o), get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_name(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L471004142;
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_weight(locals[2].data.o)!=get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_weight(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L471004142;
-    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_height(locals[2].data.o), get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_height(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L471004142;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_name(locals[2].data.o)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1360878852;
+    if (/* CustomInvoke */virtual_java_lang_String_equals___java_lang_Object_R_boolean(threadStateData, get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_name(locals[2].data.o), get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_name(__cn1ThisObject))==0) /* IFEQ CustomJump */ goto label_L1360878852;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_weight(locals[2].data.o)!=get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_weight(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L1360878852;
+    if (CN1_CMP_EXPR(get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_height(locals[2].data.o), get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_height(__cn1ThisObject))!=0) /* IFNE CustomJump */ goto label_L1360878852;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1833335943;
+    goto label_L1747721875;
 
-label_L471004142:
+label_L1360878852:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1833335943:
+label_L1747721875:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 
-label_L123674777:
+label_L1367594377:
     __CN1_DEBUG_INFO(5421);
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_name(locals[2].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L689448569;
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_style(locals[2].data.o)!=get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_style(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L689448569;
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_face(locals[2].data.o)!=get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_face(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L689448569;
-    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_size(locals[2].data.o)!=get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_size(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L689448569;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_name(locals[2].data.o)!=JAVA_NULL) /* IFNONNULL CustomJump */ goto label_L654740048;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_style(locals[2].data.o)!=get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_style(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L654740048;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_face(locals[2].data.o)!=get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_face(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L654740048;
+    if (get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_size(locals[2].data.o)!=get_field_com_codename1_impl_ios_IOSImplementation_NativeFont_size(__cn1ThisObject)) /* IF_ICMPNE CustomJump */ goto label_L654740048;
     PUSH_INT(1); /* ICONST_1 */
-    goto label_L1472036907;
+    goto label_L1759915172;
 
-label_L689448569:
+label_L654740048:
     PUSH_INT(0); /* ICONST_0 */
 
-label_L1472036907:
+label_L1759915172:
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return SP[-1].data.i;
 }
 

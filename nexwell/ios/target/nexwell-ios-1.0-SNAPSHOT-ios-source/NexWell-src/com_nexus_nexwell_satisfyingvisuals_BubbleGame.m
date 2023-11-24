@@ -314,7 +314,7 @@ com_nexus_nexwell_satisfyingvisuals_BubbleGame___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 10534, 201);
+    DEFINE_INSTANCE_METHOD_STACK(3, 4, 0, 10539, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(27);
     /* CustomInvoke */com_codename1_ui_Form___INIT_____java_lang_String(threadStateData, __cn1ThisObject, STRING_FROM_CONSTANT_POOL_OFFSET(219)); 
     __CN1_DEBUG_INFO(22);
@@ -341,7 +341,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame___INIT____(CODENAME_ONE
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(3);
     __CN1_DEBUG_INFO(37);
-    /* CustomInvoke */virtual_com_codename1_components_ToastBar_Status_setMessage___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10535)); 
+    /* CustomInvoke */virtual_com_codename1_components_ToastBar_Status_setMessage___java_lang_String(threadStateData, locals[3].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10540)); 
     __CN1_DEBUG_INFO(38);
     /* CustomInvoke */virtual_com_codename1_components_ToastBar_Status_setExpires___int(threadStateData, locals[3].data.o, 4000); 
     __CN1_DEBUG_INFO(39);
@@ -371,7 +371,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame___INIT____(CODENAME_ONE
 
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_start__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 10534, 1166);
+    DEFINE_INSTANCE_METHOD_STACK(4, 3, 0, 10539, 1166);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(50);
     BC_ALOAD(0);
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_satisfyingvisuals_BubbleGame__Lambda_2_lambdaFactory$___com_nexus_nexwell_satisfyingvisuals_BubbleGame_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject));
@@ -402,7 +402,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_pointerPressed___int_in
     volatile JAVA_INT ilocals_1_ = 0; /* x */
     volatile JAVA_INT ilocals_2_ = 0; /* y */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 10534, 277);
+    DEFINE_INSTANCE_METHOD_STACK(4, 5, 0, 10539, 277);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     ilocals_1_ = __cn1Arg1;
     ilocals_2_ = __cn1Arg2;
     __CN1_DEBUG_INFO(65);
@@ -412,8 +412,8 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_pointerPressed___int_in
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(3);
 
-label_L1673916398:
-    if (ilocals_3_<0) /* IFLT CustomJump */ goto label_L9844218;
+label_L1373577787:
+    if (ilocals_3_<0) /* IFLT CustomJump */ goto label_L753426788;
     __CN1_DEBUG_INFO(66);
     /* VarOp.assignFrom */ locals[4].data.o = /* CustomInvoke */virtual_java_util_ArrayList_get___int_R_java_lang_Object(threadStateData, get_field_com_nexus_nexwell_satisfyingvisuals_BubbleGame_bubbles(__cn1ThisObject), ilocals_3_);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(67);
     { JAVA_INT tmpResult = virtual_com_nexus_nexwell_satisfyingvisuals_Bubble_getX___R_int(threadStateData, locals[4].data.o);
@@ -450,7 +450,7 @@ label_L1673916398:
     PUSH_INT(tmpResult); }
     SP[-1].data.d = SP[-1].data.i; /* I2D */;
     BC_DCMPL();
-    if(POP_INT() > 0) /* IFGT */ goto label_L1403716230;
+    if(POP_INT() > 0) /* IFGT */ goto label_L1586470445;
     __CN1_DEBUG_INFO(68);
     /* CustomInvoke */virtual_java_util_ArrayList_remove___int_R_java_lang_Object(threadStateData, get_field_com_nexus_nexwell_satisfyingvisuals_BubbleGame_bubbles(__cn1ThisObject), ilocals_3_); 
     __CN1_DEBUG_INFO(69);
@@ -458,12 +458,12 @@ label_L1673916398:
     __CN1_DEBUG_INFO(70);
     /* CustomInvoke */virtual_java_io_PrintStream_println___int(threadStateData, get_static_java_lang_System_out(threadStateData), get_field_com_nexus_nexwell_satisfyingvisuals_BubbleGame_score(__cn1ThisObject)); 
 
-label_L1403716230:
+label_L1586470445:
     __CN1_DEBUG_INFO(65);
     BC_IINC(3, -1);
-    goto label_L1673916398;
+    goto label_L1373577787;
 
-label_L9844218:
+label_L753426788:
     __CN1_DEBUG_INFO(73);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -472,7 +472,7 @@ label_L9844218:
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_tick__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_1_ = 0; /* v1 */
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10534, 10536);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10539, 10541);
     monitorEnterBlock(threadStateData, __cn1ThisObject);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(77);
     { JAVA_INT tmpResult = virtual_java_util_ArrayList_size___R_int(threadStateData, get_field_com_nexus_nexwell_satisfyingvisuals_BubbleGame_bubbles(__cn1ThisObject));
@@ -481,31 +481,31 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_tick__(CODENAME_ONE_THR
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(1);
 
-label_L1541046463:
-    if (ilocals_1_<0) /* IFLT CustomJump */ goto label_L756080817;
+label_L1784834205:
+    if (ilocals_1_<0) /* IFLT CustomJump */ goto label_L265577219;
     __CN1_DEBUG_INFO(78);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_ArrayList_get___int_R_java_lang_Object(threadStateData, get_field_com_nexus_nexwell_satisfyingvisuals_BubbleGame_bubbles(__cn1ThisObject), ilocals_1_);
     PUSH_OBJ(tmpResult); }
     { JAVA_INT tmpResult = virtual_com_nexus_nexwell_satisfyingvisuals_Bubble_getSize___R_int(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     PUSH_INT(10);
-    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L479734028;
+    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L1624817884;
     __CN1_DEBUG_INFO(79);
     /* CustomInvoke */virtual_java_util_ArrayList_remove___int_R_java_lang_Object(threadStateData, get_field_com_nexus_nexwell_satisfyingvisuals_BubbleGame_bubbles(__cn1ThisObject), ilocals_1_); 
-    goto label_L388802347;
+    goto label_L1107579932;
 
-label_L479734028:
+label_L1624817884:
     __CN1_DEBUG_INFO(81);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_util_ArrayList_get___int_R_java_lang_Object(threadStateData, get_field_com_nexus_nexwell_satisfyingvisuals_BubbleGame_bubbles(__cn1ThisObject), ilocals_1_);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_nexus_nexwell_satisfyingvisuals_Bubble_shrink___int(threadStateData, SP[-1].data.o, 2 /* ICONST_2 */);     SP -= 1;
 
-label_L388802347:
+label_L1107579932:
     __CN1_DEBUG_INFO(77);
     BC_IINC(1, -1);
-    goto label_L1541046463;
+    goto label_L1784834205;
 
-label_L756080817:
+label_L265577219:
     __CN1_DEBUG_INFO(84);
     monitorExitBlock(threadStateData, __cn1ThisObject);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
@@ -514,21 +514,21 @@ label_L756080817:
 
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_paint___com_codename1_ui_Graphics(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 10534, 2355);
+    DEFINE_INSTANCE_METHOD_STACK(7, 4, 0, 10539, 2355);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(88);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_setColor___int(threadStateData, locals[1].data.o, 5609983); 
     __CN1_DEBUG_INFO(89);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_java_util_ArrayList_iterator___R_java_util_Iterator(threadStateData, get_field_com_nexus_nexwell_satisfyingvisuals_BubbleGame_bubbles(__cn1ThisObject));locals[2].type=CN1_TYPE_OBJECT;
-label_L753426788:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1910896157;
+label_L1627010197:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1174586025;
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(90);
     /* CustomInvoke */virtual_com_codename1_ui_Graphics_fillRoundRect___int_int_int_int_int_int(threadStateData, locals[1].data.o, virtual_com_nexus_nexwell_satisfyingvisuals_Bubble_getX___R_int(threadStateData, locals[3].data.o), virtual_com_nexus_nexwell_satisfyingvisuals_Bubble_getY___R_int(threadStateData, locals[3].data.o), virtual_com_nexus_nexwell_satisfyingvisuals_Bubble_getSize___R_int(threadStateData, locals[3].data.o), virtual_com_nexus_nexwell_satisfyingvisuals_Bubble_getSize___R_int(threadStateData, locals[3].data.o), virtual_com_nexus_nexwell_satisfyingvisuals_Bubble_getSize___R_int(threadStateData, locals[3].data.o), virtual_com_nexus_nexwell_satisfyingvisuals_Bubble_getSize___R_int(threadStateData, locals[3].data.o)); 
     __CN1_DEBUG_INFO(91);
-    goto label_L753426788;
+    goto label_L1627010197;
 
-label_L1910896157:
+label_L1174586025:
     __CN1_DEBUG_INFO(92);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
@@ -537,7 +537,7 @@ label_L1910896157:
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_lambda$start$3___com_nexus_nexwell_satisfyingvisuals_BubbleGame(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_satisfyingvisuals_BubbleGame(threadStateData);
-    DEFINE_METHOD_STACK(6, 1, 0, 10534, 10537);
+    DEFINE_METHOD_STACK(6, 1, 0, 10539, 10542);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(59);
@@ -557,7 +557,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_lambda$start$3___com_ne
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_lambda$start$2___com_nexus_nexwell_satisfyingvisuals_BubbleGame(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_satisfyingvisuals_BubbleGame(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10534, 10538);
+    DEFINE_METHOD_STACK(1, 1, 0, 10539, 10543);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(53);
@@ -572,7 +572,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_lambda$start$2___com_ne
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_lambda$start$1___com_nexus_nexwell_satisfyingvisuals_BubbleGame_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_satisfyingvisuals_BubbleGame(threadStateData);
-    DEFINE_METHOD_STACK(3, 2, 0, 10534, 10539);
+    DEFINE_METHOD_STACK(3, 2, 0, 10539, 10544);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -586,7 +586,7 @@ JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_lambda$start$1___com_ne
 
 JAVA_VOID com_nexus_nexwell_satisfyingvisuals_BubbleGame_lambda$new$0___com_codename1_ui_Form_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_satisfyingvisuals_BubbleGame(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10534, 10353);
+    DEFINE_METHOD_STACK(1, 2, 0, 10539, 10353);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;

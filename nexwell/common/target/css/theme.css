@@ -59,9 +59,14 @@ Images{
 /** Style for Button class */
 Button {
     font-family: "native:MainLight";
-    font-size: 0mm;
+    font-size: 4mm;
     margin: 1mm;
     padding: 1mm;
+    border-radius: 100px;
+}
+ButtonDialogs {
+    font-family: "native:MainLight";
+    font-size: mm;
     border-radius: 100px;
 }
 circle{
@@ -69,8 +74,8 @@ circle{
     font-size: 3mm;
 }
 /** Style for App Title Bar Text */
-Title {
-    color: #0894e6;
+Title{
+    color: #cccccc;
     font-family: "native:MainBold";
     font-size: 8mm;
     margin: 1mm 4mm 1mm 3mm;
@@ -394,12 +399,12 @@ GamesToolbar{
 MusicToolbar{
     font-size: 5mm;
     padding: 3mm 3mm 3mm 3mm;
-    background: linear-gradient(to bottom, #000000, #48C875);
+    background: linear-gradient(to left, #e04f90, #475748);
 }
 ArticlesToolbar{
     font-size: 5mm;
     padding: 3mm 3mm 3mm 3mm;
-    background: linear-gradient(to bottom, #000000, #00d2ff);
+    background: linear-gradient(to left, #c7631c, #000000);
 }
 EmergencyToolbar{
     font-size: 5mm;

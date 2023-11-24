@@ -1,7 +1,7 @@
 #include "com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4.h"
 #include "com_codename1_ui_events_ActionEvent.h"
 #include "com_nexus_nexwell_components_BreathingTimer.h"
-#include "com_nexus_nexwell_components_CircleProgress.h"
+#include "com_nexus_nexwell_components_CircleFilledProgress.h"
 #include "com_nexus_nexwell_forms_BreathingTimerForm.h"
 #include "com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4.h"
 #include "java_lang_NullPointerException.h"
@@ -44,8 +44,8 @@ JAVA_OBJECT __NEW_com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4(CODENAME_
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4___INIT_____com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleProgress(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10688, 201);
+JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4___INIT_____com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleFilledProgress(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10699, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -59,25 +59,25 @@ JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4___INIT_____com_ne
 
 
 JAVA_VOID com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10688, 3047);
+    DEFINE_INSTANCE_METHOD_STACK(3, 2, 0, 10699, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
-    /* CustomInvoke */com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$3___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleProgress_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4_arg_1(__cn1ThisObject), get_field_com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4_arg_2(__cn1ThisObject), locals[1].data.o); 
+    /* CustomInvoke */com_nexus_nexwell_forms_BreathingTimerForm_lambda$new$3___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleFilledProgress_com_codename1_ui_events_ActionEvent(threadStateData, get_field_com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4_arg_1(__cn1ThisObject), get_field_com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4_arg_2(__cn1ThisObject), locals[1].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_OBJECT com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4_lambdaFactory$___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleProgress_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+JAVA_OBJECT com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4_lambdaFactory$___com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleFilledProgress_R_com_codename1_ui_events_ActionListener(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4(threadStateData);
-    DEFINE_METHOD_STACK(4, 2, 0, 10688, 10185);
+    DEFINE_METHOD_STACK(4, 2, 0, 10699, 10185);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
     PUSH_POINTER(__NEW_com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4___INIT_____com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleProgress(threadStateData, SP[-1].data.o, locals[0].data.o, locals[1].data.o);     SP -= 1;
+    /* CustomInvoke */com_nexus_nexwell_forms_BreathingTimerForm__Lambda_4___INIT_____com_nexus_nexwell_components_BreathingTimer_com_nexus_nexwell_components_CircleFilledProgress(threadStateData, SP[-1].data.o, locals[0].data.o, locals[1].data.o);     SP -= 1;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return POP_OBJ();
 }

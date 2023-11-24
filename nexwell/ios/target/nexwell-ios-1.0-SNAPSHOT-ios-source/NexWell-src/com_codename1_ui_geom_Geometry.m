@@ -45,19 +45,19 @@ JAVA_INT com_codename1_ui_geom_Geometry_factorial___int_R_int(CODENAME_ONE_THREA
     DEFINE_METHOD_STACK(3, 1, 0, 3796, 3797);
     ilocals_0_ = __cn1Arg1;
     __CN1_DEBUG_INFO(738);
-    if (ilocals_0_>=0) /* IFGE CustomJump */ goto label_L1196222136;
+    if (ilocals_0_>=0) /* IFGE CustomJump */ goto label_L302869695;
     __CN1_DEBUG_INFO(739);
     PUSH_POINTER(__NEW_java_lang_IllegalArgumentException(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */java_lang_IllegalArgumentException___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(3798));     SP -= 1;
     throwException(threadStateData, POP_OBJ());
 
-label_L1196222136:
+label_L302869695:
     __CN1_DEBUG_INFO(741);
-    if (ilocals_0_!=0) /* IFNE CustomJump */ goto label_L613100385;
+    if (ilocals_0_!=0) /* IFNE CustomJump */ goto label_L1880527972;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 1 /* ICONST_1 */;
 
-label_L613100385:
+label_L1880527972:
     __CN1_DEBUG_INFO(742);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_0_; 

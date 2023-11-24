@@ -209,7 +209,7 @@ JAVA_INT com_codename1_ui_animations_MorphTransition_CC_positionRelativeToScreen
     __CN1_DEBUG_INFO(274);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
     __CN1_DEBUG_INFO(275);
-    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L266570766;
+    if (ilocals_2_==0) /* IFEQ CustomJump */ goto label_L1018053912;
     __CN1_DEBUG_INFO(276);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Component_getComponentForm___R_com_codename1_ui_Form(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -227,13 +227,13 @@ JAVA_INT com_codename1_ui_animations_MorphTransition_CC_positionRelativeToScreen
     SP--; SP[-1].data.i = (SP[-1].data.i - (*SP).data.i); /* ISUB */
     BC_ISTORE(3);
     __CN1_DEBUG_INFO(278);
-    goto label_L1634190383;
+    goto label_L1516588549;
 
-label_L266570766:
+label_L1018053912:
     __CN1_DEBUG_INFO(279);
     /* VarOp.assignFrom */ ilocals_3_ = virtual_com_codename1_ui_Component_getAbsoluteX___R_int(threadStateData, locals[1].data.o);
 
-label_L1634190383:
+label_L1516588549:
     __CN1_DEBUG_INFO(282);
 
 {

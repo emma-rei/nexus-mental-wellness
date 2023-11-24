@@ -271,16 +271,16 @@ JAVA_INT com_codename1_ui_spinner_Spinner3D_2_getGridPosY___R_int(CODENAME_ONE_T
     __CN1_DEBUG_INFO(128);
     /* VarOp.assignFrom */     ilocals_3_ = ilocals_2_;
     __CN1_DEBUG_INFO(129);
-    if ((ilocals_2_ % ilocals_1_)>=(ilocals_1_ - (ilocals_2_ % ilocals_1_))) /* IF_ICMPGE CustomJump */ goto label_L151020702;
+    if ((ilocals_2_ % ilocals_1_)>=(ilocals_1_ - (ilocals_2_ % ilocals_1_))) /* IF_ICMPGE CustomJump */ goto label_L894780981;
     __CN1_DEBUG_INFO(130);
     /* VarOp.assignFrom */ ilocals_3_=(ilocals_2_ - (ilocals_2_ % ilocals_1_));
-    goto label_L146316090;
+    goto label_L1895167389;
 
-label_L151020702:
+label_L894780981:
     __CN1_DEBUG_INFO(132);
     /* VarOp.assignFrom */ ilocals_3_=((ilocals_2_ + ilocals_1_) - (ilocals_2_ % ilocals_1_));
 
-label_L146316090:
+label_L1895167389:
     __CN1_DEBUG_INFO(134);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_3_; 
@@ -295,17 +295,17 @@ label_L146316090:
     SP[-1].data.d = SP[-1].data.i; /* I2D */;
     SP--; SP[-1].data.d = (SP[-1].data.d - (*SP).data.d); /* DSUB */
     BC_DCMPL();
-    if(POP_INT() <= 0) /* IFLE */ goto label_L86411583;
+    if(POP_INT() <= 0) /* IFLE */ goto label_L1950554162;
     __CN1_DEBUG_INFO(135);
     /* VarOp.assignFrom */ ilocals_3_=(ilocals_3_ - ilocals_1_);
 
-label_L86411583:
+label_L1950554162:
     __CN1_DEBUG_INFO(137);
-    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L1038375788;
+    if (ilocals_3_>=0) /* IFGE CustomJump */ goto label_L1872928774;
     __CN1_DEBUG_INFO(138);
     /* VarOp.assignFrom */     ilocals_3_ = 0 /* ICONST_0 */; 
 
-label_L1038375788:
+label_L1872928774:
     __CN1_DEBUG_INFO(142);
 
 {
@@ -329,9 +329,9 @@ JAVA_VOID com_codename1_ui_spinner_Spinner3D_2_pointerPressed___int_int(CODENAME
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_com_codename1_ui_scene_Node_contains___int_int_R_boolean(threadStateData, SP[-1].data.o, ilocals_1_, ilocals_2_);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L936045786;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1884890921;
 
-label_L936045786:
+label_L1884890921:
     __CN1_DEBUG_INFO(151);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

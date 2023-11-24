@@ -85,6 +85,8 @@ void __STATIC_INITIALIZER_java_lang_Runnable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_NexWellStub][0] = 18;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_NexWellStub_1] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_NexWellStub_1][0] = 10;
+    classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_forms_PomodoroForm__Lambda_4] = malloc(sizeof(int*) * 13);
+    classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_forms_PomodoroForm__Lambda_4][0] = 10;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_forms_BreathingTimerForm__Lambda_10] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_forms_BreathingTimerForm__Lambda_10][0] = 10;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_homepage_UIController__Lambda_1] = malloc(sizeof(int*) * 13);
@@ -95,6 +97,8 @@ void __STATIC_INITIALIZER_java_lang_Runnable(CODENAME_ONE_THREAD_STATE) {
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_satisfyingvisuals_BubbleGame__Lambda_3][0] = 10;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_satisfyingvisuals_ChaosGame__Lambda_3] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_satisfyingvisuals_ChaosGame__Lambda_3][0] = 10;
+    classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_components_Pomodoro__Lambda_1] = malloc(sizeof(int*) * 13);
+    classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_components_Pomodoro__Lambda_1][0] = 10;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_components_BreathingTimer__Lambda_1] = malloc(sizeof(int*) * 13);
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_components_BreathingTimer__Lambda_1][0] = 10;
     classToInterfaceMap_java_lang_Runnable[cn1_class_id_com_nexus_nexwell_games_GameOfLifeForm__Lambda_6] = malloc(sizeof(int*) * 13);

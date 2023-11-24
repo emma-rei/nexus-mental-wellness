@@ -133,38 +133,38 @@ JAVA_OBJECT com_codename1_impl_ios_IOSVideoCaptureConstraintsCompiler_compile___
 locals[6].type=CN1_TYPE_OBJECT;    /* VarOp.assignFrom */ ilocals_7_ = CN1_ARRAY_LENGTH(locals[6].data.o);
     /* VarOp.assignFrom */     ilocals_8_ = 0 /* ICONST_0 */; 
 
-label_L665988980:
-    if (ilocals_8_>=ilocals_7_) /* IF_ICMPGE CustomJump */ goto label_L494414526;
+label_L101162229:
+    if (ilocals_8_>=ilocals_7_) /* IF_ICMPGE CustomJump */ goto label_L1252820474;
     /* VarOp.assignFrom */ locals[9].type=CN1_TYPE_INVALID;locals[9].data.o=CN1_ARRAY_ELEMENT_OBJECT(locals[6].data.o, ilocals_8_);
 locals[9].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(31);
     /* VarOp.assignFrom */ locals[10].type=CN1_TYPE_INVALID;    locals[10].data.o = locals[9].data.o;
 locals[10].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(32);
-    if (/* CustomInvoke */java_util_Arrays_equals___int_1ARRAY_int_1ARRAY_R_boolean(threadStateData, locals[10].data.o, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L1844942991;
+    if (/* CustomInvoke */java_util_Arrays_equals___int_1ARRAY_int_1ARRAY_R_boolean(threadStateData, locals[10].data.o, locals[3].data.o)==0) /* IFEQ CustomJump */ goto label_L570422884;
     __CN1_DEBUG_INFO(33);
     /* VarOp.assignFrom */     ilocals_5_ = 1 /* ICONST_1 */; 
     __CN1_DEBUG_INFO(34);
-    goto label_L494414526;
+    goto label_L1252820474;
 
-label_L1844942991:
+label_L570422884:
     __CN1_DEBUG_INFO(30);
     BC_IINC(8, 1);
-    goto label_L665988980;
+    goto label_L101162229;
 
-label_L494414526:
+label_L1252820474:
     __CN1_DEBUG_INFO(37);
-    if (ilocals_5_!=0) /* IFNE CustomJump */ goto label_L586917260;
+    if (ilocals_5_!=0) /* IFNE CustomJump */ goto label_L509806761;
     __CN1_DEBUG_INFO(38);
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_capture_VideoCaptureConstraints_preferredWidth___int_R_com_codename1_capture_VideoCaptureConstraints(threadStateData, locals[2].data.o, 0 /* ICONST_0 */);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_capture_VideoCaptureConstraints_preferredHeight___int_R_com_codename1_capture_VideoCaptureConstraints(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);     SP -= 1;
 
-label_L586917260:
+label_L509806761:
     __CN1_DEBUG_INFO(40);
     /* CustomInvoke */virtual_com_codename1_capture_VideoCaptureConstraints_preferredMaxFileSize___long_R_com_codename1_capture_VideoCaptureConstraints(threadStateData, locals[2].data.o, 0 /* LCONST_0 */); 
     __CN1_DEBUG_INFO(42);
-    if (CN1_ARRAY_ELEMENT_INT(locals[3].data.o, 0 /* ICONST_0 */)==0) /* IFEQ CustomJump */ goto label_L2122991287;
-    if (CN1_ARRAY_ELEMENT_INT(locals[3].data.o, 1 /* ICONST_1 */)==0) /* IFEQ CustomJump */ goto label_L2122991287;
-    if (virtual_com_codename1_capture_VideoCaptureConstraints_getPreferredQuality___R_int(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L2122991287;
+    if (CN1_ARRAY_ELEMENT_INT(locals[3].data.o, 0 /* ICONST_0 */)==0) /* IFEQ CustomJump */ goto label_L818859466;
+    if (CN1_ARRAY_ELEMENT_INT(locals[3].data.o, 1 /* ICONST_1 */)==0) /* IFEQ CustomJump */ goto label_L818859466;
+    if (virtual_com_codename1_capture_VideoCaptureConstraints_getPreferredQuality___R_int(threadStateData, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L818859466;
     __CN1_DEBUG_INFO(44);
     BC_ALOAD(3);
     PUSH_INT(0); /* ICONST_0 */
@@ -172,21 +172,21 @@ label_L586917260:
     SP--; SP[-1].type = CN1_TYPE_INT; 
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     PUSH_INT(320);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L803768841;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L1859928417;
     BC_ALOAD(3);
     PUSH_INT(1); /* ICONST_1 */
     CHECK_ARRAY_ACCESS(2, SP[-1].data.i); /* IALOAD */
     SP--; SP[-1].type = CN1_TYPE_INT; 
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     PUSH_INT(240);
-    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L420993295;
+    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L1418102907;
 
-label_L803768841:
+label_L1859928417:
     __CN1_DEBUG_INFO(45);
     /* CustomInvoke */virtual_com_codename1_capture_VideoCaptureConstraints_preferredQuality___int_R_com_codename1_capture_VideoCaptureConstraints(threadStateData, locals[2].data.o, 1 /* ICONST_1 */); 
-    goto label_L2122991287;
+    goto label_L818859466;
 
-label_L420993295:
+label_L1418102907:
     __CN1_DEBUG_INFO(46);
     BC_ALOAD(3);
     PUSH_INT(0); /* ICONST_0 */
@@ -194,20 +194,20 @@ label_L420993295:
     SP--; SP[-1].type = CN1_TYPE_INT; 
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     PUSH_INT(800);
-    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L1723848804;
+    SP-=2; if((*SP).data.i > SP[1].data.i) /* IF_ICMPGT */ goto label_L1378280450;
     BC_ALOAD(3);
     PUSH_INT(1); /* ICONST_1 */
     CHECK_ARRAY_ACCESS(2, SP[-1].data.i); /* IALOAD */
     SP--; SP[-1].type = CN1_TYPE_INT; 
     SP[-1].data.i = ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-1].data.o).data)[(*SP).data.i];
     PUSH_INT(600);
-    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L2122991287;
+    SP-=2; if((*SP).data.i <= SP[1].data.i) /* IF_ICMPLE */ goto label_L818859466;
 
-label_L1723848804:
+label_L1378280450:
     __CN1_DEBUG_INFO(47);
     /* CustomInvoke */virtual_com_codename1_capture_VideoCaptureConstraints_preferredQuality___int_R_com_codename1_capture_VideoCaptureConstraints(threadStateData, locals[2].data.o, 2 /* ICONST_2 */); 
 
-label_L2122991287:
+label_L818859466:
     __CN1_DEBUG_INFO(50);
 
 {

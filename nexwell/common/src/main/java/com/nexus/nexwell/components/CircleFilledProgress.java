@@ -45,12 +45,12 @@ public class CircleFilledProgress extends BaseRoundProgress{
 
         path.arc(x, y, size, size, 0, 2*Math.PI);
         g.setAntiAliased(true);
-        g.setColor(getStyle().getBgColor());
+        g.setColor(Colors.CYAN);
         g.setClip(path);
         g.fillRect(x, y, size, size);
         int p = getProgress();
 
-        g.setColor(getStyle().getFgColor());
+        g.setColor(Colors.BLUE);
         int h = (getHeight() * p) /getMaxValue();
         g.fillRect(x, y + getHeight() - h, size, h);
 

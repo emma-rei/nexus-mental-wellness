@@ -49,12 +49,12 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_27___INIT_____java_lang_Strin
 JAVA_VOID com_codename1_impl_ios_IOSImplementation_27_run__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 9535, 203);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(8111);
-    if (com_codename1_impl_ios_IOSImplementation_getLocalNotificationCallback___R_com_codename1_notifications_LocalNotificationCallback(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L665512315;
+    if (com_codename1_impl_ios_IOSImplementation_getLocalNotificationCallback___R_com_codename1_notifications_LocalNotificationCallback(threadStateData)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L206310209;
     __CN1_DEBUG_INFO(8112);
     PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_getLocalNotificationCallback___R_com_codename1_notifications_LocalNotificationCallback(threadStateData));
     /* CustomInvoke */virtual_com_codename1_notifications_LocalNotificationCallback_localNotificationReceived___java_lang_String(threadStateData, SP[-1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_27_val_notificationId(__cn1ThisObject));     SP -= 1;
 
-label_L665512315:
+label_L206310209:
     __CN1_DEBUG_INFO(8114);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

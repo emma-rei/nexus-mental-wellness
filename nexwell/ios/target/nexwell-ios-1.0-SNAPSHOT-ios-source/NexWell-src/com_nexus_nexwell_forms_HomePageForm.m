@@ -18,16 +18,19 @@
 #include "com_nexus_nexwell_components_RichTextView.h"
 #include "com_nexus_nexwell_forms_HomePageForm.h"
 #include "com_nexus_nexwell_forms_HomePageForm_BreathingTimer.h"
+#include "com_nexus_nexwell_forms_HomePageForm_PomodoroTimer.h"
 #include "com_nexus_nexwell_forms_HomePageForm__Lambda_1.h"
-#include "com_nexus_nexwell_forms_HomePageForm__Lambda_11.h"
 #include "com_nexus_nexwell_forms_HomePageForm__Lambda_12.h"
+#include "com_nexus_nexwell_forms_HomePageForm__Lambda_13.h"
 #include "com_nexus_nexwell_forms_HomePageForm__Lambda_2.h"
 #include "com_nexus_nexwell_forms_HomePageForm__Lambda_3.h"
 #include "com_nexus_nexwell_forms_HomePageForm__Lambda_4.h"
+#include "com_nexus_nexwell_forms_HomePageForm__Lambda_5.h"
 #include "com_nexus_nexwell_forms_Settings.h"
 #include "com_nexus_nexwell_homepage_ContentFeed.h"
 #include "java_lang_NullPointerException.h"
 #include "java_lang_String.h"
+#include "java_lang_StringBuilder.h"
 #include "java_util_Random.h"
 const struct clazz *base_interfaces_for_com_nexus_nexwell_forms_HomePageForm[] = {};
 struct clazz class__com_nexus_nexwell_forms_HomePageForm = {
@@ -274,57 +277,57 @@ com_nexus_nexwell_forms_HomePageForm___INIT____(threadStateData, o);
 
 
 JAVA_VOID com_nexus_nexwell_forms_HomePageForm___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(7, 21, 0, 10592, 201);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(29);
+    DEFINE_INSTANCE_METHOD_STACK(7, 25, 0, 10597, 201);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(28);
     BC_ALOAD(0);
     /* LDC: ' N E X W E L L'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10593));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10598));
     PUSH_OBJ(com_codename1_ui_layouts_BoxLayout_y___R_com_codename1_ui_layouts_BoxLayout(threadStateData));
     com_codename1_ui_Form___INIT_____java_lang_String_com_codename1_ui_layouts_Layout(threadStateData, SP[-3].data.o, SP[-2].data.o, SP[-1].data.o);     SP-= 3;
-    __CN1_DEBUG_INFO(32);
+    __CN1_DEBUG_INFO(31);
     PUSH_OBJ(com_codename1_ui_util_Resources_getGlobalResources___R_com_codename1_ui_util_Resources(threadStateData));
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_util_Resources_getImage___java_lang_String_R_com_codename1_ui_Image(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10594));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_util_Resources_getImage___java_lang_String_R_com_codename1_ui_Image(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10599));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(1);
-    __CN1_DEBUG_INFO(34);
+    __CN1_DEBUG_INFO(33);
     PUSH_OBJ(com_codename1_ui_util_Resources_getGlobalResources___R_com_codename1_ui_util_Resources(threadStateData));
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_util_Resources_getImage___java_lang_String_R_com_codename1_ui_Image(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10595));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_util_Resources_getImage___java_lang_String_R_com_codename1_ui_Image(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10600));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
-    __CN1_DEBUG_INFO(35);
+    __CN1_DEBUG_INFO(34);
     PUSH_OBJ(com_codename1_ui_util_Resources_getGlobalResources___R_com_codename1_ui_util_Resources(threadStateData));
-    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_util_Resources_getImage___java_lang_String_R_com_codename1_ui_Image(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10596));
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_util_Resources_getImage___java_lang_String_R_com_codename1_ui_Image(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10601));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(3);
-    __CN1_DEBUG_INFO(36);
+    __CN1_DEBUG_INFO(35);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_com_codename1_ui_Image(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219), locals[1].data.o);     SP -= 1;
     BC_ASTORE(4);
-    __CN1_DEBUG_INFO(37);
+    __CN1_DEBUG_INFO(36);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_com_codename1_ui_Image(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219), get_static_com_nexus_nexwell_components_Colors_TIMERICON(threadStateData));     SP -= 1;
     BC_ASTORE(5);
-    __CN1_DEBUG_INFO(38);
+    __CN1_DEBUG_INFO(37);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_com_codename1_ui_Image(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(219), locals[2].data.o);     SP -= 1;
     BC_ASTORE(6);
-    __CN1_DEBUG_INFO(42);
+    __CN1_DEBUG_INFO(41);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10597), STRING_FROM_CONSTANT_POOL_OFFSET(10598));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10602), STRING_FROM_CONSTANT_POOL_OFFSET(10603));     SP -= 1;
     BC_ASTORE(7);
-    __CN1_DEBUG_INFO(44);
+    __CN1_DEBUG_INFO(43);
     PUSH_POINTER(__NEW_com_nexus_nexwell_components_RichTextView(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_nexus_nexwell_components_RichTextView___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10599));     SP -= 1;
+    /* CustomInvoke */com_nexus_nexwell_components_RichTextView___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10604));     SP -= 1;
     BC_ASTORE(8);
-    __CN1_DEBUG_INFO(45);
-    /* VarOp.assignFrom */ locals[9].data.o = virtual_com_nexus_nexwell_components_RichTextView_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[8].data.o);locals[9].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(46);
+    __CN1_DEBUG_INFO(44);
+    /* VarOp.assignFrom */ locals[9].data.o = virtual_com_nexus_nexwell_components_RichTextView_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[8].data.o);locals[9].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(45);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setFgColor___int(threadStateData, locals[9].data.o, 255); 
-    __CN1_DEBUG_INFO(48);
+    __CN1_DEBUG_INFO(47);
     PUSH_INT(2); /* ICONST_2 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_com_codename1_ui_Component(threadStateData, SP[0].data.i));
@@ -332,7 +335,7 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm___INIT____(CODENAME_ONE_THREAD_ST
     PUSH_INT(0); /* ICONST_0 */
     PUSH_POINTER(__NEW_com_nexus_nexwell_components_RichTextView(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_nexus_nexwell_components_RichTextView___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10599));     SP -= 1;
+    /* CustomInvoke */com_nexus_nexwell_components_RichTextView___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10604));     SP -= 1;
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -347,46 +350,57 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm___INIT____(CODENAME_ONE_THREAD_ST
     { JAVA_OBJECT tmpResult = com_codename1_ui_layouts_FlowLayout_encloseCenter___com_codename1_ui_Component_1ARRAY_R_com_codename1_ui_Container(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(10);
-    __CN1_DEBUG_INFO(53);
+    __CN1_DEBUG_INFO(52);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, locals[10].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10344)); 
-    __CN1_DEBUG_INFO(54);
-    /* VarOp.assignFrom */ locals[11].data.o = virtual_com_codename1_ui_Container_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[10].data.o);locals[11].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(56);
+    __CN1_DEBUG_INFO(53);
+    /* VarOp.assignFrom */ locals[11].data.o = virtual_com_codename1_ui_Container_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[10].data.o);locals[11].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(55);
     BC_ALOAD(11);
     PUSH_OBJ(com_codename1_ui_plaf_RoundRectBorder_create___R_com_codename1_ui_plaf_RoundRectBorder(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_RoundRectBorder_shadowColor___int_R_com_codename1_ui_plaf_RoundRectBorder(threadStateData, SP[-1].data.o, get_static_com_nexus_nexwell_components_Colors_BLUE(threadStateData));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_com_codename1_ui_plaf_Style_setBorder___com_codename1_ui_plaf_Border(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(57);
-    /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setPadding___int_int_int_int(threadStateData, locals[11].data.o, 3 /* ICONST_3 */, 2 /* ICONST_2 */, 2 /* ICONST_2 */, 2 /* ICONST_2 */); 
-    __CN1_DEBUG_INFO(59);
-    /* VarOp.assignFrom */ locals[12].data.o = virtual_com_codename1_ui_Button_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[7].data.o);locals[12].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(60);
+    __CN1_DEBUG_INFO(56);
+    /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setPadding___int_int_int_int(threadStateData, locals[11].data.o, 3 /* ICONST_3 */, 2 /* ICONST_2 */, 5 /* ICONST_5 */, 5 /* ICONST_5 */); 
+    __CN1_DEBUG_INFO(58);
+    /* VarOp.assignFrom */ locals[12].data.o = virtual_com_codename1_ui_Button_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[7].data.o);locals[12].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(59);
     BC_ALOAD(12);
     PUSH_OBJ(com_codename1_ui_plaf_RoundRectBorder_create___R_com_codename1_ui_plaf_RoundRectBorder(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_RoundRectBorder_shadowColor___int_R_com_codename1_ui_plaf_RoundRectBorder(threadStateData, SP[-1].data.o, get_static_com_nexus_nexwell_components_Colors_BLUE(threadStateData));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_com_codename1_ui_plaf_Style_setBorder___com_codename1_ui_plaf_Border(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(61);
+    __CN1_DEBUG_INFO(60);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setBackgroundGradientEndColor___int(threadStateData, locals[12].data.o, get_static_com_nexus_nexwell_components_Colors_CYAN(threadStateData)); 
-    __CN1_DEBUG_INFO(62);
+    __CN1_DEBUG_INFO(61);
     BC_ALOAD(7);
     /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_1_lambdaFactory$___com_nexus_nexwell_forms_HomePageForm_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject));
     virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(66);
+    __CN1_DEBUG_INFO(65);
     /* CustomInvoke */virtual_com_codename1_ui_Button_setIcon___com_codename1_ui_Image(threadStateData, locals[7].data.o, locals[3].data.o); 
-    __CN1_DEBUG_INFO(71);
-    /* VarOp.assignFrom */ locals[13].data.o = com_nexus_nexwell_homepage_ContentFeed_getRandomQuote___R_java_lang_String(threadStateData);locals[13].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(72);
+    __CN1_DEBUG_INFO(70);
+    /* VarOp.assignFrom */ locals[13].data.o = com_nexus_nexwell_homepage_ContentFeed_getRandomQuote___R_java_lang_String(threadStateData);locals[13].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(71);
     PUSH_POINTER(__NEW_com_nexus_nexwell_components_RichTextView(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_nexus_nexwell_components_RichTextView___INIT_____java_lang_String(threadStateData, SP[-1].data.o, locals[13].data.o);     SP -= 1;
+    PUSH_POINTER(__NEW_java_lang_StringBuilder(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    java_lang_StringBuilder___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10605));
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, locals[13].data.o);
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_append___java_lang_String_R_java_lang_StringBuilder(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10606));
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    { JAVA_OBJECT tmpResult = virtual_java_lang_StringBuilder_toString___R_java_lang_String(threadStateData, SP[-1].data.o);
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    com_nexus_nexwell_components_RichTextView___INIT_____java_lang_String(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     BC_ASTORE(14);
-    __CN1_DEBUG_INFO(73);
+    __CN1_DEBUG_INFO(72);
     /* CustomInvoke */virtual_com_nexus_nexwell_components_RichTextView_setUIID___java_lang_String(threadStateData, locals[14].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10345)); 
-    __CN1_DEBUG_INFO(74);
+    __CN1_DEBUG_INFO(73);
     PUSH_POINTER(__NEW_com_codename1_ui_Label(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, locals[13].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10345));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, locals[13].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10607));     SP -= 1;
     BC_ASTORE(15);
-    __CN1_DEBUG_INFO(75);
+    __CN1_DEBUG_INFO(74);
     PUSH_INT(2); /* ICONST_2 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_com_codename1_ui_Component(threadStateData, SP[0].data.i));
@@ -394,16 +408,14 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm___INIT____(CODENAME_ONE_THREAD_ST
     PUSH_INT(0); /* ICONST_0 */
     PUSH_POINTER(__NEW_com_codename1_ui_Label(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10600), STRING_FROM_CONSTANT_POOL_OFFSET(10345));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10608), STRING_FROM_CONSTANT_POOL_OFFSET(10607));     SP -= 1;
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
     SP -= 3; }
     BC_DUP(); /* DUP */
     PUSH_INT(1); /* ICONST_1 */
-    PUSH_POINTER(__NEW_com_codename1_ui_Label(threadStateData)); /* NEW */
-    BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, locals[13].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10345));     SP -= 1;
+    BC_ALOAD(14);
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -411,27 +423,27 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm___INIT____(CODENAME_ONE_THREAD_ST
     { JAVA_OBJECT tmpResult = com_codename1_ui_layouts_FlowLayout_encloseIn___com_codename1_ui_Component_1ARRAY_R_com_codename1_ui_Container(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(16);
-    __CN1_DEBUG_INFO(80);
+    __CN1_DEBUG_INFO(79);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, locals[16].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10344)); 
-    __CN1_DEBUG_INFO(81);
-    /* VarOp.assignFrom */ locals[17].data.o = virtual_com_codename1_ui_Container_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[16].data.o);locals[17].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(83);
+    __CN1_DEBUG_INFO(80);
+    /* VarOp.assignFrom */ locals[17].data.o = virtual_com_codename1_ui_Container_getAllStyles___R_com_codename1_ui_plaf_Style(threadStateData, locals[16].data.o);locals[17].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(82);
     BC_ALOAD(17);
     PUSH_OBJ(com_codename1_ui_plaf_RoundRectBorder_create___R_com_codename1_ui_plaf_RoundRectBorder(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_RoundRectBorder_shadowColor___int_R_com_codename1_ui_plaf_RoundRectBorder(threadStateData, SP[-1].data.o, get_static_com_nexus_nexwell_components_Colors_BLUE(threadStateData));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_com_codename1_ui_plaf_Style_setBorder___com_codename1_ui_plaf_Border(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    __CN1_DEBUG_INFO(83);
+    /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setPadding___int_int_int_int(threadStateData, locals[17].data.o, 4/* ICONST_4 */, 4/* ICONST_4 */, 5 /* ICONST_5 */, 5 /* ICONST_5 */); 
     __CN1_DEBUG_INFO(84);
-    /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setPadding___int_int_int_int(threadStateData, locals[17].data.o, 5 /* ICONST_5 */, 5 /* ICONST_5 */, 5 /* ICONST_5 */, 5 /* ICONST_5 */); 
-    __CN1_DEBUG_INFO(85);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setTextDecoration___int(threadStateData, locals[17].data.o, 31); 
-    __CN1_DEBUG_INFO(87);
+    __CN1_DEBUG_INFO(86);
     PUSH_INT(4); /* ICONST_4 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_java_lang_String(threadStateData, SP[0].data.i));
     BC_DUP(); /* DUP */
     PUSH_INT(0); /* ICONST_0 */
     /* LDC: 'PeachContainer'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10601));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10609));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -439,7 +451,7 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm___INIT____(CODENAME_ONE_THREAD_ST
     BC_DUP(); /* DUP */
     PUSH_INT(1); /* ICONST_1 */
     /* LDC: 'BlueContainer'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10602));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10610));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -447,7 +459,7 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm___INIT____(CODENAME_ONE_THREAD_ST
     BC_DUP(); /* DUP */
     PUSH_INT(2); /* ICONST_2 */
     /* LDC: 'GreenContainer'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10603));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10611));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
@@ -455,13 +467,13 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm___INIT____(CODENAME_ONE_THREAD_ST
     BC_DUP(); /* DUP */
     PUSH_INT(3); /* ICONST_3 */
     /* LDC: 'YellowContainer'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10604));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10612));
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); { /* BC_AASTORE */
     JAVA_OBJECT aastoreTmp = SP[-3].data.o; 
     ((JAVA_ARRAY_OBJECT*) (*(JAVA_ARRAY)aastoreTmp).data)[SP[-2].data.i] = SP[-1].data.o; 
     SP -= 3; }
     BC_ASTORE(18);
-    __CN1_DEBUG_INFO(88);
+    __CN1_DEBUG_INFO(87);
     PUSH_INT(4); /* ICONST_4 */
     PUSH_OBJ(allocArray(threadStateData, POP_INT(), &class_array1__JAVA_INT, sizeof(JAVA_ARRAY_INT), 1));
     BC_DUP(); /* DUP */
@@ -485,15 +497,19 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm___INIT____(CODENAME_ONE_THREAD_ST
     CHECK_ARRAY_ACCESS(3, SP[-2].data.i); /* IASTORE */
     ((JAVA_ARRAY_INT*) (*(JAVA_ARRAY)SP[-3].data.o).data)[SP[-2].data.i] = SP[-1].data.i; SP -= 3;
     BC_ASTORE(19);
-    __CN1_DEBUG_INFO(89);
-    BC_ALOAD(6);
-    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_2_lambdaFactory$___com_nexus_nexwell_forms_HomePageForm_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject));
-    virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(90);
+    __CN1_DEBUG_INFO(88);
     BC_ALOAD(4);
-    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_3_lambdaFactory$___java_lang_String_1ARRAY_com_codename1_ui_Container_com_codename1_ui_Container_com_codename1_ui_plaf_Style_int_1ARRAY_R_com_codename1_ui_events_ActionListener(threadStateData, locals[18].data.o, locals[16].data.o, locals[10].data.o, locals[11].data.o, locals[19].data.o));
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_2_lambdaFactory$___java_lang_String_1ARRAY_com_codename1_ui_Container_com_codename1_ui_Container_com_codename1_ui_plaf_Style_int_1ARRAY_R_com_codename1_ui_events_ActionListener(threadStateData, locals[18].data.o, locals[16].data.o, locals[10].data.o, locals[11].data.o, locals[19].data.o));
     virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(98);
+    __CN1_DEBUG_INFO(95);
+    BC_ALOAD(5);
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_3_lambdaFactory$___com_nexus_nexwell_forms_HomePageForm_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject));
+    virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    __CN1_DEBUG_INFO(96);
+    BC_ALOAD(6);
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_4_lambdaFactory$___com_nexus_nexwell_forms_HomePageForm_R_com_codename1_ui_events_ActionListener(threadStateData, __cn1ThisObject));
+    virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    __CN1_DEBUG_INFO(97);
     PUSH_INT(3); /* ICONST_3 */
     SP--;
     PUSH_POINTER(__NEW_ARRAY_com_codename1_ui_Component(threadStateData, SP[0].data.i));
@@ -521,25 +537,52 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm___INIT____(CODENAME_ONE_THREAD_ST
     { JAVA_OBJECT tmpResult = com_codename1_ui_layouts_FlowLayout_encloseCenter___com_codename1_ui_Component_1ARRAY_R_com_codename1_ui_Container(threadStateData, SP[-1].data.o);
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(20);
+    __CN1_DEBUG_INFO(98);
+    PUSH_POINTER(__NEW_com_codename1_ui_Container(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    PUSH_OBJ(com_codename1_ui_layouts_BoxLayout_x___R_com_codename1_ui_layouts_BoxLayout(threadStateData));
+    com_codename1_ui_Container___INIT_____com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
+    BC_ASTORE(21);
+    __CN1_DEBUG_INFO(99);
+    PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10613), STRING_FROM_CONSTANT_POOL_OFFSET(10614));     SP -= 1;
+    BC_ASTORE(22);
     __CN1_DEBUG_INFO(100);
-    /* CustomInvoke */virtual_com_nexus_nexwell_forms_HomePageForm_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, locals[16].data.o); 
+    PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10615), STRING_FROM_CONSTANT_POOL_OFFSET(10614));     SP -= 1;
+    BC_ASTORE(23);
     __CN1_DEBUG_INFO(101);
-    /* CustomInvoke */virtual_com_nexus_nexwell_forms_HomePageForm_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, locals[10].data.o); 
+    PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    /* CustomInvoke */com_codename1_ui_Button___INIT_____java_lang_String_java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10616), STRING_FROM_CONSTANT_POOL_OFFSET(10614));     SP -= 1;
+    BC_ASTORE(24);
     __CN1_DEBUG_INFO(102);
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[21].data.o, locals[22].data.o);
+    PUSH_OBJ(tmpResult); }
+    /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, SP[-1].data.o, locals[23].data.o);
+    SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
+    /* CustomInvoke */virtual_com_codename1_ui_Container_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, SP[-1].data.o, locals[24].data.o);     SP -= 1;
+    __CN1_DEBUG_INFO(104);
+    /* CustomInvoke */virtual_com_nexus_nexwell_forms_HomePageForm_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, locals[16].data.o); 
+    __CN1_DEBUG_INFO(105);
+    /* CustomInvoke */virtual_com_nexus_nexwell_forms_HomePageForm_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, locals[10].data.o); 
+    __CN1_DEBUG_INFO(106);
     /* CustomInvoke */virtual_com_nexus_nexwell_forms_HomePageForm_add___com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, __cn1ThisObject, locals[20].data.o); 
-    __CN1_DEBUG_INFO(109);
+    __CN1_DEBUG_INFO(113);
     { JAVA_OBJECT tmpResult = virtual_com_nexus_nexwell_forms_HomePageForm_getToolbar___R_com_codename1_ui_Toolbar(threadStateData, __cn1ThisObject);
     PUSH_OBJ(tmpResult); }
     /* LDC: 'Settings'*/
-    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10605));
+    PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(10617));
     PUSH_INT(59576); /* LDC */
     PUSH_FLOAT(4.0); /* LDC */
-    PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_4_lambdaFactory$___R_com_codename1_ui_events_ActionListener(threadStateData));
+    PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_5_lambdaFactory$___R_com_codename1_ui_events_ActionListener(threadStateData));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_addMaterialCommandToLeftSideMenu___java_lang_String_char_float_com_codename1_ui_events_ActionListener_R_com_codename1_ui_Command(threadStateData, SP[-5].data.o, SP[-4].data.o, SP[-3].data.i, SP[-2].data.f, SP[-1].data.o);
     SP-=4;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
-    __CN1_DEBUG_INFO(113);
+    __CN1_DEBUG_INFO(117);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -556,8 +599,8 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm_satisfyingvisuals__(CODENAME_ONE_
 
 
 JAVA_VOID com_nexus_nexwell_forms_HomePageForm_bookme__(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 10592, 10606);
-    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(176);
+    DEFINE_INSTANCE_METHOD_STACK(5, 7, 0, 10597, 10619);
+    locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(180);
     PUSH_POINTER(__NEW_com_codename1_ui_Form(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     PUSH_POINTER(__NEW_com_codename1_ui_layouts_BorderLayout(threadStateData)); /* NEW */
@@ -565,90 +608,95 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm_bookme__(CODENAME_ONE_THREAD_STAT
     com_codename1_ui_layouts_BorderLayout___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     com_codename1_ui_Form___INIT_____com_codename1_ui_layouts_Layout(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
     BC_ASTORE(1);
-    __CN1_DEBUG_INFO(177);
+    __CN1_DEBUG_INFO(181);
     PUSH_POINTER(__NEW_com_codename1_ui_Label(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
-    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10607));     SP -= 1;
+    /* CustomInvoke */com_codename1_ui_Label___INIT_____java_lang_String(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10620));     SP -= 1;
     BC_ASTORE(2);
-    __CN1_DEBUG_INFO(178);
+    __CN1_DEBUG_INFO(182);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Label_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, locals[2].data.o);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setFgColor___int(threadStateData, SP[-1].data.o, 0 /* ICONST_0 */);     SP -= 1;
-    __CN1_DEBUG_INFO(179);
+    __CN1_DEBUG_INFO(183);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Label_getUnselectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, locals[2].data.o);
     PUSH_OBJ(tmpResult); }
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Font_createSystemFont___int_int_int_R_com_codename1_ui_Font(threadStateData, 0 /* ICONST_0 */, 1 /* ICONST_1 */, 16));
     virtual_com_codename1_ui_plaf_Style_setFont___com_codename1_ui_Font(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(181);
+    __CN1_DEBUG_INFO(185);
     PUSH_POINTER(__NEW_com_codename1_ui_Button(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     /* CustomInvoke */com_codename1_ui_Button___INIT_____char(threadStateData, SP[-1].data.o, 58090);     SP -= 1;
     BC_ASTORE(3);
-    __CN1_DEBUG_INFO(182);
+    __CN1_DEBUG_INFO(186);
     BC_ALOAD(3);
-    PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_11_lambdaFactory$___R_com_codename1_ui_events_ActionListener(threadStateData));
+    PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_12_lambdaFactory$___R_com_codename1_ui_events_ActionListener(threadStateData));
     virtual_com_codename1_ui_Button_addActionListener___com_codename1_ui_events_ActionListener(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(184);
+    __CN1_DEBUG_INFO(188);
     PUSH_POINTER(__NEW_com_codename1_ui_Toolbar(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_codename1_ui_Toolbar___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(4);
-    __CN1_DEBUG_INFO(185);
+    __CN1_DEBUG_INFO(189);
     /* CustomInvoke */virtual_com_codename1_ui_Form_setToolbar___com_codename1_ui_Toolbar(threadStateData, locals[1].data.o, locals[4].data.o); 
-    __CN1_DEBUG_INFO(186);
-    /* VarOp.assignFrom */ locals[5].data.o = com_codename1_ui_CN_getCurrentForm___R_com_codename1_ui_Form(threadStateData);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(187);
+    __CN1_DEBUG_INFO(190);
+    /* VarOp.assignFrom */ locals[5].data.o = com_codename1_ui_CN_getCurrentForm___R_com_codename1_ui_Form(threadStateData);locals[5].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(191);
     BC_ALOAD(4);
     /* LDC: ''*/
     PUSH_POINTER(STRING_FROM_CONSTANT_POOL_OFFSET(219));
     PUSH_INT(58090); /* LDC */
     PUSH_FLOAT(4.0); /* LDC */
-    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_12_lambdaFactory$___com_codename1_ui_Form_R_com_codename1_ui_events_ActionListener(threadStateData, locals[5].data.o));
+    /* CustomInvoke */PUSH_OBJ(com_nexus_nexwell_forms_HomePageForm__Lambda_13_lambdaFactory$___com_codename1_ui_Form_R_com_codename1_ui_events_ActionListener(threadStateData, locals[5].data.o));
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Toolbar_addMaterialCommandToLeftBar___java_lang_String_char_float_com_codename1_ui_events_ActionListener_R_com_codename1_ui_Command(threadStateData, SP[-5].data.o, SP[-4].data.o, SP[-3].data.i, SP[-2].data.f, SP[-1].data.o);
     SP-=4;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
-    __CN1_DEBUG_INFO(189);
+    __CN1_DEBUG_INFO(193);
     PUSH_POINTER(__NEW_com_codename1_ui_BrowserComponent(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_codename1_ui_BrowserComponent___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     BC_ASTORE(6);
-    __CN1_DEBUG_INFO(190);
-    /* CustomInvoke */virtual_com_codename1_ui_BrowserComponent_setURL___java_lang_String(threadStateData, locals[6].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10608)); 
-    __CN1_DEBUG_INFO(192);
-    /* CustomInvoke */virtual_com_codename1_ui_Form_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(137), locals[6].data.o); 
     __CN1_DEBUG_INFO(194);
-    /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setTitleComponent___com_codename1_ui_Component(threadStateData, locals[4].data.o, locals[2].data.o); 
+    /* CustomInvoke */virtual_com_codename1_ui_BrowserComponent_setURL___java_lang_String(threadStateData, locals[6].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(10621)); 
     __CN1_DEBUG_INFO(196);
+    /* CustomInvoke */virtual_com_codename1_ui_Form_add___java_lang_Object_com_codename1_ui_Component_R_com_codename1_ui_Container(threadStateData, locals[1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(137), locals[6].data.o); 
+    __CN1_DEBUG_INFO(198);
+    /* CustomInvoke */virtual_com_codename1_ui_Toolbar_setTitleComponent___com_codename1_ui_Component(threadStateData, locals[4].data.o, locals[2].data.o); 
+    __CN1_DEBUG_INFO(200);
     virtual_com_codename1_ui_Form_show__(threadStateData, locals[1].data.o); 
-    __CN1_DEBUG_INFO(197);
+    __CN1_DEBUG_INFO(201);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$bookme$11___com_codename1_ui_Form_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$bookme$12___com_codename1_ui_Form_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_HomePageForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10592, 10609);
+    DEFINE_METHOD_STACK(1, 2, 0, 10597, 10622);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(187);
+    __CN1_DEBUG_INFO(191);
     virtual_com_codename1_ui_Form_showBack__(threadStateData, locals[0].data.o); 
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$bookme$10___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$bookme$11___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_HomePageForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 1, 0, 10592, 10610);
+    DEFINE_METHOD_STACK(1, 1, 0, 10597, 10623);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(182);
+    __CN1_DEBUG_INFO(186);
     PUSH_OBJ(com_codename1_ui_CN_getCurrentForm___R_com_codename1_ui_Form(threadStateData));
     virtual_com_codename1_ui_Form_showBack__(threadStateData, SP[-1].data.o);     SP -= 1;
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$satisfyingvisuals$10___com_codename1_ui_Dialog_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     return;
 }
 
@@ -663,7 +711,7 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$satisfyingvisuals$8___com_
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$satisfyingvisuals$7___com_codename1_ui_Dialog_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$games$7___com_codename1_ui_Dialog_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     return;
 }
 
@@ -678,17 +726,12 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$games$5___com_codename1_ui
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$games$4___com_codename1_ui_Dialog_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    return;
-}
-
-
-JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$new$3___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
+JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$new$4___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_HomePageForm(threadStateData);
-    DEFINE_METHOD_STACK(2, 1, 0, 10592, 10495);
+    DEFINE_METHOD_STACK(2, 1, 0, 10597, 10499);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(109);
+    __CN1_DEBUG_INFO(113);
     PUSH_POINTER(__NEW_com_nexus_nexwell_forms_Settings(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     com_nexus_nexwell_forms_Settings___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
@@ -698,10 +741,44 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$new$3___com_codename1_ui_e
 }
 
 
-JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$new$2___java_lang_String_1ARRAY_com_codename1_ui_Container_com_codename1_ui_Container_com_codename1_ui_plaf_Style_int_1ARRAY_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4, JAVA_OBJECT __cn1Arg5, JAVA_OBJECT __cn1Arg6) {
+JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$new$3___com_nexus_nexwell_forms_HomePageForm_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    __STATIC_INITIALIZER_com_nexus_nexwell_forms_HomePageForm(threadStateData);
+    DEFINE_METHOD_STACK(4, 2, 0, 10597, 10500);
+    locals[0].data.o = __cn1Arg1;
+    locals[0].type = CN1_TYPE_OBJECT;
+    locals[1].data.o = __cn1Arg2;
+    locals[1].type = CN1_TYPE_OBJECT;
+    __CN1_DEBUG_INFO(96);
+    PUSH_POINTER(__NEW_com_nexus_nexwell_forms_HomePageForm_BreathingTimer(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    /* CustomInvoke */com_nexus_nexwell_forms_HomePageForm_BreathingTimer___INIT_____com_nexus_nexwell_forms_HomePageForm_com_codename1_ui_Sheet(threadStateData, SP[-1].data.o, locals[0].data.o, JAVA_NULL /* ACONST_NULL */);     SP -= 1;
+    virtual_com_nexus_nexwell_forms_HomePageForm_BreathingTimer_show__(threadStateData, SP[-1].data.o);     SP -= 1;
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$new$2___com_nexus_nexwell_forms_HomePageForm_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
+    __STATIC_INITIALIZER_com_nexus_nexwell_forms_HomePageForm(threadStateData);
+    DEFINE_METHOD_STACK(4, 2, 0, 10597, 10386);
+    locals[0].data.o = __cn1Arg1;
+    locals[0].type = CN1_TYPE_OBJECT;
+    locals[1].data.o = __cn1Arg2;
+    locals[1].type = CN1_TYPE_OBJECT;
+    __CN1_DEBUG_INFO(95);
+    PUSH_POINTER(__NEW_com_nexus_nexwell_forms_HomePageForm_PomodoroTimer(threadStateData)); /* NEW */
+    BC_DUP(); /* DUP */
+    /* CustomInvoke */com_nexus_nexwell_forms_HomePageForm_PomodoroTimer___INIT_____com_nexus_nexwell_forms_HomePageForm_com_codename1_ui_Sheet(threadStateData, SP[-1].data.o, locals[0].data.o, JAVA_NULL /* ACONST_NULL */);     SP -= 1;
+    virtual_com_nexus_nexwell_forms_HomePageForm_PomodoroTimer_show__(threadStateData, SP[-1].data.o);     SP -= 1;
+    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
+    return;
+}
+
+
+JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$new$1___java_lang_String_1ARRAY_com_codename1_ui_Container_com_codename1_ui_Container_com_codename1_ui_plaf_Style_int_1ARRAY_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2, JAVA_OBJECT __cn1Arg3, JAVA_OBJECT __cn1Arg4, JAVA_OBJECT __cn1Arg5, JAVA_OBJECT __cn1Arg6) {
     volatile JAVA_INT ilocals_6_ = 0; /* v6 */
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_HomePageForm(threadStateData);
-    DEFINE_METHOD_STACK(5, 7, 0, 10592, 10381);
+    DEFINE_METHOD_STACK(5, 7, 0, 10597, 10352);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
@@ -714,43 +791,26 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$new$2___java_lang_String_1
     locals[4].type = CN1_TYPE_OBJECT;
     locals[5].data.o = __cn1Arg6;
     locals[5].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(91);
+    __CN1_DEBUG_INFO(89);
     PUSH_POINTER(__NEW_java_util_Random(threadStateData)); /* NEW */
     BC_DUP(); /* DUP */
     java_util_Random___INIT____(threadStateData, SP[-1].data.o);     SP -= 1;
     /* CustomInvoke */{ JAVA_INT tmpResult = virtual_java_util_Random_nextInt___int_R_int(threadStateData, SP[-1].data.o, CN1_ARRAY_LENGTH(locals[0].data.o));
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
     BC_ISTORE(6);
-    __CN1_DEBUG_INFO(92);
+    __CN1_DEBUG_INFO(90);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, locals[1].data.o, CN1_ARRAY_ELEMENT_OBJECT(locals[0].data.o, ilocals_6_)); 
-    __CN1_DEBUG_INFO(93);
+    __CN1_DEBUG_INFO(91);
     /* CustomInvoke */virtual_com_codename1_ui_Container_setUIID___java_lang_String(threadStateData, locals[2].data.o, CN1_ARRAY_ELEMENT_OBJECT(locals[0].data.o, ilocals_6_)); 
-    __CN1_DEBUG_INFO(94);
+    __CN1_DEBUG_INFO(92);
     BC_ALOAD(3);
     PUSH_OBJ(com_codename1_ui_plaf_RoundRectBorder_create___R_com_codename1_ui_plaf_RoundRectBorder(threadStateData));
     /* CustomInvoke */{ JAVA_OBJECT tmpResult = virtual_com_codename1_ui_plaf_RoundRectBorder_shadowColor___int_R_com_codename1_ui_plaf_RoundRectBorder(threadStateData, SP[-1].data.o, CN1_ARRAY_ELEMENT_INT(locals[4].data.o, ilocals_6_));
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     virtual_com_codename1_ui_plaf_Style_setBorder___com_codename1_ui_plaf_Border(threadStateData, SP[-2].data.o, SP[-1].data.o);     SP-= 2;
-    __CN1_DEBUG_INFO(95);
+    __CN1_DEBUG_INFO(93);
     /* CustomInvoke */virtual_com_codename1_ui_plaf_Style_setPadding___int_int_int_int(threadStateData, locals[3].data.o, 3 /* ICONST_3 */, 2 /* ICONST_2 */, 2 /* ICONST_2 */, 2 /* ICONST_2 */); 
-    __CN1_DEBUG_INFO(96);
-    releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
-    return;
-}
-
-
-JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$new$1___com_nexus_nexwell_forms_HomePageForm_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    __STATIC_INITIALIZER_com_nexus_nexwell_forms_HomePageForm(threadStateData);
-    DEFINE_METHOD_STACK(4, 2, 0, 10592, 10352);
-    locals[0].data.o = __cn1Arg1;
-    locals[0].type = CN1_TYPE_OBJECT;
-    locals[1].data.o = __cn1Arg2;
-    locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(89);
-    PUSH_POINTER(__NEW_com_nexus_nexwell_forms_HomePageForm_BreathingTimer(threadStateData)); /* NEW */
-    BC_DUP(); /* DUP */
-    /* CustomInvoke */com_nexus_nexwell_forms_HomePageForm_BreathingTimer___INIT_____com_nexus_nexwell_forms_HomePageForm_com_codename1_ui_Sheet(threadStateData, SP[-1].data.o, locals[0].data.o, JAVA_NULL /* ACONST_NULL */);     SP -= 1;
-    virtual_com_nexus_nexwell_forms_HomePageForm_BreathingTimer_show__(threadStateData, SP[-1].data.o);     SP -= 1;
+    __CN1_DEBUG_INFO(94);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }
@@ -758,14 +818,14 @@ JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$new$1___com_nexus_nexwell_
 
 JAVA_VOID com_nexus_nexwell_forms_HomePageForm_lambda$new$0___com_nexus_nexwell_forms_HomePageForm_com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
     __STATIC_INITIALIZER_com_nexus_nexwell_forms_HomePageForm(threadStateData);
-    DEFINE_METHOD_STACK(1, 2, 0, 10592, 10353);
+    DEFINE_METHOD_STACK(1, 2, 0, 10597, 10353);
     locals[0].data.o = __cn1Arg1;
     locals[0].type = CN1_TYPE_OBJECT;
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
-    __CN1_DEBUG_INFO(63);
+    __CN1_DEBUG_INFO(62);
     com_nexus_nexwell_forms_HomePageForm_bookme__(threadStateData, locals[0].data.o); 
-    __CN1_DEBUG_INFO(64);
+    __CN1_DEBUG_INFO(63);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 }

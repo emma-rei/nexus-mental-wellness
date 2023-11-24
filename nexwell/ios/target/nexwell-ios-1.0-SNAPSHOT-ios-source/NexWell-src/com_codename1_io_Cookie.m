@@ -316,31 +316,31 @@ JAVA_VOID com_codename1_io_Cookie_externalize___java_io_DataOutputStream(CODENAM
     __CN1_DEBUG_INFO(144);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeUTF___java_lang_String(threadStateData, locals[1].data.o, get_field_com_codename1_io_Cookie_name(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(145);
-    if (get_field_com_codename1_io_Cookie_value(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1996476498;
+    if (get_field_com_codename1_io_Cookie_value(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L438163691;
     __CN1_DEBUG_INFO(146);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeBoolean___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(147);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeUTF___java_lang_String(threadStateData, locals[1].data.o, get_field_com_codename1_io_Cookie_value(__cn1ThisObject)); 
-    goto label_L515585759;
+    goto label_L1307545610;
 
-label_L1996476498:
+label_L438163691:
     __CN1_DEBUG_INFO(149);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeBoolean___boolean(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
 
-label_L515585759:
+label_L1307545610:
     __CN1_DEBUG_INFO(151);
-    if (get_field_com_codename1_io_Cookie_domain(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L525199726;
+    if (get_field_com_codename1_io_Cookie_domain(__cn1ThisObject)==JAVA_NULL) /* IFNULL CustomJump */ goto label_L1578892902;
     __CN1_DEBUG_INFO(152);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeBoolean___boolean(threadStateData, locals[1].data.o, 1 /* ICONST_1 */); 
     __CN1_DEBUG_INFO(153);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeUTF___java_lang_String(threadStateData, locals[1].data.o, get_field_com_codename1_io_Cookie_domain(__cn1ThisObject)); 
-    goto label_L74211793;
+    goto label_L113482196;
 
-label_L525199726:
+label_L1578892902:
     __CN1_DEBUG_INFO(155);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeBoolean___boolean(threadStateData, locals[1].data.o, 0 /* ICONST_0 */); 
 
-label_L74211793:
+label_L113482196:
     __CN1_DEBUG_INFO(157);
     /* CustomInvoke */virtual_java_io_DataOutputStream_writeLong___long(threadStateData, locals[1].data.o, get_field_com_codename1_io_Cookie_expires(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(158);
@@ -362,7 +362,7 @@ JAVA_VOID com_codename1_io_Cookie_internalize___int_java_io_DataInputStream(CODE
     set_field_com_codename1_io_Cookie_name(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
     __CN1_DEBUG_INFO(165);
-    if (virtual_java_io_DataInputStream_readBoolean___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L202984526;
+    if (virtual_java_io_DataInputStream_readBoolean___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1919800167;
     __CN1_DEBUG_INFO(166);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_io_DataInputStream_readUTF___R_java_lang_String(threadStateData, locals[2].data.o);
@@ -370,9 +370,9 @@ JAVA_VOID com_codename1_io_Cookie_internalize___int_java_io_DataInputStream(CODE
     set_field_com_codename1_io_Cookie_value(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L202984526:
+label_L1919800167:
     __CN1_DEBUG_INFO(168);
-    if (virtual_java_io_DataInputStream_readBoolean___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1272159964;
+    if (virtual_java_io_DataInputStream_readBoolean___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L1127441120;
     __CN1_DEBUG_INFO(169);
     BC_ALOAD(0);
     { JAVA_OBJECT tmpResult = virtual_java_io_DataInputStream_readUTF___R_java_lang_String(threadStateData, locals[2].data.o);
@@ -380,7 +380,7 @@ label_L202984526:
     set_field_com_codename1_io_Cookie_domain(threadStateData, PEEK_OBJ(1), PEEK_OBJ(2));
     POP_MANY(2);
 
-label_L1272159964:
+label_L1127441120:
     __CN1_DEBUG_INFO(171);
     BC_ALOAD(0);
     { JAVA_LONG tmpResult = virtual_java_io_DataInputStream_readLong___R_long(threadStateData, locals[2].data.o);

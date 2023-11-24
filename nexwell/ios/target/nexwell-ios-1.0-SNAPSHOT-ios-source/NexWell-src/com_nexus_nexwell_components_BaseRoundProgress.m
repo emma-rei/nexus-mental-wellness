@@ -173,7 +173,7 @@ void __GC_MARK_com_nexus_nexwell_components_BaseRoundProgress(CODENAME_ONE_THREA
 
 
 JAVA_VOID com_nexus_nexwell_components_BaseRoundProgress___INIT____(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10681, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 1, 0, 10692, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(17);
     com_codename1_ui_Slider___INIT____(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(18);
@@ -200,17 +200,17 @@ JAVA_VOID com_nexus_nexwell_components_BaseRoundProgress_setPixelWidth___int(COD
 JAVA_OBJECT com_nexus_nexwell_components_BaseRoundProgress_calcPreferredSize___R_com_codename1_ui_geom_Dimension(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject) {
     volatile JAVA_INT ilocals_2_ = 0; /* v2 */
     volatile JAVA_INT ilocals_3_ = 0; /* v3 */
-    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 10681, 1856);
+    DEFINE_INSTANCE_METHOD_STACK(5, 4, 0, 10692, 1856);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     __CN1_DEBUG_INFO(39);
     /* VarOp.assignFrom */ locals[1].data.o = virtual_com_nexus_nexwell_components_BaseRoundProgress_getStyle___R_com_codename1_ui_plaf_Style(threadStateData, __cn1ThisObject);locals[1].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(41);
-    if (get_field_com_nexus_nexwell_components_BaseRoundProgress_pixelWidth(__cn1ThisObject)<=0) /* IFLE CustomJump */ goto label_L138536309;
+    if (get_field_com_nexus_nexwell_components_BaseRoundProgress_pixelWidth(__cn1ThisObject)<=0) /* IFLE CustomJump */ goto label_L1870723838;
     __CN1_DEBUG_INFO(42);
     /* VarOp.assignFrom */ ilocals_3_ = get_field_com_nexus_nexwell_components_BaseRoundProgress_pixelWidth(__cn1ThisObject);
     __CN1_DEBUG_INFO(43);
     /* VarOp.assignFrom */ ilocals_2_ = get_field_com_nexus_nexwell_components_BaseRoundProgress_pixelWidth(__cn1ThisObject);
-    goto label_L665137804;
+    goto label_L988904418;
 
-label_L138536309:
+label_L1870723838:
     __CN1_DEBUG_INFO(46);
     PUSH_OBJ(com_codename1_ui_Display_getInstance___R_com_codename1_ui_Display(threadStateData));
     { JAVA_INT tmpResult = virtual_com_codename1_ui_Display_getDisplayWidth___R_int(threadStateData, SP[-1].data.o);
@@ -223,7 +223,7 @@ label_L138536309:
     __CN1_DEBUG_INFO(47);
     /* VarOp.assignFrom */     ilocals_2_ = ilocals_3_;
 
-label_L665137804:
+label_L988904418:
     __CN1_DEBUG_INFO(50);
     (*SP).type = CN1_TYPE_INT; /* ILOAD */ 
     (*SP).data.i = ilocals_2_; 

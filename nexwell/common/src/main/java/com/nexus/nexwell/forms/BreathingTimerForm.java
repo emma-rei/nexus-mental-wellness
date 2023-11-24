@@ -29,12 +29,12 @@ public class BreathingTimerForm extends Form {
         getTitleComponent().setVisible(false);
         getToolbar().setVisible(false);
         setLayout(new BoxLayout(BoxLayout.Y_AXIS));
-        final CircleProgress p = new CircleProgress();
+        final CircleFilledProgress p = new CircleFilledProgress();
         p.setRenderPercentageOnTop(false);
 
         p.setRenderValueOnTop(true);
-        p.setClockwise(true);
-        p.setStartAngle(CircleProgress.START_9_OCLOCK);
+        //p.setClockwise(true);
+        //p.setStartAngle(CircleProgress.START_9_OCLOCK);
         p.setAutoSizeMode(true);
         
 //        final ArcProgress p2 = new ArcProgress();

@@ -53,16 +53,16 @@ JAVA_VOID com_codename1_ui_Button_1_actionPerformed___com_codename1_ui_events_Ac
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
     BC_INSTANCEOF(cn1_class_id_com_codename1_ui_Button);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L733224796;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1600206621;
     __CN1_DEBUG_INFO(352);
     /* VarOp.assignFrom */ locals[2].data.o = virtual_com_codename1_ui_events_ActionEvent_getSource___R_java_lang_Object(threadStateData, locals[1].data.o);locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(353);
-    if (/* CustomInvoke */com_codename1_ui_Button_access$000___com_codename1_ui_Button_R_int(threadStateData, get_field_com_codename1_ui_Button_1_this_0(__cn1ThisObject))==virtual_com_codename1_ui_Button_getState___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPEQ CustomJump */ goto label_L733224796;
+    if (/* CustomInvoke */com_codename1_ui_Button_access$000___com_codename1_ui_Button_R_int(threadStateData, get_field_com_codename1_ui_Button_1_this_0(__cn1ThisObject))==virtual_com_codename1_ui_Button_getState___R_int(threadStateData, locals[2].data.o)) /* IF_ICMPEQ CustomJump */ goto label_L1600206621;
     __CN1_DEBUG_INFO(354);
     /* CustomInvoke */virtual_com_codename1_ui_Button_setState___int(threadStateData, get_field_com_codename1_ui_Button_1_this_0(__cn1ThisObject), virtual_com_codename1_ui_Button_getState___R_int(threadStateData, locals[2].data.o)); 
     __CN1_DEBUG_INFO(355);
     virtual_com_codename1_ui_Button_repaint__(threadStateData, get_field_com_codename1_ui_Button_1_this_0(__cn1ThisObject)); 
 
-label_L733224796:
+label_L1600206621:
     __CN1_DEBUG_INFO(358);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

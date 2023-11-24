@@ -222,11 +222,11 @@ JAVA_BOOLEAN com_codename1_properties_MapProperty_equals___java_lang_Object_R_bo
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(139);
-    if (/* CustomInvoke */com_codename1_properties_PropertyBase_equals___java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L345758542;
+    if (/* CustomInvoke */com_codename1_properties_PropertyBase_equals___java_lang_Object_R_boolean(threadStateData, __cn1ThisObject, locals[1].data.o)!=0) /* IFNE CustomJump */ goto label_L1036454560;
     __CN1_DEBUG_INFO(140);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); return 0 /* ICONST_0 */;
 
-label_L345758542:
+label_L1036454560:
     __CN1_DEBUG_INFO(142);
     /* VarOp.assignFrom */ locals[2].type=CN1_TYPE_INVALID;    locals[2].data.o = locals[1].data.o;
 locals[2].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(143);
@@ -305,13 +305,13 @@ JAVA_OBJECT com_codename1_properties_MapProperty_asExplodedMap___R_java_util_Map
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     BC_ASTORE(2);
 
-label_L1122059861:
-    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L526035976;
+label_L938263666:
+    if (virtual_java_util_Iterator_hasNext___R_boolean(threadStateData, locals[2].data.o)==0) /* IFEQ CustomJump */ goto label_L957692677;
     /* VarOp.assignFrom */ locals[3].data.o = virtual_java_util_Iterator_next___R_java_lang_Object(threadStateData, locals[2].data.o);locals[3].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(197);
     /* VarOp.assignFrom */ locals[4].data.o = /* CustomInvoke */virtual_java_util_LinkedHashMap_get___java_lang_Object_R_java_lang_Object(threadStateData, get_field_com_codename1_properties_MapProperty_value(__cn1ThisObject), locals[3].data.o);locals[4].type=CN1_TYPE_OBJECT;    __CN1_DEBUG_INFO(198);
     BC_ALOAD(4);
     BC_INSTANCEOF(cn1_class_id_com_codename1_properties_PropertyBusinessObject);
-    if(POP_INT() == 0) /* IFEQ */ goto label_L57964663;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L654239297;
     __CN1_DEBUG_INFO(199);
     BC_ALOAD(1);
     BC_ALOAD(3);
@@ -323,17 +323,17 @@ label_L1122059861:
     SP-=2;
     SP[-1].data.o = tmpResult; SP[-1].type = CN1_TYPE_OBJECT; }
     SP--; /* POP */
-    goto label_L141213117;
+    goto label_L855329415;
 
-label_L57964663:
+label_L654239297:
     __CN1_DEBUG_INFO(201);
     /* CustomInvoke */virtual_java_util_Map_put___java_lang_Object_java_lang_Object_R_java_lang_Object(threadStateData, locals[1].data.o, locals[3].data.o, locals[4].data.o); 
 
-label_L141213117:
+label_L855329415:
     __CN1_DEBUG_INFO(203);
-    goto label_L1122059861;
+    goto label_L938263666;
 
-label_L526035976:
+label_L957692677:
     __CN1_DEBUG_INFO(204);
     virtual_com_codename1_properties_MapProperty_internalGet__(threadStateData, __cn1ThisObject); 
     __CN1_DEBUG_INFO(205);

@@ -54,14 +54,14 @@ JAVA_VOID com_codename1_ui_Toolbar_9_actionPerformed___com_codename1_ui_events_A
     /* CustomInvoke */PUSH_OBJ(com_codename1_ui_Toolbar_access$200___com_codename1_ui_Toolbar_R_com_codename1_components_InteractionDialog(threadStateData, get_field_com_codename1_ui_Toolbar_9_this_0(__cn1ThisObject)));
     { JAVA_INT tmpResult = virtual_com_codename1_components_InteractionDialog_isShowing___R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L688361522;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1343293809;
     __CN1_DEBUG_INFO(1485);
     virtual_com_codename1_ui_Toolbar_closeRightSideMenu__(threadStateData, get_field_com_codename1_ui_Toolbar_9_this_0(__cn1ThisObject)); 
     __CN1_DEBUG_INFO(1486);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;
 
-label_L688361522:
+label_L1343293809:
     __CN1_DEBUG_INFO(1488);
     /* CustomInvoke */virtual_com_codename1_ui_Toolbar_showOnTopRightSidemenu___int_boolean(threadStateData, get_field_com_codename1_ui_Toolbar_9_this_0(__cn1ThisObject), -1 /* ICONST_M1 */, 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(1489);

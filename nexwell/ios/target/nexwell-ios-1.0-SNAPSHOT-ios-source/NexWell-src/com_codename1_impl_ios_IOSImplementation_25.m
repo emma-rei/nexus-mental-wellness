@@ -71,13 +71,13 @@ JAVA_VOID com_codename1_impl_ios_IOSImplementation_25_run__(CODENAME_ONE_THREAD_
     { JAVA_INT tmpResult = com_codename1_impl_CodenameOneImplementation_registerServerPush___java_lang_String_java_lang_String_byte_java_lang_String_java_lang_String_R_boolean(threadStateData, SP[-5].data.o, SP[-4].data.o, SP[-3].data.i, SP[-2].data.o, SP[-1].data.o);
     SP-=4;
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() == 0) /* IFEQ */ goto label_L1416097444;
+    if(POP_INT() == 0) /* IFEQ */ goto label_L1991386317;
     __CN1_DEBUG_INFO(8051);
     PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$6000___R_com_codename1_push_PushCallback(threadStateData));
     /* CustomInvoke */virtual_com_codename1_push_PushCallback_registeredForPush___java_lang_String(threadStateData, SP[-1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_25_val_deviceKey(__cn1ThisObject));     SP -= 1;
-    goto label_L369333979;
+    goto label_L2012095985;
 
-label_L1416097444:
+label_L1991386317:
     __CN1_DEBUG_INFO(8053);
     PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$6000___R_com_codename1_push_PushCallback(threadStateData));
     /* CustomInvoke */virtual_com_codename1_push_PushCallback_pushRegistrationError___java_lang_String_int(threadStateData, SP[-1].data.o, STRING_FROM_CONSTANT_POOL_OFFSET(9533), 1 /* ICONST_1 */);     SP -= 1;
@@ -85,7 +85,7 @@ label_L1416097444:
     PUSH_OBJ(com_codename1_impl_ios_IOSImplementation_access$6000___R_com_codename1_push_PushCallback(threadStateData));
     /* CustomInvoke */virtual_com_codename1_push_PushCallback_registeredForPush___java_lang_String(threadStateData, SP[-1].data.o, get_field_com_codename1_impl_ios_IOSImplementation_25_val_deviceKey(__cn1ThisObject));     SP -= 1;
 
-label_L369333979:
+label_L2012095985:
     __CN1_DEBUG_INFO(8056);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

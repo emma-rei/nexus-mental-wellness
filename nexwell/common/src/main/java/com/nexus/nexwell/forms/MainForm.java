@@ -78,9 +78,10 @@ public class MainForm extends Form {
     }
 
     public void games() {
-        Dialog gameOptionsDialog = new Dialog("Choose a game");
+        Dialog gameOptionsDialog = new Dialog("Choospe a game");
 
         Container options = new Container(new BoxLayout(BoxLayout.Y_AXIS));
+
         Button snakeButton = new Button("Game of Snake");
         Button gameOfLifeButton = new Button("Game of Life");
         Button cancelButton = new Button("Cancel");

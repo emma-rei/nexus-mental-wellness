@@ -129,12 +129,12 @@ JAVA_VOID com_nexus_nexwell_homepage_UIController_lambda$showSplashScreen$0___co
     locals[1].data.o = __cn1Arg2;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(25);
-    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1160487387;
+    if (virtual_com_codename1_ui_animations_Motion_isFinished___R_boolean(threadStateData, locals[0].data.o)==0) /* IFEQ CustomJump */ goto label_L1893563925;
     __CN1_DEBUG_INFO(26);
     com_nexus_nexwell_homepage_UIController_showHomePageForm__(threadStateData); 
-    goto label_L579447973;
+    goto label_L1251967187;
 
-label_L1160487387:
+label_L1893563925:
     __CN1_DEBUG_INFO(30);
     { JAVA_OBJECT tmpResult = virtual_com_codename1_ui_Label_getSelectedStyle___R_com_codename1_ui_plaf_Style(threadStateData, locals[1].data.o);
     PUSH_OBJ(tmpResult); }
@@ -146,7 +146,7 @@ label_L1160487387:
     __CN1_DEBUG_INFO(31);
     virtual_com_codename1_ui_Label_repaint__(threadStateData, locals[1].data.o); 
 
-label_L579447973:
+label_L1251967187:
     __CN1_DEBUG_INFO(34);
     releaseForReturn(threadStateData, cn1LocalsBeginInThread); 
     return;

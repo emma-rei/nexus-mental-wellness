@@ -45,7 +45,7 @@ JAVA_OBJECT __NEW_com_codename1_components_ToastBar_1(CODENAME_ONE_THREAD_STATE)
 
 
 JAVA_VOID com_codename1_components_ToastBar_1___INIT_____com_codename1_components_ToastBar_com_codename1_components_ToastBar_ToastBarComponent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1, JAVA_OBJECT __cn1Arg2) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10559, 201);
+    DEFINE_INSTANCE_METHOD_STACK(2, 3, 0, 10564, 201);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     locals[2].data.o = __cn1Arg2;
@@ -60,22 +60,22 @@ JAVA_VOID com_codename1_components_ToastBar_1___INIT_____com_codename1_component
 
 
 JAVA_VOID com_codename1_components_ToastBar_1_actionPerformed___com_codename1_ui_events_ActionEvent(CODENAME_ONE_THREAD_STATE, JAVA_OBJECT  __cn1ThisObject, JAVA_OBJECT __cn1Arg1) {
-    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10559, 3047);
+    DEFINE_INSTANCE_METHOD_STACK(2, 2, 0, 10564, 3047);
     locals[0].data.o = __cn1ThisObject; locals[0].type = CN1_TYPE_OBJECT;     locals[1].data.o = __cn1Arg1;
     locals[1].type = CN1_TYPE_OBJECT;
     __CN1_DEBUG_INFO(562);
-    if (/* CustomInvoke */com_codename1_components_ToastBar_ToastBarComponent_access$500___com_codename1_components_ToastBar_ToastBarComponent_R_com_codename1_components_ToastBar_Status(threadStateData, get_field_com_codename1_components_ToastBar_1_val_c(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L400265383;
+    if (/* CustomInvoke */com_codename1_components_ToastBar_ToastBarComponent_access$500___com_codename1_components_ToastBar_ToastBarComponent_R_com_codename1_components_ToastBar_Status(threadStateData, get_field_com_codename1_components_ToastBar_1_val_c(__cn1ThisObject))==JAVA_NULL) /* IFNULL CustomJump */ goto label_L119165084;
     /* CustomInvoke */PUSH_OBJ(com_codename1_components_ToastBar_ToastBarComponent_access$500___com_codename1_components_ToastBar_ToastBarComponent_R_com_codename1_components_ToastBar_Status(threadStateData, get_field_com_codename1_components_ToastBar_1_val_c(__cn1ThisObject)));
     { JAVA_INT tmpResult = com_codename1_components_ToastBar_Status_access$800___com_codename1_components_ToastBar_Status_R_boolean(threadStateData, SP[-1].data.o);
     SP[-1].data.i = tmpResult; SP[-1].type = CN1_TYPE_INT; }
-    if(POP_INT() != 0) /* IFNE */ goto label_L400265383;
+    if(POP_INT() != 0) /* IFNE */ goto label_L119165084;
     __CN1_DEBUG_INFO(563);
     /* CustomInvoke */PUSH_OBJ(com_codename1_components_ToastBar_ToastBarComponent_access$500___com_codename1_components_ToastBar_ToastBarComponent_R_com_codename1_components_ToastBar_Status(threadStateData, get_field_com_codename1_components_ToastBar_1_val_c(__cn1ThisObject)));
     virtual_com_codename1_components_ToastBar_Status_clear__(threadStateData, SP[-1].data.o);     SP -= 1;
     __CN1_DEBUG_INFO(564);
     virtual_com_codename1_ui_events_ActionEvent_consume__(threadStateData, locals[1].data.o); 
 
-label_L400265383:
+label_L119165084:
     __CN1_DEBUG_INFO(566);
     /* CustomInvoke */virtual_com_codename1_components_ToastBar_setVisible___boolean(threadStateData, get_field_com_codename1_components_ToastBar_1_this_0(__cn1ThisObject), 0 /* ICONST_0 */); 
     __CN1_DEBUG_INFO(567);
