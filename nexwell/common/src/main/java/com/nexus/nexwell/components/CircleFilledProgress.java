@@ -5,13 +5,11 @@
 package com.nexus.nexwell.components;
 
 
+import com.nexus.nexwell.utils.Colors;
 import com.codename1.ui.Component;
 import static com.codename1.ui.Component.CENTER;
 import static com.codename1.ui.Component.RIGHT;
-import com.codename1.ui.Display;
 import com.codename1.ui.Graphics;
-import com.codename1.ui.Slider;
-import com.codename1.ui.geom.Dimension;
 import com.codename1.ui.geom.GeneralPath;
 import com.codename1.ui.plaf.Style;
 

@@ -2,7 +2,6 @@ package com.nexus.nexwell.games;
 
 import static com.codename1.ui.CN.getCurrentForm;
 
-import com.codename1.ui.Command;
 import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
 import com.codename1.ui.Graphics;

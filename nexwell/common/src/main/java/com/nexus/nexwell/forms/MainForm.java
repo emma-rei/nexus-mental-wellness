@@ -1,45 +1,28 @@
-
 package com.nexus.nexwell.forms;
 
-import com.codename1.components.FloatingActionButton;
-import com.codename1.components.MultiButton;
+import com.nexus.nexwell.tabs.EmergencyHelpTab;
+import com.nexus.nexwell.tabs.ResourcesTab;
+import com.nexus.nexwell.tabs.GameTab;
+import com.nexus.nexwell.tabs.HomeTab;
+import com.nexus.nexwell.tabs.MusicTab;
 import com.codename1.ui.Button;
 
-import static com.codename1.ui.CN.getCurrentForm;
-
-import com.codename1.ui.Component;
 import com.codename1.ui.Container;
 import com.codename1.ui.Dialog;
-import com.codename1.ui.FontImage;
 import com.codename1.ui.Form;
-import com.codename1.ui.Graphics;
-import com.codename1.ui.Image;
-import com.codename1.ui.Label;
 import com.codename1.ui.Tabs;
-import com.codename1.ui.TextArea;
-import com.codename1.ui.TextField;
-import com.codename1.ui.Toolbar;
-import com.codename1.ui.geom.Dimension;
 
 import com.codename1.ui.layouts.BorderLayout;
 import com.codename1.ui.layouts.BoxLayout;
-import com.codename1.ui.plaf.Style;
-import com.codename1.ui.plaf.UIManager;
 
-import static com.codename1.ui.util.Resources.getGlobalResources;
-
-import com.nexus.nexwell.components.Colors;
-
-import com.nexus.nexwell.components.RichTextView;
+import com.nexus.nexwell.utils.Colors;
 
 import com.nexus.nexwell.games.*;
 import com.nexus.nexwell.satisfyingvisuals.*;
-import com.nexus.nexwell.homepage.ContentFeed;
-
-import com.nexus.nexwell.server.ServerAPI;
 
 public class MainForm extends Form {
-    private Tabs mainUI = new Tabs();
+
+    private final Tabs mainUI = new Tabs();
 
     public MainForm() {
         super("", new BorderLayout());
@@ -47,34 +30,24 @@ public class MainForm extends Form {
         getToolbar().setUIID("Container");
 
 
-        //getCurrentForm().getTitleComponent().setTextPosition(Component.LEFT);
-        //Toolbar.setGlobalToolbar(focusScrolling);
-
-
         char[] icons = {
-                Colors.HOMEICON,
-                Colors.LIBRARYICON,
-                Colors.GAMESICON,
-                Colors.HEADPHONESICON,
-                Colors.EMERGENCYICON
+            Colors.HOMEICON,
+            Colors.LIBRARYICON,
+            Colors.GAMESICON,
+            Colors.HEADPHONESICON,
+            Colors.EMERGENCYICON
         };
-
 
         mainUI.setTabPlacement(BOTTOM);
 
         mainUI.getTabsContainer().getAllStyles().setBgTransparency(60, true);
-        mainUI.addTab("Home", Colors.HOUSE, Colors.HOUSE_PRESSED, new HomePageForm());
-        mainUI.addTab("Music", Colors.MUSIC, Colors.MUSIC_PRESSED, new MusicForm());// replace e-> with new RelaxContainer()
-        mainUI.addTab("Games", Colors.GAMES, Colors.GAMES_PRESSED, new GamesContainer());// replace e-> with new GamesContainer()
-        mainUI.addTab("Articles", Colors.BOOKS, Colors.BOOKS_PRESSED, new ResourcesForm());// replace e-> with new NewsFeedContainer()
-        mainUI.addTab("Emergency", Colors.HELPLINE, Colors.HELPLINE_PRESSED, new EmergencyHelpForm());// replace e-> with new ResourcesContainer()
-
+        mainUI.addTab("Home", Colors.HOUSE, Colors.HOUSE_PRESSED, new HomeTab());
+        mainUI.addTab("Music", Colors.MUSIC, Colors.MUSIC_PRESSED, new MusicTab());
+        mainUI.addTab("Games", Colors.GAMES, Colors.GAMES_PRESSED, new GameTab());
+        mainUI.addTab("Articles", Colors.BOOKS, Colors.BOOKS_PRESSED, new ResourcesTab());
+        mainUI.addTab("Emergency", Colors.HELPLINE, Colors.HELPLINE_PRESSED, new EmergencyHelpTab());
 
         add(CENTER, mainUI);
-
-        //Button searchButton = new Button("Search", "TitleSearch");
-
-
     }
 
     public void games() {
@@ -94,10 +67,8 @@ public class MainForm extends Form {
             gameOptionsDialog.dispose();
             new GameOfLifeForm(25).show();
 
-
         });
         cancelButton.addActionListener(e -> {
-
 
             gameOptionsDialog.dispose();
         });
@@ -125,10 +96,8 @@ public class MainForm extends Form {
             visualsOptionsDialog.dispose();
             new BubbleGame().show();
 
-
         });
         cancelButton.addActionListener(e -> {
-
 
             visualsOptionsDialog.dispose();
         });
@@ -138,6 +107,5 @@ public class MainForm extends Form {
         visualsOptionsDialog.add(options);
         visualsOptionsDialog.show();
     }
-
 
 }

@@ -1,0 +1,423 @@
+/** Define Theme Constants here */
+#Constants {
+    includeNativeBool: true;
+    defaultSourceDPIInt: "0";
+    scrollVisibleBool: false;
+    labelGap: 2;
+    capButtonUiids: "BlueText, GreenButton, BlueButton";
+    
+}
+SheetBackButton{
+    color:white;
+}
+SheetTitle{
+    color:white;
+}
+Switch {
+    switchThumbPaddingInt: 2;
+    switchThumbScaleY: "1.5";
+    switchTrackScaleY: "0.9";
+    switchTrackScaleX: "3";
+    switchTrackOffOutlineWidthMM: "0";
+    switchTrackOnOutlineWidthMM: "0";
+    switchTrackOffOutlineColor: "cccccc";
+    switchThumbInsetMM: "0";
+    color: rgb(237, 237, 237);
+    background-color: rgb(159, 158, 158);
+}
+Switch.selected {
+    color: rgb(34,44,50);
+    background-color: rgb(117, 126, 132);
+}
+Images{
+    background-image:   url(img/Black/Search.png),
+                        url(img/TabIconsDefault/megaphone.fill.png),
+                        url(img/TabIconsDefault/music.note.png),
+                        url(img/TabIconsDefault/gamecontroller.fill.png),
+                        url(img/TabIconsDefault/house.fill.png),
+                        url(img/TabIconsDefault/books.vertical.fill.png),
+                        url(img/TabIconsPressed/pressedmegaphone.fill.png),
+                        url(img/TabIconsPressed/pressedmusic.note.png),
+                        url(img/TabIconsPressed/pressedgamecontroller.fill.png),
+                        url(img/TabIconsPressed/pressedhouse.fill.png),
+                        url(img/TabIconsPressed/pressedbooks.vertical.fill.png),
+                        url(img/Buttons/paintpalette.fill.png),
+                        url(img/Buttons/timer.circle.fill.png),
+                        url(img/Buttons/wind.circle.png),
+                        url(img/Buttons/calendar.badge.plus.png),
+                        url(img/Buttons/play.circle.fill.png),
+                        url(img/Buttons/pause.circle.fill.png),
+                        url(img/Buttons/restart.circle.fill.png),
+                        url(img/PlayButtonsPressed/playpause.circle.fill.png),
+                        url(img/PlayButtonsPressed/playpausePressed.circle.fill.png)
+                        
+
+                        
+}
+/** Style for Button class */
+Button {
+    font-family: "native:MainLight";
+    font-size: 4mm;
+    margin: 1mm;
+    padding: 1mm;
+    border-radius: 100px;
+}
+ButtonDialogs {
+    font-family: "native:MainLight";
+    font-size: mm;
+    border-radius: 100px;
+}
+circle{
+    font-family: "native:MainLight";
+    font-size: 3mm;
+}
+/** Style for App Title Bar Text */
+Title{
+    color: #54B6F4;
+    font-family: "native:MainBold";
+    font-size: 7mm;
+    margin: 1mm 3mm 3mm 7mm;
+}
+
+/** Style for Dialog body */
+DialogBody {
+    font-family: "native:MainLight";
+    font-size: 2.8mm;
+}
+
+/** Style for Dialog title bar text */
+DialogTitle {
+    font-family: "native:MainLight";
+    font-size: 4.5mm;
+}
+
+LogTitle{
+    border: none;
+    background-color: #a8a8e5 ;
+    background-image: none;
+    margin:0px;
+    padding: 2mm 2mm 2mm 2mm;
+}
+PaddedContainer{
+    padding: 3mm;
+    margin: 0mm;
+    background: transparent;
+}
+BaseButton{
+    text-align: center;
+    font-family: "native:MainRegular";
+    font-size:2.6mm;
+    padding: 1.4mm;
+    margin:2mm;
+    color:white;
+    
+}
+ToggleButton{
+    
+    font-size:2.8mm;
+    padding: 1mm;
+    margin:1mm;
+    
+    color:white;
+}
+SpanLabel{
+    
+    font-family: "native:MainRegular";
+    color: white;
+    background: linear-gradient(to right, #97CBCD, #00A3CC);
+    text-align: center;
+    margin:3mm 3mm 3mm 3mm;
+    padding:4mm 2mm 3mm 3mm;
+    border: none;
+    
+}
+PeachContainer{
+    
+    font-family: "native:MainRegular";
+    color: white;
+    background: linear-gradient(to left, #e36b8d, #e8b5c3);
+    text-align: center;
+    margin:3mm 3mm 3mm 3mm;
+    padding: 3mm 2mm 2mm 2mm;
+    border: none;
+    
+}
+BlueContainer{
+    
+    font-family: "native:MainRegular";
+    color: white;
+    background: linear-gradient(to left, #9ecaf0, #23659e);
+    text-align: center;
+    margin:3mm 3mm 3mm 3mm;
+    padding:3mm 2mm 2mm 2mm;
+    border: none;
+    
+}
+GreenContainer{
+    
+    font-family: "native:MainRegular";
+    color: white;
+    background: linear-gradient(to left, #9ef0b1, #39874b);
+    text-align: center;
+    margin:3mm 3mm 3mm 3mm;
+    padding:3mm 2mm 2mm 2mm;
+    border: none;
+    
+}
+YellowContainer{
+    
+    font-family: "native:MainRegular";
+    color: white;
+    background: linear-gradient(to left, #bd7817, #edc68e);
+    text-align: center;
+    margin:3mm 3mm 3mm 3mm;
+    padding:3mm 2mm 2mm 2mm;
+    border: none;
+    
+}
+
+BlueButtonOnBlueBackground{
+    border-radius: 1mm;
+    background: #587EBE;
+    cn1-derive: BaseButton;
+}
+BlueButton{
+    background: #5dafdf;
+    font-family: "native:MainBold";
+    cn1-derive: BaseButton;
+}
+CyanButton {
+    color: white;
+    background: #2beef1;
+    font-family: "native:MainLight";
+    font-size: 3mm;
+    margin: 1mm;
+    padding: 3mm;
+    border-radius: 100px;
+}
+BlueText{
+    cn1-derive: BaseButton;
+    font-family: "native:MainBold";
+    color: #3f92c4;
+    background: transparent;
+}
+WhiteText{
+    font-family: "native:ItalicBold";
+    color:#ffffff ;
+    font-size: 3mm;
+    background: transparent;
+}
+GreenButton{
+    cn1-derive: BaseButton;
+    font-family: "native:MainBold";
+    background: #00A400;
+}
+WhiteLinkButton{
+    cn1-derive: BaseButton;
+    font-family: "native:MainLight";
+    margin: 0px;
+}
+TextHint{
+    font-family: "native:MainLight";
+    font-size: 2.6mm;
+    padding: 2mm;
+}
+TextField{
+    margin:2mm;
+}
+GroupElementFirst{
+    padding: 3mm;
+}
+GroupElementLast{
+    padding: 3mm;
+}
+
+/** Style for the side menu */
+SideNavigationPanel {
+    
+    color: #617678;
+    font-family: "native:MainThin";
+    font-size: 2.6mm;
+    background-color: #006666;
+    padding: 2mm 2mm 2mm 2mm;
+    
+    
+    
+}
+
+@media platform-ios {
+    /** iOS Only styles for side menu. */
+    SideNavigationPanel {
+        /** Extra top padding to deal with notch on iPhoneX */
+        padding: 6mm 1mm 1mm 1mm;
+    }
+}
+
+/** Style for commands in side menu. */
+SideCommand {
+    padding: 1mm;
+    border: none;
+    color: white;
+    font-family: "native:MainLight";
+    font-size: 4mm;
+    border-bottom: 2px solid #cccccc;
+}
+
+Toolbar {
+    border: none;
+    background: linear-gradient(to bottom, #2c2c2c, #2c2c2c);
+    padding: 1mm 1mm 1mm 2mm;
+    margin: 0px;
+}
+Label{
+    color: white;
+    padding: 1mm 1mm 1mm 1mm;
+    font-family: "native:MainLight";
+    font-size: 3mm;
+    
+    
+}
+
+Quote{
+    color: white;
+    padding: 1mm 1mm 1mm 1mm;
+    font-family: "native:MainBold";
+    font-size: 4.5mm;
+}
+QLabel{
+    font-family: "MyCustomFont";
+    font-size: 3mm;
+}
+Task{
+    border-bottom: #cccccc 2px solid;
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+}
+ToggleButton{
+    color: #cfcfcf;
+    background: transparent;
+    border: none;
+}
+ToggleButton.selected, ToggleButton.pressed{
+    color: #6868FD;
+}
+TitleCommand{
+    color: #ffffff;
+    background: transparent;
+    font-size: 5mm;
+}
+TitleArea{
+    padding: 0px;
+    margin: 0px;
+    background: transparent;
+}
+SplashForm{
+    background-color: #52ADCA;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face{
+    font-family: "mindfulness";
+    src: url(img/mind.ttf);
+}
+@font-face {
+    font-family: "MyCustomFont";
+    font-size: 4.5mm;
+    src: url(fonts/Times_New_Roman_Italic.ttf);
+}
+IconFont{
+    font-family: "mindfulness";
+    font-size: 13mm;
+    color: white;
+    background-color: transparent;
+}
+Form{
+    background-color: #333333;
+    margin: 0px;
+    padding: 0px;
+}
+TitleSearch{
+    color: #617678;
+    font-family: "native:MainThin";
+    font-size: 2.6mm;
+    border: 1px #000000 cn1-pill-border;
+    background-color: #9c9ca7;
+    padding: 0.5mm 4mm 0.5mm 4mm;
+    margin: 0.5mm 1.5mm 0.5mm 1.5mm;
+}
+Tab{
+    color: grey;
+    font-family: "native:MainLight";
+    font-size:2mm;
+    
+    padding: 1mm 1mm 1mm 1mm;
+    border: none;
+    background-color: #333333;
+    margin: 0px 0px 1px 0px;
+}
+TabsContainer{
+    color: white;
+    margin: 0px;
+    padding: 1px 0px 1px 0px;
+    background: transparent;
+    
+}
+Tab.selected, Tab.pressed{
+    color: #0085FE;
+    
+    border: none;
+}
+
+PaddedSeparator{
+    background: #DCDEE3;
+    padding: 0.5mm;
+    margin: 0px;
+}
+HalfPaddedSeparator{
+    cn1-derive: PaddedSeparator;
+    padding: 0.25mm;
+    
+    
+}
+HalfPaddedContainer{
+    padding: 1.5mm;
+    margin: 0mm;
+    background: transparent;
+    
+}
+DarkForm{
+    background: linear-gradient(to bottom, #6868FD, #1d193b);
+    
+    margin: 0px;
+    padding: 0px;
+}
+Sheet{
+    background: #13393d;
+}
+GamesToolbar{
+    font-size: 5mm;
+    padding: 3mm 3mm 3mm 3mm;
+    background: linear-gradient(to top, #6868FD, #32363d);
+}
+MusicToolbar{
+    font-size: 5mm;
+    padding: 3mm 3mm 3mm 3mm;
+    background: linear-gradient(to left, #e04f90, #475748);
+}
+ArticlesToolbar{
+    font-size: 5mm;
+    padding: 3mm 3mm 3mm 3mm;
+    background: linear-gradient(to left, #c7631c, #000000);
+}
+EmergencyToolbar{
+    font-size: 5mm;
+    padding: 3mm 3mm 3mm 3mm;
+    background: linear-gradient(to bottom, #000000, #5368D3);
+}
+HomeButton {
+    font-family: "native:MainLight";
+    font-size: 3mm;
+    border-radius: 100px;
+}

@@ -1,5 +1,5 @@
 
-/* /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/javase/../common/src/main/css/theme.css */
+/* /Users/kazybekkhairulla/Downloads/nexus-mental-wellness-main 2/nexwell/javase/../common/src/main/css/theme.css */
 /** Define Theme Constants here */
 #Constants {
     includeNativeBool: true;
@@ -32,26 +32,26 @@ Switch.selected {
     background-color: rgb(117, 126, 132);
 }
 Images{
-    background-image:   url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Black/Search.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/megaphone.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/music.note.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/gamecontroller.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/house.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsDefault/books.vertical.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedmegaphone.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedmusic.note.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedgamecontroller.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedhouse.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/TabIconsPressed/pressedbooks.vertical.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/paintpalette.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/timer.circle.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/wind.circle.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/calendar.badge.plus.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/play.circle.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/pause.circle.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/Buttons/restart.circle.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/PlayButtonsPressed/playpause.circle.fill.png"),
-                        url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/PlayButtonsPressed/playpausePressed.circle.fill.png")
+    background-image:   url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Black/Search.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsDefault/megaphone.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsDefault/music.note.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsDefault/gamecontroller.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsDefault/house.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsDefault/books.vertical.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsPressed/pressedmegaphone.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsPressed/pressedmusic.note.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsPressed/pressedgamecontroller.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsPressed/pressedhouse.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsPressed/pressedbooks.vertical.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/paintpalette.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/timer.circle.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/wind.circle.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/calendar.badge.plus.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/play.circle.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/pause.circle.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/restart.circle.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/PlayButtonsPressed/playpause.circle.fill.png"),
+                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/PlayButtonsPressed/playpausePressed.circle.fill.png")
                         
 
                         
@@ -75,10 +75,10 @@ circle{
 }
 /** Style for App Title Bar Text */
 Title{
-    color: #cccccc;
+    color: #54B6F4;
     font-family: "native:MainBold";
-    font-size: 8mm;
-    margin: 1mm 4mm 1mm 3mm;
+    font-size: 7mm;
+    margin: 1mm 3mm 3mm 7mm;
 }
 
 /** Style for Dialog body */
@@ -285,8 +285,10 @@ Quote{
     padding: 1mm 1mm 1mm 1mm;
     font-family: "native:MainBold";
     font-size: 4.5mm;
-    
-    
+}
+QLabel{
+    font-family: "MyCustomFont";
+    font-size: 3mm;
 }
 Task{
     border-bottom: #cccccc 2px solid;
@@ -320,7 +322,12 @@ SplashForm{
 
 @font-face{
     font-family: "mindfulness";
-    src: url("cn1-merged-files/e176e9e12e9bc49f14363c840a8ebd10/img/mind.ttf");
+    src: url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/mind.ttf");
+}
+@font-face {
+    font-family: "MyCustomFont";
+    font-size: 4.5mm;
+    src: url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/fonts/Times_New_Roman_Italic.ttf");
 }
 IconFont{
     font-family: "mindfulness";
@@ -417,4 +424,4 @@ HomeButton {
     border-radius: 100px;
 }
 
-/* end /Users/kazybekkhairulla/NetBeansProjects/nexus-mental-wellness/nexwell/javase/../common/src/main/css/theme.css*/
+/* end /Users/kazybekkhairulla/Downloads/nexus-mental-wellness-main 2/nexwell/javase/../common/src/main/css/theme.css*/
