@@ -1,26 +1,40 @@
-# NexWell
-Nexus Mental Wellness app
+# NexWell: Nexus Mental Wellness App
 
-Welcome to our mental health wellness app! Our app is designed to help you improve your mental health and well-being.
+Welcome to NexWell, your companion in the journey towards enhanced mental wellness. NexWell is designed with your mental health and well-being in mind, offering a suite of features to support, inspire, and uplift you daily.
 
 ## Features
 
-- tips and quotes
-- mindful games 
-- meditation music 
-- resources
-- Emergency Contacts
-
-
+ * Tips and Quotes: Start your day with motivational quotes and practical tips to boost your mental health.
+ * Mindful Games: Engage with games designed to cultivate mindfulness and reduce stress.
+ * Meditation Music: Access a curated selection of music to help you meditate, relax, and find peace.
+ * Resources: Explore a wealth of resources on mental health, including articles, videos, and guides.
+ * Emergency Contacts: Quickly find contact information for mental health support and emergency services.
 ## How to Use
 
-Planned: To use our app, simply download it from the app store and create an account. From there, you can start using all of our features to help improve your mental health and well-being.
+### For Android Users:
 
-Android-Current-version: available to install through a QR code that leads to the build cloud from which you can install the app to android. 
+NexWell is available for Android devices. Scan the QR code provided to navigate to the build cloud, where you can install the app directly to your device.
 
-iOS-current-version: currently not on Apple Store, but can be installed manually through Xcode build. Have to change device settings -> Settings -> Privacy & Security -> Developer Mode toggle **ON**. 
-- In Xcode select development team in Siging&Certificates, deployment version has to be the version of the iOS of your device. Run the build
+### For iOS Users:
 
-We hope you enjoy our app and find it helpful in your journey towards better mental health.
+While NexWell is not currently available on the Apple Store, iOS users can manually install the app through Xcode.
+Enable Developer Mode by navigating to Settings -> Privacy & Security and toggling Developer Mode to ON.
+In Xcode, select your development team in Signing & Certificates, ensuring the deployment version matches your device's iOS version. Run the build to install.
+## Getting Started
 
-If you have any questions or feedback, please don't hesitate to reach out to us.
+ * Download NexWell from the app store or follow the installation instructions for your platform.
+ * Create an account to personalize your experience.
+ * Start exploring the features and begin your journey towards improved mental well-being.
+## Development Setup
+
+### Android Development:
+ * JDK (Java Development Kit): Required for developing with Codename One. Ensure you have the recommended version installed.
+ * Android SDK: Necessary for app development, providing essential APIs and tools. Install via Android Studio or manually.
+### iOS Development:
+* Xcode: Essential for iOS app development, available for free on the Mac App Store. Ensure compatibility with your macOS version.
+* CocoaPods: A dependency manager for managing library dependencies in your projects.
+* Command Line Tools for Xcode: Install via terminal with xcode-select --install.
+## Additional Setup:
+* Apple Developer Account: Required for testing on real devices and app distribution.
+* Environment Variables: Properly set up environment variables such as JAVA_HOME and paths to the Android SDK.
+By following these guidelines, you'll be well on your way to using NexWell to its fullest potential. Remember, your journey towards mental wellness is unique, and NexWell is here to support you every step of the way.
