@@ -1,5 +1,5 @@
 
-/* /Users/kazybekkhairulla/Downloads/nexus-mental-wellness-main 2/nexwell/javase/../common/src/main/css/theme.css */
+/* /Users/kazybekkhairulla/Downloads/nexus-mental-wellness-75d6e09ff428a8736313065d46e39a40a6987631/nexwell/common/src/main/css/theme.css */
 /** Define Theme Constants here */
 #Constants {
     includeNativeBool: true;
@@ -7,7 +7,7 @@
     scrollVisibleBool: false;
     labelGap: 2;
     capButtonUiids: "BlueText, GreenButton, BlueButton";
-    
+
 }
 SheetBackButton{
     color:white;
@@ -32,29 +32,26 @@ Switch.selected {
     background-color: rgb(117, 126, 132);
 }
 Images{
-    background-image:   url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Black/Search.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsDefault/megaphone.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsDefault/music.note.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsDefault/gamecontroller.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsDefault/house.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsDefault/books.vertical.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsPressed/pressedmegaphone.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsPressed/pressedmusic.note.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsPressed/pressedgamecontroller.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsPressed/pressedhouse.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/TabIconsPressed/pressedbooks.vertical.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/paintpalette.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/timer.circle.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/wind.circle.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/calendar.badge.plus.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/play.circle.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/pause.circle.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/Buttons/restart.circle.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/PlayButtonsPressed/playpause.circle.fill.png"),
-                        url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/PlayButtonsPressed/playpausePressed.circle.fill.png")
-                        
-
-                        
+    background-image:   url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/Black/Search.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/TabIconsDefault/megaphone.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/TabIconsDefault/music.note.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/TabIconsDefault/gamecontroller.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/TabIconsDefault/house.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/TabIconsDefault/books.vertical.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/TabIconsPressed/pressedmegaphone.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/TabIconsPressed/pressedmusic.note.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/TabIconsPressed/pressedgamecontroller.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/TabIconsPressed/pressedhouse.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/TabIconsPressed/pressedbooks.vertical.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/Buttons/paintpalette.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/Buttons/timer.circle.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/Buttons/wind.circle.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/Buttons/calendar.badge.plus.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/Buttons/play.circle.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/Buttons/pause.circle.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/Buttons/restart.circle.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/PlayButtonsPressed/playpause.circle.fill.png"),
+        url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/PlayButtonsPressed/playpausePressed.circle.fill.png")
 }
 /** Style for Button class */
 Button {
@@ -112,18 +109,15 @@ BaseButton{
     padding: 1.4mm;
     margin:2mm;
     color:white;
-    
 }
 ToggleButton{
-    
     font-size:2.8mm;
     padding: 1mm;
     margin:1mm;
-    
+
     color:white;
 }
 SpanLabel{
-    
     font-family: "native:MainRegular";
     color: white;
     background: linear-gradient(to right, #97CBCD, #00A3CC);
@@ -131,10 +125,9 @@ SpanLabel{
     margin:3mm 3mm 3mm 3mm;
     padding:4mm 2mm 3mm 3mm;
     border: none;
-    
+
 }
 PeachContainer{
-    
     font-family: "native:MainRegular";
     color: white;
     background: linear-gradient(to left, #e36b8d, #e8b5c3);
@@ -142,10 +135,9 @@ PeachContainer{
     margin:3mm 3mm 3mm 3mm;
     padding: 3mm 2mm 2mm 2mm;
     border: none;
-    
+
 }
 BlueContainer{
-    
     font-family: "native:MainRegular";
     color: white;
     background: linear-gradient(to left, #9ecaf0, #23659e);
@@ -153,10 +145,9 @@ BlueContainer{
     margin:3mm 3mm 3mm 3mm;
     padding:3mm 2mm 2mm 2mm;
     border: none;
-    
+
 }
 GreenContainer{
-    
     font-family: "native:MainRegular";
     color: white;
     background: linear-gradient(to left, #9ef0b1, #39874b);
@@ -164,10 +155,9 @@ GreenContainer{
     margin:3mm 3mm 3mm 3mm;
     padding:3mm 2mm 2mm 2mm;
     border: none;
-    
+
 }
 YellowContainer{
-    
     font-family: "native:MainRegular";
     color: white;
     background: linear-gradient(to left, #bd7817, #edc68e);
@@ -175,7 +165,7 @@ YellowContainer{
     margin:3mm 3mm 3mm 3mm;
     padding:3mm 2mm 2mm 2mm;
     border: none;
-    
+
 }
 
 BlueButtonOnBlueBackground{
@@ -236,15 +226,11 @@ GroupElementLast{
 
 /** Style for the side menu */
 SideNavigationPanel {
-    
     color: #617678;
     font-family: "native:MainThin";
     font-size: 2.6mm;
     background-color: #006666;
     padding: 2mm 2mm 2mm 2mm;
-    
-    
-    
 }
 
 @media platform-ios {
@@ -276,8 +262,6 @@ Label{
     padding: 1mm 1mm 1mm 1mm;
     font-family: "native:MainLight";
     font-size: 3mm;
-    
-    
 }
 
 Quote{
@@ -322,12 +306,12 @@ SplashForm{
 
 @font-face{
     font-family: "mindfulness";
-    src: url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/img/mind.ttf");
+    src: url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/img/mind.ttf");
 }
 @font-face {
     font-family: "MyCustomFont";
     font-size: 4.5mm;
-    src: url("cn1-merged-files/c25a1beef2a1be168374eea6f0426173/fonts/Times_New_Roman_Italic.ttf");
+    src: url("cn1-merged-files/47073a1d02b8642d09668effe2b8d0d9/fonts/Times_New_Roman_Italic.ttf");
 }
 IconFont{
     font-family: "mindfulness";
@@ -353,7 +337,7 @@ Tab{
     color: grey;
     font-family: "native:MainLight";
     font-size:2mm;
-    
+
     padding: 1mm 1mm 1mm 1mm;
     border: none;
     background-color: #333333;
@@ -364,11 +348,10 @@ TabsContainer{
     margin: 0px;
     padding: 1px 0px 1px 0px;
     background: transparent;
-    
+
 }
 Tab.selected, Tab.pressed{
     color: #0085FE;
-    
     border: none;
 }
 
@@ -380,18 +363,14 @@ PaddedSeparator{
 HalfPaddedSeparator{
     cn1-derive: PaddedSeparator;
     padding: 0.25mm;
-    
-    
 }
 HalfPaddedContainer{
     padding: 1.5mm;
     margin: 0mm;
     background: transparent;
-    
 }
 DarkForm{
     background: linear-gradient(to bottom, #6868FD, #1d193b);
-    
     margin: 0px;
     padding: 0px;
 }
@@ -424,4 +403,4 @@ HomeButton {
     border-radius: 100px;
 }
 
-/* end /Users/kazybekkhairulla/Downloads/nexus-mental-wellness-main 2/nexwell/javase/../common/src/main/css/theme.css*/
+/* end /Users/kazybekkhairulla/Downloads/nexus-mental-wellness-75d6e09ff428a8736313065d46e39a40a6987631/nexwell/common/src/main/css/theme.css*/

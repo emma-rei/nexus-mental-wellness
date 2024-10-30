@@ -8,6 +8,7 @@ import static com.codename1.ui.CN.*;
 import com.codename1.ui.animations.MorphTransition;
 import com.codename1.ui.animations.Motion;
 import com.codename1.ui.util.UITimer;
+import com.nexus.nexwell.forms.LoginForm;
 import com.nexus.nexwell.forms.MainForm;
 
 public class UIController {
@@ -23,6 +24,7 @@ public class UIController {
         UITimer.timer(20, true, splash, () ->{
             if(anim.isFinished()){
                 showHomePageForm();
+                
             }
             else{
                 logo.getSelectedStyle().setOpacity(anim.getValue()+127);

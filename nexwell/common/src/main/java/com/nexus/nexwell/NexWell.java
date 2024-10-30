@@ -7,10 +7,16 @@ import com.codename1.system.Lifecycle;
 import com.codename1.ui.*;
 import com.codename1.ui.layouts.*;
 import com.codename1.io.*;
-
+import static com.codename1.ui.Component.CENTER;
 import com.codename1.ui.plaf.*;
 import com.codename1.ui.util.Resources;
+import com.nexus.nexwell.games.*;
 
+
+
+import com.nexus.nexwell.tabs.HomeTab;
+import static com.codename1.ui.util.Resources.getGlobalResources;
+import com.nexus.nexwell.forms.MainForm;
 import com.nexus.nexwell.utils.UIController;
 
 /**
@@ -62,7 +68,10 @@ public class NexWell{
             current = getCurrentForm();
         }
     }
-    public void destoy(){}
+    
+    public void destroy() {
+    }
+
 
 }
   

@@ -1,5 +1,5 @@
 
-package com.nexus.nexwell.utils;
+package com.nexus.nexwell;
 
 import com.codename1.l10n.L10NManager;
 import com.codename1.ui.Label;

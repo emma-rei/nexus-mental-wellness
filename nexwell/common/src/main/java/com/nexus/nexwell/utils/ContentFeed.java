@@ -12,8 +12,7 @@ import java.util.Random;
  *
  * @author kazybekkhairulla
  */
-public class ContentFeed {
-
+public class ContentFeed{
     private static final String[] quotesList = {
         "Nothing ever goes away until it teaches us what we need to know.\n -Pema Chodron",
         "Old ways won’t open new doors.\n -Unknown",
@@ -76,10 +75,11 @@ public class ContentFeed {
         "If you cannot do great things, do small things in a great way.\n — Napoleon Hill",
         "Success only comes to those who dare to attempt.\n — Mallika Tripathi"
 
+        
     };
     public static Map<String, String> webLinks = new HashMap<>();
-
-    static {
+    
+    static{
         webLinks.put("Mental Well-being", "https://www.healthhub.sg/programmes/186/MindSG/About-Mental-Well-Being#home");
         webLinks.put("Coping with Stress", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Coping-With-Stress-Adults#home ");
         webLinks.put("Understanding Depression", "https://www.healthhub.sg/programmes/186/MindSG/Caring-For-Ourselves/Understanding-Depression-Adults#home");
@@ -93,19 +93,20 @@ public class ContentFeed {
         webLinks.put("Mindline", "https://www.mindline.sg/home");
         webLinks.put("Other", "https://www.healthhub.sg/programmes/mindsg/other-useful-websites#home");
     }
-
-    public static String getValueForKey(String key) {
+    
+    public static String getValueForKey(String key){
         return webLinks.get(key);
     }
-
-    public static String insertKeyValue(String key, String value) {
+    
+    public static String insertKeyValue(String key, String value){
         webLinks.put(key, value);
         return key;
-    }
-
-    public static String getRandomQuote() {
+    } 
+    
+    public static String getRandomQuote(){
         Random random = new Random();
         int index = random.nextInt(quotesList.length);
         return quotesList[index];
     }
 }
+

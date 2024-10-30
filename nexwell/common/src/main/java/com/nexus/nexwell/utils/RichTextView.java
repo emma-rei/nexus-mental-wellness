@@ -1,6 +1,9 @@
+
 package com.nexus.nexwell.utils;
 
+import com.codename1.components.SpanLabel;
 import com.codename1.io.CharArrayReader;
+import com.codename1.io.Log;
 import com.codename1.ui.Button;
 import static com.codename1.ui.CN.*;
 import com.codename1.ui.Container;
@@ -16,8 +19,11 @@ import com.codename1.util.StringUtil;
 import com.codename1.xml.XMLParser;
 import java.io.IOException;
 
-public class RichTextView extends Container {
 
+
+
+
+public class RichTextView extends Container {
     private String text;
     private float fontSize = 3.45f;
     private EventDispatcher listeners = new EventDispatcher();
@@ -48,34 +54,34 @@ public class RichTextView extends Container {
     private void init(String uiid) {
         boldFont = Font.createTrueTypeFont(NATIVE_MAIN_BOLD, fontSize);
         italicFont = Font.createTrueTypeFont(NATIVE_ITALIC_LIGHT, fontSize);
-        if (uiid == null) {
+        if(uiid == null) {
             defaultFont = Font.createTrueTypeFont(NATIVE_MAIN_LIGHT,
-                    fontSize);
+                fontSize);
         } else {
             Style s = UIManager.getInstance().getComponentStyle(uiid);
             defaultFont = s.getFont();
             boldFont = boldFont.derive(defaultFont.getHeight(),
-                    Font.STYLE_BOLD);
+                Font.STYLE_BOLD);
             italicFont = italicFont.derive(defaultFont.getHeight(),
-                    Font.STYLE_ITALIC);
+                Font.STYLE_ITALIC);
         }
         sizeOfSpace = defaultFont.charWidth(' ');
         currentFont = defaultFont;
     }
 
     public void setAlignment(int align) {
-        ((FlowLayout) getLayout()).setAlign(align);
+        ((FlowLayout)getLayout()).setAlign(align);
     }
 
     private void createComponent(String t) {
-        if (t.indexOf(' ') > -1) {
-            for (String s : StringUtil.tokenize(t, ' ')) {
+        if(t.indexOf(' ') > -1) {
+            for(String s : StringUtil.tokenize(t, ' ')) {
                 createComponent(s);
             }
             return;
         }
         Label l;
-        if (currentLink != null) {
+        if(currentLink != null) {
             Button b = new Button(t, "Label");
             final String currentLinkValue = currentLink;
             b.addActionListener(e -> listeners.fireActionEvent(
@@ -100,7 +106,7 @@ public class RichTextView extends Container {
         try {
             char[] chrs = ("<body>" + text + "</body>").toCharArray();
             new Parser().eventParser(new CharArrayReader(chrs));
-        } catch (IOException err) {
+        } catch(IOException err) {
             log(err);
         }
     }
@@ -118,15 +124,14 @@ public class RichTextView extends Container {
     }
 
     class Parser extends XMLParser {
-
         @Override
         protected void textElement(String text) {
-            if (text.length() > 0) {
-                if (lastCmp != null && text.startsWith(" ")) {
+            if(text.length() > 0) {
+                if(lastCmp != null && text.startsWith(" ")) {
                     lastCmp.setPadding(0, 0, 0, sizeOfSpace);
                 }
                 createComponent(text);
-                if (!text.endsWith(" ")) {
+                if(!text.endsWith(" ")) {
                     lastCmp.setPadding(0, 0, 0, 0);
                 }
             }
@@ -134,7 +139,7 @@ public class RichTextView extends Container {
 
         @Override
         protected boolean startTag(String tag) {
-            switch (tag.toLowerCase()) {
+            switch(tag.toLowerCase()) {
                 case "a":
                     currentColor = 0x4267B2;
                     break;
@@ -158,8 +163,8 @@ public class RichTextView extends Container {
         @Override
         protected void attribute(
                 String tag, String attributeName, String value) {
-            if (tag.toLowerCase().equals("a")
-                    && attributeName.toLowerCase().equals("href")) {
+            if(tag.toLowerCase().equals("a") &&
+                    attributeName.toLowerCase().equals("href")) {
                 currentLink = value;
             }
         }
