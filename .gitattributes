@@ -1,0 +1,17 @@
+# Exclude generated build output from GitHub Linguist language stats
+nexwell/**/target/** linguist-generated
+nexwell/**/build/** linguist-generated
+nexwell/**/dist/** linguist-generated
+
+# Treat vendored tooling and IDE metadata as vendored content
+**/.idea/** linguist-vendored
+nexwell/.mvn/** linguist-vendored
+nexwell/mvnw linguist-vendored
+nexwell/mvnw.cmd linguist-vendored
+nexwell/tools/** linguist-vendored
+nexwell/**/*.launch linguist-vendored
+nexwell/**/nbactions*.xml linguist-vendored
+
+# Ignore Maven descriptors that overwhelm language statistics
+nexwell/**/pom.xml linguist-vendored
+nexwell/pom.xml.bak linguist-vendored
